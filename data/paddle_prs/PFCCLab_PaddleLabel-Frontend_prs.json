@@ -1,0 +1,68 @@
+[
+    {
+        "repo": "PFCCLab/PaddleLabel-Frontend",
+        "number": 2,
+        "title": "🐛 fix(SemanticSegmentation): save no finlyList and open class select",
+        "body": "## fix\r\n* 修复 #1 遗漏的矩形框问题\r\n* 暂时打开 `导入标注格式` 选择功能（不保证能用，至少还需要补充i18n）\r\n\r\n\r\n<img width=\"649\" alt=\"截屏2024-06-21 下午8 57 43\" src=\"https://github.com/PFCCLab/PaddleLabel-Frontend/assets/66515297/6791906f-d5b2-4b55-a3aa-8ccb086e45b3\">\r\n\r\n\r\ncc: @Liyulingyue \r\n",
+        "issue_number": "2",
+        "state": "closed",
+        "merged": true,
+        "user": "gouzil",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-06-21T12:58:05+00:00",
+        "closed_at": "2024-06-21T13:06:05+00:00",
+        "additions": 4,
+        "deletions": 3,
+        "changed_files": 2,
+        "commits": [
+            "1c5e74e9a538153c318f0ca9318f06931024c2a4"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-Frontend",
+        "number": 1,
+        "title": "🐛 fix(SemanticSegmentation): save no finlyList",
+        "body": "修复 https://github.com/PFCCLab/PaddleLabel/pull/8#issuecomment-2181039569 中的 2\r\n\r\n> 2.实例分割任务标注后需要刷新才能显示标注项\r\n\r\ncc: @Liyulingyue ",
+        "issue_number": "1",
+        "state": "closed",
+        "merged": true,
+        "user": "gouzil",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-06-21T03:33:03+00:00",
+        "closed_at": "2024-06-21T11:51:49+00:00",
+        "additions": 3,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "732019e785eada95cf4311e88e80706dcf6fbd20"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-Frontend",
+        "number": 3,
+        "title": "🐛 fix(page): ml baseUrl error",
+        "body": "修复 ml 后端地址错误\r\n\r\n关联：PFCCLab/PaddleLabel-ML#2",
+        "issue_number": "3",
+        "state": "open",
+        "merged": false,
+        "user": "gouzil",
+        "merged_by": null,
+        "created_at": "2024-07-27T08:23:21+00:00",
+        "closed_at": null,
+        "additions": 3,
+        "deletions": 5,
+        "changed_files": 4,
+        "commits": [
+            "cd9662c17e762f1d4782c72678f07700cb9b15f0",
+            "f827a059468004c72e269e351f2c65233e2d1fd1"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "gouzil"
+        ]
+    }
+]

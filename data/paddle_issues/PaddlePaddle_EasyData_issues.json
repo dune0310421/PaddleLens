@@ -1,0 +1,48 @@
+[
+    {
+        "repo": "PaddlePaddle/EasyData",
+        "number": 27,
+        "title": "图像分类命令报错",
+        "body": "参考文档: https://github.com/PaddlePaddle/EasyData/blob/develop/docs/zh_CN/DataAug/quick_start.md\r\n\r\n执行命令报错:\r\neasydata --ori_data_dir demo/clas_data/ --label_file ./demo/clas_data/train_list.txt --gen_mode img2img\r\n\r\n报错信息如下：\r\nTraceback (most recent call last):\r\n  File \"/usr/local/Caskroom/miniconda/base/envs/easydata/bin/easydata\", line 33, in <module>\r\n    sys.exit(load_entry_point('easydata-python==0.0.0', 'console_scripts', 'easydata')())\r\n  File \"/usr/local/Caskroom/miniconda/base/envs/easydata/lib/python3.8/site-packages/easydata/easydata.py\", line 275, in main\r\n    easydata = EasyData(**(args.__dict__))\r\n  File \"/usr/local/Caskroom/miniconda/base/envs/easydata/lib/python3.8/site-packages/easydata/easydata.py\", line 260, in __init__\r\n    self.pipeline = PPDA(**cfg)\r\n  File \"/usr/local/Caskroom/miniconda/base/envs/easydata/lib/python3.8/site-packages/easydata/easydata.py\", line 210, in __init__\r\n    self.config = config.get_config(model_config, show=False)\r\n  File \"/usr/local/Caskroom/miniconda/base/envs/easydata/lib/python3.8/site-packages/easydata/deploy/python/ppdataaug/utils/config.py\", line 193, in get_config\r\n    assert os.path.exists(fname), (\r\nAssertionError: config file(deploy/configs/ppdataaug_clas.yaml) is not exist",
+        "state": "open",
+        "user": "seapolite",
+        "closed_by": null,
+        "created_at": "2024-08-30T02:20:15+00:00",
+        "updated_at": "2024-08-30T02:20:19+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/EasyData",
+        "number": 26,
+        "title": "标注异常",
+        "body": "感谢开发者提供的工具，很好用。\r\n不过我发现一个问题：如果图像尺寸较大，比如3072x4096，使用 eiseg 标注开始自动进入 宫格 模式，标注完发现mask图像最右侧有一条宽宽的黑线，我检查了原图和各个宫格图，发现载入图像时，软件会自动裁掉图像最右侧一部分，导致标注时这一部分不在宫格内，进而导致mask图像最右侧有一条竖线。\r\n我使用的是EISeg 1.1 版本，windows 平台",
+        "state": "closed",
+        "user": "zhedahe",
+        "closed_by": "cuicheng01",
+        "created_at": "2024-01-24T11:25:32+00:00",
+        "updated_at": "2024-03-15T07:06:55+00:00",
+        "closed_at": "2024-03-15T07:06:55+00:00",
+        "comments_count": [
+            "cuicheng01"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/EasyData",
+        "number": 25,
+        "title": "群二维码过期了",
+        "body": "群二维码过期了\r\n来个群码",
+        "state": "closed",
+        "user": "monkeycc",
+        "closed_by": "cuicheng01",
+        "created_at": "2022-12-13T08:34:49+00:00",
+        "updated_at": "2024-03-15T07:07:33+00:00",
+        "closed_at": "2024-03-15T07:07:33+00:00",
+        "comments_count": [
+            "cuicheng01"
+        ],
+        "labels": []
+    }
+]

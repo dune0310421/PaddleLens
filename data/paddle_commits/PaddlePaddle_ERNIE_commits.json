@@ -1,0 +1,4557 @@
+[
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "04334c9b6686ce4d0a3f9162088147ce826ac1d8",
+        "created_at": "2025-07-04 17:38:39 +0800",
+        "author": "fjjF77",
+        "committer": "fjjF77",
+        "message": "fix-fused_rms_norm_ext-use",
+        "files": [
+            {
+                "filename": "ernie/modeling.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 4,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "b10aec95ab904c8121bf52856b5f332b93da41eb",
+        "created_at": "2025-07-06 14:35:48 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-987-from-Jonathans575-develop",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "812c6700f7dd4466f27e9e90ed63417dcda40ceb",
+        "created_at": "2025-07-08 11:05:22 +0800",
+        "author": "FeixLiu",
+        "committer": "web-flow",
+        "message": "update-yamls-993",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/pre-training/yamls/ci_ce/pretrain_8_gpus_ci.yaml",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 20,
+                "changes": 28
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "e1773a6d618541ca87ea0599ae3aeeb99cc295b6",
+        "created_at": "2025-07-06 14:36:10 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-985-from-fjjF77-remove_ops",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "d84caf99cb9e7e7b67a979916edc7ad926042146",
+        "created_at": "2025-07-08 11:43:26 +0800",
+        "author": "zhangyuqin1998",
+        "committer": "web-flow",
+        "message": "Fix-some-fatal-bugs-in-pre-training-995",
+        "files": [
+            {
+                "filename": "examples/pre-training/models/moe/moe_layer.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9
+            },
+            {
+                "filename": "examples/pre-training/models/moe/token_dispatcher/fp8_utils.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "2bc82df8b3b4b8b7d351d342948527f27b16ce61",
+        "created_at": "2025-07-08 10:31:24 +0800",
+        "author": "zjjlivein",
+        "committer": "web-flow",
+        "message": "Add-ERNIE-CI-968",
+        "files": [
+            {
+                "filename": ".github/workflows/test.yml",
+                "status": "added",
+                "additions": 37,
+                "deletions": 0,
+                "changes": 37
+            },
+            {
+                "filename": "Makefile",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "tests/codestyle/copyright.py",
+                "status": "added",
+                "additions": 181,
+                "deletions": 0,
+                "changes": 181
+            },
+            {
+                "filename": "tests/codestyle/get_modified_files.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "tests/test_dense_model.py",
+                "status": "added",
+                "additions": 158,
+                "deletions": 0,
+                "changes": 158
+            },
+            {
+                "filename": "tests/test_moe_model.py",
+                "status": "added",
+                "additions": 186,
+                "deletions": 0,
+                "changes": 186
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "f1fc8d8c7a352bd265ad0f796273f4525c7a1058",
+        "created_at": "2025-07-04 15:24:45 +0800",
+        "author": "DesmonDay",
+        "committer": "web-flow",
+        "message": "Fix-0.3B-model-TP-name-mappings",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "b751f035ba207185b3bc0d42490343a66cf805a2",
+        "created_at": "2025-07-04 18:57:18 +0800",
+        "author": "Jonathans575",
+        "committer": "Jonathans575",
+        "message": "docs-dataset-Fix-incorrect-annotations-related-to-the-dataset",
+        "files": [
+            {
+                "filename": "cookbook/notebook/sft_tutorial_en.ipynb",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 11,
+                "changes": 14
+            },
+            {
+                "filename": "cookbook/notebook/sft_tutorial_zh.ipynb",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 11,
+                "changes": 14
+            },
+            {
+                "filename": "examples/post-training/sft/estimate_training.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 3,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "b0cb90f89e9805f8036ea252ff1d3a075517cdf3",
+        "created_at": "2025-07-04 16:59:36 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-981-from-zhangyuqin1998-fix_use_quant_before_a2a",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "d4e1c371dfd089ef618ef378e8996049bd54da00",
+        "created_at": "2025-07-08 17:43:33 +0800",
+        "author": "Jonathans575",
+        "committer": "web-flow",
+        "message": "Update-ERNIEKit-cli-and-WebUI-docs.-996",
+        "files": [
+            {
+                "filename": "docs/cli_webui_usage.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 1,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "62d529893834857a1b1d1f9eb0621bf078e57588",
+        "created_at": "2025-07-07 23:19:16 +0800",
+        "author": "wtmlon",
+        "committer": "web-flow",
+        "message": "Fix-tokenizer-decode.-988",
+        "files": [
+            {
+                "filename": "ernie/tokenizer.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 2,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "0231e60aa38c52d3f1e58bdc09af7f267cbf67a4",
+        "created_at": "2025-07-06 12:17:52 +0800",
+        "author": "ZeyuChen",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "8a6b5a2ebde95756a8b04e0e213d48cc22a63a75",
+        "created_at": "2025-07-04 15:18:35 +0800",
+        "author": "wtmlon",
+        "committer": "wtmlon",
+        "message": "fix-0.3b-name-mapping",
+        "files": [
+            {
+                "filename": "ernie/modeling_moe.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "920c2304002262af7d8e86473782bdf9e9bbc0a4",
+        "created_at": "2025-07-04 15:17:05 +0800",
+        "author": "zhangyuqin1998",
+        "committer": "zhangyuqin1998",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "examples/pre-training/models/moe/moe_layer.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "e8bebef9157998437a52998ebc2db0e99c4e7db1",
+        "created_at": "2025-07-03 19:24:12 +0800",
+        "author": "Farewell-CK",
+        "committer": "web-flow",
+        "message": "Update-requirements.txt-967",
+        "files": [
+            {
+                "filename": "requirements/gpu/requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "bf30e613a3eab96e1e0d6d571ba026219cc61678",
+        "created_at": "2025-07-04 13:18:30 +0800",
+        "author": "Minghao2812",
+        "committer": "web-flow",
+        "message": "Upload-SFT-and-DPO-tutorials-in-Chinese-948",
+        "files": [
+            {
+                "filename": "cookbook/assets/dpo_download_dataset_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_merge_lora_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_set_lora_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_set_path_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_train_params_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_trainset_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_validset_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_21b_distributed_params_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_download_dataset_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_merge_lora_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_set_lora_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_set_path_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_train_params_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_trainset_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_validset_en.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_visualdl_loss.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/notebook/dpo_tutorial_en.ipynb",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 9,
+                "changes": 18
+            },
+            {
+                "filename": "cookbook/notebook/dpo_tutorial_zh.ipynb",
+                "status": "added",
+                "additions": 659,
+                "deletions": 0,
+                "changes": 659
+            },
+            {
+                "filename": "cookbook/notebook/sft_tutorial_en.ipynb",
+                "status": "modified",
+                "additions": 474,
+                "deletions": 1106,
+                "changes": 1580
+            },
+            {
+                "filename": "cookbook/notebook/sft_tutorial_zh.ipynb",
+                "status": "added",
+                "additions": 1370,
+                "deletions": 0,
+                "changes": 1370
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "9ff92394e8dd7e90d6226680f1f7f4995b0bc921",
+        "created_at": "2025-07-04 15:11:10 +0800",
+        "author": "zhangyuqin1998",
+        "committer": "zhangyuqin1998",
+        "message": "Fix-use_quant_before_a2a-delete-bf16-fake-output",
+        "files": [
+            {
+                "filename": "examples/pre-training/models/moe/moe_layer.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 17,
+                "changes": 26
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "56f3dbcd8b9eea72a7ed83f11041da2a24795bd1",
+        "created_at": "2025-07-03 22:29:30 +0800",
+        "author": "wtmlon",
+        "committer": "wtmlon",
+        "message": "fix-estimate",
+        "files": [
+            {
+                "filename": "ernie/utils/common_utils.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "6efb394955a6cb455275c6baf7e39918267f772e",
+        "created_at": "2025-07-03 18:12:59 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Add-precommit-codestyle-check-956",
+        "files": [
+            {
+                "filename": ".github/workflows/lint.yml",
+                "status": "added",
+                "additions": 40,
+                "deletions": 0,
+                "changes": 40
+            },
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            },
+            {
+                "filename": "tools/codestyle/.copyright.hook",
+                "status": "added",
+                "additions": 134,
+                "deletions": 0,
+                "changes": 134
+            },
+            {
+                "filename": "tools/codestyle/Makefile",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "tools/codestyle/get_modified_files.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "2a2224b6a4d7a50eb26fc5df117c84d3dc38332d",
+        "created_at": "2025-07-03 19:33:22 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-971-from-zhangyuqin1998-use_quant_before_a2a",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "c0fc66aad819538a3ec4fa7555069117d9bde77f",
+        "created_at": "2025-07-03 23:00:30 +0800",
+        "author": "DesmonDay",
+        "committer": "web-flow",
+        "message": "Fix-estimate-training-max_steps-dtype",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "8b7ea121d8f7b2fd0b4befb2178afc71f2303949",
+        "created_at": "2025-07-03 19:24:51 +0800",
+        "author": "JoelEmbiiddddd",
+        "committer": "web-flow",
+        "message": "Fix-webui-eval-dataset_type-bug-970",
+        "files": [
+            {
+                "filename": "erniekit/webui/common.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "9428d3af10971aa282e483608e34c279ba9f9697",
+        "created_at": "2025-07-03 17:15:40 +0800",
+        "author": "LiYuRio",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-973-from-LiYuRio-dev_fp8_quant",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "fa9325b27f6d4d94e789bb2a5fa92093fcca399a",
+        "created_at": "2025-07-04 10:52:10 +0800",
+        "author": "Wennie396",
+        "committer": "web-flow",
+        "message": "add-ci_ce-for-pre-training-978",
+        "files": [
+            {
+                "filename": "examples/pre-training/scripts/ci_ce/train_4_nodes_ce.sh",
+                "status": "added",
+                "additions": 65,
+                "deletions": 0,
+                "changes": 65
+            },
+            {
+                "filename": "examples/pre-training/scripts/ci_ce/train_8_gpus_ci.sh",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "examples/pre-training/yamls/ci_ce/pretrain_4_nodes_ce.yaml",
+                "status": "added",
+                "additions": 122,
+                "deletions": 0,
+                "changes": 122
+            },
+            {
+                "filename": "examples/pre-training/yamls/ci_ce/pretrain_8_gpus_ci.yaml",
+                "status": "added",
+                "additions": 133,
+                "deletions": 0,
+                "changes": 133
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "3f32e671d81a9dfd82dbf70668400cc0ca6606c3",
+        "created_at": "2025-07-03 16:22:21 +0800",
+        "author": "DesmonDay",
+        "committer": "DesmonDay",
+        "message": "update-code",
+        "files": [
+            {
+                "filename": "erniekit/train/dpo/workflow.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "examples/post-training/dpo/dpo_train.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "examples/post-training/sft/train.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "7adaba93a311e0569125918fcb2c7b9dce925218",
+        "created_at": "2025-07-03 16:35:30 +0800",
+        "author": "DesmonDay",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-975-from-DesmonDay-develop",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "ba3c733904cce6a47100eefc948b3d517ff7877e",
+        "created_at": "2025-07-03 10:05:13 +0800",
+        "author": "zhangyuqin1998",
+        "committer": "zhangyuqin1998",
+        "message": "add-doc",
+        "files": [
+            {
+                "filename": "examples/pre-training/models/ernie/configuration.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "765d8d2af1d26cdd10c91d6963357efe6098d7a5",
+        "created_at": "2025-07-03 16:08:45 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "Update-README.md-974",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "cb4f9cb191b88d7698c05f11b013b88a103e8231",
+        "created_at": "2025-07-03 15:13:47 +0800",
+        "author": "LiYuRio",
+        "committer": "LiYuRio",
+        "message": "support-fp8-quant-parameter-without-bf16",
+        "files": [
+            {
+                "filename": "examples/pre-training/ernie/src/callbacks/__init__.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/callbacks/fp8_quant_weight_callback.py",
+                "status": "added",
+                "additions": 52,
+                "deletions": 0,
+                "changes": 52
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/trainers/pretraining_trainer.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/pre-training/models/ernie/configuration.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/pre-training/models/ernie/modeling_moe.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "examples/pre-training/models/ernie/modeling_pp.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "examples/pre-training/models/moe/moe_layer.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": "examples/pre-training/models/moe/token_dispatcher/fp8_utils.py",
+                "status": "modified",
+                "additions": 41,
+                "deletions": 10,
+                "changes": 51
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "03130588652d93e7db8a977d28e74487074453ae",
+        "created_at": "2025-07-02 14:09:20 +0800",
+        "author": "DesmonDay",
+        "committer": "DesmonDay",
+        "message": "fix-head_dim-config",
+        "files": [
+            {
+                "filename": "ernie/modeling.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            },
+            {
+                "filename": "ernie/modeling_moe.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "erniekit/train/dpo/workflow.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "erniekit/train/sft/workflow.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "examples/post-training/dpo/dpo_train.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "examples/post-training/sft/train.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "5dbbbd1a39eb8365b49e79bac3e035a336e87572",
+        "created_at": "2025-07-02 22:01:18 +0800",
+        "author": "zhangyuqin1998",
+        "committer": "zhangyuqin1998",
+        "message": "Support-use_quant_before_a2a",
+        "files": [
+            {
+                "filename": "examples/pre-training/models/ernie/configuration.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/pre-training/models/moe/moe_layer.py",
+                "status": "modified",
+                "additions": 244,
+                "deletions": 24,
+                "changes": 268
+            },
+            {
+                "filename": "examples/pre-training/models/moe/token_dispatcher/fp8_utils.py",
+                "status": "modified",
+                "additions": 51,
+                "deletions": 17,
+                "changes": 68
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "d1d18cf1fda6e602a69609a2ede6b1d8690b2999",
+        "created_at": "2025-07-02 16:57:35 +0800",
+        "author": "DesmonDay",
+        "committer": "DesmonDay",
+        "message": "add-torch-model-detect",
+        "files": [
+            {
+                "filename": "erniekit/train/dpo/workflow.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "erniekit/train/sft/workflow.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "examples/post-training/dpo/dpo_train.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "examples/post-training/sft/train.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "fe657d55069a02b4afc33420426181e0ade11e06",
+        "created_at": "2025-07-02 10:26:02 +0800",
+        "author": "Farewell-CK",
+        "committer": "web-flow",
+        "message": "Update-erniekit.md-951",
+        "files": [
+            {
+                "filename": "docs/erniekit.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "6477728861d8b7388a99219b0ab52a5ed87b9950",
+        "created_at": "2025-07-02 17:17:35 +0800",
+        "author": "wtmlon",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-965-from-DesmonDay-fix_dev",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "281d5e5a120c9448df6444021019ee7669a4b54e",
+        "created_at": "2025-07-02 10:40:45 +0800",
+        "author": "Jiang-Jia-Jun",
+        "committer": "web-flow",
+        "message": "Add-Deployment-Guidance-to-README.md-962",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "b160761b8b0e92384ca618a05a75f6c2b93650df",
+        "created_at": "2025-07-01 20:14:59 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-961-from-wtmlon-subbatch_pp_fix",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "6954d2c0e007e9060193f388cd9a047396915fb7",
+        "created_at": "2025-07-01 19:58:22 +0800",
+        "author": "wtmlon",
+        "committer": "wtmlon",
+        "message": "add-comment",
+        "files": [
+            {
+                "filename": "ernie/modeling.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "cf02dff5898861066a3704e43605152d8cff01aa",
+        "created_at": "2025-07-01 17:41:15 +0800",
+        "author": "wtmlon",
+        "committer": "wtmlon",
+        "message": "subbatch-pp-fix",
+        "files": [
+            {
+                "filename": "ernie/modeling.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 6,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "e9934a0b17325034f240c96c21bba65122275509",
+        "created_at": "2025-07-01 17:52:45 +0800",
+        "author": "wtmlon",
+        "committer": "wtmlon",
+        "message": "fix-sft",
+        "files": [
+            {
+                "filename": "ernie/modeling.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "b6380df7fa324d7bd90fd5d1ff3783b7003d8618",
+        "created_at": "2025-07-01 17:45:39 +0800",
+        "author": "aigcliu",
+        "committer": "web-flow",
+        "message": "Add-Community-Info-960",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "e1a034889dc3ea862a7307179584f749ff05f3fc",
+        "created_at": "2025-07-01 15:41:12 +0800",
+        "author": "wtmlon",
+        "committer": "web-flow",
+        "message": "Support-0.3B-128K-context.-946",
+        "files": [
+            {
+                "filename": "docs/erniekit.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "ernie/loss/dpo.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 11,
+                "changes": 14
+            },
+            {
+                "filename": "ernie/modeling_moe.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 6,
+                "changes": 15
+            },
+            {
+                "filename": "erniekit/train/dpo/workflow.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 6,
+                "changes": 6
+            },
+            {
+                "filename": "erniekit/train/sft/trainer.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/dpo/run_dpo_128k.yaml",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/sft/run_sft_128k.yaml",
+                "status": "added",
+                "additions": 83,
+                "deletions": 0,
+                "changes": 83
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/sft/run_sft_wint8mix_lora_32k.yaml",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/sft/run_sft_wint8mix_lora_8k.yaml",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "examples/post-training/dpo/dpo_train.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 5,
+                "changes": 5
+            },
+            {
+                "filename": "examples/post-training/sft/trainer.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/dpo/run_dpo_128k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/sft/run_sft_128k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/sft/run_sft_wint8mix_lora_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/sft/run_sft_wint8mix_lora_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "4fa6d8b18fec3ab0c72a6af82b79fb171f222d13",
+        "created_at": "2025-07-01 14:23:12 +0800",
+        "author": "wtmlon",
+        "committer": "web-flow",
+        "message": "Update-datasets.md-957",
+        "files": [
+            {
+                "filename": "docs/datasets.md",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 1,
+                "changes": 23
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "d32ea851442cc079431e1c5cacc055827e424190",
+        "created_at": "2025-07-01 17:14:28 +0800",
+        "author": "wtmlon",
+        "committer": "web-flow",
+        "message": "Add-examples-of-multi-turn-dialogue-in-erniekit-dataset-format-959",
+        "files": [
+            {
+                "filename": "docs/datasets.md",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "f3e4a0e19fa3803e3c2d00e06b4ca1dae96e5a18",
+        "created_at": "2025-07-01 10:57:44 +0800",
+        "author": "pkhk-1",
+        "committer": "web-flow",
+        "message": "Fix-tools-scripts-945",
+        "files": [
+            {
+                "filename": "tools/inference/scripts/infer.sh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "tools/inference/scripts/infer_fp8.sh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "tools/inference/scripts/infer_vl.sh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "tools/paddle2torch/scripts/export_dense.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "tools/paddle2torch/scripts/export_moe.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "518a0a26af823c0d7104fa9c50b605f3a238ea38",
+        "created_at": "2025-07-01 14:21:15 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Update-readme-955",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "d5e642d4e0121e1c81a48078a53c61bd5d41e294",
+        "created_at": "2025-07-01 11:03:27 +0800",
+        "author": "dynamicheart",
+        "committer": "web-flow",
+        "message": "XPU-update-docker-images-in-doc-950",
+        "files": [
+            {
+                "filename": "docs/devices/README_XPU.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "29fd1c1541a22a5b4e85e869b7ad4adf49313c52",
+        "created_at": "2025-06-30 14:41:53 +0800",
+        "author": "aigcliu",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "82a6116fa1e5d31e465759773af3be224faaf9ea",
+        "created_at": "2025-06-30 14:20:27 +0800",
+        "author": "ZeyuChen",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 6,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "0ed146ab3d5532dac6173520044b4e621ae397b3",
+        "created_at": "2025-06-30 13:03:44 +0800",
+        "author": "ZeyuChen",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "65e50e1992b9c20ce7f508e57a6e45949111e1f1",
+        "created_at": "2025-06-30 13:34:05 +0800",
+        "author": "wtmlon",
+        "committer": "web-flow",
+        "message": "remove-dead-link.-943",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            },
+            {
+                "filename": "docs/erniekit.md",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "1e0c9fa775195e50f6793fffd8c1dff242f7544d",
+        "created_at": "2025-06-30 11:37:22 +0800",
+        "author": "DesmonDay",
+        "committer": "web-flow",
+        "message": "Update-vl-infer-readme",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "172cfe0b49198148590ee1e77287753c76e41833",
+        "created_at": "2025-06-30 12:08:46 +0800",
+        "author": "aigcliu",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "f19a151dbe5d1b6c588be185a28d9c823f29ae74",
+        "created_at": "2025-06-30 12:13:33 +0800",
+        "author": "aigcliu",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "acc2bfc1c38e7e37090f63ff418f1500f5b808e3",
+        "created_at": "2025-06-30 10:31:41 +0800",
+        "author": "aigcliu",
+        "committer": "web-flow",
+        "message": "Fix-doc-typo",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "2d7a31efbe36adf7653391e2fcb02e107c2cab1f",
+        "created_at": "2025-06-30 11:35:37 +0800",
+        "author": "pkhk-1",
+        "committer": "web-flow",
+        "message": "Update-vl-infer-README.md",
+        "files": [
+            {
+                "filename": "tools/inference/README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "611d3756ea1f2f45576d5b9ced656c8a21a7bbcb",
+        "created_at": "2025-06-30 10:52:36 +0800",
+        "author": "nepeplwu",
+        "committer": "web-flow",
+        "message": "Update-benchmark-image-940",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "ae987a54d8f57f387dd9a51fa4148733b01f499e",
+        "created_at": "2025-06-30 09:30:41 +0800",
+        "author": "nepeplwu",
+        "committer": "web-flow",
+        "message": "Fix-ERNIEKit-docs-typo-937",
+        "files": [
+            {
+                "filename": "docs/erniekit.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "docs/training_eval_args.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "c4d32d4d351018fb2abbf693d9467013028d39da",
+        "created_at": "2025-06-30 09:12:43 +0800",
+        "author": "aigcliu",
+        "committer": "web-flow",
+        "message": "Update-blog-link",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "2579fef6741387f03b19eb8d065996a9e9494b75",
+        "created_at": "2025-06-30 09:05:26 +0800",
+        "author": "FeixLiu",
+        "committer": "web-flow",
+        "message": "Fix-pre-training-doc-typo-932",
+        "files": [
+            {
+                "filename": "examples/pre-training/README.md",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            },
+            {
+                "filename": "examples/pre-training/README_zh.md",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "074d4f224b8b2484b52e67d54efee9c39572a3fc",
+        "created_at": "2025-06-30 09:04:05 +0800",
+        "author": "nepeplwu",
+        "committer": "web-flow",
+        "message": "Update-blog-link",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "b6068d967b3cfe96f24cfc2c8cab9f63dfc84776",
+        "created_at": "2025-06-30 09:00:47 +0800",
+        "author": "nepeplwu",
+        "committer": "web-flow",
+        "message": "Update-webui-title-933",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "a95ef9dc7ef56c8546ca2f171e8bbd1f0ee6e0fa",
+        "created_at": "2025-06-30 08:36:53 +0800",
+        "author": "nepeplwu",
+        "committer": "web-flow",
+        "message": "Update-ERNIE-4.5-Introduction-930",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "1f0849ed820776448580f3150546f7a9b0e7a68e",
+        "created_at": "2025-06-29 20:51:55 +0800",
+        "author": "nepeplwu",
+        "committer": "nepeplwu",
+        "message": "Initial-commit",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/ERNIE",
+        "sha": "cbccd44256eb11e32ab3646507dc869b7b6b1dd8",
+        "created_at": "2025-06-30 08:17:47 +0800",
+        "author": "nepeplwu",
+        "committer": "web-flow",
+        "message": "Add-ERNIE-4.5-Toolkit",
+        "files": [
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 203,
+                "deletions": 0,
+                "changes": 203
+            },
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 276,
+                "deletions": 0,
+                "changes": 276
+            },
+            {
+                "filename": "cookbook/README.md",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "cookbook/advanced_search_demo.py",
+                "status": "added",
+                "additions": 583,
+                "deletions": 0,
+                "changes": 583
+            },
+            {
+                "filename": "cookbook/assets/dpo_download_dataset_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_merge_lora_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_set_lora_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_set_path_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_train_params_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_trainset_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/dpo_validset_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/logo.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_21b_distributed_params_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_download_dataset_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_merge_lora_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_set_lora_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_set_path_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_train_params_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_trainset_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_validset_en.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/sft_visualdl_loss.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/assets/yiyan_logo.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "cookbook/bot_requests.py",
+                "status": "added",
+                "additions": 375,
+                "deletions": 0,
+                "changes": 375
+            },
+            {
+                "filename": "cookbook/conversation_demo.py",
+                "status": "added",
+                "additions": 487,
+                "deletions": 0,
+                "changes": 487
+            },
+            {
+                "filename": "cookbook/crawl_utils.py",
+                "status": "added",
+                "additions": 87,
+                "deletions": 0,
+                "changes": 87
+            },
+            {
+                "filename": "cookbook/data/coffee.txt",
+                "status": "added",
+                "additions": 63,
+                "deletions": 0,
+                "changes": 63
+            },
+            {
+                "filename": "cookbook/knowledge_retrieval_demo.py",
+                "status": "added",
+                "additions": 905,
+                "deletions": 0,
+                "changes": 905
+            },
+            {
+                "filename": "cookbook/notebook/advanced_search_demo_en.ipynb",
+                "status": "added",
+                "additions": 1640,
+                "deletions": 0,
+                "changes": 1640
+            },
+            {
+                "filename": "cookbook/notebook/conversation_demo_en.ipynb",
+                "status": "added",
+                "additions": 455,
+                "deletions": 0,
+                "changes": 455
+            },
+            {
+                "filename": "cookbook/notebook/document_translation_tutorial_en.ipynb",
+                "status": "added",
+                "additions": 278,
+                "deletions": 0,
+                "changes": 278
+            },
+            {
+                "filename": "cookbook/notebook/dpo_tutorial_en.ipynb",
+                "status": "added",
+                "additions": 664,
+                "deletions": 0,
+                "changes": 664
+            },
+            {
+                "filename": "cookbook/notebook/key_information_extraction_tutorial_en.ipynb",
+                "status": "added",
+                "additions": 779,
+                "deletions": 0,
+                "changes": 779
+            },
+            {
+                "filename": "cookbook/notebook/knowledge_retrieval_demo_en.ipynb",
+                "status": "added",
+                "additions": 867,
+                "deletions": 0,
+                "changes": 867
+            },
+            {
+                "filename": "cookbook/notebook/sft_tutorial_en.ipynb",
+                "status": "added",
+                "additions": 2002,
+                "deletions": 0,
+                "changes": 2002
+            },
+            {
+                "filename": "cookbook/notebook/simple_ernie_bot_demo_en.ipynb",
+                "status": "added",
+                "additions": 1847,
+                "deletions": 0,
+                "changes": 1847
+            },
+            {
+                "filename": "cookbook/notebook/text_recognition_tutorial_en.ipynb",
+                "status": "added",
+                "additions": 632,
+                "deletions": 0,
+                "changes": 632
+            },
+            {
+                "filename": "cookbook/notebook/web_search_demo_en.ipynb",
+                "status": "added",
+                "additions": 1534,
+                "deletions": 0,
+                "changes": 1534
+            },
+            {
+                "filename": "cookbook/simple_ernie_bot_demo.py",
+                "status": "added",
+                "additions": 826,
+                "deletions": 0,
+                "changes": 826
+            },
+            {
+                "filename": "cookbook/web_search_demo.py",
+                "status": "added",
+                "additions": 526,
+                "deletions": 0,
+                "changes": 526
+            },
+            {
+                "filename": "data_processor/__init__.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "data_processor/config_processor.yaml",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "data_processor/image_preprocessor/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "data_processor/image_preprocessor/get_image_preprocessor.py",
+                "status": "added",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": "data_processor/image_preprocessor/image_preprocessor_adaptive.py",
+                "status": "added",
+                "additions": 558,
+                "deletions": 0,
+                "changes": 558
+            },
+            {
+                "filename": "data_processor/process.py",
+                "status": "added",
+                "additions": 395,
+                "deletions": 0,
+                "changes": 395
+            },
+            {
+                "filename": "data_processor/process_video.py",
+                "status": "added",
+                "additions": 195,
+                "deletions": 0,
+                "changes": 195
+            },
+            {
+                "filename": "data_processor/steps/__init__.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "data_processor/steps/array_collation/__init__.py",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "data_processor/steps/array_collation/args.py",
+                "status": "added",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            },
+            {
+                "filename": "data_processor/steps/array_collation/fancy_print.py",
+                "status": "added",
+                "additions": 129,
+                "deletions": 0,
+                "changes": 129
+            },
+            {
+                "filename": "data_processor/steps/array_collation/processor.py",
+                "status": "added",
+                "additions": 257,
+                "deletions": 0,
+                "changes": 257
+            },
+            {
+                "filename": "data_processor/steps/coarse_processing/__init__.py",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "data_processor/steps/coarse_processing/args.py",
+                "status": "added",
+                "additions": 40,
+                "deletions": 0,
+                "changes": 40
+            },
+            {
+                "filename": "data_processor/steps/coarse_processing/data_process/__init__.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "data_processor/steps/coarse_processing/data_process/process_identity.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "data_processor/steps/coarse_processing/data_process/process_video.py",
+                "status": "added",
+                "additions": 372,
+                "deletions": 0,
+                "changes": 372
+            },
+            {
+                "filename": "data_processor/steps/coarse_processing/processor.py",
+                "status": "added",
+                "additions": 48,
+                "deletions": 0,
+                "changes": 48
+            },
+            {
+                "filename": "data_processor/steps/end2end_processing/__init__.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "data_processor/steps/end2end_processing/args.py",
+                "status": "added",
+                "additions": 49,
+                "deletions": 0,
+                "changes": 49
+            },
+            {
+                "filename": "data_processor/steps/end2end_processing/processor.py",
+                "status": "added",
+                "additions": 107,
+                "deletions": 0,
+                "changes": 107
+            },
+            {
+                "filename": "data_processor/steps/image_modification/__init__.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "data_processor/steps/image_modification/args.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "data_processor/steps/image_modification/internlmxc2d5_font.ttf",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "data_processor/steps/image_modification/processor.py",
+                "status": "added",
+                "additions": 806,
+                "deletions": 0,
+                "changes": 806
+            },
+            {
+                "filename": "data_processor/steps/image_modification/render_timestamp.py",
+                "status": "added",
+                "additions": 98,
+                "deletions": 0,
+                "changes": 98
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/__init__.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/args.py",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/chat_template_utils.py",
+                "status": "added",
+                "additions": 302,
+                "deletions": 0,
+                "changes": 302
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/conf/config_transform.yaml",
+                "status": "added",
+                "additions": 132,
+                "deletions": 0,
+                "changes": 132
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_augment/__init__.py",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_augment/augment.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_augment/augment_image.py",
+                "status": "added",
+                "additions": 55,
+                "deletions": 0,
+                "changes": 55
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_crop/__init__.py",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_crop/crop.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_crop/crop_adaptive.py",
+                "status": "added",
+                "additions": 211,
+                "deletions": 0,
+                "changes": 211
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_crop/crop_image.py",
+                "status": "added",
+                "additions": 460,
+                "deletions": 0,
+                "changes": 460
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_crop/crop_video.py",
+                "status": "added",
+                "additions": 409,
+                "deletions": 0,
+                "changes": 409
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_process/__init__.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_process/process.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_process/process_interleave.py",
+                "status": "added",
+                "additions": 166,
+                "deletions": 0,
+                "changes": 166
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_process/process_loc.py",
+                "status": "added",
+                "additions": 182,
+                "deletions": 0,
+                "changes": 182
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_process/process_omini.py",
+                "status": "added",
+                "additions": 466,
+                "deletions": 0,
+                "changes": 466
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_process/process_video.py",
+                "status": "added",
+                "additions": 729,
+                "deletions": 0,
+                "changes": 729
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/data_utils.py",
+                "status": "added",
+                "additions": 138,
+                "deletions": 0,
+                "changes": 138
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/example_to_feature.py",
+                "status": "added",
+                "additions": 1357,
+                "deletions": 0,
+                "changes": 1357
+            },
+            {
+                "filename": "data_processor/steps/input_ids_massaging/processor.py",
+                "status": "added",
+                "additions": 265,
+                "deletions": 0,
+                "changes": 265
+            },
+            {
+                "filename": "data_processor/steps/pseudo_multiround_packing/__init__.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "data_processor/steps/pseudo_multiround_packing/args.py",
+                "status": "added",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": "data_processor/steps/pseudo_multiround_packing/processor.py",
+                "status": "added",
+                "additions": 140,
+                "deletions": 0,
+                "changes": 140
+            },
+            {
+                "filename": "data_processor/steps/utterance_processing/__init__.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "data_processor/steps/utterance_processing/args.py",
+                "status": "added",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            },
+            {
+                "filename": "data_processor/steps/utterance_processing/processor.py",
+                "status": "added",
+                "additions": 470,
+                "deletions": 0,
+                "changes": 470
+            },
+            {
+                "filename": "data_processor/utils/Roboto-Regular.ttf",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "data_processor/utils/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "data_processor/utils/argparser.py",
+                "status": "added",
+                "additions": 451,
+                "deletions": 0,
+                "changes": 451
+            },
+            {
+                "filename": "data_processor/utils/constant.py",
+                "status": "added",
+                "additions": 70,
+                "deletions": 0,
+                "changes": 70
+            },
+            {
+                "filename": "data_processor/utils/format_utils.py",
+                "status": "added",
+                "additions": 195,
+                "deletions": 0,
+                "changes": 195
+            },
+            {
+                "filename": "data_processor/utils/image_enhance.py",
+                "status": "added",
+                "additions": 876,
+                "deletions": 0,
+                "changes": 876
+            },
+            {
+                "filename": "data_processor/utils/image_utils.py",
+                "status": "added",
+                "additions": 114,
+                "deletions": 0,
+                "changes": 114
+            },
+            {
+                "filename": "data_processor/utils/io_utils.py",
+                "status": "added",
+                "additions": 264,
+                "deletions": 0,
+                "changes": 264
+            },
+            {
+                "filename": "data_processor/utils/logger_utils.py",
+                "status": "added",
+                "additions": 126,
+                "deletions": 0,
+                "changes": 126
+            },
+            {
+                "filename": "data_processor/utils/processor_base.py",
+                "status": "added",
+                "additions": 82,
+                "deletions": 0,
+                "changes": 82
+            },
+            {
+                "filename": "data_processor/utils/random_context.py",
+                "status": "added",
+                "additions": 44,
+                "deletions": 0,
+                "changes": 44
+            },
+            {
+                "filename": "data_processor/utils/relief.py",
+                "status": "added",
+                "additions": 82,
+                "deletions": 0,
+                "changes": 82
+            },
+            {
+                "filename": "data_processor/utils/render_timestamp.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "data_processor/utils/schema_clean_up.py",
+                "status": "added",
+                "additions": 394,
+                "deletions": 0,
+                "changes": 394
+            },
+            {
+                "filename": "data_processor/utils/video_utils.py",
+                "status": "added",
+                "additions": 113,
+                "deletions": 0,
+                "changes": 113
+            },
+            {
+                "filename": "docs/chat_args.md",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "docs/cli_webui_usage.md",
+                "status": "added",
+                "additions": 307,
+                "deletions": 0,
+                "changes": 307
+            },
+            {
+                "filename": "docs/datasets.md",
+                "status": "added",
+                "additions": 124,
+                "deletions": 0,
+                "changes": 124
+            },
+            {
+                "filename": "docs/devices/README_NPU.md",
+                "status": "added",
+                "additions": 315,
+                "deletions": 0,
+                "changes": 315
+            },
+            {
+                "filename": "docs/devices/README_XPU.md",
+                "status": "added",
+                "additions": 341,
+                "deletions": 0,
+                "changes": 341
+            },
+            {
+                "filename": "docs/erniekit.md",
+                "status": "added",
+                "additions": 257,
+                "deletions": 0,
+                "changes": 257
+            },
+            {
+                "filename": "docs/export_args.md",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "docs/fp8_qat.md",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "docs/training_eval_args.md",
+                "status": "added",
+                "additions": 187,
+                "deletions": 0,
+                "changes": 187
+            },
+            {
+                "filename": "docs/unified_checkpoint.md",
+                "status": "added",
+                "additions": 62,
+                "deletions": 0,
+                "changes": 62
+            },
+            {
+                "filename": "docs/wint8mix_lora.md",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "ernie/callbacks/__init__.py",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "ernie/callbacks/layerwise_dropout_callback.py",
+                "status": "added",
+                "additions": 103,
+                "deletions": 0,
+                "changes": 103
+            },
+            {
+                "filename": "ernie/callbacks/sp_grad_sync_callback.py",
+                "status": "added",
+                "additions": 74,
+                "deletions": 0,
+                "changes": 74
+            },
+            {
+                "filename": "ernie/comm_utils.py",
+                "status": "added",
+                "additions": 460,
+                "deletions": 0,
+                "changes": 460
+            },
+            {
+                "filename": "ernie/configuration.py",
+                "status": "added",
+                "additions": 599,
+                "deletions": 0,
+                "changes": 599
+            },
+            {
+                "filename": "ernie/dataset/base.py",
+                "status": "added",
+                "additions": 249,
+                "deletions": 0,
+                "changes": 249
+            },
+            {
+                "filename": "ernie/dataset/data_utils.py",
+                "status": "added",
+                "additions": 343,
+                "deletions": 0,
+                "changes": 343
+            },
+            {
+                "filename": "ernie/dataset/dpo.py",
+                "status": "added",
+                "additions": 766,
+                "deletions": 0,
+                "changes": 766
+            },
+            {
+                "filename": "ernie/dataset/finetuning.py",
+                "status": "added",
+                "additions": 637,
+                "deletions": 0,
+                "changes": 637
+            },
+            {
+                "filename": "ernie/dataset/hf/data_info.json",
+                "status": "added",
+                "additions": 309,
+                "deletions": 0,
+                "changes": 309
+            },
+            {
+                "filename": "ernie/dataset/hf/errors.py",
+                "status": "added",
+                "additions": 74,
+                "deletions": 0,
+                "changes": 74
+            },
+            {
+                "filename": "ernie/dataset/hf/hf_parser.py",
+                "status": "added",
+                "additions": 440,
+                "deletions": 0,
+                "changes": 440
+            },
+            {
+                "filename": "ernie/dataset/hf/parse_config.py",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "ernie/dataset/pvp.py",
+                "status": "added",
+                "additions": 473,
+                "deletions": 0,
+                "changes": 473
+            },
+            {
+                "filename": "ernie/dfnrope/__init__.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "ernie/dfnrope/activation.py",
+                "status": "added",
+                "additions": 245,
+                "deletions": 0,
+                "changes": 245
+            },
+            {
+                "filename": "ernie/dfnrope/configuration.py",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "ernie/dfnrope/modeling.py",
+                "status": "added",
+                "additions": 512,
+                "deletions": 0,
+                "changes": 512
+            },
+            {
+                "filename": "ernie/dfnrope/modeling_pp.py",
+                "status": "added",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            },
+            {
+                "filename": "ernie/distributed/__init__.py",
+                "status": "added",
+                "additions": 133,
+                "deletions": 0,
+                "changes": 133
+            },
+            {
+                "filename": "ernie/distributed/common_dist_utils.py",
+                "status": "added",
+                "additions": 688,
+                "deletions": 0,
+                "changes": 688
+            },
+            {
+                "filename": "ernie/distributed/xpu_dist_utils.py",
+                "status": "added",
+                "additions": 52,
+                "deletions": 0,
+                "changes": 52
+            },
+            {
+                "filename": "ernie/fusion_ops/__init__.py",
+                "status": "added",
+                "additions": 82,
+                "deletions": 0,
+                "changes": 82
+            },
+            {
+                "filename": "ernie/fusion_ops/common_fusion_ops.py",
+                "status": "added",
+                "additions": 164,
+                "deletions": 0,
+                "changes": 164
+            },
+            {
+                "filename": "ernie/fusion_ops/npu_fusion_ops.py",
+                "status": "added",
+                "additions": 86,
+                "deletions": 0,
+                "changes": 86
+            },
+            {
+                "filename": "ernie/longcontext_ops.py",
+                "status": "added",
+                "additions": 408,
+                "deletions": 0,
+                "changes": 408
+            },
+            {
+                "filename": "ernie/loss/dpo.py",
+                "status": "added",
+                "additions": 330,
+                "deletions": 0,
+                "changes": 330
+            },
+            {
+                "filename": "ernie/modeling.py",
+                "status": "added",
+                "additions": 1555,
+                "deletions": 0,
+                "changes": 1555
+            },
+            {
+                "filename": "ernie/modeling_moe.py",
+                "status": "added",
+                "additions": 1746,
+                "deletions": 0,
+                "changes": 1746
+            },
+            {
+                "filename": "ernie/modeling_moe_pp.py",
+                "status": "added",
+                "additions": 1030,
+                "deletions": 0,
+                "changes": 1030
+            },
+            {
+                "filename": "ernie/modeling_moe_vl.py",
+                "status": "added",
+                "additions": 1278,
+                "deletions": 0,
+                "changes": 1278
+            },
+            {
+                "filename": "ernie/moe/distributed/data_parallel.py",
+                "status": "added",
+                "additions": 87,
+                "deletions": 0,
+                "changes": 87
+            },
+            {
+                "filename": "ernie/moe/distributed/hybrid_parallel_optimizer.py",
+                "status": "added",
+                "additions": 451,
+                "deletions": 0,
+                "changes": 451
+            },
+            {
+                "filename": "ernie/moe/moe_all_gather_layer.py",
+                "status": "added",
+                "additions": 1182,
+                "deletions": 0,
+                "changes": 1182
+            },
+            {
+                "filename": "ernie/moe/moe_clip.py",
+                "status": "added",
+                "additions": 261,
+                "deletions": 0,
+                "changes": 261
+            },
+            {
+                "filename": "ernie/moe/moe_layer.py",
+                "status": "added",
+                "additions": 951,
+                "deletions": 0,
+                "changes": 951
+            },
+            {
+                "filename": "ernie/moe/topk_gate.py",
+                "status": "added",
+                "additions": 576,
+                "deletions": 0,
+                "changes": 576
+            },
+            {
+                "filename": "ernie/refined_recompute/utils.py",
+                "status": "added",
+                "additions": 325,
+                "deletions": 0,
+                "changes": 325
+            },
+            {
+                "filename": "ernie/sequence_parallel_utils.py",
+                "status": "added",
+                "additions": 330,
+                "deletions": 0,
+                "changes": 330
+            },
+            {
+                "filename": "ernie/tokenizer.py",
+                "status": "added",
+                "additions": 397,
+                "deletions": 0,
+                "changes": 397
+            },
+            {
+                "filename": "ernie/tokenizer_vl.py",
+                "status": "added",
+                "additions": 73,
+                "deletions": 0,
+                "changes": 73
+            },
+            {
+                "filename": "ernie/utils/common_utils.py",
+                "status": "added",
+                "additions": 287,
+                "deletions": 0,
+                "changes": 287
+            },
+            {
+                "filename": "ernie/utils/mm_data_utils.py",
+                "status": "added",
+                "additions": 51,
+                "deletions": 0,
+                "changes": 51
+            },
+            {
+                "filename": "ernie/utils/moe_utils.py",
+                "status": "added",
+                "additions": 51,
+                "deletions": 0,
+                "changes": 51
+            },
+            {
+                "filename": "ernie/utils/peft_utils.py",
+                "status": "added",
+                "additions": 71,
+                "deletions": 0,
+                "changes": 71
+            },
+            {
+                "filename": "ernie/utils/seed_utils.py",
+                "status": "added",
+                "additions": 102,
+                "deletions": 0,
+                "changes": 102
+            },
+            {
+                "filename": "erniekit/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "erniekit/chat/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "erniekit/chat/chat.py",
+                "status": "added",
+                "additions": 83,
+                "deletions": 0,
+                "changes": 83
+            },
+            {
+                "filename": "erniekit/chat/server.py",
+                "status": "added",
+                "additions": 80,
+                "deletions": 0,
+                "changes": 80
+            },
+            {
+                "filename": "erniekit/cli.py",
+                "status": "added",
+                "additions": 164,
+                "deletions": 0,
+                "changes": 164
+            },
+            {
+                "filename": "erniekit/eval/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "erniekit/eval/eval.py",
+                "status": "added",
+                "additions": 373,
+                "deletions": 0,
+                "changes": 373
+            },
+            {
+                "filename": "erniekit/export/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "erniekit/export/export.py",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "erniekit/export/split.py",
+                "status": "added",
+                "additions": 136,
+                "deletions": 0,
+                "changes": 136
+            },
+            {
+                "filename": "erniekit/hparams/__init__.py",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "erniekit/hparams/data_args.py",
+                "status": "added",
+                "additions": 112,
+                "deletions": 0,
+                "changes": 112
+            },
+            {
+                "filename": "erniekit/hparams/export_args.py",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": "erniekit/hparams/finetuning_args.py",
+                "status": "added",
+                "additions": 207,
+                "deletions": 0,
+                "changes": 207
+            },
+            {
+                "filename": "erniekit/hparams/generating_args.py",
+                "status": "added",
+                "additions": 87,
+                "deletions": 0,
+                "changes": 87
+            },
+            {
+                "filename": "erniekit/hparams/model_args.py",
+                "status": "added",
+                "additions": 219,
+                "deletions": 0,
+                "changes": 219
+            },
+            {
+                "filename": "erniekit/hparams/parser.py",
+                "status": "added",
+                "additions": 203,
+                "deletions": 0,
+                "changes": 203
+            },
+            {
+                "filename": "erniekit/hparams/server_args.py",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "erniekit/launcher.py",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "erniekit/train/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "erniekit/train/dpo/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "erniekit/train/dpo/dpo_estimate_training.py",
+                "status": "added",
+                "additions": 188,
+                "deletions": 0,
+                "changes": 188
+            },
+            {
+                "filename": "erniekit/train/dpo/dpo_utils.py",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "erniekit/train/dpo/trainer.py",
+                "status": "added",
+                "additions": 172,
+                "deletions": 0,
+                "changes": 172
+            },
+            {
+                "filename": "erniekit/train/dpo/workflow.py",
+                "status": "added",
+                "additions": 484,
+                "deletions": 0,
+                "changes": 484
+            },
+            {
+                "filename": "erniekit/train/sft/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "erniekit/train/sft/trainer.py",
+                "status": "added",
+                "additions": 738,
+                "deletions": 0,
+                "changes": 738
+            },
+            {
+                "filename": "erniekit/train/sft/workflow.py",
+                "status": "added",
+                "additions": 514,
+                "deletions": 0,
+                "changes": 514
+            },
+            {
+                "filename": "erniekit/train/tuner.py",
+                "status": "added",
+                "additions": 65,
+                "deletions": 0,
+                "changes": 65
+            },
+            {
+                "filename": "erniekit/utils/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "erniekit/utils/env.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "erniekit/utils/process.py",
+                "status": "added",
+                "additions": 57,
+                "deletions": 0,
+                "changes": 57
+            },
+            {
+                "filename": "erniekit/webui/__init__.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "erniekit/webui/alert.py",
+                "status": "added",
+                "additions": 196,
+                "deletions": 0,
+                "changes": 196
+            },
+            {
+                "filename": "erniekit/webui/chatbot.py",
+                "status": "added",
+                "additions": 293,
+                "deletions": 0,
+                "changes": 293
+            },
+            {
+                "filename": "erniekit/webui/common.py",
+                "status": "added",
+                "additions": 829,
+                "deletions": 0,
+                "changes": 829
+            },
+            {
+                "filename": "erniekit/webui/config/dataset/alpaca_en_demo.json",
+                "status": "added",
+                "additions": 114,
+                "deletions": 0,
+                "changes": 114
+            },
+            {
+                "filename": "erniekit/webui/config/dataset/alpaca_zh_demo.json",
+                "status": "added",
+                "additions": 1402,
+                "deletions": 0,
+                "changes": 1402
+            },
+            {
+                "filename": "erniekit/webui/config/dataset/identity.json",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "erniekit/webui/config/dataset_info.json",
+                "status": "added",
+                "additions": 163,
+                "deletions": 0,
+                "changes": 163
+            },
+            {
+                "filename": "erniekit/webui/config/default.yaml",
+                "status": "added",
+                "additions": 147,
+                "deletions": 0,
+                "changes": 147
+            },
+            {
+                "filename": "erniekit/webui/config/execute/chat.yaml",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "erniekit/webui/config/execute/eval.yaml",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "erniekit/webui/config/execute/export.yaml",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "erniekit/webui/config/execute/train_dpo.yaml",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "erniekit/webui/config/execute/train_sft.yaml",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "erniekit/webui/config/paddle.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "erniekit/webui/control.py",
+                "status": "added",
+                "additions": 1704,
+                "deletions": 0,
+                "changes": 1704
+            },
+            {
+                "filename": "erniekit/webui/lang.py",
+                "status": "added",
+                "additions": 906,
+                "deletions": 0,
+                "changes": 906
+            },
+            {
+                "filename": "erniekit/webui/manager.py",
+                "status": "added",
+                "additions": 494,
+                "deletions": 0,
+                "changes": 494
+            },
+            {
+                "filename": "erniekit/webui/runner.py",
+                "status": "added",
+                "additions": 311,
+                "deletions": 0,
+                "changes": 311
+            },
+            {
+                "filename": "erniekit/webui/view/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "erniekit/webui/view/basic.py",
+                "status": "added",
+                "additions": 238,
+                "deletions": 0,
+                "changes": 238
+            },
+            {
+                "filename": "erniekit/webui/view/chat.py",
+                "status": "added",
+                "additions": 155,
+                "deletions": 0,
+                "changes": 155
+            },
+            {
+                "filename": "erniekit/webui/view/eval.py",
+                "status": "added",
+                "additions": 202,
+                "deletions": 0,
+                "changes": 202
+            },
+            {
+                "filename": "erniekit/webui/view/export.py",
+                "status": "added",
+                "additions": 83,
+                "deletions": 0,
+                "changes": 83
+            },
+            {
+                "filename": "erniekit/webui/view/style.py",
+                "status": "added",
+                "additions": 172,
+                "deletions": 0,
+                "changes": 172
+            },
+            {
+                "filename": "erniekit/webui/view/train.py",
+                "status": "added",
+                "additions": 593,
+                "deletions": 0,
+                "changes": 593
+            },
+            {
+                "filename": "erniekit/webui/webui.py",
+                "status": "added",
+                "additions": 65,
+                "deletions": 0,
+                "changes": 65
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/dpo/run_dpo_32k.yaml",
+                "status": "added",
+                "additions": 89,
+                "deletions": 0,
+                "changes": 89
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/dpo/run_dpo_8k.yaml",
+                "status": "added",
+                "additions": 89,
+                "deletions": 0,
+                "changes": 89
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/dpo/run_dpo_lora_32k.yaml",
+                "status": "added",
+                "additions": 93,
+                "deletions": 0,
+                "changes": 93
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/dpo/run_dpo_lora_8k.yaml",
+                "status": "added",
+                "additions": 93,
+                "deletions": 0,
+                "changes": 93
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/run_chat.yaml",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/run_eval.yaml",
+                "status": "added",
+                "additions": 52,
+                "deletions": 0,
+                "changes": 52
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/run_export.yaml",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/sft/run_sft_32k.yaml",
+                "status": "added",
+                "additions": 83,
+                "deletions": 0,
+                "changes": 83
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/sft/run_sft_8k.yaml",
+                "status": "added",
+                "additions": 83,
+                "deletions": 0,
+                "changes": 83
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/sft/run_sft_lora_32k.yaml",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-0.3B/sft/run_sft_lora_8k.yaml",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/dpo/run_dpo_128k.yaml",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/dpo/run_dpo_32k.yaml",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/dpo/run_dpo_8k.yaml",
+                "status": "added",
+                "additions": 90,
+                "deletions": 0,
+                "changes": 90
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/dpo/run_dpo_lora_128k.yaml",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/dpo/run_dpo_lora_32k.yaml",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/dpo/run_dpo_lora_8k.yaml",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/dpo/run_dpo_wint8mix_lora_128k.yaml",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/dpo/run_dpo_wint8mix_lora_32k.yaml",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/dpo/run_dpo_wint8mix_lora_8k.yaml",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/run_chat.yaml",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/run_eval.yaml",
+                "status": "added",
+                "additions": 52,
+                "deletions": 0,
+                "changes": 52
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/run_export.yaml",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/sft/run_sft_128k.yaml",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/sft/run_sft_32k.yaml",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/sft/run_sft_8k.yaml",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/sft/run_sft_lora_128k.yaml",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/sft/run_sft_lora_32k.yaml",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/sft/run_sft_lora_8k.yaml",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/sft/run_sft_wint8mix_lora_128k.yaml",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/sft/run_sft_wint8mix_lora_32k.yaml",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-21B-A3B/sft/run_sft_wint8mix_lora_8k.yaml",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/dpo/run_dpo_32k.yaml",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/dpo/run_dpo_8k.yaml",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/dpo/run_dpo_lora_32k.yaml",
+                "status": "added",
+                "additions": 93,
+                "deletions": 0,
+                "changes": 93
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/dpo/run_dpo_lora_8k.yaml",
+                "status": "added",
+                "additions": 93,
+                "deletions": 0,
+                "changes": 93
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/dpo/run_dpo_wint8mix_lora_32k.yaml",
+                "status": "added",
+                "additions": 93,
+                "deletions": 0,
+                "changes": 93
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/dpo/run_dpo_wint8mix_lora_8k.yaml",
+                "status": "added",
+                "additions": 93,
+                "deletions": 0,
+                "changes": 93
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/run_chat.yaml",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/run_eval.yaml",
+                "status": "added",
+                "additions": 53,
+                "deletions": 0,
+                "changes": 53
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/run_export.yaml",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/sft/run_sft_32k.yaml",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/sft/run_sft_8k.yaml",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/sft/run_sft_fp8_32k.yaml",
+                "status": "added",
+                "additions": 93,
+                "deletions": 0,
+                "changes": 93
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/sft/run_sft_fp8_8k.yaml",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/sft/run_sft_lora_32k.yaml",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/sft/run_sft_lora_8k.yaml",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/sft/run_sft_wint8mix_lora_32k.yaml",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "examples/configs/ERNIE-4.5-300B-A47B/sft/run_sft_wint8mix_lora_8k.yaml",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "examples/data/dpo-eval.jsonl",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "examples/data/dpo-train.jsonl",
+                "status": "added",
+                "additions": 200,
+                "deletions": 0,
+                "changes": 200
+            },
+            {
+                "filename": "examples/data/sft-eval.jsonl",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "examples/data/sft-train.jsonl",
+                "status": "added",
+                "additions": 200,
+                "deletions": 0,
+                "changes": 200
+            },
+            {
+                "filename": "examples/post-training/dpo/dpo_estimate_training.py",
+                "status": "added",
+                "additions": 221,
+                "deletions": 0,
+                "changes": 221
+            },
+            {
+                "filename": "examples/post-training/dpo/dpo_train.py",
+                "status": "added",
+                "additions": 455,
+                "deletions": 0,
+                "changes": 455
+            },
+            {
+                "filename": "examples/post-training/dpo/dpo_trainer.py",
+                "status": "added",
+                "additions": 172,
+                "deletions": 0,
+                "changes": 172
+            },
+            {
+                "filename": "examples/post-training/dpo/dpo_utils.py",
+                "status": "added",
+                "additions": 343,
+                "deletions": 0,
+                "changes": 343
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_0.3b_dpo_32k.sh",
+                "status": "added",
+                "additions": 113,
+                "deletions": 0,
+                "changes": 113
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_0.3b_dpo_8k.sh",
+                "status": "added",
+                "additions": 113,
+                "deletions": 0,
+                "changes": 113
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_0.3b_dpo_lora_32k.sh",
+                "status": "added",
+                "additions": 118,
+                "deletions": 0,
+                "changes": 118
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_0.3b_dpo_lora_8k.sh",
+                "status": "added",
+                "additions": 118,
+                "deletions": 0,
+                "changes": 118
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_dpo_32k.sh",
+                "status": "added",
+                "additions": 116,
+                "deletions": 0,
+                "changes": 116
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_dpo_8k.sh",
+                "status": "added",
+                "additions": 116,
+                "deletions": 0,
+                "changes": 116
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_dpo_lora_32k.sh",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_dpo_lora_8k.sh",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_lite_dpo_128k.sh",
+                "status": "added",
+                "additions": 112,
+                "deletions": 0,
+                "changes": 112
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_lite_dpo_32k.sh",
+                "status": "added",
+                "additions": 112,
+                "deletions": 0,
+                "changes": 112
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_lite_dpo_8k.sh",
+                "status": "added",
+                "additions": 111,
+                "deletions": 0,
+                "changes": 111
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_lite_dpo_lora_128k.sh",
+                "status": "added",
+                "additions": 117,
+                "deletions": 0,
+                "changes": 117
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_lite_dpo_lora_32k.sh",
+                "status": "added",
+                "additions": 117,
+                "deletions": 0,
+                "changes": 117
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_lite_dpo_lora_8k.sh",
+                "status": "added",
+                "additions": 117,
+                "deletions": 0,
+                "changes": 117
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_lite_dpo_wint8mix_lora_128k.sh",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_lite_dpo_wint8mix_lora_32k.sh",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "examples/post-training/dpo/scripts/run_lite_dpo_wint8mix_lora_8k.sh",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "examples/post-training/sft/create_sft_data.py",
+                "status": "added",
+                "additions": 154,
+                "deletions": 0,
+                "changes": 154
+            },
+            {
+                "filename": "examples/post-training/sft/estimate_training.py",
+                "status": "added",
+                "additions": 283,
+                "deletions": 0,
+                "changes": 283
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/create_sft_data.sh",
+                "status": "added",
+                "additions": 44,
+                "deletions": 0,
+                "changes": 44
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_0.3b_sft_32k.sh",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_0.3b_sft_8k.sh",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_0.3b_sft_lora_32k.sh",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_0.3b_sft_lora_8k.sh",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_lite_sft_128k.sh",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_lite_sft_32k.sh",
+                "status": "added",
+                "additions": 97,
+                "deletions": 0,
+                "changes": 97
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_lite_sft_8k.sh",
+                "status": "added",
+                "additions": 96,
+                "deletions": 0,
+                "changes": 96
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_lite_sft_lora_128k.sh",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_lite_sft_lora_32k.sh",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_lite_sft_lora_8k.sh",
+                "status": "added",
+                "additions": 96,
+                "deletions": 0,
+                "changes": 96
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_lite_sft_wint8mix_lora_128k.sh",
+                "status": "added",
+                "additions": 97,
+                "deletions": 0,
+                "changes": 97
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_lite_sft_wint8mix_lora_32k.sh",
+                "status": "added",
+                "additions": 97,
+                "deletions": 0,
+                "changes": 97
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_lite_sft_wint8mix_lora_8k.sh",
+                "status": "added",
+                "additions": 97,
+                "deletions": 0,
+                "changes": 97
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_sft_32k.sh",
+                "status": "added",
+                "additions": 101,
+                "deletions": 0,
+                "changes": 101
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_sft_8k.sh",
+                "status": "added",
+                "additions": 101,
+                "deletions": 0,
+                "changes": 101
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_sft_fp8_32k.sh",
+                "status": "added",
+                "additions": 108,
+                "deletions": 0,
+                "changes": 108
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_sft_fp8_8k.sh",
+                "status": "added",
+                "additions": 108,
+                "deletions": 0,
+                "changes": 108
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_sft_lora_32k.sh",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_sft_lora_8k.sh",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_sft_wint8mix_lora_32k.sh",
+                "status": "added",
+                "additions": 104,
+                "deletions": 0,
+                "changes": 104
+            },
+            {
+                "filename": "examples/post-training/sft/scripts/run_sft_wint8mix_lora_8k.sh",
+                "status": "added",
+                "additions": 104,
+                "deletions": 0,
+                "changes": 104
+            },
+            {
+                "filename": "examples/post-training/sft/sft_utils.py",
+                "status": "added",
+                "additions": 86,
+                "deletions": 0,
+                "changes": 86
+            },
+            {
+                "filename": "examples/post-training/sft/train.py",
+                "status": "added",
+                "additions": 817,
+                "deletions": 0,
+                "changes": 817
+            },
+            {
+                "filename": "examples/post-training/sft/trainer.py",
+                "status": "added",
+                "additions": 738,
+                "deletions": 0,
+                "changes": 738
+            },
+            {
+                "filename": "examples/post-training/tools/mergekit.py",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            },
+            {
+                "filename": "examples/post-training/tools/run_lora_merge.sh",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "examples/pre-training/.gitignore",
+                "status": "added",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "examples/pre-training/README.md",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "examples/pre-training/README_zh.md",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "examples/pre-training/demo_data/data-1-part0.bin",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/pre-training/demo_data/data-1-part0.idx",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/pre-training/demo_data/data-1-part1.bin",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/pre-training/demo_data/data-1-part1.idx",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/pre-training/ernie/config.py",
+                "status": "added",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            },
+            {
+                "filename": "examples/pre-training/ernie/pretrain.py",
+                "status": "added",
+                "additions": 498,
+                "deletions": 0,
+                "changes": 498
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/callbacks/__init__.py",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/callbacks/gc_callback.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/callbacks/logging_callback.py",
+                "status": "added",
+                "additions": 57,
+                "deletions": 0,
+                "changes": 57
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/callbacks/moe_correction_bias_adjust_callback.py",
+                "status": "added",
+                "additions": 70,
+                "deletions": 0,
+                "changes": 70
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/callbacks/moe_logging_callback.py",
+                "status": "added",
+                "additions": 139,
+                "deletions": 0,
+                "changes": 139
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/callbacks/sp_grad_sync_callback.py",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/callbacks/tensorboard_callback.py",
+                "status": "added",
+                "additions": 188,
+                "deletions": 0,
+                "changes": 188
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/clip/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/clip/moe_clip.py",
+                "status": "added",
+                "additions": 158,
+                "deletions": 0,
+                "changes": 158
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/lr_schedulers/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/lr_schedulers/wsd_lr.py",
+                "status": "added",
+                "additions": 51,
+                "deletions": 0,
+                "changes": 51
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/tokenizers/tokenization_eb_v2.py",
+                "status": "added",
+                "additions": 269,
+                "deletions": 0,
+                "changes": 269
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/tokenizers/tokenizer_model/added_tokens.json",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/tokenizers/tokenizer_model/special_tokens_map.json",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/tokenizers/tokenizer_model/tokenizer.model",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/tokenizers/tokenizer_model/tokenizer_config.json",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/trainers/__init__.py",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/trainers/data_parallel.py",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/trainers/dygraph_optimizer/hybrid_parallel_optimizer.py",
+                "status": "added",
+                "additions": 402,
+                "deletions": 0,
+                "changes": 402
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/trainers/pretraining_trainer.py",
+                "status": "added",
+                "additions": 1346,
+                "deletions": 0,
+                "changes": 1346
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/utils/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/utils/logging.py",
+                "status": "added",
+                "additions": 50,
+                "deletions": 0,
+                "changes": 50
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/utils/misc.py",
+                "status": "added",
+                "additions": 197,
+                "deletions": 0,
+                "changes": 197
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/utils/seed_utils.py",
+                "status": "added",
+                "additions": 78,
+                "deletions": 0,
+                "changes": 78
+            },
+            {
+                "filename": "examples/pre-training/ernie/src/utils/training_utils.py",
+                "status": "added",
+                "additions": 41,
+                "deletions": 0,
+                "changes": 41
+            },
+            {
+                "filename": "examples/pre-training/model_configs/model_config.json",
+                "status": "added",
+                "additions": 52,
+                "deletions": 0,
+                "changes": 52
+            },
+            {
+                "filename": "examples/pre-training/models/comm_utils.py",
+                "status": "added",
+                "additions": 297,
+                "deletions": 0,
+                "changes": 297
+            },
+            {
+                "filename": "examples/pre-training/models/ernie/__init__.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "examples/pre-training/models/ernie/configuration.py",
+                "status": "added",
+                "additions": 427,
+                "deletions": 0,
+                "changes": 427
+            },
+            {
+                "filename": "examples/pre-training/models/ernie/modeling.py",
+                "status": "added",
+                "additions": 2381,
+                "deletions": 0,
+                "changes": 2381
+            },
+            {
+                "filename": "examples/pre-training/models/ernie/modeling_moe.py",
+                "status": "added",
+                "additions": 2180,
+                "deletions": 0,
+                "changes": 2180
+            },
+            {
+                "filename": "examples/pre-training/models/ernie/modeling_pp.py",
+                "status": "added",
+                "additions": 989,
+                "deletions": 0,
+                "changes": 989
+            },
+            {
+                "filename": "examples/pre-training/models/fp8_linear.py",
+                "status": "added",
+                "additions": 567,
+                "deletions": 0,
+                "changes": 567
+            },
+            {
+                "filename": "examples/pre-training/models/moe/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "examples/pre-training/models/moe/moe_layer.py",
+                "status": "added",
+                "additions": 979,
+                "deletions": 0,
+                "changes": 979
+            },
+            {
+                "filename": "examples/pre-training/models/moe/token_dispatcher/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "examples/pre-training/models/moe/token_dispatcher/fp8_utils.py",
+                "status": "added",
+                "additions": 1428,
+                "deletions": 0,
+                "changes": 1428
+            },
+            {
+                "filename": "examples/pre-training/models/moe/token_dispatcher/moe_utils.py",
+                "status": "added",
+                "additions": 369,
+                "deletions": 0,
+                "changes": 369
+            },
+            {
+                "filename": "examples/pre-training/models/moe/top2_gate.py",
+                "status": "added",
+                "additions": 434,
+                "deletions": 0,
+                "changes": 434
+            },
+            {
+                "filename": "examples/pre-training/models/sequence_parallel_utils.py",
+                "status": "added",
+                "additions": 590,
+                "deletions": 0,
+                "changes": 590
+            },
+            {
+                "filename": "examples/pre-training/models/utils.py",
+                "status": "added",
+                "additions": 209,
+                "deletions": 0,
+                "changes": 209
+            },
+            {
+                "filename": "examples/pre-training/requirements.txt",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "examples/pre-training/scripts/train_2016_gpus.sh",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "examples/pre-training/scripts/train_96_gpus.sh",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "examples/pre-training/yamls/pretrain_2016_gpus.yaml",
+                "status": "added",
+                "additions": 116,
+                "deletions": 0,
+                "changes": 116
+            },
+            {
+                "filename": "examples/pre-training/yamls/pretrain_96_gpus.yaml",
+                "status": "added",
+                "additions": 117,
+                "deletions": 0,
+                "changes": 117
+            },
+            {
+                "filename": "examples/pre-training/yamls/pretrain_96_gpus_small_acc.yaml",
+                "status": "added",
+                "additions": 117,
+                "deletions": 0,
+                "changes": 117
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/dpo/run_dpo_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/dpo/run_dpo_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/dpo/run_dpo_lora_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/dpo/run_dpo_lora_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/sft/run_sft_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/sft/run_sft_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/sft/run_sft_lora_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-0.3B/sft/run_sft_lora_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/dpo/run_dpo_128k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/dpo/run_dpo_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/dpo/run_dpo_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/dpo/run_dpo_lora_128k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/dpo/run_dpo_lora_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/dpo/run_dpo_lora_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/dpo/run_dpo_wint8mix_lora_128k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/dpo/run_dpo_wint8mix_lora_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/dpo/run_dpo_wint8mix_lora_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/sft/run_sft_128k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/sft/run_sft_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/sft/run_sft_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/sft/run_sft_lora_128k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/sft/run_sft_lora_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/sft/run_sft_lora_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/sft/run_sft_wint8mix_lora_128k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/sft/run_sft_wint8mix_lora_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-21B-A3B/sft/run_sft_wint8mix_lora_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/dpo/run_dpo_32k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/dpo/run_dpo_8k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/dpo/run_dpo_lora_32k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/dpo/run_dpo_lora_8k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/sft/run_sft_32k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/sft/run_sft_8k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/sft/run_sft_fp8_32k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/sft/run_sft_fp8_8k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/sft/run_sft_lora_32k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/sft/run_sft_lora_8k.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/sft/run_sft_wint8mix_lora_32k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "examples/scripts/ERNIE-4.5-300B-A47B/sft/run_sft_wint8mix_lora_8k.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "requirements/gpu/requirements.txt",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            },
+            {
+                "filename": "setup.py",
+                "status": "added",
+                "additions": 63,
+                "deletions": 0,
+                "changes": 63
+            },
+            {
+                "filename": "tools/inference/README.md",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "tools/inference/data/multimodal-query-answers-list-small.jsonl",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "tools/inference/data/query-demo.jsonl",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "tools/inference/infer.py",
+                "status": "added",
+                "additions": 406,
+                "deletions": 0,
+                "changes": 406
+            },
+            {
+                "filename": "tools/inference/infer_vl.py",
+                "status": "added",
+                "additions": 545,
+                "deletions": 0,
+                "changes": 545
+            },
+            {
+                "filename": "tools/inference/scripts/infer.sh",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "tools/inference/scripts/infer_fp8.sh",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "tools/inference/scripts/infer_vl.sh",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "tools/paddle2torch/README.md",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "tools/paddle2torch/scripts/export_dense.sh",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "tools/paddle2torch/scripts/export_moe.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "tools/paddle2torch/tran_4_5t.py",
+                "status": "added",
+                "additions": 503,
+                "deletions": 0,
+                "changes": 503
+            }
+        ]
+    }
+]

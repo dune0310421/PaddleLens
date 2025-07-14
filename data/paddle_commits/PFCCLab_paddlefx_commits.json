@@ -1,0 +1,2918 @@
+[
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "74eb3d865cebb554a2b52ae8a52920ec789a9f0c",
+        "created_at": "2023-09-05 22:48:27 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "subgraph-output-as-tuple-69",
+        "files": [
+            {
+                "filename": "src/paddlefx/output_graph.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "5617403b84bb18143fef3d8bb83058b95b251a4e",
+        "created_at": "2023-09-26 23:45:34 +0800",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "make-eval_frame-support-python3.11-73",
+        "files": [
+            {
+                "filename": "src/paddlefx/_eval_frame.c",
+                "status": "modified",
+                "additions": 350,
+                "deletions": 39,
+                "changes": 389
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "620e5156bdc2cd50e23c8efa3b2e6a1890cf7e0f",
+        "created_at": "2023-10-12 13:20:15 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "Update-README.md-80",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "fe953faeedad1402deb8071d07920d5c1b1d88f5",
+        "created_at": "2023-10-13 10:11:55 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "update-setuptools_scm-to-latest-81",
+        "files": [
+            {
+                "filename": "pyproject.toml",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "2d32caa58068aa112866eaa5cf3c0451a17f6349",
+        "created_at": "2023-09-27 15:57:14 +0800",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "add-ContainerVariable-72",
+        "files": [
+            {
+                "filename": "examples/simple_compiler.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "src/paddlefx/codegen.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 9,
+                "changes": 18
+            },
+            {
+                "filename": "src/paddlefx/compiler.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "src/paddlefx/convert_frame.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/dispatcher.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 8,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 3,
+                "changes": 7
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/paddlefx/pyeval.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 12,
+                "changes": 36
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "src/paddlefx/utils.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "src/paddlefx/variable_dispatch.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 1,
+                "changes": 12
+            },
+            {
+                "filename": "src/paddlefx/variables/__init__.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "src/paddlefx/variables/base.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 38,
+                "changes": 69
+            },
+            {
+                "filename": "src/paddlefx/variables/basic.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 12,
+                "changes": 20
+            },
+            {
+                "filename": "src/paddlefx/variables/callable.py",
+                "status": "modified",
+                "additions": 95,
+                "deletions": 33,
+                "changes": 128
+            },
+            {
+                "filename": "src/paddlefx/variables/container.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "tests/test_basic.py",
+                "status": "added",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "fb3520fa975ffb39d77745259e2ffd2363c5be27",
+        "created_at": "2023-09-06 01:17:45 +0800",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "implement-VariableBase-68",
+        "files": [
+            {
+                "filename": "src/paddlefx/bytecode_transformation.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/codegen.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 4,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/dispatcher.py",
+                "status": "added",
+                "additions": 288,
+                "deletions": 0,
+                "changes": 288
+            },
+            {
+                "filename": "src/paddlefx/output_graph.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 7,
+                "changes": 15
+            },
+            {
+                "filename": "src/paddlefx/pyeval.py",
+                "status": "modified",
+                "additions": 72,
+                "deletions": 54,
+                "changes": 126
+            },
+            {
+                "filename": "src/paddlefx/symvar.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 76,
+                "changes": 76
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 61,
+                "deletions": 68,
+                "changes": 129
+            },
+            {
+                "filename": "src/paddlefx/variable_dispatch.py",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/variable_stack.py",
+                "status": "added",
+                "additions": 190,
+                "deletions": 0,
+                "changes": 190
+            },
+            {
+                "filename": "src/paddlefx/variables/__init__.py",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "src/paddlefx/variables/base.py",
+                "status": "added",
+                "additions": 129,
+                "deletions": 0,
+                "changes": 129
+            },
+            {
+                "filename": "src/paddlefx/variables/basic.py",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "src/paddlefx/variables/callable.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "018f71a218bcb8a1c948ba781c31b7a34a4feb0d",
+        "created_at": "2023-09-26 10:21:09 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "Update-pyproject.toml-74",
+        "files": [
+            {
+                "filename": "pyproject.toml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "3a76dc75f35e80053b203ace323ef1a26c2f903b",
+        "created_at": "2023-10-11 21:08:04 -0500",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "tvm-relay-backend-79",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "examples/TODO/resnet_dynamo.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 27,
+                "changes": 27
+            },
+            {
+                "filename": "examples/TODO/simple_dynamo.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 108,
+                "changes": 108
+            },
+            {
+                "filename": "examples/resnet_dynamo.py",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "examples/resnet_trace.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "examples/simple_compiler.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 12,
+                "changes": 26
+            },
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "added",
+                "additions": 50,
+                "deletions": 0,
+                "changes": 50
+            },
+            {
+                "filename": "examples/targets/target_3_add_paddle.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "requirements_dev.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "src/paddlefx/cache_manager.py",
+                "status": "added",
+                "additions": 60,
+                "deletions": 0,
+                "changes": 60
+            },
+            {
+                "filename": "src/paddlefx/codegen.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/compiler.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 127,
+                "changes": 127
+            },
+            {
+                "filename": "src/paddlefx/compiler/__init__.py",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "src/paddlefx/compiler/base.py",
+                "status": "added",
+                "additions": 115,
+                "deletions": 0,
+                "changes": 115
+            },
+            {
+                "filename": "src/paddlefx/compiler/tvm.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "src/paddlefx/convert_frame.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 10,
+                "changes": 26
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/graph_layer.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "src/paddlefx/output_graph.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 2,
+                "changes": 33
+            },
+            {
+                "filename": "src/paddlefx/pyeval.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "src/paddlefx/source.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "src/paddlefx/variables/base.py",
+                "status": "modified",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "src/paddlefx/variables/callable.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 4,
+                "changes": 10
+            },
+            {
+                "filename": "tests/test_basic.py",
+                "status": "modified",
+                "additions": 37,
+                "deletions": 20,
+                "changes": 57
+            },
+            {
+                "filename": "tests/test_broadcast.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 27,
+                "changes": 27
+            },
+            {
+                "filename": "tests/test_compiler_tvm.py",
+                "status": "added",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            },
+            {
+                "filename": "tests/utils.py",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "861083a9311b83a60aeced4872c9b6ef7a893cca",
+        "created_at": "2023-12-04 15:28:32 +0800",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "style-use-ruff-format-84",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 17,
+                "changes": 19
+            },
+            {
+                "filename": "examples/fx_profiling.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "examples/graph_editing.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "examples/native_interpreter/use_interpreter.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "examples/targets/target_3_add_paddle.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 3,
+                "changes": 18
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 30,
+                "deletions": 30,
+                "changes": 60
+            },
+            {
+                "filename": "src/paddlefx/__init__.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 10,
+                "changes": 18
+            },
+            {
+                "filename": "src/paddlefx/codegen.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/compiler/__init__.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 4,
+                "changes": 6
+            },
+            {
+                "filename": "src/paddlefx/compiler/tvm.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 60,
+                "deletions": 60,
+                "changes": 120
+            },
+            {
+                "filename": "src/paddlefx/graph_layer.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 10,
+                "changes": 20
+            },
+            {
+                "filename": "src/paddlefx/graph_viewer.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/interpreter.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            },
+            {
+                "filename": "src/paddlefx/legacy_module/translator.py",
+                "status": "modified",
+                "additions": 45,
+                "deletions": 45,
+                "changes": 90
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/output_graph.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "src/paddlefx/paddle_utils.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 31,
+                "changes": 62
+            },
+            {
+                "filename": "src/paddlefx/pyeval.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/source.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/utils.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/variables/callable.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            },
+            {
+                "filename": "tests/test_misc.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "ca549222d606a1491e2852faa6a681c1016d836d",
+        "created_at": "2023-09-14 22:01:50 +0800",
+        "author": "yangguohao",
+        "committer": "web-flow",
+        "message": "support-tracing-resnet-71",
+        "files": [
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/paddlefx/pyeval.py",
+                "status": "modified",
+                "additions": 48,
+                "deletions": 3,
+                "changes": 51
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "src/paddlefx/variables/base.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 1,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/variables/callable.py",
+                "status": "modified",
+                "additions": 62,
+                "deletions": 4,
+                "changes": 66
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "8191c1754353a721611cec486a90885ef4785f50",
+        "created_at": "2023-09-29 08:42:42 -0500",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "spport-tvm-as-backend-75",
+        "files": [
+            {
+                "filename": "examples/TODO/resnet_dynamo.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "examples/TODO/simple_dynamo.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 5,
+                "changes": 14
+            },
+            {
+                "filename": "examples/simple_compiler.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 6,
+                "changes": 23
+            },
+            {
+                "filename": "examples/targets/target_0_add.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "examples/targets/target_1_print.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "examples/targets/target_2_func.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "examples/targets/target_3_add_paddle.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 7,
+                "changes": 10
+            },
+            {
+                "filename": "requirements_dev.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/codegen.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/compiler.py",
+                "status": "modified",
+                "additions": 108,
+                "deletions": 15,
+                "changes": 123
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 2,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/legacy_module/translator.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "src/paddlefx/output_graph.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 2,
+                "changes": 27
+            },
+            {
+                "filename": "src/paddlefx/pyeval.py",
+                "status": "modified",
+                "additions": 60,
+                "deletions": 51,
+                "changes": 111
+            },
+            {
+                "filename": "src/paddlefx/utils.py",
+                "status": "modified",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": "src/paddlefx/variables/builder.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "src/paddlefx/variables/callable.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 8,
+                "changes": 25
+            },
+            {
+                "filename": "tests/test_basic.py",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 13,
+                "changes": 35
+            },
+            {
+                "filename": "tests/test_broadcast.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "0478b15cb9ef33334d413944ee7e54bc6d6c9cde",
+        "created_at": "2023-10-16 02:16:36 -0500",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "Use-loguru-and-appdirs-to-replace-logging-and-hard-coded-path-82",
+        "files": [
+            {
+                "filename": ".cmake-format.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 9,
+                "changes": 14
+            },
+            {
+                "filename": "examples/native_interpreter/pyproject.toml",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "examples/native_interpreter/use_interpreter.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 4,
+                "changes": 7
+            },
+            {
+                "filename": "examples/resnet_dynamo.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "examples/simple_compiler.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            },
+            {
+                "filename": "examples/targets/target_0_add.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "examples/targets/target_1_print.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "examples/targets/target_2_func.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 9,
+                "changes": 9
+            },
+            {
+                "filename": "examples/targets/target_3_add_paddle.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 10,
+                "changes": 10
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 9,
+                "changes": 24
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/cache_manager.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 5,
+                "changes": 12
+            },
+            {
+                "filename": "src/paddlefx/compiler/tvm.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 7,
+                "changes": 18
+            },
+            {
+                "filename": "src/paddlefx/convert_frame.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            },
+            {
+                "filename": "src/paddlefx/legacy_module/translator.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            },
+            {
+                "filename": "src/paddlefx/output_graph.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            },
+            {
+                "filename": "src/paddlefx/pyeval.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 13,
+                "changes": 27
+            },
+            {
+                "filename": "src/paddlefx/utils.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 5,
+                "changes": 16
+            },
+            {
+                "filename": "src/paddlefx/variables/callable.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "1c1b5f8025b61b38c822d080dfbf88cca1f2e476",
+        "created_at": "2023-08-17 09:33:47 +0800",
+        "author": "yangguohao",
+        "committer": "web-flow",
+        "message": "paddlefx.optimize-66",
+        "files": [
+            {
+                "filename": "src/paddlefx/pyeval.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 3,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "f692f19bb0ac963de69011a7092fb54052260048",
+        "created_at": "2023-08-08 18:34:17 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "add-basic-graph-break-and-inline-translator-64",
+        "files": [
+            {
+                "filename": "examples/targets/target_0_add.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 8,
+                "changes": 8
+            },
+            {
+                "filename": "examples/targets/target_2_func.py",
+                "status": "added",
+                "additions": 42,
+                "deletions": 0,
+                "changes": 42
+            },
+            {
+                "filename": "examples/targets/target_3_add_paddle.py",
+                "status": "added",
+                "additions": 40,
+                "deletions": 0,
+                "changes": 40
+            },
+            {
+                "filename": "src/paddlefx/codegen.py",
+                "status": "modified",
+                "additions": 146,
+                "deletions": 34,
+                "changes": 180
+            },
+            {
+                "filename": "src/paddlefx/convert_frame.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 48,
+                "changes": 69
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 14,
+                "changes": 27
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 1,
+                "changes": 18
+            },
+            {
+                "filename": "src/paddlefx/output_graph.py",
+                "status": "modified",
+                "additions": 77,
+                "deletions": 61,
+                "changes": 138
+            },
+            {
+                "filename": "src/paddlefx/paddle_utils.py",
+                "status": "added",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            },
+            {
+                "filename": "src/paddlefx/pyeval.py",
+                "status": "added",
+                "additions": 657,
+                "deletions": 0,
+                "changes": 657
+            },
+            {
+                "filename": "src/paddlefx/source.py",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "src/paddlefx/symvar.py",
+                "status": "added",
+                "additions": 76,
+                "deletions": 0,
+                "changes": 76
+            },
+            {
+                "filename": "src/paddlefx/utils.py",
+                "status": "modified",
+                "additions": 42,
+                "deletions": 1,
+                "changes": 43
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "61d83daf988a6b8c928516a1dabcf51fe8ba67b5",
+        "created_at": "2023-06-18 14:09:21 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "clean-code-60",
+        "files": [
+            {
+                "filename": "examples/simple_callback.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 31,
+                "changes": 31
+            },
+            {
+                "filename": "examples/targets/target_1_print.py",
+                "status": "added",
+                "additions": 40,
+                "deletions": 0,
+                "changes": 40
+            },
+            {
+                "filename": "src/paddlefx/__init__.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 10,
+                "changes": 18
+            },
+            {
+                "filename": "src/paddlefx/codegen.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/convert_frame.py",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 88,
+                "changes": 102
+            },
+            {
+                "filename": "src/paddlefx/output_graph.py",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 182,
+                "changes": 188
+            },
+            {
+                "filename": "src/paddlefx/utils.py",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "f5faff6439bef38c2cdf6515e6e00cff790b98a9",
+        "created_at": "2023-06-10 15:02:16 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "add-PyCodegen-demo-57",
+        "files": [
+            {
+                "filename": "examples/TODO/resnet_dynamo.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/TODO/simple_dynamo.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/targets/target_0_add.py",
+                "status": "added",
+                "additions": 44,
+                "deletions": 0,
+                "changes": 44
+            },
+            {
+                "filename": "src/paddlefx/_eval_frame.c",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "src/paddlefx/bytecode_analysis.py",
+                "status": "added",
+                "additions": 247,
+                "deletions": 0,
+                "changes": 247
+            },
+            {
+                "filename": "src/paddlefx/bytecode_transformation.py",
+                "status": "added",
+                "additions": 1058,
+                "deletions": 0,
+                "changes": 1058
+            },
+            {
+                "filename": "src/paddlefx/codegen.py",
+                "status": "added",
+                "additions": 55,
+                "deletions": 0,
+                "changes": 55
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 53,
+                "deletions": 30,
+                "changes": 83
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 159,
+                "deletions": 21,
+                "changes": 180
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "4e1f6ee62c6bb869cb85c10cceabdab9ee9a2dca",
+        "created_at": "2023-05-28 14:51:07 +0800",
+        "author": "co63oc",
+        "committer": "web-flow",
+        "message": "fix-a-typo-in-interpreter.cc-55",
+        "files": [
+            {
+                "filename": "examples/native_interpreter/interpreter.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "c948cc3a26ea279db8bc958e9ff1c97697697f03",
+        "created_at": "2023-06-17 12:22:10 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "Update-README.md-59",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 1,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "5fdf2eeec855bbd9c20d59f79c9fa47f301aa3ff",
+        "created_at": "2023-05-11 13:34:55 +0800",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "fix-bug-in-codegen-when-function-is-a-node-43",
+        "files": [
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 5,
+                "changes": 16
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 37,
+                "deletions": 20,
+                "changes": 57
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "4caa87152dd7c039cb15b8d51734a1a949041425",
+        "created_at": "2023-05-28 14:50:29 +0800",
+        "author": "co63oc",
+        "committer": "web-flow",
+        "message": "fix-a-typo-in-fx_profiling.py-56",
+        "files": [
+            {
+                "filename": "examples/fx_profiling.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "48c71f7a51bda87f9125a0617b0b8b5d2bb3bbad",
+        "created_at": "2023-04-28 23:59:57 +0800",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "fix-bug-in-print_tabular-and-add-some-new-print_tabular-mode-40",
+        "files": [
+            {
+                "filename": "examples/resnet_trace.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 57,
+                "deletions": 13,
+                "changes": 70
+            },
+            {
+                "filename": "src/paddlefx/graph_viewer.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "c80c77b811787fbbf570d13bce7f619d2977ce97",
+        "created_at": "2023-04-19 10:29:38 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "support-more-base-Instructions-38",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/_eval_frame.c",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 22,
+                "changes": 55
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "74222149613c5911d339d0c87b9e0b1b3e74c336",
+        "created_at": "2023-05-08 10:30:07 +0800",
+        "author": "Asthestarsfalll",
+        "committer": "web-flow",
+        "message": "refine-translator-42",
+        "files": [
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 14,
+                "changes": 28
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "83b9fdc052d817b08a312ebbd163b79e1c984505",
+        "created_at": "2023-05-05 15:11:50 +0800",
+        "author": "zrr1999",
+        "committer": "web-flow",
+        "message": "support-more-base-Instructions-and-support-resnet-41",
+        "files": [
+            {
+                "filename": ".github/workflows/test.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "examples/graph_editing.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 9,
+                "changes": 17
+            },
+            {
+                "filename": "examples/resnet_dynamo.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "examples/resnet_trace.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 3,
+                "changes": 21
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 6,
+                "changes": 34
+            },
+            {
+                "filename": "src/paddlefx/graph_layer.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 146,
+                "deletions": 30,
+                "changes": 176
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "ff9779f1912c788054cbb146aab26bd18e7edf35",
+        "created_at": "2023-04-03 13:59:32 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "paddlefx.optimize-rm-supported_ops-param-34",
+        "files": [
+            {
+                "filename": "examples/simple_callback.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 6,
+                "changes": 8
+            },
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 4,
+                "changes": 13
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 26,
+                "deletions": 13,
+                "changes": 39
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "82d8d99eb234650ced6e386345152222bca5e33e",
+        "created_at": "2023-04-10 11:53:14 +0800",
+        "author": "Asthestarsfalll",
+        "committer": "web-flow",
+        "message": "translate-bytecode-ops-36",
+        "files": [
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 2,
+                "changes": 33
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 115,
+                "deletions": 36,
+                "changes": 151
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "eacdd8a77553653e8cdb34556504b7da4722eebc",
+        "created_at": "2023-04-07 19:13:40 +0800",
+        "author": "GreatV",
+        "committer": "web-flow",
+        "message": "add-fx-graph-visualisation-tool-37",
+        "files": [
+            {
+                "filename": "examples/simple_graph_viewer.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/paddlefx/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/paddlefx/graph_viewer.py",
+                "status": "added",
+                "additions": 102,
+                "deletions": 0,
+                "changes": 102
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "7fdf88f4f45a9580f5f17978d151e1cd60ec4409",
+        "created_at": "2023-03-17 15:04:13 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "Native-interpreter-29",
+        "files": [
+            {
+                "filename": ".github/workflows/test.yml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/native_interpreter/CMakeLists.txt",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "examples/native_interpreter/README.md",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "examples/native_interpreter/build_it.sh",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/native_interpreter/interpreter.cc",
+                "status": "added",
+                "additions": 193,
+                "deletions": 0,
+                "changes": 193
+            },
+            {
+                "filename": "examples/native_interpreter/use_interpreter.py",
+                "status": "added",
+                "additions": 82,
+                "deletions": 0,
+                "changes": 82
+            },
+            {
+                "filename": "requirements_dev.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "bf1a5b96097f90ffeccd95d47223f315768332e8",
+        "created_at": "2023-04-06 11:12:42 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "translate-several-binary-bytecode-ops-35",
+        "files": [
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "b4f7d414b3a4915b7e33673c636548593a1abfa9",
+        "created_at": "2023-03-12 20:40:52 +0800",
+        "author": "SigureMo",
+        "committer": "web-flow",
+        "message": "add-basic-support-for-graph-editing-27",
+        "files": [
+            {
+                "filename": "examples/graph_editing.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 76,
+                "deletions": 14,
+                "changes": 90
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "modified",
+                "additions": 86,
+                "deletions": 4,
+                "changes": 90
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "c66bf55f32e097d99793904a8339ba4313e8b50b",
+        "created_at": "2023-03-19 20:26:31 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "opt-how-to-build-examples-native_interpreter-30",
+        "files": [
+            {
+                "filename": "examples/native_interpreter/CMakeLists.txt",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 16,
+                "changes": 38
+            },
+            {
+                "filename": "examples/native_interpreter/build_it.sh",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 2,
+                "changes": 13
+            },
+            {
+                "filename": "examples/native_interpreter/use_interpreter.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 4,
+                "changes": 6
+            },
+            {
+                "filename": "requirements_dev.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "493e9b2e17b921b985e5a7f8d9bc15c163475ada",
+        "created_at": "2023-03-12 20:21:18 +0800",
+        "author": "SigureMo",
+        "committer": "web-flow",
+        "message": "fix-failure-to-trace-shufflenet_v2-26",
+        "files": [
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 1,
+                "changes": 21
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "tests/test_trace.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "fbc2d0d1eb28f140454b07ebe76773ded0948d2f",
+        "created_at": "2023-03-20 21:52:32 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "update-readme-32",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "53d1bae5a0b28b986f088b19cfd9e5947de2886d",
+        "created_at": "2023-03-12 21:31:54 +0800",
+        "author": "SigureMo",
+        "committer": "web-flow",
+        "message": "add-from-__future__-import-annotations-to-all-files-28",
+        "files": [
+            {
+                "filename": ".cmake-format.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "examples/fx_profiling.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 5,
+                "changes": 12
+            },
+            {
+                "filename": "examples/graph_editing.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/resnet_trace.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/simple_callable_trace.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/simple_callback.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            },
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "examples/simple_net_trace.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/__init__.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 4,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 4,
+                "changes": 10
+            },
+            {
+                "filename": "src/paddlefx/graph_layer.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/interpreter.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 10,
+                "changes": 22
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 7,
+                "changes": 16
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 8,
+                "changes": 18
+            },
+            {
+                "filename": "tests/test_misc.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "tests/test_trace.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "807c7d54a5b809422fb6fa5308ef95e9de01d622",
+        "created_at": "2023-03-11 20:17:40 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "make-dynamo-example-runnable-25",
+        "files": [
+            {
+                "filename": "examples/simple_callback.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 26,
+                "changes": 29
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 22,
+                "changes": 50
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "eb8ce46d9e28954fb296db82a9ff4679b9c36f55",
+        "created_at": "2023-03-10 16:00:08 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "add-paddlefx.optimize-API-24",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "examples/resnet_trace.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 137,
+                "changes": 158
+            },
+            {
+                "filename": "src/paddlefx/__init__.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 5,
+                "changes": 12
+            },
+            {
+                "filename": "src/paddlefx/eval_frame.py",
+                "status": "added",
+                "additions": 76,
+                "deletions": 0,
+                "changes": 76
+            },
+            {
+                "filename": "src/paddlefx/graph_layer.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/interpreter.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 13,
+                "changes": 15
+            },
+            {
+                "filename": "src/paddlefx/translator.py",
+                "status": "added",
+                "additions": 127,
+                "deletions": 0,
+                "changes": 127
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "67c1cee25f7d42ba24db2c4552b095840865416c",
+        "created_at": "2023-03-08 22:08:53 +0800",
+        "author": "SigureMo",
+        "committer": "web-flow",
+        "message": "fix-failure-to-trace-densenet-23",
+        "files": [
+            {
+                "filename": "pyproject.toml",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 2,
+                "changes": 8
+            },
+            {
+                "filename": "tests/test_trace.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "3f57191e98a509a53d70f00a7c803b104b7ac3ce",
+        "created_at": "2023-03-08 18:06:11 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "cover-symbolic_trace-by-tracing-several-vision-models-in-tests-22",
+        "files": [
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/interpreter.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "tests/test_trace.py",
+                "status": "added",
+                "additions": 60,
+                "deletions": 0,
+                "changes": 60
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "c9f9a094fb94030af072eda1ecb120b0ba0fe819",
+        "created_at": "2023-03-08 09:39:25 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "interpreter-added-and-an-example-of-using-paddlefx-to-profile-resnet-21",
+        "files": [
+            {
+                "filename": "examples/fx_profiling.py",
+                "status": "added",
+                "additions": 105,
+                "deletions": 0,
+                "changes": 105
+            },
+            {
+                "filename": "src/paddlefx/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/paddlefx/graph_layer.py",
+                "status": "modified",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            },
+            {
+                "filename": "src/paddlefx/interpreter.py",
+                "status": "added",
+                "additions": 227,
+                "deletions": 0,
+                "changes": 227
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "e47c1d165fa73da5a65a3c9104374399053c69af",
+        "created_at": "2023-03-06 17:56:15 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "support-tracing-call_method-20",
+        "files": [
+            {
+                "filename": "examples/simple_callable_trace.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "76189178ad61074d1e75aee8c5db9b446747821f",
+        "created_at": "2023-03-03 16:23:05 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "GraphLayer-added-16",
+        "files": [
+            {
+                "filename": "examples/resnet_trace.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 11,
+                "changes": 19
+            },
+            {
+                "filename": "examples/simple_callable_trace.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 8,
+                "changes": 20
+            },
+            {
+                "filename": "examples/simple_net_trace.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 7,
+                "changes": 15
+            },
+            {
+                "filename": "src/paddlefx/graph_layer.py",
+                "status": "added",
+                "additions": 69,
+                "deletions": 0,
+                "changes": 69
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "d8ec1b161763feb0d02014347d7be168d2479e76",
+        "created_at": "2023-03-06 10:07:57 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "add-simple-InstructionTranslator-19",
+        "files": [
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 125,
+                "deletions": 7,
+                "changes": 132
+            },
+            {
+                "filename": "requirements_dev.txt",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "src/paddlefx/graph_layer.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 2,
+                "changes": 11
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "76910757a2dcd87e42084692e0dff30c3a0f36e4",
+        "created_at": "2023-03-03 16:51:44 +0800",
+        "author": "SigureMo",
+        "committer": "web-flow",
+        "message": "add-python3.9-3.10-to-ci-environment-18",
+        "files": [
+            {
+                "filename": ".github/workflows/codestyle-check.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 3,
+                "changes": 8
+            },
+            {
+                "filename": ".github/workflows/test.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 3,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "26d01f2cb87cd52c259670d551a26500014f6dad",
+        "created_at": "2023-03-03 16:23:14 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "make-eval_frame-compatible-to-py39-17",
+        "files": [
+            {
+                "filename": "src/paddlefx/_eval_frame.c",
+                "status": "modified",
+                "additions": 32,
+                "deletions": 2,
+                "changes": 34
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "84d7ffea2a4ec0e3a2af97b34df7660d86987c62",
+        "created_at": "2023-03-03 09:35:26 +0800",
+        "author": "SigureMo",
+        "committer": "web-flow",
+        "message": "add-support-for-trace-sublayers-15",
+        "files": [
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 3,
+                "changes": 25
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "06b37be7f4e4246df68132a73c5d015eb8c6e0dc",
+        "created_at": "2023-03-03 01:05:50 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "using-a-patcher-to-patch-all-paddle-functions-works-on-tracing-a-resnet-14",
+        "files": [
+            {
+                "filename": "examples/resnet_trace.py",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 147,
+                "deletions": 30,
+                "changes": 177
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "73f08a82d472f94417deeb692e7c9acaba2d49b5",
+        "created_at": "2023-03-02 10:40:28 +0800",
+        "author": "SigureMo",
+        "committer": "web-flow",
+        "message": "add-basic-ci-workflow-13",
+        "files": [
+            {
+                "filename": ".github/workflows/codestyle-check.yml",
+                "status": "added",
+                "additions": 29,
+                "deletions": 0,
+                "changes": 29
+            },
+            {
+                "filename": ".github/workflows/test.yml",
+                "status": "added",
+                "additions": 44,
+                "deletions": 0,
+                "changes": 44
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "57770360568a7e10064575d297b091a4ea781e25",
+        "created_at": "2023-02-25 22:19:05 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "add-GuardedCode-type-11",
+        "files": [
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 7,
+                "changes": 40
+            },
+            {
+                "filename": "src/paddlefx/_eval_frame.c",
+                "status": "modified",
+                "additions": 59,
+                "deletions": 8,
+                "changes": 67
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "fa311102677810625d68af5ab07d9a565a5f06ed",
+        "created_at": "2023-02-24 11:17:47 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "Add-a-mini-dynamo-module-9",
+        "files": [
+            {
+                "filename": "examples/simple_dynamo.py",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "examples/simple_net_trace.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "requirements_dev.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddlefx/_eval_frame.c",
+                "status": "modified",
+                "additions": 136,
+                "deletions": 18,
+                "changes": 154
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "98394093d52edede165395647223bfaa14ea9901",
+        "created_at": "2023-02-19 22:39:04 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "add-basic-cpp-extension-4",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "CMakeLists.txt",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9
+            },
+            {
+                "filename": "requirements_dev.txt",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 78,
+                "deletions": 3,
+                "changes": 81
+            },
+            {
+                "filename": "src/paddlefx/_eval_frame.c",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "src/paddlefx/py.typed",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "23518f2aeb8e23dd83e51f60d664013190c14b36",
+        "created_at": "2023-02-20 19:35:17 +0800",
+        "author": "SigureMo",
+        "committer": "web-flow",
+        "message": "add-missing-argument-tracer-in-magic-method-proxy-creation-7",
+        "files": [
+            {
+                "filename": "examples/simple_net_trace.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "71f6cb9db4fec824081ecb946c931132361a0a1b",
+        "created_at": "2023-02-15 14:45:16 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "Initial-commit",
+        "files": [
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 201,
+                "deletions": 0,
+                "changes": 201
+            },
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "cf04906cfd56618996b7d7efb4638d0a52a6ede8",
+        "created_at": "2023-02-20 18:01:53 +0800",
+        "author": "jzhang533",
+        "committer": "web-flow",
+        "message": "very-simple-symbolic_trace-added-6",
+        "files": [
+            {
+                "filename": "examples/simple_net_trace.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "src/paddlefx/__init__.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "src/paddlefx/graph.py",
+                "status": "added",
+                "additions": 210,
+                "deletions": 0,
+                "changes": 210
+            },
+            {
+                "filename": "src/paddlefx/node.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "src/paddlefx/proxy.py",
+                "status": "added",
+                "additions": 67,
+                "deletions": 0,
+                "changes": 67
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "added",
+                "additions": 116,
+                "deletions": 0,
+                "changes": 116
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "851225491ada9d8082ca94185458ac1827508384",
+        "created_at": "2023-02-21 10:22:27 +0800",
+        "author": "SigureMo",
+        "committer": "web-flow",
+        "message": "add-support-for-trace-function-8",
+        "files": [
+            {
+                "filename": "examples/simple_callable_trace.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "src/paddlefx/symbolic_trace.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 8,
+                "changes": 29
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddlefx",
+        "sha": "7ce9249933e75a179a9dcbc0564c671179f58879",
+        "created_at": "2023-02-16 10:28:24 +0800",
+        "author": "gglin001",
+        "committer": "web-flow",
+        "message": "add-basic-project-tree-1",
+        "files": [
+            {
+                "filename": ".clang-format",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": ".cmake-format.py",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 50,
+                "deletions": 0,
+                "changes": 50
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 1,
+                "changes": 13
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "requirements_dev.txt",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "setup.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "src/paddlefx/__init__.py",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "tests/test_misc.py",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            }
+        ]
+    }
+]

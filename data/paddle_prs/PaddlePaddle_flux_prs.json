@@ -1,0 +1,52 @@
+[
+    {
+        "repo": "PaddlePaddle/flux",
+        "number": 2,
+        "title": "Fix CUDA 12.8 compilation error",
+        "body": null,
+        "issue_number": "2",
+        "state": "closed",
+        "merged": true,
+        "user": "sneaxiy",
+        "merged_by": "sneaxiy",
+        "created_at": "2025-03-04T08:11:22+00:00",
+        "closed_at": "2025-03-04T08:13:00+00:00",
+        "additions": 1,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "672104792db18b276c429c1743de9e10a6709189"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/flux",
+        "number": 1,
+        "title": "Add capi",
+        "body": null,
+        "issue_number": "1",
+        "state": "closed",
+        "merged": true,
+        "user": "umiswing",
+        "merged_by": "sneaxiy",
+        "created_at": "2024-12-13T09:18:13+00:00",
+        "closed_at": "2024-12-16T07:58:05+00:00",
+        "additions": 612,
+        "deletions": 81,
+        "changed_files": 9,
+        "commits": [
+            "14f6d9fc9a6fa54ab1b0fb10fd1480f5df8aca88",
+            "ccc5f37673d70c4a18f6c619c5375a8801274f6c",
+            "ec495a985db9f9697515e6377271c723e9fdea92",
+            "21ff884fdbd47e0ce2a4fbdf4b967957fdebba6a",
+            "fcd6a2003fc1b0212c84d70e2c87cf09fb24d780",
+            "645c18e2bedfe31b0fe75806774b01852f67a7b3",
+            "b4ca4a1351a27f407a218946fba7cb8fd9d3340b",
+            "e8afd8063d964edefadc904437d1a0e5d8ec3239",
+            "f503351c06bffd6e8c7ebdf629cfa7dd4cbbfa6a"
+        ],
+        "comment_by": [],
+        "review_by": []
+    }
+]

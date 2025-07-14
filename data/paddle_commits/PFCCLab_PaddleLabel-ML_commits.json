@@ -1,0 +1,4728 @@
+[
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "d41e5863247762bea3f525cc34557a063a786f71",
+        "created_at": "2023-01-23 04:22:07 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "9c20aa01ea901327304dba7bb730385485266d28",
+        "created_at": "2023-02-02 08:32:38 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-version-add-version-endpoint",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx_clas/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 3,
+                "changes": 18
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "c4d3d499b091e681e7847d1232e9c8356c6f4779",
+        "created_at": "2024-07-27 16:17:27 +0800",
+        "author": "gouzil",
+        "committer": "gouzil",
+        "message": "fix-debug-and-CORS",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 2,
+                "changes": 16
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "7da36bafbaa0dffa77ff24a1452bb4f528e9c61a",
+        "created_at": "2024-07-28 09:31:28 +0800",
+        "author": "Liyulingyue",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-2-from-gouzil-fix_debug_CORS",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "031bd2d5b521a602df241b98b1bc20d5c44db00d",
+        "created_at": "2023-02-09 19:44:43 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "269a0ede882ca306ebb96a194b5d7e62de1f6fc4",
+        "created_at": "2023-02-27 01:06:37 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-log-level",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/model.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 9,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "dd13d08283747e958db456a1ab1bed23df9223a6",
+        "created_at": "2023-02-27 06:07:54 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "3646115b807912f24f68895aca299fb3393e5f09",
+        "created_at": "2023-02-02 13:33:46 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "c0c7730893e71c9b4d170c7527d94b0f44e0b440",
+        "created_at": "2023-02-09 14:43:44 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-det-upper-left-origin",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/model.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 9,
+                "changes": 15
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "2cf7a57cdb31a5933bc62b00ae4e41ad03f45c5d",
+        "created_at": "2023-01-23 03:53:16 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "215e26d4d3c7f50eee82a674c3aab8d60e7e1f41",
+        "created_at": "2023-01-23 04:20:22 +0000",
+        "author": "linhandev",
+        "committer": "web-flow",
+        "message": "Update-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "733a3ca7ff4e182b5655f3f65b3b0ebb9e142574",
+        "created_at": "2024-06-21 22:08:32 +0800",
+        "author": "Liyulingyue",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-1-from-PaddleCV-SIG-develop",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "049bc40774f88b2ef7598aa54922c65a701366f9",
+        "created_at": "2023-01-22 22:52:06 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-clean-up-print-and-import",
+        "files": [
+            {
+                "filename": ".vscode/settings.json",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 7,
+                "changes": 9
+            },
+            {
+                "filename": "paddlelabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "29a3625c4dacb42abf06cac4b3eb6bccbc8d3b7a",
+        "created_at": "2023-01-12 01:02:21 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-build-more-start-commands",
+        "files": [
+            {
+                "filename": ".vscode/settings.json",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "e1fb4929a631e9016df994e13a69363d19847b43",
+        "created_at": "2023-01-11 04:12:38 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "252ab71f11676e31e73e566d1b846f5819b10a26",
+        "created_at": "2023-01-05 23:34:57 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-dep",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/OCR/model.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "7fd9b561ad3fdf4653abe131e10b22111de6cb31",
+        "created_at": "2023-01-12 06:03:31 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "f689d7531ce0ada9a29b5facd3c35a42ac655ef1",
+        "created_at": "2023-01-10 23:11:07 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-predict-piggy-back-value",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "ec862893e793566b570674028f61c5b032061672",
+        "created_at": "2023-01-06 04:36:14 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "523e77e6d72b614f47851e1f4c5d6ed9e6512773",
+        "created_at": "2023-01-04 04:40:36 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-api-lang",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "21ae833a9370d0740c5d118f2807aadf376e4904",
+        "created_at": "2023-01-04 05:01:51 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "b87e3e3054e4c3c2e5851f74b13dc25a70ff24ea",
+        "created_at": "2023-01-04 09:41:41 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "cb917d5b734f753c66eedd1900f20dfad2a89a78",
+        "created_at": "2022-12-27 11:23:33 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "c3cadac4a929985d06bf64addcbf4efebeda504b",
+        "created_at": "2023-01-04 00:00:36 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-model-print-ocr-language",
+        "files": [
+            {
+                "filename": ".vscode/settings.json",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/model/OCR/model.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "fd9910015af14258aec0eb486263ef3defacc910",
+        "created_at": "2022-12-27 06:16:59 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "83a1f8b2d801c8cb7350d86364d6807edc56bd2c",
+        "created_at": "2022-12-27 06:22:25 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-ci-bump-version",
+        "files": [
+            {
+                "filename": ".github/workflows/build.yml",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 14,
+                "changes": 32
+            },
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "9cf85a5bf1946b3f450ed580d2602bcc015702ed",
+        "created_at": "2022-12-26 15:59:19 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "33c806667f62f1198c8037b23989ba4b63b74141",
+        "created_at": "2022-12-26 16:27:31 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "4349e1d123bd94f033b8715a2c41a0d764676bd6",
+        "created_at": "2022-12-27 05:33:14 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-cleanup",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/OCR/model.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 6,
+                "changes": 9
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/model.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 14,
+                "changes": 24
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/model.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 17,
+                "changes": 27
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx_clas/model.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 21,
+                "changes": 48
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "46c241b4ec11a6c78f89e73d04d1f9b40956b737",
+        "created_at": "2022-12-27 06:09:24 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-ocr-center-origion",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/OCR/model.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "09a5cb59385b89d78cdeda9fd9f9011205673c24",
+        "created_at": "2022-12-26 16:05:05 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "d34da897f8cc92133aa3bf31edf2d5c53f5128bf",
+        "created_at": "2022-12-25 11:47:13 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-env-update",
+        "files": [
+            {
+                "filename": "env.yaml",
+                "status": "modified",
+                "additions": 32,
+                "deletions": 30,
+                "changes": 62
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "5cd2a896f97431c6927fbe1acec7721768bc0852",
+        "created_at": "2022-12-26 15:56:47 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 8,
+                "changes": 26
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "bd267c068d722078f5cf523200d0d71a977abed0",
+        "created_at": "2022-12-26 16:23:32 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-format",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": ".vscode/settings.json",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 13,
+                "changes": 26
+            },
+            {
+                "filename": "paddlelabel_ml/model/OCR/info.yaml",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 12,
+                "changes": 24
+            },
+            {
+                "filename": "paddlelabel_ml/model/OCR/model.py",
+                "status": "modified",
+                "additions": 113,
+                "deletions": 108,
+                "changes": 221
+            },
+            {
+                "filename": "paddlelabel_ml/model/OCR/requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "d169e0763d4ceb6c2ff14ce83909d977bb10a4a8",
+        "created_at": "2022-12-26 15:53:09 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-ocr",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": ".vscode/settings.json",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "env.yaml",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 2,
+                "changes": 20
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/OCR/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/OCR/info.yaml",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "paddlelabel_ml/model/OCR/model.py",
+                "status": "added",
+                "additions": 170,
+                "deletions": 0,
+                "changes": 170
+            },
+            {
+                "filename": "paddlelabel_ml/model/OCR/requirements.txt",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 10,
+                "changes": 27
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "b72ce9c1fa825be216667fa2363ef6c34d9a14af",
+        "created_at": "2022-12-11 15:39:23 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-ci-update-pre-commit",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 5,
+                "changes": 17
+            },
+            {
+                "filename": "requirements-dev.txt",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "a422bed9166dbbf428a6448fcd0c6d8a128cf622",
+        "created_at": "2022-12-06 23:47:15 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-dep",
+        "files": [
+            {
+                "filename": "env.yaml",
+                "status": "added",
+                "additions": 197,
+                "deletions": 0,
+                "changes": 197
+            },
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 1,
+                "changes": 32
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "tool/freeze_env.sh",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "0da63e0aa2d6a6ae68a9685d31776849a0382a25",
+        "created_at": "2022-12-06 23:04:54 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-argparse-debug-mode",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 46,
+                "deletions": 18,
+                "changes": 64
+            },
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 4,
+                "changes": 20
+            },
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "c435d003e6163b8aa2c2a5ce9e6c66311f6ad6ce",
+        "created_at": "2022-12-05 00:40:13 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-clean-output",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 25,
+                "changes": 25
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "28b5163e15b37e0e8cd7fa1a3f806e8b10f7b578",
+        "created_at": "2022-12-05 00:28:26 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-err-add-handler",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/util.py",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 3,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "743db5323f91c12da8f2b29cfbc5e0dc2ef8c542",
+        "created_at": "2022-11-18 04:38:52 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-eiseg-autogpu",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "6c056e2ae86a81db96272548ff0980d1b0ac3294",
+        "created_at": "2022-12-05 00:30:20 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "1781a4b4f124fd5f7487db03a45643d9b3fa8443",
+        "created_at": "2022-12-05 00:29:34 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-div-0",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "84e42f81ae6df0a8cca6fe6779199f25b47ad099",
+        "created_at": "2022-11-29 07:11:28 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "9537240890e164fcd59291d35fb6ef13b2fedc65",
+        "created_at": "2022-11-18 04:28:28 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-gpu-auto-detect",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 1,
+                "changes": 16
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/model.py",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 2,
+                "changes": 21
+            },
+            {
+                "filename": "paddlelabel_ml/util.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "930394e783ee6901a8212ab1abcbc3596b15962e",
+        "created_at": "2022-11-18 02:02:24 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-manifest",
+        "files": [
+            {
+                "filename": "MANIFEST.in",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "d192c88c2a8aefe205d72c5033e755712199010c",
+        "created_at": "2022-11-18 04:32:56 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-det-auto-gpu",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/model.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 10,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "1d27f767aa6a6c7a9e0e2961bfa6c778c7141491",
+        "created_at": "2022-11-17 03:24:50 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-print-cleanup",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/model.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/preprocess.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "b1d1b292ec692d427c1133a250908325ff373eac",
+        "created_at": "2022-11-11 04:17:24 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-model-load-try-dep-not-found",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 5,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "0548b18f7c76f3aa5bdecc692c082a4bc1212b77",
+        "created_at": "2022-11-01 02:54:20 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-manifest",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 3,
+                "changes": 7
+            },
+            {
+                "filename": "MANIFEST.in",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "acfab5f08d9ad87854d1ec403c2d846be9afeb9c",
+        "created_at": "2022-11-01 06:47:22 +0000",
+        "author": null,
+        "committer": null,
+        "message": "publish-ci-bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "2a20323de351a99a526798214d552e4e147e6d3a",
+        "created_at": "2022-11-11 03:59:06 -0500",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-ci-pplcnet",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "708b82a960ca5fa7cbdeb9d88b127adbbe57da9f",
+        "created_at": "2022-11-01 02:41:15 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "05bbd3b3c96e3e449adc97014bacb572a44a11c4",
+        "created_at": "2022-11-01 02:55:57 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 6,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "91c22a41b6beb4e7c1d32e10e39ce80531996943",
+        "created_at": "2022-11-01 02:44:53 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 6,
+                "changes": 9
+            },
+            {
+                "filename": "paddlelabel_ml/util.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "f316a00fc6026f1b7e338e1d6650ecb6f827b7c3",
+        "created_at": "2022-11-01 02:37:52 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-ci-update-pypi-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 34,
+                "deletions": 10,
+                "changes": 44
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "cb3bc3fb8316f5da8c6d38127adb82f160510d4a",
+        "created_at": "2022-10-21 00:32:46 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-print-clean-up",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "176ba5643a9e2ea8689fff3116b60fb9a55a56d3",
+        "created_at": "2022-10-19 06:08:22 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-model-discovery-skip-hidden-folder",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/util.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "b06b66ba0ca8c27ab690685273b2244492345835",
+        "created_at": "2022-10-18 00:05:24 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-lcnet-class-names",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 2,
+                "changes": 8
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/info.yaml",
+                "status": "modified",
+                "additions": 1001,
+                "deletions": 0,
+                "changes": 1001
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "93f309786ad4ce3ac2608acb6d85ea2aa48194bf",
+        "created_at": "2022-10-11 01:07:24 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-sample",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/sample/model.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 1,
+                "changes": 8
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "e1ddbf2ef7c717c2ef9a7f8c62ce7ba66e8c12b2",
+        "created_at": "2022-09-25 18:19:50 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-format-get-all-models-return",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/info.yaml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/info.yaml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/info.yaml",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx_clas/info.yaml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/model/sample/info.yaml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 24,
+                "changes": 48
+            },
+            {
+                "filename": "paddlelabel_ml/util.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "97624da647b33ca5852249a0c524b2f1e4ddc80b",
+        "created_at": "2022-10-11 00:29:28 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-pico",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 3,
+                "changes": 9
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/info.yaml",
+                "status": "modified",
+                "additions": 81,
+                "deletions": 0,
+                "changes": 81
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            },
+            {
+                "filename": "paddlelabel_ml/util.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "788eceb2e2fa945b0e9d9f4f45b7657e0ba70466",
+        "created_at": "2022-09-25 15:48:56 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-openapi-update",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "f64c0c7a7e1959514ab3ec9ff8af8796aac3c6a1",
+        "created_at": "2022-09-25 15:31:32 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-pico",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/info.yaml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/info.yaml",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/model.py",
+                "status": "added",
+                "additions": 451,
+                "deletions": 0,
+                "changes": 451
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/postprocess.py",
+                "status": "added",
+                "additions": 221,
+                "deletions": 0,
+                "changes": 221
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/preprocess.py",
+                "status": "added",
+                "additions": 425,
+                "deletions": 0,
+                "changes": 425
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/requirements.txt",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/utils.py",
+                "status": "added",
+                "additions": 292,
+                "deletions": 0,
+                "changes": 292
+            },
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/visualize.py",
+                "status": "added",
+                "additions": 465,
+                "deletions": 0,
+                "changes": 465
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "e6c5a0a068d56686d1a835054827c596c1097c0b",
+        "created_at": "2022-09-25 14:04:46 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-PPLCNetV2",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 3,
+                "changes": 5
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/info.yaml",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/labels.txt",
+                "status": "added",
+                "additions": 1000,
+                "deletions": 0,
+                "changes": 1000
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/model.py",
+                "status": "added",
+                "additions": 113,
+                "deletions": 0,
+                "changes": 113
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/operators.py",
+                "status": "added",
+                "additions": 218,
+                "deletions": 0,
+                "changes": 218
+            },
+            {
+                "filename": "paddlelabel_ml/model/PPLCNetV2/postprocess.py",
+                "status": "added",
+                "additions": 62,
+                "deletions": 0,
+                "changes": 62
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx_clas/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx_clas/info.yaml",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx_clas/model.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx_clas/requirements.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/sample/model.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "a62f1a4fe6ffdeeacc73d6896c13804bf2983938",
+        "created_at": "2022-10-11 00:28:57 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-pico",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/PicoDet/ckpt/infer_cfg.yml",
+                "status": "added",
+                "additions": 116,
+                "deletions": 0,
+                "changes": 116
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "92d7d5f2d5177b381d8c83238b9a27a1069bb1a3",
+        "created_at": "2022-09-13 22:57:33 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-async",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 7,
+                "changes": 29
+            },
+            {
+                "filename": "paddlelabel_ml/__init__.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 3,
+                "changes": 5
+            },
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 26,
+                "changes": 57
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 6,
+                "changes": 24
+            },
+            {
+                "filename": "paddlelabel_ml/model/__init__.py",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 10,
+                "changes": 29
+            },
+            {
+                "filename": "paddlelabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/clas/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/clas/info.yaml",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/clas/model.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 4,
+                "changes": 6
+            },
+            {
+                "filename": "paddlelabel_ml/model/clas/requirements.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/info.yaml",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 11,
+                "changes": 17
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx/clas/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/sample/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/sample/info.yaml",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/sample/model.py",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "paddlelabel_ml/model/util/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "paddlelabel_ml/model/util/file.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 103,
+                "changes": 103
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 21,
+                "changes": 42
+            },
+            {
+                "filename": "paddlelabel_ml/util.py",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "23e21fc610dfdf564cec55cc777d944d681948ce",
+        "created_at": "2022-08-04 00:59:41 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-doc",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 53,
+                "deletions": 1,
+                "changes": 54
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "576d9bff7fb9f3b8483e13ead81499b23181403f",
+        "created_at": "2022-08-03 06:49:47 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "1eef0c64b46a54ad1cf64d7ed643a590fa0c09e4",
+        "created_at": "2022-08-03 02:48:44 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "Merge-branch-develop-of-github.com-PaddleCV-SIG-PP-Label-ML-into-develop",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "fd0fc02d6b85803a6d768f77f5fcaee1f9fdc392",
+        "created_at": "2022-08-03 02:48:41 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "109e321cdabffe8ef56e41f901a575427d2dedd7",
+        "created_at": "2022-08-03 06:47:53 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "fb72df92c1a94433c58c9264546dfdfa3011b072",
+        "created_at": "2022-08-03 02:46:02 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "Merge-branch-develop-of-github.com-PaddleCV-SIG-PP-Label-ML-into-develop",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "9710bb42692268c97b7b18df4f0280fb7d2b6ae5",
+        "created_at": "2022-08-03 02:45:56 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-dep-rm-pdx-dep",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/model/__init__.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "3dc9ffd26cea10dbc8af1f62724bf5a0fa01fc58",
+        "created_at": "2022-08-03 06:31:19 +0000",
+        "author": null,
+        "committer": null,
+        "message": "bump-version",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "667dfed8c3390a72054af94f68c457668d1a0a16",
+        "created_at": "2022-08-03 02:30:28 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "cc2c47592037fe30b8b97e4a8dd9fdbd26a452b9",
+        "created_at": "2022-08-03 02:27:14 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci-pypi",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "cc90e0a68847f92cbf9eba1dbc57b6344f1062a0",
+        "created_at": "2022-08-03 02:22:12 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ci-url",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "3f288fff6041d39306f89185f184a4d1c691b064",
+        "created_at": "2022-08-03 02:14:03 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-pypi",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "9b06029d45544589d56b1801d44a62dcb6eb59b8",
+        "created_at": "2022-08-03 02:13:26 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-pypi-ci",
+        "files": [
+            {
+                "filename": ".github/workflows/pypi.yml",
+                "status": "added",
+                "additions": 52,
+                "deletions": 0,
+                "changes": 52
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "278461ed6393934fccf6f088244c9f3482c7c2da",
+        "created_at": "2022-08-03 01:27:03 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-issue2project-move",
+        "files": [
+            {
+                "filename": ".github/workflows/issue2project.yml",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "5845de549f2c6bdbaf5de0bec764fb3196ec2f59",
+        "created_at": "2022-08-03 01:26:10 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-issue2project",
+        "files": [
+            {
+                "filename": ".github/issue2project.yml",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "525117dd890431b76520dd8324238c3d3de17611",
+        "created_at": "2022-08-01 18:37:14 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-port-set-manually",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 1,
+                "changes": 22
+            },
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "a6ed4059b73ca6cfe764213d801261334841c408",
+        "created_at": "2022-07-30 22:38:43 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-path-print",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 7,
+                "changes": 30
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "8903e1f3ac08d7ee7bb62f4fbbdc3d9cbee59baa",
+        "created_at": "2022-07-30 19:25:32 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-precommit",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            },
+            {
+                "filename": "MANIFEST.in",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/__init__.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 11,
+                "changes": 27
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/clicker.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 6,
+                "changes": 8
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/predictor/__init__.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 16,
+                "changes": 33
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/predictor/base.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 27,
+                "changes": 43
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/predictor/ops.py",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 13,
+                "changes": 28
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/crops.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/flip.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/limit_longest_side.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/misc.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/zoom_in.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 17,
+                "changes": 38
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/util/cython/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/util/cython/dist_maps.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx/clas/model.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 14,
+                "changes": 22
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx/clas/requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/util/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/util/file.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            },
+            {
+                "filename": "paddlelabel_ml/util.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 4,
+                "changes": 5
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "tool/install.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "299a8ec7ca81a8b98060617416858d0ef839b8b3",
+        "created_at": "2022-07-30 19:23:23 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-rename",
+        "files": [
+            {
+                "filename": "paddlelabel_ml/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddlelabel_ml/model/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx/clas/model.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "e65a6abc41a8aa9b8fbf58f77d92d72f8c79391b",
+        "created_at": "2022-07-29 23:30:59 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-rename",
+        "files": [
+            {
+                "filename": "MANIFEST.in",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "paddlelabel_ml/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/api.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/base/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/.DS_Store",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/clicker.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/predictor/.DS_Store",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/predictor/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/predictor/base.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/predictor/ops.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/.DS_Store",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/base.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/crops.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/flip.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/limit_longest_side.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/misc.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/inference/transforms/zoom_in.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/util/cython/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/util/cython/_get_dist_maps.pyx",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/util/cython/_get_dist_maps.pyxbld",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/eiseg/util/cython/dist_maps.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx/clas/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx/clas/model.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/pdx/clas/requirements.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/util/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/model/util/file.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/util.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddlelabel_ml/version",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "tool/bumpversion.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "tool/install.sh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "91a5b5efa15b7555213c298cc8561676180d260b",
+        "created_at": "2022-07-29 21:33:18 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "Merge-branch-develop-of-github.com-PaddleCV-SIG-PP-Label-ML-into-develop",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "624ac6cb003dfce8c0db30d0d524ff7b84abc2e4",
+        "created_at": "2022-07-30 01:32:53 +0000",
+        "author": "linhandev",
+        "committer": "web-flow",
+        "message": "Delete-.vscode-directory",
+        "files": [
+            {
+                "filename": ".vscode/settings.json",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "c972dd72669a1cd35bc5bcc3dff081556ce5c803",
+        "created_at": "2022-07-29 21:31:02 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "ignore",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "af123bde976b5995a4219c546c585171b17d2ed2",
+        "created_at": "2022-07-12 14:22:12 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-req",
+        "files": [
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "db35b9c55f4589bad46a71b8d2e782371a3ca9e7",
+        "created_at": "2022-07-30 01:32:42 +0000",
+        "author": "linhandev",
+        "committer": "web-flow",
+        "message": "Delete-.idea-directory",
+        "files": [
+            {
+                "filename": ".idea/.gitignore",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            },
+            {
+                "filename": ".idea/PP-Label-ML.iml",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 12,
+                "changes": 12
+            },
+            {
+                "filename": ".idea/inspectionProfiles/profiles_settings.xml",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 6,
+                "changes": 6
+            },
+            {
+                "filename": ".idea/modules.xml",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 8,
+                "changes": 8
+            },
+            {
+                "filename": ".idea/vcs.xml",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 6,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "f5afda0703b4597d652a3f4b8fde77b8b82cc07c",
+        "created_at": "2022-07-01 03:47:11 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-api",
+        "files": [
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "ec1989c7fbefe698f84e4ab971f0e433fade2868",
+        "created_at": "2022-07-01 03:38:20 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-eiseg",
+        "files": [
+            {
+                "filename": "pplabel_ml/model/eiseg/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/base.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/ops.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/crops.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/flip.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/zoom_in.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "2440ed07894a7a02e05db2bb2e07a29c3d87cf3b",
+        "created_at": "2022-07-01 03:38:07 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-eiseg",
+        "files": [
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "d846b4da32cb81f10155ac5a921c71c65ddd37a0",
+        "created_at": "2022-07-01 14:22:02 +0800",
+        "author": null,
+        "committer": null,
+        "message": "Remove-redundant-code",
+        "files": [
+            {
+                "filename": ".idea/.gitignore",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": ".idea/PP-Label-ML.iml",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": ".idea/inspectionProfiles/profiles_settings.xml",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": ".idea/modules.xml",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": ".idea/vcs.xml",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/evaluation.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 53,
+                "changes": 53
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/__init__.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 55,
+                "changes": 58
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/base.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 12,
+                "changes": 18
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/brs.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 313,
+                "changes": 313
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/brs_functors.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 118,
+                "changes": 118
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/brs_losses.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 59,
+                "changes": 59
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/ops.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/misc.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/zoom_in.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/utils.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 120,
+                "changes": 120
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 119,
+                "changes": 119
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/initializer.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 76,
+                "changes": 76
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/is_deeplab_model.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 24,
+                "changes": 24
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/is_hrnet_model.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 25,
+                "changes": 25
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/is_model.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 138,
+                "changes": 138
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/losses.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 162,
+                "changes": 162
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/metrics.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 108,
+                "changes": 108
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/basic_blocks.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 67,
+                "changes": 67
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/deeplab_v3.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 176,
+                "changes": 176
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/hrnet_ocr.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 427,
+                "changes": 427
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/ocr.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 146,
+                "changes": 146
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/resnet.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 45,
+                "changes": 45
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/resnetv1b.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 287,
+                "changes": 287
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modifiers.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 10,
+                "changes": 10
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/readme.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 5,
+                "changes": 5
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/requirements.txt",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 17,
+                "changes": 17
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/distributed.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 33,
+                "changes": 33
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/exp.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 154,
+                "changes": 154
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/exp_imports/default.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 15,
+                "changes": 15
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/serialization.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 108,
+                "changes": 108
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/vis.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 129,
+                "changes": 129
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "18688da6fb9dc0233b342ba0fab1ff134fb9245f",
+        "created_at": "2022-06-19 11:20:54 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-swap",
+        "files": [
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "f641151c739a7da85e4b2fb5169a30b80e946160",
+        "created_at": "2022-06-19 09:49:51 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-plt",
+        "files": [
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 4,
+                "changes": 18
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "f42f8675c6bc8f61d04160a0ad56884e87a374ff",
+        "created_at": "2022-06-16 08:15:45 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-reload",
+        "files": [
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 2,
+                "changes": 14
+            },
+            {
+                "filename": "pplabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 11,
+                "changes": 23
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "4e33e2ddcad17b4f119cc67edd62f1d24756c8c0",
+        "created_at": "2022-06-16 07:56:03 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-eiseg-rgb-static",
+        "files": [
+            {
+                "filename": "pplabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "2b7040b6417510a1b0bcab567de8f776cd775c31",
+        "created_at": "2022-06-12 22:53:55 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-serve",
+        "files": [
+            {
+                "filename": "pplabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 12,
+                "changes": 24
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "e90c5254c4d9ec222de0dd8135725e60f914b696",
+        "created_at": "2022-06-14 23:21:30 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "plt",
+        "files": [
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "384728c51ca2e61ed4d860d9daad907fafbc6407",
+        "created_at": "2022-06-11 06:58:05 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ml-2-decimal",
+        "files": [
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 2,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "93322b72302e89602c5756203a1a98814b65e125",
+        "created_at": "2022-06-11 07:08:38 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-ml-2-decimal",
+        "files": [
+            {
+                "filename": ".vscode/settings.json",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/model.py",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 20,
+                "changes": 35
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "b0064a2bc85b0e77b6941c78e5944d8a7daeb0ed",
+        "created_at": "2022-06-11 05:56:47 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-eiseg-2-digits",
+        "files": [
+            {
+                "filename": "pplabel_ml/model/eiseg/mode.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "9496a45bc91b1ea9716f3b21354869f35ca4ad16",
+        "created_at": "2022-06-06 06:18:24 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-eiseg-params",
+        "files": [
+            {
+                "filename": "pplabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 1,
+                "changes": 15
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "13bc32c8b7c972a8db930d15102072e4fe1d17cf",
+        "created_at": "2022-06-11 05:12:33 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-faq",
+        "files": [
+            {
+                "filename": "doc/faq.md",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "1942cea3192d8b7731389ab159a675490a95ce9a",
+        "created_at": "2022-06-06 06:18:06 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-eiseg-params",
+        "files": [
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "219a5ff76d868acb3f8ef420b9623ed429fd243c",
+        "created_at": "2022-06-01 02:53:38 +0000",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "sync",
+        "files": [
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 3,
+                "changes": 5
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/mode.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "7e607b1c453e0709f3728f48e35968b596bb88a0",
+        "created_at": "2022-05-25 01:44:41 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-eiseg-set-model-and-param-path",
+        "files": [
+            {
+                "filename": "MANIFEST.in",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "pplabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 26,
+                "changes": 26
+            },
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 10,
+                "changes": 25
+            },
+            {
+                "filename": "pplabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/config.yml",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 24,
+                "changes": 24
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/demo.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 54,
+                "changes": 54
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/clicker.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 4,
+                "changes": 12
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/interactive_demo/app.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 348,
+                "changes": 348
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/interactive_demo/canvas.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 320,
+                "changes": 320
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/interactive_demo/controller.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 155,
+                "changes": 155
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/interactive_demo/wrappers.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 92,
+                "changes": 92
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/mode.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 18,
+                "changes": 43
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/readme.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 54,
+                "changes": 56
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/rest.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 80,
+                "changes": 80
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/static_model/hrnet18s_cocolvis.yaml",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/to_static.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 94,
+                "changes": 94
+            },
+            {
+                "filename": "pplabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "79fef334d69b2a2de20dd2c7446dca3633e6b101",
+        "created_at": "2022-04-29 00:36:06 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-cd-pypi",
+        "files": [
+            {
+                "filename": "MANIFEST.in",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "pplabel_ml/__init__.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            },
+            {
+                "filename": "pplabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "pplabel_ml/model/base/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "setup.py",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "tool/bumpversion.py",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "tool/install.sh",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            },
+            {
+                "filename": "tool/pypi.sh",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "7550123d0a0dab972827865e41d68bafc0b9883f",
+        "created_at": "2022-05-07 02:48:33 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "fix-cors",
+        "files": [
+            {
+                "filename": "pplabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 34,
+                "deletions": 6,
+                "changes": 40
+            },
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "pplabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "pplabel_ml/model/pdx/clas/model.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 7,
+                "changes": 20
+            },
+            {
+                "filename": "pplabel_ml/util.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "28da23a9bdd741c13012b8ddeb1615882cf1b74c",
+        "created_at": "2022-04-26 00:58:20 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-clean-clean-print",
+        "files": [
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "25e53ec51683a0d21b2152aace6e1c4310d4e7b3",
+        "created_at": "2022-05-10 10:58:49 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-eiseg",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/__init__.py",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/config.yml",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/demo.py",
+                "status": "added",
+                "additions": 54,
+                "deletions": 0,
+                "changes": 54
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/.DS_Store",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/clicker.py",
+                "status": "added",
+                "additions": 118,
+                "deletions": 0,
+                "changes": 118
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/evaluation.py",
+                "status": "added",
+                "additions": 53,
+                "deletions": 0,
+                "changes": 53
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/.DS_Store",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/__init__.py",
+                "status": "added",
+                "additions": 96,
+                "deletions": 0,
+                "changes": 96
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/base.py",
+                "status": "added",
+                "additions": 212,
+                "deletions": 0,
+                "changes": 212
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/brs.py",
+                "status": "added",
+                "additions": 313,
+                "deletions": 0,
+                "changes": 313
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/brs_functors.py",
+                "status": "added",
+                "additions": 118,
+                "deletions": 0,
+                "changes": 118
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/predictor/brs_losses.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/.DS_Store",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/__init__.py",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/base.py",
+                "status": "added",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/crops.py",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/flip.py",
+                "status": "added",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/limit_longest_side.py",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/transforms/zoom_in.py",
+                "status": "added",
+                "additions": 174,
+                "deletions": 0,
+                "changes": 174
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/inference/utils.py",
+                "status": "added",
+                "additions": 120,
+                "deletions": 0,
+                "changes": 120
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/interactive_demo/app.py",
+                "status": "added",
+                "additions": 348,
+                "deletions": 0,
+                "changes": 348
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/interactive_demo/canvas.py",
+                "status": "added",
+                "additions": 320,
+                "deletions": 0,
+                "changes": 320
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/interactive_demo/controller.py",
+                "status": "added",
+                "additions": 155,
+                "deletions": 0,
+                "changes": 155
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/interactive_demo/wrappers.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/mode.py",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/initializer.py",
+                "status": "added",
+                "additions": 76,
+                "deletions": 0,
+                "changes": 76
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/is_deeplab_model.py",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/is_hrnet_model.py",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/is_model.py",
+                "status": "added",
+                "additions": 138,
+                "deletions": 0,
+                "changes": 138
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/losses.py",
+                "status": "added",
+                "additions": 162,
+                "deletions": 0,
+                "changes": 162
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/metrics.py",
+                "status": "added",
+                "additions": 108,
+                "deletions": 0,
+                "changes": 108
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/basic_blocks.py",
+                "status": "added",
+                "additions": 67,
+                "deletions": 0,
+                "changes": 67
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/deeplab_v3.py",
+                "status": "added",
+                "additions": 176,
+                "deletions": 0,
+                "changes": 176
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/hrnet_ocr.py",
+                "status": "added",
+                "additions": 427,
+                "deletions": 0,
+                "changes": 427
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/ocr.py",
+                "status": "added",
+                "additions": 146,
+                "deletions": 0,
+                "changes": 146
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/resnet.py",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modeling/resnetv1b.py",
+                "status": "added",
+                "additions": 287,
+                "deletions": 0,
+                "changes": 287
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/modifiers.py",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/models/ops.py",
+                "status": "added",
+                "additions": 86,
+                "deletions": 0,
+                "changes": 86
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/readme.md",
+                "status": "added",
+                "additions": 57,
+                "deletions": 0,
+                "changes": 57
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/requirements.txt",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/rest.py",
+                "status": "added",
+                "additions": 80,
+                "deletions": 0,
+                "changes": 80
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/static_model/hrnet18s_cocolvis.yaml",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/to_static.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/cython/__init__.py",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/cython/_get_dist_maps.pyx",
+                "status": "added",
+                "additions": 63,
+                "deletions": 0,
+                "changes": 63
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/cython/_get_dist_maps.pyxbld",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/cython/dist_maps.py",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/distributed.py",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/exp.py",
+                "status": "added",
+                "additions": 154,
+                "deletions": 0,
+                "changes": 154
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/exp_imports/default.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/misc.py",
+                "status": "added",
+                "additions": 83,
+                "deletions": 0,
+                "changes": 83
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/serialization.py",
+                "status": "added",
+                "additions": 108,
+                "deletions": 0,
+                "changes": 108
+            },
+            {
+                "filename": "pplabel_ml/model/eiseg/util/vis.py",
+                "status": "added",
+                "additions": 129,
+                "deletions": 0,
+                "changes": 129
+            },
+            {
+                "filename": "pplabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "pplabel_ml/version",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "955641a9076c3a3619a683765a63f3df3ed853fe",
+        "created_at": "2022-04-28 02:18:40 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-clas-train-check",
+        "files": [
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 3,
+                "changes": 9
+            },
+            {
+                "filename": "pplabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 1,
+                "changes": 14
+            },
+            {
+                "filename": "pplabel_ml/model/pdx/clas/model.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "73e91979a9d2899959918dd43ed066d48fc9dee5",
+        "created_at": "2022-04-25 11:45:02 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feta-predict-run-predict",
+        "files": [
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 5,
+                "changes": 12
+            },
+            {
+                "filename": "pplabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "pplabel_ml/model/pdx/clas/model.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "pplabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "8151ab1021cc9e348e9a0458c4ed5fa8a8b3a103",
+        "created_at": "2022-04-25 09:15:49 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-pretrianed-download-pretrained",
+        "files": [
+            {
+                "filename": "pplabel_ml/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 2,
+                "changes": 8
+            },
+            {
+                "filename": "pplabel_ml/model/__init__.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "pplabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 3,
+                "changes": 16
+            },
+            {
+                "filename": "pplabel_ml/model/pdx/clas/model.py",
+                "status": "modified",
+                "additions": 37,
+                "deletions": 11,
+                "changes": 48
+            },
+            {
+                "filename": "pplabel_ml/model/util/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "pplabel_ml/model/util/file.py",
+                "status": "added",
+                "additions": 103,
+                "deletions": 0,
+                "changes": 103
+            },
+            {
+                "filename": "pplabel_ml/openapi.yml",
+                "status": "modified",
+                "additions": 37,
+                "deletions": 16,
+                "changes": 53
+            },
+            {
+                "filename": "pplabel_ml/wsgi.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 6,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "0bf928f355fe06588b2ad34be7893e22f94e0cca",
+        "created_at": "2022-04-25 09:42:22 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feat-thread-multithread",
+        "files": [
+            {
+                "filename": "pplabel_ml/__main__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 5,
+                "changes": 19
+            },
+            {
+                "filename": "pplabel_ml/model/base/model.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 4,
+                "changes": 11
+            },
+            {
+                "filename": "pplabel_ml/model/pdx/clas/model.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "99e76adf1d4362c9f8bd1a494e4f67cdf030b05d",
+        "created_at": "2022-04-21 21:47:22 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "chore-license-add-license",
+        "files": [
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 201,
+                "deletions": 0,
+                "changes": 201
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "78b5a58a55981567017ff9a5c0072f8d233982bf",
+        "created_at": "2022-04-22 01:45:53 +0000",
+        "author": "linhandev",
+        "committer": "web-flow",
+        "message": "Create-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/PaddleLabel-ML",
+        "sha": "9b600b8482b9d7b2998d4aa507200bd5ad80a7f3",
+        "created_at": "2022-04-21 21:40:12 -0400",
+        "author": "linhandev",
+        "committer": "linhandev",
+        "message": "feature-api-initial-api",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 165,
+                "deletions": 0,
+                "changes": 165
+            },
+            {
+                "filename": "pplabel_ml/__init__.py",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "pplabel_ml/__main__.py",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "pplabel_ml/api.py",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "pplabel_ml/model/__init__.py",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "pplabel_ml/model/base/model.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "pplabel_ml/model/pdx/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/pdx/clas/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "pplabel_ml/model/pdx/clas/model.py",
+                "status": "added",
+                "additions": 68,
+                "deletions": 0,
+                "changes": 68
+            },
+            {
+                "filename": "pplabel_ml/model/pdx/clas/requirements.txt",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "pplabel_ml/openapi.yml",
+                "status": "added",
+                "additions": 140,
+                "deletions": 0,
+                "changes": 140
+            },
+            {
+                "filename": "pplabel_ml/util.py",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "pplabel_ml/wsgi.py",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "added",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            }
+        ]
+    }
+]

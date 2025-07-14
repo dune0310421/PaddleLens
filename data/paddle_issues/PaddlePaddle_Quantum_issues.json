@@ -1,0 +1,662 @@
+[
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 10
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 3,
+        "title": "量子机器学习比普通机器学习的优势在哪里？",
+        "body": "用普通计算机模拟应该无法体现出优势吧？\r\n\r\n怎样能在量子机上运行？",
+        "state": "open",
+        "user": "saintthor",
+        "closed_by": null,
+        "created_at": "2020-05-25T14:25:45+00:00",
+        "updated_at": "2020-05-25T14:25:45+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 7,
+        "title": "冯诺依曼熵的计算 对数 不应该是2为底吗？而numpy log 是自然对数吧",
+        "body": "![image](https://user-images.githubusercontent.com/40930301/96019468-289dd580-0e7f-11eb-9996-ab0e7618ada8.png)\r\n",
+        "state": "open",
+        "user": "R2h1",
+        "closed_by": null,
+        "created_at": "2020-10-14T16:42:34+00:00",
+        "updated_at": "2020-10-14T16:42:34+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 2,
+        "title": "请问有关于量子机器学习的示例吗？",
+        "body": "我想知道如何使用包来做量子机器学习。\r\n谢谢。",
+        "state": "open",
+        "user": "charujing",
+        "closed_by": null,
+        "created_at": "2020-05-20T10:57:11+00:00",
+        "updated_at": "2020-05-22T06:05:35+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "tigerneil",
+            "charujing",
+            "wildfire810",
+            "charujing"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 9,
+        "title": "咨询项目内图片是否可以自由使用",
+        "body": "在项目的Quantum/introduction/figures 目录下，有这张图片：intro-fig-IBMQ.png\r\n大约是一台ibm原型机的图片。\r\n\r\n请问这张图片来源是哪里，我准备放入一篇介绍量桨的文章里，做插图，可以吗 ？ \r\n\r\n另外在量桨的一些学习项目中，用到的一些图片都注明了来源（大多来自wiki），这样的图片在注明来源的情况下可以在文章中使用吧？ \r\n",
+        "state": "open",
+        "user": "skywalk163",
+        "closed_by": null,
+        "created_at": "2021-05-10T07:45:08+00:00",
+        "updated_at": "2021-05-11T06:27:24+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "kaminotesf"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 1,
+        "title": "您的底层的量子计算如何实现？ 量子计算机在那里？多谢",
+        "body": "",
+        "state": "open",
+        "user": "ccerai207",
+        "closed_by": null,
+        "created_at": "2020-05-20T06:02:28+00:00",
+        "updated_at": "2020-05-23T08:29:31+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "wildfire810",
+            "fucker007",
+            "charujing",
+            "VoidK2",
+            "charujing",
+            "coreuml",
+            "charujing",
+            "tigerneil",
+            "fucker007",
+            "VoidK2",
+            "charujing",
+            "charles-zh",
+            "Quleaf",
+            "charujing",
+            "Quleaf",
+            "charujing"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 8,
+        "title": "经典分类器与量子分类器求梯度的问题",
+        "body": "对比了一下 Tutorial 里的 QUANTUM CLASSIFIER 和 飞桨提供的手写字体识别网络，发现这两者求梯度的方式都一样，那 [quantum circuit learning](https://arxiv.org/abs/1803.00745) 里关于 **Optimization procedure** 的讨论有什么意义呢？既然都是用到反向传播算法求解梯度，那可不可理解为$U(\\theta)$ 对应于经典网络部分的一个仿射层？都是一个向量（假设输入数据只有一笔）乘以一个矩阵。",
+        "state": "open",
+        "user": "HuangJianBang",
+        "closed_by": null,
+        "created_at": "2020-11-13T07:10:31+00:00",
+        "updated_at": "2020-12-02T05:38:29+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "gxli2017"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 5,
+        "title": "请问能多几个实战案例吗。",
+        "body": "",
+        "state": "open",
+        "user": "Sqhttwl",
+        "closed_by": null,
+        "created_at": "2020-08-25T10:14:59+00:00",
+        "updated_at": "2020-09-07T23:41:48+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Quleaf"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 4,
+        "title": "大神们有量子态的数据集吗？",
+        "body": "有没有能将经典神经网络的数据集，比如说Mnist手写数字图像数据集转换成为量子态数据集的办法？",
+        "state": "open",
+        "user": "SSSSSCV",
+        "closed_by": null,
+        "created_at": "2020-06-09T09:20:44+00:00",
+        "updated_at": "2020-06-14T00:03:28+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "refraction-ray"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 12,
+        "title": "【PaddlePaddle Hackathon】76 量子电路的量子比特数扩展",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 活动的任务 ISSUE，更多详见[PaddlePaddle Hackathon](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon?fr=quantumg)）\r\n\r\n[Paddle Quantum（量桨）](https://qml.baidu.com/)是基于百度飞桨开发的量子机器学习工具集，支持量子神经网络的搭建与训练，提供易用的量子机器学习开发套件与量子优化、量子化学等前沿量子应用工具集，使得百度飞桨也因此成为国内首个支持量子机器学习的深度学习框架。\r\n\r\n【任务说明】\r\n\r\n- 任务标题：量子电路的量子比特数扩展\r\n- 技术标签：量子计算、量子电路、量子比特数\r\n- 任务难度：简单\r\n- 详细描述：\r\n\r\n用量桨创建了一个量子电路之后，在运行的过程中，有时可能需要去拓展该量子电路的量子比特数，如增加辅助量子比特等。而量桨目前没有这个功能，因此目前只能重新建立一个新的量子电路去计算。因此，拓展当前量子电路的量子比特数这一功能就显得尤为重要。在这个任务中，你需要为量桨实现量子电路的量子比特数扩展。\r\n\r\n**任务要求**：实现对 n>=1 个量子比特的线路进行比特数的扩展\r\n\r\n**功能定位**： 在 paddle_quantum 中的 `UAnstaz` 类中增加新的成员函数\r\n\r\n**函数输入**： 扩展后的量子比特数\r\n\r\n**函数输出**： 无\r\n\r\n【提交内容】\r\n\r\n1. 项目PR到 [Quantum](https://github.com/PaddlePaddle/Quantum)\r\n2. 相关技术文档\r\n3. 项目单测文件\r\n\r\n【技术要求】\r\n\r\n- 对量桨平台的运用有一定了解\r\n- 了解量桨中对量子线路的管理方式",
+        "state": "open",
+        "user": "Quleaf",
+        "closed_by": null,
+        "created_at": "2021-09-23T10:17:02+00:00",
+        "updated_at": "2021-09-24T02:10:53+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 11,
+        "title": "ImportError: DLL load failed while importing core: 动态链接库(DLL)初始化例程失败。",
+        "body": "paddlepaddle: 2.1.2\r\npaddle-quantum: 2.1.2\r\nsystem: win10\r\n\r\n报错：\r\nTraceback (most recent call last):\r\n  File \"D:\\anaconda\\envs\\paddle21\\lib\\site-packages\\psi4\\__init__.py\", line 55, in <module>\r\n    from . import core\r\nImportError: DLL load failed while importing core: 动态链接库(DLL)初始化例程失败。\r\n\r\nDuring handling of the above exception, another exception occurred:\r\n\r\nTraceback (most recent call last):\r\n  File \"E:/Base_project/neural-network-base/quantum_computing/quantum_simulation/structure_of_hamiltonian.py\", line 15, in <module>\r\n    from paddle_quantum.qchem import geometry, get_molecular_data\r\n  File \"D:\\anaconda\\envs\\paddle21\\lib\\site-packages\\paddle_quantum\\qchem.py\", line 22, in <module>\r\n    import psi4\r\n  File \"D:\\anaconda\\envs\\paddle21\\lib\\site-packages\\psi4\\__init__.py\", line 60, in <module>\r\n    raise ImportError(\"{0}\".format(err))\r\nImportError: DLL load failed while importing core: 动态链接库(DLL)初始化例程失败。",
+        "state": "open",
+        "user": "NameLacker",
+        "closed_by": null,
+        "created_at": "2021-09-06T06:58:58+00:00",
+        "updated_at": "2021-09-12T12:38:39+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "wangzihe1996"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 13,
+        "title": "【PaddlePaddle Hackathon】77 为哈密顿量矩阵实现指定量子比特数",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 活动的任务 ISSUE，更多详见[PaddlePaddle Hackathon](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon?fr=quantumg)）\r\n\r\n[Paddle Quantum（量桨）](https://qml.baidu.com/)是基于百度飞桨开发的量子机器学习工具集，支持量子神经网络的搭建与训练，提供易用的量子机器学习开发套件与量子优化、量子化学等前沿量子应用工具集，使得百度飞桨也因此成为国内首个支持量子机器学习的深度学习框架。\r\n\r\n【任务说明】\r\n\r\n- 任务标题：为哈密顿量矩阵实现指定量子比特数\r\n- 技术标签：量子计算、哈密顿量、量子比特数\r\n- 任务难度：简单\r\n- 详细描述：\r\n\r\n在量子力学中，哈密顿量是描述系统能量的算符。目前量桨中的 `Hamiltonian` 类可以通过方法 `Hamiltonian.construct_h_matrix()` 来生成其对应的矩阵形式。目前，该方法自动根据哈密顿量的表达式来决定系统中共有几个量子比特。例如对于哈密顿量 '1 Z0, Z2' 会生成对应三个量子比特的矩阵（对应的泡利单词为 'ZIZ'）。在这个任务中，你需要完成对这个方法的修改，使得其可以生成对应用户指定输入量子比特数的矩阵，例如对于刚刚提到的哈密顿量，若用户指定生成五个量子比特的矩阵，则生成对应泡利单词为 'ZIZII' 的矩阵。 \r\n\r\n**任务要求**：使得 `Hamiltonian.construct_h_matrix()` 方法支持传入参数 `n_qubit` 来指定生成矩阵对应的量子比特数（该参数应该不小于哈密顿量表达式中所对应的量子比特数）。\r\n\r\n【提交内容】\r\n\r\n1. 项目PR到 [Quantum](https://github.com/PaddlePaddle/Quantum)\r\n2. 相关技术文档\r\n3. 项目单测文件\r\n\r\n【技术要求】\r\n\r\n- 对量桨平台的运用有一定了解\r\n- 对哈密顿量有一定了解",
+        "state": "open",
+        "user": "Quleaf",
+        "closed_by": null,
+        "created_at": "2021-09-23T10:19:10+00:00",
+        "updated_at": "2021-09-24T02:11:15+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 14,
+        "title": "【PaddlePaddle Hackathon】78 实现密度矩阵可视化",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 活动的任务 ISSUE，更多详见[PaddlePaddle Hackathon](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon?fr=quantumg)）\r\n\r\n[Paddle Quantum（量桨）](https://qml.baidu.com/)是基于百度飞桨开发的量子机器学习工具集，支持量子神经网络的搭建与训练，提供易用的量子机器学习开发套件与量子优化、量子化学等前沿量子应用工具集，使得百度飞桨也因此成为国内首个支持量子机器学习的深度学习框架。\r\n\r\n【任务说明】\r\n\r\n- 任务标题：实现密度矩阵可视化\r\n- 技术标签：量子计算、密度矩阵\r\n- 任务难度：简单\r\n- 详细描述：\r\n\r\n获取到某个量子态的密度矩阵就意味着我们获取到了这个量子态的基本信息。在这个任务中，你要实现用可视化的方式来进一步展示这个密度矩阵里所蕴含的信息。具体来说，对于一个 n x n 维的密度矩阵，其矩阵内的元素有 n^2 个，每一个元素都是复数，有实部和虚部，你可以用两个 3D 直方图来分别展示其实部和虚部。第一张图展示实部，x 和 y 坐标对应密度矩阵的 x 行和 y 列，相应位置元素实部的值对应了 z 坐标值的大小，第二张图展示虚部，其规则与实部相同。\r\n\r\n**任务要求**：\r\n\r\n1. 实现对 n>=1 个量子比特产生的密度矩阵，都可以展示其可视化功能\r\n2. 应使用 `matplotlib` 库的子图功能产生左右两个子图\r\n3. 输入应可以兼容量桨的数据类型 `paddle.Tensor` \r\n\r\n**功能定位**：对 `paddle_quantum.utils` 库进行功能扩展\r\n\r\n**函数输入**：多量子比特的量子态的状态向量或者密度矩阵（类型为 `paddle.Tensor` 或 `np.ndarray`）\r\n\r\n**函数输出**：对应的密度矩阵可视化图（类型为 `matplotlib.Figure` ）\r\n\r\n【提交内容】\r\n\r\n1. 项目PR到 [Quantum](https://github.com/PaddlePaddle/Quantum)\r\n2. 相关技术文档\r\n3. 项目单测文件\r\n\r\n【技术要求】\r\n\r\n1. 对量桨平台的运用有一定了解\r\n2. 对密度矩阵的实现有一定了解\r\n3. 对 `matplotlib` 画图库有一定了解",
+        "state": "open",
+        "user": "Quleaf",
+        "closed_by": null,
+        "created_at": "2021-09-23T10:22:35+00:00",
+        "updated_at": "2021-09-24T02:11:44+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 19,
+        "title": "【PaddlePaddle Hackathon】Paddle Quantum 任务合集",
+        "body": "hi，大家好，非常高兴的告诉大家，首届 PaddlePaddle Hackathon 开始啦。PaddlePaddle Hackathon 是面向全球开发者的深度学习领域编程活动，鼓励开发者了解与参与 PaddlePaddle。本次共有四大方向（PaddlePaddle、Paddle Family、Paddle Friends、Paddle Anything）四大方向，共计100个任务共大家完成。详细信息可以参考 [PaddlePaddle Hackathon 说明](https://www.paddlepaddle.org.cn/contributionguide?docPath=hackathon_cn)。大家是否已经迫不及待了呢~\r\n\r\n本 ISSUE 是 Paddle Family 专区 Paddle Quantum 方向任务合集。具体任务列表如下：\r\n\r\n| 序号 | 难度 | 任务ISSUE                                                 |\r\n| ---- | ---- | --------------------------------------------------------- |\r\n| 76   | ⭐️    | [【PaddlePaddle Hackathon】76 量子电路的量子比特数扩展](https://github.com/PaddlePaddle/Quantum/issues/12) |\r\n| 77   | ⭐️    | [【PaddlePaddle Hackathon】77 为哈密顿量矩阵实现指定量子比特数](https://github.com/PaddlePaddle/Quantum/issues/13) |\r\n| 78   | ⭐️    | [【PaddlePaddle Hackathon】78 实现密度矩阵可视化](https://github.com/PaddlePaddle/Quantum/issues/14) |\r\n| 79   | ⭐️    | [【PaddlePaddle Hackathon】79 图片编码为量子态](https://github.com/PaddlePaddle/Quantum/issues/15) |\r\n| 80   | ⭐️⭐️ | [【PaddlePaddle Hackathon】80 多量子比特独立系统的 Bloch 球展示](https://github.com/PaddlePaddle/Quantum/issues/16) |\r\n| 81   | ⭐️⭐️ | [【PaddlePaddle Hackathon】81 时间演化电路的性能优化](https://github.com/PaddlePaddle/Quantum/issues/17) |\r\n| 82   |⭐️⭐️⭐️| [【PaddlePaddle Hackathon】82 基于量子卷积神经网络的图片分类](https://github.com/PaddlePaddle/Quantum/issues/18) |\r\n\r\n若想要认领本次活动任务，请至 [PaddlePaddle Hackathon Pinned ISSUE](https://github.com/PaddlePaddle/Paddle/issues/35940) 完成活动报名以及任务认领。\r\n\r\n活动官网：[PaddlePaddle Hackathon](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon?fr=quantumg)\r\n",
+        "state": "open",
+        "user": "Quleaf",
+        "closed_by": null,
+        "created_at": "2021-09-23T10:59:04+00:00",
+        "updated_at": "2021-09-23T14:19:53+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 16,
+        "title": "【PaddlePaddle Hackathon】80 多量子比特独立系统的 Bloch 球展示",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 活动的任务 ISSUE，更多详见[PaddlePaddle Hackathon](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon?fr=quantumg)）\r\n\r\n[Paddle Quantum（量桨）](https://qml.baidu.com/)是基于百度飞桨开发的量子机器学习工具集，支持量子神经网络的搭建与训练，提供易用的量子机器学习开发套件与量子优化、量子化学等前沿量子应用工具集，使得百度飞桨也因此成为国内首个支持量子机器学习的深度学习框架。\r\n\r\n【任务说明】\r\n\r\n- 任务标题：多量子比特独立系统的 Bloch 球展示\r\n- 技术标签：量子计算、量子态\r\n- 任务难度：中等\r\n- 详细描述：\r\n\r\nBloch 球是一个可以直观地展示单量子比特状态的工具。对于单比特量子态，若其是纯态，则对应了 Bloch 球面上的点，若其是混合态，则对应了 Bloch 球内部的点。对于多个比特的量子态，则不能直接套用单比特量子的 Bloch 球功能，而是需要借助密度矩阵求偏迹等知识来结合实现。这个任务中，你需要实现多比特量子态的 Bloch 球展现。\r\n\r\n**任务要求**：\r\n\r\n1. 实现输入多量子比特的态矢量或者密度矩阵，输出对应的多量子比特的 Bloch 球展示的函数\r\n2. 子图个数应该能够根据输入而改变\r\n3. 求偏迹过程可以使用量桨内置的函数\r\n\r\n**功能定位**：对 `paddle_quantum.utils.plot_state_in_bloch_sphere` 函数进行功能扩展。\r\n\r\n**函数输入**：多量子比特的量子态的状态向量或者密度矩阵（类型为 `paddle.Tensor` 或 `numpy.ndarray`）；要绘制的量子比特序号以及顺序，默认为 `None`，表示全部绘制。\r\n\r\n**函数输出**：对应的 Bloch 球示意图。\r\n\r\n**实现内容**：应支持 n (n>=1) 个量子比特的输入。若输入为单量子比特，其效果应与传统 Bloch 球相符合。若输入为多量子比特，其效果应该与总系统对应于某个量子比特的子系统相符合。\r\n\r\n【提交内容】\r\n\r\n1. 项目PR到 [Quantum](https://github.com/PaddlePaddle/Quantum)\r\n2. 相关技术文档\r\n3. 项目单测文件\r\n\r\n【技术要求】\r\n\r\n- 对量子计算有一定了解\r\n- 对量子态有一定了解\r\n- 了解 `matplotlib` 包的使用",
+        "state": "open",
+        "user": "Quleaf",
+        "closed_by": null,
+        "created_at": "2021-09-23T10:31:47+00:00",
+        "updated_at": "2021-09-24T02:12:18+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 15,
+        "title": "【PaddlePaddle Hackathon】79 图片编码为量子态",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 活动的任务 ISSUE，更多详见[PaddlePaddle Hackathon](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon?fr=quantumg)）\r\n\r\n[Paddle Quantum（量桨）](https://qml.baidu.com/)是基于百度飞桨开发的量子机器学习工具集，支持量子神经网络的搭建与训练，提供易用的量子机器学习开发套件与量子优化、量子化学等前沿量子应用工具集，使得百度飞桨也因此成为国内首个支持量子机器学习的深度学习框架。\r\n\r\n【任务说明】\r\n\r\n- 任务标题：图片编码为量子态\r\n- 技术标签：量子计算、密度矩阵\r\n- 任务难度：简单\r\n- 详细描述：\r\n\r\n一张图片的信息可以由一个矩阵来表示。而在量子计算中，一个量子态也可以用一个密度矩阵来进行表示。因此，一张图片的信息是可以使用密度矩阵来进行编码表示的。在该任务中，你可以考虑将一个图片编码为量子态的密度矩阵，应该要注意的是，密度矩阵需要满足三个条件。首先，密度矩阵是 Hermitian 矩阵；其次，密度矩阵的迹（trace）为 1，最后密度矩阵是半正定矩阵。一个可供参考的思路是，将图片转换为由其灰度值构成的矩阵，再转换成 2^n x 2^n 的矩阵，再将其转换为符合条件的密度矩阵。对于其它合理的方式，我们也可以酌情采纳。\r\n\r\n**任务要求**：\r\n\r\n1. 实现输入任意一张图片，都能转化为方阵的形式来表示。\r\n2. 实现图片与密度矩阵一一对应，即不同的图片产生的密度矩阵应该不同。\r\n\r\n**功能定位**：对`paddle_quantum.utils`库进行功能扩展\r\n\r\n**函数输入**：图片文件\r\n\r\n**函数输出**：图片对应的密度矩阵（类型为 `numpy.ndarray`）\r\n\r\n【提交内容】\r\n\r\n1. 项目PR到 [Quantum](https://github.com/PaddlePaddle/Quantum)\r\n2. 相关技术文档\r\n3. 项目单测文件\r\n\r\n【技术要求】\r\n\r\n- 对密度矩阵的实现有一定了解\r\n- 对`numpy`包有一定的了解",
+        "state": "open",
+        "user": "Quleaf",
+        "closed_by": null,
+        "created_at": "2021-09-23T10:27:53+00:00",
+        "updated_at": "2021-09-24T02:12:03+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 18,
+        "title": "【PaddlePaddle Hackathon】82 基于量子卷积神经网络的图片分类",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 活动的任务 ISSUE，更多详见 [PaddlePaddle Hackathon](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon?fr=quantumg)）\r\n\r\n[Paddle Quantum（量桨）](https://qml.baidu.com/)是基于百度飞桨开发的量子机器学习工具集，支持量子神经网络的搭建与训练，提供易用的量子机器学习开发套件与量子优化、量子化学等前沿量子应用工具集，使得百度飞桨也因此成为国内首个支持量子机器学习的深度学习框架。\r\n\r\n【任务说明】\r\n\r\n- 任务标题：基于量子卷积神经网络 (QCNN) 的图片分类\r\n- 技术标签：量子卷积神经网络\r\n- 任务难度：困难\r\n- 详细描述：\r\n\r\n众所周知，卷积神经网络 (CNN) 在图像识别等问题上表现十分出色，受到 CNN 的启发 QCNN 被提出（参考 1）。CNN 核心的操作是卷积和池化，对于 QCNN 可以考虑利用参数化量子电路或者随机电路代替卷积和池化操作。关于 QCNN 的形式有很多（参考 2），目前还处于探索阶段。在这个任务中，你需要尝试实现基于量子卷积神经网络的图片分类。\r\n\r\n**任务要求**：根据参考文献 3 和其它参考文献，形成一篇 QCNN 的教程，教程包括背景知识、方法介绍和代码实验等，具体形式可参考量桨已有的教程（参考资料 4）。\r\n\r\n**参考资料**：\r\n\r\n1. Cong, I., Choi, S. & Lukin, M.D. Quantum convolutional neural networks. *Nat. Phys.* 15, 1273–1278. (2019) [https://doi.org/10.1038/s41567-019-0648-8](https://doi.org/10.1038/s41567-019-0648-8)\r\n2. Maxwell Henderson, Samriddhi Shakya, Shashindra Pradhan, Tristan Cook. “Quanvolutional Neural Networks: Powering Image Recognition with Quantum Circuits.”(2019) [arXiv:1904.04767](https://arxiv.org/abs/1904.04767)\r\n3. Yanxuan Lü, Qing Gao, Jinhu Lü, Maciej Ogorzałek, Jin Zheng.A Quantum Convolutional Neural Network for Image Classification.(2021) [arxiv:2107.03630](https://arxiv.org/abs/2107.03630)\r\n4. https://qml.baidu.com/tutorials/overview.html\r\n\r\n【提交内容】\r\n\r\n1. 项目PR到 [Quantum](https://github.com/PaddlePaddle/Quantum)\r\n2. 相关技术文档\r\n3. 项目单测文件\r\n\r\n【技术要求】\r\n\r\n- 对量子计算有一定了解\r\n- 对计算机视觉有一定了解\r\n- 对量桨平台的运用有一定了解",
+        "state": "open",
+        "user": "Quleaf",
+        "closed_by": null,
+        "created_at": "2021-09-23T10:45:48+00:00",
+        "updated_at": "2021-09-24T02:12:56+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 17,
+        "title": "【PaddlePaddle Hackathon】81 时间演化电路的性能优化",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 活动的任务 ISSUE，更多详见[PaddlePaddle Hackathon](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon?fr=quantumg)）\r\n\r\n[Paddle Quantum（量桨）](https://qml.baidu.com/)是基于百度飞桨开发的量子机器学习工具集，支持量子神经网络的搭建与训练，提供易用的量子机器学习开发套件与量子优化、量子化学等前沿量子应用工具集，使得百度飞桨也因此成为国内首个支持量子机器学习的深度学习框架。\r\n\r\n【任务说明】\r\n\r\n- 任务标题：时间演化电路的性能优化\r\n- 技术标签：量子计算、哈密顿量\r\n- 任务难度：中等\r\n- 详细描述：\r\n\r\n哈密顿量模拟，指的是模拟一个量子系统随时间演化的过程。根据量子力学的基本公理，对于不含时的哈密顿量而言，系统的时间演化过程可以由算符 exp(-iHt) 进行描述。目前，量桨中实现了基于 product formula 的数字化哈密顿量模拟，可以根据泡利哈密顿量来创建相应的模拟时间演化电路。在这个任务中，你需要实现对时间演化电路的性能优化。目前，该模块的实现方法是对于泡利哈密顿量中的每一项分别搭建一个旋转电路，其具体方法可以参考 1 中的 4.7.3 节。实际上，对于一些特殊的两量子比特项而言，文献 2 提出了更加高效的电路。因此，你可以将该文献中描述的 special case 进行单独的实现，并将相关代码合入 `paddle_quantum.trotter.construct_trotter_circuit()` 函数中。\r\n\r\n> 注：对于哈密顿量模拟更加详细的介绍，可以参考量桨官网上的教程：[利用 Product Formula 模拟时间演化](https://qml.baidu.com/tutorials/quantum-simulation/hamiltonian-simulation-with-product-formula.html)、[模拟一维海森堡链的自旋动力学](https://qml.baidu.com/tutorials/quantum-simulation/simulate-the-spin-dynamics-on-a-heisenberg-chain.html)。\r\n\r\n**任务要求**：\r\n\r\n1. 编写单独的函数，使其可以实现文献 2 中提到的量子电路\r\n2. 在搭建时间演化电路时，检测出哈密顿量中可以高效模拟的项并进行单独处理\r\n3. 利用实际系统的哈密顿量对该功能进行验证，确保结果正确\r\n\r\n**参考资料**：\r\n\r\n1. Nielsen, Michael A., and Isaac L. Chuang. \"Quantum computing and quantum information.\" (2000).\r\n2. Vatan, Farrokh, and Colin Williams. \"Optimal quantum circuits for general two-qubit gates.\" *Physical Review A* 69.3 (2004): 032315.\r\n\r\n【提交内容】\r\n\r\n1. 项目PR到 [Quantum](https://github.com/PaddlePaddle/Quantum)\r\n2. 相关技术文档\r\n3. 项目单测文件\r\n\r\n【技术要求】\r\n\r\n- 对量子计算有一定了解\r\n- 对哈密顿量模拟有一定了解\r\n- 对量桨平台的运用有一定了解",
+        "state": "open",
+        "user": "Quleaf",
+        "closed_by": null,
+        "created_at": "2021-09-23T10:36:40+00:00",
+        "updated_at": "2021-10-27T08:14:08+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "yangguohao",
+            "Quleaf"
+        ],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 39
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 33,
+        "title": "量桨2.1.3版本导入化学分子库报错",
+        "body": "pip 安装量桨 pip install paddle_quantum\r\n\r\n导入化学分子库报错\r\n```\r\nfrom paddle_quantum import qchem\r\n\r\n---------------------------------------------------------------------------ImportError                               Traceback (most recent call last)/tmp/ipykernel_119/2965734494.py in <module>\r\n----> 1 from paddle_quantum import qchem\r\nImportError: cannot import name 'qchem' from 'paddle_quantum' (/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle_quantum/__init__.py)\r\n\r\n还有这个：\r\n----> 5 from paddle_quantum.qchem import geometry\r\n      6 # dir(paddle_quantum)\r\n      7 from paddle_quantum.circuit import UAnsatz\r\n\r\nModuleNotFoundError: No module named 'paddle_quantum.qchem'\r\n```\r\n发现安装目录里没有相应目录\r\n```\r\naistudio@jupyter-209599-1708798:/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle_quantum$ ls\r\ncircuit.py   expecval.py  gradtool.py   locc.py    __pycache__  simulator.py  trotter.py  VQSD\r\nclifford.py  finance.py   __init__.py   mbqc       QAOA         SSVQE         utils.py\r\ndataset.py   GIBBS        intrinsic.py  optimizer  shadow.py    state.py      VQE\r\n\r\n```\r\n发现github源代码里有相应目录\r\n```\r\n[Quantum](https://github.com/PaddlePaddle/Quantum)/[paddle_quantum](https://github.com/PaddlePaddle/Quantum/tree/master/paddle_quantum)/qchem/\r\n```\r\n大胆猜测，是不是pip编译上传的时候，忘记把那个目录编译进去了？ \r\n\r\n",
+        "state": "closed",
+        "user": "skywalk163",
+        "closed_by": "skywalk163",
+        "created_at": "2022-04-01T03:04:11+00:00",
+        "updated_at": "2022-04-23T08:10:33+00:00",
+        "closed_at": "2022-04-23T08:10:32+00:00",
+        "comments_count": [
+            "wangzihe1996",
+            "skywalk163",
+            "wangzihe1996",
+            "skywalk163"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 34,
+        "title": "相关数学推导咨询",
+        "body": "首先表达对相关 Contributor 的感谢。在学习量桨的过程中，无法理解为何如下电路对应的矩阵如教程所写，请问能否提供进一步解释？\r\n![image](https://user-images.githubusercontent.com/51412849/166147093-f6847821-512c-44c8-a5f4-a7bcbc8c82df.png)\r\n![image](https://user-images.githubusercontent.com/51412849/166147112-be93e4b0-9cd7-4d4d-8e55-7d7fad248186.png)\r\n",
+        "state": "closed",
+        "user": "MrPeterJin",
+        "closed_by": "MrPeterJin",
+        "created_at": "2022-05-01T13:01:17+00:00",
+        "updated_at": "2022-05-12T11:39:29+00:00",
+        "closed_at": "2022-05-12T11:39:29+00:00",
+        "comments_count": [
+            "MrPeterJin"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 35,
+        "title": "ImportError: cannot import name 'State' from 'sre_parse'",
+        "body": "请问该怎么解决这个 error?\r\n![image](https://user-images.githubusercontent.com/71283275/172329853-f5307646-766f-448a-b88c-37a495337f71.png)\r\n",
+        "state": "closed",
+        "user": "samanthaongyh",
+        "closed_by": "Quleaf",
+        "created_at": "2022-06-07T08:12:03+00:00",
+        "updated_at": "2024-01-15T17:13:59+00:00",
+        "closed_at": "2022-09-15T07:43:39+00:00",
+        "comments_count": [
+            "wangzihe1996",
+            "skywalk163",
+            "juhonkang",
+            "wangzihe1996",
+            "wangzihe1996",
+            "DrTenma1998"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 41
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 37,
+        "title": "(NotFound) There are no kernels which are registered in the einsum operator.",
+        "body": "运行官网上的QGAN的例子时出现这个错误，运行失败。\r\n![image](https://user-images.githubusercontent.com/49343347/186586713-bafc8fdb-56dd-408c-bb41-7b9eb927a795.png)\r\n![image](https://user-images.githubusercontent.com/49343347/186586794-e1105896-01af-4711-a9bc-f10e4aba0f05.png)\r\n![image](https://user-images.githubusercontent.com/49343347/186586615-a634ce69-c3e3-4653-ba40-5dea75647564.png)\r\n",
+        "state": "closed",
+        "user": "SSSSSCV",
+        "closed_by": "Quleaf",
+        "created_at": "2022-08-25T06:01:03+00:00",
+        "updated_at": "2022-09-15T07:43:46+00:00",
+        "closed_at": "2022-09-15T07:43:46+00:00",
+        "comments_count": [
+            "buzzgamesnews",
+            "LeiZhang-116-4",
+            "buzzgamesnews",
+            "buzzgamesnews",
+            "buzzgamesnews",
+            "wangzihe1996",
+            "buzzgamesnews",
+            "wangzihe1996",
+            "buzzgamesnews",
+            "wangzihe1996",
+            "buzzgamesnews",
+            "LeiZhang-116-4"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 36,
+        "title": "There are no kernels which are registered in the einsum operator.   [Hint: Expected kernels_iter != all_op_kernels.end(), but received kernels_iter == all_op_kernels.end().] ",
+        "body": "I have created a new env with conda python 3.8\r\nEven colab cannot run yours :(\r\nCould you provide notebooks on colab?\r\n\r\n![image](https://user-images.githubusercontent.com/67153600/182743893-eca5104c-b934-4bea-b088-b797df46dad1.png)\r\n",
+        "state": "closed",
+        "user": "juhonkang",
+        "closed_by": "juhonkang",
+        "created_at": "2022-08-04T01:33:05+00:00",
+        "updated_at": "2022-08-04T03:38:03+00:00",
+        "closed_at": "2022-08-04T03:38:02+00:00",
+        "comments_count": [
+            "wangzihe1996",
+            "juhonkang",
+            "wangzihe1996"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 38,
+        "title": "现在使用量子计算来训练模型，会有速度上的优势吗？",
+        "body": "还是说目前更多是尝试或者实验性质的",
+        "state": "closed",
+        "user": "runvyang",
+        "closed_by": "runvyang",
+        "created_at": "2022-09-15T06:40:20+00:00",
+        "updated_at": "2022-09-15T06:56:04+00:00",
+        "closed_at": "2022-09-15T06:56:03+00:00",
+        "comments_count": [
+            "wangzihe1996",
+            "runvyang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 40,
+        "title": "Integration on OSX with the M1 chip (arm64)?",
+        "body": "Hello,\r\nIs there a version for OSX with the M1 chip?\r\n\r\nThanks, ",
+        "state": "closed",
+        "user": "BoltzmannEntropy",
+        "closed_by": "BoltzmannEntropy",
+        "created_at": "2022-10-16T12:42:00+00:00",
+        "updated_at": "2023-01-23T11:15:21+00:00",
+        "closed_at": "2023-01-23T11:15:20+00:00",
+        "comments_count": [
+            "wangzihe1996",
+            "BoltzmannEntropy",
+            "wangzihe1996",
+            "BoltzmannEntropy",
+            "wangzihe1996",
+            "BoltzmannEntropy",
+            "BoltzmannEntropy",
+            "LeiZhang-116-4",
+            "BoltzmannEntropy"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 42,
+        "title": "Many of the examples dont work",
+        "body": "For instance:\r\nQGAN_EN.iynb\r\n\r\n```\r\nRuntimeError: (NotFound) There are no kernels which are registered in the einsum operator.\r\n  [Hint: Expected kernels_iter != all_op_kernels.end(), but received kernels_iter == all_op_kernels.end().] (at /paddle/paddle/fluid/imperative/prepared_operator.cc:341)\r\n  [operator < einsum > error]\r\n```\r\n<img width=\"1082\" alt=\"image\" src=\"https://user-images.githubusercontent.com/91342039/212470271-039d0475-09b8-4f4d-a319-79c0c80ac1c7.png\">\r\n\r\nQAutoencoder_CN.ipynb:\r\n\r\n`ValueError: (InvalidArgument) conj(): argument 'X' (position 0) must be Tensor, but got numpy.ndarray (at /paddle/paddle/fluid/pybind/op_function_common.cc:737)`\r\n\r\n<img width=\"1112\" alt=\"image\" src=\"https://user-images.githubusercontent.com/91342039/212470359-b25300c8-1431-462d-8982-92642eee26fe.png\">\r\n\r\nCan you help? ",
+        "state": "closed",
+        "user": "BoltzmannEntropy",
+        "closed_by": "BoltzmannEntropy",
+        "created_at": "2023-01-14T11:49:58+00:00",
+        "updated_at": "2023-01-14T13:53:42+00:00",
+        "closed_at": "2023-01-14T13:53:42+00:00",
+        "comments_count": [
+            "LeiZhang-116-4",
+            "BoltzmannEntropy",
+            "LeiZhang-116-4",
+            "BoltzmannEntropy",
+            "LeiZhang-116-4",
+            "BoltzmannEntropy"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 43,
+        "title": "Expectation values of Pauli strings?",
+        "body": "Hello,\r\nFor a tutorial, I am trying to do something very simple, calculating the expectation value of:\r\n<img width=\"387\" alt=\"image\" src=\"https://user-images.githubusercontent.com/91342039/214027057-0d93fcbc-34a1-4bd1-8498-d12ec7f58898.png\">\r\nInstead of:\r\n```\r\nhamiltonian = random_pauli_str_generator(N, terms=1)\r\n```\r\nHow can i specify my own Hamiltonian to compare the value with the theoretical one? \r\nThanks ",
+        "state": "open",
+        "user": "BoltzmannEntropy",
+        "closed_by": null,
+        "created_at": "2023-01-23T11:20:01+00:00",
+        "updated_at": "2023-03-06T02:28:27+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "LeiZhang-116-4",
+            "BoltzmannEntropy",
+            "LeiZhang-116-4",
+            "BoltzmannEntropy",
+            "BoltzmannEntropy",
+            "LeiZhang-116-4",
+            "imppresser",
+            "BoltzmannEntropy",
+            "LeiZhang-116-4",
+            "imppresser",
+            "imppresser",
+            "imppresser",
+            "BoltzmannEntropy",
+            "imppresser",
+            "LeiZhang-116-4",
+            "imppresser",
+            "imppresser",
+            "LeiZhang-116-4",
+            "LeiZhang-116-4",
+            "imppresser",
+            "imppresser"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 44,
+        "title": "Input object type error or incompatible array data type. tensor.set() supports array with bool, float16, float32, float64, int8, int16, int32, int64, uint8 or uint16, please check your input or input array data type. (at /paddle/paddle/fluid/pybind/tensor_py.h:411)",
+        "body": "Hello, \r\nHas something changed in the API? This worked before. \r\n<img width=\"971\" alt=\"image\" src=\"https://user-images.githubusercontent.com/91342039/226142439-69efb053-ea9c-4bc7-a4cd-55540bfaf434.png\">\r\n\r\n`! python -m pip install paddlepaddle paddle-quantum`",
+        "state": "open",
+        "user": "BoltzmannEntropy",
+        "closed_by": null,
+        "created_at": "2023-03-18T21:58:22+00:00",
+        "updated_at": "2023-03-21T17:46:32+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "LeiZhang-116-4",
+            "BoltzmannEntropy",
+            "LeiZhang-116-4",
+            "BoltzmannEntropy",
+            "LeiZhang-116-4",
+            "BoltzmannEntropy"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 48,
+        "title": "In the code of VQSVD, why the matrix M doesn`t pre-decomposition to several unitary as the source manuscript?",
+        "body": null,
+        "state": "open",
+        "user": "myhomeboughtazoo",
+        "closed_by": null,
+        "created_at": "2023-07-10T09:57:28+00:00",
+        "updated_at": "2023-07-10T09:57:28+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 45,
+        "title": "Importing `paddle_quantum` generates warnings that can't be silenced",
+        "body": "I have a file `test.py` that contains\r\n\r\n```python\r\nimport warnings\r\nwarnings.filterwarnings(\"ignore\")\r\n\r\nimport sys\r\nprint(sys.version)\r\nfrom importlib.metadata import version\r\nprint(f\"PaddlePaddle version {version('paddlepaddle')}\") \r\nprint(f\"Paddle quantum version {version('paddle_quantum')}\")\r\n\r\nimport paddle\r\n\r\n```\r\n\r\nRunning `python test.py` outputs\r\n\r\n```\r\n3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]\r\nPaddlePaddle version 2.4.0rc0\r\nPaddle quantum version 2.3.0\r\n/home/victory/paddle_quantum_venv/lib/python3.10/site-packages/pkg_resources/__init__.py:121: DeprecationWarning: pkg_resources is deprecated as an API\r\n  warnings.warn(\"pkg_resources is deprecated as an API\", DeprecationWarning)\r\n/home/victory/paddle_quantum_venv/lib/python3.10/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.\r\nImplementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages\r\n  declare_namespace(pkg)\r\n/home/victory/paddle_quantum_venv/lib/python3.10/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google.logging')`.\r\nImplementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages\r\n  declare_namespace(pkg)\r\n/home/victory/paddle_quantum_venv/lib/python3.10/site-packages/pkg_resources/__init__.py:2349: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.\r\nImplementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages\r\n  declare_namespace(parent)\r\n/home/victory/paddle_quantum_venv/lib/python3.10/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.\r\nImplementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages\r\n  declare_namespace(pkg)\r\n```\r\n\r\nThese warnings should not be here.",
+        "state": "closed",
+        "user": "vtomole",
+        "closed_by": "vtomole",
+        "created_at": "2023-04-30T07:59:46+00:00",
+        "updated_at": "2023-05-14T00:33:55+00:00",
+        "closed_at": "2023-05-14T00:33:55+00:00",
+        "comments_count": [
+            "LeiZhang-116-4",
+            "vtomole",
+            "LeiZhang-116-4",
+            "vtomole"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 46,
+        "title": "Medical image classification ",
+        "body": "Hi,\r\nI wanted to inquire about the availability of the code for training models in Paddle-quantum, specifically related to medical image classification as found in this link: https://github.com/PaddlePaddle/Quantum/blob/master/applications/medical_image_classification/introduction_en.ipynb.\r\n\r\nI was wondering if Paddle-quantum has a similar code implementation to Qiskit's quantum convolutional neural network as seen in this link: https://github.com/Qiskit/qiskit-machine-learning/blob/main/docs/tutorials/11_quantum_convolutional_neural_networks.ipynb.\r\n\r\nAdditionally, I am curious if it's possible to utilize quantum encoding for 256x256 medical images using Paddle-quantum on a 12GB GPU.?  \r\n\r\nAssuming I extract features using a classical CNN such as VGG12 and create a classical feature vector of 128 features, what would be the best quantum encoding method to use in Paddle-quantum? How many qubits would I need? \r\n\r\nThanks! ",
+        "state": "open",
+        "user": "BoltzmannEntropy",
+        "closed_by": null,
+        "created_at": "2023-05-13T07:59:41+00:00",
+        "updated_at": "2023-06-01T09:08:24+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "gxli2017"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 49,
+        "title": "量桨为何不在百度飞桨上更新了？有其他可以在线使用量桨的云平台吗？",
+        "body": "如题",
+        "state": "open",
+        "user": "Chriskmh",
+        "closed_by": null,
+        "created_at": "2023-08-12T07:31:37+00:00",
+        "updated_at": "2023-08-12T07:33:08+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 47,
+        "title": "Is it possible to use ProcessPoolExecutor to accelerate the for loop in the forward method in QApproximating_EN.ipynb",
+        "body": "Since the forward method in the example [Quantum Neural Network Approximating Functions](https://github.com/PaddlePaddle/Quantum/blob/master/tutorials/machine_learning/QApproximating_EN.ipynb) uses a for loop, it's quite slow when the depth of the circuit is large. I want to use ProcessPoolExecutor to replace the for loop.\r\n\r\nWhile using ProcessPoolExecutor with paddle, this error ```cannot pickle 'Tensor' object``` always occurs. I also meet another error ```cannot pickle 'ParamBase' object```. I'm wondering whether it's possible to accelerate the for loop. Can anyone provide a parallelized version of the example [Quantum Neural Network Approximating Functions](https://github.com/PaddlePaddle/Quantum/blob/master/tutorials/machine_learning/QApproximating_EN.ipynb)?",
+        "state": "open",
+        "user": "DS-Liu",
+        "closed_by": null,
+        "created_at": "2023-05-29T06:21:27+00:00",
+        "updated_at": "2023-06-01T10:35:57+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "gxli2017"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 50,
+        "title": "量子表达能力的例子报错",
+        "body": "import numpy as np\r\nimport paddle\r\nimport paddle_quantum as pq\r\nfrom paddle_quantum.ansatz.circuit import Circuit\r\nfrom paddle_quantum.visual import plot_state_in_bloch_sphere\r\n\r\nnum_qubit = 1      # 设定量子比特数\r\nnum_sample = 2000  # 设定采样次数\r\noutputs_yz = list()   # 储存采样电路输出\r\nfor _ in range(num_sample):\r\n    # 初始化量子神经网络\r\n    cir = Circuit(num_qubit)\r\n    cir.ry(0)\r\n    cir.rz(0)\r\n    # 输出态的密度矩阵\r\n    rho = cir(pq.state.zero_state(num_qubit))\r\n    outputs_yz.append(rho)\r\n\r\n# plot_state_in_bloch_sphere(outputs_yz, save_gif=True, filename='figures/bloch_yz.gif')\r\n\r\n报错如下：\r\n---------------------------------------------------------------------------\r\nValueError                                Traceback (most recent call last)\r\n[e:\\](file:///E:/)代码\\Variational Algorithm\\work_1\\VQLS\\1-1Revision\\Expressibility测试2.py in line 9\r\n      [39](file:///e%3A/%E4%BB%A3%E7%A0%81/Variational%20Algorithm/work_1/VQLS/1-1Revision/Expressibility%E6%B5%8B%E8%AF%952.py?line=38)     cir.rz(0)\r\n      [40](file:///e%3A/%E4%BB%A3%E7%A0%81/Variational%20Algorithm/work_1/VQLS/1-1Revision/Expressibility%E6%B5%8B%E8%AF%952.py?line=39)     # 输出态的密度矩阵\r\n----> [41](file:///e%3A/%E4%BB%A3%E7%A0%81/Variational%20Algorithm/work_1/VQLS/1-1Revision/Expressibility%E6%B5%8B%E8%AF%952.py?line=40)     rho = cir(pq.state.zero_state(num_qubit))\r\n     [42](file:///e%3A/%E4%BB%A3%E7%A0%81/Variational%20Algorithm/work_1/VQLS/1-1Revision/Expressibility%E6%B5%8B%E8%AF%952.py?line=41)     outputs_yz.append(rho)\r\n     [44](file:///e%3A/%E4%BB%A3%E7%A0%81/Variational%20Algorithm/work_1/VQLS/1-1Revision/Expressibility%E6%B5%8B%E8%AF%952.py?line=43) # plot_state_in_bloch_sphere(outputs_yz, save_gif=True, filename='figures/bloch_yz.gif')\r\n\r\nFile [d:\\Software\\Anaconda3\\anaconda3\\envs\\Qpaddle\\lib\\site-packages\\paddle\\nn\\layer\\layers.py:1254](file:///D:/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py:1254), in Layer.__call__(self, *inputs, **kwargs)\r\n   [1245](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py?line=1244) if (\r\n   [1246](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py?line=1245)     (not in_declarative_mode())\r\n   [1247](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py?line=1246)     and (not self._forward_pre_hooks)\r\n   (...)\r\n   [1251](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py?line=1250)     and (not in_profiler_mode())\r\n   [1252](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py?line=1251) ):\r\n   [1253](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py?line=1252)     self._build_once(*inputs, **kwargs)\r\n-> [1254](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py?line=1253)     return self.forward(*inputs, **kwargs)\r\n   [1255](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py?line=1254) else:\r\n   [1256](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/nn/layer/layers.py?line=1255)     return self._dygraph_call_func(*inputs, **kwargs)\r\n\r\nFile [d:\\Software\\Anaconda3\\anaconda3\\envs\\Qpaddle\\lib\\site-packages\\paddle_quantum\\ansatz\\circuit.py:1696](file:///D:/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle_quantum/ansatz/circuit.py:1696), in Circuit.forward(self, state)\r\n   [1694](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle_quantum/ansatz/circuit.py?line=1693) state = state.clone()\r\n   [1695](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle_quantum/ansatz/circuit.py?line=1694) state.is_swap_back = False\r\n-> [1696](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle_quantum/ansatz/circuit.py?line=1695) state = super().forward(state)\r\n...\r\n   [1123](file:///d%3A/Software/Anaconda3/anaconda3/envs/Qpaddle/lib/site-packages/paddle/tensor/manipulation.py?line=1122)     check_type(input, 'input', (list, tuple, Variable), 'concat')\r\n\r\nValueError: (InvalidArgument) The shape of input[0] and input[1] is expected to be equal.But received input[0]'s shape = [1], input[1]'s shape = [].\r\n  [Hint: Expected inputs_dims[i].size() == out_dims.size(), but received inputs_dims[i].size():0 != out_dims.size():1.] (at ..\\paddle/phi/kernels/funcs/concat_funcs.h:55)\r\n\r\npaddle-quantum == 2.4.0\r\n将circ.rz(0)改为ry和rx都是正常运行",
+        "state": "open",
+        "user": "xwshan",
+        "closed_by": null,
+        "created_at": "2023-12-12T10:31:28+00:00",
+        "updated_at": "2023-12-12T10:32:19+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 52
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 51,
+        "title": "Noiseless and noisy simulations on Paddle Quantum. ",
+        "body": "Hello! \r\n\r\nAre simulations run on the Paddle Quantum platform noiseless by default? That is, when we construct and run variational ansatze for variational quantum algorithms on the Paddle Quantum platform, is it assumed that all circuit components are noiseless, and that no real hardware noise is incorporated within the quantum simulations? Thanks! ",
+        "state": "open",
+        "user": "YashLokare02",
+        "closed_by": null,
+        "created_at": "2024-07-22T07:52:56+00:00",
+        "updated_at": "2024-07-22T07:52:56+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 53,
+        "title": "Trouble Installing Paddle-Quantum – Seeking Assistance",
+        "body": "Hello everyone, I am having trouble installing Paddle-Quantum. If anyone knows what the issue might be, please let me know.\n\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-6-c717dd98fc6c> in <cell line: 3>()\n      1 import numpy as np\n      2 import paddle\n----> 3 import paddle_quantum\n\n/usr/local/lib/python3.10/dist-packages/paddle_quantum/__init__.py in <module>\n     33 from . import mbqc\n     34 from . import operator\n---> 35 from . import qchem\n     36 from . import base\n     37 from . import dataset\n\n/usr/local/lib/python3.10/dist-packages/paddle_quantum/qchem/__init__.py in <module>\n     19 \n     20 from .hardware_efficient import HardwareEfficientModel\n---> 21 from .slater_determinant import RHFSlaterDeterminantModel\n     22 from .uccsd import UCCSDModel\n     23 from .density_matrix import get_spinorb_onebody_dm\n\n/usr/local/lib/python3.10/dist-packages/paddle_quantum/qchem/slater_determinant.py in <module>\n     22 import numpy as np\n     23 from scipy.stats import unitary_group\n---> 24 import openfermion\n     25 import paddle\n     26 import paddle_quantum as pq\n\n/usr/local/lib/python3.10/dist-packages/openfermion/__init__.py in <module>\n     43 )\n     44 \n---> 45 from openfermion.hamiltonians import (\n     46     FermiHubbardModel,\n     47     number_operator,\n\n/usr/local/lib/python3.10/dist-packages/openfermion/hamiltonians/__init__.py in <module>\n     19 )\n     20 \n---> 21 from .hartree_fock import (\n     22     rhf_func_generator,\n     23     rhf_minimization,\n\n/usr/local/lib/python3.10/dist-packages/openfermion/hamiltonians/hartree_fock.py in <module>\n     15     general_basis_change,\n     16 )\n---> 17 import openfermion.linalg as linalg\n     18 \n     19 \n\n/usr/local/lib/python3.10/dist-packages/openfermion/linalg/__init__.py in <module>\n     10 #   See the License for the specific language governing permissions and\n     11 #   limitations under the License.\n---> 12 from .davidson import (\n     13     Davidson,\n     14     DavidsonOptions,\n\n/usr/local/lib/python3.10/dist-packages/openfermion/linalg/davidson.py in <module>\n     22 import scipy.sparse.linalg\n     23 \n---> 24 from openfermion.linalg.sparse_tools import get_linear_qubit_operator_diagonal\n     25 from openfermion.linalg.linear_qubit_operator import generate_linear_qubit_operator\n     26 \n\n/usr/local/lib/python3.10/dist-packages/openfermion/linalg/sparse_tools.py in <module>\n     22 from openfermion.ops.operators import FermionOperator, QubitOperator, BosonOperator, QuadOperator\n     23 from openfermion.ops.representations import DiagonalCoulombHamiltonian, PolynomialTensor\n---> 24 from openfermion.transforms.opconversions import normal_ordered\n     25 from openfermion.utils.indexing import up_index, down_index\n     26 from openfermion.utils.operator_utils import count_qubits, is_hermitian\n\n/usr/local/lib/python3.10/dist-packages/openfermion/transforms/__init__.py in <module>\n     11 #   limitations under the License.\n     12 \n---> 13 from .opconversions import (\n     14     commutator_ordered_diagonal_coulomb_with_two_body_operator,\n     15     chemist_ordered,\n\n/usr/local/lib/python3.10/dist-packages/openfermion/transforms/opconversions/__init__.py in <module>\n     53 from .jordan_wigner import jordan_wigner, jordan_wigner_one_body, jordan_wigner_two_body\n     54 \n---> 55 from .qubitoperator_to_paulisum import qubit_operator_to_pauli_sum\n     56 \n     57 from .reverse_jordan_wigner import reverse_jordan_wigner\n\n/usr/local/lib/python3.10/dist-packages/openfermion/transforms/opconversions/qubitoperator_to_paulisum.py in <module>\n     11 #   limitations under the License.\n     12 from typing import Optional, Sequence\n---> 13 import cirq\n     14 from openfermion.ops.operators import QubitOperator\n     15 from openfermion.utils.operator_utils import count_qubits\n\n/usr/local/lib/python3.10/dist-packages/cirq/__init__.py in <module>\n     30 )\n     31 \n---> 32 with _import.delay_import('cirq.protocols'):\n     33     from cirq import (\n     34         # Core\n\n/usr/lib/python3.10/contextlib.py in __enter__(self)\n    133         del self.args, self.kwds, self.func\n    134         try:\n--> 135             return next(self.gen)\n    136         except StopIteration:\n    137             raise RuntimeError(\"generator didn't yield\") from None\n\n/usr/local/lib/python3.10/dist-packages/cirq/_import.py in delay_import(module_name)\n    164 \n    165     with wrap_module_executions(module_name, wrap_func):\n--> 166         importlib.import_module(module_name)\n    167 \n    168     yield  # Run the body of the context\n\n/usr/lib/python3.10/importlib/__init__.py in import_module(name, package)\n    124                 break\n    125             level += 1\n--> 126     return _bootstrap._gcd_import(name[level:], package, level)\n    127 \n    128 \n\n/usr/lib/python3.10/importlib/_bootstrap.py in _gcd_import(name, package, level)\n\n/usr/lib/python3.10/importlib/_bootstrap.py in _find_and_load(name, import_)\n\n/usr/lib/python3.10/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)\n\n/usr/lib/python3.10/importlib/_bootstrap.py in _find_spec(name, path, target)\n\n/usr/local/lib/python3.10/dist-packages/cirq/_import.py in find_spec(self, fullname, path, target)\n     64     def find_spec(self, fullname: str, path: Any = None, target: Any = None) -> Any:\n     65         components = fullname.split('.')\n---> 66         spec = self.finder.find_spec(fullname, path=path, target=target)\n     67         if spec is None:\n     68             return None\n\nTypeError: DaskFinder.find_spec() got an unexpected keyword argument 'path'",
+        "state": "open",
+        "user": "elaidimohamed",
+        "closed_by": null,
+        "created_at": "2025-02-21T09:12:36+00:00",
+        "updated_at": "2025-02-21T09:12:36+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Quantum",
+        "number": 54,
+        "title": "Statistical mechanics",
+        "body": null,
+        "state": "open",
+        "user": "Nitish09948",
+        "closed_by": null,
+        "created_at": "2025-05-02T09:23:17+00:00",
+        "updated_at": "2025-05-02T09:23:17+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    }
+]

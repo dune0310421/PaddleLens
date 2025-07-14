@@ -1,0 +1,3 @@
+# 忽略较大的JSON数据（压缩为gz上传
+data/paddle_commits/PaddlePaddle_Paddle_commits.json
+data/paddle_prs/PaddlePaddle_Paddle_prs.json

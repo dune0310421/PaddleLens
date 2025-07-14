@@ -1,0 +1,1465 @@
+[
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "a14a27096f7558798398dbfd78ba457fbeb7a8ea",
+        "created_at": "2018-07-18 13:02:18 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "Benchmark-62",
+        "files": [
+            {
+                "filename": "src/example/cifar/create_cifar_recordio.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 15,
+                "changes": 25
+            },
+            {
+                "filename": "src/example/cifar/fluid_cifar_benchmark.py",
+                "status": "added",
+                "additions": 210,
+                "deletions": 0,
+                "changes": 210
+            },
+            {
+                "filename": "src/example/cifar/test_cifar.cc",
+                "status": "modified",
+                "additions": 57,
+                "deletions": 9,
+                "changes": 66
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 2,
+                "changes": 35
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "4948dbf7cb5421ab82e8df97544aa6df63a130b5",
+        "created_at": "2018-07-12 13:41:38 -0700",
+        "author": "kexinzhao",
+        "committer": "wanglei828",
+        "message": "Avoid-segment-fault-61",
+        "files": [
+            {
+                "filename": "CMakeLists.txt",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "paddle",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "fa0919e33936a3a8def6a0e687f1bca38f7ca1da",
+        "created_at": "2018-07-02 19:27:09 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "Vgg16-example-45",
+        "files": [
+            {
+                "filename": "CMakeLists.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "src/example/CMakeLists.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/example/cifar/CMakeLists.txt",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "src/example/cifar/create_cifar_recordio.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "src/example/cifar/test_cifar.cc",
+                "status": "added",
+                "additions": 229,
+                "deletions": 0,
+                "changes": 229
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 10,
+                "changes": 31
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 5,
+                "changes": 13
+            },
+            {
+                "filename": "src/tape.h",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 1,
+                "changes": 12
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 3,
+                "changes": 25
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "405b6d481abb48c61ac22b1d1242ad707b3842fc",
+        "created_at": "2018-07-02 16:34:45 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "Feature-Save-and-Load-47",
+        "files": [
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 4,
+                "changes": 11
+            },
+            {
+                "filename": "src/parameter.cc",
+                "status": "modified",
+                "additions": 83,
+                "deletions": 20,
+                "changes": 103
+            },
+            {
+                "filename": "src/parameter.h",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 8,
+                "changes": 26
+            },
+            {
+                "filename": "src/tape.h",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 4,
+                "changes": 15
+            },
+            {
+                "filename": "src/test_parameter.cc",
+                "status": "modified",
+                "additions": 35,
+                "deletions": 3,
+                "changes": 38
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "2afb7a04d6d6ea7d9b22850edd93433a24a89d43",
+        "created_at": "2018-06-29 09:50:33 -0700",
+        "author": null,
+        "committer": "kexinzhao",
+        "message": "Feature-Parameter-44",
+        "files": [
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            },
+            {
+                "filename": "src/example/mnist/test_mnist.cc",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 7,
+                "changes": 9
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 53,
+                "deletions": 75,
+                "changes": 128
+            },
+            {
+                "filename": "src/parameter.cc",
+                "status": "added",
+                "additions": 69,
+                "deletions": 0,
+                "changes": 69
+            },
+            {
+                "filename": "src/parameter.h",
+                "status": "added",
+                "additions": 60,
+                "deletions": 0,
+                "changes": 60
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/test_parameter.cc",
+                "status": "added",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "edbf96bb5425a9e34172eca33050a2a0db617edb",
+        "created_at": "2018-07-03 15:49:22 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "Merge-Backward-and-Optimize-52",
+        "files": [
+            {
+                "filename": "src/example/cifar/test_cifar.cc",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 32,
+                "changes": 63
+            },
+            {
+                "filename": "src/example/mnist/test_mnist.cc",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 5,
+                "changes": 8
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 105,
+                "changes": 108
+            },
+            {
+                "filename": "src/optimizer.cc",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "src/optimizer.h",
+                "status": "added",
+                "additions": 152,
+                "deletions": 0,
+                "changes": 152
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 25,
+                "changes": 31
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "24b6e1967179c0e56da0f01fa8ddee3f886ee563",
+        "created_at": "2018-06-28 14:27:39 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "unify-function-interface-42",
+        "files": [
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 5,
+                "changes": 9
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 23,
+                "changes": 37
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 53,
+                "deletions": 7,
+                "changes": 60
+            },
+            {
+                "filename": "src/tape.h",
+                "status": "modified",
+                "additions": 87,
+                "deletions": 34,
+                "changes": 121
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 3,
+                "changes": 5
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 106,
+                "changes": 106
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "9acc74055d3bdfca2595e720a4d47510a971c2cb",
+        "created_at": "2018-06-28 14:41:27 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "hot-fix-43",
+        "files": [
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/example/mnist/CMakeLists.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "6075bab04875ab6e56b81bf53a8956f5712f7fdf",
+        "created_at": "2018-07-04 13:38:09 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "Save-and-Load-mnist-and-cifar-inference-example-54",
+        "files": [
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "src/example/cifar/CMakeLists.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/example/cifar/test_cifar.cc",
+                "status": "modified",
+                "additions": 118,
+                "deletions": 2,
+                "changes": 120
+            },
+            {
+                "filename": "src/example/mnist/CMakeLists.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/example/mnist/test_mnist.cc",
+                "status": "modified",
+                "additions": 54,
+                "deletions": 1,
+                "changes": 55
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 4,
+                "changes": 29
+            },
+            {
+                "filename": "src/optimizer.cc",
+                "status": "modified",
+                "additions": 104,
+                "deletions": 0,
+                "changes": 104
+            },
+            {
+                "filename": "src/optimizer.h",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 95,
+                "changes": 106
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 50,
+                "deletions": 1,
+                "changes": 51
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "f7811fa53ddf300e13f5503dbdcda0e745f2bdd2",
+        "created_at": "2018-07-03 11:12:04 -0700",
+        "author": null,
+        "committer": "kexinzhao",
+        "message": "refactor-50",
+        "files": [
+            {
+                "filename": "src/example/cifar/test_cifar.cc",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            },
+            {
+                "filename": "src/parameter.h",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 9,
+                "changes": 25
+            },
+            {
+                "filename": "src/tape.h",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 34,
+                "changes": 38
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "9bc06fa7d5b6ebb8a1638fb065f1dc306c44a4de",
+        "created_at": "2018-07-03 11:38:39 -0700",
+        "author": null,
+        "committer": "kexinzhao",
+        "message": "move-using-into-namespace-51",
+        "files": [
+            {
+                "filename": "src/parameter.cc",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 12,
+                "changes": 26
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "ee6b62022944a64826f7f5fa6df36e5fef5cbbaf",
+        "created_at": "2020-01-14 17:42:12 +0800",
+        "author": "tonyyang-svail",
+        "committer": "web-flow",
+        "message": "clean-up-tape.h-57",
+        "files": [
+            {
+                "filename": "src/tape.h",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 26,
+                "changes": 30
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "modified",
+                "additions": 29,
+                "deletions": 0,
+                "changes": 29
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "1c51c2f4db9afd905c7448ebe6852050fe0499ad",
+        "created_at": "2018-06-28 10:44:12 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "Add-accuracy-func-and-test-mnist-accuracy-40",
+        "files": [
+            {
+                "filename": "src/example/mnist/create_mnist_recordio.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 2,
+                "changes": 18
+            },
+            {
+                "filename": "src/example/mnist/test_mnist.cc",
+                "status": "modified",
+                "additions": 70,
+                "deletions": 26,
+                "changes": 96
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 47,
+                "deletions": 6,
+                "changes": 53
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "e5b553906bdea037ae97e4b751846cbc7315b8e3",
+        "created_at": "2018-06-27 10:43:36 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "Add-adam-optimizer-36",
+        "files": [
+            {
+                "filename": "paddle",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/example/mnist/test_mnist.cc",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 78,
+                "deletions": 0,
+                "changes": 78
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 12,
+                "changes": 25
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "3981203ca017eed1afaf3d39b670026f6317d992",
+        "created_at": "2018-06-28 10:36:47 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "feature-graphviz_tape-39",
+        "files": [
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 73,
+                "deletions": 16,
+                "changes": 89
+            },
+            {
+                "filename": "src/tape.h",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "2b0d6355d90b5ac029abb98d5307c607f00a1f1f",
+        "created_at": "2018-06-27 16:11:46 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "Enhance-Backward-38",
+        "files": [
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "src/backward.cc",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 98,
+                "deletions": 55,
+                "changes": 153
+            },
+            {
+                "filename": "src/tape.h",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "src/test_backward.cc",
+                "status": "added",
+                "additions": 112,
+                "deletions": 0,
+                "changes": 112
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 8,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "da8a968c7f5b621366755ee8aed0f30cc7144b1f",
+        "created_at": "2018-06-26 15:19:48 -0700",
+        "author": null,
+        "committer": "kexinzhao",
+        "message": "modify-fill-op-api-31",
+        "files": [
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 3,
+                "changes": 8
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 4,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "b9370a0fb9096ef8cbd56b9da14ead0b5c346c4d",
+        "created_at": "2018-06-23 09:07:41 -0700",
+        "author": null,
+        "committer": "kexinzhao",
+        "message": "add-example-MLP-on-mnist-28",
+        "files": [
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/data/.gitignore",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "src/example/CMakeLists.txt",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "src/example/mnist/CMakeLists.txt",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "src/example/mnist/create_mnist_recordio.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/example/mnist/test_mnist.cc",
+                "status": "added",
+                "additions": 87,
+                "deletions": 0,
+                "changes": 87
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 19,
+                "changes": 46
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 33,
+                "changes": 43
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "fa1f65da6995b888037997cfdf779ede0619a9a3",
+        "created_at": "2018-06-21 17:15:08 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "Add-Recordio-File-Reader-22",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddle",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/data/.gitignore",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/data/create_recordio.py",
+                "status": "added",
+                "additions": 37,
+                "deletions": 0,
+                "changes": 37
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 28,
+                "changes": 28
+            },
+            {
+                "filename": "src/tape.h",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 1,
+                "changes": 11
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "e4af656aa4080dc52189df78716bbe5c21206e87",
+        "created_at": "2018-06-25 17:11:12 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "Add-batchnorm-dropout-and-pool2d-op-34",
+        "files": [
+            {
+                "filename": "src/example/mnist/test_mnist.cc",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 110,
+                "deletions": 38,
+                "changes": 148
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 73,
+                "deletions": 0,
+                "changes": 73
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "e424cab4711fef7235184b902eede4d7aaf97a09",
+        "created_at": "2018-06-22 14:04:56 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "update-submodule-url-25",
+        "files": [
+            {
+                "filename": ".gitmodules",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "paddle",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "b35829e73789a5f603601c72cb17bfe9c15e99c5",
+        "created_at": "2018-06-22 15:44:39 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "remove-vardesc-in-variable-26",
+        "files": [
+            {
+                "filename": "paddle",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 34,
+                "deletions": 23,
+                "changes": 57
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 42,
+                "changes": 63
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 34,
+                "changes": 34
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 16,
+                "changes": 18
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 11,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "47ca03979371a4644091bde23e6952c2754d07bb",
+        "created_at": "2018-06-21 16:01:25 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "add-convolution-and-relu-layer-19",
+        "files": [
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "src/function.cc",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 78,
+                "deletions": 0,
+                "changes": 78
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 84,
+                "deletions": 2,
+                "changes": 86
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "d7da291e61507be0138e58d4fb93ca316dcc7be5",
+        "created_at": "2018-06-21 16:01:15 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "add-get-var-and-get_mutable-20",
+        "files": [
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "a3ce862769b1441301ed7d47a8e431bfb0f22bee",
+        "created_at": "2018-06-19 14:23:46 -0700",
+        "author": "kexinzhao",
+        "committer": "web-flow",
+        "message": "add-value-feature-18",
+        "files": [
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 4,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "23b9d51c2746ce49e2eb024b77ec53673b8a8deb",
+        "created_at": "2018-06-20 19:24:34 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "fix-broken-links-in-readme-13",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "10a42eaa0d4edcf7c7744339d085f90d38f553a6",
+        "created_at": "2018-06-19 13:51:36 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "Add-xavier-initializer-17",
+        "files": [
+            {
+                "filename": ".clang-format",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "CMakeLists.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "src/function.h",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 12,
+                "changes": 35
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "src/tape.h",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 3,
+                "changes": 7
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 6,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "1841334362f8b5015a6c9d19c7338f4a8dca1491",
+        "created_at": "2018-06-19 13:18:28 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "update-submodule-paddle-16",
+        "files": [
+            {
+                "filename": "paddle",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "aebefb810869ecfcd7b8f95776d6152c885daf66",
+        "created_at": "2018-06-18 20:18:48 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "Make-linux-build-pass-8",
+        "files": [
+            {
+                "filename": "CMakeLists.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "6447601694cf4e7eec78de94c05a22a52e2bda01",
+        "created_at": "2018-06-18 15:54:42 -0700",
+        "author": "wangkuiyi",
+        "committer": null,
+        "message": "Update-4",
+        "files": [
+            {
+                "filename": "CMakeLists.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "abc4c1bfe95c6cc87e5a68b11719b9a707c8afec",
+        "created_at": "2018-06-18 19:28:40 -0700",
+        "author": "wangkuiyi",
+        "committer": null,
+        "message": "Make-building-works-7",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "CMakeLists.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 1,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "bb1fc27436c2d70c3d87a34cae1711a22440ab78",
+        "created_at": "2018-06-18 20:18:59 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "add-pre_commit-6",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 58,
+                "deletions": 0,
+                "changes": 58
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 3,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "eda64cba46aba68c8f5f664300073b99c6238477",
+        "created_at": "2018-06-18 14:04:40 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "add-paddle-submodule-2",
+        "files": [
+            {
+                "filename": ".gitmodules",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "CMakeLists.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 24,
+                "changes": 26
+            },
+            {
+                "filename": "paddle",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/CMakeLists.txt",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "55b267d904e67f0a57bc978792a471f2dfacad06",
+        "created_at": "2018-06-18 13:42:13 -0700",
+        "author": null,
+        "committer": "web-flow",
+        "message": "Import-1",
+        "files": [
+            {
+                "filename": "CMakeLists.txt",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 252,
+                "deletions": 1,
+                "changes": 253
+            },
+            {
+                "filename": "doc/images/computation_graph.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/function.h",
+                "status": "added",
+                "additions": 131,
+                "deletions": 0,
+                "changes": 131
+            },
+            {
+                "filename": "src/tape.cc",
+                "status": "added",
+                "additions": 265,
+                "deletions": 0,
+                "changes": 265
+            },
+            {
+                "filename": "src/tape.h",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "src/test_tape.cc",
+                "status": "added",
+                "additions": 61,
+                "deletions": 0,
+                "changes": 61
+            },
+            {
+                "filename": "src/variable.cc",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "src/variable.h",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/tape",
+        "sha": "c527c4dbb77d8009bbbc0f1504173bc1615cd58b",
+        "created_at": "2018-06-18 11:53:16 -0700",
+        "author": "wangkuiyi",
+        "committer": "web-flow",
+        "message": "Initial-commit",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    }
+]

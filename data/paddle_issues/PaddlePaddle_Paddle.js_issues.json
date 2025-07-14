@@ -1,0 +1,2559 @@
+[
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 19,
+        "title": "paddle.js 用什么方案保护算法模型",
+        "body": "我理解的paddle.js 是运行在浏览器端的，没有特别好的办法去做加解密等隐藏的操作，那么在这种情况下，我们怎么去保护训练好的模型和算法呢？",
+        "state": "closed",
+        "user": "jwmneu",
+        "closed_by": "jwmneu",
+        "created_at": "2020-06-30T01:31:11+00:00",
+        "updated_at": "2020-12-04T08:58:33+00:00",
+        "closed_at": "2020-12-04T08:58:33+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 29,
+        "title": "PaddleX模型转化后加载错误",
+        "body": "测试使用的是paddleX果蔬数据集，训练mobileNetV2模型，本地发布后使用python可以正常预测。\r\n使用convertToPaddleJSModel.py工具转化结果如下：\r\n`(paddle) D:\\paddle\\PaddleX\\ModelConverter>convertToPaddleJSModel.py --modelPath=D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\inference_model\\__model__ --paramPath=D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\inference_model\\__params__ --outputDir=D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\js_model\r\n============Convert Model Args=============\r\nmodelPath: D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\inference_model\\__model__\r\nparamPath: D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\inference_model\\__params__\r\noutputDir: D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\js_model\r\nenableOptimizeModel: 0\r\nenableLogModelInfo: 0\r\nsliceDataSize:4096\r\nStarting...\r\n\u001b[33mYou choosed not to optimize model, consequently, optimizing model is skiped.\u001b[0m\r\nConverting model...\r\nOrganizing model operators info...\r\nOrganizing model operators info successfully.\r\nOrganizing model variables info...\r\nOrganizing model variables info successfully.\r\nModel chunkNum set successfully.\r\nDumping model structure to json file...\r\nDumping model structure to json file successfully\r\nOutput No.1 binary file, remain 1218246 param values.\r\nOutput No.2 binary file, remain 169670 param values.\r\nOutput No.3 binary file, remain 0 param values.\r\nSlicing data to binary files successfully. (3 output files and 2266822 param values)\r\nConverting model successfully.\r\n============ALL DONE============`\r\n使用paddle.js进行模型测试时，发现如下错误：\r\n![image](https://user-images.githubusercontent.com/7589716/89121230-b65c5c80-d4ef-11ea-91db-34840e729cfd.png)\r\n再次尝试convertToPaddleJSModel.py增加参数--optimize=1进行优化（paddlelite==2.6.1）：\r\n`(paddle) D:\\paddle\\PaddleX\\ModelConverter>convertToPaddleJSModel.py --modelPath=D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\inference_model\\__model__ --paramPath=D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\inference_model\\__params__ --outputDir=D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\js_model --optimize=1\r\n============Convert Model Args=============\r\nmodelPath: D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\inference_model\\__model__\r\nparamPath: D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\inference_model\\__params__\r\noutputDir: D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\js_model\r\nenableOptimizeModel: 1\r\nenableLogModelInfo: 0\r\nsliceDataSize:4096\r\nStarting...\r\nOptimizing model...\r\nWARNING: Logging before InitGoogleLogging() is written to STDERR\r\nI0802 18:42:33.895296 10456 cxx_api.cc:251] Load model from file.\r\nI0802 18:42:33.941295 10456 optimizer.h:202] == Running pass: lite_conv_elementwise_fuse_pass\r\nI0802 18:42:33.948297 10456 optimizer.h:219] == Finished running: lite_conv_elementwise_fuse_pass\r\nI0802 18:42:33.948297 10456 optimizer.h:202] == Running pass: lite_conv_bn_fuse_pass\r\nI0802 18:42:34.001297 10456 pattern_matcher.cc:108] detected 36 subgraph\r\nI0802 18:42:34.014297 10456 pattern_matcher.cc:108] detected 17 subgraph\r\nI0802 18:42:34.015297 10456 optimizer.h:219] == Finished running: lite_conv_bn_fuse_pass\r\nI0802 18:42:34.015297 10456 optimizer.h:202] == Running pass: lite_conv_elementwise_fuse_pass\r\nI0802 18:42:34.024296 10456 optimizer.h:219] == Finished running: lite_conv_elementwise_fuse_pass\r\nI0802 18:42:34.024296 10456 optimizer.h:202] == Running pass: lite_conv_activation_fuse_pass\r\nI0802 18:42:34.034297 10456 pattern_matcher.cc:108] detected 19 subgraph\r\nI0802 18:42:34.046296 10456 pattern_matcher.cc:108] detected 17 subgraph\r\nI0802 18:42:34.053342 10456 optimizer.h:219] == Finished running: lite_conv_activation_fuse_pass\r\nI0802 18:42:34.054306 10456 optimizer.h:202] == Running pass: lite_var_conv_2d_activation_fuse_pass\r\nI0802 18:42:34.054306 10456 optimizer.h:215]    - Skip lite_var_conv_2d_activation_fuse_pass because the target or kernel does not match.\r\nI0802 18:42:34.055296 10456 optimizer.h:202] == Running pass: lite_fc_fuse_pass\r\nI0802 18:42:34.055296 10456 pattern_matcher.cc:108] detected 1 subgraph\r\nI0802 18:42:34.056308 10456 optimizer.h:219] == Finished running: lite_fc_fuse_pass\r\nI0802 18:42:34.056308 10456 optimizer.h:202] == Running pass: lite_shuffle_channel_fuse_pass\r\nI0802 18:42:34.056308 10456 optimizer.h:219] == Finished running: lite_shuffle_channel_fuse_pass\r\nI0802 18:42:34.056308 10456 optimizer.h:202] == Running pass: lite_transpose_softmax_transpose_fuse_pass\r\nI0802 18:42:34.057299 10456 optimizer.h:219] == Finished running: lite_transpose_softmax_transpose_fuse_pass\r\nI0802 18:42:34.058316 10456 optimizer.h:202] == Running pass: lite_interpolate_fuse_pass\r\nI0802 18:42:34.058316 10456 optimizer.h:219] == Finished running: lite_interpolate_fuse_pass\r\nI0802 18:42:34.058316 10456 optimizer.h:202] == Running pass: identity_scale_eliminate_pass\r\nI0802 18:42:34.059303 10456 pattern_matcher.cc:108] detected 1 subgraph\r\nI0802 18:42:34.059303 10456 optimizer.h:219] == Finished running: identity_scale_eliminate_pass\r\nI0802 18:42:34.059303 10456 optimizer.h:202] == Running pass: elementwise_mul_constant_eliminate_pass\r\nI0802 18:42:34.059303 10456 optimizer.h:219] == Finished running: elementwise_mul_constant_eliminate_pass\r\nI0802 18:42:34.060302 10456 optimizer.h:202] == Running pass: lite_sequence_pool_concat_fuse_pass\r\nI0802 18:42:34.060302 10456 optimizer.h:215]    - Skip lite_sequence_pool_concat_fuse_pass because the target or kernel does not match.\r\nI0802 18:42:34.060302 10456 optimizer.h:202] == Running pass: lite_elementwise_add_activation_fuse_pass\r\nI0802 18:42:34.060302 10456 optimizer.h:219] == Finished running: lite_elementwise_add_activation_fuse_pass\r\nI0802 18:42:34.061324 10456 optimizer.h:202] == Running pass: static_kernel_pick_pass\r\nI0802 18:42:34.063328 10456 optimizer.h:219] == Finished running: static_kernel_pick_pass\r\nI0802 18:42:34.063328 10456 optimizer.h:202] == Running pass: variable_place_inference_pass\r\nI0802 18:42:34.064328 10456 optimizer.h:219] == Finished running: variable_place_inference_pass\r\nI0802 18:42:34.064328 10456 optimizer.h:202] == Running pass: argument_type_display_pass\r\nI0802 18:42:34.064328 10456 optimizer.h:219] == Finished running: argument_type_display_pass\r\nI0802 18:42:34.064328 10456 optimizer.h:202] == Running pass: type_target_cast_pass\r\nI0802 18:42:34.065297 10456 optimizer.h:219] == Finished running: type_target_cast_pass\r\nI0802 18:42:34.065297 10456 optimizer.h:202] == Running pass: variable_place_inference_pass\r\nI0802 18:42:34.066332 10456 optimizer.h:219] == Finished running: variable_place_inference_pass\r\nI0802 18:42:34.066332 10456 optimizer.h:202] == Running pass: argument_type_display_pass\r\nI0802 18:42:34.066332 10456 optimizer.h:219] == Finished running: argument_type_display_pass\r\nI0802 18:42:34.066332 10456 optimizer.h:202] == Running pass: io_copy_kernel_pick_pass\r\nI0802 18:42:34.067297 10456 optimizer.h:219] == Finished running: io_copy_kernel_pick_pass\r\nI0802 18:42:34.069296 10456 optimizer.h:202] == Running pass: argument_type_display_pass\r\nI0802 18:42:34.070310 10456 optimizer.h:219] == Finished running: argument_type_display_pass\r\nI0802 18:42:34.070310 10456 optimizer.h:202] == Running pass: variable_place_inference_pass\r\nI0802 18:42:34.071297 10456 optimizer.h:219] == Finished running: variable_place_inference_pass\r\nI0802 18:42:34.071297 10456 optimizer.h:202] == Running pass: argument_type_display_pass\r\nI0802 18:42:34.071297 10456 optimizer.h:219] == Finished running: argument_type_display_pass\r\nI0802 18:42:34.071297 10456 optimizer.h:202] == Running pass: type_precision_cast_pass\r\nI0802 18:42:34.072297 10456 optimizer.h:219] == Finished running: type_precision_cast_pass\r\nI0802 18:42:34.072297 10456 optimizer.h:202] == Running pass: variable_place_inference_pass\r\nI0802 18:42:34.073297 10456 optimizer.h:219] == Finished running: variable_place_inference_pass\r\nI0802 18:42:34.073297 10456 optimizer.h:202] == Running pass: argument_type_display_pass\r\nI0802 18:42:34.073297 10456 optimizer.h:219] == Finished running: argument_type_display_pass\r\nI0802 18:42:34.073297 10456 optimizer.h:202] == Running pass: type_layout_cast_pass\r\nI0802 18:42:34.074297 10456 optimizer.h:219] == Finished running: type_layout_cast_pass\r\nI0802 18:42:34.074297 10456 optimizer.h:202] == Running pass: argument_type_display_pass\r\nI0802 18:42:34.074297 10456 optimizer.h:219] == Finished running: argument_type_display_pass\r\nI0802 18:42:34.074297 10456 optimizer.h:202] == Running pass: variable_place_inference_pass\r\nI0802 18:42:34.075297 10456 optimizer.h:219] == Finished running: variable_place_inference_pass\r\nI0802 18:42:34.075297 10456 optimizer.h:202] == Running pass: argument_type_display_pass\r\nI0802 18:42:34.075297 10456 optimizer.h:219] == Finished running: argument_type_display_pass\r\nI0802 18:42:34.075297 10456 optimizer.h:202] == Running pass: runtime_context_assign_pass\r\nI0802 18:42:34.075297 10456 optimizer.h:219] == Finished running: runtime_context_assign_pass\r\nI0802 18:42:34.075297 10456 optimizer.h:202] == Running pass: argument_type_display_pass\r\nI0802 18:42:34.075297 10456 optimizer.h:219] == Finished running: argument_type_display_pass\r\nI0802 18:42:34.076297 10456 generate_program_pass.h:37] insts.size 68\r\nSave the optimized model into :D:\\paddle\\PaddleX\\WorkSpace\\P0001-T0001_export_model\\js_model\\optimizesuccessfully\r\nOptimizing model successfully.\r\nConverting model...\r\nOrganizing model operators info...\r\nOrganizing model operators info successfully.\r\nOrganizing model variables info...\r\nOrganizing model variables info successfully.\r\nModel chunkNum set successfully.\r\nDumping model structure to json file...\r\nDumping model structure to json file successfully\r\nOutput No.1 binary file, remain 1166982 param values.\r\nOutput No.2 binary file, remain 118406 param values.\r\nOutput No.3 binary file, remain 0 param values.\r\nSlicing data to binary files successfully. (3 output files and 2215558 param values)\r\nConverting model successfully.\r\nCleaning optimized temporary model...\r\nTemporary files has been deleted successfully.\r\n============ALL DONE============`\r\n使用paddle.js进行模型测试时，发现如下错误：\r\n![image](https://user-images.githubusercontent.com/7589716/89121316-75187c80-d4f0-11ea-82ea-debd42747b0b.png)\r\n",
+        "state": "closed",
+        "user": "autowo",
+        "closed_by": "zhongkai",
+        "created_at": "2020-08-02T10:52:07+00:00",
+        "updated_at": "2021-07-19T04:02:39+00:00",
+        "closed_at": "2021-07-19T04:02:39+00:00",
+        "comments_count": [
+            "jiangjiajun",
+            "zhongkai"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 22,
+        "title": "通过finetune训练的mobienet，通过转换工具后softmax变成了1000分类",
+        "body": "通过finetune训练的mobienet模型，在python上运行结果是自己的分类的20种。\r\n但是通过转换工具生成的model.json中softmax等于imagenet的1000分类，js运行得到的结果也是1000分类\r\n        {\r\n            \"name\": \"softmax_0.tmp_0\", \r\n            \"persistable\": false, \r\n            \"shape\": [\r\n                1000\r\n            ]\r\n        }\r\n这是什么情况？\r\n模型训练是在aistudio上通过paddleclas finetune的，训练完成后通过predict出现的结果是正确的。",
+        "state": "closed",
+        "user": "fuchun107",
+        "closed_by": "zhongkai",
+        "created_at": "2020-07-01T00:48:17+00:00",
+        "updated_at": "2021-07-19T04:01:43+00:00",
+        "closed_at": "2021-07-19T04:01:43+00:00",
+        "comments_count": [
+            "yueshuangyan",
+            "zhongkai"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 12,
+        "title": "Paddle.js yolo例子缺少图片文件",
+        "body": "启动服务后报错：\r\n\r\n(base) ubuntu@ip-172-31-23-98:~/github/Paddle.js/examples/yolo$ npm run yolo\r\n\r\n> paddel-web@1.0.0 yolo /home/ubuntu/github/Paddle.js\r\n> parcel ./examples/yolo/index.html\r\n\r\nServer running at http://localhost:1234 \r\n🚨  /home/ubuntu/github/Paddle.js/examples/yolo/pic.png: ENOENT: no such file or directory, open '/home/ubuntu/github/Paddle.js/examples/yolo/pic.png'\r\nError: ENOENT: no such file or directory, open '/home/ubuntu/github/Paddle.js/examples/yolo/pic.png'\r\n\r\n浏览器里打开xxxx：1234 网页，也是报错信息：\r\n\r\n/home/ubuntu/github/Paddle.js/examples/yolo/pic.png: ENOENT: no such file or directory, open '/home/ubuntu/github/Paddle.js/examples/yolo/pic.png'",
+        "state": "closed",
+        "user": "skywalk163",
+        "closed_by": "zhongkai",
+        "created_at": "2020-06-12T00:28:58+00:00",
+        "updated_at": "2021-07-19T04:00:40+00:00",
+        "closed_at": "2021-07-19T04:00:40+00:00",
+        "comments_count": [
+            "zhongkai"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 17,
+        "title": "文档错误",
+        "body": "https://github.com/PaddlePaddle/Paddle.js/blob/master/tools/ModelConverter/README_cn.md\r\n\r\n其中 \r\n### 1.2. 快速上手\r\n- 如果待转换的 fluid 模型为`合并参数文件`，即一个模型对应一个参数文件：\r\n``` bash\r\npython convertToPaddleJSModel.py --modelPath=<fluid_model_file_path> --paramPath=<fluid_param_file_path> --outputDir=<paddlejs_model_directory>\r\n```\r\n- 如果待转换的 fluid 模型为`分片参数文件`，即一个模型文件对应多个参数文件：\r\n``` bash\r\n# 注意，使用这种方式调用转换器，需要保证 inputDir 中，模型文件名为'__model__'\r\npython convertToPaddleJSModel.py --inputDir=<fluid_model_directory> --outputDir=<paddlejs_model_directory>\r\n\r\n应该改为 \r\n### 1.2. 快速上手\r\n- 如果待转换的 fluid 模型为`分片参数文件`，即一个模型文件对应多个参数文件：\r\n``` bash\r\npython convertToPaddleJSModel.py --modelPath=<fluid_model_file_path> --paramPath=<fluid_param_file_path> --outputDir=<paddlejs_model_directory>\r\n```\r\n``` bash\r\n- 如果待转换的 fluid 模型为`合并参数文件`，即一个模型对应一个参数文件：\r\n# 注意，使用这种方式调用转换器，需要保证 inputDir 中，模型文件名为'__model__'\r\npython convertToPaddleJSModel.py --inputDir=<fluid_model_directory> --outputDir=<paddlejs_model_directory>\r\n\r\n在aistudio上实测：\r\nll output/mobilenetv3_large_ssld_Infer\r\ntotal 17184\r\ndrwxr-xr-x 2 aistudio aistudio     4096 Jun 25 11:02 ./\r\ndrwxr-xr-x 6 aistudio aistudio     4096 Jun 25 14:00 ../\r\n-rw-r--r-- 1 aistudio aistudio   667718 Jun 25 11:04 __model__\r\n-rw-r--r-- 1 aistudio aistudio      622 Jun 25 11:04 model.yml\r\n-rw-r--r-- 1 aistudio aistudio 16911818 Jun 25 11:04 __params__\r\n-rw-r--r-- 1 aistudio aistudio        0 Jun 25 11:04 .success\r\n\r\n`! python convertToPaddleJSModel.py --modelPath=/home/aistudio/output/mobilenetv3_large_ssld_Infer/__model__ --paramPath=/home/aistudio/output/mobilenetv3_large_ssld_Infer/__params__ --outputDir=/home/aistudio/output/mobilenetv3_large_ssld_paddlejs`\r\n\r\n`============Convert Model Args=============\r\nmodelPath: /home/aistudio/output/mobilenetv3_large_ssld_Infer/__model__\r\nparamPath: /home/aistudio/output/mobilenetv3_large_ssld_Infer/__params__\r\noutputDir: /home/aistudio/output/mobilenetv3_large_ssld_paddlejs\r\nenableOptimizeModel: 0\r\nenableLogModelInfo: 0\r\nsliceDataSize:4096\r\nStarting...\r\nYou choosed not to optimize model, consequently, optimizing model is skiped.\r\nConverting model...\r\nOrganizing model operators info...\r\nOrganizing model operators info successfully.\r\nOrganizing model variables info...\r\nOrganizing model variables info successfully.\r\nDumping model structure to json file...\r\nDumping model structure to json file successfully\r\nOutput No.1 binary file, remain 3177624 param values.\r\nOutput No.2 binary file, remain 2129048 param values.\r\nOutput No.3 binary file, remain 1080472 param values.\r\nOutput No.4 binary file, remain 31896 param values.\r\nOutput No.5 binary file, remain 0 param values.\r\nSlicing data to binary files successfully. (5 output files and 4226200 param values)\r\nConverting model successfully.\r\n============ALL DONE============\r\n`\r\n`$ ll output/mobilenetv3_large_ssld_paddlejs\r\ntotal 16868\r\ndrwxr-xr-x 2 aistudio aistudio    4096 Jun 25 14:00 ./\r\ndrwxr-xr-x 6 aistudio aistudio    4096 Jun 25 14:00 ../\r\n-rw-r--r-- 1 aistudio aistudio 4194304 Jun 25 14:00 chunk_1.dat\r\n-rw-r--r-- 1 aistudio aistudio 4194304 Jun 25 14:00 chunk_2.dat\r\n-rw-r--r-- 1 aistudio aistudio 4194304 Jun 25 14:00 chunk_3.dat\r\n-rw-r--r-- 1 aistudio aistudio 4194304 Jun 25 14:00 chunk_4.dat\r\n-rw-r--r-- 1 aistudio aistudio  127584 Jun 25 14:00 chunk_5.dat\r\n-rw-r--r-- 1 aistudio aistudio  355062 Jun 25 14:00 model.json`\r\n\r\n但是 python convertToPaddleJSModel.py --inputDir=<fluid_model_directory> --outputDir=<paddlejs_model_directory>\r\n不知道如何使用，请指导一下，谢谢！",
+        "state": "closed",
+        "user": "60999",
+        "closed_by": "zhongkai",
+        "created_at": "2020-06-25T06:11:00+00:00",
+        "updated_at": "2021-07-19T04:00:51+00:00",
+        "closed_at": "2021-07-19T04:00:50+00:00",
+        "comments_count": [
+            "yueshuangyan",
+            "zhongkai"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 27,
+        "title": "微信小程序无法引入paddle.js",
+        "body": "<img width=\"632\" alt=\"微信截图_20200725173720\" src=\"https://user-images.githubusercontent.com/53158137/88453869-84b71600-ce9d-11ea-9ef5-0400a5f7ac74.png\">\r\n",
+        "state": "closed",
+        "user": "SOVLOOKUP",
+        "closed_by": "SOVLOOKUP",
+        "created_at": "2020-07-25T09:37:37+00:00",
+        "updated_at": "2021-01-28T15:57:12+00:00",
+        "closed_at": "2021-01-28T15:57:12+00:00",
+        "comments_count": [
+            "yueshuangyan",
+            "SOVLOOKUP",
+            "SOVLOOKUP",
+            "autowo",
+            "SOVLOOKUP",
+            "SOVLOOKUP"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 11,
+        "title": "tiny Yolo model 测试问题",
+        "body": "按照例子里https://github.com/PaddlePaddle/Paddle.js/tree/master/src/paddle的说明，起tinyYolo服务，报错：\r\n\r\n\r\nServer running at http://localhost:1234 \r\n🚨  /home/aistudio/Paddle.js/examples/tinyYolo/index.es6:4:15: Cannot resolve dependency '../../src/feed/imageFeed' at '/home/aistudio/Paddle.js/src/feed/imageFeed'\r\n  2 | import 'babel-polyfill';\r\n  3 | import Paddle from '../../src/paddle/paddle';\r\n> 4 | import IO from '../../src/feed/imageFeed';\r\n\r\n将aistudio@jupyter-141218-528471:~/Paddle.js/src/feed$  目录下的一个imageFeed.es6文件改名为不带后缀，不再报错。\r\n\r\n但是在使用chrome和safari两种浏览器里，均只能看到上传照片按钮，上传照片后没有任何输出。 不知道什么原因。。",
+        "state": "closed",
+        "user": "skywalk163",
+        "closed_by": "zhongkai",
+        "created_at": "2020-06-08T16:54:57+00:00",
+        "updated_at": "2021-07-19T04:00:27+00:00",
+        "closed_at": "2021-07-19T04:00:27+00:00",
+        "comments_count": [
+            "haozech",
+            "zhongkai"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 23,
+        "title": "前端模型无法正常加载",
+        "body": "src.a2b27638.js:122 Uncaught (in promise) RangeError: byte length of Float32Array should be a multiple of 4\r\n    at new Float32Array (<anonymous>)\r\n    at src.a2b27638.js:122\r\n    at Array.forEach (<anonymous>)\r\n    at src.a2b27638.js:122\r\n\r\n定位 src/index.js第40行，前端模型无法加载",
+        "state": "closed",
+        "user": "adaxiadaxi",
+        "closed_by": "zhongkai",
+        "created_at": "2020-07-01T02:18:00+00:00",
+        "updated_at": "2021-07-19T04:02:24+00:00",
+        "closed_at": "2021-07-19T04:02:24+00:00",
+        "comments_count": [
+            "yueshuangyan",
+            "zhongkai"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 18,
+        "title": "是否支持WebWorker OffscreenCanvas",
+        "body": "如题，支持WebWorker的OffscreenCanvas可以避免主界面的堵塞。\r\n进行源码搜索时并没有见到相关的实现代码，所以在此提出建议。",
+        "state": "closed",
+        "user": "HighCWu",
+        "closed_by": "zhongkai",
+        "created_at": "2020-06-27T06:48:20+00:00",
+        "updated_at": "2021-07-19T04:01:09+00:00",
+        "closed_at": "2021-07-19T04:01:08+00:00",
+        "comments_count": [
+            "luan007",
+            "HighCWu",
+            "robin-shine",
+            "luan007",
+            "zhongkai"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 31,
+        "title": "example/gesture部署时 property 'RGBA' of null",
+        "body": "前端异常如下：\r\n```\r\nUncaught (in promise) TypeError: Cannot read property 'RGBA' of null\r\n    at new t (index.js:1)\r\n    at new t (index.js:1)\r\n    at new t (index.js:1)\r\n    at t.value (index.js:1)\r\n    at t.<anonymous> (index.js:1)\r\n    at u (index.js:1)\r\n    at Generator._invoke (index.js:1)\r\n    at Generator.forEach.t.(:8888/anonymous function) [as next] (https://localhost:8888/gesture.77a0a3b8.js:122:4238)\r\n    at n (index.js:1)\r\n    at s (index.js:1)\r\n```\r\n\r\n定位到代码错误在\r\n![image](https://user-images.githubusercontent.com/16149816/90327302-d8141400-dfc4-11ea-9a4d-137975be8c2f.png)\r\n\r\n进一步查找到，\r\n```\r\n//gl = canvas.getContext('webgl2') || canvas.getContext('experimental-webgl2');\r\n    gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');\r\n```\r\n\r\n我替换为webgl2，也无法解决这个问题",
+        "state": "closed",
+        "user": "yishanchuan",
+        "closed_by": "zhongkai",
+        "created_at": "2020-08-16T05:42:02+00:00",
+        "updated_at": "2022-09-21T15:03:03+00:00",
+        "closed_at": "2021-07-19T04:02:51+00:00",
+        "comments_count": [
+            "luan007",
+            "yishanchuan",
+            "luan007",
+            "zhongkai",
+            "zhouyupeng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 38,
+        "title": "启动examples中样例报错",
+        "body": "运行`humanseg`与`humanStream`样例时，都报错出`Cannot resolve dependency`，对应`import cv from '../../opencv.js';`语句,请问开始部署时我的操作问题还是本来就缺少对应的`opencv.js`的文件",
+        "state": "closed",
+        "user": "YHB0000",
+        "closed_by": "zhongkai",
+        "created_at": "2020-11-20T04:50:24+00:00",
+        "updated_at": "2020-12-31T16:10:26+00:00",
+        "closed_at": "2020-12-31T16:10:26+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 36,
+        "title": "希望增加算子：pad2d",
+        "body": "",
+        "state": "closed",
+        "user": "dubox",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2020-10-18T13:04:21+00:00",
+        "updated_at": "2022-01-03T14:18:34+00:00",
+        "closed_at": "2022-01-03T14:18:34+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 32,
+        "title": "paddlejs样例代码报错",
+        "body": "\\examples\\videoDemo项目运行后报错：\r\n报错信息为：\r\nUncaught (in promise) TypeError: Cannot read property '0' of undefined\r\n    at Runner._callee5$ (runner.es6:144)\r\n    at tryCatch (runtime.js:65)\r\n    at Generator.invoke [as _invoke] (runtime.js:303)\r\n    at Generator.prototype.<computed> [as next] (runtime.js:117)\r\n    at asyncGeneratorStep (runner.es6:17)\r\n    at _next (runner.es6:17)\r\n项目中的模型是加载成功的，this.modelConfig.fetchShape为空。未定位到问题位置。还请帮忙查看下。",
+        "state": "closed",
+        "user": "lijinhan",
+        "closed_by": "zhongkai",
+        "created_at": "2020-08-25T10:05:45+00:00",
+        "updated_at": "2020-12-31T16:10:26+00:00",
+        "closed_at": "2020-12-31T16:10:26+00:00",
+        "comments_count": [
+            "yueshuangyan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 77,
+        "title": "PPYOLO预训练模型转换成Paddlejs后出现问题",
+        "body": "你好，我在使用PPYolo或PaddleHub中的与训练模型转换Paddlejs之后都有出现length的问题，请问如何解决呢？\r\nUncaught (in promise) TypeError: Cannot read property 'length\" of undefined\r\nat graph.es6:354\r\nat Array. filter (<anonymous> )\r\nat Graph. getNextExecutor (graph .es6:353)\r\nat graph.es6:225\r\nat Array .map (<anonymous> )\r\nat Graph. constructOpsMap (graph.es6:223)\r\nat Paddle.preGraph (paddle.es6:52)\r\nat Paddle._ callee$ (paddle.es6:41)\r\nat tryCatch (runtime.js:65)\r\nat Generator . invoke [as_ invoke] (runtime .js:303)\r\n\r\n![image](https://user-images.githubusercontent.com/46918917/106872578-6bc1d400-670e-11eb-8711-3879a9367a2d.png)\r\n",
+        "state": "closed",
+        "user": "Outstanding",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-02-04T09:29:34+00:00",
+        "updated_at": "2022-01-03T14:21:46+00:00",
+        "closed_at": "2022-01-03T14:21:46+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "Outstanding",
+            "JingyuanZhang",
+            "Outstanding",
+            "liuna471658955",
+            "liuna471658955"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 37,
+        "title": "希望能给微信小程序上的demo项目",
+        "body": "我已经搞定单张图片的,但过程还是有些艰辛.或者开发人员出一个demo的repo,单独就是小程序端部署的?\r\n另外啥时候能出一个小程序端视频流的方案呢?想做的工作还是偏视频方向的",
+        "state": "closed",
+        "user": "ninetailskim",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2020-11-20T01:43:34+00:00",
+        "updated_at": "2022-01-03T14:20:24+00:00",
+        "closed_at": "2022-01-03T14:20:24+00:00",
+        "comments_count": [
+            "yueshuangyan",
+            "ninetailskim",
+            "JingyuanZhang",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 35,
+        "title": "微信引入paddlejs之后报错 const paddlejs = require('paddlejs');",
+        "body": "当在app.js文件输入“const paddlejs = require('paddlejs');”就提示报错如下图。\r\n<img width=\"638\" alt=\"微信截图_20201015132346\" src=\"https://user-images.githubusercontent.com/63178095/96080522-d1811a80-0ee9-11eb-8e3f-edf7606ffa51.png\">\r\n删除了这句就不在报这个错误。\r\n安装paddlejs这个插件应该是没有问题的。\r\n<img width=\"581\" alt=\"微信截图_20201015132549\" src=\"https://user-images.githubusercontent.com/63178095/96080610-02f9e600-0eea-11eb-955b-4f81db05e0d7.png\">\r\n\r\n",
+        "state": "closed",
+        "user": "FjjRichard",
+        "closed_by": "zhongkai",
+        "created_at": "2020-10-15T05:26:48+00:00",
+        "updated_at": "2021-07-19T04:03:04+00:00",
+        "closed_at": "2021-07-19T04:03:03+00:00",
+        "comments_count": [
+            "yueshuangyan",
+            "zhongkai"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 40,
+        "title": "Paddle.js 使用 ch_ppocr_mobile_v1.1 作为模型，发现是缺少 hard_swish，希望增加 hard_swish 算子",
+        "body": "Paddle.js 使用 ch_ppocr_mobile_v1.1 作为模型，使用 ModelConverter 转换以后得到的models.json，然后再代码里加载该模型，会报错：\r\n![image](https://user-images.githubusercontent.com/10097495/102796027-95d26780-43e8-11eb-967d-e22b89c8cca6.png)\r\n发现是代码里缺少 hard_swish 算子，希望Paddle团队能早日支持",
+        "state": "closed",
+        "user": "baronhuang",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2020-12-21T16:00:45+00:00",
+        "updated_at": "2021-08-04T05:35:39+00:00",
+        "closed_at": "2021-08-04T05:35:39+00:00",
+        "comments_count": [
+            "changy1105"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 39,
+        "title": "微信小程序预览时提示“大小超限”，有时会闪退",
+        "body": "代码片段和错误截图如下",
+        "state": "closed",
+        "user": "chenfh0620",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2020-11-24T07:32:51+00:00",
+        "updated_at": "2022-01-03T14:20:44+00:00",
+        "closed_at": "2022-01-03T14:20:44+00:00",
+        "comments_count": [
+            "chenfh0620",
+            "yueshuangyan",
+            "hu-qi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 78,
+        "title": "希望提供 ”OCR图像中文字识别“ 的例子",
+        "body": "",
+        "state": "closed",
+        "user": "czs0906",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-02-04T10:19:10+00:00",
+        "updated_at": "2022-01-03T14:22:30+00:00",
+        "closed_at": "2022-01-03T14:22:30+00:00",
+        "comments_count": [
+            "liuna471658955",
+            "60999",
+            "macqueen09",
+            "changy1105",
+            "liuxin2533",
+            "Kyncc",
+            "QianLingjun",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 90,
+        "title": "小程序运行到buildOp时报 Cannot read property 'params' of undefined",
+        "body": "平台：微信小程序 \r\n版本：paddlejs@1.0.15 \r\n问题：当运行到 flatten_contiguous_range 时，报 Cannot read property 'params' of undefined 错误。 请问下，是不支持 Flatten 算子吗？请问下，那MobileNetV1的模型网络是否支持，谢谢。\r\n错误代码片段：\r\n key: \"buildOp\",\r\n        value: function value(t) {\r\n          console.log(t);\r\n          var e = this,\r\n          n = N.ops[t].params,\r\n          r = N.atoms;\r\n          return (N.ops[t].confs.dep || []).map(function (t) {\r\n            var o = t.func,\r\n            i = t.conf,\r\n            a = r[o];\r\n            n += e.populateData(a, i);\r\n          }), n += this.buildSuffix(t), n += N.ops[t].func;\r\n        } },\r\n错误信息：\r\nVM103 WAService.js:2 TypeError: Cannot read property 'params' of undefined\r\n    at t.value (vendor.js?t=wechat&s=1613963073045&v=194de92480d55cfc8fe810cb831eba14:12752)\r\n    at t.value (vendor.js?t=wechat&s=1613963073045&v=194de92480d55cfc8fe810cb831eba14:12729)\r\n    at vendor.js?t=wechat&s=1613963073045&v=194de92480d55cfc8fe810cb831eba14:14209\r\n    at Array.map (<anonymous>)\r\n    at t.value (vendor.js?t=wechat&s=1613963073045&v=194de92480d55cfc8fe810cb831eba14:14208)\r\n    at vendor.js?t=wechat&s=1613963073045&v=194de92480d55cfc8fe810cb831eba14:14574\r\n    at Array.forEach (<anonymous>)\r\n    at t.value (vendor.js?t=wechat&s=1613963073045&v=194de92480d55cfc8fe810cb831eba14:14571)\r\n    at t.<anonymous> (vendor.js?t=wechat&s=1613963073045&v=194de92480d55cfc8fe810cb831eba14:15252)\r\n    at u (vendor.js?t=wechat&s=1613963073045&v=194de92480d55cfc8fe810cb831eba14:15740)",
+        "state": "closed",
+        "user": "cqjinxiaotao",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-02-22T03:17:07+00:00",
+        "updated_at": "2022-01-03T14:23:51+00:00",
+        "closed_at": "2022-01-03T14:23:50+00:00",
+        "comments_count": [
+            "wiindyc",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 116,
+        "title": "paddlejs引入模型报错",
+        "body": "\r\n",
+        "state": "closed",
+        "user": "liuna471658955",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-03-31T09:27:05+00:00",
+        "updated_at": "2022-01-03T14:24:37+00:00",
+        "closed_at": "2022-01-03T14:24:37+00:00",
+        "comments_count": [
+            "liuna471658955",
+            "JingyuanZhang",
+            "liuna471658955",
+            "JingyuanZhang",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 144,
+        "title": "前端小白求手势识别完整demo",
+        "body": "https://aistudio.baidu.com/aistudio/education/lessonvideo/1303026\r\n这个视频的手势识别完整demo有吗，前端小白，做毕设想学学怎么用。",
+        "state": "closed",
+        "user": "luqihui",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-04-29T03:27:03+00:00",
+        "updated_at": "2022-01-03T14:25:40+00:00",
+        "closed_at": "2022-01-03T14:25:39+00:00",
+        "comments_count": [
+            "Leoqh96",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 156,
+        "title": "三个Demo 使用npm或者yarn都不能成功安装依赖",
+        "body": "三个Demo 使用npm或者yarn都不能成功安装依赖：\r\nnpm version: 7.10.0\r\nnode version: v16.0.0\r\nyarn version: 1.22.10\r\n![641621339776_ pic](https://user-images.githubusercontent.com/50762307/118649588-3ef58080-b816-11eb-897f-7e1900e5ca07.jpg)\r\n![661621340093_ pic](https://user-images.githubusercontent.com/50762307/118649609-4583f800-b816-11eb-84f5-c3982e290be2.jpg)\r\n![671621340116_ pic](https://user-images.githubusercontent.com/50762307/118649615-487ee880-b816-11eb-851c-7823c8ae4d7e.jpg)\r\n",
+        "state": "closed",
+        "user": "ralph0813",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-05-18T12:19:34+00:00",
+        "updated_at": "2021-07-19T03:18:37+00:00",
+        "closed_at": "2021-07-19T03:18:37+00:00",
+        "comments_count": [
+            "Leoqh96",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 145,
+        "title": "PaddleDetection训练的ppyolo模型转Paddle.js模型失败，无输出",
+        "body": "我用PaddleDetection训练的PPYolo模型export_model成_model_和_params_之后，再用Paddle.js的convertToPaddleJsModel转换模型后，指定的output文件夹内为空，但转换过程的print显示success，没有转换后的结果。",
+        "state": "closed",
+        "user": "luqihui",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-05-04T15:44:34+00:00",
+        "updated_at": "2022-01-03T14:26:57+00:00",
+        "closed_at": "2022-01-03T14:26:57+00:00",
+        "comments_count": [
+            "YuWang-CV",
+            "luqihui",
+            "1019058432",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 155,
+        "title": "导入转换后的模型后出现如下问题：",
+        "body": "Uncaught (in promise) TypeError: Failed to execute 'getAttribLocation' on 'WebGL2RenderingContext': parameter 1 is not of type 'WebGLProgram'.\r\n    at t.runVertexShader (index.js:1)\r\n    at t.setProgram (index.js:1)\r\n    at index.js:1\r\n    at Array.forEach (<anonymous>)\r\n    at e.runProgram (index.js:1)\r\n    at t.execute (index.js:1)\r\n    at t.executeOp (index.js:1)\r\n    at t.executeOp (index.js:1)\r\n    at t.<anonymous> (index.js:1)\r\n    at index.js:1",
+        "state": "closed",
+        "user": "wiindyc",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-05-18T08:55:30+00:00",
+        "updated_at": "2022-01-11T13:04:54+00:00",
+        "closed_at": "2022-01-11T13:04:54+00:00",
+        "comments_count": [
+            "hoojunev",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 167,
+        "title": "引入微信小程序时报错",
+        "body": "引入微信小程序时报错Cannot read property 'userAgent' of undefined，将其注释后其他方法也报错。\r\n![图片](https://user-images.githubusercontent.com/55135642/120621877-e1f1ff80-c490-11eb-833d-4b5840e9a930.png)\r\n\r\n",
+        "state": "closed",
+        "user": "1solo",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-06-03T09:28:02+00:00",
+        "updated_at": "2022-01-03T14:30:51+00:00",
+        "closed_at": "2022-01-03T14:30:51+00:00",
+        "comments_count": [
+            "Leoqh96"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 162,
+        "title": "请问有和tensorflow.js的benchmark对比吗？",
+        "body": "多谢！",
+        "state": "open",
+        "user": "GaussRieman",
+        "closed_by": null,
+        "created_at": "2021-05-31T02:15:27+00:00",
+        "updated_at": "2023-01-19T09:18:41+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qianyu-guo",
+            "renderless",
+            "zheNeng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 193,
+        "title": "Function/eval calls violate strict CSP",
+        "body": "The webpack configurations for TS packages emit code like `g = g || Function(\"return this\")() || (1,eval)(\"this\");`, which cannot run in security-critical contexts with strict CSP; e.g. in Browser extensions.\r\n\r\nThis can be fixed by adding `devtool: \"source-map\", node: { global: false }` to the webpack configuration (see webpack/webpack#5627).\r\n\r\nAdditionally, the `@paddlejs-mediapipe/opencv` is built by emscripten to include `Function` code evaluation. Emscripten needs parameters `-s NO_DYNAMIC_EXECUTION=1` to disable use of Function/eval (see [this answer](https://stackoverflow.com/a/64814360/1598293) on stackoverflow).",
+        "state": "open",
+        "user": "s-ol",
+        "closed_by": null,
+        "created_at": "2021-07-20T10:12:14+00:00",
+        "updated_at": "2021-07-20T10:12:14+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 169,
+        "title": "引入paddlejs-backend-cpu回报找不到错误",
+        "body": "您好，正在用Vue.js 开发Web应用的时候，想引用Paddle.js的CPU版本然后发现会报错。\r\n\r\n<img width=\"960\" alt=\"screenshot2\" src=\"https://user-images.githubusercontent.com/60343141/120951947-984d3180-c77c-11eb-8502-f76e8c0b966c.png\">\r\n\r\n测试了一下然后发现稍微改一下引用就可以了 （后面加上/lib)\r\n\r\n<img width=\"960\" alt=\"screenshot3\" src=\"https://user-images.githubusercontent.com/60343141/120951998-b74bc380-c77c-11eb-9c97-225eaeaf4a3d.png\">\r\n\r\n我感觉在npm package里面，引入链接有BUG? 麻烦了，谢谢",
+        "state": "closed",
+        "user": "liu2333hui",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-06-07T02:43:45+00:00",
+        "updated_at": "2021-07-19T03:16:50+00:00",
+        "closed_at": "2021-07-19T03:16:50+00:00",
+        "comments_count": [
+            "Leoqh96",
+            "Leoqh96"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 172,
+        "title": "预测结果始终不变",
+        "body": "![image](https://user-images.githubusercontent.com/448208/121782764-c21fb180-cbdd-11eb-9bcd-78ab8b8ac626.png)\r\n\r\n使用 paddleClass训练了一个多分类模型（5个分类），在python后端正常，转成js的版本后，预测结果始终一样，数据预处理看上去正常",
+        "state": "closed",
+        "user": "realeve",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-06-12T16:25:27+00:00",
+        "updated_at": "2022-01-11T13:04:31+00:00",
+        "closed_at": "2022-01-11T13:04:31+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "realeve",
+            "JingyuanZhang",
+            "realeve",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 174,
+        "title": "模型文件云存储后无法访问的问题",
+        "body": "```js\r\nasync function load() {\r\n    const path = 'https://paddlejs.cdn.bcebos.com/models/mobileNetV2';\r\n    await mobilenet.load({\r\n        path,\r\n        fileCount: 3,\r\n        mean: [0.485, 0.456, 0.406],\r\n        std: [0.229, 0.224, 0.225]\r\n    }, map);\r\n    document.getElementById('loading')!.style.display = 'none';\r\n}\r\n```\r\n官方demo中的模型文件存储在上述path地址：https://paddlejs.cdn.bcebos.com/models/mobileNetV2\r\n我自己转化了一个模型后，采用百度云的BOS对象存储服务后的地址：https://paddlejs2.bj.bcebos.com/tianjiao_mobilenetv2\r\n为啥替换后不能正常访问呢？（本地测模型没有问题，应该就是模型地址加载的问题，求大佬帮忙看看！",
+        "state": "closed",
+        "user": "zoulu995",
+        "closed_by": "zoulu995",
+        "created_at": "2021-06-16T16:26:59+00:00",
+        "updated_at": "2021-07-09T10:31:24+00:00",
+        "closed_at": "2021-07-09T10:31:24+00:00",
+        "comments_count": [
+            "Leoqh96",
+            "zoulu995"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 192,
+        "title": "小程序报错TypeError: Cannot read property 'userAgent' of undefined",
+        "body": "**paddle npm版本**\r\n\"paddlejs\": \"^1.0.17\"\r\n\r\n**paddle微信小程序插件版本**\r\n```\r\n\"paddlejs-plugin\": {\r\n      \"version\": \"0.0.3\",\r\n      \"provider\": \"wx7138a7bb793608c3\"\r\n    }\r\n```\r\n\r\n**代码参考**\r\nhttps://blog.csdn.net/weixin_45449540/article/details/108114307\r\n\r\n**报错信息**\r\n开始是app.js报错，关闭es6转es5选项之后报错消失\r\n\r\n之后打开相关功能页面报错\r\nCannot read property 'userAgent' of undefined\r\n\r\n**或者能否提供一个可以跑通的示例，搜索小程序示例只能搜到上面一个示例**",
+        "state": "closed",
+        "user": "zhaixiyun",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-07-20T03:30:00+00:00",
+        "updated_at": "2022-01-03T14:35:11+00:00",
+        "closed_at": "2022-01-03T14:35:10+00:00",
+        "comments_count": [
+            "zhaixiyun",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 241,
+        "title": "请问有自然语音处理相关的Demo么",
+        "body": "麻烦请问有没有自然语音处理相关的Demo，如果没有可以提供么",
+        "state": "closed",
+        "user": "lqomg",
+        "closed_by": "lqomg",
+        "created_at": "2021-10-19T12:01:47+00:00",
+        "updated_at": "2021-10-25T01:37:46+00:00",
+        "closed_at": "2021-10-25T01:37:46+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 186,
+        "title": "如何改变example humanStream的backend",
+        "body": "您好，我运行humanStream时遇到了以下错误：\r\n\r\n`Uncaught (in promise) TypeError: Failed to execute 'getAttribLocation' on 'WebGL2RenderingContext': parameter 1 is not of type 'WebGLProgram'.`\r\n\r\n本地没有GPU，请问这需要更改backend吗？如果需要请问如何修改？",
+        "state": "closed",
+        "user": "clannadxiaohei",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-07-15T09:05:56+00:00",
+        "updated_at": "2022-01-03T14:27:58+00:00",
+        "closed_at": "2022-01-03T14:27:58+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "clannadxiaohei",
+            "JingyuanZhang",
+            "clannadxiaohei",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 209,
+        "title": "Paddle.js有办法保护模型不暴露吗",
+        "body": "模型明文加载到端上，Paddle.js有保护模型信息不泄漏的方案吗",
+        "state": "closed",
+        "user": "rodson",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-08-13T01:04:39+00:00",
+        "updated_at": "2021-10-26T06:44:31+00:00",
+        "closed_at": "2021-10-26T06:44:31+00:00",
+        "comments_count": [
+            "BenAnn"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 205,
+        "title": "我想问下paddlejs humanStream demo运行时提示WebGL: INVALID_OPERATION: texImage2D: ArrayBufferView not big enough for request是什么原因？",
+        "body": "还有一句是：[WDS] Live Reloading enabled.",
+        "state": "closed",
+        "user": "mwaiting",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-08-06T16:27:01+00:00",
+        "updated_at": "2022-01-03T14:33:30+00:00",
+        "closed_at": "2022-01-03T14:33:30+00:00",
+        "comments_count": [
+            "BenAnn",
+            "mwaiting",
+            "BenAnn",
+            "mwaiting",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 242,
+        "title": "Feature Request: WebAssembly backend support",
+        "body": "Hi, I am doing some work in Webassembly and   I find it is widely used in machine learning field.  Other machine learning frameworks  like TVM and tensorflow already have WebAssembly backend support.\r\nI wonder if  there is  any plan for WebAssembly backend support?  or what should I do if I wanna add WebAssembly support for Paddle.js. \r\n\r\n",
+        "state": "closed",
+        "user": "chenfengjin",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-10-24T11:59:40+00:00",
+        "updated_at": "2022-01-03T14:33:49+00:00",
+        "closed_at": "2022-01-03T14:33:49+00:00",
+        "comments_count": [
+            "yueshuangyan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 261,
+        "title": "Converting models with multiple outputs (pp tiny_pose) fails. 'dict' object has no attribute 'append', With fix attached.",
+        "body": "Hi,\r\n\r\nHit error below when using converter script.\r\n\r\n```bash\r\npython3 convertToPaddleJSModel.py --modelPath=tinypose_128x96/model.pdmodel --paramPath=tinypose_128x96/model.pdiparams --outputDir=tinypose_128x96/out\r\n```\r\n\r\n```bash\r\nOrganizing model variables info successfully.\r\nA fetal error occured. Failed to convert model.\r\nTraceback (most recent call last):\r\n  File \"/Users/doge/Desktop/learning/pp/Paddle.js/packages/paddlejs-converter/convertModel.py\", line 491, in <module>\r\n    convertToPaddleJSModel()\r\n  File \"/Users/doge/Desktop/learning/pp/Paddle.js/packages/paddlejs-converter/convertModel.py\", line 431, in convertToPaddleJSModel\r\n    appendConnectOp(fetch_targets)\r\n  File \"/Users/doge/Desktop/learning/pp/Paddle.js/packages/paddlejs-converter/convertModel.py\", line 402, in appendConnectOp\r\n    vars.append(outputVar)\r\nAttributeError: 'dict' object has no attribute 'append'\r\n```\r\n\r\n\r\nQuick fix:\r\n\r\nin `convertModel.py`, change line `402`\r\n```python\r\n#vars.append(outputVar)\r\nvars[outputVar['name']] = outputVar\r\n```\r\n\r\nand the problem goes away.\r\n\r\nAlso, should `fetal` be `fatal`? \r\n\r\n\r\nThanks!",
+        "state": "closed",
+        "user": "luan007",
+        "closed_by": "luan007",
+        "created_at": "2021-12-16T09:32:55+00:00",
+        "updated_at": "2021-12-27T09:24:59+00:00",
+        "closed_at": "2021-12-27T09:24:58+00:00",
+        "comments_count": [
+            "BenAnn",
+            "luan007",
+            "BenAnn",
+            "luan007"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 244,
+        "title": "微信小程序引入paddlejs版本1.0.17出错",
+        "body": "adaptPadjsV1 is not defined;at App lifeCycleMethod onLaunch function\r\nReferenceError: adaptPadjsV1 is not defined\r\n\r\n![image](https://user-images.githubusercontent.com/36021958/140249128-0e9cd0c9-ac89-46a5-8f4a-48d173e851d1.png)\r\n",
+        "state": "closed",
+        "user": "shubihu",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-11-04T02:45:33+00:00",
+        "updated_at": "2022-03-01T11:40:13+00:00",
+        "closed_at": "2022-03-01T11:40:13+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "shubihu",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 269,
+        "title": "paddlejs-converter转出来的模型，在小程序上报Cannot read property 'reduce' of undefined",
+        "body": "错误截图: <img width=\"581\" alt=\"image\" src=\"https://user-images.githubusercontent.com/19768588/147413609-b4d2c193-7086-4e83-a4da-04120ea55a0a.png\">\r\n\r\n模型文件链接: [https://anime.qrqy.cn/pdjs/openpose_body_estimation/model.json](url)",
+        "state": "closed",
+        "user": "HelloLcy",
+        "closed_by": "HelloLcy",
+        "created_at": "2021-12-26T16:03:00+00:00",
+        "updated_at": "2021-12-26T16:14:59+00:00",
+        "closed_at": "2021-12-26T16:14:59+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 262,
+        "title": "continuous performance degradation when running tiny_pose",
+        "body": "Hi again,\r\n\r\nI've successfully converted pp tiny_pose (256 & 128 versions) to paddle.js env, & all works out smoothly.\r\n\r\nHowever, after a while (10~20s) the `predict` function becomes slower & slower, from (initially) `50ms` to `200ms` & so on.\r\n\r\nTo reproduce the effect please check out: (replace `mobilenet` example folder with this & do webpack.)\r\n\r\n(`http-server -o` and go to `127.0.0.1:8080`, as this requests your camera & needs to run on localhost to avoid https policy)\r\n\r\n[tiny_pose.zip](https://github.com/PaddlePaddle/Paddle.js/files/7726073/tiny_pose.zip)\r\n\r\nThe program is running in `chrome`, with a `2019 macbook pro` with `dGPU`, `paddle.js webgl backend`.\r\n\r\n\r\nAlthough in the end, this issue may closely tied to the converted model, I still think it would be helpful for the community to provide some insights on how to deal with this during model adaptation process.\r\n\r\nThanks!\r\n\r\n",
+        "state": "open",
+        "user": "luan007",
+        "closed_by": null,
+        "created_at": "2021-12-16T09:45:16+00:00",
+        "updated_at": "2022-08-23T06:28:50+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang",
+            "luan007",
+            "JingyuanZhang",
+            "justplus"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 266,
+        "title": "paddlejs-converter转出来的模型，在小程序上报Cannot read property 'length' of undefined",
+        "body": "![image](https://user-images.githubusercontent.com/23250892/146890735-59f3ab77-465d-4901-9152-4578ef643649.png)\r\n",
+        "state": "closed",
+        "user": "shixibao",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-12-21T07:43:46+00:00",
+        "updated_at": "2022-01-03T14:35:41+00:00",
+        "closed_at": "2022-01-03T14:35:41+00:00",
+        "comments_count": [
+            "BenAnn",
+            "shixibao",
+            "BenAnn",
+            "shixibao",
+            "shixibao",
+            "shixibao",
+            "BenAnn",
+            "shixibao",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 289,
+        "title": "无法修改模型输出尺寸",
+        "body": "如题，基于ocr_det demo 模型初始化时包含入参如下：\r\n\r\n```\r\n    detectRunner = new Runner({\r\n        modelPath: './models',\r\n        feedShape: {\r\n            fw: 960,\r\n            fh: 960\r\n        },\r\n        fill: '#fff',\r\n        mean: [0.485, 0.456, 0.406],\r\n        std: [0.229, 0.224, 0.225],\r\n        bgr: true,\r\n    });\r\n    await detectRunner.init();\r\n```\r\n\r\n但在实际推理时模型输出尺寸为409600，即640*640，推理代码：\r\n```\r\n    ctx.drawImage(image, x, y, sw, sh);\r\n    const outsDict = await detectRunner.predict(canvas);\r\n```\r\nimage为需要转换的图像，ctx来自canvas画布，x, y, sw, sh 为转换后尺寸。 outsDict 长度恒为 409600， 并不符合预期。",
+        "state": "closed",
+        "user": "a53769",
+        "closed_by": "a53769",
+        "created_at": "2022-01-11T07:46:19+00:00",
+        "updated_at": "2022-01-19T01:57:12+00:00",
+        "closed_at": "2022-01-19T01:57:12+00:00",
+        "comments_count": [
+            "changy1105",
+            "a53769",
+            "changy1105"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 263,
+        "title": "小程序调用转换为js可用的模型调用出错",
+        "body": "2.1版本的转换工具得到的模型，加载会报错TypeError: Cannot read property 'length\" of undefined\r\n2.0版本的转换工具得到的模型，加载会报错Unhandled promise rejection TypeError: Reduce of empty array with no initial value\r\n前一个问题今年二月就有人提了issues，请问这个有没有什么进展，我该如何解决",
+        "state": "closed",
+        "user": "miriplekwx",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-12-20T03:14:32+00:00",
+        "updated_at": "2022-01-03T14:34:10+00:00",
+        "closed_at": "2022-01-03T14:34:10+00:00",
+        "comments_count": [
+            "BenAnn",
+            "BenAnn"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 270,
+        "title": "paddlejs-converter转出来的模型，在小程序上报错",
+        "body": "把caffe的pose_body_25模型( https://github.com/CMU-Perceptual-Computing-Lab/openpose/tree/master/models ) 转换成小程序可用的模型格式后(转换后的模型地址:  https://anime.qrqy.cn/pdjs/openpose-25-keypoint/model.json ) ,在小程序中运行报错，见下图: \r\n\r\n<img width=\"750\" alt=\"image\" src=\"https://user-images.githubusercontent.com/19768588/147415986-05b88c14-9f88-4e6b-b0a6-a211297bdf45.png\">\r\n\r\n",
+        "state": "closed",
+        "user": "HelloLcy",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2021-12-26T17:52:15+00:00",
+        "updated_at": "2022-01-26T06:34:21+00:00",
+        "closed_at": "2022-01-26T06:34:21+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "HelloLcy",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 312,
+        "title": "v2.2.0模型转换失败问题",
+        "body": "如题，在使用v2.2.0版本的模型转换脚本 convertToPaddleJSModel.py ，对开放下载的OCR识别模型 ch_PP-OCRv2_rec_infer 做转换时，出现如下错误：\r\n\r\n```\r\nA fetal error occured. Failed to convert model.\r\nTraceback (most recent call last):\r\n  File \"convertModel.py\", line 541, in main\r\n    convertToPaddleJSModel(modelDir, modelName, paramsName, outputDir)\r\n  File \"convertModel.py\", line 465, in convertToPaddleJSModel\r\n    rnn.splice_rnn_op(modelInfo, index)\r\n  File \"/Users/xiaomingwang/PaddleSpace/demo/Paddle.js-release-v2.2.0/packages/paddlejs-converter/rnn.py\", line 130, in splice_rnn_op\r\n    input_shape = vars[rnn_input_name]['shape']\r\nKeyError: 'lstm_0_33.tmp_concat'\r\n```\r\n但使用v2.1.0版本的脚本做转换时，不会出现该问题。但该版本转换出的模型会在运行时报错（ rnn op 相关问题 ）。改版本输出的model.json 与 v2.2.0版本ocr示例工程中使用的远程识别模型结构不一致。\r\n\r\n\r\n目前v2.2.0版本中ocr示例工程中使用的识别模型是如何转换得到的。\r\n\r\n对模型 ch_PP-OCRv2_rec_infer 的转换问题要如何解决。",
+        "state": "closed",
+        "user": "a53769",
+        "closed_by": "a53769",
+        "created_at": "2022-01-19T02:20:44+00:00",
+        "updated_at": "2022-01-26T02:20:38+00:00",
+        "closed_at": "2022-01-26T02:20:38+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 317,
+        "title": "ocr demo 多次调用崩溃问题",
+        "body": "如题，使用 2.2.0 版本的 ocr demo 在经过多次选取图片进行识别后会出现运行时错误。报错内容如下：\r\n\r\n \r\n<img width=\"390\" alt=\"WechatIMG784\" src=\"https://user-images.githubusercontent.com/18340648/151092910-aa1929f2-3f21-428d-8c93-a429ae324714.png\">\r\n\r\n\r\n图片尺寸 450*1000 大小 60KB ，调用次数 17 次左右出现。\r\n\r\n初步定位发现在cv操作Mat数据时发生，具体原因不清楚。",
+        "state": "closed",
+        "user": "a53769",
+        "closed_by": "a53769",
+        "created_at": "2022-01-26T02:19:54+00:00",
+        "updated_at": "2022-02-28T08:40:27+00:00",
+        "closed_at": "2022-02-28T08:40:27+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 314,
+        "title": "Interactive image segmentation",
+        "body": "Hi team, I would like to ask if you have a plan to add an example of interactive object segmentation?\r\nThanks for your good work.",
+        "state": "open",
+        "user": "ntoand",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-01-22T05:22:14+00:00",
+        "updated_at": "2022-01-26T06:33:46+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "ntoand",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 339,
+        "title": "使用OCR的例子和微信小程序的例子结合失败，导入模型无限报错",
+        "body": "![image](https://user-images.githubusercontent.com/23081513/153739188-3bb4fcf0-aa67-4bc9-a797-bde948a5b2cb.png)\r\n",
+        "state": "closed",
+        "user": "zzkzzk1984",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-02-13T04:51:22+00:00",
+        "updated_at": "2022-02-22T15:00:05+00:00",
+        "closed_at": "2022-02-22T15:00:05+00:00",
+        "comments_count": [
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 372,
+        "title": "js 推理库过大",
+        "body": "如题，在使用 ocr 示例工程进行检测识别能力的 API 打包时，得到的静态 js 文件有 2.5M 大 。这对于一个前端页面来说还是有点重的，再加上模型文件的大小就更加庞大了。是否有精简压缩的方法，或是否有什么策略可以缓存 js 推理环境。",
+        "state": "closed",
+        "user": "a53769",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-02-28T08:39:56+00:00",
+        "updated_at": "2022-03-09T09:39:16+00:00",
+        "closed_at": "2022-03-09T09:39:16+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 346,
+        "title": "TypeError: Object of type BlockDesc is not JSON serializable",
+        "body": "使用 paddlejsconverter 对 paddlex 中的 PicoDet 模型转换时报如上的错误",
+        "state": "closed",
+        "user": "luxu1220",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-02-16T07:01:09+00:00",
+        "updated_at": "2022-03-04T05:47:23+00:00",
+        "closed_at": "2022-03-04T03:30:13+00:00",
+        "comments_count": [
+            "luxu1220",
+            "JingyuanZhang",
+            "luxu1220",
+            "luxu1220",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "luxu1220",
+            "JingyuanZhang",
+            "luxu1220",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "luxu1220"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 386,
+        "title": "请问 paddlejs-models/detect/ 里用的是哪个模型，如何自己训练？",
+        "body": null,
+        "state": "open",
+        "user": "qiano",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-03-04T03:13:25+00:00",
+        "updated_at": "2022-04-27T11:17:00+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang",
+            "qiano",
+            "JingyuanZhang",
+            "qiano",
+            "JingyuanZhang",
+            "qiano",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "qiano",
+            "qiano",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "qiano",
+            "qiano",
+            "JingyuanZhang",
+            "qiano",
+            "JingyuanZhang",
+            "qiano",
+            "luxu1220",
+            "qiano",
+            "sp-ljw"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 377,
+        "title": "ocr例子里面的paddlejs-mediapipe/opencv无法在微信小程序中使用",
+        "body": "微信不支持WebAssembly，请求适配微信的 WXWebAssembly.instantiate",
+        "state": "open",
+        "user": "zzkzzk1984",
+        "closed_by": "changy1105",
+        "created_at": "2022-03-01T03:32:12+00:00",
+        "updated_at": "2023-11-22T08:54:26+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "MayYouBeProsperous",
+            "zzkzzk1984",
+            "JingyuanZhang",
+            "changy1105",
+            "changy1105",
+            "MayYouBeProsperous",
+            "changy1105",
+            "deathnopool",
+            "banyip",
+            "deathnopool",
+            "LDOUBLEV",
+            "billshan",
+            "MayYouBeProsperous",
+            "KongQingzhi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 338,
+        "title": "HTMLVideoElement is not defined",
+        "body": "代码都跟开源的一样，但是同一台手机，原版的正常识别，但是我的就是报错，不知道为什么\r\n![534af91fc0b91597393f88ee683cebb](https://user-images.githubusercontent.com/23081513/153713907-f2deaf8a-2755-40e8-8416-94ce0baa5ed9.png)\r\n",
+        "state": "closed",
+        "user": "zzkzzk1984",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-02-12T13:48:46+00:00",
+        "updated_at": "2022-03-06T01:51:37+00:00",
+        "closed_at": "2022-03-04T03:19:56+00:00",
+        "comments_count": [
+            "guozhenqianga",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "MayYouBeProsperous",
+            "JingyuanZhang",
+            "MayYouBeProsperous",
+            "guozhenqianga",
+            "guozhenqianga",
+            "guozhenqianga",
+            "JingyuanZhang",
+            "guozhenqianga",
+            "SpectrePrediction",
+            "SpectrePrediction",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "SpectrePrediction",
+            "JingyuanZhang",
+            "SpectrePrediction",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "guozhenqianga",
+            "JingyuanZhang",
+            "SpectrePrediction",
+            "MayYouBeProsperous",
+            "JingyuanZhang",
+            "guozhenqianga",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "guozhenqianga",
+            "JingyuanZhang",
+            "MayYouBeProsperous"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 388,
+        "title": "模型转换后效果太差",
+        "body": "我使用的是paddlecls中的MobileNetV2.yaml， 未改动配置（仅仅改动类别以及数据集位置）\r\n训练和预测以及导出后的模型预测都能正常预测且精度正常\r\n但是当我使用\r\n```python\r\npaddlejsconverter --modelPath=./inference/inference.pdmodel --paramPath=./inference/inference.pdiparams --outputDir=./mytest --useGPUOpt=True\r\n```\r\n转换后，并将转换后的模型放在paddle.js时，模型的预测结果完全没有准确度可言\r\n我没找到明显的问题，不知道你能否提供思路？非常感谢\r\n\r\n由于上一个问题，我已经改进了我的代码，他能正常预测并且结果不同，他的片段：\r\n```python\r\n/**\r\n   * 通过按钮触发\r\n   */\r\n  test: function(){\r\n    wx.chooseImage({\r\n      count: 1,\r\n      sizeType: ['original'],\r\n      sourceType: ['album', 'camera'],\r\n      success:res => {\r\n        console.log(res)\r\n        this.setData({\r\n          imageSrc: res.tempFilePaths[0]      \r\n        })\r\n\r\n        wx.getImageInfo({\r\n          src: res.tempFilePaths[0],\r\n          success: res=> {\r\n\r\n            let {width, height, path} = res;\r\n\r\n            console.log(width, height)\r\n            let scale = this.data.canvasWidth / width\r\n            console.log(scale)\r\n            width = width * scale\r\n            height = height * scale\r\n            this.setData({\r\n              canvasHeight: height\r\n            })\r\n            \r\n            const ctx = wx.createCanvasContext(\"myCanvas\")\r\n            console.log(ctx)\r\n            ctx.drawImage(path, 0, 0, width, height);\r\n            ctx.draw(false, () => {\r\n\r\n              wx.canvasGetImageData({\r\n                canvasId: \"myCanvas\",\r\n                height: height,\r\n                width: width,\r\n                x: 0,\r\n                y: 0,\r\n                success: res => {\r\n\r\n                  // for(let i = 0 ; i < res.data.length; i ++){\r\n                  //   res.data[i] = res.data[i] / 255.0\r\n                  // }\r\n                  // console.log(res.data[100])\r\n                  PaddleJS.predict(res).then(res =>{\r\n                    console.log(res)\r\n                    const max = Math.max.apply(null, res);\r\n                    const index = res.indexOf(max);\r\n                    console.log(index, max)\r\n                    console.log(labelMap[index])\r\n                    if (max >= 0.2){\r\n                      this.setData({\r\n                        buttonText: labelMap[index]\r\n                      })\r\n                    }else{\r\n                      this.setData({\r\n                        buttonText: \"没识别出来\"\r\n                      })\r\n                    }\r\n\r\n                    \r\n                  })\r\n                },\r\n                fail: res => {\r\n                  console.log(res)\r\n                }\r\n  \r\n              },)\r\n\r\n            })\r\n\r\n          }\r\n        })\r\n\r\n      }\r\n    })\r\n  },\r\n```\r\n其中初始化paddle.js的代码为：\r\n模型的地址为本地的模型，使用python -m http.server 80进行挂载\r\n```python\r\nexport const PaddleJS = new paddlejs.Runner({\r\n  // modelPath: 'https://mms-voice-fe.cdn.bcebos.com/pdmodel/clas/common/v4_2_0915',\r\n  modelPath: 'http://192.168.3.17',\r\n  // modelPath: 'mod3',\r\n  feedShape: {\r\n      fw: 224,\r\n      fh: 224\r\n  },\r\n  fill: '#fff',\r\n  targetSize: {\r\n      height: 224,\r\n      width: 224\r\n  },\r\n  bgr: false,\r\n  mean: [0.485, 0.456, 0.406],\r\n  std:  [0.229, 0.224, 0.225],\r\n  needPreheat: true,\r\n  webglFeedProcess: true\r\n});\r\n```\r\n我没找到明显的问题，不知道你能否提供思路？非常感谢\r\n如果需要完整代码我将会上传并开源",
+        "state": "closed",
+        "user": "SpectrePrediction",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-03-04T05:27:40+00:00",
+        "updated_at": "2022-03-08T14:46:11+00:00",
+        "closed_at": "2022-03-05T11:03:11+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "SpectrePrediction",
+            "JingyuanZhang",
+            "SpectrePrediction",
+            "JingyuanZhang",
+            "SpectrePrediction",
+            "JingyuanZhang",
+            "SpectrePrediction",
+            "JingyuanZhang",
+            "SpectrePrediction",
+            "SpectrePrediction",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "SpectrePrediction",
+            "JingyuanZhang",
+            "weisy11",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 387,
+        "title": "[OOM] ocr 模型 sdk 内存溢出专题",
+        "body": null,
+        "state": "open",
+        "user": "JingyuanZhang",
+        "closed_by": null,
+        "created_at": "2022-03-04T03:18:33+00:00",
+        "updated_at": "2022-03-10T11:56:50+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 389,
+        "title": "paddlejs-models/detect/ 的模型是否可以在 paddledetetion 里进行训练，我试了几种模型都不能正常使用",
+        "body": null,
+        "state": "closed",
+        "user": "qiano",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-03-04T09:02:14+00:00",
+        "updated_at": "2022-03-05T11:12:50+00:00",
+        "closed_at": "2022-03-05T11:12:50+00:00",
+        "comments_count": [
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 392,
+        "title": "【PaddlePaddle Hackathon 2】68、基于 Paddle.js WebGL 计算方案实现人脸关键点检测 SDK",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 第二期活动的任务 ISSUE，更多详见 [【PaddlePaddle Hackathon 第二期】任务总览](https://github.com/PaddlePaddle/Paddle/issues/40234)）\r\n\r\n【任务说明】\r\n\r\n- 任务标题：基于 Paddle.js WebGL 计算方案实现人脸关键点检测 SDK\r\n- 技术标签：深度学习框架，WebGL，人脸关键点检测，Typescript\r\n- 任务难度：中等\r\n- 详细描述： 结合 PaddleDetection blazeface_1000e 人脸检测模型和 PaddleHub face_landmark 模型实现人脸关键点检测；目前 blazeface_1000e 有三个 webgl 算子待支持，需要同时完成算子开发\r\n- 工作拆解：\r\n  1. 实现 3 个 webgl shader 算子开发，支持 blazeface_1000e 模型\r\n  2. 完成两个模型前后处理，封装两个 api：init api 完成模型加载和初始化，keypointDetection api 完成关键点检测\r\n  3. 参考 Paddle.js models 其他 sdk，完成项目搭建和 E2E 验证\r\n\r\n【提交内容】\r\n\r\n- 设计文档，并提 PR 至 [PaddlePaddle/community](https://github.com/PaddlePaddle/community) 的 rfcs/js 目录\r\n- Paddle.js face_landmark SDK\r\n- 任务 PR 提交到 https://github.com/PaddlePaddle/Paddle.js/tree/release/develop/packages/paddlejs-models\r\n\r\n【技术要求】\r\n\r\n- 了解 Paddle.js，熟悉 shader 开发\r\n- 了解如何转换 PaddlePaddle 模型到 Paddle.js\r\n- 使用 Typescript 开发\r\n\r\n【答疑交流】\r\n\r\n- 如果在开发中对于上述任务有任何问题，欢迎在本 ISSUE 下留言交流。\r\n- 对于开发中的共性问题，在活动过程中，会定期组织答疑，请大家关注官网&QQ群的通知，及时参与。",
+        "state": "open",
+        "user": "TCChenlong",
+        "closed_by": null,
+        "created_at": "2022-03-08T12:33:20+00:00",
+        "updated_at": "2022-03-09T15:34:38+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 390,
+        "title": "模型转换后的推理结果与转换前差异很大",
+        "body": "[picodet_l_640_coco.zip](https://github.com/PaddlePaddle/Paddle.js/files/8202054/picodet_l_640_coco.zip)\r\n上面是 paddle detection 训练结果 \r\n下面是转换成 paddlejs 后的模型\r\n[js3.zip](https://github.com/PaddlePaddle/Paddle.js/files/8202061/js3.zip)\r\n\r\n可能同 [#388](https://github.com/PaddlePaddle/Paddle.js/issues/388) 是一个问题？ \r\n\r\n能否用这个测试工具 https://github.com/PaddlePaddle/Paddle.js/issues/388#issuecomment-1059736497  帮忙看看？谢谢",
+        "state": "closed",
+        "user": "luxu1220",
+        "closed_by": "luxu1220",
+        "created_at": "2022-03-08T01:55:40+00:00",
+        "updated_at": "2023-03-03T09:48:52+00:00",
+        "closed_at": "2022-03-10T02:56:50+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "luxu1220",
+            "xdg2016"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 393,
+        "title": "【PaddlePaddle Hackathon 2】67、tfjs2pdjs 模型转换工具",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 第二期活动的任务 ISSUE，更多详见 [【PaddlePaddle Hackathon 第二期】任务总览](https://github.com/PaddlePaddle/Paddle/issues/40234)）\r\n\r\n【任务说明】\r\n\r\n- 任务标题：tfjs2pdjs 模型转换工具\r\n\r\n- 技术标签：深度学习框架，Python\r\n\r\n- 任务难度：困难\r\n\r\n- 详细描述： 将tfjs的模型(model.json + *.bin）转换成 paddle.js支持的模型结构（model.json + chunk_*.dat）包括算子的适配与融合算子的处理，可参考X2Paddle中Tensorflow模型转换成Paddle模型的思路\r\n  \r\n  https://github.com/PaddlePaddle/X2Paddle\r\n  \r\n  。具体内容为：\r\n\r\n- tfjs模型内容解析，解析为graph拓扑结构和权重数据\r\n\r\n- 提取算子信息，映射成为Paddle的算子（包括算子映射与参数映射）\r\n\r\n- 整合成为Paddle.js需要的模型格式，并保存成相应的模型文件（model.json + chunk_*.dat）\r\n\r\n【提交内容】\r\n\r\n- 设计文档，并提 PR 至 [PaddlePaddle/community](https://github.com/PaddlePaddle/community) 的 rfcs/js 目录\r\n- 提供模型转换的Python脚本\r\n- 提供 [readme.md](http://readme.md/)\r\n- 任务 PR 到 https://github.com/PaddlePaddle/Paddle.js/tree/release/v2.2.2/packages/paddlejs-converter\r\n\r\n【技术要求】\r\n\r\n- 了解 Tensorflow模型转换到Paddle模型、Tensorflow模型转换到tfjs模型、Paddle模型转换到Paddle.js模型的过程\r\n- 熟练掌握 Python\r\n\r\n【答疑交流】\r\n\r\n- 如果在开发中对于上述任务有任何问题，欢迎在本 ISSUE 下留言交流。\r\n- 对于开发中的共性问题，在活动过程中，会定期组织答疑，请大家关注官网&QQ群的通知，及时参与。",
+        "state": "open",
+        "user": "TCChenlong",
+        "closed_by": null,
+        "created_at": "2022-03-08T12:33:44+00:00",
+        "updated_at": "2022-03-09T15:35:07+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 402,
+        "title": "[Feature Request] multiclass_nms  中的 bboxes 参数支持大小为 8、16、24、32的边界框",
+        "body": "[multiclass_nms 算子](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/fluid/layers/multiclass_nms_cn.html)",
+        "state": "open",
+        "user": "luxu1220",
+        "closed_by": null,
+        "created_at": "2022-03-11T01:56:22+00:00",
+        "updated_at": "2022-03-11T01:56:50+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 394,
+        "title": "【PaddlePaddle Hackathon 2】Paddle.js 任务合集 ",
+        "body": "大家好，非常高兴地告诉大家，第二期 [PaddlePaddle Hackathon](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon-2022-3?fr=Paddlejs) 开始了。PaddlePaddle Hackathon 是面向全球开发者的深度学习领域编程活动，鼓励开发者了解与参与 PaddlePaddle 开源社区。本次共有四大专区：PaddlePaddle、Paddle Family、Paddle Friends、Paddle Eval，共计100+个任务供大家认领。详细信息可以参考 [PaddlePaddle Hackathon 说明](https://www.paddlepaddle.org.cn/contributionguide?docPath=hackathon_cn)。大家是否已经迫不及待了呢~\r\n\r\n本 ISSUE 是 PaddlePaddle 专区 Paddle.js 方向任务合集。具体任务列表如下：\r\n\r\n| 序号 | 难度 | 任务 ISSUE |\r\n| ---- | ---- | --- | \r\n| 67 | ⭐️⭐️⭐️ | [tfjs2pdjs 模型转换工具](https://github.com/PaddlePaddle/Paddle.js/issues/393) |\r\n| 68 | ⭐️⭐️ | [基于 Paddle.js WebGL 计算方案实现人脸关键点检测 SDK](https://github.com/PaddlePaddle/Paddle.js/issues/392) |\r\n\r\n若想要认领本次活动任务，请至 [PaddlePaddle Hackathon 2 Pinned ISSUE](https://github.com/PaddlePaddle/Paddle/issues/40234) 完成任务 ISSUE 认领。\r\n\r\n活动官网：[PaddlePaddle Hackathon 2](https://www.paddlepaddle.org.cn/PaddlePaddleHackathon-2022-3?fr=Paddlejs)",
+        "state": "open",
+        "user": "TCChenlong",
+        "closed_by": null,
+        "created_at": "2022-03-08T12:49:20+00:00",
+        "updated_at": "2022-03-09T09:36:52+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 404,
+        "title": "Paddlejs--小程序调用模型返回NaN",
+        "body": "小程序 --加载模型（自己训练的ocr文字识别模型）未报错，能返回结果，但全是NaN？\r\n![BB26B52CC965E98F87A0283727819B90](https://user-images.githubusercontent.com/94116018/157832993-1ea0c551-6296-4a70-ae0f-20040e0ebb68.png)\r\n\r\n",
+        "state": "closed",
+        "user": "Charmnut1",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-03-11T08:41:37+00:00",
+        "updated_at": "2022-03-20T09:17:32+00:00",
+        "closed_at": "2022-03-20T09:17:32+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "Charmnut1"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 425
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 411,
+        "title": "ocrdetectXcx 微信小程序例子在真机上运行不正常",
+        "body": "目前看起来，有2个问题，1、一台电脑intel 10400 核显能正常推理，微信开发者工具也正常，不卡死。手机真机这边的话，无论是哪台电脑点真机调试，推理都是不正常的。2、第二个问题就是opencv不要给js的例子，要压缩成br的，因为太大了，无法在真机使用，之前给的lensson3的br文件在本例中会报cv.Matarray 不存在的错误\r\n手机推理不正常：\r\n![9ab6874fca32eda5445bd9b9c9a695d](https://user-images.githubusercontent.com/23081513/158121156-cc0eebfa-b151-46bb-a8f6-a6e11fdbcc03.png)\r\n电脑运行正常：\r\n![46fcd14f528bfe07b36a58d45db7ba8](https://user-images.githubusercontent.com/23081513/158121190-65a84cca-d3f2-4708-8ffc-c3aac2e07f1b.jpg)\r\n",
+        "state": "open",
+        "user": "zzkzzk1984",
+        "closed_by": "changy1105",
+        "created_at": "2022-03-14T07:03:38+00:00",
+        "updated_at": "2022-09-05T13:18:39+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "changy1105",
+            "zzkzzk1984",
+            "Dearzxs",
+            "1161406250",
+            "LDOUBLEV"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 412,
+        "title": "pip3 install paddlejsconverter安装报错",
+        "body": "dragondeMacBook-Pro PP-HumanSeg %  pip3 install paddlejsconverter      \r\nDEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621\r\nCollecting paddlejsconverter\r\n  Using cached paddlejsconverter-1.0.7-py3-none-any.whl (15 kB)\r\nRequirement already satisfied: paddlepaddle>=2.0.0 in /usr/local/lib/python3.9/site-packages (from paddlejsconverter) (2.2.2)\r\nRequirement already satisfied: numpy in /usr/local/lib/python3.9/site-packages (from paddlejsconverter) (1.22.3)\r\n  Using cached paddlejsconverter-1.0.6-py3-none-any.whl (15 kB)\r\n  Using cached paddlejsconverter-1.0.5-py3-none-any.whl (14 kB)\r\n  Using cached paddlejsconverter-1.0.4-py3-none-any.whl (14 kB)\r\n  Using cached paddlejsconverter-1.0.3-py3-none-any.whl (14 kB)\r\n  Using cached paddlejsconverter-1.0.2-py3-none-any.whl (14 kB)\r\n  Using cached paddlejsconverter-1.0.1-py3-none-any.whl (14 kB)\r\n  Using cached paddlejsconverter-1.0.0-py3-none-any.whl (14 kB)\r\nERROR: Cannot install paddlejsconverter==1.0.0, paddlejsconverter==1.0.1, paddlejsconverter==1.0.2, paddlejsconverter==1.0.3, paddlejsconverter==1.0.4, paddlejsconverter==1.0.5, paddlejsconverter==1.0.6 and paddlejsconverter==1.0.7 because these package versions have conflicting dependencies.\r\n\r\nThe conflict is caused by:\r\n    paddlejsconverter 1.0.7 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.6 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.5 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.4 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.3 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.2 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.1 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.0 depends on paddlelite==2.7.1\r\n\r\nTo fix this you could try to:\r\n1. loosen the range of package versions you've specified\r\n2. remove package versions to allow pip attempt to solve the dependency conflict\r\n\r\nERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts\r\n\r\ndragondeMacBook-Pro PP-HumanSeg % pip3 install paddlelite==2.7.1      \r\nDEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621\r\nERROR: Could not find a version that satisfies the requirement paddlelite==2.7.1 (from versions: 2.10rc0, 2.10)\r\nERROR: No matching distribution found for paddlelite==2.7.1\r\ndragondeMacBook-Pro PP-HumanSeg % \r\n",
+        "state": "open",
+        "user": "dragonwarrior95",
+        "closed_by": null,
+        "created_at": "2022-03-18T02:44:33+00:00",
+        "updated_at": "2022-12-02T09:29:06+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "MayYouBeProsperous",
+            "dragonwarrior95",
+            "cmcreborn"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 419,
+        "title": "官网 线上体验 示例项目 打不开, 一直显示模型加载",
+        "body": "页面:  https://paddlejs.baidu.com/ \r\n\r\n![9269c4bf477f25301c13afe531beb9d](https://user-images.githubusercontent.com/9193259/161388463-6860f371-fbf9-4a84-9c5c-417f2705e35f.png)\r\n\r\n操作系统: Windows 10 家庭中文版\r\n处理器:    11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz   2.80 GHz\r\n内存   :     16.0 GB (15.8 GB 可用)\r\n没有GPU\r\n\r\n浏览器1:  Google Chrome 版本 100.0.4896.60（正式版本） （64 位）\r\n浏览器2:  Microsoft Edge 版本 99.0.1150.55 (正式版本) (64 位)\r\n浏览器3:  Firefox 98.0.2(64位)\r\n\r\n三种浏览器的情况是一样的. \r\n\r\n -----报错信息\r\nA page or script is accessing at least one of navigator.userAgent, navigator.appVersion, and navigator.platform. Starting in Chrome 101, the amount of information available in the User Agent string will be reduced.\r\nTo fix this issue, replace the usage of navigator.userAgent, navigator.appVersion, and navigator.platform with feature detection, progressive enhancement, or migrate to navigator.userAgentData.\r\nNote that for performance reasons, only the first access to one of the properties is shown.\r\n受影响的资源1 个来源\r\nspy-client-basic.min.js:1 \r\n了解详情：用户代理字符串缩短\r\n\r\n------警告信息\r\nindex_gpu.js:1 WebGL: INVALID_OPERATION: texImage2D: ArrayBufferView not big enough for request\r\n e.uploadDataToTexture @ index_gpu.js:1 \r\nindex_gpu.js:1 WebGL: INVALID_OPERATION: texImage2D: ArrayBufferView not big enough for request\r\n e.uploadDataToTexture @ index_gpu.js:1 \r\n",
+        "state": "open",
+        "user": "wjoin123",
+        "closed_by": null,
+        "created_at": "2022-04-02T14:54:58+00:00",
+        "updated_at": "2022-04-04T02:48:47+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "wjoin123",
+            "wjoin123"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 420,
+        "title": "GL_INVALID_OPERATION: Uniform type does not match uniform method.",
+        "body": "为使您的问题得到快速解决，在建立Issue前，请您先通过如下方式搜索是否有相似问题:【搜索issue关键字】【使用labels筛选】【官方文档】\r\n\r\n如果您没有查询到相似问题，为快速解决您的提问，建立issue时请提供如下细节信息：\r\n\r\n- 标题：简洁、精准描述您的问题，例如“最新预测库的API文档在哪儿 ”\r\n- 版本、环境信息：\r\n    1）@paddlejs/paddlejs-core 版本：请提供您的 @paddlejs/paddlejs-core 版本 比如 v1.x.x\r\n    2）@paddlejs/paddlejs-backend-webgl 版本：请提供您正在使用的版本\r\n    3）运行环境： 微信小程序 / 百度小程序 / Chrome / Safari / Firefox 等，以及当前版本\r\n    4）系统环境：请您描述系统类型（MAC / Windows）、版本（如Mac OS 10.14），Python版本\r\n\r\n- 复现信息：如为报错，请给出复现环境、复现步骤\r\n\r\n- 问题描述：请详细描述您的问题，同步贴出报错信息、日志/代码关键片段\r\n\r\n- 模型文件：原始 paddlepaddle 模型文件 和 paddlejs 模型文件\r\n\r\n- 问题代码：可以将代码上传到 gitee 或者 github\r\n",
+        "state": "closed",
+        "user": "Carolyn-qxr",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-04-09T05:35:22+00:00",
+        "updated_at": "2022-05-18T08:09:36+00:00",
+        "closed_at": "2022-05-18T08:09:36+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "Carolyn-qxr",
+            "JingyuanZhang"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 422,
+        "title": "导出的ppyolo模型convertToPaddleJSModel转换paddlejs出现outputs[name] not exist Out.",
+        "body": "为使您的问题得到快速解决，在建立Issue前，请您先通过如下方式搜索是否有相似问题:【搜索issue关键字】【使用labels筛选】【官方文档】\r\n\r\n如果您没有查询到相似问题，为快速解决您的提问，建立issue时请提供如下细节信息：\r\n\r\n- 标题：简洁、精准描述您的问题，例如“最新预测库的API文档在哪儿 ”\r\n- 版本、环境信息：\r\n    1）@paddlejs/paddlejs-core 版本：请提供您的 @paddlejs/paddlejs-core 版本 比如 v1.x.x\r\n    2）@paddlejs/paddlejs-backend-webgl 版本：请提供您正在使用的版本\r\n    3）运行环境： 微信小程序 / 百度小程序 / Chrome / Safari / Firefox 等，以及当前版本\r\n    4）系统环境：请您描述系统类型（MAC / Windows）、版本（如Mac OS 10.14），Python版本\r\n\r\n- 复现信息：如为报错，请给出复现环境、复现步骤\r\n\r\n- 问题描述：请详细描述您的问题，同步贴出报错信息、日志/代码关键片段\r\n\r\n- 模型文件：原始 paddlepaddle 模型文件 和 paddlejs 模型文件\r\n\r\n- 问题代码：可以将代码上传到 gitee 或者 github\r\n",
+        "state": "open",
+        "user": "gong-bit",
+        "closed_by": null,
+        "created_at": "2022-04-12T05:58:14+00:00",
+        "updated_at": "2023-03-09T12:30:44+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang",
+            "WeiFree",
+            "liuyang77886",
+            "judy19981229",
+            "shuizhuyu1015"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 424,
+        "title": "This model is not supported, because 2 ops are not supported on 'arm' . These unsupported ops are: 'flatten_contiguous_range, matmul_v2'.",
+        "body": "欢迎您对PaddlePaddle提出建议，非常感谢您对PaddlePaddle的贡献！\r\n在留下您的建议时，辛苦您同步提供如下信息：\r\n\r\n- 需求简述\r\n对图像进行分类\r\n- 需求背景\r\n检测试纸的分类\r\n- 当前模型情况\r\n转换为paddlejs支持的模型",
+        "state": "open",
+        "user": "manchocolate",
+        "closed_by": null,
+        "created_at": "2022-04-21T16:16:32+00:00",
+        "updated_at": "2022-05-18T06:49:41+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "manchocolate",
+            "JingyuanZhang"
+        ],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 426,
+        "title": "pphumanseg模型转换报错",
+        "body": "我使用的是https://github.com/PaddlePaddle/PaddleSeg/blob/release/2.5/contrib/PP-HumanSeg/README_cn.md 里面给出的pphumanseg_lite_portrait_398x224_with_softmax模型，但是使用convert工具转为js模型时报错了，且无法转换。报错信息如下：\r\n```\r\n============Convert Model Args=============\r\nmodelPath:pphumanseg_lite_portrait_398x224_with_softmax/model.pdmodel\r\nparamPath: pphumanseg_lite_portrait_398x224_with_softmax/model.pdiparams\r\noutputDir: ./tmpseg/\r\nenableOptimizeModel: 1\r\nenableLogModelInfo: 0\r\nsliceDataSize:4096\r\nStarting...\r\nOptimizing model...\r\nLoading topology data from pphumanseg_lite_portrait_398x224_with_softmax/model.pdmodel\r\nLoading params data from pphumanseg_lite_portrait_398x224_with_softmax/model.pdiparams\r\n1. Model is successfully loaded!\r\n\r\nOptimizing model successfully.\r\n\r\nConverting model...\r\nOrganizing model operators info...\r\nOrganizing model operators info successfully.\r\nOrganizing model variables info...\r\n transpose_10.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_0.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n fill_constant_109.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_20.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_6.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_11.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_0.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_1.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_16.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_18.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_2.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_4.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_2.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_8.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_4.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_5.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_22.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_14.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_12.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_6.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n reshape2_10.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_7.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_8.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\n transpose_9.tmp_0 tensor shape length > 4, 处理为丢弃头部shape \r\nOrganizing model variables info successfully.\r\nModel chunkNum set successfully.\r\nModel FeedShape set successfully.\r\n['concat_12.tmp_0', 'fill_constant_3.tmp_0', 'fill_constant_5.tmp_0', 'pool2d_0.tmp_0', 'relu_2.tmp_0']\r\n['fill_constant_7.tmp_0', 'fill_constant_9.tmp_0', 'pool2d_0.tmp_0', 'relu_2.tmp_0']\r\n['fill_constant_105.tmp_0', 'fill_constant_107.tmp_0', 'fill_constant_109.tmp_0', 'concat_12.tmp_0', 'fill_constant_3.tmp_0']\r\n['fill_constant_17.tmp_0', 'fill_constant_19.tmp_0', 'concat_12.tmp_0', 'fill_constant_3.tmp_0']\r\n['batch_norm_11.tmp_2', 'fill_constant_23.tmp_0', 'concat_12.tmp_0', 'fill_constant_17.tmp_0', 'fill_constant_19.tmp_0']\r\nA fetal error occured. Failed to convert model.\r\nTraceback (most recent call last):\r\n  File \"convertModel.py\", line 550, in main\r\n    convertToPaddleJSModel(modelDir, modelName, paramsName, outputDir, useGPUOpt)\r\n  File \"convertModel.py\", line 509, in convertToPaddleJSModel\r\n    pruningNoSenseTensor(modelInfo)\r\n  File \"/root/Desktop/PaddleJS/Paddle.js-release-v2.2.3/packages/paddlejs-converter/pruningModel.py\", line 26, in pruningNoSenseTensor\r\n    delLeafOpWithoutChildren(tensorId)\r\n  File \"/root/Desktop/PaddleJS/Paddle.js-release-v2.2.3/packages/paddlejs-converter/pruningModel.py\", line 46, in delLeafOpWithoutChildren\r\n    del vars[tensorId]\r\nKeyError: 'fill_constant_17.tmp_0'\r\n\r\nCleaning optimized temporary model...\r\nTemporary files has been deleted successfully.\r\nConverting model successfully.\r\n============ALL DONE============\r\n```\r\n请问一下这是什么原因造成的，模型已放附件里了\r\n[pp_humanseg_lite_portrait_398x224_with_softmax.zip](https://github.com/PaddlePaddle/Paddle.js/files/8587888/pp_humanseg_lite_portrait_398x224_with_softmax.zip)\r\n",
+        "state": "closed",
+        "user": "sp-ljw",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-04-29T03:18:31+00:00",
+        "updated_at": "2022-06-02T07:32:37+00:00",
+        "closed_at": "2022-06-02T04:06:04+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "sp-ljw",
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "sp-ljw",
+            "JingyuanZhang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 427,
+        "title": "采用ppclas的mobilev2模型输出概率都一样",
+        "body": "为使您的问题得到快速解决，在建立Issue前，请您先通过如下方式搜索是否有相似问题:【搜索issue关键字】【使用labels筛选】【官方文档】\r\n\r\n如果您没有查询到相似问题，为快速解决您的提问，建立issue时请提供如下细节信息：\r\n\r\n- 标题：简洁、精准描述您的问题，例如“最新预测库的API文档在哪儿 ”\r\n- 版本、环境信息：\r\n    1）@paddlejs/paddlejs-core 版本：请提供您的 @paddlejs/paddlejs-core 版本 比如 v1.x.x\r\n    2）@paddlejs/paddlejs-backend-webgl 版本：请提供您正在使用的版本\r\n    3）运行环境： 微信小程序 / 百度小程序 / Chrome / Safari / Firefox 等，以及当前版本\r\n    4）系统环境：请您描述系统类型（MAC / Windows）、版本（如Mac OS 10.14），Python版本\r\n\r\n- 复现信息：如为报错，请给出复现环境、复现步骤\r\n\r\n- 问题描述：采用ppclas的mobilev2模型输出概率都一样\r\n- \r\n<img width=\"616\" alt=\"B8708098-F042-4558-8EBD-5500AC819683\" src=\"https://user-images.githubusercontent.com/50022824/167978770-89647d4f-33cc-46cc-bacc-ae5e0ae8f686.png\">\r\n- 模型文件：原始 paddlepaddle 模型文件 和 paddlejs 模型文件\r\n\r\n- 问题代码：可以将代码上传到 gitee 或者 github\r\n",
+        "state": "open",
+        "user": "liyunfei0411",
+        "closed_by": null,
+        "created_at": "2022-05-12T02:17:27+00:00",
+        "updated_at": "2022-05-18T06:47:50+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 429,
+        "title": "modelObj.model (模型结构 json 对象)",
+        "body": "使用本地模型的时候 modelObj.model (模型结构 json 对象) 这个该怎么写\r\n",
+        "state": "closed",
+        "user": "shiersimon",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-05-18T03:57:56+00:00",
+        "updated_at": "2022-05-18T08:09:05+00:00",
+        "closed_at": "2022-05-18T08:09:05+00:00",
+        "comments_count": [],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 430,
+        "title": "modelObj.model (模型结构 json 对象)",
+        "body": "使用本地模型的时候 modelObj.model (模型结构 json 对象) 这个该怎么写\r\n",
+        "state": "closed",
+        "user": "shiersimon",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-05-18T04:00:38+00:00",
+        "updated_at": "2022-05-18T08:08:47+00:00",
+        "closed_at": "2022-05-18T08:08:47+00:00",
+        "comments_count": [
+            "JingyuanZhang",
+            "shiersimon",
+            "shiersimon"
+        ],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 428,
+        "title": "用paddleclas训练的mobilenetv2转换成paddlejs格式web读取模型报错",
+        "body": "client:52 [WDS] Live Reloading enabled.\r\nindex.js:1 webgl createProgram: packed_2_unpacked -- Error: Error: compile: ERROR: 0:59: 'NaN' : undeclared identifier\r\nERROR: 0:59: '*' : wrong operand types - no operation '*' exists that takes a left-hand operand of type 'in highp int' and a right operand of type 'const highp float' (or there is no acceptable conversion)\r\nERROR: 0:59: 'NaN' : undeclared identifier\r\nERROR: 0:59: '*' : wrong operand types - no operation '*' exists that takes a left-hand operand of type 'in highp int' and a right operand of type 'const highp float' (or there is no acceptable conversion)\r\nERROR: 0:59: 'undefined' : undeclared identifier\r\nERROR: 0:59: '*' : wrong operand types - no operation '*' exists that takes a left-hand operand of type 'in highp int' and a right operand of type 'const highp float' (or there is no acceptable conversion)\r\n",
+        "state": "open",
+        "user": "liyunfei0411",
+        "closed_by": null,
+        "created_at": "2022-05-12T03:51:27+00:00",
+        "updated_at": "2022-05-18T06:47:12+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 435,
+        "title": "detect model 在小程序里真机运行会报错",
+        "body": "@paddlejs/paddlejs-core 版本：2.1.18\r\n@paddlejs/paddlejs-backend-webgl 版本：1.2.0\r\n运行环境： 微信小程序\r\n\r\n![image](https://user-images.githubusercontent.com/20769663/169496651-ee9a60ee-a338-40de-840b-db42fda0d1c9.png)\r\n![image](https://user-images.githubusercontent.com/20769663/169496821-e92f9ef8-e420-4ff1-bbfc-8cd852a20969.png)\r\n\r\n",
+        "state": "open",
+        "user": "WeiFree",
+        "closed_by": null,
+        "created_at": "2022-05-20T09:17:33+00:00",
+        "updated_at": "2022-05-20T09:17:33+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 432,
+        "title": "使用本地json引用，出现错误",
+        "body": "const model = require('../model.json');\r\n// model 输出是对象 model.json文件里是json格式数据\r\nocr.init(model)\r\n初始化出现  : A.endsWith is not a function",
+        "state": "open",
+        "user": "shiersimon",
+        "closed_by": null,
+        "created_at": "2022-05-18T08:32:33+00:00",
+        "updated_at": "2022-06-30T02:37:17+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang",
+            "shiersimon"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 433,
+        "title": "测试过程中经常出现电脑黑屏",
+        "body": "index.js?cce7:1 webgl createProgram: concat -- Error: TypeError: Failed to execute 'shaderSource' on 'WebGL2RenderingContext': parameter 1 is not of type 'WebGLShader'.\r\n控制台会不停出现以上错误",
+        "state": "open",
+        "user": "shiersimon",
+        "closed_by": null,
+        "created_at": "2022-05-18T08:45:17+00:00",
+        "updated_at": "2022-09-03T12:22:55+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang",
+            "JingyuanZhang",
+            "Adamancy-cutie",
+            "shiersimon",
+            "chenqianhe"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 436,
+        "title": "Type def for paddle.js",
+        "body": "请问下如何为paddle.js创建type def.\r\n\r\n在导入`@paddlejs-models/ocr`得到以下的错误\r\n\r\n![image](https://user-images.githubusercontent.com/16079555/169953045-d50faa02-4d22-493c-8749-ed8630f661bd.png)",
+        "state": "closed",
+        "user": "Edward-Zhou",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-05-24T05:04:33+00:00",
+        "updated_at": "2022-06-02T03:56:43+00:00",
+        "closed_at": "2022-06-02T03:56:43+00:00",
+        "comments_count": [
+            "JingyuanZhang"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 437,
+        "title": "在使用paddlejsconvert提示算子不支持",
+        "body": "paddlejsconverter --modelPath=BertForTokenClassification.pdmodel --paramPath=BertForTokenClassification.pdiparams  --outputDir=./mytest --useGPUOpt=True\r\n\r\n提示\r\nThis model is not supported, because 4 ops are not supported on 'arm'. These unsupported ops are: 'cumsum, fill_any_like, gelu, matmul_v2'",
+        "state": "open",
+        "user": "liukai2008",
+        "closed_by": null,
+        "created_at": "2022-05-27T01:58:39+00:00",
+        "updated_at": "2022-07-06T02:18:21+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JingyuanZhang",
+            "liukai2008",
+            "xiang12383",
+            "liukai2008"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 439,
+        "title": "通过paddlejsconverter转换后的model.json 里feedShape fh fw 为啥为1呢 手动改为960预测没任何效果",
+        "body": "## 环境\r\n- @paddlejs/paddlejs-core 版本: ^2.1.17\r\n-  \"@paddlejs-mediapipe/opencv\": \"0.0.4\"\r\n-  \"@paddlejs/paddlejs-backend-webgl\": \"^1.1.19\",\r\n- 运行环境: Chrome\r\n- 系统环境 Windows10\r\n- Python版本: 3.7\r\n\r\n原始模型是使用paddleocr ch_det_mv3_db_v2.0.yml 训练而来的\r\n\r\njs模型初始化\r\n![image](https://user-images.githubusercontent.com/24774726/172041667-0ec3a4cb-f598-4e36-a781-790ef0ead26f.png)\r\n\r\n## 模型文件&js代码如下\r\nhttps://github.com/chengdonghaipu/ocr/tree/master\r\n\r\npaddleocr 模型转 js模型命令如下\r\n```\r\npaddlejsconverter --modelPath=./model/inference.pdmodel --paramPath=./model/inference.pdiparams --outputDir=./jsmodel\r\n```\r\n日志信息\r\n![image](https://user-images.githubusercontent.com/24774726/172041866-99806577-58dd-44b6-9b24-657686d5ed57.png)\r\n\r\n",
+        "state": "open",
+        "user": "chengdonghaipu",
+        "closed_by": null,
+        "created_at": "2022-06-05T08:33:27+00:00",
+        "updated_at": "2022-06-29T11:55:19+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xiang12383"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 438,
+        "title": "请问ocr在微信小程序上如何使用?",
+        "body": "直接使用`@paddlejs-models/ocr`的话, 构建npm会报错: \r\n`node_modules/@paddlejs-mediapipe/opencv/library/index.js: 未找到npm包入口文`",
+        "state": "open",
+        "user": "deathnopool",
+        "closed_by": null,
+        "created_at": "2022-06-01T09:11:58+00:00",
+        "updated_at": "2022-06-01T09:39:56+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "deathnopool"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 440,
+        "title": "paddlejs Runner 初始化传入的 mean 和 std 具体起什么作用？",
+        "body": "如题，模型在构建runner时传入了 mean 和 std 矩阵，但不太清楚做了什么。是否可以等效的看作如下c++代码的处理。\r\n\r\n```\r\nvoid NHWC3ToNC3HW(const float *src, float *dst, const float *mean,\r\n                  const float *std, int width, int height) {\r\n  int size = height * width;\r\n  float32x4_t vmean0 = vdupq_n_f32(mean ? mean[0] : 0.0f);\r\n  float32x4_t vmean1 = vdupq_n_f32(mean ? mean[1] : 0.0f);\r\n  float32x4_t vmean2 = vdupq_n_f32(mean ? mean[2] : 0.0f);\r\n  float32x4_t vscale0 = vdupq_n_f32(std ? (1.0f / std[0]) : 1.0f);\r\n  float32x4_t vscale1 = vdupq_n_f32(std ? (1.0f / std[1]) : 1.0f);\r\n  float32x4_t vscale2 = vdupq_n_f32(std ? (1.0f / std[2]) : 1.0f);\r\n  float *dst_c0 = dst;\r\n  float *dst_c1 = dst + size;\r\n  float *dst_c2 = dst + size * 2;\r\n  int i = 0;\r\n  for (; i < size - 3; i += 4) {\r\n    float32x4x3_t vin3 = vld3q_f32(src);\r\n    float32x4_t vsub0 = vsubq_f32(vin3.val[0], vmean0);\r\n    float32x4_t vsub1 = vsubq_f32(vin3.val[1], vmean1);\r\n    float32x4_t vsub2 = vsubq_f32(vin3.val[2], vmean2);\r\n    float32x4_t vs0 = vmulq_f32(vsub0, vscale0);\r\n    float32x4_t vs1 = vmulq_f32(vsub1, vscale1);\r\n    float32x4_t vs2 = vmulq_f32(vsub2, vscale2);\r\n    vst1q_f32(dst_c0, vs0);\r\n    vst1q_f32(dst_c1, vs1);\r\n    vst1q_f32(dst_c2, vs2);\r\n    src += 12;\r\n    dst_c0 += 4;\r\n    dst_c1 += 4;\r\n    dst_c2 += 4;\r\n  }\r\n  for (; i < size; i++) {\r\n    *(dst_c0++) = (*(src++) - mean[0]) / std[0];\r\n    *(dst_c1++) = (*(src++) - mean[1]) / std[1];\r\n    *(dst_c2++) = (*(src++) - mean[2]) / std[2];\r\n  }\r\n}\r\n```\r\n\r\n上述代码引用自 paddle 的官方项目 [picodet](https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.3/static/deploy/android_demo/app/src/main/cpp/Utils.cc) 的工具方法。",
+        "state": "open",
+        "user": "a53769",
+        "closed_by": null,
+        "created_at": "2022-06-06T13:12:18+00:00",
+        "updated_at": "2022-06-06T13:12:18+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 453,
+        "title": "Paddle.js是否不支持自己训练的模型？",
+        "body": "我的代码打包放在这里\r\nhttps://dry.020gzkqy.cn/download/YTCarDetection.rar\r\n\r\n在真机上（iPhone)上要进行init时，微信直接闪退，试了各种办法都不行，劳烦各位看下原因。谢谢~",
+        "state": "open",
+        "user": "peanutC",
+        "closed_by": null,
+        "created_at": "2022-06-22T10:54:24+00:00",
+        "updated_at": "2022-06-22T10:54:24+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 452,
+        "title": "paddleJs 部署 Android 浏览器 （UC等）模型加载 sqrt 算子执行报错",
+        "body": "如题，在使用官网检测模型对 humanStream 项目进行改造时，发现Android 浏览器在加载模型时抛出如下两个异常，导致无法加载。\r\n```\r\nwebgl createProgram: sqrt -- Error: Error: compile: ERROR: 0:54: 'sqrt' : Name of a built-in function cannot be redeclared as function\r\n\r\nUncaught (in promise)  {\r\n  \"name\": \"TypeError\",\r\n  \"message\": \"Cannot read property 'setProgram' of null\",\r\n  \"stack\": \"TypeError: Cannot read property 'setProgram' of null\r\n     at https://192.168.28.110:8866/main.js:251:32211\r\n     at Array.forEach (<anonymous>)\r\n     at e.runProgram (https://192.168.28.110:8866/main.js:251:32057)\r\n     at t.execute (https://192.168.28.110:8866/main.js:262:8315)\r\n     at t.executeOp (https://192.168.28.110:8866/main.js:262:44442)\r\n     at t.executeOp (https://192.168.28.110:8866/main.js:262:44863)\r\n     at t.executeOp (https://192.168.28.110:8866/main.js:262:44863)\r\n     at t.executeOp (https://192.168.28.110:8866/main.js:262:44863)\r\n     at t.executeOp (https://192.168.28.110:8866/main.js:262:44863)\r\n     at t.executeOp (https://192.168.28.110:8866/main.js:262:44863)\"\r\n}\r\n```\r\n\r\n项目中仅替换了加载的模型，部署形式为https。使用的检测模型为 [picodet_xs_320_coco_lcnet_non_postprocess](https://paddledet.bj.bcebos.com/deploy/Inference/picodet_xs_320_coco_lcnet_non_postprocess.tar) 无后处理的轻量模型。",
+        "state": "open",
+        "user": "a53769",
+        "closed_by": null,
+        "created_at": "2022-06-15T08:27:45+00:00",
+        "updated_at": "2022-06-30T02:53:23+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "a53769",
+            "a53769",
+            "a53769",
+            "a53769"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 454,
+        "title": "不能使用paddlejs/paddlejs-backend-cpu",
+        "body": "import '@paddlejs/paddlejs-backend-cpu';出现错误，但是import '@paddlejs/paddlejs-backend-webgl';可以正常执行的",
+        "state": "open",
+        "user": "HeLongHuang",
+        "closed_by": null,
+        "created_at": "2022-06-27T11:27:36+00:00",
+        "updated_at": "2022-07-27T07:59:34+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "HeLongHuang",
+            "yueshuangyan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 455,
+        "title": "paddlejslite 安装不了，windows平台，bml平台都不行，py3.6,py3.7都不行",
+        "body": "(paddlejs) PS C:\\Users\\wu\\PaddleWorkSpace> pip install paddlejslite >= 0.0.2\r\nERROR: Could not find a version that satisfies the requirement paddlejslite (from versions: none)\r\nERROR: No matching distribution found for paddlejslite\r\n(paddlejs) PS C:\\Users\\wu\\PaddleWorkSpace> pip install paddlejslite\r\nLooking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple\r\nERROR: Could not find a version that satisfies the requirement paddlejslite (from versions: none)\r\nERROR: No matching distribution found for paddlejslite\r\n(paddlejs) PS C:\\Users\\wu\\PaddleWorkSpace> pip install .\\paddlejslite-0.0.2-cp36-cp36m-macosx_10_15_x86_64.whl\r\nLooking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple\r\nERROR: paddlejslite-0.0.2-cp36-cp36m-macosx_10_15_x86_64.whl is not a supported wheel on this platform.\r\n",
+        "state": "open",
+        "user": "xiang12383",
+        "closed_by": null,
+        "created_at": "2022-06-28T03:06:02+00:00",
+        "updated_at": "2023-03-05T06:38:41+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xiang12383",
+            "xiang12383",
+            "xiang12383",
+            "bymomo",
+            "neocpp",
+            "LibrarristShalinward"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 457,
+        "title": "请问是否支持使用<script>标签的方式实现OCR？",
+        "body": "老项目并没有用到node js ，OCR识别是否能够用<script>方式来做？我看官方讲解手势识别是可以的\r\n![2D5713DC-E5E4-4845-B3A4-621C6BFA2133](https://user-images.githubusercontent.com/10610572/177794967-5e436124-1323-4edc-95b5-e103cbdacae1.jpeg)\r\n如果可以的话，有没有相关的参考代码？包括模型加载等操作。官方的资料真是太少了。",
+        "state": "open",
+        "user": "jiangdianxiang",
+        "closed_by": null,
+        "created_at": "2022-07-07T14:14:34+00:00",
+        "updated_at": "2022-07-07T14:14:34+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 458,
+        "title": "ocr可以使用v3版本的检测、识别模型吗?",
+        "body": "rt",
+        "state": "open",
+        "user": "yqwoe",
+        "closed_by": null,
+        "created_at": "2022-07-13T09:52:26+00:00",
+        "updated_at": "2022-07-13T09:52:26+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 456,
+        "title": "运行demo时，出现Uncaught Error: webgl context is lost的错误",
+        "body": "运行facedect的demo时，出现Uncaught Error: webgl context is lost的错误，谷歌浏览器和edge都存在这样的问题。\r\n\r\n\r\n![`Y4 O`MIJ1JHHHYVB$PB9$2](https://user-images.githubusercontent.com/64844447/176987082-f520f184-68f7-4d65-9039-50cb75d763b2.jpg)\r\n",
+        "state": "open",
+        "user": "0xLDF",
+        "closed_by": null,
+        "created_at": "2022-07-02T04:56:41+00:00",
+        "updated_at": "2022-07-02T06:26:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "0xLDF"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 463,
+        "title": "如何加载自己的模型文件",
+        "body": "自己的离线模型文件，如何加载呢",
+        "state": "closed",
+        "user": "alexiycv",
+        "closed_by": "alexiycv",
+        "created_at": "2022-08-21T06:34:58+00:00",
+        "updated_at": "2022-08-25T10:14:12+00:00",
+        "closed_at": "2022-08-25T10:14:12+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 459,
+        "title": "使用paddlejsConverter转换ch_PP-OCRv3模型效果非常差，无法识别任何文字",
+        "body": "我用PaddleOCR2.5做表格图片的文字识别，效果很好。\r\n但是用Paddle.js识别同一张图效果比较差。\r\n\r\n所以我想在Paddle.js中使用PaddleOCR中的模型，达到一致的识别效果。\r\n感谢！",
+        "state": "open",
+        "user": "SmileHeart1996",
+        "closed_by": null,
+        "created_at": "2022-07-22T10:21:14+00:00",
+        "updated_at": "2023-06-30T03:29:22+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "SmileHeart1996",
+            "SmileHeart1996",
+            "SmileHeart1996",
+            "SmileHeart1996",
+            "SmileHeart1996",
+            "dizhenx"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 462,
+        "title": "node环境如何使用",
+        "body": "node项目下某个功能需要ocr，引入了这个库。\r\n\r\n@paddlejs-models/ocrdet\r\n\r\n报错内容为：document is not defined。\r\n明显需要浏览器环境。我想在纯node环境下使用。\r\n希望给个解决方案，非常感谢",
+        "state": "open",
+        "user": "Sailiy",
+        "closed_by": null,
+        "created_at": "2022-08-05T07:41:28+00:00",
+        "updated_at": "2024-12-11T06:22:54+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Dounx",
+            "yangy996",
+            "LDOUBLEV",
+            "yangy996",
+            "Sailiy",
+            "DogeVenci",
+            "zheNeng",
+            "zheNeng",
+            "gowy222",
+            "ZengOwen",
+            "sulmz",
+            "sulmz",
+            "dengliming"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 467,
+        "title": "【算子问题】multiclass_nms 算子返回 [] 数组",
+        "body": "计算每组 score 是否有超过阈值的判断中，存在所有值都不返回的情况，导致异常返回 []\r\n\r\n```\r\n// threshold, sort, slice\r\nconst scoresMapList = getMaxScore(scores[i], score_threshold, nms_top_k);\r\nif (!scoresMapList || !scoresMapList.length) {\r\n    return []\r\n}\r\n```",
+        "state": "closed",
+        "user": "JingyuanZhang",
+        "closed_by": "JingyuanZhang",
+        "created_at": "2022-09-02T02:57:42+00:00",
+        "updated_at": "2022-09-02T06:10:34+00:00",
+        "closed_at": "2022-09-02T06:10:34+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 464,
+        "title": "样例中的人脸检测的速度特别慢，大概有5~6秒",
+        "body": "运行这个样例\r\nhttps://github.com/PaddlePaddle/Paddle.js/tree/release/v2.2.2/packages/paddlejs-models/facedetect\r\n大概5`6秒才出结果，换了电脑，换了网络，也一样，请问正常吗？",
+        "state": "open",
+        "user": "alexiycv",
+        "closed_by": null,
+        "created_at": "2022-08-26T07:37:27+00:00",
+        "updated_at": "2022-11-16T07:52:08+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "isee15"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 465,
+        "title": "OCR的文字识别模型改为输入shape 为[1, 3, 32, 896]后，初始化的耗时和使用的资源（内存）都极大的增加",
+        "body": "在OCR的Demo中， ocr_recognition模型输入shape为[1, 3, 32, 320]，也就是一次只能识别宽度小于320的图片，如果图片宽度大于320的话，对框选区域按宽度进行裁剪，将裁剪区域传入识别模型，最终拼接裁剪区域每一部分的识别结果。 这样操作降低了识别精度。\r\n为了提高识别精度，我修改了输入shape 为[1, 3, 32, 896]，识别模型可以识别。但是模型初始化的耗时和使用的资源（内存）都成倍增加了。\r\n请问，有什么办法可以解决初始化时间长和资源使用量大的问题吗？\r\n或者有什么办法能够不进行裁剪，宽度很大的图，也能一次完成识别？",
+        "state": "open",
+        "user": "kyle-1981",
+        "closed_by": null,
+        "created_at": "2022-08-29T13:12:00+00:00",
+        "updated_at": "2022-09-14T08:52:50+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "chenqianhe",
+            "kyle-1981",
+            "kyle-1981",
+            "chenqianhe",
+            "chenqianhe",
+            "kyle-1981",
+            "kyle-1981",
+            "chenqianhe",
+            "kyle-1981",
+            "chenqianhe",
+            "chenqianhe"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 471,
+        "title": "ts 引入会报错 Could not find a declaration file for module xxx",
+        "body": "以ocr为例，ts 引入会报错\r\n```\r\nCould not find a declaration file for module '@paddlejs-models/ocr'. 'D:/Dev/Paddle.js/node_modules/@paddlejs-models/ocr/lib/index.js' implicitly has an 'any' type.\r\n```\r\n\r\n希望编译时可以增加对ts引入的支持以及增加兼容性处理等支持不同es版本使用",
+        "state": "open",
+        "user": "chenqianhe",
+        "closed_by": null,
+        "created_at": "2022-09-07T09:54:59+00:00",
+        "updated_at": "2022-09-13T12:36:50+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "chenqianhe"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 475,
+        "title": "paddlejs无法加载经paddlejs-converter转换的infer model",
+        "body": "步骤:\r\n1. 从https://github.com/PaddlePaddle/PaddleSeg/blob/release/2.6/EISeg/docs/image.md页下载[static_hrnet18_ocr64_cocolvis](https://paddleseg.bj.bcebos.com/eiseg/0.4/static_hrnet18_ocr64_cocolvis.zip)模型\r\n2. 使用paddlejs-converter转换下载的模型，成功生成model.json以及相关.dat文件\r\n3. 修改paddlejs-model/ocr/src/index.ts重的引用模型地址为上步骤生成的模型\r\n4. 在paddlejs-examples/ocr项目下引用上步骤修改的paddlejs-model/ocr\r\n5. 本地调试paddlejs-examples/ocr，页面资源加载正常，但是console报错\r\nindex.js:1 Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'reduce')\r\n    at index.js:1:5394\r\n    at index.js:1:1583\r\n    at Array.forEach (<anonymous>)\r\n    at h (index.js:1:1544)\r\n    at t.allocateParamsVar (index.js:1:5377)\r\n    at index.js:1:4315\r\n\r\n代码定位在：paddlejs-core/src/loader.ts:134\r\nstatic allocateParamsVar(vars, allChunksData: Float32Array | ParamObject) {\r\n        let marker = 0; // 读到哪个位置了\r\n        let len; // 当前op长度\r\n        const chunkData: number[] = Array.isArray(allChunksData) ? allChunksData : Object.values(allChunksData);\r\n        traverseVars(vars, item => {\r\n134:     len = item.shape.reduce((a, b) => a * b); // 长度为shape的乘积\r\n            // 为了减少模型体积，模型转换工具不会导出非persistable的数据，这里只需要读取persistable的数据\r\n            if (item.persistable) {\r\n                item.data = chunkData.slice(marker, marker + len);\r\n                marker += len;\r\n            }\r\n        });\r\n    }",
+        "state": "open",
+        "user": "WilliamZhangZhe",
+        "closed_by": null,
+        "created_at": "2022-10-21T08:36:50+00:00",
+        "updated_at": "2022-10-21T08:36:50+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 473,
+        "title": "ppmatting模型可以convert成功，但无法用paddle.js load，error：unregisteredop equal, fill_constant",
+        "body": "你好，我用paddlejsconverter转换官方的ppmatting model (hrnet_w18) 可以成功，但在paddle.js里面load会报错：\r\nError: [unregistered op] fill_constant\r\nError: [unregistered op] equal\r\n请问能否支持这两个op？或者能否指导下怎么用registerOp?\r\n",
+        "state": "open",
+        "user": "seedlingfl",
+        "closed_by": null,
+        "created_at": "2022-09-14T04:01:46+00:00",
+        "updated_at": "2023-09-18T06:05:00+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "seedlingfl",
+            "hyman4hu"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 472,
+        "title": "使用vite时报错 opencv_ocr.js:46 Uncaught ReferenceError: Module is not defined",
+        "body": "使用vite时会有针对 opencv_ocr.js 的报错\r\n\r\n```\r\nopencv_ocr.js:46 Uncaught ReferenceError: Module is not defined\r\n    at opencv_ocr.js:46:5\r\n    at opencv_ocr.js:11:22\r\n    at node_modules/@paddlejs-mediapipe/opencv/library/opencv_ocr.js (opencv_ocr.js:22:1)\r\n    at __require (chunk-RSJERJUL.js?v=aa02e290:3:50)\r\n    at dep:@paddlejs-mediapipe_opencv_library_opencv_ocr:1:16\r\n```",
+        "state": "closed",
+        "user": "chenqianhe",
+        "closed_by": "chenqianhe",
+        "created_at": "2022-09-07T16:11:36+00:00",
+        "updated_at": "2024-12-06T13:24:17+00:00",
+        "closed_at": "2022-11-12T07:48:24+00:00",
+        "comments_count": [
+            "zlq4863947",
+            "chenqianhe",
+            "zlq4863947",
+            "Banqc0621",
+            "Drake-Rabbit"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 476,
+        "title": "图片分类自训练的分类全部识别不出来，都是第一类的",
+        "body": "### 模型\r\npaddlex训练的，然后转成paddlejs，用的mobilenetv3\r\n### 初始化\r\n`\r\nawait mobilenet.load(\r\n          {\r\n            path: json_path,\r\n            feedShape: {\r\n              fh: 1,\r\n              fw: 1,\r\n            },\r\n            // 分片参数文件数目\r\n            fileCount: 2,\r\n            // 模型输出shape\r\n            fetchShape: [1, 1920, 1, 1],\r\n            targetSize: {\r\n              height: 415,\r\n              width: 420,\r\n            },\r\n            fill:'#fff',\r\n            needPreheat: true,\r\n            // 均值&方差\r\n            // mean: [0.485, 0.456, 0.406],\r\n            // std: [0.229, 0.224, 0.225],\r\n          },\r\n          map\r\n        );\r\n`\r\n### 执行\r\n`const res1 = await mobilenet.classify(this.imageObj);`\r\n### 结果\r\n分类是T0-T5，然后识别出来永远都是T0",
+        "state": "open",
+        "user": "amwihtfei",
+        "closed_by": null,
+        "created_at": "2022-10-31T03:31:48+00:00",
+        "updated_at": "2022-10-31T03:31:48+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 477,
+        "title": "yolov3模型使用paddlejsconverter导出报错",
+        "body": "This model is not supported, because 2 ops are not supported on 'arm'. These unsupported ops are: 'multiclass_nms3, nearest_interp_v2'.\r\n",
+        "state": "open",
+        "user": "judy19981229",
+        "closed_by": null,
+        "created_at": "2022-11-16T07:08:20+00:00",
+        "updated_at": "2023-03-07T10:10:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "shuizhuyu1015"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 478,
+        "title": "ocr图片识别移动端识别不出来",
+        "body": "用在线的示例，pc端浏览器可以识别出图片，但是平板上识别不出来",
+        "state": "open",
+        "user": "OriharaIzaya7",
+        "closed_by": null,
+        "created_at": "2022-11-23T07:39:14+00:00",
+        "updated_at": "2023-06-15T08:31:57+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lianxin255"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 480,
+        "title": "outputs[name] not exist Out.",
+        "body": null,
+        "state": "open",
+        "user": "judy19981229",
+        "closed_by": null,
+        "created_at": "2022-12-06T04:25:46+00:00",
+        "updated_at": "2022-12-06T04:25:46+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 479,
+        "title": "新建项目导入 ocr包提示找不到模块",
+        "body": "看了OCR说明文档， 和NPM上包说明，都只说导入 @paddle-js-models/ocr 。\r\n\r\n但只要执行代码，就会收到  Module is not defined\r\n\r\n所以到底还需要导入什么？\r\n\r\n",
+        "state": "closed",
+        "user": "Gsonovb",
+        "closed_by": "Gsonovb",
+        "created_at": "2022-11-25T01:55:56+00:00",
+        "updated_at": "2022-12-05T05:54:37+00:00",
+        "closed_at": "2022-12-05T05:54:37+00:00",
+        "comments_count": [
+            "Wudax",
+            "chenqianhe",
+            "Wudax",
+            "Gsonovb"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 481,
+        "title": "ocr  TypeError: Cannot read properties of undefined (reading 'opData')",
+        "body": null,
+        "state": "open",
+        "user": "54ljd",
+        "closed_by": null,
+        "created_at": "2022-12-08T06:29:52+00:00",
+        "updated_at": "2022-12-08T06:29:52+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 483,
+        "title": "关于license的问题",
+        "body": "你好，项目下某个功能需要ocr，需要用到库里面的下面这三个包。\r\npaddlejs-mediapipe/opencv\r\npaddlejs/paddlejs-backend-webgl\r\npaddlejs/paddlejs-core\r\n\r\n请问一下用这三个包的时候证书是写库的Apache License 2.0，\r\n还是写各自的ICSlicense。\r\n\r\n非常感谢",
+        "state": "open",
+        "user": "stardie1995",
+        "closed_by": null,
+        "created_at": "2022-12-22T10:23:09+00:00",
+        "updated_at": "2022-12-22T10:23:09+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 482,
+        "title": "微信小程序引入转换后的模型报错",
+        "body": "使用Converer转换后，小程序出现如下报错\r\nindex.js? [sm]:1 webgl createProgram: conv2d -- Error: Error: compile: ERROR: 0:186: 'undefined' : undeclared identifier\r\n<img width=\"758\" alt=\"image\" src=\"https://user-images.githubusercontent.com/56709053/206665422-c357266e-c6b9-4a4c-bcf1-6d1939964224.png\">\r\n\r\n\r\n在转换过程中，出现如下错误：\r\n<img width=\"602\" alt=\"image\" src=\"https://user-images.githubusercontent.com/56709053/206665701-cfea76dc-63b7-48c6-935f-6e2d2af09ced.png\">\r\n在issue里发现了许多人在转换时都有这种情况，不清楚是否是报错产生的原因\r\n\r\n转换后的模型链接：\r\n[https://oss.flik1337.com/model.json](url)\r\n",
+        "state": "open",
+        "user": "flik1337",
+        "closed_by": null,
+        "created_at": "2022-12-09T09:12:24+00:00",
+        "updated_at": "2024-12-23T23:11:36+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "shuizhuyu1015",
+            "flik1337",
+            "shuizhuyu1015",
+            "flik1337",
+            "AIDeepx"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 485,
+        "title": "在系统性能低的环境运行packages/paddlejs-models/facedetect/demo时控制台直接报错",
+        "body": "### 现象\r\n报错内容为：\r\n```\r\nbuildShader.ts:56 [conv2d]: TypeError: Cannot read properties of undefined (reading 'frameBufferSupportFloat')\r\nbackend.ts:116 webgl createProgram: conv2d -- Error: TypeError: Cannot read properties of null (reading 'FRAGMENT_SHADER')\r\n……\r\n```\r\n检查后发现，运行到这里时`gl`为`null`：\r\n**packages/paddlejs-backend-webgl/src/webgl/WebGLUtils.ts**:\r\n```TypeScript\r\n125     let gl = canvas.getContext('webgl2', this.WEBGL_ATTRIBUTES) as WebGLRenderingContext | null;\r\n126     if (gl) {\r\n127         env.set('webglVersion', 2);\r\n128     }\r\n```\r\n调用堆栈：\r\n```\r\n../../paddlejs-backend-webgl/src/webgl/WebGLUtils.ts.GLHelper.createWebGLRenderingContext (WebGLUtils.ts:126)\r\n(匿名) (backend.ts:61)\r\nstep (index.js:186)\r\n(匿名) (index.js:167)\r\n(匿名) (index.js:161)\r\n../../paddlejs-backend-webgl/src/backend.ts.__awaiter (index.js:157)\r\n../../paddlejs-backend-webgl/src/backend.ts.WebGLBackend.init (backend.ts:59)\r\n(匿名) (runner.ts:61)\r\nstep (multiclass_nms.ts:122)\r\n(匿名) (multiclass_nms.ts:122)\r\n(匿名) (multiclass_nms.ts:122)\r\n../../paddlejs-core/src/runner.ts.__awaiter (multiclass_nms.ts:122)\r\n../../paddlejs-core/src/runner.ts.Runner.init (runner.ts:50)\r\n(匿名) (index.ts:52)\r\nstep (log.js:59)\r\n(匿名) (log.js:59)\r\n(匿名) (log.js:59)\r\n./src/index.ts.__awaiter (log.js:59)\r\n./src/index.ts.FaceDetector.init (index.ts:50)\r\n(匿名) (index.ts:16)\r\nstep (transformer.ts:14)\r\n(匿名) (transformer.ts:14)\r\n(匿名) (transformer.ts:14)\r\n./demo/index.ts.__awaiter (transformer.ts:14)\r\nload (index.ts:15)\r\n./demo/index.ts (index.ts:10)\r\n__webpack_require__ (bootstrap:19)\r\n0 (index.ts:122)\r\n__webpack_require__ (bootstrap:19)\r\n(匿名) (bootstrap:83)\r\n(匿名) (bootstrap:83)\r\n```\r\n### 原因\r\n这里`failIfMajorPerformanceCaveat: true`\r\n**packages/paddlejs-backend-webgl/src/webgl/WebGLUtils.ts**:\r\n```TypeScript\r\n71  public static WEBGL_ATTRIBUTES: WebGLContextAttributes = {\r\n72      alpha: false,\r\n73      antialias: false,\r\n74      premultipliedAlpha: false,\r\n75      preserveDrawingBuffer: false,\r\n76      depth: false,\r\n77      stencil: false,\r\n78      failIfMajorPerformanceCaveat: true,\r\n79      powerPreference: 'high-performance'\r\n80  };\r\n```\r\n根据[https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCanvasElement/getContext](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCanvasElement/getContext)\r\n\r\n> `failIfMajorPerformanceCaveat`: 表明在一个系统性能低的环境是否创建该上下文的boolean值。\r\n\r\n把`failIfMajorPerformanceCaveat`改为`false`后就能正常运行了，只是因为性能低，要加载几分钟。\r\n### 可以把这个改成false，或者在系统性能低gl为null时提示一下，不然控制台报错了也不知道什么原因。\r\n",
+        "state": "open",
+        "user": "423A35C7",
+        "closed_by": null,
+        "created_at": "2023-01-19T07:27:49+00:00",
+        "updated_at": "2024-02-07T11:37:06+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "clhey"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 486,
+        "title": "初始化模型时浏览器控制台报错",
+        "body": "![0G$EVLW~ L)XGD}66668H8U](https://user-images.githubusercontent.com/88436919/214775495-d6559fd2-1268-4c33-9d44-cc6d430ea8ab.png)\r\n\r\n推测是使用converter进行模型转换时出了问题，询问一下解决方法\r\n\r\n使用的两个模型地址如下：\r\nhttps://github.com/PaddlePaddle/PaddleDetection/tree/release/2.3/configs/face_detection\r\nhttps://github.com/PaddlePaddle/PaddleHub/tree/release/v2.2/modules/image/keypoint_detection/face_landmark_localization",
+        "state": "open",
+        "user": "wz-Tian",
+        "closed_by": null,
+        "created_at": "2023-01-26T07:01:03+00:00",
+        "updated_at": "2025-03-12T02:33:34+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Toni-Stark"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 487,
+        "title": "configuration.node has an unknown property 'fs'. 在windwos的32位node上运行humanseg的demo报错。",
+        "body": "系统：windwos\r\nnodejs版本：v12.22.12 32位\r\n\r\n错误详细信息：\r\n[webpack-cli] Invalid configuration object. Webpack has been initialized using a configuration object that does not match the API schema.\r\n - configuration.node has an unknown property 'fs'. These properties are valid:\r\n   object { __dirname?, __filename?, global? }\r\n   -> Options object for node compatibility features.\r\nnpm ERR! code ELIFECYCLE\r\nnpm ERR! errno 2\r\nnpm ERR! humanstream@1.0.0 dev: `webpack-dev-server`\r\nnpm ERR! Exit status 2\r\nnpm ERR!\r\nnpm ERR! Failed at the humanstream@1.0.0 dev script.\r\nnpm ERR! This is probably not a problem with npm. There is likely additional logging output above.",
+        "state": "open",
+        "user": "LuWei6896",
+        "closed_by": null,
+        "created_at": "2023-02-10T08:19:25+00:00",
+        "updated_at": "2023-02-10T08:19:25+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 488,
+        "title": "TS2307: Cannot find module '@paddlejs/paddlejs-core' or its corresponding type declarations.",
+        "body": "ERROR in D:\\CV\\tool\\PaddleJs2.1.0\\PaddleJs2.1.0\\packages\\paddlejs-models\\humanseg\\src\\index.ts\r\n5:28-53\r\n[tsl] ERROR in D:\\CV\\tool\\PaddleJs2.1.0\\PaddleJs2.1.0\\packages\\paddlejs-models\\humanseg\\src\\index.ts(5,29)\r\nTS2307: Cannot find module '@paddlejs/paddlejs-core' or its corresponding type declarations.\r\n\r\n![image](https://user-images.githubusercontent.com/32614962/218420896-33bd4ab9-bd79-4669-a6cd-9edb378b1717.png)\r\n",
+        "state": "open",
+        "user": "LuWei6896",
+        "closed_by": null,
+        "created_at": "2023-02-13T05:42:25+00:00",
+        "updated_at": "2023-02-13T09:29:03+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 490,
+        "title": "在线demo运行失败",
+        "body": "![image](https://user-images.githubusercontent.com/19602189/221803723-8ec65bd3-dfa2-401d-9b04-3fb5c9088f41.png)\r\n",
+        "state": "open",
+        "user": "tangchaoren1",
+        "closed_by": null,
+        "created_at": "2023-02-28T09:00:08+00:00",
+        "updated_at": "2023-02-28T09:00:08+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 489,
+        "title": "是不是特别吃内存？",
+        "body": "![image](https://user-images.githubusercontent.com/24841397/220233822-9a286303-4bae-43f9-8f2e-241860b0fa42.png)\r\nhttps://paddlejs.baidu.com/ocr\r\n\r\n",
+        "state": "open",
+        "user": "ssw1992",
+        "closed_by": null,
+        "created_at": "2023-02-21T02:43:12+00:00",
+        "updated_at": "2024-03-21T10:27:12+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "easyeda2021"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 491,
+        "title": "import * as humanseg from '@paddlejs-models/humanseg/lib/index_gpu';",
+        "body": "我启动的是humanseg这个例子\r\n在小程序是引用import * as humanseg from '@paddlejs-models/humanseg/lib/index_gpu'; \r\n报错 Cannot read property 'createElement' of undefined",
+        "state": "open",
+        "user": "qjb2404",
+        "closed_by": null,
+        "created_at": "2023-03-08T09:17:58+00:00",
+        "updated_at": "2023-03-08T09:17:58+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 492,
+        "title": "服务挂了，啥时候修好？",
+        "body": "在线的例程全部挂了，盼回复",
+        "state": "open",
+        "user": "gitTongzhen",
+        "closed_by": null,
+        "created_at": "2023-03-13T09:21:34+00:00",
+        "updated_at": "2023-03-13T09:21:34+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 493,
+        "title": "转换模型出现这种bug是为什么",
+        "body": "============Convert Model Args=============\r\nmodelPath: ./input/model.pdmodel\r\nparamPath: ./input/model.pdiparams\r\noutputDir: ./Output\r\nenableOptimizeModel: 0\r\nenableLogModelInfo: 0\r\nsliceDataSize:4096\r\nStarting...\r\nYou choosed not to optimize model, consequently, optimizing model is skiped.\r\n\r\nConverting model...\r\nWARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.\r\nPLEASE USE OMP_NUM_THREADS WISELY.\r\nOrganizing model operators info...\r\nOrganizing model operators info successfully.\r\nOrganizing model variables info...\r\nA fetal error occured. Failed to convert model.\r\nTraceback (most recent call last):\r\n  File \"convertModel.py\", line 554, in main\r\n    convertToPaddleJSModel(modelDir, modelName, paramsName, outputDir, useGPUOpt)\r\n  File \"convertModel.py\", line 468, in convertToPaddleJSModel\r\n    organizeModelVariableInfo(result)\r\n  File \"convertModel.py\", line 218, in organizeModelVariableInfo\r\n    exe.run(program, feed=feedData, fetch_list=fetch_targets, return_numpy=False)\r\n  File \"/root/miniconda3/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1463, in run\r\n    six.reraise(*sys.exc_info())\r\n  File \"/root/miniconda3/lib/python3.8/site-packages/six.py\", line 719, in reraise\r\n    raise value\r\n  File \"/root/miniconda3/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1450, in run\r\n    res = self._run_impl(program=program,\r\n  File \"/root/miniconda3/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1639, in _run_impl\r\n    program, new_exe = self._executor_cache.get_program_and_executor(\r\n  File \"/root/miniconda3/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 743, in get_program_and_executor\r\n    return self._get_cached_program_and_executor(\r\n  File \"/root/miniconda3/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 807, in _get_program_and_executor\r\n    _apply_inplace_addto_pass(program, enable_inplace, enable_addto,\r\n  File \"/root/miniconda3/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 410, in _apply_inplace_addto_pass\r\n    _apply_pass(program, empty_startup_program, pass_name, attrs,\r\n  File \"/root/miniconda3/lib/python3.8/site-packages/paddle/fluid/framework.py\", line 4335, in _apply_pass\r\n    attrs = core.apply_pass(\r\nRuntimeError: (NotFound) Operator (sync_batch_norm) is not registered.\r\n  [Hint: op_info_ptr should not be null.] (at /paddle/paddle/fluid/framework/op_info.h:156)\r\n",
+        "state": "open",
+        "user": "Jackiemin233",
+        "closed_by": null,
+        "created_at": "2023-03-22T17:00:02+00:00",
+        "updated_at": "2023-03-22T17:00:02+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 494,
+        "title": "支持在react native中运行吗？",
+        "body": "我在把detection 转成了onnx模型，然后推断成功了，但是dbPostprocess没法做，参考了dbPostprocess.ts，但是里面的@paddlejs-mediapipe/opencv 无法在react native里运行成功。\r\n\r\n所以请问，如何把paddle.js在react native里运行成功呢？",
+        "state": "open",
+        "user": "Arnoldnuo",
+        "closed_by": null,
+        "created_at": "2023-04-04T03:24:44+00:00",
+        "updated_at": "2023-04-04T03:24:44+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 495,
+        "title": "Cannot install paddlejsconverter",
+        "body": "Python 3.10.6\r\npip 22.0.2\r\nLinux user 4.4.0-22621-Microsoft #1105-Microsoft Fri Jan 01 08:00:00 PST 2016 x86_64 x86_64 x86_64 GNU/Linux\r\n\r\nwhen i execute  `pip install paddlejsconverter`  then have the error：\r\n\r\n```\r\nERROR: Cannot install paddlejsconverter==1.0.0, paddlejsconverter==1.0.1, paddlejsconverter==1.0.2, paddlejsconverter==1.0.3, paddlejsconverter==1.0.4, paddlejsconverter==1.0.5, paddlejsconverter==1.0.6, paddlejsconverter==1.0.7 and paddlejsconverter==1.0.8 because these package versions have conflicting dependencies.\r\n\r\nThe conflict is caused by:\r\n    paddlejsconverter 1.0.8 depends on paddlejslite>=0.0.2\r\n    paddlejsconverter 1.0.7 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.6 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.5 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.4 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.3 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.2 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.1 depends on paddlelite==2.7.1\r\n    paddlejsconverter 1.0.0 depends on paddlelite==2.7.1\r\n```\r\n",
+        "state": "open",
+        "user": "Steve662024",
+        "closed_by": null,
+        "created_at": "2023-04-04T10:18:34+00:00",
+        "updated_at": "2023-08-17T23:07:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "fitoprolog"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 496,
+        "title": "小程序引入paddlejs转换后的模型报错",
+        "body": "![jt1](https://user-images.githubusercontent.com/127663701/231414561-09686187-273d-4198-95c9-197f94b66ed5.png)\r\n![jt2](https://user-images.githubusercontent.com/127663701/231414925-94734730-e93c-4826-8c3b-5cbf73ab92d4.png)\r\n",
+        "state": "open",
+        "user": "thomasone0",
+        "closed_by": null,
+        "created_at": "2023-04-12T09:25:20+00:00",
+        "updated_at": "2024-03-22T07:38:22+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Dai-jl"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 497,
+        "title": "Cannot read property 'naturalHeight' of undefined",
+        "body": "我在传入图片识别文字之后 会直接报这个错误\r\n![image](https://user-images.githubusercontent.com/93062479/232740824-b889e3c7-87e8-4647-8180-f8b6776fc792.png)\r\n",
+        "state": "open",
+        "user": "wwq146213",
+        "closed_by": null,
+        "created_at": "2023-04-18T09:52:06+00:00",
+        "updated_at": "2023-12-13T08:54:12+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "channingkuo"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 498,
+        "title": "项目跟本跑步起来啊",
+        "body": "啥时候能管管你们demo跑起来的事啊",
+        "state": "open",
+        "user": "sdta25196",
+        "closed_by": null,
+        "created_at": "2023-04-30T15:27:52+00:00",
+        "updated_at": "2024-01-24T09:34:21+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "billshan",
+            "Chang1ng",
+            "jzhang533"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 500,
+        "title": "怎么转换成 tf  模型",
+        "body": " 如题  把飞浆得模型转换成 tf 模型 我看issue  好多人说转换失败    有成功的案例吗",
+        "state": "open",
+        "user": "zhou1591",
+        "closed_by": null,
+        "created_at": "2023-05-19T11:11:50+00:00",
+        "updated_at": "2023-05-19T11:11:50+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 499,
+        "title": "[OCR] 识别视频截图导致帧率急剧降低",
+        "body": "使用ocr识别视频里的每张图片,导致帧率下降到3fps，请问有什么解决办法吗？是要改为web worker做吗？",
+        "state": "open",
+        "user": "TonyZPW",
+        "closed_by": "TonyZPW",
+        "created_at": "2023-05-18T16:26:29+00:00",
+        "updated_at": "2023-05-25T05:58:12+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "TonyZPW",
+            "TonyZPW",
+            "TonyZPW",
+            "TonyZPW",
+            "TonyZPW"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 501,
+        "title": "使用paddlejsconverter转换paddleorc的中文文字识别模型后，模型不能正常加载。",
+        "body": "模型使用\r\nhttps://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/doc/doc_en/models_list_en.md#21-chinese-recognition-model\r\n的ch_PP-OCRv3_det的inference model\r\n\r\npaddlejsconverter版本1.0.8\r\n转换模型使用以下命令\r\n`python 'Paddle.js-release-v2.2.5/packages/paddlejs-converter/convertToPaddleJSModel.py'  --modelPath=inference.pdmodel --paramPath=inference.pdiparams --outputDir=../ --useGPUOpt=True --disableOptimize=1`\r\n\r\n使用的web demo为\r\nhttps://github.com/PaddlePaddle/FastDeploy/tree/develop/examples/application/js/web_demo中的TextDetection\r\n\r\n将模型放置到本地，用inport“?url”的方式传递url给orc.loader\r\n\r\n模型不能正常被加载，浏览器控制台报\r\n`index.js:1 webgl createProgram: conv2d_depthwise -- Error: Error: compile: ERROR: 0:188: 'undefined' : undeclared identifier\r\nERROR: 0:188: '' : boolean expression expected`\r\n错误。",
+        "state": "open",
+        "user": "jprorikon",
+        "closed_by": null,
+        "created_at": "2023-05-23T00:30:34+00:00",
+        "updated_at": "2024-12-23T10:18:23+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "jprorikon",
+            "im-ajaymeena",
+            "allenliuvip",
+            "VuHuy-cse-9",
+            "AIDeepx"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 502,
+        "title": "在webWorker使用paddlecore：找不到document",
+        "body": "浏览器插件serviceworker上下文没有window对象，怀疑paddlecore内部是否使用了ducoment对象去获得canvas。如果是，是否考虑用offscreenCanvas去处理",
+        "state": "open",
+        "user": "bettergsh",
+        "closed_by": null,
+        "created_at": "2023-05-24T01:15:14+00:00",
+        "updated_at": "2023-05-24T01:18:14+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "bettergsh"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 503,
+        "title": "ocr  识别失败",
+        "body": "移动端 h5 使用  ocr  识别不到",
+        "state": "open",
+        "user": "lianxin255",
+        "closed_by": null,
+        "created_at": "2023-06-15T08:30:54+00:00",
+        "updated_at": "2023-06-15T08:30:54+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 504,
+        "title": "safari:SyntaxError: Unexpected EOF",
+        "body": "yarn build\r\nout ocr.js\r\n\r\n```\r\n$(document).ready(function(){\r\nif(window.bEabOcr && !window.ocrLoad)window.ocrLoad=true,fnTmp89(),$(\"body\").append(\"<script src=/js/ocr.js></scr\"+\"ipt>\");\r\n});\r\n```\r\nsafari:SyntaxError: Unexpected EOF\r\n<img width=\"733\" alt=\"image\" src=\"https://github.com/PaddlePaddle/Paddle.js/assets/18223385/2825b56a-62bd-4dbf-b936-086e1bf02f17\">\r\n",
+        "state": "closed",
+        "user": "hktalent",
+        "closed_by": "hktalent",
+        "created_at": "2023-07-17T03:46:44+00:00",
+        "updated_at": "2024-04-24T06:31:01+00:00",
+        "closed_at": "2023-07-20T06:52:46+00:00",
+        "comments_count": [
+            "talatkuyuk",
+            "hktalent"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 505,
+        "title": "ios手机无法加载paddle.js物体检测模型",
+        "body": "![image](https://github.com/PaddlePaddle/Paddle.js/assets/8858701/636bb025-b701-4dc3-bfb1-bb922cea63a1)\r\n\r\n物体检测模型训练后 下载的 sdk demo  在iphone 的safari 浏览器页面 load后闪崩2次后并提示如上图所示.但是在 MAC 电脑 window电脑, 安卓手机浏览器上都能正常使用. 后经测试,在其他所有除iphone设备外 都是正常运行 ,只有在 iphone手机设备上访问 链接无论什么浏览器 都是闪崩 .  查看日志 并没有任何错误日志.  我 在代码中试图增加log打印来确定崩溃点, 但是一直追踪到了 Runner 类 的 load 方法 里, 可以确定Runner.load 方法内部闪崩溃, 但是具体哪里 还未能捕捉到,   可以帮助我吗? 很着急. 谢谢.",
+        "state": "open",
+        "user": "SEUlegend",
+        "closed_by": null,
+        "created_at": "2023-09-09T10:50:48+00:00",
+        "updated_at": "2024-04-16T01:43:38+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ritajie",
+            "LeHuth",
+            "SEUlegend"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 509,
+        "title": "getValueFromTensorPosPacking_filter getValueFromTensorPosPacking_origin  where is the function define",
+        "body": "getValueFromTensorPosPacking_filter  where is the function define",
+        "state": "closed",
+        "user": "allenliuvip",
+        "closed_by": "allenliuvip",
+        "created_at": "2023-11-26T12:46:09+00:00",
+        "updated_at": "2023-11-26T12:51:55+00:00",
+        "closed_at": "2023-11-26T12:51:41+00:00",
+        "comments_count": [
+            "allenliuvip"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 506,
+        "title": "ocrdetectxcx 导入小程序报错 Invalid context type [webgl2] for Canvas#getContext",
+        "body": "根本在小程序上跑不起来, 无论是测试工具还是真机. 你们自己难道没测试过?!! ugly\r\n![69f91bd7_571377](https://github.com/PaddlePaddle/Paddle.js/assets/25651278/ffa04685-115b-4f96-87e5-13e44cc16560)\r\n",
+        "state": "open",
+        "user": "billshan",
+        "closed_by": null,
+        "created_at": "2023-10-04T12:52:05+00:00",
+        "updated_at": "2025-05-07T00:36:16+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "limfa",
+            "HouChye"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 507,
+        "title": "无法识别，识别出是空的数组",
+        "body": "在官网案例中识别图片是能识别出来的，但是使用npm安装的，识别同一张图片，无法正确识别出来，识别出来是空的数组\r\n![Uploading 111111.png…]()\r\n\r\n",
+        "state": "open",
+        "user": "crazyyf",
+        "closed_by": null,
+        "created_at": "2023-11-02T08:29:45+00:00",
+        "updated_at": "2024-02-04T07:02:51+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "crazyyf",
+            "Talent-HYJ"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 511,
+        "title": "如何接入 PP-OCRv4 ?",
+        "body": "如何接入 [PP-OCRv4](https://github.com/PaddlePaddle/PaddleOCR) 手动转换生成了v4的 model.json和 dat 但用不了",
+        "state": "open",
+        "user": "mzzya",
+        "closed_by": null,
+        "created_at": "2023-12-04T02:07:55+00:00",
+        "updated_at": "2023-12-04T02:07:55+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 510,
+        "title": "where to get the paddlejslite?",
+        "body": "rt.",
+        "state": "open",
+        "user": "allenliuvip",
+        "closed_by": null,
+        "created_at": "2023-11-28T03:46:25+00:00",
+        "updated_at": "2023-11-28T04:53:35+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "allenliuvip"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 512,
+        "title": "TypeError: Cannot assign to read only property 'cflags' of object '#<Object>'",
+        "body": "I have been unable to install `@paddlejs/paddlejs-backend-nodegl` on my Arch Linux device.\r\n\r\nI apologize for the lack of info, just let me know if you need anything more.\r\n\r\n```\r\n❯ pnpm i @paddlejs/paddlejs-backend-nodegl\r\n WARN  3 deprecated subdependencies found: har-validator@5.1.5, request@2.88.2, uuid@3.4.0\r\nPackages: +121\r\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\r\nProgress: resolved 311, reused 288, downloaded 0, added 0, done\r\nnode_modules/.pnpm/gl@4.9.2/node_modules/gl: Running install script, failed in 463ms\r\n.../.pnpm/gl@4.9.2/node_modules/gl install$ prebuild-install || node-gyp rebuild\r\n│ prebuild-install WARN install No prebuilt binaries found (target=21.2.0 runtime=node arch=x64 libc= platform=linux)\r\n│ gyp info it worked if it ends with ok\r\n│ gyp info using node-gyp@7.1.2\r\n│ gyp info using node@21.2.0 | linux | x64\r\n│ gyp info find Python using Python version 3.11.6 found at \"/usr/bin/python3\"\r\n│ (node:54223) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.\r\n│ (Use `node --trace-deprecation ...` to show where the warning was created)\r\n│ gyp ERR! UNCAUGHT EXCEPTION \r\n│ gyp ERR! stack TypeError: Cannot assign to read only property 'cflags' of object '#<Object>'\r\n│ gyp ERR! stack     at createConfigFile (/home/aiden/Documents/repos/aocr/node_modules/.pnpm/node-gyp@7.1.2/node_modules/node-gyp/lib/configure.js:117:21)\r\n│ gyp ERR! stack     at /home/aiden/Documents/repos/aocr/node_modules/.pnpm/node-gyp@7.1.2/node_modules/node-gyp/lib/configure.js:84:9\r\n│ gyp ERR! stack     at FSReqCallback.oncomplete (node:fs:189:23)\r\n│ gyp ERR! System Linux 6.6.8-arch1-1\r\n│ gyp ERR! command \"/home/aiden/.nvm/versions/node/v21.2.0/bin/node\" \"/home/aiden/Documents/repos/aocr/node_modules/.pnpm/node-gyp@7.1.2/node_modules/node-gyp/bin/node-gyp.js\" \"rebuild\"\r\n│ gyp ERR! cwd /home/aiden/Documents/repos/aocr/node_modules/.pnpm/gl@4.9.2/node_modules/gl\r\n│ gyp ERR! node -v v21.2.0\r\n│ gyp ERR! node-gyp -v v7.1.2\r\n│ gyp ERR! Node-gyp failed to build your package.\r\n│ gyp ERR! Try to update npm and/or node-gyp and if it does not help file an issue with the package author.\r\n└─ Failed in 463ms at /home/aiden/Documents/repos/aocr/node_modules/.pnpm/gl@4.9.2/node_modules/gl\r\n ELIFECYCLE  Command failed with exit code 7.\r\n ```",
+        "state": "open",
+        "user": "SomeAspy",
+        "closed_by": "SomeAspy",
+        "created_at": "2023-12-28T05:14:47+00:00",
+        "updated_at": "2024-01-13T19:15:00+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "SomeAspy",
+            "SomeAspy"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 513,
+        "title": "RuntimeError: (NotFound) Operator (one_hot) is not registered.   [Hint: op_info_ptr should not be null.] (at ..\\paddle/fluid/framework/op_info.h:152)",
+        "body": "# 代码\r\nimport gradio as gr\r\nfrom paddlenlp import Taskflow\r\nimport numpy as np\r\nfrom PIL import Image\r\nimport uuid\r\n\r\n# 初始化文档智能任务模型\r\ndocprompt = Taskflow(\"document_intelligence\")\r\n\r\n\r\n# 定义模型推理函数\r\ndef model_inference(image, prompt):\r\n    prompt = prompt.split(\"?\")[:-1]\r\n    img = Image.fromarray(np.uint8(image))\r\n    filename = \"image/\" + str(uuid.uuid4()) + \".png\"\r\n    img.save(filename)\r\n    res = docprompt([{\"doc\": filename, \"prompt\": prompt}])\r\n    json_out = {\"result\": res}\r\n    print(json_out)\r\n    return image, json_out\r\n\r\n\r\n# 定义清除函数\r\ndef clear_all():\r\n    return None, None, None\r\n\r\n\r\n# 使用Gradio构建用户界面\r\nwith gr.Blocks() as demo:\r\n    gr.Markdown(\"ERNIE-Layout\")\r\n    with gr.Column(scale=1, min_width=100):\r\n        # 输入图片和文本框\r\n        img_in = gr.Image(value=\"图片.jpg\", label=\"Input\")\r\n        text = gr.Textbox(value=\"发票号码是多少?校验码是多少?\", label=\"输入问题:\", lines=2)\r\n        with gr.Row():\r\n            # 清除和提交按钮\r\n            btn1 = gr.Button(\"Clear\")\r\n            btn2 = gr.Button(\"Submit\")\r\n            json_out = gr.JSON(label=\"Information Extraction Output\")\r\n            img_out = gr.Image(label=\"Output\")  # 输出图片\r\n            # 绑定按钮点击事件到函数\r\n            btn1.click(fn=clear_all, inputs=None, outputs=[img_in, img_out, json_out])\r\n            btn2.click(fn=model_inference, inputs=[img_in, text], outputs=[img_out, json_out])\r\ndemo.launch(server_port=7008)  # 启动Gradio界面，监听7008端口)\r\n\r\n\r\n\r\n\r\n\r\n#报错D:\\anaconda\\envs\\p5\\python.exe D:\\pycharm\\实训2\\任务5\\内容识别.py \r\nD:\\anaconda\\envs\\p5\\lib\\site-packages\\_distutils_hack\\__init__.py:33: UserWarning: Setuptools is replacing distutils.\r\n  warnings.warn(\"Setuptools is replacing distutils.\")\r\nE1228 17:47:01.441207 15760 analysis_config.cc:653] Please compile with MKLDNN first to use MKLDNN\r\nTraceback (most recent call last):\r\n  File \"D:\\pycharm\\实训2\\任务5\\内容识别.py\", line 18, in <module>\r\n    docprompt = Taskflow(\"document_intelligence\")\r\n  File \"D:\\anaconda\\envs\\p5\\lib\\site-packages\\paddlenlp\\taskflow\\taskflow.py\", line 804, in __init__\r\n    self.task_instance = task_class(\r\n  File \"D:\\anaconda\\envs\\p5\\lib\\site-packages\\paddlenlp\\taskflow\\document_intelligence.py\", line 68, in __init__\r\n    self._get_inference_model()\r\n  File \"D:\\anaconda\\envs\\p5\\lib\\site-packages\\paddlenlp\\taskflow\\task.py\", line 372, in _get_inference_model\r\n    self._prepare_static_mode()\r\n  File \"D:\\anaconda\\envs\\p5\\lib\\site-packages\\paddlenlp\\taskflow\\task.py\", line 227, in _prepare_static_mode\r\n    self.predictor = paddle.inference.create_predictor(self._config)\r\nRuntimeError: (NotFound) Operator (one_hot) is not registered.\r\n  [Hint: op_info_ptr should not be null.] (at ..\\paddle/fluid/framework/op_info.h:152)\r\n\r\n\r\n进程已结束,退出代码1\r\n\r\n",
+        "state": "open",
+        "user": "Idaydayup",
+        "closed_by": null,
+        "created_at": "2023-12-28T09:52:03+00:00",
+        "updated_at": "2024-06-06T02:45:21+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "likenamehaojie",
+            "m7mdhka",
+            "magicianCoder",
+            "QQbbla",
+            "jonyllamado"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 516,
+        "title": "内存占用过大，有什么优化方法吗",
+        "body": "经过demo测试，在识别这种图片的时候（webgl），GPU内存或集显时共享内存会使用超过4GB，速度30多s，tesseract 7s 900MB完成，不知道有什么办法可以使paddlejs的内存占用降下来？并且提升识别速度\r\n![image](https://github.com/PaddlePaddle/Paddle.js/assets/29702100/6f075f0f-d7b6-4100-b105-175f46b60ecb)\r\n电脑配置如下\r\n![image](https://github.com/PaddlePaddle/Paddle.js/assets/29702100/86940f82-867f-4c6e-bbc4-2f97819fc72f)\r\n\r\n谢谢",
+        "state": "open",
+        "user": "easyeda2021",
+        "closed_by": null,
+        "created_at": "2024-03-21T10:25:32+00:00",
+        "updated_at": "2024-03-21T10:25:32+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 519,
+        "title": "关于模型的问题",
+        "body": "官网demo的那个模型占用内存大，速度快 识别率高 但是手机不可用，github上面的demo速度慢，内存占用小 识别率低 手机可用，这个有没有什么比较好的解决方案 比如让快的适配手机 或者让慢的识别率变高",
+        "state": "open",
+        "user": "Linkangyis",
+        "closed_by": null,
+        "created_at": "2024-05-22T18:46:48+00:00",
+        "updated_at": "2024-05-22T18:46:48+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 515,
+        "title": "目前是否不支持PP-OCRv4？",
+        "body": "引入后浏览器报错：\r\n`webgl createProgram: conv2d -- Error: Error: compile: ERROR: 0:188: 'undefined' : undeclared identifier\r\nERROR: 0:188: '' : boolean expression expected`\r\n等等",
+        "state": "open",
+        "user": "endfish",
+        "closed_by": null,
+        "created_at": "2024-03-15T07:39:36+00:00",
+        "updated_at": "2025-04-07T13:15:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "imblowsnow",
+            "ltto"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 514,
+        "title": "packages/paddlejs-converter is outdated and doesn't work anymore",
+        "body": "None of the latest models of PPOCR seem to have js equivalent models. Is there any plan to convert the python models to js models.\r\n\r\nI tried using the paddlejs-converter package. But, the utilities over there are outdated and do not work anymore.",
+        "state": "open",
+        "user": "sandzone",
+        "closed_by": null,
+        "created_at": "2024-03-14T08:41:16+00:00",
+        "updated_at": "2024-12-23T10:20:13+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "AIDeepx"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 523,
+        "title": "微信小程序无法引入本地转换后模型",
+        "body": "项目结构\n\n![Image](https://github.com/user-attachments/assets/465a854f-4928-445a-b0b5-b0a26f8a623b)\n代码\n\n![Image](https://github.com/user-attachments/assets/74fdd5c9-a757-4451-ad97-3f740695111f)\n编译后文件结构，代码可正常读取同文件夹下的.png文件\n\n![Image](https://github.com/user-attachments/assets/06ef8a7d-6f26-4687-b468-3e9bd65c8c3b)\n报错\n\n![Image](https://github.com/user-attachments/assets/0ebda981-9d38-4aaa-8a92-f46a8e72541e)\n将转换后的模型上传服务器使用网络链接则没有上述报错，但预测时报错同\n[#482 ](https://github.com/PaddlePaddle/Paddle.js/issues/482)\n\n![Image](https://github.com/user-attachments/assets/e5a36aa9-4139-4400-a32b-24ba15106567)",
+        "state": "open",
+        "user": "HouChye",
+        "closed_by": null,
+        "created_at": "2025-05-07T02:15:02+00:00",
+        "updated_at": "2025-05-07T02:15:02+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 518,
+        "title": "![image](https://user-images.githubusercontent.com/28520144/213392785-e8c76175-902c-4bd7-b0fe-b8ba3b0d1385.png)",
+        "body": "              ![image](https://user-images.githubusercontent.com/28520144/213392785-e8c76175-902c-4bd7-b0fe-b8ba3b0d1385.png)\r\n这几个地方改改 应该就可以在 node 侧用了。\r\n\r\n_Originally posted by @zheNeng in https://github.com/PaddlePaddle/Paddle.js/issues/462#issuecomment-1396612081_\r\n            ",
+        "state": "open",
+        "user": "ZengOwen",
+        "closed_by": null,
+        "created_at": "2024-05-15T02:37:16+00:00",
+        "updated_at": "2024-05-15T03:04:18+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ZengOwen"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 520,
+        "title": "Failed to retrieve JWT",
+        "body": "I am getting this error when creating a checkout -- what causes this? ",
+        "state": "open",
+        "user": "kobaidze3",
+        "closed_by": null,
+        "created_at": "2024-07-23T14:45:34+00:00",
+        "updated_at": "2025-06-30T10:59:48+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "kirillrocks",
+            "ArshErgon",
+            "satpalsr",
+            "tinchx1",
+            "ernestmarcinko",
+            "andrewtimberlake",
+            "ernestmarcinko",
+            "0guanhua0",
+            "0guanhua0",
+            "0guanhua0",
+            "nhtarik123"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle.js",
+        "number": 524,
+        "title": "Vercel Production Deployment Is Not Getting Webhook Events",
+        "body": "Hello, I've setup paddle billing for my project. Locally the webhook similations were working but when deployed on vercel. My api/webhook function is never hit. And when I look at paddle dashboard I see them failing. I'm not sure whats causing this\n\n<img width=\"1470\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/a1557a34-bbf8-4320-bb71-f3a3fa372b01\" />\n\n<img width=\"1470\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/296c2d4e-343f-4307-ace0-36e9bbcb2ad5\" />",
+        "state": "open",
+        "user": "didemkkaslan",
+        "closed_by": null,
+        "created_at": "2025-06-24T05:40:21+00:00",
+        "updated_at": "2025-06-27T15:11:07+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "2742195759",
+            "didemkkaslan"
+        ],
+        "labels": []
+    }
+]

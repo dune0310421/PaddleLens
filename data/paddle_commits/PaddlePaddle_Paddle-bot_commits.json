@@ -1,0 +1,5493 @@
+[
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e3d8f36072352ecd885e289710a546bc97dc91a0",
+        "created_at": "2022-06-16 11:03:53 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "developed-status-will-close-issue",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 17,
+                "changes": 44
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "76de24511d80a32e8f5a3ea2ac64dbecad291ebe",
+        "created_at": "2022-05-10 19:36:45 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-139-from-lelelelelez-data_aggretion",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "89f6e77969b86a2088540ab8a9973c4b302115c0",
+        "created_at": "2022-06-24 14:41:15 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-target-time-report",
+        "files": [
+            {
+                "filename": "webservice/monitor/ciIndex_trend.py",
+                "status": "added",
+                "additions": 157,
+                "deletions": 0,
+                "changes": 157
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3a97d4160f64277a35c2eeec1de129c296779ebe",
+        "created_at": "2022-05-10 11:43:17 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-regularMail.py",
+        "files": [
+            {
+                "filename": "webservice/regularCIMail.py",
+                "status": "modified",
+                "additions": 403,
+                "deletions": 555,
+                "changes": 958
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8506e0fcab327547b23bb462a46d76c951bd5597",
+        "created_at": "2022-07-08 16:18:30 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "resolution",
+        "files": [
+            {
+                "filename": "webservice/ci_event.py",
+                "status": "added",
+                "additions": 395,
+                "deletions": 0,
+                "changes": 395
+            },
+            {
+                "filename": "webservice/ci_main.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 80,
+                "deletions": 407,
+                "changes": 487
+            },
+            {
+                "filename": "webservice/monitor/botMonitor.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 4,
+                "changes": 17
+            },
+            {
+                "filename": "webservice/paddle_bot_main.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "webservice/regularCIMail.py",
+                "status": "modified",
+                "additions": 148,
+                "deletions": 5,
+                "changes": 153
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 183,
+                "deletions": 236,
+                "changes": 419
+            },
+            {
+                "filename": "webservice/utils/auth.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 22,
+                "changes": 24
+            },
+            {
+                "filename": "webservice/utils/auth_ipipe.py",
+                "status": "modified",
+                "additions": 43,
+                "deletions": 2,
+                "changes": 45
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 19,
+                "changes": 44
+            },
+            {
+                "filename": "webservice/utils/common.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "webservice/utils/db.py",
+                "status": "modified",
+                "additions": 74,
+                "deletions": 1,
+                "changes": 75
+            },
+            {
+                "filename": "webservice/utils/getAssignee.py",
+                "status": "added",
+                "additions": 37,
+                "deletions": 0,
+                "changes": 37
+            },
+            {
+                "filename": "webservice/utils/handler.py",
+                "status": "modified",
+                "additions": 32,
+                "deletions": 23,
+                "changes": 55
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "82329e10d82fdc8bc3fcd8db834b67eb5cdd79fa",
+        "created_at": "2022-05-26 13:57:17 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-141-from-lelelelelez-label1",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "bd34467d7d716ced03767bfd55c0fdfa9cfb37f5",
+        "created_at": "2022-06-22 15:09:35 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-142-from-lelelelelez-label3",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e57466b29149fb43d1d13bf57d279834a72521c3",
+        "created_at": "2022-05-25 10:48:32 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-140-from-lelelelelez-regular_mail",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "7940e490d21060995e6b46814343c0c92fc77b36",
+        "created_at": "2022-06-23 19:43:51 +0800",
+        "author": "Shaun2016",
+        "committer": "web-flow",
+        "message": "PaddleScience-PR-description-template-check-145",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "5056610f362165946513673f510fae71364ee01d",
+        "created_at": "2022-07-08 14:14:38 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-146-from-lelelelelez-trend",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f28598799ebb120102c00812b78362e2cae1bc1a",
+        "created_at": "2022-05-25 06:34:37 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-label-from-icafe",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 63,
+                "deletions": 11,
+                "changes": 74
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "c9e9860c049e6d605d499282e35ff042f9bbabce",
+        "created_at": "2022-07-12 14:55:27 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-148-from-lelelelelez-resolution",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ed8a11573f9326ec5cb5b96145bf22872553c3a3",
+        "created_at": "2022-04-27 11:46:01 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "data-aggregation",
+        "files": [
+            {
+                "filename": "webservice/monitor/data_aggregation.py",
+                "status": "added",
+                "additions": 289,
+                "deletions": 0,
+                "changes": 289
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "6aaf8aefc98eca481188cdcaf34192ef4f857848",
+        "created_at": "2022-04-24 17:22:48 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-138-from-lelelelelez-getbuildTimeDaily",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "364a2e6b11dbf37e1a9b9526256bb64acc4f9531",
+        "created_at": "2022-04-06 16:32:11 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-autoMarkTimeOutPR",
+        "files": [
+            {
+                "filename": "webservice/monitor/autoMarkTimeOutPR.py",
+                "status": "modified",
+                "additions": 32,
+                "deletions": 8,
+                "changes": 40
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "601f8b8b4c1ad67c606fe874b8cb3787ab852bd6",
+        "created_at": "2022-04-06 16:35:32 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-137-from-lelelelelez-marktime",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "09b4650344576fb5593c5839cac24df35f7e7cd4",
+        "created_at": "2022-03-21 19:04:27 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-135-from-lelelelelez-label",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ceb457ebd0089a5583183a98da824dab5f3ecbd4",
+        "created_at": "2022-03-21 20:11:25 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "log-add-limit-size",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 5,
+                "changes": 14
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 4,
+                "changes": 13
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "92dfa94489f408704e75d3a42e9dc7c959d04029",
+        "created_at": "2022-04-24 09:10:09 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "getbuildTimeDaily",
+        "files": [
+            {
+                "filename": "webservice/utils/handler.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 1,
+                "changes": 14
+            },
+            {
+                "filename": "webservice/utils/routine.py",
+                "status": "added",
+                "additions": 133,
+                "deletions": 0,
+                "changes": 133
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "aed176d02ac4fbd37e09e1e1024c6b542839d9f9",
+        "created_at": "2022-04-06 16:26:31 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-136-from-lelelelelez-logger",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4cc802acc7c04688df939494605c0d1f8734144c",
+        "created_at": "2022-03-16 15:07:25 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-PaddleDetection-PaddleClas-auto-close-issues",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 1,
+                "changes": 18
+            },
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 4,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8b050f8e025077007fde49105fa5005787651def",
+        "created_at": "2022-03-21 17:10:09 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-label",
+        "files": [
+            {
+                "filename": "webservice/__main__.py",
+                "status": "modified",
+                "additions": 32,
+                "deletions": 5,
+                "changes": 37
+            },
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 29,
+                "deletions": 1,
+                "changes": 30
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "69ca07d577814c55b3a09f1b738163118cd3eb8f",
+        "created_at": "2022-03-21 19:04:02 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-134-from-lelelelelez-issue_close",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d654c92a2438005d034bac14248d1db9841676bb",
+        "created_at": "2022-03-07 18:11:55 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-133-from-lelelelelez-isRebuild",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d776f5b7d2077d5e064ea95aeb882fd2425ecb54",
+        "created_at": "2022-03-07 09:06:09 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-isRebuild-tag",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d5fa921380615dcbdeb7c488b6292850cbebd8b4",
+        "created_at": "2022-01-19 13:58:11 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-130-from-lelelelelez-sa_ci",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e856c592ff97bc549aa17e46dcd2b63aa9a102b2",
+        "created_at": "2022-01-18 11:53:58 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "sa-cpu-gpu",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 1,
+                "changes": 37
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "79a7ae0305d133ab2d188e2339c114c5aa4ab882",
+        "created_at": "2022-03-07 09:05:48 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-isRebuild-tag",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 1,
+                "changes": 32
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4b71b9d535408fea2bddab8a875e66c783a164d3",
+        "created_at": "2022-01-18 12:06:16 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "ciConsumeTime_analysis",
+        "files": [
+            {
+                "filename": "webservice/monitor/ciConsumeTime_analysis.py",
+                "status": "added",
+                "additions": 206,
+                "deletions": 0,
+                "changes": 206
+            },
+            {
+                "filename": "webservice/monitor/ciConsumeTime_trend.py",
+                "status": "added",
+                "additions": 232,
+                "deletions": 0,
+                "changes": 232
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3b305a2997f80887e976ecbb4b096f53d6db7ad5",
+        "created_at": "2022-01-10 14:08:04 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-127-from-lelelelelez-updateWaitting",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a58f48448fc32af16c9a4a3f4fa7402de32e5c2c",
+        "created_at": "2022-01-19 13:58:00 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-131-from-lelelelelez-ci_consume",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "50ffe3016dea7b7142589fa881d9df392e114f6f",
+        "created_at": "2022-01-10 07:16:27 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 104,
+                "deletions": 55,
+                "changes": 159
+            },
+            {
+                "filename": "statistics/get_pr_comment.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "18b8cf855cb8bd9f13b76e99593d211a1e71ed7c",
+        "created_at": "2021-12-28 08:35:12 +0000",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-exceptionQueueCIMonitor",
+        "files": [
+            {
+                "filename": "webservice/monitor/exceptionQueueCIMonitor.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 16,
+                "changes": 43
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "bd05a415b74ae66efaad4c77c92984bdbd84627b",
+        "created_at": "2021-11-30 15:59:51 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "Merge-pull-request-122-from-lelelelelez-queueci",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "b26227b9a956588dac73b1e499a4661f14517aa1",
+        "created_at": "2022-01-10 15:19:11 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-129-from-lelelelelez-safe",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ace9e3cfcbf2b5f983b33f1db5bf07247addb1ad",
+        "created_at": "2021-12-08 14:10:47 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-126-from-lelelelelez-statics",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8a1892e565cea396b207b7f327bbff10b7b7523f",
+        "created_at": "2021-11-16 18:03:25 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-night-monitor",
+        "files": [
+            {
+                "filename": "webservice/monitor/nightMonitor.py",
+                "status": "added",
+                "additions": 144,
+                "deletions": 0,
+                "changes": 144
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "578363ce8fe23740e218168ab07a7815385d51fb",
+        "created_at": "2021-11-30 15:20:10 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-bj-v100-monitor",
+        "files": [
+            {
+                "filename": "webservice/monitor/queueCIMonitor.py",
+                "status": "modified",
+                "additions": 342,
+                "deletions": 241,
+                "changes": 583
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "6655efe2b465ad8ede6e53c55b64e3038bc45994",
+        "created_at": "2021-11-12 19:14:19 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "get-build_parallel-ci-index",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 298,
+                "deletions": 360,
+                "changes": 658
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8744245d8f48ef4ceac98a049c5ecd85bf5f118b",
+        "created_at": "2021-11-30 15:10:07 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-121-from-lelelelelez-night_mon",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3b49f65ff546e2ebfc5b0c2f4e211c921194a067",
+        "created_at": "2021-11-30 15:59:51 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-122-from-lelelelelez-queueci",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "77a9f17e6ab1f4f888bfd58716af8f7f18930410",
+        "created_at": "2021-11-12 19:15:21 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "get-build_parallel-ci-index",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 518,
+                "deletions": 178,
+                "changes": 696
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4bddb9e0dd0e96399abbe82e88c8203cbf0ce2dd",
+        "created_at": "2021-11-16 17:57:12 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-120-from-lelelelelez-build_parallel",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d9774fd45279420bbe2d32195db18d7b4b3f596c",
+        "created_at": "2021-09-28 16:54:25 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-119-from-lelelelelez-pr_mi",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e513cb629d62865841d5e93d72092ce79d56cccd",
+        "created_at": "2021-09-28 16:49:12 +0800",
+        "author": "PaddlePaddle-Gardener",
+        "committer": "PaddlePaddle-Gardener",
+        "message": "update-pr-migration",
+        "files": [
+            {
+                "filename": "gitee/pr_merge.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 14,
+                "changes": 30
+            },
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 89,
+                "deletions": 175,
+                "changes": 264
+            },
+            {
+                "filename": "gitee/update_code.sh",
+                "status": "modified",
+                "additions": 50,
+                "deletions": 74,
+                "changes": 124
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e7af5e42bddd11478533e528759ae49b31dca270",
+        "created_at": "2021-09-01 16:24:50 +0800",
+        "author": "tianshuo78520a",
+        "committer": "tianshuo78520a",
+        "message": "fix-code",
+        "files": [
+            {
+                "filename": "webservice/monitor/checkNightBuildCI.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 12,
+                "changes": 21
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "764eba56d050b6b0e4bdc42286a24437e0663a11",
+        "created_at": "2021-09-01 16:18:47 +0800",
+        "author": "tianshuo78520a",
+        "committer": "tianshuo78520a",
+        "message": "add-checkNightBuildCI.py",
+        "files": [
+            {
+                "filename": "webservice/monitor/checkNightBuildCI.py",
+                "status": "added",
+                "additions": 97,
+                "deletions": 0,
+                "changes": 97
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "fe8b6b5579752861e7a4abe04f836d784f5aedf0",
+        "created_at": "2021-09-09 16:32:29 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-118-from-tianshuo78520a-add_night_build",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "6f823b5ac2e75044655e00263d8360e16f4692fe",
+        "created_at": "2021-08-30 14:13:09 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-117-from-Jiangxinz-fix-clone-failed",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "08862bd90cee991a0c7c2bfa168fcb1e50d112ed",
+        "created_at": "2021-08-30 09:24:00 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "add-LogProcess.py-addCommentsInFailed.py-.etc",
+        "files": [
+            {
+                "filename": "webservice/utils/addCommentsInFailedCI.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 10,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "54374e08b3cfc08db611b3f2597bc3eba0dbc67f",
+        "created_at": "2021-08-30 14:10:56 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-114-from-Jiangxinz-dev",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "044651ccd319e63209264086a4ca5e9967a891c9",
+        "created_at": "2021-08-30 11:25:11 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "fix-clone-failed-bug",
+        "files": [
+            {
+                "filename": "gitee/update_code.sh",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 4,
+                "changes": 20
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1c59dfdd534596706fb91acdd98d1aaa657b7f4f",
+        "created_at": "2021-08-27 16:21:34 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "add-LogProcess.py-addCommentsInFailed.py-.etc",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 215,
+                "changes": 215
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "26b477a55532ea64f9ee8e0ffb71a726ff87fa54",
+        "created_at": "2021-08-27 16:10:29 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "add-LogProcess.py-addCommentsInFailed.py-.etc",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 89,
+                "deletions": 31,
+                "changes": 120
+            },
+            {
+                "filename": "webservice/utils/LogProcess.py",
+                "status": "modified",
+                "additions": 35,
+                "deletions": 15,
+                "changes": 50
+            },
+            {
+                "filename": "webservice/utils/addCommentsInFailedCI.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 40,
+                "changes": 64
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1cd1201bb332aa1d2d6a331218925c1b2b641781",
+        "created_at": "2021-08-27 16:12:48 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "add-LogProcess.py-addCommentsInFailed.py-.etc",
+        "files": [
+            {
+                "filename": "webservice/utils/addCommentsInFailedCI.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "56f0dd1aea82435a6f942e5e7a64789bd2c6e13f",
+        "created_at": "2021-08-19 12:54:09 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "handle-excode",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 4,
+                "changes": 5
+            },
+            {
+                "filename": "webservice/utils/LogProcess.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 8,
+                "changes": 20
+            },
+            {
+                "filename": "webservice/utils/addCommentsInFailedCI.py",
+                "status": "modified",
+                "additions": 97,
+                "deletions": 42,
+                "changes": 139
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "b3d983512534438300d83d064dba40c3aad83d56",
+        "created_at": "2021-08-19 12:59:17 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "handle-excode",
+        "files": [
+            {
+                "filename": "webservice/utils/addCommentsInFailedCI.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "216d492785e5bfbe96b05b8cb8a91050205976cf",
+        "created_at": "2021-08-24 11:13:32 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-115-from-iducn-pr_and_issue",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "66290c472eabd67e5c222a472335c6af194a57fe",
+        "created_at": "2021-08-16 10:29:00 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "",
+        "files": [
+            {
+                "filename": "statistics/get_issue_comment.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "statistics/get_pr_comment.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 10,
+                "changes": 37
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "c94b8a275e332dec4d9bb342f6b01c10666f74e2",
+        "created_at": "2021-08-18 17:04:28 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "handle-excode",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 265,
+                "deletions": 89,
+                "changes": 354
+            },
+            {
+                "filename": "webservice/utils/LogProcess.py",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "webservice/utils/addCommentsInFailedCI.py",
+                "status": "added",
+                "additions": 281,
+                "deletions": 0,
+                "changes": 281
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "bfe86ac5f673ad94ee72c87e67a1f52b5f9fbddc",
+        "created_at": "2021-08-10 21:50:28 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "",
+        "files": [
+            {
+                "filename": "statistics/get_PR_count.py",
+                "status": "added",
+                "additions": 111,
+                "deletions": 0,
+                "changes": 111
+            },
+            {
+                "filename": "statistics/get_issue_comment.py",
+                "status": "added",
+                "additions": 123,
+                "deletions": 0,
+                "changes": 123
+            },
+            {
+                "filename": "statistics/get_pr_comment.py",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e23c0be8c8a60d08cabc81f49c2fc2f66589adcc",
+        "created_at": "2021-08-10 21:51:37 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "",
+        "files": [
+            {
+                "filename": "statistics/get_PR_count.py",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 11,
+                "changes": 31
+            },
+            {
+                "filename": "statistics/get_issue_comment.py",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 14,
+                "changes": 37
+            },
+            {
+                "filename": "statistics/get_pr_comment.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 15,
+                "changes": 39
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1a8d50dac69dc0b5eb4201306b6223b34acb722d",
+        "created_at": "2021-08-02 14:53:38 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "pr-migration",
+        "files": [
+            {
+                "filename": "gitee/pr_merge.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "gitee/update_code.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "53aa3d4b92fab73c19977486a9928ad45eb6bedf",
+        "created_at": "2021-08-03 11:39:28 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-113-from-Jiangxinz-pr_migration",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f06424adf18e5a93f5fba4613f6697be5f384080",
+        "created_at": "2021-08-02 14:39:27 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "pr-migration",
+        "files": [
+            {
+                "filename": "gitee/Singleton.py",
+                "status": "added",
+                "additions": 87,
+                "deletions": 0,
+                "changes": 87
+            },
+            {
+                "filename": "gitee/pr_merge.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 7,
+                "changes": 23
+            },
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 83,
+                "deletions": 31,
+                "changes": 114
+            },
+            {
+                "filename": "gitee/update_code.sh",
+                "status": "modified",
+                "additions": 26,
+                "deletions": 3,
+                "changes": 29
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "2b1bcb94ae06398c950893b31fc188535face0fa",
+        "created_at": "2021-07-09 14:37:59 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-analysis",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 5,
+                "changes": 11
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 391,
+                "deletions": 303,
+                "changes": 694
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a3f6e0c41aa0d08d17028c3db2933e333e4092f0",
+        "created_at": "2021-08-02 14:46:59 +0800",
+        "author": "Jiangxinz",
+        "committer": "Jiangxinz",
+        "message": "pr-migration",
+        "files": [
+            {
+                "filename": "gitee/pr_merge.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 7,
+                "changes": 8
+            },
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 11,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "b4a386cd7e0177b31ab6f393ed86ce64e753e06c",
+        "created_at": "2021-07-09 15:26:23 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-106-from-lelelelelez-analy",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "b82706cb1344161f4117f87b9c8c6971a68505a9",
+        "created_at": "2021-06-29 16:19:57 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-102-from-lelelelelez-pr_mi",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "5037fda222accc09ee89b7f62a72b7d5098e38e3",
+        "created_at": "2021-07-07 17:11:11 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "cpu-gpu",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 5,
+                "changes": 13
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 39,
+                "deletions": 35,
+                "changes": 74
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 689,
+                "deletions": 411,
+                "changes": 1100
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "aa28891eaee704c2bf152a4a15bef92f92d0d4fb",
+        "created_at": "2021-07-07 17:44:06 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-104-from-lelelelelez-master",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "0fb48539b813feef13fb4f826dc93ae51a198618",
+        "created_at": "2021-06-29 16:19:15 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-branch-master-into-pr_mi",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "6722f8a9253fccf9a0a250237da4f4d591b79fad",
+        "created_at": "2021-06-29 16:10:44 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-101-from-iducn-add_document_fix",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "af86ce61bff39f1599be1d789fc04bc868e21a55",
+        "created_at": "2021-06-15 15:50:47 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "document_fix-SKIP-PR",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "fa17a55fe192b38a64bec57d93775dd6b09efe7a",
+        "created_at": "2021-06-29 16:06:29 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "pr-mirgrate",
+        "files": [
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 22,
+                "changes": 45
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4acb5d4359fabe4fb4153f63904dfbcd5d747d62",
+        "created_at": "2021-06-01 14:53:50 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "document_fix",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f3fb03eba35458f52d08a94671f3d89dc8135dae",
+        "created_at": "2021-06-15 15:49:16 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "document_fix",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "65ee1bd834d5ec9db31097af0c0a64be39eab080",
+        "created_at": "2021-06-01 11:06:27 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "document_fix",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "7b3e71f49525e08549b7109e0110cf16dd5e088e",
+        "created_at": "2021-06-01 11:05:07 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "document_fix",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e000732f136dc37cca8e3f4ff5b9858178d75912",
+        "created_at": "2021-06-01 12:02:38 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "document_fix",
+        "files": [
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e03c527e48a97b4864d8a40d7bb06a7984209dc3",
+        "created_at": "2021-05-28 15:37:11 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "document_fix",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 11,
+                "changes": 19
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "31b166420316d75c284b302906b190ce94ef5b46",
+        "created_at": "2021-05-26 18:55:06 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-100-from-lelelelelez-github",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e261de5e78a76959966dcec8e14da7acb33254c1",
+        "created_at": "2021-05-27 10:14:38 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "document_fix",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "96075df324a2f5a845c61c95f672b1eac9acdc1a",
+        "created_at": "2021-05-26 18:40:16 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-migration",
+        "files": [
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 42,
+                "changes": 70
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "245f822f9e29f640e1b27f996c7147a439dcdd1b",
+        "created_at": "2021-05-20 16:09:56 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4f6554038af336e53548a2a9700a1423d4f41afa",
+        "created_at": "2021-05-20 12:07:45 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 25,
+                "changes": 48
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a0cd43de0e4ddbf5dd2f2e4e2cb90e925cecadfd",
+        "created_at": "2021-05-20 16:17:21 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-99-from-iducn-add_monitor",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "eef9aabb5af78151cb92a3ac5af3119c649c164a",
+        "created_at": "2021-05-20 16:06:50 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 20,
+                "changes": 38
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "54e0957b0ff012c850bf5b76363c846ce5d1f735",
+        "created_at": "2021-05-19 17:33:30 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-97-from-lelelelelez-merge",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "7e01d681cfbf80acb45ca207bacd0ed6dcd4d5ec",
+        "created_at": "2021-05-20 09:47:02 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 50,
+                "deletions": 0,
+                "changes": 50
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "6df573e8d1882689b5f2a8363c30f8b2d5055ef7",
+        "created_at": "2021-04-30 11:17:03 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-merge-list",
+        "files": [
+            {
+                "filename": "gitee/handler.py",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "gitee/pr_merge.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 6,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "2e9c683980de5b7c5d20661875d1262b37bd8d4a",
+        "created_at": "2021-05-19 17:29:29 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-PaddleOCR",
+        "files": [
+            {
+                "filename": "tools.txt",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 4,
+                "changes": 18
+            },
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 65,
+                "deletions": 38,
+                "changes": 103
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "686d390901ccbc1cdfcc3ae47497103ba5a3aea1",
+        "created_at": "2021-04-26 18:28:36 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-pr",
+        "files": [
+            {
+                "filename": "gitee/handler.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7
+            },
+            {
+                "filename": "gitee/pr_merge.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            },
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 146,
+                "deletions": 55,
+                "changes": 201
+            },
+            {
+                "filename": "gitee/update_code.sh",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 2,
+                "changes": 12
+            },
+            {
+                "filename": "webservice/conf/job.conf",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "webservice/scheduler.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "7c74d62d49b2177f2dfb1d67031c2d42e111c561",
+        "created_at": "2021-04-27 18:07:07 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-95-from-lelelelelez-pr1",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "17a607588cd615ea61c8ab1f62b5e2cce23956e1",
+        "created_at": "2021-04-26 18:09:37 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-94-from-iducn-to_gitee",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "87f18243997eea1111d2345df957ea6513b28a6d",
+        "created_at": "2021-04-01 09:39:40 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-gitee",
+        "files": [
+            {
+                "filename": "gitee/GithubToGitee.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/scheduler.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "458795d07a9eecc6ea4b5984f3cf8ea1f63a7038",
+        "created_at": "2021-03-31 18:09:49 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-gitee",
+        "files": [
+            {
+                "filename": "gitee/GithubToGitee.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 48,
+                "changes": 75
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "58ff9e4e9ae469c38ccf8943cec567cecf825039",
+        "created_at": "2021-03-31 15:30:11 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-gitee",
+        "files": [
+            {
+                "filename": "gitee/GithubToGitee.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a5ad862e760ce5a31dcc001d2e1de49b16e1a1ad",
+        "created_at": "2021-03-31 16:01:24 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-gitee",
+        "files": [
+            {
+                "filename": "gitee/GithubToGitee.py",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 37,
+                "changes": 70
+            },
+            {
+                "filename": "webservice/scheduler.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a94290c2a2c415311ca5d8c92d8842f8b994bd24",
+        "created_at": "2021-03-31 15:28:56 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-gitee",
+        "files": [
+            {
+                "filename": "gitee/GithubToGitee.py",
+                "status": "modified",
+                "additions": 72,
+                "deletions": 58,
+                "changes": 130
+            },
+            {
+                "filename": "gitee/Issue_main.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 20,
+                "changes": 20
+            },
+            {
+                "filename": "webservice/conf/job.conf",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 3,
+                "changes": 10
+            },
+            {
+                "filename": "webservice/scheduler.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 11,
+                "changes": 22
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "c20f544f1c3553461eaa1400a8b571ef55accc71",
+        "created_at": "2021-03-30 16:38:58 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-gitee",
+        "files": [
+            {
+                "filename": "gitee/GithubToGitee.py",
+                "status": "modified",
+                "additions": 155,
+                "deletions": 142,
+                "changes": 297
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "86b46da1c09150c9b968371ed86b657c14b30b3c",
+        "created_at": "2021-03-30 11:21:00 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-gitee",
+        "files": [
+            {
+                "filename": "gitee/GithubLabelToGitee.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 12,
+                "changes": 21
+            },
+            {
+                "filename": "gitee/GithubToGitee.py",
+                "status": "modified",
+                "additions": 83,
+                "deletions": 67,
+                "changes": 150
+            },
+            {
+                "filename": "gitee/Issue_main.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 9,
+                "changes": 19
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f76332b82c34de2386f32c5d98c51148fd007c0f",
+        "created_at": "2021-03-30 11:35:31 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-gitee",
+        "files": [
+            {
+                "filename": "gitee/GithubToGitee.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "gitee/Issue_main.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a884a298398977e0ca0fa13e40dc5115668399f4",
+        "created_at": "2021-03-30 11:14:58 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-gitee",
+        "files": [
+            {
+                "filename": "gitee/GithubLabelToGitee.py",
+                "status": "added",
+                "additions": 90,
+                "deletions": 0,
+                "changes": 90
+            },
+            {
+                "filename": "gitee/GithubToGitee.py",
+                "status": "added",
+                "additions": 358,
+                "deletions": 0,
+                "changes": 358
+            },
+            {
+                "filename": "gitee/Issue_main.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "77f03cd3606d81875cae18f3a0b6d59263e9f80b",
+        "created_at": "2021-03-23 16:21:30 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-91-from-lelelelelez-pr",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f371e5f489439743984b39627d6c797933ec8199",
+        "created_at": "2021-03-23 16:20:23 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update",
+        "files": [
+            {
+                "filename": "gitee/handler.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "gitee/pr_merge.py",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 2,
+                "changes": 38
+            },
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 19,
+                "changes": 55
+            },
+            {
+                "filename": "gitee/update_code.sh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e5f90f2b2362f4f09a6b59923e3b166757a0230a",
+        "created_at": "2021-03-22 20:36:25 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "pr",
+        "files": [
+            {
+                "filename": "gitee/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "gitee/handle.py",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "gitee/pr_merge.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "gitee/pr_migration.py",
+                "status": "added",
+                "additions": 203,
+                "deletions": 0,
+                "changes": 203
+            },
+            {
+                "filename": "gitee/update_code.sh",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "611f3ed62edadee02e5553fe30f57ab7688d4a84",
+        "created_at": "2021-03-03 15:09:42 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-89-from-lelelelelez-continousci",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f0edcfbf5ca085cc35118205433ec3e7da9fea3f",
+        "created_at": "2021-03-03 15:09:03 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-88-from-lelelelelez-confict",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a30ead30570bcde43aed7ac36a8501c6908fee6f",
+        "created_at": "2021-03-03 15:09:28 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-90-from-lelelelelez-analy",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "55779a0367f4ebe669d91d479d68843319ff62be",
+        "created_at": "2021-03-01 19:50:42 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "analy-ci-log",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 83,
+                "deletions": 11,
+                "changes": 94
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4929a00f3466a084229b2649ffdb8030d8eec079",
+        "created_at": "2021-03-01 19:37:25 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-continuousFailedCIMonitor",
+        "files": [
+            {
+                "filename": "webservice/monitor/continuousFailedCIMonitor.py",
+                "status": "modified",
+                "additions": 37,
+                "deletions": 13,
+                "changes": 50
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "33d79d3cb81dee64fea366cc8ef3ec4af6f9995b",
+        "created_at": "2021-02-26 17:45:18 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-87-from-lelelelelez-fix",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ee7bda073b27bda874230312153babe40e34cc2c",
+        "created_at": "2021-03-01 19:34:19 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-code-confict-exception",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 207,
+                "changes": 208
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "bea882f1ee8cdaedbd9067b130eedc8209282085",
+        "created_at": "2021-02-25 14:45:03 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "fix-a-bug-in-test-document_fix",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 3,
+                "changes": 7
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 7,
+                "changes": 29
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1231d1b5bcbe51d20dba504f3829aaeb94a4e9f0",
+        "created_at": "2021-02-25 14:40:43 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-86-from-lelelelelez-cierrormonitor",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "af69386291812c95d82b796dd68d8d6523b88d24",
+        "created_at": "2021-02-22 17:15:32 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-continuousFailedCIMonitor",
+        "files": [
+            {
+                "filename": "webservice/monitor/continuousFailedCIMonitor.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1168d07067716bf4cf068bdfa663a13017cafa39",
+        "created_at": "2021-02-22 17:09:42 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-85-from-lelelelelez-except",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "63132ba8fa5ddbbc5aaddda69c7c2a5174a52fc6",
+        "created_at": "2021-01-29 14:17:45 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 2,
+                "changes": 13
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 85,
+                "deletions": 60,
+                "changes": 145
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 309,
+                "deletions": 113,
+                "changes": 422
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d8c0a8ba5ee9f64df3d6a4ea79cf257ddba5b61d",
+        "created_at": "2021-02-20 17:31:13 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "network-not-work",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 283,
+                "deletions": 238,
+                "changes": 521
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a711b325f4eb453326c0d2aaf92f4f375c2a1173",
+        "created_at": "2021-01-29 14:36:35 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-84-from-lelelelelez-analylog",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "665b421c3a8fa533b6fa4d7548b4803c2eb34204",
+        "created_at": "2021-01-25 16:04:13 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-83-from-lelelelelez-pr",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ae7858b113f49559c85d6b7d4abff8f38fc9c920",
+        "created_at": "2021-01-22 17:53:21 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-issue",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 1,
+                "changes": 15
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 34,
+                "changes": 67
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d3460e4f64e15c6b8dc3666f8d1608270f5a2591",
+        "created_at": "2021-01-25 16:00:11 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "pr-checktemplate",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 22,
+                "changes": 45
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 45,
+                "deletions": 35,
+                "changes": 80
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8adb06376afd6d2f429d41c54770a7f771a4fd88",
+        "created_at": "2021-01-22 17:58:06 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-82-from-lelelelelez-issue",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d4a32b8ae0773a779ed6c726d4fa184f75a825eb",
+        "created_at": "2021-01-22 14:40:15 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-81-from-lelelelelez-markci",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a96f360f8623e8926719d9a35dfa1287dc8c13dd",
+        "created_at": "2021-01-22 14:32:10 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "fix-bug-in-markci",
+        "files": [
+            {
+                "filename": "webservice/monitor/autoMarkTimeOutPR.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            },
+            {
+                "filename": "webservice/monitor/botMonitor.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "39b20fdb677587c1ab711692fa68888adcce627e",
+        "created_at": "2021-01-22 14:27:56 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-80-from-lelelelelez-queuemonitor",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3d1c8e550d467c93b9698d0e2fcf19a8fb83cf36",
+        "created_at": "2021-01-21 14:56:37 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-exception",
+        "files": [
+            {
+                "filename": "webservice/monitor/exceptionQueueCIMonitor.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 4,
+                "changes": 20
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f83f6117a98ca41162243c61145eb7ddabc6e73f",
+        "created_at": "2021-01-21 14:12:21 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-bot-monitor",
+        "files": [
+            {
+                "filename": "webservice/monitor/botMonitor.py",
+                "status": "added",
+                "additions": 83,
+                "deletions": 0,
+                "changes": 83
+            },
+            {
+                "filename": "webservice/monitor/restartSmee.sh",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "254f5068cc435d575cdb95302430c0c69d8512cb",
+        "created_at": "2021-01-14 19:35:42 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-77-from-lelelelelez-buildcache",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "98ee88e012e08c11024f6c6391c427efe2ea6114",
+        "created_at": "2021-01-21 14:17:28 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-79-from-lelelelelez-botmonitor",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "41fbc7add584e1d80bfd018b586b37bb7c929376",
+        "created_at": "2021-01-14 19:33:57 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-78-from-iducn-modify_shell",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1ac63c01f02cdab0dac3ce1d1dda2e706540d1f0",
+        "created_at": "2021-01-13 15:27:35 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-buildcache",
+        "files": [
+            {
+                "filename": "webservice/regularCIMail.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 6,
+                "changes": 22
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "7acbe16263b61ca7e5c43bee93e772b12f945957",
+        "created_at": "2021-01-04 20:18:05 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-76-from-lelelelelez-ciindex",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "00c7024e05ccac97c9e89a124ca3722729104fa8",
+        "created_at": "2021-01-14 17:10:20 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "modify-python-command",
+        "files": [
+            {
+                "filename": "scripts/check_code.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a4d81d9085e53125a596d1c467dcd0d9d005eb49",
+        "created_at": "2021-01-04 20:00:14 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-success-ci-task-ci-index",
+        "files": [
+            {
+                "filename": "webservice/regularCIMail.py",
+                "status": "modified",
+                "additions": 125,
+                "deletions": 98,
+                "changes": 223
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e6baceac76cbeb48912a7c2a3d83cd7492753693",
+        "created_at": "2020-12-31 16:29:55 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-75-from-lelelelelez-utalarm",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8385146f1793a2c5d8070645ce6a54567edb003b",
+        "created_at": "2020-12-31 15:12:10 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-ut-alarm",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 4,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ef633e687f5e48c9dd66c64bc38d875628304034",
+        "created_at": "2020-12-31 11:28:20 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-74-from-lelelelelez-precision",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f9c1fc92df86a54ae0a080e3e13297ab52e59567",
+        "created_at": "2020-12-25 16:14:41 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-73-from-lelelelelez-markcii",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "2e8966b217072a753cc097566403a633fc546104",
+        "created_at": "2020-12-31 11:24:56 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-precision",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 84,
+                "deletions": 47,
+                "changes": 131
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "81f195265e553da30de006518e7d5c8306ea35b5",
+        "created_at": "2020-12-25 16:02:39 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-mark-timeout-pr",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "webservice/monitor/autoMarkTimeOutPR.py",
+                "status": "modified",
+                "additions": 47,
+                "deletions": 11,
+                "changes": 58
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "72a7e65cbaa883c65bbfdbcb1e00002a371ade18",
+        "created_at": "2020-12-24 15:04:32 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-72-from-lelelelelez-exceptwait",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "2553a3a3d63dedb38b3bd304c56ea79c7fd49d60",
+        "created_at": "2020-12-10 19:51:06 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-71-from-lelelelelez-cache",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f63074faf9179c926dfca8ec54cc7674166293bc",
+        "created_at": "2020-12-10 19:44:11 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "ci-index-monitor",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 89,
+                "deletions": 56,
+                "changes": 145
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ea860b00fe73947cbdaf3ade59c4ad987a96e02c",
+        "created_at": "2020-12-24 14:57:02 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-exception-waitting-task",
+        "files": [
+            {
+                "filename": "tools.txt",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "webservice/monitor/exceptionQueueCIMonitor.py",
+                "status": "modified",
+                "additions": 42,
+                "deletions": 94,
+                "changes": 136
+            },
+            {
+                "filename": "webservice/utils/handler.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "webservice/utils/resource.py",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "9a025834a77473edd9c9a5959626686c3c094048",
+        "created_at": "2020-12-09 17:42:54 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-70-from-lelelelelez-killrerun",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "cab4e9075ee8a7b3bc74ff59d2dd8e07cebdf654",
+        "created_at": "2020-12-09 16:31:16 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "kill-job-and-rerun-job",
+        "files": [
+            {
+                "filename": "webservice/monitor/kill_timeout_runningJob.py",
+                "status": "modified",
+                "additions": 29,
+                "deletions": 15,
+                "changes": 44
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "80f275a5012f11bb7fa13a25bec10549b0372fe0",
+        "created_at": "2020-12-04 17:28:48 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-69-from-lelelelelez-kill",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "7f112bd4c5401b1f4e80d379642bd51d798827c4",
+        "created_at": "2020-12-04 17:26:20 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "kill-and-rerun-job",
+        "files": [
+            {
+                "filename": "webservice/monitor/kill_timeout_runningJob.py",
+                "status": "modified",
+                "additions": 58,
+                "deletions": 9,
+                "changes": 67
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "154ce4c2a1d3f11aeb2a25808440a7b6f1502479",
+        "created_at": "2020-12-03 15:56:52 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "optimizedcode",
+        "files": [
+            {
+                "filename": "webservice/monitor/autoRerunExceptionPR.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 16,
+                "changes": 21
+            },
+            {
+                "filename": "webservice/monitor/kill_timeout_runningJob.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 16,
+                "changes": 28
+            },
+            {
+                "filename": "webservice/monitor/queueCIMonitor.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 16,
+                "changes": 23
+            },
+            {
+                "filename": "webservice/utils/handler.py",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 145,
+                "changes": 167
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3bd824918b55a56b9fa4c9a577404c6bad5094fe",
+        "created_at": "2020-12-03 10:57:50 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-66-from-lelelelelez-checkrun",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ebd02932fdc1212196fefc924c547a594f464c56",
+        "created_at": "2020-12-03 15:59:14 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-68-from-lelelelelez-optimizedcode",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "90431fd5a73efdcb8021d819ac35b44e5d2ee54c",
+        "created_at": "2020-12-02 21:37:31 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "modify-pre-commit",
+        "files": [
+            {
+                "filename": "scripts/check_code.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "6349cacc5816d0b9bb4598570f599b5c0df58096",
+        "created_at": "2020-12-02 21:40:34 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "modify-pre-commit",
+        "files": [
+            {
+                "filename": "scripts/check_code.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "15ddf50974cc030e29d10cf11c4120df4b845ef4",
+        "created_at": "2020-12-03 10:51:35 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-67-from-iducn-modify_precommit",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "fc2d39f5519d9c0c46f2d3c7ed0ce8c5ec196350",
+        "created_at": "2020-12-01 16:05:24 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-check_run",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 31,
+                "changes": 64
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "2bd21044b0c5d66f07ee286485ca60f1bc4d3f14",
+        "created_at": "2020-12-01 14:38:15 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-65-from-lelelelelez-mail",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "2825c9381f0b316afb27ade249bafa5b4a47af8f",
+        "created_at": "2020-12-01 14:23:32 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-regularCIMail",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 8,
+                "changes": 8
+            },
+            {
+                "filename": "webservice/regularCIMail.py",
+                "status": "modified",
+                "additions": 657,
+                "deletions": 463,
+                "changes": 1120
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3654ca64e038f5311b9755075358bfb72b54fbd9",
+        "created_at": "2020-11-27 15:11:36 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-64-from-lelelelelez-rerun",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "00527072bda3b5651a6bacd156d9dd12c2fd8265",
+        "created_at": "2020-11-26 17:49:27 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-62-from-lelelelelez-db",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "23790faf179f37ef0ca3e69dac6529ce3eca1eca",
+        "created_at": "2020-11-26 19:55:50 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "rerun-exception-pr",
+        "files": [
+            {
+                "filename": "webservice/monitor/autoRerunExceptionPR.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 5,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "cd2d27d2a515fd8f1488e90ab7f78461c48b467d",
+        "created_at": "2020-11-26 19:51:55 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "rerun-exception-pr",
+        "files": [
+            {
+                "filename": "webservice/monitor/autoRerunExceptionPR.py",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "506fdccb581547a2ce4ea0b88ed56d4cf3457fc2",
+        "created_at": "2020-11-26 10:48:45 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "optimization-design-in-inform-users",
+        "files": [
+            {
+                "filename": "webservice/monitor/autoMarkTimeOutPR.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "bd1e961205290dc1986a03e73fa556dd50db37f0",
+        "created_at": "2020-11-26 17:49:10 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-61-from-lelelelelez-mark",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3a1e2cbfdbdf8ca05617640aa80444715c38086a",
+        "created_at": "2020-11-26 17:28:47 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "mark-ci-by-paddlebot-not-in-db",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 64,
+                "deletions": 56,
+                "changes": 120
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            },
+            {
+                "filename": "webservice/utils/handler.py",
+                "status": "added",
+                "additions": 270,
+                "deletions": 0,
+                "changes": 270
+            },
+            {
+                "filename": "webservice/utils/handler_xly.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 66,
+                "changes": 66
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "5044f14cb1d91ff706f0a8d597b6378c4f6819b5",
+        "created_at": "2020-11-24 11:45:07 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-60-from-lelelelelez-markci",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "54ec9498340d1f2664c7dab964330a3e24f6bce6",
+        "created_at": "2020-11-24 10:43:04 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "mark-timeout-ci-failed",
+        "files": [
+            {
+                "filename": "webservice/monitor/autoMarkTimeOutPR.py",
+                "status": "added",
+                "additions": 195,
+                "deletions": 0,
+                "changes": 195
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3dc1355c3104998cd4f46b33ddacd2d547abbe74",
+        "created_at": "2020-11-24 10:29:50 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-59-from-lelelelelez-waitjob",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "9ab1541bb72568cb2b155fdd871d348d44489cc7",
+        "created_at": "2020-11-23 19:58:46 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-exception-waiting-job-monitor",
+        "files": [
+            {
+                "filename": "webservice/monitor/exceptionQueueCIMonitor.py",
+                "status": "added",
+                "additions": 167,
+                "deletions": 0,
+                "changes": 167
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "0c86ffa59c011a2713f43608555fef50265b56ad",
+        "created_at": "2020-11-23 14:07:41 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-58-from-iducn-modify_issue_info",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "70e83cc593467a243b0827d8ce8ef51b627e0530",
+        "created_at": "2020-11-19 17:18:53 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-57-from-lelelelelez-xly",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "fa2c036eed89076f83838700f8f716f20dbc8532",
+        "created_at": "2020-11-18 18:49:26 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-56-from-lelelelelez-waiting",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "34f3770b6deb354f04fba502c8041317290ab1f5",
+        "created_at": "2020-11-19 16:02:38 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "change-xly-job",
+        "files": [
+            {
+                "filename": "webservice/monitor/getALLCIExecTime.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "webservice/monitor/kill_timeout_runningJob.py",
+                "status": "modified",
+                "additions": 51,
+                "deletions": 73,
+                "changes": 124
+            },
+            {
+                "filename": "webservice/monitor/queueCIMonitor.py",
+                "status": "modified",
+                "additions": 91,
+                "deletions": 10,
+                "changes": 101
+            },
+            {
+                "filename": "webservice/utils/getJob_xly.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 55,
+                "changes": 55
+            },
+            {
+                "filename": "webservice/utils/handler_xly.py",
+                "status": "added",
+                "additions": 66,
+                "deletions": 0,
+                "changes": 66
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e277a72307849887920b4198f7fd2bce64c78e26",
+        "created_at": "2020-11-20 15:39:51 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "5c8bee36946bd22bcf7dd39ceeccf5dc5a0e4528",
+        "created_at": "2020-11-18 15:56:11 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "fix-waitting-queue",
+        "files": [
+            {
+                "filename": "webservice/conf/monitor.json",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "webservice/monitor/getALLCIExecTime.py",
+                "status": "modified",
+                "additions": 90,
+                "deletions": 65,
+                "changes": 155
+            },
+            {
+                "filename": "webservice/monitor/queueCIMonitor.py",
+                "status": "modified",
+                "additions": 264,
+                "deletions": 252,
+                "changes": 516
+            },
+            {
+                "filename": "webservice/utils/auth_ipipe.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "cf534bc14a1e950d753e4ee1f7db7a8670027371",
+        "created_at": "2020-11-12 19:54:04 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-54-from-lelelelelez-httpserver",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "98ac912437821a7d608f407bf5a880f7f79d4ccd",
+        "created_at": "2020-11-12 19:53:50 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-55-from-lelelelelez-timeoutJob",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "57cb0512f2947186021b8f136d0d42f3953a5d10",
+        "created_at": "2020-11-12 16:16:59 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "kill-timeout-job",
+        "files": [
+            {
+                "filename": "webservice/monitor/kill_timeout_runningJob.py",
+                "status": "modified",
+                "additions": 165,
+                "deletions": 134,
+                "changes": 299
+            },
+            {
+                "filename": "webservice/utils/getJob_xly.py",
+                "status": "added",
+                "additions": 55,
+                "deletions": 0,
+                "changes": 55
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "fbef7d77c4c60a41668bf8a7fd7d5c8cbee65a3f",
+        "created_at": "2020-11-11 18:10:03 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "webservice/http_server.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3d456399f79da6fc7dd357df1838b671a61d193c",
+        "created_at": "2020-11-11 18:08:57 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-httpserver",
+        "files": [
+            {
+                "filename": "webservice/http_server.py",
+                "status": "added",
+                "additions": 155,
+                "deletions": 0,
+                "changes": 155
+            },
+            {
+                "filename": "webservice/utils/auth_ipipe.py",
+                "status": "modified",
+                "additions": 56,
+                "deletions": 26,
+                "changes": 82
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4ec09e070730b250d6dd58a293120176aefc1996",
+        "created_at": "2020-11-05 17:32:58 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue",
+        "files": [
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 9,
+                "changes": 25
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e21c55328d44ce9d3b549755321e01c9d7c46641",
+        "created_at": "2020-10-30 10:24:37 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-52-from-iducn-issue_close",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "0d0924a3bfc3a66def80a4b91cef6265969c8a3d",
+        "created_at": "2020-11-09 11:19:04 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-53-from-iducn-modify_issue_code",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "686c10f7e900dc2f9ecd5461136c696cf98e7aac",
+        "created_at": "2020-10-29 14:56:29 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8a1eeaa8579398f637f43406e2cb18a736dae69b",
+        "created_at": "2020-10-27 17:54:08 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 10,
+                "changes": 13
+            },
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "075e68608e11fb096708bc2dcdeabe2d0b062ba1",
+        "created_at": "2020-10-29 11:11:27 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 7,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d371639fb0f7f773f041f233db89c0f5db8fe756",
+        "created_at": "2020-10-27 17:45:16 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-48-from-iducn-add_mail",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "9a9c9a4de68f5083fd5d74a7ff29eb3a72f3617c",
+        "created_at": "2020-10-27 16:25:25 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-pr",
+        "files": [
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 10,
+                "changes": 20
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "5d08e19730508f823ca24189a2cdf5dfc92b734a",
+        "created_at": "2020-10-27 15:05:28 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f13137ff3ca2ace4b35198f0e17030cb4d911d3d",
+        "created_at": "2020-10-27 14:27:42 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 15,
+                "changes": 40
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3f01fab4e0d9f4cb35ebde6515f4a986554687bd",
+        "created_at": "2020-10-27 14:14:24 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 4,
+                "changes": 31
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "b64586dd386501aef740296fd6ba401a8b2d2173",
+        "created_at": "2020-10-22 20:24:44 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "cancel-timeout-job",
+        "files": [
+            {
+                "filename": "webservice/monitor/kill_timeout_runningJob.py",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a091d600e9295a861d8d07834b5bf3d84cffacb5",
+        "created_at": "2020-10-22 18:54:53 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-50-from-lelelelelez-assign",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a6c126c216d51b250b24c2078a4b6bf3160372d3",
+        "created_at": "2020-10-26 10:51:27 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-51-from-lelelelelez-cancelJob",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e8ef84732f24b3e91f25087e5cc30fbbf7e5836c",
+        "created_at": "2020-10-21 14:51:06 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-auto-assign",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "webservice/monitor/queueCIMonitor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 4,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "fcbe44fa356ed671e439ede80e8fe73bf507864a",
+        "created_at": "2020-10-19 20:31:21 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-monitor",
+        "files": [
+            {
+                "filename": "webservice/conf/monitor.json",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "webservice/monitor/getALLCIExecTime.py",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "webservice/monitor/queueCIMonitor.py",
+                "status": "modified",
+                "additions": 221,
+                "deletions": 126,
+                "changes": 347
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "73833809f713308beafc87b9960bdc76358233f6",
+        "created_at": "2020-10-14 16:43:35 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-pr",
+        "files": [
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1ad96baaf9be2431f61b83a0d0528439aadfb1f4",
+        "created_at": "2020-10-20 10:17:50 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-49-from-lelelelelez-monitor",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ee56d09668522de3aea7b63b11a0e4624da778e3",
+        "created_at": "2020-10-13 15:25:59 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-pr",
+        "files": [
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8325de0f72a9e1b84dabec62402b3b40be21ac74",
+        "created_at": "2020-10-13 15:24:36 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-pr",
+        "files": [
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "fee9dce17adb9c66f5666a6d9b1ff5afad3475d7",
+        "created_at": "2020-10-13 15:16:21 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "issue-pr",
+        "files": [
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a9ba66ac4d6f6c51a3616883798117b3a45a7d62",
+        "created_at": "2020-09-28 16:51:05 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-47-from-lelelelelez-update",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "0547b08a2dd9d67a511ae1ddf1a4db5d665d9bce",
+        "created_at": "2020-09-28 16:42:02 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update",
+        "files": [
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 30,
+                "deletions": 18,
+                "changes": 48
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1f1e34df8c163a7b7c86eeb2d5747336608f1054",
+        "created_at": "2020-09-25 15:52:11 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-windows-single-card",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 9,
+                "changes": 24
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "77085aa079b056ba568062fa3f838e445dd8f078",
+        "created_at": "2020-09-27 10:54:08 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-46-from-lelelelelez-win",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "eedec850227fe393605c45c3d317046efb39074f",
+        "created_at": "2020-09-25 15:44:58 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-45-from-lelelelelez-utfailed",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "adcdac0a6ae9d459cb0955407e088ea1acaacedc",
+        "created_at": "2020-09-24 11:13:02 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-43-from-lelelelelez-updatelog",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "be77a5b18eda6c4d9fcf997a5a1a51de97b6141d",
+        "created_at": "2020-09-24 15:55:39 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-failed-uts",
+        "files": [
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 127,
+                "deletions": 88,
+                "changes": 215
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1c4a9ccd99a312c75013775ffee3dfe074f31508",
+        "created_at": "2020-09-24 11:09:47 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-44-from-iducn-comment_format",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "9e3c996e655932317192c74c53a6adc97134c1bb",
+        "created_at": "2020-09-23 19:27:46 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "add-and-pr-num",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "dea67279cd1e9d5d3a5a6fa4d3215bc1555118a5",
+        "created_at": "2020-09-23 17:45:14 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "modify-comment",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "331e0d93d3216b5eb4b1faefd8f3d6b0b43b68b6",
+        "created_at": "2020-09-22 19:58:24 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "update-ci-send-mail",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "webservice/regularCIMail.py",
+                "status": "modified",
+                "additions": 354,
+                "deletions": 250,
+                "changes": 604
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "b5b435dc195588f84f4d77c161a311c66a5baf5a",
+        "created_at": "2020-09-22 17:49:38 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-42-from-iducn-pr_num_format",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4f31d650202a641a2ba2c34923762e3723b028ad",
+        "created_at": "2020-09-22 15:55:21 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "add-and-pr-num",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "dbb56a05c4597736a9644a8d7fb00698055c68ae",
+        "created_at": "2020-09-22 16:31:29 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "add-and-pr-num",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "823c73836c28b19b1a70587a2fa14b6e2c5bfdff",
+        "created_at": "2020-09-22 16:11:01 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-41-from-iducn-pr_num",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "98c38741933433f60c7868f8ee61052ccd50a1a5",
+        "created_at": "2020-09-22 15:53:48 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "add-and-pr-num",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "014aecd12c87823dc8aeb53a645cafd5cd262f0b",
+        "created_at": "2020-09-22 14:26:29 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "add-pr-num",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 5,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d2135e2825f0ccf06a140f841342045602048ccb",
+        "created_at": "2020-09-22 15:39:10 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "add-and-pr-num",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 4,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "0e4476cc4b57d05687af629e910222d2a1773c20",
+        "created_at": "2020-09-17 11:04:51 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-39-from-lelelelelez-set1",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "c6bf82f175970198a1bbafb61bc520a1400776a3",
+        "created_at": "2020-09-17 11:04:07 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-set",
+        "files": [
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 132,
+                "changes": 153
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "fa2d796ca23313e3270fe0179e53e13ae5c77c9c",
+        "created_at": "2020-09-17 10:58:04 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-38-from-lelelelelez-set",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e1cb568fabc395449161669a707410602ac0de3c",
+        "created_at": "2020-09-17 10:55:55 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-set",
+        "files": [
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f4a3b5a99118f1a4b4b1d38c0e3ab891d106ba0a",
+        "created_at": "2020-09-17 10:49:41 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-37-from-lelelelelez-set",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4d487b4f31e046216a17cff903a940f3855a8ae7",
+        "created_at": "2020-09-11 16:07:25 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "pr-failed",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 57,
+                "deletions": 83,
+                "changes": 140
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 371,
+                "deletions": 133,
+                "changes": 504
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "dcdd0fdc80414f9a44a418ab7ee54151880ad2a8",
+        "created_at": "2020-09-14 18:01:03 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-36-from-lelelelelez-prfailed",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "32f20f68ce74a748c23d87c3c7729c907861cf30",
+        "created_at": "2020-09-17 10:48:12 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-setuo",
+        "files": [
+            {
+                "filename": "setup.py",
+                "status": "added",
+                "additions": 140,
+                "deletions": 0,
+                "changes": 140
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "c1cee611803321e2a42f6eb0e2af451c42795e4b",
+        "created_at": "2020-08-28 17:44:41 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-35-from-lelelelelez-monitor",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "439c82488e8ec69af0df274b197f388a3163725c",
+        "created_at": "2020-08-28 16:41:54 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "monitor",
+        "files": [
+            {
+                "filename": "webservice/monitor/gitCloneMonitor.py",
+                "status": "added",
+                "additions": 112,
+                "deletions": 0,
+                "changes": 112
+            },
+            {
+                "filename": "webservice/monitor/last4hoursMonitor.py",
+                "status": "modified",
+                "additions": 43,
+                "deletions": 21,
+                "changes": 64
+            },
+            {
+                "filename": "webservice/monitor/queueCIMonitor.py",
+                "status": "added",
+                "additions": 182,
+                "deletions": 0,
+                "changes": 182
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e820ce3f788612c3c5aa7be122a581bf257639a6",
+        "created_at": "2020-08-28 16:49:22 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-branch-master-into-monitor",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8b54e88d80c6b92995ff27327a9f16e0a125a348",
+        "created_at": "2020-08-24 17:24:38 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-34-from-randytli-updateclean",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "09b3ef96fd20cd6369fb723c10676d204aad3a55",
+        "created_at": "2020-08-24 16:48:39 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fix-bugs",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "1e612a06e422a1547157886a545a9a959ed377a5",
+        "created_at": "2020-08-24 11:35:48 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "resolve-conflicts-up-to-date",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "9b9fa92a6c611d0ba77b817632d9288e07b34326",
+        "created_at": "2020-08-24 14:59:44 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "add-parent-sha-log",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "408fa14825bfd9e595d94e09a3c70138a11e779e",
+        "created_at": "2020-08-20 15:08:43 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "update-clean-parent-comments-logic",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 21,
+                "changes": 46
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "54550f5c03ab0afcf38b59c55f5b21538f007aa2",
+        "created_at": "2020-08-24 10:45:03 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-32-from-lelelelelez-cancel",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "b90d50c6bc3badcc134f40f4f722d22652d2089b",
+        "created_at": "2020-08-21 15:13:52 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fixed-bugs-and-style-after-test-on-benchmark",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 13,
+                "changes": 23
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8a5d6d951787d2bae80aa511472c961f59a95fab",
+        "created_at": "2020-08-18 17:30:50 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fix-bug",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 7,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "422e3d06010203d7223326f666a8df9ba7b35731",
+        "created_at": "2020-08-18 17:14:16 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fix-bug",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 47,
+                "deletions": 38,
+                "changes": 85
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3cb9b6abcebeaaebf106db3a8c4e3400d092b323",
+        "created_at": "2020-08-17 15:47:55 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-cancel-logic",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 104,
+                "deletions": 81,
+                "changes": 185
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "5fc875df4ca89b6054f31b70dd76e9a30794fe0c",
+        "created_at": "2020-08-17 15:36:44 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-30-from-lelelelelez-monitor",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "45a87939debbbe4e11afe16ca3ff78b59a4f7723",
+        "created_at": "2020-08-11 17:42:27 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "send-email-when-change-success-comment-to-failure",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "03c278115e8f80e2648473882a5d007bbb25a2b4",
+        "created_at": "2020-08-11 14:47:03 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-branch-master-into-monitor",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "03e91f587c423741d3d1ff438bf98cf372adba58",
+        "created_at": "2020-08-11 10:25:25 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fixed-verbose-log-and-required-ci",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 26,
+                "changes": 42
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 19,
+                "changes": 24
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "7c0684ea4ee095b5bc22f3ae4d091c08c96cf6ec",
+        "created_at": "2020-08-11 14:05:36 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-29-from-randytli-cibr1",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "eff55c9c1c752e7649fdfe0266b43e647b1d8d00",
+        "created_at": "2020-08-10 19:26:26 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-CImonitor",
+        "files": [
+            {
+                "filename": "webservice/conf/job.conf",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7
+            },
+            {
+                "filename": "webservice/monitor.py",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "webservice/scheduler.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 2,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ec6870869c34571e603e1430f1761e01bfcc319d",
+        "created_at": "2020-08-10 19:24:55 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fixed-bugs",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 9,
+                "changes": 34
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "c254a0634b1d426967a40212e5a5fbe414392a50",
+        "created_at": "2020-08-10 19:20:48 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fixed-bugs",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 55,
+                "deletions": 33,
+                "changes": 88
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "27b304c5ed5544800a14dbc1da3dc11a2020ce98",
+        "created_at": "2020-08-10 14:09:13 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "add-release1.8-ci",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "01374ffdc8702d096c99049b71820967c95bfc51",
+        "created_at": "2020-08-07 18:06:28 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "ci-failure-summary-new-functions",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 42,
+                "deletions": 8,
+                "changes": 50
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "63d59331f7347cc664793673da0a8486c884f1b5",
+        "created_at": "2020-08-07 17:42:52 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-27-from-randytli-cibr",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e440abc4015b5e9e694e323391c4833c8a680509",
+        "created_at": "2020-08-06 16:10:30 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "resolve-cannot-update-bullet-issue",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d25e24067b23618d4ae9ac60fd2667a22dd3ea9f",
+        "created_at": "2020-08-07 15:00:03 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "ready-to-merge",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 61,
+                "deletions": 47,
+                "changes": 108
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "72e5cb6609253837683522da2e8fd138e67a7ea9",
+        "created_at": "2020-08-07 10:19:22 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fix-bug",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 6,
+                "changes": 17
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "168196dc7d3ed30c3944071cf23feb42efeb0a96",
+        "created_at": "2020-08-04 11:59:38 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "optimize-complexity",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 93,
+                "deletions": 106,
+                "changes": 199
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ce03fe14b379810e2b83f57db8bc3cf824a08341",
+        "created_at": "2020-07-31 17:58:37 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fixed-style",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 14,
+                "changes": 35
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "0fa979dd545904e0dbb396eb8369e30904ce7ab5",
+        "created_at": "2020-08-06 15:02:27 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fix-bugs",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 73,
+                "deletions": 28,
+                "changes": 101
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "379e10fb9d83a24632e016a8b72c6a73e2ca9875",
+        "created_at": "2020-07-31 17:57:03 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "optimize-code-after-test-on-benchmark",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 101,
+                "deletions": 83,
+                "changes": 184
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "8d0dd626ecac32cd605ae06303719fa6f360b218",
+        "created_at": "2020-07-27 19:40:24 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "handle-more-cases",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 42,
+                "deletions": 13,
+                "changes": 55
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 4,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "9ed728d3fc5bbcdb3e9eb57df15a71d20dd9a2df",
+        "created_at": "2020-07-27 11:38:14 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "only-scan-success-and-failed-ci",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 61,
+                "deletions": 37,
+                "changes": 98
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "e91e6d8837cc5924391dfd8574fc167ee7c04e53",
+        "created_at": "2020-07-23 11:53:44 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "pull-from-master",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "542f16d5a33cd97a21c06e6606bcb4283c45c730",
+        "created_at": "2020-07-23 11:56:26 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fixed-style",
+        "files": [
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "94b7fc4126e6a427270bdde8e4dff2a1e74ca3f8",
+        "created_at": "2020-07-23 11:36:34 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fixed-config",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "93f10aa46f697f9810a9eee8f05ef7c6c6e7a536",
+        "created_at": "2020-07-23 11:34:42 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "resolve-conflicts",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "3dab2b9f9bc56940b44c755dada61daaf5da9ab4",
+        "created_at": "2020-07-23 11:39:43 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-24-from-randytli-dev",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f7cc8aa24e753f80ca869c9ed4a67b61d93d62a4",
+        "created_at": "2020-07-23 11:08:39 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fixed-bugs",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "7aeddef802399f2fce278266334e728ecee9444b",
+        "created_at": "2020-07-23 11:14:34 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "fixed-bug",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "2e3317b43368698a0cc80f57bbe68c6c12a404ba",
+        "created_at": "2020-07-22 21:49:15 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "drop-7d03fb2-comments-after-correct-pr-description",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 2,
+                "changes": 16
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 50,
+                "deletions": 2,
+                "changes": 52
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "7d03fb20585ff9abcc75a9074b0f03ee8cc97e54",
+        "created_at": "2020-07-22 15:35:06 +0800",
+        "author": "randytli",
+        "committer": "randytli",
+        "message": "comments-after-correct-pr-description",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 1,
+                "changes": 14
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f77637532e9fcbbeefd0521071f5bf0457dd73c8",
+        "created_at": "2020-07-20 11:06:59 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-18-from-lelelelelez-mail",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "d57789cb49b38f67543ac2d1d1e20c94e2b092a5",
+        "created_at": "2020-07-20 10:48:09 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-19-from-lelelelelez-rmtestdevelop",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "6d3b07abf0515bde711ffdbe015912ffc6b1889f",
+        "created_at": "2020-07-16 19:38:03 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "rm-testdevelop-ci-trigger",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 15,
+                "changes": 18
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 16,
+                "changes": 30
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 4,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f4a91f16a53fdf56817e7c249d6d8d25f05230d9",
+        "created_at": "2020-07-16 19:32:35 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-ci-index-mail",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 1,
+                "changes": 13
+            },
+            {
+                "filename": "webservice/regularCIMail.py",
+                "status": "added",
+                "additions": 403,
+                "deletions": 0,
+                "changes": 403
+            },
+            {
+                "filename": "webservice/utils/convert.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "webservice/utils/mail.py",
+                "status": "added",
+                "additions": 65,
+                "deletions": 0,
+                "changes": 65
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "fb35a966a4cd1fed1be492c3d89d7c491210401b",
+        "created_at": "2020-07-03 19:20:50 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "fix-a-bug-in-get-queue",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 18,
+                "changes": 30
+            },
+            {
+                "filename": "webservice/utils/convert.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "74f1209805a7aad1004ecfdef343ea668d31d96e",
+        "created_at": "2020-07-07 10:55:46 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-16-from-lelelelelez-queue",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "00225f8df7ce54c3a8777a2bd64a558e0e894648",
+        "created_at": "2020-06-24 14:06:43 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-15-from-lelelelelez-ci",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "c9d31fc3299ea7ecf82568d34942d6530044feda",
+        "created_at": "2020-06-24 10:26:56 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "monitor-ci-index",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 42,
+                "deletions": 0,
+                "changes": 42
+            },
+            {
+                "filename": "webservice/utils/analyze_buildLog.py",
+                "status": "added",
+                "additions": 204,
+                "deletions": 0,
+                "changes": 204
+            },
+            {
+                "filename": "webservice/utils/auth_ipipe.py",
+                "status": "added",
+                "additions": 41,
+                "deletions": 0,
+                "changes": 41
+            },
+            {
+                "filename": "webservice/utils/db.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "aed01de05a2fd1d7faba2226fab9be2067034f9d",
+        "created_at": "2020-06-23 15:24:08 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-12-from-lelelelelez-ci",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "44b74969764f42aa84c003adc47b05a3290afa49",
+        "created_at": "2020-06-23 13:59:00 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-14-from-iducn-add_tsinghua",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "6b80d199e5b6ca6b6c3633162824c4bff0a5425d",
+        "created_at": "2020-06-23 11:53:16 +0800",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "add-tsinghua-mirror-to-pip-install",
+        "files": [
+            {
+                "filename": "scripts/check_code.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "4608b6bf88f4a6a40a1006b63afa0edf1dabbb14",
+        "created_at": "2020-06-19 19:07:39 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "triger-ci",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "89e5fbc1532f20813c7baaa86517eb4eb41c54f8",
+        "created_at": "2020-06-17 14:10:13 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-11-from-lelelelelez-lower",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "c089e40b8a686a31406b3dedbbad975444c599de",
+        "created_at": "2020-06-09 10:12:39 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-7-from-lelelelelez-close",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "77bc925fd6ed391d5fdda97756e0aae75b5d04db",
+        "created_at": "2020-06-11 15:33:59 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "ignore-upper-lower",
+        "files": [
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 5,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "9e799a77ab2a42b3c46780129e4952c9de85daa7",
+        "created_at": "2020-06-08 20:34:43 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "regular-close-by-apscheudule",
+        "files": [
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/conf/job.conf",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 3,
+                "changes": 11
+            },
+            {
+                "filename": "webservice/scheduler.py",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "webservice/utils/readConfig.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "04db2b7962c7fb694d9a0677437873534a750502",
+        "created_at": "2020-06-10 14:59:17 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "check-cherry-pick-pr",
+        "files": [
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 11,
+                "changes": 28
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "0c08b03b1b8be94aef1d370500768b9de75b5532",
+        "created_at": "2020-06-11 14:04:38 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-10-from-lelelelelez-cherry",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a954a15e85d402c9e9eed6c9c954ae47a186c07f",
+        "created_at": "2020-06-03 20:47:10 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-6-from-lelelelelez-prtem",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "550e2b27149388c22bcc05e78f72f409199b7fe9",
+        "created_at": "2020-06-03 20:26:46 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "check-PR-template",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 8,
+                "changes": 14
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 8,
+                "changes": 15
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 48,
+                "deletions": 34,
+                "changes": 82
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "2ba2bca45905cf38fedf12be2312c7b0608bbe41",
+        "created_at": "2020-06-01 14:59:50 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-5-from-lelelelelez-close",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "345602e42518ceb0d9e03dda2dcb9ab085443c34",
+        "created_at": "2020-06-01 14:44:19 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "re-add",
+        "files": [
+            {
+                "filename": "webservice/__main__.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 5,
+                "changes": 11
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 57,
+                "deletions": 13,
+                "changes": 70
+            },
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 17,
+                "changes": 50
+            },
+            {
+                "filename": "webservice/utils/auth.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 8,
+                "changes": 17
+            },
+            {
+                "filename": "webservice/utils/readConfig.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "ef587e37b653c8bd6696315786ec12bbe497ed51",
+        "created_at": "2020-05-22 18:43:08 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "modify-regularClose",
+        "files": [
+            {
+                "filename": "webservice/__main__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 23,
+                "changes": 46
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 11,
+                "changes": 24
+            },
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 4,
+                "changes": 13
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 39,
+                "deletions": 21,
+                "changes": 60
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "81eb3219796a4661b31c856d3f712676b51dcc98",
+        "created_at": "2020-05-11 11:17:55 +0000",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "modify-check_code.sh-and-add-check-shell-script",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9
+            },
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "scripts/check_code.sh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "scripts/codestyle/shell_pre_commit.hook",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "34d55b750fe52710f90fb0bce912036d68bd9795",
+        "created_at": "2020-05-11 19:30:41 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-3-from-iducn-Add_travis_and_pre-commit",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "a3abec8ba7a744c8b6cf3f156010756be8b992e9",
+        "created_at": "2020-05-11 11:25:18 +0000",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "modify-check_code.sh",
+        "files": [
+            {
+                "filename": "scripts/check_code.sh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "389a86eda238e29e423b4eea795b5a187fd826c1",
+        "created_at": "2020-05-11 08:10:45 +0000",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "modify-.pre-commit-config.yaml-and-check_code.sh",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 26,
+                "changes": 27
+            },
+            {
+                "filename": "scripts/check_code.sh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 5,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "025ef7b5bebb127be20e7d40b2aa0c4aabe8a3dd",
+        "created_at": "2020-05-06 18:00:36 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-2-from-lelelelelez-checktemplate",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "126c922f722b69a201faea361230e75922e0f691",
+        "created_at": "2020-05-11 07:34:36 +0000",
+        "author": "iducn",
+        "committer": "iducn",
+        "message": "add-travis-and-precommit-and-check-code-script",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": ".travis.yml",
+                "status": "added",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "scripts/check_code.sh",
+                "status": "added",
+                "additions": 76,
+                "deletions": 0,
+                "changes": 76
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "04245e3d11cad0fee22a0eb494fe3b3cf8fbe2da",
+        "created_at": "2020-05-06 16:53:54 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "add-checkTemplate",
+        "files": [
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 2,
+                "changes": 21
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 13,
+                "changes": 30
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 7,
+                "changes": 31
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "402cf6a7aeb6a82fc7366d595384efe12b669bb5",
+        "created_at": "2020-04-28 20:25:40 +0800",
+        "author": "lelelelelez",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-1-from-lelelelelez-first",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "f6eac0756e9fd17b27f8d11efc308e5906e76f14",
+        "created_at": "2020-04-28 20:05:45 +0800",
+        "author": "lelelelelez",
+        "committer": "lelelelelez",
+        "message": "function-code",
+        "files": [
+            {
+                "filename": "requirements.txt",
+                "status": "added",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "webservice/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "webservice/__main__.py",
+                "status": "added",
+                "additions": 49,
+                "deletions": 0,
+                "changes": 49
+            },
+            {
+                "filename": "webservice/conf/config.ini",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": "webservice/event.py",
+                "status": "added",
+                "additions": 90,
+                "deletions": 0,
+                "changes": 90
+            },
+            {
+                "filename": "webservice/regularClose.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "webservice/utils/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "webservice/utils/auth.py",
+                "status": "added",
+                "additions": 61,
+                "deletions": 0,
+                "changes": 61
+            },
+            {
+                "filename": "webservice/utils/check.py",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "webservice/utils/readConfig.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Paddle-bot",
+        "sha": "b89892f5ee7f62ed95ed1463fa2a23d26ebaa5b3",
+        "created_at": "2020-04-27 14:02:47 +0800",
+        "author": "raindrops2sea",
+        "committer": "web-flow",
+        "message": "Initial-commit",
+        "files": [
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 201,
+                "deletions": 0,
+                "changes": 201
+            },
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    }
+]

@@ -1,0 +1,1968 @@
+[
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 3,
+        "title": "Create deploy.yml for build and upload to PyPI",
+        "body": null,
+        "issue_number": "3",
+        "state": "closed",
+        "merged": false,
+        "user": "GreatV",
+        "merged_by": null,
+        "created_at": "2024-05-13T04:39:21+00:00",
+        "closed_at": "2024-05-13T04:40:09+00:00",
+        "additions": 66,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "d35645aba5699179175b4e1e39d3348374f795fa"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 7,
+        "title": "build and deploy package",
+        "body": null,
+        "issue_number": "7",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-05-14T00:49:50+00:00",
+        "closed_at": "2024-05-21T13:33:23+00:00",
+        "additions": 99,
+        "deletions": 3,
+        "changed_files": 2,
+        "commits": [
+            "fb334068c801a0b3a1755e8135d9db4b06a1f95e"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 10,
+        "title": "sync pre-commit from PPOCR",
+        "body": null,
+        "issue_number": "10",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-05-16T07:18:08+00:00",
+        "closed_at": "2024-05-16T13:21:37+00:00",
+        "additions": 74,
+        "deletions": 1,
+        "changed_files": 3,
+        "commits": [
+            "54ab34a527322ab7656ce81bb6d966b6fda8d085"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 8,
+        "title": "Create dependabot.yml",
+        "body": null,
+        "issue_number": "8",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-05-14T03:04:12+00:00",
+        "closed_at": "2024-05-15T12:06:22+00:00",
+        "additions": 11,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "78b75034df82c50119b64739a4afd4b147da157c"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 4,
+        "title": "add pyproject.toml",
+        "body": null,
+        "issue_number": "4",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-05-13T09:04:55+00:00",
+        "closed_at": "2024-05-13T11:52:38+00:00",
+        "additions": 43,
+        "deletions": 58,
+        "changed_files": 3,
+        "commits": [
+            "a16a072d393960ed4cc88583369ffca48670c754"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 2,
+        "title": "add build and upload to PyPI github action",
+        "body": null,
+        "issue_number": "2",
+        "state": "closed",
+        "merged": false,
+        "user": "GreatV",
+        "merged_by": null,
+        "created_at": "2024-05-13T04:27:43+00:00",
+        "closed_at": "2024-05-13T09:05:25+00:00",
+        "additions": 160,
+        "deletions": 58,
+        "changed_files": 4,
+        "commits": [
+            "5a2cc86c6498ac62e468bba3d67ba0536c028623",
+            "04fd30fd240cbe6dfa8b7eb181b792047d49ff7b",
+            "062913f2d95ff22510d255b4022e04f421682f08",
+            "be753ddb32ba167ef2faa22930507c57b5791d61",
+            "89d30a654f72f2cc223df3e143cf64794991df39",
+            "35e7c19c8b6433f24943c16205a0d9d1ae879a38"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 11,
+        "title": "update readme.md",
+        "body": null,
+        "issue_number": "11",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-05-30T09:22:52+00:00",
+        "closed_at": "2024-05-30T12:57:56+00:00",
+        "additions": 5,
+        "deletions": 15,
+        "changed_files": 2,
+        "commits": [
+            "399d888c8660e7c3f4bb302a73beb42cd2a314a5"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 1,
+        "title": "add .gitignore",
+        "body": null,
+        "issue_number": "1",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-05-13T04:20:20+00:00",
+        "closed_at": "2024-05-13T05:03:46+00:00",
+        "additions": 162,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "71990e479a1a3e5e8279063de04b58207a8c7580"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 9,
+        "title": "Bump xlrd from 1.2.0 to 2.0.1",
+        "body": "Bumps [xlrd](https://github.com/python-excel/xlrd) from 1.2.0 to 2.0.1.\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/python-excel/xlrd/blob/master/CHANGELOG.rst\">xlrd's changelog</a>.</em></p>\n<blockquote>\n<h2>2.0.1 (11 December 2020)</h2>\n<ul>\n<li>Use the README as the long description on PyPI.</li>\n</ul>\n<h2>2.0.0 (11 December 2020)</h2>\n<ul>\n<li>Remove support for anything other than <code>.xls</code> files.</li>\n<li>Remove support for <code>psyco</code>.</li>\n<li>Change the default encoding used when no <code>CODEPAGE</code> record can be found\nfrom <code>ascii</code> to <code>iso-8859-1</code>.</li>\n<li>Add support for iterating over :class:<code>~xlrd.book.Book</code> objects.</li>\n<li>Add support for item access from :class:<code>~xlrd.book.Book</code> objects,\nwhere integer indices and string sheet names are supported.</li>\n<li>Non-unicode spaces are now stripped from the &quot;last author&quot; information.</li>\n<li>Workbook corruption errors can now be ignored using the\n<code>ignore_workbook_corruption</code> option to :class:<code>~xlrd.open_workbook</code>.</li>\n<li>Handle <code>WRITEACCESS</code> records with invalid trailing characters.</li>\n<li>Officially support Python 3.8 and 3.9.</li>\n</ul>\n<p>Thanks to the following for their contributions to this release:</p>\n<ul>\n<li>Jon Dufresne</li>\n<li>Tore Lundqvist</li>\n<li>nayyarv</li>\n<li>Michael Davis</li>\n<li>skonik</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/b8d573e11ec149da695d695c81a156232b89a949\"><code>b8d573e</code></a> use the README for the long description</li>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/c6d642b4a2688df5855b06ebb0403f1806805fbb\"><code>c6d642b</code></a> Prepare for 2.0.0 release</li>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/e61d8ed6935fdc3e547f755603964792a381487e\"><code>e61d8ed</code></a> missing import</li>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/c9e47c62c77298ec4f7acf5c6614853d37f9cfdd\"><code>c9e47c6</code></a> Restructure index, readme and acknowledgments.</li>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/2c3e7ecea7925b5224919962a8abc7e8ee77d3a9\"><code>2c3e7ec</code></a> Updated development instructions.</li>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/82329207f96ec229dde148c77acadab62f22fab7\"><code>8232920</code></a> Better documentation for inspect_format.</li>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/07440b8104027cb535f220e2742bd4e7fe8c71d3\"><code>07440b8</code></a> Without xlsx, we have no opportunity for xml vulnerabilities.</li>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/be694037a11771c448eb81fcd50b6181947c460a\"><code>be69403</code></a> Installation of python packages is standardised now.</li>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/8d91f61a24a8996eb46b14c1904966ae9d0c0559\"><code>8d91f61</code></a> check docs</li>\n<li><a href=\"https://github.com/python-excel/xlrd/commit/56c0bd76c8c8db5d7adb5f5210765c21a2ab1944\"><code>56c0bd7</code></a> Give sensible exceptions when we know we can't open a file.</li>\n<li>Additional commits viewable in <a href=\"https://github.com/python-excel/xlrd/compare/1.2.0...2.0.1\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=xlrd&package-manager=pip&previous-version=1.2.0&new-version=2.0.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n\n\n</details>",
+        "issue_number": "9",
+        "state": "closed",
+        "merged": true,
+        "user": "dependabot[bot]",
+        "merged_by": "GreatV",
+        "created_at": "2024-05-15T12:06:54+00:00",
+        "closed_at": "2024-05-16T07:20:32+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "47121c85ffb3352c9b7491b3fa9832b9e8d76e1b"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 5,
+        "title": "fix",
+        "body": null,
+        "issue_number": "5",
+        "state": "closed",
+        "merged": false,
+        "user": "Gmgge",
+        "merged_by": null,
+        "created_at": "2024-05-13T13:15:08+00:00",
+        "closed_at": "2024-05-13T13:15:20+00:00",
+        "additions": 6,
+        "deletions": 6,
+        "changed_files": 3,
+        "commits": [
+            "d9504797e8226e418eb6d5640c445efaaede467b",
+            "1b64ba22a487543baeaeac51e84254ad49b339b3"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 6,
+        "title": "fix the issue of PPOCRLabel by Python Script failure after migration.",
+        "body": "1.Do not switch directories.\r\n2.Due to the ongoing adjustments in the PaddleOCR release, the old version is temporarily used to fix the startup failure issue.",
+        "issue_number": "6",
+        "state": "closed",
+        "merged": false,
+        "user": "Gmgge",
+        "merged_by": null,
+        "created_at": "2024-05-13T13:21:59+00:00",
+        "closed_at": "2024-05-14T01:01:14+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 0,
+        "commits": [],
+        "comment_by": [],
+        "review_by": [
+            "GreatV",
+            "GreatV",
+            "GreatV",
+            "Gmgge",
+            "Gmgge",
+            "GreatV",
+            "GreatV",
+            "Gmgge",
+            "GreatV"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 18,
+        "title": "add:增加pyinstaller打包",
+        "body": "1.根据labelimg中打包脚本与资源路径加载，更新相关代码，并添加readme中打包教程\r\n2.根据labelimg中启动流程，去除自动在本地生成资源文件流程，由于打包成可执行程序时已经把资源文件固定到可执行程序中。",
+        "issue_number": "18",
+        "state": "closed",
+        "merged": true,
+        "user": "Gmgge",
+        "merged_by": "GreatV",
+        "created_at": "2024-06-18T08:09:14+00:00",
+        "closed_at": "2024-06-18T12:39:32+00:00",
+        "additions": 10778,
+        "deletions": 10738,
+        "changed_files": 5,
+        "commits": [
+            "ab75201ae33b617750627482c22cedd1e0c65f04",
+            "7e007381d3b8d920bdbff047b01bb54eea1e8eaa",
+            "1fff976a1bb22ec44dbae6ac1403c3227737b851",
+            "43e709249ba142770d00b3bdeceaac13a6c3aa4e",
+            "4b6435b211eebaf5bcc14d95b5707166a911150d",
+            "5f094b2b71cb662de8a3fda5262de4ccbe4d798e"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "GreatV",
+            "GreatV",
+            "GreatV",
+            "Gmgge",
+            "Gmgge",
+            "Gmgge"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 28,
+        "title": "Fix rotateImgAction malposition caused by currIndex",
+        "body": "Obtain the current file path using self.filePath",
+        "issue_number": "28",
+        "state": "closed",
+        "merged": true,
+        "user": "TTTalen",
+        "merged_by": "GreatV",
+        "created_at": "2024-07-12T10:02:31+00:00",
+        "closed_at": "2024-07-12T14:06:50+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "d4ab847e99e18ec2f318dbce9ae3236c26deae83"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 50,
+        "title": "update version",
+        "body": null,
+        "issue_number": "50",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-08-12T15:08:00+00:00",
+        "closed_at": "2024-08-13T09:12:03+00:00",
+        "additions": 2,
+        "deletions": 2,
+        "changed_files": 2,
+        "commits": [
+            "ddf74b87a651864b5939431e9b2badeb9b1f3a08"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 38,
+        "title": "fix crash when selecting language model",
+        "body": "```\r\nFrench\r\n[2024/07/18 22:16:31] ppocr ERROR: lang latin is not support, we only support dict_keys(['en', 'ch']) for layout models\r\n```",
+        "issue_number": "38",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-07-18T14:35:09+00:00",
+        "closed_at": "2024-07-20T13:19:35+00:00",
+        "additions": 26,
+        "deletions": 18,
+        "changed_files": 1,
+        "commits": [
+            "630a32ceacbf0cb4a21ac4cf5f4aef04fdaeb29e"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 47,
+        "title": "change xlrd to openpyxl",
+        "body": "close #45 ",
+        "issue_number": "47",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-08-05T15:36:35+00:00",
+        "closed_at": "2024-08-06T23:00:25+00:00",
+        "additions": 21,
+        "deletions": 16,
+        "changed_files": 2,
+        "commits": [
+            "e18fc3fff2634503864a90d5b351fa207dee9ab6"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 48,
+        "title": "Update deploy.yml",
+        "body": null,
+        "issue_number": "48",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-08-08T13:58:31+00:00",
+        "closed_at": "2024-08-09T02:27:27+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "cb2588c991a5d365d4b73983c794e19eae1bba9e"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 31,
+        "title": "bug fix for PPOCRLabel.exportJSON NameError: name 'null' is not defined",
+        "body": "解决识别文本概率出现null导致导出表格标注时闪退的问题\r\n![231083799-d1ab3e8e-671f-4e49-b6cf-367e137d5c4d](https://github.com/user-attachments/assets/1c39eeef-34e8-447b-81b2-9793a23196bf)\r\n\r\n- https://github.com/PaddlePaddle/PaddleOCR/pull/9695\r\n",
+        "issue_number": "31",
+        "state": "closed",
+        "merged": true,
+        "user": "pinnnkman",
+        "merged_by": "GreatV",
+        "created_at": "2024-07-15T14:21:20+00:00",
+        "closed_at": "2024-07-15T14:31:43+00:00",
+        "additions": 2,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "543b8e3cf8eceae72765267647fd97d70d17f1da",
+            "87827d3e26f35f51cbf3150daf49f025ebe758c1"
+        ],
+        "comment_by": [
+            "GreatV",
+            "pinnnkman"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 44,
+        "title": "update CI for publish to PyPI",
+        "body": null,
+        "issue_number": "44",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "Liyulingyue",
+        "created_at": "2024-08-01T15:55:24+00:00",
+        "closed_at": "2024-08-02T11:42:27+00:00",
+        "additions": 3,
+        "deletions": 4,
+        "changed_files": 2,
+        "commits": [
+            "23aa7ffc3fa14999244537dfba63dc1e057c2d96"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 27,
+        "title": "Update utils.py",
+        "body": "For seveRecRes, so that the cropped images are smooth, not inverted. If an area was incorrectly marked up, for example, the areas were highlighted not from the top left, but from the bottom left or otherwise",
+        "issue_number": "27",
+        "state": "closed",
+        "merged": false,
+        "user": "Azzer8",
+        "merged_by": null,
+        "created_at": "2024-07-10T08:10:15+00:00",
+        "closed_at": "2024-08-07T00:50:04+00:00",
+        "additions": 5,
+        "deletions": 15,
+        "changed_files": 1,
+        "commits": [
+            "3f30170f471799ba5bea4fcaaef405d0e101ff6a",
+            "ac5318ac44115351405a21829579611a1942a4b8"
+        ],
+        "comment_by": [
+            "Azzer8"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 43,
+        "title": "解决开启【显示box序号】异常问题",
+        "body": "在视图开启【显示box序号】闪崩的问题",
+        "issue_number": "43",
+        "state": "closed",
+        "merged": true,
+        "user": "lwinhong",
+        "merged_by": "GreatV",
+        "created_at": "2024-08-01T04:14:22+00:00",
+        "closed_at": "2024-08-01T04:25:02+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "b50c7214bde417b2786fe132b75c278cea4dd64a"
+        ],
+        "comment_by": [
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 51,
+        "title": "Update deploy.yml",
+        "body": null,
+        "issue_number": "51",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-08-13T09:14:39+00:00",
+        "closed_at": "2024-08-16T06:47:46+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "18f6d076a2898254aeaa664795aed683642dead0"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 53,
+        "title": "refactor code",
+        "body": null,
+        "issue_number": "53",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-08-21T08:43:30+00:00",
+        "closed_at": "2024-08-24T07:29:30+00:00",
+        "additions": 54,
+        "deletions": 15,
+        "changed_files": 1,
+        "commits": [
+            "b0ad6cbb5af17442d2762d310b9f21ea90c2ed13",
+            "fecbf1b08c9f3adb50357989b05f19a8daca4968"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 23,
+        "title": "支持中文路径",
+        "body": null,
+        "issue_number": "23",
+        "state": "closed",
+        "merged": true,
+        "user": "sunlingzhang",
+        "merged_by": "GreatV",
+        "created_at": "2024-07-02T03:53:00+00:00",
+        "closed_at": "2024-07-04T10:13:18+00:00",
+        "additions": 8,
+        "deletions": 5,
+        "changed_files": 1,
+        "commits": [
+            "86696e15b3331c6d0d729952530555cd463a35e3",
+            "88e11e6cd602eef97450ccd74b1d109d1019a2bd"
+        ],
+        "comment_by": [
+            "GreatV"
+        ],
+        "review_by": [
+            "GreatV",
+            "sunlingzhang",
+            "Gmgge"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 54,
+        "title": "Fix bug",
+        "body": "Close #52",
+        "issue_number": "54",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-08-21T14:02:27+00:00",
+        "closed_at": "2024-08-21T14:09:00+00:00",
+        "additions": 6,
+        "deletions": 2,
+        "changed_files": 1,
+        "commits": [
+            "ff14377e6c5102c4efba8632ee6940e2807ef057",
+            "3f4d720959bec0c04c6b788a70ae8d1bf3e12378"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 55,
+        "title": "show metrics for PPOCRLabel",
+        "body": null,
+        "issue_number": "55",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-08-22T01:42:10+00:00",
+        "closed_at": "2024-08-22T01:43:27+00:00",
+        "additions": 14,
+        "deletions": 0,
+        "changed_files": 2,
+        "commits": [
+            "216314ad4b7c1db91f8cdefb516137a2ec64b59e"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 64,
+        "title": "fix Qt resources not init",
+        "body": null,
+        "issue_number": "64",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-05T11:21:24+00:00",
+        "closed_at": "2024-09-06T00:47:00+00:00",
+        "additions": 1,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "2dfd4bb5e897d8ece4aa9bca9fefba69f24df198"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 66,
+        "title": "fix ten line token convert bug",
+        "body": null,
+        "issue_number": "66",
+        "state": "closed",
+        "merged": true,
+        "user": "UserWangZz",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-06T16:27:38+00:00",
+        "closed_at": "2024-09-07T00:18:27+00:00",
+        "additions": 2,
+        "deletions": 2,
+        "changed_files": 1,
+        "commits": [
+            "37b183ac6f25b5ac990353e5c911f18f0ce19a5e"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 63,
+        "title": "fix bug",
+        "body": "Close #60 #61 #62 ",
+        "issue_number": "63",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-05T06:20:14+00:00",
+        "closed_at": "2024-09-05T06:28:02+00:00",
+        "additions": 2,
+        "deletions": 2,
+        "changed_files": 2,
+        "commits": [
+            "0d9aef91ce75c205a5ca76052b82d80104f3c2fe",
+            "34142be5482a4f1ddd662a1de0122e6ac0d98fc6"
+        ],
+        "comment_by": [
+            "Andyszl",
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 69,
+        "title": "Add new shortcut keys for the convenience of left-handed mouse users",
+        "body": null,
+        "issue_number": "69",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-07T10:43:38+00:00",
+        "closed_at": "2024-09-07T11:12:02+00:00",
+        "additions": 15,
+        "deletions": 15,
+        "changed_files": 4,
+        "commits": [
+            "6584fa5e77858a18762e5fb2f8eddf7b7269f374",
+            "f1b1696c79311c4485145dca57d9562444720e83",
+            "675e45c09a7fae29e995361d0411673c74ca1676",
+            "cd79fa2cc4e87512c50072023f2840e56a807efb",
+            "776d0c9f61052a26d98cbaa5667f3bb88c08e456"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 68,
+        "title": "model switch 'use_gpu' use the same value from --gpu",
+        "body": null,
+        "issue_number": "68",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-07T07:51:47+00:00",
+        "closed_at": "2024-09-07T09:11:14+00:00",
+        "additions": 3,
+        "deletions": 2,
+        "changed_files": 1,
+        "commits": [
+            "6584fa5e77858a18762e5fb2f8eddf7b7269f374",
+            "f1b1696c79311c4485145dca57d9562444720e83"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 67,
+        "title": "model switch 'use_gpu' use same value from --gpu",
+        "body": null,
+        "issue_number": "67",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-09-07T07:21:32+00:00",
+        "closed_at": "2024-09-07T07:33:03+00:00",
+        "additions": 3,
+        "deletions": 2,
+        "changed_files": 1,
+        "commits": [
+            "56a7c0d839e6a52d42056d9c54aef63587af97d9"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 70,
+        "title": "add auto Re-recognition switch option",
+        "body": null,
+        "issue_number": "70",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-09-09T15:39:05+00:00",
+        "closed_at": "2024-09-10T03:04:13+00:00",
+        "additions": 11745,
+        "deletions": 11747,
+        "changed_files": 4,
+        "commits": [
+            "6584fa5e77858a18762e5fb2f8eddf7b7269f374",
+            "f1b1696c79311c4485145dca57d9562444720e83",
+            "675e45c09a7fae29e995361d0411673c74ca1676",
+            "cd79fa2cc4e87512c50072023f2840e56a807efb",
+            "776d0c9f61052a26d98cbaa5667f3bb88c08e456",
+            "1cb067efa6f3775ab54a94306b94dbfbaca9605a",
+            "979f6b11efbc96f8f6574b286024c576e8d7a93b"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 73,
+        "title": "Add auto save unsaved changes",
+        "body": "新增一个开关，用来控制是否自动保存未确认的变更（不弹出确认对话框），方便快速使用D键切换到下一图标记",
+        "issue_number": "73",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-09-11T14:19:11+00:00",
+        "closed_at": "2024-09-11T14:20:16+00:00",
+        "additions": 195,
+        "deletions": 175,
+        "changed_files": 4,
+        "commits": [
+            "6584fa5e77858a18762e5fb2f8eddf7b7269f374",
+            "f1b1696c79311c4485145dca57d9562444720e83",
+            "675e45c09a7fae29e995361d0411673c74ca1676",
+            "cd79fa2cc4e87512c50072023f2840e56a807efb",
+            "776d0c9f61052a26d98cbaa5667f3bb88c08e456",
+            "1cb067efa6f3775ab54a94306b94dbfbaca9605a",
+            "979f6b11efbc96f8f6574b286024c576e8d7a93b",
+            "3e3f10fa0e033659cf0489d9dbb1db5bdd4bd458",
+            "374d5e6a64417439f325f0214eb731abfe78ac98",
+            "ead08045e56b1d0b37811a46afef7aa971d131a8",
+            "855d3f976972273b65a6be186bc635bafceacd4f"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 71,
+        "title": "add auto Re-recognition switch option",
+        "body": null,
+        "issue_number": "71",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-10T03:03:44+00:00",
+        "closed_at": "2024-09-11T04:58:54+00:00",
+        "additions": 11749,
+        "deletions": 11746,
+        "changed_files": 4,
+        "commits": [
+            "6584fa5e77858a18762e5fb2f8eddf7b7269f374",
+            "f1b1696c79311c4485145dca57d9562444720e83",
+            "675e45c09a7fae29e995361d0411673c74ca1676",
+            "cd79fa2cc4e87512c50072023f2840e56a807efb",
+            "776d0c9f61052a26d98cbaa5667f3bb88c08e456",
+            "1cb067efa6f3775ab54a94306b94dbfbaca9605a",
+            "979f6b11efbc96f8f6574b286024c576e8d7a93b",
+            "3e3f10fa0e033659cf0489d9dbb1db5bdd4bd458",
+            "374d5e6a64417439f325f0214eb731abfe78ac98"
+        ],
+        "comment_by": [
+            "GreatV",
+            "yes-github",
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 65,
+        "title": "fix ten line token convert bug",
+        "body": "PPOCRLabel/libs/utils.py中的convert_token方法中\r\ncol.split()返回值n为str类型，在下方token_list.append中，只对n的第一位进行format",
+        "issue_number": "65",
+        "state": "closed",
+        "merged": false,
+        "user": "UserWangZz",
+        "merged_by": null,
+        "created_at": "2024-09-06T03:50:29+00:00",
+        "closed_at": "2024-09-06T16:19:27+00:00",
+        "additions": 2,
+        "deletions": 2,
+        "changed_files": 1,
+        "commits": [
+            "63069ff9f5b9113b3a6ac7cf9d4151149f6275fa"
+        ],
+        "comment_by": [
+            "GreatV"
+        ],
+        "review_by": [
+            "GreatV",
+            "UserWangZz"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 74,
+        "title": "Add auto save unsaved changes",
+        "body": "新增一个开关，用来控制是否自动保存未确认的变更（不弹出确认对话框），方便快速使用D键切换到下一图标记",
+        "issue_number": "74",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-09-11T14:22:51+00:00",
+        "closed_at": "2024-09-12T00:35:03+00:00",
+        "additions": 192,
+        "deletions": 165,
+        "changed_files": 4,
+        "commits": [
+            "6584fa5e77858a18762e5fb2f8eddf7b7269f374",
+            "f1b1696c79311c4485145dca57d9562444720e83",
+            "675e45c09a7fae29e995361d0411673c74ca1676",
+            "cd79fa2cc4e87512c50072023f2840e56a807efb",
+            "776d0c9f61052a26d98cbaa5667f3bb88c08e456",
+            "1cb067efa6f3775ab54a94306b94dbfbaca9605a",
+            "979f6b11efbc96f8f6574b286024c576e8d7a93b",
+            "3e3f10fa0e033659cf0489d9dbb1db5bdd4bd458",
+            "374d5e6a64417439f325f0214eb731abfe78ac98",
+            "ead08045e56b1d0b37811a46afef7aa971d131a8",
+            "855d3f976972273b65a6be186bc635bafceacd4f",
+            "bbefc9d1d6f216456318f20cf72cb20969ddb219"
+        ],
+        "comment_by": [
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 80,
+        "title": "Change fileState.txt file path format",
+        "body": "把fileState.txt文件中的图片文件路径保存格式从绝对路径改为相对路径（和Label.txt格式一致）",
+        "issue_number": "80",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-09-15T07:13:10+00:00",
+        "closed_at": "2024-09-15T07:47:26+00:00",
+        "additions": 13,
+        "deletions": 6,
+        "changed_files": 1,
+        "commits": [
+            "a391828a7a040b3e90a175b9109f572b7481cc70"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 79,
+        "title": "update README",
+        "body": null,
+        "issue_number": "79",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-13T13:30:29+00:00",
+        "closed_at": "2024-09-13T13:31:11+00:00",
+        "additions": 15,
+        "deletions": 21,
+        "changed_files": 2,
+        "commits": [
+            "2d66279f1b95927c0acaf2f3192b84ac7cf5ea8b"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 82,
+        "title": "Change fileState.txt file path format",
+        "body": "1. 把fileState.txt文件中的图片文件路径保存格式从绝对路径改为相对路径（和Label.txt格式一致）\r\n2. 新增`--img_list_natural_sort`参数，默认左侧图片列表使用自然排序，配置该参数后，将使用字符排序，方便根据字符顺序定位图片，该参数说明已更新到README.md",
+        "issue_number": "82",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-16T00:41:04+00:00",
+        "closed_at": "2024-09-16T01:05:13+00:00",
+        "additions": 31,
+        "deletions": 11,
+        "changed_files": 3,
+        "commits": [
+            "a391828a7a040b3e90a175b9109f572b7481cc70",
+            "31b1ffbb598fe628a17cc2c069bcbe22aa7b01e3",
+            "d97c12d4be13bc81978b92dc49924644254d7f3e",
+            "05f2cffd595c32b6614bc95b2acddf4fb6c1f3eb"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 76,
+        "title": "add new option for auto save unsaved changes",
+        "body": "新增一个开关，用来控制是否自动保存未确认的变更（不弹出确认对话框），方便快速使用D键切换到下一图标记",
+        "issue_number": "76",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-12T00:56:36+00:00",
+        "closed_at": "2024-09-12T11:17:12+00:00",
+        "additions": 189,
+        "deletions": 164,
+        "changed_files": 4,
+        "commits": [
+            "7d9d5fd1319ebc60d6a9b8437b9c668504fa0cdf",
+            "e3cf770769fcff4a6da4f1d574d055f64f9a6d7e"
+        ],
+        "comment_by": [
+            "GreatV",
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 77,
+        "title": "readme.md中新增最近添加的两个按钮使用说明",
+        "body": "同时去掉影响标记没用的tooltip和屏蔽重新识别后图片大小重置",
+        "issue_number": "77",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-12T13:49:46+00:00",
+        "closed_at": "2024-09-12T15:39:12+00:00",
+        "additions": 15,
+        "deletions": 6,
+        "changed_files": 4,
+        "commits": [
+            "4097d3787326b152e871abcf102bfbf9e1f67a0a",
+            "df4f19f459fc6d1ce64d2342bb84dbf30d519600",
+            "088f776e9f1e0b867d90f5083f616ec9ac761454"
+        ],
+        "comment_by": [
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 85,
+        "title": "Add bbox auto zoom center and vertex moves independently",
+        "body": "本次新增两个功能：\r\n1、新增一个开关，用来自动将第一个bbox自动居中放大，适合一张图只有一个标记框的场景，例如车牌识别\r\n2、新增5个快捷键，用来通过键盘的上下左右单独移动bbox的四个顶点，方便精确移动顶点的场景",
+        "issue_number": "85",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-09-18T15:05:00+00:00",
+        "closed_at": "2024-09-18T15:06:00+00:00",
+        "additions": 197,
+        "deletions": 33,
+        "changed_files": 5,
+        "commits": [
+            "f5d098f08d018d34c6f67c3416d5b90c804f51d2",
+            "da86d7586d5f726e5f50f6e79e2cb8b5be747919",
+            "d5f390ad49aac79f4f219b8559559621e3920594"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 78,
+        "title": "解决导出表格标注时遇到的通用问题",
+        "body": "## 解决导出表格标注时遇到的通用问题\r\n\r\n### 可复现软件版本\r\n- PPOCRLabel v2.1.8\r\n\r\n### 可复现问题资源\r\n![56](https://github.com/user-attachments/assets/12997dd6-a290-4c5a-9ea3-911cbc9d4ec8)\r\n\r\n### 问题1：导出表格标注时添加colspan和rowspan时的异常\r\n- 问题描述\r\n导出表格标注时，从Excel中获取标注表格的格式，对合并列或是合并行添加colspan和rowspan时判断条件错误。\r\n例如：一个5行、5列的表格，第一行的第2列和第3列是合并的，第4列和第5列是合并的，代码中for循环构建出来的html_list 列表第一行是不对的。\r\n```shell\r\n错误结果：\"<tr>\", \"<td>\", \"</td>\", \"<td\", \">\", \"</td>\", \"<td>\", \"</td>\", \"<td\", \">\", \"</td>\", \"<td>\", \"</td>\", \"</tr>\"\r\n\r\n期望结果：\"<tr>\", \"<td>\", \"</td>\", \"<td\", \" colspan=\\\"2\\\"\", \">\", \"</td>\", \"<td\", \" colspan=\\\"2\\\"\", \">\", \"</td>\", \"</tr>\"\r\n```\r\n```shell\r\n当前代码：\r\nhtml_list[sr][sc] = \"\"\r\n    if ec - sc > 1:\r\n        html_list[sr][sc] += \" colspan={}\".format(ec - sc)\r\n    if er - sr > 1:\r\n        html_list[sr][sc] += \" rowspan={}\".format(er - sr)\r\n\r\n修改后代码：\r\nhtml_list[sr][sc] = \"\"\r\n    if ec - sc > 0:  # Only add colspan if the column span is more than 1\r\n        html_list[sr][sc] += ' colspan={}'.format(ec - sc + 1)\r\n    if er - sr > 0:  # Only add rowspan if the row span is more than 1\r\n        html_list[sr][sc] += ' rowspan={}'.format(er - sr + 1)\r\n```\r\n- 验证\r\n代码修改后经过60张表格图片导出标注的验证，所有图片均符合模型训练要求并完成模型训练。\r\n\r\n### 问题2：导出的gt文件中gt属性中html标签合规的问题\r\n- 问题描述\r\n在rebuild_html_from_ppstructure_label方法中，生成的新html，colspan和rowspan的值不符合html直接显示标准。colspan和rowspan的值必须是数字，html的内容是在convert_token生成的，生成时colspan和rowspan的值均是字符串（应该是为了模型训练）。\r\n```shell\r\n错误结果： <tbody><tr><td></td><td colspan=“2”>本集团</td><td colspan=“2”>本银行</td></tr><tr><td></td><td>2023年</td><td>2022年</td><td>2023年</td><td>2022年</td></tr><tr><td></td><td>12月31日</td><td>12月31日</td><td>12月31日</td><td>12月31日</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>股权投资</td><td>6,489</td><td>7,131</td><td>6,081</td><td>6,726</td></tr></tbody>\r\n\r\n期望结果： <tbody><tr><td></td><td colspan=2>本集团</td><td colspan=2>本银行</td></tr><tr><td></td><td>2023年</td><td>2022年</td><td>2023年</td><td>2022年</td></tr><tr><td></td><td>12月31日</td><td>12月31日</td><td>12月31日</td><td>12月31日</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>股权投资</td><td>6,489</td><td>7,131</td><td>6,081</td><td>6,726</td></tr></tbody>\r\n```\r\n```shell\r\n当前代码：\r\n    html_code = \"\".join(html_code)\r\n    html_code = \"<html><body><table>{}</table></body></html>\".format(html_code)\r\n\r\n修改后代码：\r\n    html_code = \"\".join(html_code)\r\n    html_code = re.sub(r'(colspan|rowspan)=\"(\\d+)\"', r'\\1=\\2', html_code)\r\n    html_code = \"<html><body><table>{}</table></body></html>\".format(html_code)\r\n```\r\n- 验证\r\n经过60张图片导出标注，将gt.txt中的gt属性拷贝到后缀为html的文件中，直接打开，在浏览器可以看到还原的表格，全部正确。\r\n",
+        "issue_number": "78",
+        "state": "closed",
+        "merged": true,
+        "user": "BotAndyGao",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-13T07:37:30+00:00",
+        "closed_at": "2024-09-13T09:33:11+00:00",
+        "additions": 9,
+        "deletions": 6,
+        "changed_files": 1,
+        "commits": [
+            "914671102890b4452aed34a2ecf29203b0bfeeca",
+            "5dfe1d0500fc8a21b8bde9b9e33e741f3d778e4c"
+        ],
+        "comment_by": [
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 81,
+        "title": "Change fileState.txt file path format",
+        "body": "1. 把fileState.txt文件中的图片文件路径保存格式从绝对路径改为相对路径（和Label.txt格式一致）\r\n2. 删除不方便定位列表文件的自然排序（使用默认的字符排序），同时增强图片数量大的时候性能",
+        "issue_number": "81",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-09-15T09:38:21+00:00",
+        "closed_at": "2024-09-16T00:37:46+00:00",
+        "additions": 34,
+        "deletions": 12,
+        "changed_files": 3,
+        "commits": [
+            "a391828a7a040b3e90a175b9109f572b7481cc70",
+            "31b1ffbb598fe628a17cc2c069bcbe22aa7b01e3",
+            "d97c12d4be13bc81978b92dc49924644254d7f3e"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "GreatV"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 83,
+        "title": "Add 4 custom model parameters",
+        "body": "- 新增4个自定义模型的参数：\r\n    - `det_model_dir` ：检测模型目录路径\r\n    - `rec_model_dir` ：识别模型目录路径\r\n    - `rec_char_dict_path` ：识别模型字典文件路径\r\n    - `cls_model_dir` ：分类模型目录路径",
+        "issue_number": "83",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-17T01:14:44+00:00",
+        "closed_at": "2024-09-18T01:45:14+00:00",
+        "additions": 44,
+        "deletions": 9,
+        "changed_files": 3,
+        "commits": [
+            "f5d098f08d018d34c6f67c3416d5b90c804f51d2"
+        ],
+        "comment_by": [
+            "GreatV",
+            "GreatV",
+            "yes-github"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 87,
+        "title": "add bbox auto zoom center and vertex moves independently",
+        "body": "本次新增两个功能：\r\n1、新增一个开关，用来自动将第一个bbox自动居中放大，适合一张图只有一个标记框的场景，例如车牌识别\r\n2、新增5个快捷键，用来通过键盘的上下左右单独移动bbox的四个顶点，方便精确移动顶点的场景",
+        "issue_number": "87",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-09-21T09:58:29+00:00",
+        "closed_at": "2024-09-22T11:15:01+00:00",
+        "additions": 139,
+        "deletions": 23,
+        "changed_files": 5,
+        "commits": [
+            "5a8bc4c767ee5aeb0aef2370dae729eb58190c2f",
+            "1a1428594befed09f21b2daec9f8cc794f561976",
+            "4f19fe3ad6ba9baf849c9a04be4c4cca352f7781"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 86,
+        "title": "add bbox auto zoom center and vertex moves independently",
+        "body": "本次新增两个功能：\r\n1、新增一个开关，用来自动将第一个bbox自动居中放大，适合一张图只有一个标记框的场景，例如车牌识别\r\n2、新增5个快捷键，用来通过键盘的上下左右单独移动bbox的四个顶点，方便精确移动顶点的场景",
+        "issue_number": "86",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-09-18T15:06:48+00:00",
+        "closed_at": "2024-09-21T09:18:39+00:00",
+        "additions": 150,
+        "deletions": 23,
+        "changed_files": 5,
+        "commits": [
+            "5a8bc4c767ee5aeb0aef2370dae729eb58190c2f"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "GreatV",
+            "GreatV",
+            "GreatV",
+            "yes-github"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 100,
+        "title": "新增`label_font_path`参数，用来改变标签字体",
+        "body": "默认的标签字体，可能会出现0和O无法区分的情况",
+        "issue_number": "100",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-10-30T10:28:07+00:00",
+        "closed_at": "2024-10-30T11:03:27+00:00",
+        "additions": 35,
+        "deletions": 3,
+        "changed_files": 4,
+        "commits": [
+            "25aef2057e9f192df1e08133dae17e81e2c41f81"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 98,
+        "title": "Bug fixed",
+        "body": "1、修复删除图片导致的bug\r\n2、删除影响正常图片标记的tooltip",
+        "issue_number": "98",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-10-28T11:16:01+00:00",
+        "closed_at": "2024-10-28T11:18:19+00:00",
+        "additions": 5,
+        "deletions": 6,
+        "changed_files": 2,
+        "commits": [
+            "ef849e8799f40dcf7c971b0d6d419cf65bb1065b",
+            "591948fdba034cbf10cb6ff270a0fd25a20952fc",
+            "1b62703ceede0af65943418d1f9e3e9add8ad3b5"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 101,
+        "title": "新增一个参数用于改变选中标签框和字体的颜色",
+        "body": "因为图片白色的背景比较常见，选中的标签默认为白色比较容易出现与背景色混在一起看不清的情况，新增一个参数可以自定义颜色，同时把默认的颜色改为更为容易分辨的黄色",
+        "issue_number": "101",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-10-31T08:46:09+00:00",
+        "closed_at": "2024-10-31T10:22:04+00:00",
+        "additions": 29,
+        "deletions": 3,
+        "changed_files": 3,
+        "commits": [
+            "bc44f85de61e9d6bde63ed2b79d3b2f8d04e70db",
+            "9e8315b9340f8b50ace09fde875732d3bac6a2d3"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 114,
+        "title": "修复存在已久的BUG：删除图片后，图片列表跳回选择第一个图片，丢失原来的标记进度",
+        "body": "…mage",
+        "issue_number": "114",
+        "state": "closed",
+        "merged": false,
+        "user": "yes-github",
+        "merged_by": null,
+        "created_at": "2024-11-21T09:56:52+00:00",
+        "closed_at": "2024-11-21T10:00:01+00:00",
+        "additions": 23,
+        "deletions": 7,
+        "changed_files": 1,
+        "commits": [
+            "92b578710fe7ed7e2ef5660dd66d6d347c00fa8a"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 120,
+        "title": "Update deploy.yml",
+        "body": null,
+        "issue_number": "120",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-11-28T07:41:17+00:00",
+        "closed_at": "2024-11-28T07:44:37+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "c6cbfe9c824b12f8cb485ee09fadbc80d0b259cb"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 123,
+        "title": "BUGFIXED : 修复删除图片后文件列表当前索引值固定为1的错误显示",
+        "body": null,
+        "issue_number": "123",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-12-07T19:33:45+00:00",
+        "closed_at": "2024-12-08T02:23:32+00:00",
+        "additions": 2,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "865eaaefcb64c6b9709ce202dbd3d24ab241113f"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 121,
+        "title": "rename deploy workflow",
+        "body": null,
+        "issue_number": "121",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2024-11-28T07:54:19+00:00",
+        "closed_at": "2024-11-28T08:13:03+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "752f2092b8974126895df3e6025342829c5d7145",
+            "9f2b5f6800666293267d0b0f7e043f9e2d02e490"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 99,
+        "title": "Bug fixed",
+        "body": "1、修复删除图片导致的bug\r\n2、删除影响正常图片标记的tooltip",
+        "issue_number": "99",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-10-28T11:19:05+00:00",
+        "closed_at": "2024-10-29T05:52:29+00:00",
+        "additions": 2,
+        "deletions": 5,
+        "changed_files": 2,
+        "commits": [
+            "ef849e8799f40dcf7c971b0d6d419cf65bb1065b",
+            "591948fdba034cbf10cb6ff270a0fd25a20952fc",
+            "1b62703ceede0af65943418d1f9e3e9add8ad3b5",
+            "ded148f28b7061ce1500cd28258d894989d18e08"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "GreatV",
+            "yes-github"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 115,
+        "title": "enhancements to image navigation and deletion",
+        "body": null,
+        "issue_number": "115",
+        "state": "closed",
+        "merged": true,
+        "user": "yes-github",
+        "merged_by": "GreatV",
+        "created_at": "2024-11-21T10:45:23+00:00",
+        "closed_at": "2024-11-21T13:15:43+00:00",
+        "additions": 22,
+        "deletions": 7,
+        "changed_files": 1,
+        "commits": [
+            "92b578710fe7ed7e2ef5660dd66d6d347c00fa8a",
+            "522f60bdec7d02563e4b73f82e8c2c54aa495e40"
+        ],
+        "comment_by": [
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 119,
+        "title": "修复单元格占多行多列，导出表格标注报错的问题",
+        "body": "## 修改单元格占多行多列时导出报错的问题\r\n\r\n### 可复现软件版本\r\n- PPOCRLabel v2.1.11\r\n### 可复现问题资源\r\n![test](https://github.com/user-attachments/assets/876d78b9-7425-43e1-bc6d-9ed56333d779)\r\n### Bug问题：当一个单元格占多行多列时，导出表格标注时将原始html转换为标签格式时报错\r\n![bug_info](https://github.com/user-attachments/assets/5781f4b3-942e-4397-b763-478f8f2e6bef)\r\n- 错误原因\r\n当一个单元格占多行多列时，该单元格所处的行列表信息是 ['td', ' colspan=2 rowspan=2', None, 'td']\r\n代码处理' colspan=2 rowspan=2' 元素时报错。\r\n- 报错代码\r\n截取数值内容不对，int类型转化时报错\r\n```plaintext\r\n _, n = col.split(\"colspan=\") # **截取时错误**\r\n token_list.append(' colspan=\"{}\"'.format(int(n))) # **int类型转化时报错**\r\n```\r\n### Bug修复\r\n- 解决方案\r\n  - 需要从 col 中正确地提取 colspan 和 rowspan，而不是直接用 split 进行拆分。可以通过正则表达式或者更细致的字符串处理来确保正确提取每个属性的值。\r\n  - 在拆分字符串时，先清理多余的空格和顺序，确保属性值是独立的。\r\n- 关键代码\r\n```plaintext\r\n# Use regex to match \"colspan\" and \"rowspan\" attributes and their values\r\ncolspan_match = re.search(r\"colspan=(\\d+)\", col)\r\nrowspan_match = re.search(r\"rowspan=(\\d+)\", col)\r\nif colspan_match:\r\n     token_list.append(f' colspan=\"{colspan_match.group(1)}\"')\r\nif rowspan_match:\r\n     token_list.append(f' rowspan=\"{rowspan_match.group(1)}\"')\r\n```\r\n### Bug验证\r\n使用问题图片重新导出正常。\r\n```plaintext\r\n{\"filename\": \"test.png\", \"html\": {\"structure\": {\"tokens\": [\"<tbody>\", \"<tr>\", \"<td>\", \"</td>\", \"<td\", \" colspan=\\\"2\\\"\", \" rowspan=\\\"2\\\"\", \">\", \"</td>\", \"<td>\", \"</td>\", \"</tr>\", \"<tr>\", \"<td>\", \"</td>\", \"<td>\", \"</td>\", \"</tr>\", \"<tr>\", \"<td>\", \"</td>\", \"<td>\", \"</td>\", \"<td>\", \"</td>\", \"<td>\", \"</td>\", \"</tr>\", \"</tbody>\"]}, \"cells\": [{\"tokens\": [\"1\", \"2\", \"3\"], \"bbox\": [[11, 7], [57, 7], [57, 30], [11, 30]]}, {\"tokens\": [\"测\", \"试\"], \"bbox\": [[183, 5], [237, 5], [237, 30], [183, 30]]}, {\"tokens\": [\"5\", \"5\", \"4\"], \"bbox\": [[530, 7], [576, 7], [576, 30], [530, 30]]}, {\"tokens\": [\"5\", \"8\", \"5\"], \"bbox\": [[11, 35], [57, 35], [57, 58], [11, 58]]}, {\"tokens\": [\"5\", \"5\", \"4\", \"5\"], \"bbox\": [[531, 35], [584, 35], [584, 57], [531, 57]]}, {\"tokens\": [\"1\", \"2\", \"3\"], \"bbox\": [[11, 61], [56, 61], [56, 85], [11, 85]]}, {\"tokens\": [\"4\", \"5\", \"5\"], \"bbox\": [[184, 61], [229, 61], [229, 84], [184, 84]]}, {\"tokens\": [\"7\", \"7\", \"8\"], \"bbox\": [[357, 61], [402, 61], [402, 84], [357, 84]]}, {\"tokens\": [\"5\", \"6\", \"6\"], \"bbox\": [[531, 61], [576, 61], [576, 85], [531, 85]]}]}, \"gt\": \"<html><body><table><tbody><tr><td>123</td><td colspan=2 rowspan=2>测试</td><td>554</td></tr><tr><td>585</td><td>5545</td></tr><tr><td>123</td><td>455</td><td>778</td><td>566</td></tr></tbody></table></body></html>\"}\r\n```",
+        "issue_number": "119",
+        "state": "closed",
+        "merged": true,
+        "user": "BotAndyGao",
+        "merged_by": "GreatV",
+        "created_at": "2024-11-26T08:34:57+00:00",
+        "closed_at": "2024-11-26T10:20:51+00:00",
+        "additions": 10,
+        "deletions": 9,
+        "changed_files": 2,
+        "commits": [
+            "914671102890b4452aed34a2ecf29203b0bfeeca",
+            "5dfe1d0500fc8a21b8bde9b9e33e741f3d778e4c",
+            "ecadc9e291e53b6fb3df65e65b988f0d97b97a20",
+            "9e7ae19ec0b5af9d1392e0b434d593e8345a7a78",
+            "8cc4ab61c1e6ee71bd7e1a2bba76cd358cd0d078"
+        ],
+        "comment_by": [
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 135,
+        "title": "Fix version info and en typo",
+        "body": "Thanks! 🚀",
+        "issue_number": "135",
+        "state": "closed",
+        "merged": true,
+        "user": "jk4e",
+        "merged_by": "GreatV",
+        "created_at": "2025-03-09T21:55:38+00:00",
+        "closed_at": "2025-03-10T00:49:19+00:00",
+        "additions": 3,
+        "deletions": 3,
+        "changed_files": 3,
+        "commits": [
+            "359649de0b5d870dc574c69cabd9997f89285f80",
+            "386a644ef6a5fd66cb8e5160083f05015215d431"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 136,
+        "title": "Add related annotation tutorial from PaddleX",
+        "body": "Hi,\r\n\r\nadded a helpful related resource on how to use PPOCRLabel and annotate data from the PaddleX documentation.\r\n\r\nThanks! 🚀",
+        "issue_number": "136",
+        "state": "closed",
+        "merged": true,
+        "user": "jk4e",
+        "merged_by": "GreatV",
+        "created_at": "2025-03-09T22:32:28+00:00",
+        "closed_at": "2025-03-10T00:49:52+00:00",
+        "additions": 4,
+        "deletions": 2,
+        "changed_files": 2,
+        "commits": [
+            "078dd43b248b415301dbc9dbf485507873a78b95"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 137,
+        "title": "Add note about `--lang en` in README  ",
+        "body": "Hi, \r\n\r\nI added a note to the README on how to start PPOCRLabel with an English UI, as this information was missing. By default, the UI starts in Chinese unless the `--lang en` parameter is used. This should help new users who need an English interface.\r\n\r\nThanks! 🚀",
+        "issue_number": "137",
+        "state": "closed",
+        "merged": true,
+        "user": "jk4e",
+        "merged_by": "GreatV",
+        "created_at": "2025-03-10T07:52:36+00:00",
+        "closed_at": "2025-03-10T11:51:51+00:00",
+        "additions": 2,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "c57ab00dde5f4da048e9a299894d7b8c29fe51c1"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 134,
+        "title": "feat: 可设置自动标注图片数量",
+        "body": "![image](https://github.com/user-attachments/assets/390c699c-43f9-4f9e-96f5-7e4c6b9876bb)\r\n\r\n- 可在数字输入框调整自动标注的图片数量，默认为 0\r\n- 当数值小于 0 或过大时会根据当前图片数量调整到合适的大小（`currIndex` 到剩下全部图片数量）\r\n- 跳过已确认图片 #122 ",
+        "issue_number": "134",
+        "state": "closed",
+        "merged": true,
+        "user": "MiaoHN",
+        "merged_by": "GreatV",
+        "created_at": "2025-02-15T10:47:43+00:00",
+        "closed_at": "2025-02-15T14:17:04+00:00",
+        "additions": 37,
+        "deletions": 6,
+        "changed_files": 1,
+        "commits": [
+            "5f3b5bae818d7d8bf2d2d3740ee442916e4288b9",
+            "57e6d4c9ce3771c98f275c246feb88f10c6b4a8b",
+            "ec119d087fdaaf08963275240bf984257f3eddd1",
+            "e614506f555ecfe66927a4df53e217939cc90cf1"
+        ],
+        "comment_by": [
+            "GreatV",
+            "GreatV",
+            "MiaoHN"
+        ],
+        "review_by": [
+            "GreatV"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 140,
+        "title": "fix some bug",
+        "body": null,
+        "issue_number": "140",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2025-03-20T08:10:34+00:00",
+        "closed_at": "2025-03-20T08:13:12+00:00",
+        "additions": 11,
+        "deletions": 2,
+        "changed_files": 2,
+        "commits": [
+            "b361d1e0f420e8abe94fc0074a5df1cd24c9193c"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 141,
+        "title": "fix some bugs",
+        "body": null,
+        "issue_number": "141",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2025-03-20T08:33:17+00:00",
+        "closed_at": "2025-03-20T08:34:52+00:00",
+        "additions": 4,
+        "deletions": 4,
+        "changed_files": 2,
+        "commits": [
+            "92981779c5fd507e5e7e7288ad021b1c9f3734b5"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 143,
+        "title": "Delete nightly-build.yml to avoid frequent builds",
+        "body": "The current nightly build process triggers frequent builds, which may not be necessary or efficient. Deleting this workflow will stop the automatic nightly builds.",
+        "issue_number": "143",
+        "state": "closed",
+        "merged": true,
+        "user": "LovingThresh",
+        "merged_by": "GreatV",
+        "created_at": "2025-03-21T01:53:19+00:00",
+        "closed_at": "2025-03-21T01:57:57+00:00",
+        "additions": 0,
+        "deletions": 96,
+        "changed_files": 1,
+        "commits": [
+            "efa86ab38b03e1b8f69ef54a55b102afa03f34b1"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 142,
+        "title": "Release Build for Windows, macOS and Ubuntu Executables",
+        "body": null,
+        "issue_number": "142",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2025-03-20T12:03:46+00:00",
+        "closed_at": "2025-03-20T12:06:11+00:00",
+        "additions": 94,
+        "deletions": 9,
+        "changed_files": 1,
+        "commits": [
+            "42378e35127823c2bec1960037e2c8c2c9928c0c"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 154,
+        "title": "Updates PaddlePaddle to stable version 3.0.0 from rc1 and pins PaddleOCR version",
+        "body": "This pull request updates dependencies to ensure compatibility with stable versions and introduces constraints to prevent potential issues with future releases. The most important changes include updating the PaddlePaddle version in the release workflow and adding a version constraint for PaddleOCR in the `pyproject.toml` file.\r\n\r\n### Dependency Updates:\r\n\r\n* [`.github/workflows/release-build.yml`](diffhunk://#diff-52120b4145bd2cf9c735193f6a093a7944688b21f04e854447e34a5049fc829fL21-R21): Updated the PaddlePaddle dependency from `3.0.0rc1` to the stable release `3.0.0` and removed the installation of PaddleOCR in three separate job steps. [[1]](diffhunk://#diff-52120b4145bd2cf9c735193f6a093a7944688b21f04e854447e34a5049fc829fL21-R21) [[2]](diffhunk://#diff-52120b4145bd2cf9c735193f6a093a7944688b21f04e854447e34a5049fc829fL53-R52) [[3]](diffhunk://#diff-52120b4145bd2cf9c735193f6a093a7944688b21f04e854447e34a5049fc829fL85-R83)\r\n\r\n* [`pyproject.toml`](diffhunk://#diff-50c86b7ed8ac2cf95bd48334961bf0530cdc77b5a56f852c5c61b89d735fd711L10-R10): Added a version constraint for PaddleOCR (`paddleocr<3.0`) to ensure compatibility with the current project setup.",
+        "issue_number": "154",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2025-05-22T13:57:09+00:00",
+        "closed_at": "2025-05-22T14:00:31+00:00",
+        "additions": 4,
+        "deletions": 7,
+        "changed_files": 2,
+        "commits": [
+            "6cf3ea0660a9cf85549fb20b6897e71f83c7212f",
+            "3094c6b028cef60ecbe5118e5cfa6f60f65c0604"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "Copilot"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 139,
+        "title": "create a GitHub Action workflow to build and publish an EXE file",
+        "body": "## What's Changed\r\n\r\nAdded a GitHub Actions workflow to automatically build and publish Windows executables:\r\n\r\n- Runs daily at 00:00 UTC\r\n- Creates date-based versioned releases (e.g., v2025.03.20)\r\n- Works on Windows runners for the entire process\r\n- Generates SHA256 checksums for verification\r\n\r\n## Why\r\n\r\n- Provides ready-to-use executables for users without building from source\r\n- Eliminates manual release process\r\n- Ensures daily availability of latest builds\r\n\r\n## Implementation\r\n\r\n- Single Windows workflow using PowerShell\r\n- Properly handles file uploads and release management\r\n- Automatically replaces previous day's release",
+        "issue_number": "139",
+        "state": "closed",
+        "merged": true,
+        "user": "LovingThresh",
+        "merged_by": "GreatV",
+        "created_at": "2025-03-20T02:43:02+00:00",
+        "closed_at": "2025-03-20T06:15:10+00:00",
+        "additions": 184,
+        "deletions": 0,
+        "changed_files": 2,
+        "commits": [
+            "fd8bf581d0cafd10037ebb5006fad8bab8538f0e",
+            "1b59d59078558bdbabb2de483406cb0e7bd65d71",
+            "d56a5c54e56b9488752acaee8a1aa2b0eafa1748",
+            "13bba9557cb9048106e5177dc69e13249c3478a6",
+            "cfdd2738fa4174c93cf16e97ecf119fbe7dfb671",
+            "352b6587b24d7b97d8cb9e1f3a28708d2b9538eb",
+            "6ffd8c77293006e89ae79c7a0c5af49d0eeb1b72"
+        ],
+        "comment_by": [
+            "LovingThresh",
+            "GreatV",
+            "LovingThresh",
+            "GreatV",
+            "LovingThresh",
+            "GreatV",
+            "GreatV",
+            "GreatV",
+            "LovingThresh"
+        ],
+        "review_by": [
+            "GreatV",
+            "GreatV",
+            "GreatV",
+            "GreatV"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 170,
+        "title": "[Bug] Fix drawText bug",
+        "body": "When using the label display function, an error occurs.\r\ndrawText(self, p: Union[QPointF, QPoint], s: Optional[str]): argument 1 has unexpected type 'float'\r\n  drawText(self, rectangle: QRectF, flags: int, text: Optional[str]): argument 1 has unexpected type 'float'\r\n  drawText(self, rectangle: QRect, flags: int, text: Optional[str]): argument 1 has unexpected type 'float'\r\n  drawText(self, rectangle: QRectF, text: Optional[str], option: QTextOption = QTextOption()): argument 1 has unexpected type 'float'\r\n  drawText(self, p: QPoint, s: Optional[str]): argument 1 has unexpected type 'float'\r\n  drawText(self, x: int, y: int, width: int, height: int, flags: int, text: Optional[str]): argument 1 has unexpected type 'float'\r\n  drawText(self, x: int, y: int, s: Optional[str]): argument 1 has unexpected type 'float'",
+        "issue_number": "170",
+        "state": "closed",
+        "merged": true,
+        "user": "Sam-gsj",
+        "merged_by": "GreatV",
+        "created_at": "2025-06-13T03:29:05+00:00",
+        "closed_at": "2025-06-13T03:34:39+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "a88e42054358fe7e7e9c82134b0520125070a950"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 166,
+        "title": "[Bug] Fix bug in PPOCRLabel.py",
+        "body": "When clicking on “Table Recognition,” if no table is detected, an empty table is created, but this triggers an error. The following is the error message:\r\n\r\nTraceback (most recent call last):\r\n  File \"/Users/guoshengjian/PPOCRLabel/PPOCRLabel.py\", line 3153, in TableRecognition\r\n    tablepyxl.document_to_xl(\"\", excel_path)\r\n  File \"/Users/guoshengjian/PPOCRLabel/tablepyxl/tablepyxl.py\", line 118, in document_to_xl\r\n    wb = document_to_workbook(doc, base_url=base_url)\r\n  File \"/Users/guoshengjian/PPOCRLabel/tablepyxl/tablepyxl.py\", line 104, in document_to_workbook\r\n    ).transform()\r\n  File \"/opt/miniconda3/envs/Label/lib/python3.10/site-packages/premailer/premailer.py\", line 353, in transform\r\n    tree = etree.fromstring(stripped, parser).getroottree()\r\nAttributeError: 'NoneType' object has no attribute 'getroottree'\r\nzsh: abort      python PPOCRLabel.py\r\n\r\nThe error occurs because the document_to_xl() function is being called with an empty string (\"\"), which leads to a None value being processed by premailer, resulting in the AttributeError.",
+        "issue_number": "166",
+        "state": "closed",
+        "merged": true,
+        "user": "Sam-gsj",
+        "merged_by": "GreatV",
+        "created_at": "2025-06-11T07:59:17+00:00",
+        "closed_at": "2025-06-11T08:56:55+00:00",
+        "additions": 15,
+        "deletions": 3,
+        "changed_files": 1,
+        "commits": [
+            "4b9dc63d535ccf8ef4f7499383634cf88478a976",
+            "a59665e9fc3f85f40c4a35696fc7e0a0f2b97e56",
+            "718b8ff4169099c29f9626ed724982fb46b4b322",
+            "b3eadceb2a436f003bf47abbb9f432a3556b098c",
+            "649fe17bdf6b5e88418e024be8916020d13dcd53"
+        ],
+        "comment_by": [
+            "Sam-gsj",
+            "GreatV"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 161,
+        "title": "Refactor and enhance OCR functionality with PaddleOCR 3.0 support",
+        "body": "- Updated PaddleOCR dependency to version 3.0 for improved performance and features.\r\n- Refactored OCR-related functions to utilize the new PaddleOCR API, including changes in model initialization and prediction methods.\r\n- Enhanced error handling and logging throughout the OCR process for better debugging and user feedback.\r\n- Updated documentation strings for clarity and consistency.\r\n- Removed deprecated code and unnecessary imports to streamline the codebase.\r\n- Added new table recognition capabilities using the updated PaddleOCR features.\r\n\r\nThis commit aims to improve the overall functionality and maintainability of the OCR system.",
+        "issue_number": "161",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2025-06-01T05:53:17+00:00",
+        "closed_at": "2025-06-01T06:11:16+00:00",
+        "additions": 1021,
+        "deletions": 497,
+        "changed_files": 23,
+        "commits": [
+            "a8f87ce27c148cd8798c59c846760c62a1138f89",
+            "f23cb465a8090bb9e4e0d1da85b0dbc2f202d45d",
+            "455e2310a8c2d91d77ff8098998550faf1f64cf6",
+            "f232e3003cc060e69512925371922de18d517d18",
+            "30706080027e7381aeefce0c4ddc00e93514eedb",
+            "824d5f1ebaed6231159c0098ab1e734388cb852e",
+            "48bd27058f3607e9b80a4ba4e11bb8fdf30073ab"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "Copilot",
+            "Copilot",
+            "Copilot",
+            "Copilot"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 175,
+        "title": " [Bug] Fix recongnition  bug",
+        "body": "Fix #174 ",
+        "issue_number": "175",
+        "state": "closed",
+        "merged": true,
+        "user": "Sam-gsj",
+        "merged_by": "GreatV",
+        "created_at": "2025-06-13T13:07:53+00:00",
+        "closed_at": "2025-06-13T13:40:00+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "fbce46440d90c6025891c0939134d732ee3a8f68",
+            "e0783b32aeeacadc6fadc60b264bbd0e1e985585",
+            "6a5c61a0803b7268f5291b232dae29585037ca91"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 177,
+        "title": "[Bug] Fix bug key_cls",
+        "body": "Fix #174 ",
+        "issue_number": "177",
+        "state": "closed",
+        "merged": true,
+        "user": "Sam-gsj",
+        "merged_by": "GreatV",
+        "created_at": "2025-06-14T10:21:15+00:00",
+        "closed_at": "2025-06-14T10:43:20+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "a215aa27b53e1fcad8744667b7e45a47759079f5"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 173,
+        "title": "[Bug] Fix languages bug",
+        "body": "There will be an error when the user uses other language models.",
+        "issue_number": "173",
+        "state": "closed",
+        "merged": true,
+        "user": "Sam-gsj",
+        "merged_by": "Bobholamovic",
+        "created_at": "2025-06-13T09:36:28+00:00",
+        "closed_at": "2025-06-13T12:06:18+00:00",
+        "additions": 21,
+        "deletions": 8,
+        "changed_files": 1,
+        "commits": [
+            "2cacfb3e577ba94563395e294e66baeb81ef6647",
+            "3f610bf7709daa8e48dd6de2a98d213d391e5796",
+            "5a35b086b2a7da3bc68b32426750dcac032e0fd0",
+            "9fe2638f64c1673e799524759ae5fb6f54e6c914",
+            "8c72f05112bb60236e2aeae61809a8799bd52690"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "Bobholamovic",
+            "GreatV"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 181,
+        "title": "[README] Modify README",
+        "body": null,
+        "issue_number": "181",
+        "state": "closed",
+        "merged": false,
+        "user": "Sam-gsj",
+        "merged_by": null,
+        "created_at": "2025-06-16T15:47:41+00:00",
+        "closed_at": "2025-06-16T15:57:33+00:00",
+        "additions": 88,
+        "deletions": 19,
+        "changed_files": 2,
+        "commits": [
+            "beaf7e4ea85707ec6475e18d2ab9672f3f4f107f",
+            "0874fee374a5be83a3a42f26c33a4fb86d3a02c2",
+            "b192f524c976e88dccd51a5f8f0a69ccccaa7701"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 182,
+        "title": "[README] Modify README",
+        "body": null,
+        "issue_number": "182",
+        "state": "closed",
+        "merged": true,
+        "user": "Sam-gsj",
+        "merged_by": "Bobholamovic",
+        "created_at": "2025-06-16T15:57:17+00:00",
+        "closed_at": "2025-06-16T15:58:45+00:00",
+        "additions": 21,
+        "deletions": 21,
+        "changed_files": 2,
+        "commits": [
+            "beaf7e4ea85707ec6475e18d2ab9672f3f4f107f",
+            "0874fee374a5be83a3a42f26c33a4fb86d3a02c2",
+            "b192f524c976e88dccd51a5f8f0a69ccccaa7701",
+            "025e598261cf6da8de8eaa198686e95a24cb6130"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 178,
+        "title": "[README] Update README",
+        "body": null,
+        "issue_number": "178",
+        "state": "closed",
+        "merged": true,
+        "user": "Sam-gsj",
+        "merged_by": "GreatV",
+        "created_at": "2025-06-14T12:14:54+00:00",
+        "closed_at": "2025-06-16T14:29:30+00:00",
+        "additions": 88,
+        "deletions": 19,
+        "changed_files": 2,
+        "commits": [
+            "beaf7e4ea85707ec6475e18d2ab9672f3f4f107f",
+            "0874fee374a5be83a3a42f26c33a4fb86d3a02c2"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "GreatV"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 176,
+        "title": "[Function] Add automatic Table Structure Reordering Function.",
+        "body": "Fix #103 ",
+        "issue_number": "176",
+        "state": "closed",
+        "merged": true,
+        "user": "Sam-gsj",
+        "merged_by": "GreatV",
+        "created_at": "2025-06-13T14:17:28+00:00",
+        "closed_at": "2025-06-14T10:37:41+00:00",
+        "additions": 11850,
+        "deletions": 11743,
+        "changed_files": 6,
+        "commits": [
+            "4b9dc63d535ccf8ef4f7499383634cf88478a976",
+            "a59665e9fc3f85f40c4a35696fc7e0a0f2b97e56",
+            "718b8ff4169099c29f9626ed724982fb46b4b322",
+            "b3eadceb2a436f003bf47abbb9f432a3556b098c",
+            "649fe17bdf6b5e88418e024be8916020d13dcd53",
+            "8eae1f011788a38be89470eaca6efd467e86030d",
+            "2276f8d1acb32e2089d729efe7acfa2a26d7a84a",
+            "7531921b657e943093be3ec179df9dbeff0b9552",
+            "ac390c8a03238ed380f707c731a10d97ec4ff342",
+            "529d91aa239ac4ec34e2a2b5ce685ca61aaf45f4",
+            "f59d80d8f37e9fb02577ffd628e4b2dc862916d2",
+            "dd82729beec9b1453c2ee6183a0854180d1b0d01",
+            "1a8038e54bb4e9cdbd38504979e50ecb2dc9b89c"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "GreatV",
+            "GreatV",
+            "GreatV",
+            "GreatV",
+            "GreatV"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 192,
+        "title": "[Fix] Update `cv2.imdecode` to use `cv2.IMREAD_COLOR` for consistent",
+        "body": "This pull request updates multiple methods across the `PPOCRLabel.py` and `libs/autoDialog.py` files to improve clarity and maintainability by replacing the hardcoded `1` parameter in `cv2.imdecode` with the more descriptive `cv2.IMREAD_COLOR`. This change ensures better readability and aligns with OpenCV's standard practices.\r\n\r\n### Updates to `cv2.imdecode` usage:\r\n\r\n* Replaced the `1` parameter with `cv2.IMREAD_COLOR` in the `loadFile` method to improve code clarity and consistency. (`PPOCRLabel.py`, [PPOCRLabel.pyL2140-R2142](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L2140-R2142))\r\n* Updated the `autoRecognition`, `reRecognition`, `singleRerecognition`, and `expandSelectedShape` methods to use `cv2.IMREAD_COLOR` for decoding images. (`PPOCRLabel.py`, [[1]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L2942-R2944) [[2]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L3026-R3028) [[3]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L3648-R3652)\r\n* Modified the `saveRecResult` method to decode images using `cv2.IMREAD_COLOR` for consistency with other methods. (`PPOCRLabel.py`, [PPOCRLabel.pyL3498-R3502](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L3498-R3502))\r\n* Applied the same replacement in the `run` method of `libs/autoDialog.py` to maintain uniformity across the codebase. (`libs/autoDialog.py`, [libs/autoDialog.pyL45-R45](diffhunk://#diff-e2be86fe170286e4841857fd455dc003a6e7fc66255a49f72725d651ee5e34b6L45-R45))",
+        "issue_number": "192",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2025-07-03T13:03:07+00:00",
+        "closed_at": "2025-07-03T13:05:05+00:00",
+        "additions": 10,
+        "deletions": 6,
+        "changed_files": 2,
+        "commits": [
+            "c4275783c1226dc36e3612f2eed9fc9a985e5bfa"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 185,
+        "title": "[Update] remove enable_mkldnn = False and choose lang",
+        "body": null,
+        "issue_number": "185",
+        "state": "closed",
+        "merged": true,
+        "user": "Sam-gsj",
+        "merged_by": "GreatV",
+        "created_at": "2025-06-19T06:56:18+00:00",
+        "closed_at": "2025-06-19T11:14:43+00:00",
+        "additions": 1,
+        "deletions": 18,
+        "changed_files": 2,
+        "commits": [
+            "e05a0460776e9dd542463f91798ee12e8fdbe74e",
+            "e15f9e906581797b66058a5748591d7913c3b6da"
+        ],
+        "comment_by": [
+            "GreatV",
+            "Bobholamovic"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 190,
+        "title": "[Refactor] Improve variable naming and code organization",
+        "body": "This pull request focuses on code quality improvements in `PPOCRLabel.py` by standardizing variable naming conventions, enhancing type annotations, and refining the code structure for better readability and maintainability. Additionally, some minor functional adjustments and fixes were applied.\r\n\r\n### Code Quality Improvements\r\n\r\n* **Variable Naming Standardization**: Updated variable names to follow snake_case convention, replacing camelCase names like `filelistLayout` with `filelist_layout` throughout the file. This change improves code readability and consistency. [[1]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L278-R290) [[2]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L352-R362) [[3]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L376-R382) [[4]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L510-R511) [[5]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L534-R540) [[6]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L551-R552)\r\n* **Type Annotations**: Added type annotations where applicable, such as specifying `poly: np.ndarray` in the `gen_quad_from_poly` method, to improve code clarity and facilitate static analysis.\r\n\r\n### Functional Adjustments\r\n\r\n* **Focus Handling**: Modified `self.canvas.setFocus` to use `Qt.FocusReason.TabFocusReason` for better focus management.\r\n* **Message Box Formatting**: Adjusted the formatting of warning messages for better readability and localization support.\r\n\r\n### Minor Fixes and Cleanup\r\n\r\n* **Comment Refinement**: Updated and clarified comments, such as correcting \"excel executable\" to \"Excel executable\" for accuracy.\r\n* **Removed Redundant Code**: Eliminated unnecessary commented-out code and redundant print statements, such as in `saveLabels`. [[1]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L1772) [[2]](diffhunk://#diff-8776870c37af691ef6532d16681758c9023669ef2d5814c2ae5aa961dea769e4L2945-R2949)\r\n\r\nThese changes collectively enhance the maintainability and readability of the codebase while ensuring functional correctness.",
+        "issue_number": "190",
+        "state": "open",
+        "merged": false,
+        "user": "GreatV",
+        "merged_by": null,
+        "created_at": "2025-07-01T14:18:00+00:00",
+        "closed_at": null,
+        "additions": 81,
+        "deletions": 77,
+        "changed_files": 1,
+        "commits": [
+            "0072d0cd4bd8e7eb072d2c61778577f6c7c9a573"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "Copilot"
+        ]
+    },
+    {
+        "repo": "PFCCLab/PPOCRLabel",
+        "number": 193,
+        "title": "[Fix] Update image decoding and processing in Worker class",
+        "body": "This pull request includes updates to improve the functionality and accuracy of OCR processing in the `PPOCRLabel` and `autoDialog` modules. The key changes involve modifying configuration parameters and fixing how images are handled during OCR prediction.\r\n\r\n### Changes to OCR configuration:\r\n\r\n* In `PPOCRLabel.py`, the `get_str` method now sets the `use_textline_orientation` parameter to `False`, disabling textline orientation detection. This change likely reflects a shift in how text orientation is handled in the OCR pipeline.\r\n\r\n### Fixes to image handling:\r\n\r\n* In `libs/autoDialog.py`, the `run` method now ensures that images are properly decoded before shape extraction and OCR prediction. The `cv2.imdecode` function's output is stored in a variable (`img`) before accessing its shape, and the decoded image itself is passed to the OCR prediction method instead of the file path. This improves the robustness of the image processing workflow.",
+        "issue_number": "193",
+        "state": "closed",
+        "merged": true,
+        "user": "GreatV",
+        "merged_by": "GreatV",
+        "created_at": "2025-07-03T13:23:59+00:00",
+        "closed_at": "2025-07-03T13:26:13+00:00",
+        "additions": 5,
+        "deletions": 4,
+        "changed_files": 2,
+        "commits": [
+            "346be493063ca180ef898fa384d40a2e6ae9e2e8"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "Copilot"
+        ]
+    }
+]

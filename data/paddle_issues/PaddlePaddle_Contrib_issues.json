@@ -1,0 +1,90 @@
+[
+    {
+        "repo": "PaddlePaddle/Contrib",
+        "number": 41,
+        "title": "cpu可以换成GPU吗？",
+        "body": "您好，我想问下，我运行danet的train_executor.py，用GPU运行怎么修改代码？可以帮忙解答下吗，谢谢了。",
+        "state": "open",
+        "user": "wlj567",
+        "closed_by": null,
+        "created_at": "2021-11-15T01:17:20+00:00",
+        "updated_at": "2021-11-15T01:17:20+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Contrib",
+        "number": 9,
+        "title": "test",
+        "body": "哈哈哈",
+        "state": "open",
+        "user": "Kendraqian",
+        "closed_by": null,
+        "created_at": "2020-07-30T03:48:09+00:00",
+        "updated_at": "2020-07-30T03:48:09+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Contrib",
+        "number": 40,
+        "title": "danet复现",
+        "body": "您好，请问一下，我如果用pytorch复现您的danet,需要修改那些地方？希望有空帮忙解答一下，谢谢了。",
+        "state": "open",
+        "user": "wlj567",
+        "closed_by": null,
+        "created_at": "2021-11-12T09:00:23+00:00",
+        "updated_at": "2021-11-12T09:00:23+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Contrib",
+        "number": 10,
+        "title": "A problem about pre-trained model loading.",
+        "body": "Hi, the pre-trained model \"DANet101_better_model_paddle1.6\" can not be loaded successfully in dygraph mode.\r\n```python\r\nimport paddle.fluid as fluid\r\npath = 'DANet_models/DANet101_better_model_paddle1.6'\r\nwith fluid.dygraph.guard():\r\n    state_dict = fluid.load_dygraph(path)\r\n    print(state_dict)\r\n```\r\nmeet the error \r\n>_pickle.UnpicklingError: invalid load key, '\\x02'.\r\n\r\nEnvironments:\r\npython3.6.10\r\npaddlepaddle-gpu 1.8.3.post107\r\n",
+        "state": "open",
+        "user": "Yuuuuuuuuuuuuuuuuuummy",
+        "closed_by": null,
+        "created_at": "2020-08-20T02:49:16+00:00",
+        "updated_at": "2020-08-20T02:51:17+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Contrib",
+        "number": 4,
+        "title": "e3d-lstm安装依赖问题",
+        "body": "1. 运行pip install -r requirement.txt有以下报错\r\nERROR: Could not find a version that satisfies the requirement cuda>=8.0 (from -r requirements.txt (line 5)) (from versions: none)\r\nERROR: No matching distribution found for cuda>=8.0 (from -r requirements.txt (line 5))\r\n",
+        "state": "closed",
+        "user": "xiegegege",
+        "closed_by": "xiegegege",
+        "created_at": "2020-03-18T13:42:22+00:00",
+        "updated_at": "2020-03-19T12:36:49+00:00",
+        "closed_at": "2020-03-19T12:36:49+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Contrib",
+        "number": 6,
+        "title": "紧急求助！请问您是否使用了Resnet预训练模型？",
+        "body": "您好，非常感谢您的项目，但是我有个疑问。您写了动态图版本的程序，一般我们会再训练时使用resnet当预训练模型，但是我在网上没有找到resnet的动态图预训练模型。请问您在训练的时候，是怎么处理的？还是说您这边有预训练模型，方便给个下载链接吗？",
+        "state": "open",
+        "user": "coldlarry",
+        "closed_by": null,
+        "created_at": "2020-05-09T13:31:17+00:00",
+        "updated_at": "2021-11-15T01:50:05+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Exception-star",
+            "Exception-star",
+            "wlj567"
+        ],
+        "labels": []
+    }
+]

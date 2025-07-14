@@ -1,0 +1,647 @@
+[
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "f9a391930de6e9867ff676679efcecddbaf2e683",
+        "created_at": "2025-03-10 11:38:26 +0800",
+        "author": "AndPuQing",
+        "committer": "AndPuQing",
+        "message": "update-setup.py-to-require-paddlepaddle-version-2.0.0-or-higher",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "f1af3ffe9040185229de73df94e25e14525f78b6",
+        "created_at": "2025-03-26 18:44:12 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-3-from-NKNaN-fix-docs",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "7cc9edc6f1785b2b8b009e8c1229d16b48183d3d",
+        "created_at": "2025-03-01 01:51:15 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "HydrogenSulfate",
+        "message": "use-np.prod-t.shape-instead-of-t.numel",
+        "files": [
+            {
+                "filename": "paddle_scatter/scatter.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 12,
+                "changes": 25
+            },
+            {
+                "filename": "paddle_scatter/segment_coo.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 22,
+                "changes": 46
+            },
+            {
+                "filename": "paddle_scatter/segment_csr.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 15,
+                "changes": 32
+            },
+            {
+                "filename": "paddle_scatter/utils.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 1,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "52a0201ac70d8e51745eec08d980bb159343d6f6",
+        "created_at": "2025-03-24 10:57:20 +0800",
+        "author": "AndPuQing",
+        "committer": "AndPuQing",
+        "message": "fix-place",
+        "files": [
+            {
+                "filename": "paddle_scatter/scatter.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "4b79639709e77a8c388c96f7e38f42626967063d",
+        "created_at": "2025-06-16 09:53:18 +0000",
+        "author": "BeingGod",
+        "committer": "BeingGod",
+        "message": "resolve-reviewer-issues",
+        "files": [
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 18,
+                "changes": 37
+            },
+            {
+                "filename": "setup_ops.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 8,
+                "changes": 17
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "3747a7c553619e1e20e31f9d63e80075bfd906c7",
+        "created_at": "2025-06-16 17:54:46 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-4-from-BeingGod-dev-zhangrb",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "3058c497b9d80dabc533e91384638927b405069a",
+        "created_at": "2025-03-25 12:29:23 +0800",
+        "author": "NKNaN",
+        "committer": "NKNaN",
+        "message": "update-docs",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "f508d140b1be7e5aee83e6a8cdfff83453885198",
+        "created_at": "2025-03-24 10:59:34 +0800",
+        "author": "AndPuQing",
+        "committer": "AndPuQing",
+        "message": "remove-pyproject.toml-and-fix-setup_requires-in-setup.py",
+        "files": [
+            {
+                "filename": "pyproject.toml",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "929f376457a37b46ea6769813c2501993bb64e57",
+        "created_at": "2025-06-16 17:57:04 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "4aaeaeecb0411dd2071954b32cbacbcd2c4dab3f",
+        "created_at": "2025-03-26 18:43:57 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-2-from-AndPuQing-main",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "6ab4f9ccaf58a3ef6d8f2faf3f986d792692e07a",
+        "created_at": "2025-06-16 06:45:39 +0000",
+        "author": "BeingGod",
+        "committer": "BeingGod",
+        "message": "Feat-Add-version-and-support-multi-gpu-archs-compile",
+        "files": [
+            {
+                "filename": "paddle_scatter/__init__.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            },
+            {
+                "filename": "setup_ops.py",
+                "status": "modified",
+                "additions": 45,
+                "deletions": 2,
+                "changes": 47
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "5218655f0004fd75a3f671fe81b7aee31b6bd7b1",
+        "created_at": "2025-01-16 17:01:26 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "HydrogenSulfate",
+        "message": "use-public-paddle-API-instead-of-private-paddle-API",
+        "files": [
+            {
+                "filename": "paddle_scatter/tests/test_gather.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 12,
+                "changes": 24
+            },
+            {
+                "filename": "paddle_scatter/tests/test_scatter.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 12,
+                "changes": 24
+            },
+            {
+                "filename": "paddle_scatter/tests/test_segment.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 12,
+                "changes": 24
+            },
+            {
+                "filename": "paddle_scatter/tests/testing.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 3,
+                "changes": 10
+            },
+            {
+                "filename": "setup_ops.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "1d5a86cf5dfa776a6cbb1379d9aaa843b9424202",
+        "created_at": "2025-01-14 20:08:43 +0800",
+        "author": "NKNaN",
+        "committer": "NKNaN",
+        "message": "update-latex-and-url",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 40,
+                "deletions": 38,
+                "changes": 78
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "setup_ops.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "a4758c3aaec8a44a8d836dc05442d42a07c734c5",
+        "created_at": "2025-01-16 16:47:12 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "HydrogenSulfate",
+        "message": "update-paddle_scatter-document",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 94,
+                "deletions": 87,
+                "changes": 181
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "7ad5dd1773dc75c8400157d015298a1e11dbd76d",
+        "created_at": "2025-01-14 20:43:09 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-1-from-NKNaN-main",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "00b2025500c65c4c88d0f8faf7d572e8347d25c9",
+        "created_at": "2025-01-14 14:46:30 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "web-flow",
+        "message": "Initial-commit",
+        "files": [
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "8bf15bd0574e24e02e6fd60c35c9fa869d143979",
+        "created_at": "2025-01-14 20:21:24 +0800",
+        "author": "NKNaN",
+        "committer": "NKNaN",
+        "message": "replace-old-name",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_scatter",
+        "sha": "93119867655b6851486b3180140ad23b9f915f9c",
+        "created_at": "2025-01-14 17:38:41 +0800",
+        "author": "NKNaN",
+        "committer": "NKNaN",
+        "message": "upload-files",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 322,
+                "deletions": 0,
+                "changes": 322
+            },
+            {
+                "filename": "csrc/atomics.cuh",
+                "status": "added",
+                "additions": 183,
+                "deletions": 0,
+                "changes": 183
+            },
+            {
+                "filename": "csrc/index_info.cuh",
+                "status": "added",
+                "additions": 80,
+                "deletions": 0,
+                "changes": 80
+            },
+            {
+                "filename": "csrc/index_info.h",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "csrc/scatter_min_max.cc",
+                "status": "added",
+                "additions": 231,
+                "deletions": 0,
+                "changes": 231
+            },
+            {
+                "filename": "csrc/scatter_min_max.cu",
+                "status": "added",
+                "additions": 206,
+                "deletions": 0,
+                "changes": 206
+            },
+            {
+                "filename": "csrc/segment_coo.cc",
+                "status": "added",
+                "additions": 508,
+                "deletions": 0,
+                "changes": 508
+            },
+            {
+                "filename": "csrc/segment_coo.cu",
+                "status": "added",
+                "additions": 610,
+                "deletions": 0,
+                "changes": 610
+            },
+            {
+                "filename": "csrc/segment_csr.cc",
+                "status": "added",
+                "additions": 417,
+                "deletions": 0,
+                "changes": 417
+            },
+            {
+                "filename": "csrc/segment_csr.cu",
+                "status": "added",
+                "additions": 382,
+                "deletions": 0,
+                "changes": 382
+            },
+            {
+                "filename": "csrc/utils.cuh",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "csrc/utils.h",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "paddle_scatter/__init__.py",
+                "status": "added",
+                "additions": 53,
+                "deletions": 0,
+                "changes": 53
+            },
+            {
+                "filename": "paddle_scatter/composite/__init__.py",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            },
+            {
+                "filename": "paddle_scatter/composite/logsumexp.py",
+                "status": "added",
+                "additions": 82,
+                "deletions": 0,
+                "changes": 82
+            },
+            {
+                "filename": "paddle_scatter/composite/softmax.py",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            },
+            {
+                "filename": "paddle_scatter/composite/std.py",
+                "status": "added",
+                "additions": 67,
+                "deletions": 0,
+                "changes": 67
+            },
+            {
+                "filename": "paddle_scatter/scatter.py",
+                "status": "added",
+                "additions": 401,
+                "deletions": 0,
+                "changes": 401
+            },
+            {
+                "filename": "paddle_scatter/segment_coo.py",
+                "status": "added",
+                "additions": 436,
+                "deletions": 0,
+                "changes": 436
+            },
+            {
+                "filename": "paddle_scatter/segment_csr.py",
+                "status": "added",
+                "additions": 387,
+                "deletions": 0,
+                "changes": 387
+            },
+            {
+                "filename": "paddle_scatter/tests/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle_scatter/tests/test_broadcasting.py",
+                "status": "added",
+                "additions": 29,
+                "deletions": 0,
+                "changes": 29
+            },
+            {
+                "filename": "paddle_scatter/tests/test_gather.py",
+                "status": "added",
+                "additions": 261,
+                "deletions": 0,
+                "changes": 261
+            },
+            {
+                "filename": "paddle_scatter/tests/test_logsumexp.py",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "paddle_scatter/tests/test_multi_gpu.py",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "paddle_scatter/tests/test_scatter.py",
+                "status": "added",
+                "additions": 417,
+                "deletions": 0,
+                "changes": 417
+            },
+            {
+                "filename": "paddle_scatter/tests/test_segment.py",
+                "status": "added",
+                "additions": 445,
+                "deletions": 0,
+                "changes": 445
+            },
+            {
+                "filename": "paddle_scatter/tests/test_softmax.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "paddle_scatter/tests/test_std.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "paddle_scatter/tests/test_zero_tensors.py",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "paddle_scatter/tests/testing.py",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "paddle_scatter/utils.py",
+                "status": "added",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            },
+            {
+                "filename": "picture/paddle_logo.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "picture/scatter_add.svg",
+                "status": "added",
+                "additions": 286,
+                "deletions": 0,
+                "changes": 286
+            },
+            {
+                "filename": "picture/segment_coo_add.svg",
+                "status": "added",
+                "additions": 283,
+                "deletions": 0,
+                "changes": 283
+            },
+            {
+                "filename": "picture/segment_csr_add.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "setup.py",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "setup_ops.py",
+                "status": "added",
+                "additions": 41,
+                "deletions": 0,
+                "changes": 41
+            }
+        ]
+    }
+]

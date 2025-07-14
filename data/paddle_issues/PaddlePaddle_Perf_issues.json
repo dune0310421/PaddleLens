@@ -1,0 +1,65 @@
+[
+    {
+        "repo": "PaddlePaddle/Perf",
+        "number": 87,
+        "title": "Why there is a quote",
+        "body": "https://github.com/PaddlePaddle/Perf/blob/2106324ac15b9fbd38bbb89e4543c630ad087d72/Bert/README.md?plain=1#L191\r\n\r\nthere has a quote without end \r\nI modify it as following:\r\n```shell\r\n\r\n$CMD        --max_predictions_per_seq 80 \\\r\n            --learning_rate 5e-5 \\\r\n            --weight_decay 0.0 \\\r\n            --adam_epsilon 1e-8 \\\r\n            --warmup_steps 0 \\\r\n            --output_dir ./tmp2/ \\\r\n            --logging_steps 10 \\\r\n            --save_steps 20000 \\\r\n            --input_dir=$DATA_DIR \\\r\n            --model_type bert \\\r\n            --model_name_or_path bert-base-uncased \\\r\n            --batch_size ${batch_size} \\\r\n            --use_amp ${use_amp} \\\r\n            --gradient_merge_steps $(expr 67584 \\/ $batch_size \\/ 8)\r\n```\r\nAnd it show another problem :\r\nTraceback (most recent call last):\r\n  File \"./run_pretrain.py\", line 439, in <module>\r\n    do_train(args)\r\n  File \"./run_pretrain.py\", line 316, in do_train\r\n    train_data_loader) * args.num_train_epochs\r\nUnboundLocalError: local variable 'train_data_loader' referenced before assignment\r\n\r\nI used https://github.com/PaddlePaddle/Perf/blob/master/Bert/scripts/paddle_base_pre_training.sh \r\nThis shell script worked.\r\n\r\nwhat more , I wonder how get 八卡的训练吞吐率(sequences/sec)?\r\n是把八个worklog 都加起来吗? 有没有快速加起来的方法?  ",
+        "state": "open",
+        "user": "LukeLIN-web",
+        "closed_by": null,
+        "created_at": "2022-07-07T12:15:14+00:00",
+        "updated_at": "2022-07-08T13:22:53+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Perf",
+        "number": 89,
+        "title": "Bert Base性能测试报告中性能指标中sentences和后文的sequences表达一个含义吗？",
+        "body": "![图片](https://user-images.githubusercontent.com/64118875/184592704-e6caa9c8-5b8a-49d8-8042-b6dbc761ed5c.png)\r\n",
+        "state": "open",
+        "user": "tngt",
+        "closed_by": null,
+        "created_at": "2022-08-15T07:20:14+00:00",
+        "updated_at": "2022-08-15T07:20:14+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Perf",
+        "number": 88,
+        "title": "Where I can get the train_list.txt in Resnet50 experiment",
+        "body": "I can't find train_list.txt in ImageNet dataset.",
+        "state": "open",
+        "user": "LukeLIN-web",
+        "closed_by": null,
+        "created_at": "2022-07-12T07:25:56+00:00",
+        "updated_at": "2022-07-13T08:04:53+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "LukeLIN-web"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Perf",
+        "number": 46,
+        "title": "Issues on documentation of word2vec training",
+        "body": "Hi, I have some questions about https://github.com/PaddlePaddle/Perf/blob/master/Word2Vec/readme.md\r\n1. The command to run on single machine should be \r\n```python -u ../../../../tools/static_ps_trainer.py -m benchmark.yaml``` right. Currently it is `../../../`\r\n2. After I run the command above, the training starts, but single machine seems need long time to finish, where could I set iterations? Or I must wait at least one epoch to finish.\r\nThank you very much!\r\n@MrChengmo \r\n@luotao1 ",
+        "state": "open",
+        "user": "lidanqing-intel",
+        "closed_by": null,
+        "created_at": "2021-04-21T12:06:49+00:00",
+        "updated_at": "2021-04-22T03:54:23+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lidanqing-intel",
+            "MrChengmo",
+            "MrChengmo",
+            "luotao1"
+        ],
+        "labels": []
+    }
+]

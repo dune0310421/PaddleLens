@@ -1,0 +1,1187 @@
+[
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "172a9a4a9ff271f08cdb1a1d6922ac8bb04a36bc",
+        "created_at": "2019-04-23 10:35:55 +0800",
+        "author": "houj04",
+        "committer": "houj04",
+        "message": "fix-hyper-link",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "693ab9b80ee57a5a516cc921590d58abc08ae0f8",
+        "created_at": "2019-04-19 15:55:26 +0800",
+        "author": "jerrywgz",
+        "committer": "web-flow",
+        "message": "add-more-config-for-lrc-7",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": ".style.yapf",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": ".travis/precommit.sh",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "LRC/README.md",
+                "status": "modified",
+                "additions": 44,
+                "deletions": 20,
+                "changes": 64
+            },
+            {
+                "filename": "LRC/README_cn.md",
+                "status": "modified",
+                "additions": 47,
+                "deletions": 22,
+                "changes": 69
+            },
+            {
+                "filename": "LRC/genotypes.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 1,
+                "changes": 32
+            },
+            {
+                "filename": "LRC/labels.npz",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "LRC/learning_rate.py",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 1,
+                "changes": 37
+            },
+            {
+                "filename": "LRC/model.py",
+                "status": "modified",
+                "additions": 244,
+                "deletions": 38,
+                "changes": 282
+            },
+            {
+                "filename": "LRC/operations.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "LRC/paddle_predict/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "LRC/reader_cifar.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 4,
+                "changes": 31
+            },
+            {
+                "filename": "LRC/run.sh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 8,
+                "changes": 8
+            },
+            {
+                "filename": "LRC/run_cifar.sh",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            },
+            {
+                "filename": "LRC/run_cifar_test.sh",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "LRC/test_mixup.py",
+                "status": "added",
+                "additions": 140,
+                "deletions": 0,
+                "changes": 140
+            },
+            {
+                "filename": "LRC/train_mixup.py",
+                "status": "modified",
+                "additions": 77,
+                "deletions": 96,
+                "changes": 173
+            },
+            {
+                "filename": "LRC/voting.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "20f9377dbdba41f590ad9d8ca7ffa0b15ac7cb77",
+        "created_at": "2019-09-06 13:32:13 +0800",
+        "author": "houj04",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-13-from-D-X-Y-master",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "3dbf84bd3bef3d44675ce5dd322783c78a02dfa6",
+        "created_at": "2019-04-23 10:39:41 +0800",
+        "author": "houj04",
+        "committer": "houj04",
+        "message": "fix-hyper-link",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "321064f6302ba3831a43ba7034752eeb40193c04",
+        "created_at": "2019-04-23 10:46:41 +0800",
+        "author": "houj04",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-10-from-houj04-master",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "5447bcf72d92b58e9efe38e4aa0d47bab68bec31",
+        "created_at": "2019-09-06 17:09:07 +0800",
+        "author": "houj04",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-14-from-D-X-Y-master",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "398d114ae98006d1077d1d805767e059b1a4883c",
+        "created_at": "2019-04-23 10:29:55 +0800",
+        "author": "houj04",
+        "committer": "houj04",
+        "message": "update-English-version-of-README",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 83,
+                "deletions": 1,
+                "changes": 84
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "b3d3f7ce6de485879c952d02c2c4c95ebe1a2f0c",
+        "created_at": "2020-01-07 15:54:56 +0800",
+        "author": null,
+        "committer": "jerrywgz",
+        "message": "remove-init_on_cpu-because-it-does-not-take-effect-test-develop-18",
+        "files": [
+            {
+                "filename": "Design/inception_train/nn.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            },
+            {
+                "filename": "LRC/learning_rate.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 5,
+                "changes": 8
+            },
+            {
+                "filename": "NAS-Models/train_cifar.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 12,
+                "changes": 22
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "097714ca7484f1430133a0e2585703c2515f581b",
+        "created_at": "2019-04-22 11:09:24 +0800",
+        "author": "jerrywgz",
+        "committer": "web-flow",
+        "message": "refine-py3-for-LRC-8",
+        "files": [
+            {
+                "filename": "LRC/reader_cifar.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "LRC/voting.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "f126ea727d180b6e2045f3ea23fb3d598a223444",
+        "created_at": "2019-04-23 10:44:13 +0800",
+        "author": "houj04",
+        "committer": "houj04",
+        "message": "fix-hyper-link",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "7d1427301bf1a157b3fbe01888e5c0999a07df9d",
+        "created_at": "2019-09-06 01:24:19 +0800",
+        "author": null,
+        "committer": null,
+        "message": "Add-GDAS-CVPR-2019-and-SETN-ICCV-2019-models",
+        "files": [
+            {
+                "filename": "NAS-Modeels/.gitignore",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "NAS-Modeels/README.md",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "NAS-Modeels/lib/models/__init__.py",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "NAS-Modeels/lib/models/genotypes.py",
+                "status": "added",
+                "additions": 154,
+                "deletions": 0,
+                "changes": 154
+            },
+            {
+                "filename": "NAS-Modeels/lib/models/nas_net.py",
+                "status": "added",
+                "additions": 111,
+                "deletions": 0,
+                "changes": 111
+            },
+            {
+                "filename": "NAS-Modeels/lib/models/operations.py",
+                "status": "added",
+                "additions": 207,
+                "deletions": 0,
+                "changes": 207
+            },
+            {
+                "filename": "NAS-Modeels/lib/models/resnet.py",
+                "status": "added",
+                "additions": 74,
+                "deletions": 0,
+                "changes": 74
+            },
+            {
+                "filename": "NAS-Modeels/lib/utils/__init__.py",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "NAS-Modeels/lib/utils/data_utils.py",
+                "status": "added",
+                "additions": 66,
+                "deletions": 0,
+                "changes": 66
+            },
+            {
+                "filename": "NAS-Modeels/lib/utils/meter.py",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "NAS-Modeels/lib/utils/time_utils.py",
+                "status": "added",
+                "additions": 54,
+                "deletions": 0,
+                "changes": 54
+            },
+            {
+                "filename": "NAS-Modeels/scripts/base-train.sh",
+                "status": "added",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": "NAS-Modeels/scripts/train-nas.sh",
+                "status": "added",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": "NAS-Modeels/train_cifar.py",
+                "status": "added",
+                "additions": 217,
+                "deletions": 0,
+                "changes": 217
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "fd5ee56d84811eb1269ddb0e8fad686bef35a5a2",
+        "created_at": "2019-09-06 16:24:52 +0800",
+        "author": null,
+        "committer": null,
+        "message": "Update-Chinese-documents-and-fix-typos",
+        "files": [
+            {
+                "filename": "NAS-Models/.gitignore",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "NAS-Models/README_CN.md",
+                "status": "added",
+                "additions": 117,
+                "deletions": 0,
+                "changes": 117
+            },
+            {
+                "filename": "NAS-Models/lib/models/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/lib/models/genotypes.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            },
+            {
+                "filename": "NAS-Models/lib/models/nas_net.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/lib/models/operations.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/lib/models/resnet.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/lib/utils/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            },
+            {
+                "filename": "NAS-Models/lib/utils/data_utils.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/lib/utils/meter.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/lib/utils/time_utils.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/scripts/base-train.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/scripts/train-nas.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "NAS-Models/train_cifar.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "7d2fd1ef8d78e76c5f77c63e7a4822d1389f9d96",
+        "created_at": "2019-04-18 13:31:29 +0800",
+        "author": "alexqdh",
+        "committer": "alexqdh",
+        "message": "add-readme",
+        "files": [
+            {
+                "filename": "Design/README.md",
+                "status": "modified",
+                "additions": 80,
+                "deletions": 0,
+                "changes": 80
+            },
+            {
+                "filename": "Design/img/cnn_net.png",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/img/search_result.png",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "f1a1815d812f48c05ca0da33ea237f69218da585",
+        "created_at": "2019-04-18 15:39:32 +0800",
+        "author": "jerrywgz",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-5-from-alexqdh-master",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "8e1ec6d0f196cbb73578b669ca09f887f1c16eea",
+        "created_at": "2019-04-18 16:51:14 +0800",
+        "author": "houj04",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-6-from-alexqdh-master",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "172727d0328fcf162472e1ceca91d00553c89be7",
+        "created_at": "2019-04-18 16:47:16 +0800",
+        "author": "alexqdh",
+        "committer": "alexqdh",
+        "message": "add-gitignore-and-remove-temp-files",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "Design/cifar/.dataset_maker.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.dataset_maker.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.dataset_maker_full.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.nn.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.preprocess.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.reader.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.train.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.utils.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/models/.inception.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/models/.layers.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/models/.ops.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "d388376101c7bbc6c8ddf15d172a113f48d56e11",
+        "created_at": "2019-04-18 13:51:39 +0800",
+        "author": "alexqdh",
+        "committer": "alexqdh",
+        "message": "readme-add-CUDA_VISIBLE_DEVICES-description",
+        "files": [
+            {
+                "filename": "Design/README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "f02208f664bac6fd70288d9198f631eb1b7e5c92",
+        "created_at": "2019-04-15 16:56:37 +0800",
+        "author": "alexqdh",
+        "committer": "alexqdh",
+        "message": "update-AutoDL-Design",
+        "files": [
+            {
+                "filename": "Design/autodl.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/run.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "4c0744827853ba700fd52ddd95eaf42ed62aea6d",
+        "created_at": "2019-02-21 14:16:48 +0800",
+        "author": "yma-admin",
+        "committer": "web-flow",
+        "message": "Initial-commit",
+        "files": [
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 201,
+                "deletions": 0,
+                "changes": 201
+            },
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "f0e66c4869c66b99c425438ad5c06b296f52d73a",
+        "created_at": "2019-04-18 11:41:05 +0800",
+        "author": "alexqdh",
+        "committer": "alexqdh",
+        "message": "fix-encoding-typo",
+        "files": [
+            {
+                "filename": "Design/autodl.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/autodl_agent.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/cifar/dataset_maker.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/distribute_generator.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/inception_train/models/inception.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/inception_train/models/layers.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/inception_train/models/ops.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/inception_train/nn.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/inception_train/preprocess.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/inception_train/reader.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/inception_train/train.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/inception_train/utils.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/policy_model.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/reinforce_policy_gradient.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/simple_main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "Design/utils.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "71db55abdcc67f6887e319aa502cbb3cfc0aa058",
+        "created_at": "2019-02-21 19:30:10 +0800",
+        "author": "jerrywgz",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-1-from-jerrywgz-add_LRC_model",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "19d6e829be9f8674fcebf6451d5617f464d0ce4b",
+        "created_at": "2019-04-15 19:03:27 +0800",
+        "author": "jerrywgz",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-4-from-alexqdh-master",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "08733980b2f9fbe527772c5ef4b02d1bfe558e7d",
+        "created_at": "2019-02-21 09:25:57 +0000",
+        "author": "jerrywgz",
+        "committer": "jerrywgz",
+        "message": "add_LRC_model",
+        "files": [
+            {
+                "filename": "LRC/README.md",
+                "status": "added",
+                "additions": 74,
+                "deletions": 0,
+                "changes": 74
+            },
+            {
+                "filename": "LRC/README_cn.md",
+                "status": "added",
+                "additions": 71,
+                "deletions": 0,
+                "changes": 71
+            },
+            {
+                "filename": "LRC/dataset/download.sh",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "LRC/genotypes.py",
+                "status": "added",
+                "additions": 116,
+                "deletions": 0,
+                "changes": 116
+            },
+            {
+                "filename": "LRC/learning_rate.py",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "LRC/model.py",
+                "status": "added",
+                "additions": 313,
+                "deletions": 0,
+                "changes": 313
+            },
+            {
+                "filename": "LRC/operations.py",
+                "status": "added",
+                "additions": 349,
+                "deletions": 0,
+                "changes": 349
+            },
+            {
+                "filename": "LRC/reader.py",
+                "status": "added",
+                "additions": 187,
+                "deletions": 0,
+                "changes": 187
+            },
+            {
+                "filename": "LRC/run.sh",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "LRC/train_mixup.py",
+                "status": "added",
+                "additions": 247,
+                "deletions": 0,
+                "changes": 247
+            },
+            {
+                "filename": "LRC/utils.py",
+                "status": "added",
+                "additions": 55,
+                "deletions": 0,
+                "changes": 55
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/AutoDL",
+        "sha": "9f08071f2e7871939ff8122b96300d14886610ed",
+        "created_at": "2019-04-15 16:54:28 +0800",
+        "author": "alexqdh",
+        "committer": "alexqdh",
+        "message": "add-AutoDL-Design",
+        "files": [
+            {
+                "filename": "Design/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/autodl.py",
+                "status": "modified",
+                "additions": 195,
+                "deletions": 0,
+                "changes": 195
+            },
+            {
+                "filename": "Design/autodl_agent.py",
+                "status": "modified",
+                "additions": 110,
+                "deletions": 0,
+                "changes": 110
+            },
+            {
+                "filename": "Design/cifar/.dataset_maker.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/cifar/dataset_maker.py",
+                "status": "modified",
+                "additions": 108,
+                "deletions": 0,
+                "changes": 108
+            },
+            {
+                "filename": "Design/distribute_generator.py",
+                "status": "modified",
+                "additions": 124,
+                "deletions": 0,
+                "changes": 124
+            },
+            {
+                "filename": "Design/inception_train/.dataset_maker.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.dataset_maker_full.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.nn.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.preprocess.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.reader.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.train.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/.utils.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/models/.inception.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/models/.layers.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/models/.ops.py.un~",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/models/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Design/inception_train/models/inception.py",
+                "status": "modified",
+                "additions": 128,
+                "deletions": 0,
+                "changes": 128
+            },
+            {
+                "filename": "Design/inception_train/models/layers.py",
+                "status": "modified",
+                "additions": 269,
+                "deletions": 0,
+                "changes": 269
+            },
+            {
+                "filename": "Design/inception_train/models/ops.py",
+                "status": "modified",
+                "additions": 254,
+                "deletions": 0,
+                "changes": 254
+            },
+            {
+                "filename": "Design/inception_train/nn.py",
+                "status": "modified",
+                "additions": 118,
+                "deletions": 0,
+                "changes": 118
+            },
+            {
+                "filename": "Design/inception_train/preprocess.py",
+                "status": "modified",
+                "additions": 77,
+                "deletions": 0,
+                "changes": 77
+            },
+            {
+                "filename": "Design/inception_train/reader.py",
+                "status": "modified",
+                "additions": 115,
+                "deletions": 0,
+                "changes": 115
+            },
+            {
+                "filename": "Design/inception_train/train.py",
+                "status": "modified",
+                "additions": 164,
+                "deletions": 0,
+                "changes": 164
+            },
+            {
+                "filename": "Design/inception_train/utils.py",
+                "status": "modified",
+                "additions": 78,
+                "deletions": 0,
+                "changes": 78
+            },
+            {
+                "filename": "Design/main.py",
+                "status": "modified",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "Design/policy_model.py",
+                "status": "modified",
+                "additions": 247,
+                "deletions": 0,
+                "changes": 247
+            },
+            {
+                "filename": "Design/reinforce_policy_gradient.py",
+                "status": "modified",
+                "additions": 82,
+                "deletions": 0,
+                "changes": 82
+            },
+            {
+                "filename": "Design/run.sh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "Design/simple_main.py",
+                "status": "modified",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "Design/utils.py",
+                "status": "modified",
+                "additions": 70,
+                "deletions": 0,
+                "changes": 70
+            }
+        ]
+    }
+]

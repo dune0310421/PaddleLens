@@ -1,0 +1,1798 @@
+[
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 19,
+        "title": "How to use trained models in PyTorch, TensorFlow?",
+        "body": "Hi, congratulations on the amazing work!\r\nI was wondering whether there is any way that you can make the trained RocketQA models available for use in other widely used computational frameworks, such as PyTorch.\r\nWhile I believe that the research community would benefit from using and integrating RocketQA, (1) the end-to-end process of training RocketQA is highly involved, in terms of computational resources and time, and (2) although PaddlePaddle has very interesting capabilities, the vast majority of researchers and practitioners use other computational frameworks.\r\nThank you for considering my request!",
+        "state": "open",
+        "user": "gzerveas",
+        "closed_by": null,
+        "created_at": "2022-03-16T03:00:16+00:00",
+        "updated_at": "2022-03-16T03:00:16+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 8,
+        "title": "Typo in results in README for research/RocketQAv2_EMNLP2021?",
+        "body": "Hi! Thanks for the helpful code release.\r\n\r\nI was wondering if there was a typo in the MS MARCO and NQ results in research/RocketQAv2_EMNLP2021/README.md\r\n\r\nIt looks like the results in that table are identical to PAIR, so it might be a simple mistake.",
+        "state": "closed",
+        "user": "okhat",
+        "closed_by": "LegendaryDan",
+        "created_at": "2021-12-18T21:48:34+00:00",
+        "updated_at": "2021-12-20T16:50:17+00:00",
+        "closed_at": "2021-12-20T16:50:16+00:00",
+        "comments_count": [
+            "LegendaryDan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 22,
+        "title": "BM25 of Dureader-retrieval",
+        "body": "Hi, I wonder what are the hyperparams of k1 and b set in your BM25 baseline?",
+        "state": "closed",
+        "user": "tangzhy",
+        "closed_by": "tangzhy",
+        "created_at": "2022-04-13T06:59:13+00:00",
+        "updated_at": "2022-04-15T03:02:00+00:00",
+        "closed_at": "2022-04-15T03:02:00+00:00",
+        "comments_count": [
+            "HongyuLi2018",
+            "tangzhy"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 18,
+        "title": "对于检索结果的小小疑问",
+        "body": "你好，我在运行基于faiss检索算法的RocketQA模型后，通过改变topk来更改搜索条数测试检索结果，发现了以下问题。我先后将topk设置为5和10，发现当搜索10条结果时，按匹配度排序后，前五条结果与topk为5时搜索出的结果不一致。请问这可能是什么原因导致的呢？在rocket_service.py文件中，search_result = self._faiss_tool.search(q_embs, topk)检索出topk数量的结果，而ranking_score = self._cross_encoder.matching(query=queries, para=paras, title=titles)则是在检索结果后计算得到的，请问，是否存在两次search_result中检索出的结果，对于整个数据集而言，不是ranking_score排名前topk数量结果的可能？感谢解答。以上个人拙见，若有不当，还望多批评指正。",
+        "state": "closed",
+        "user": "KevinHxc",
+        "closed_by": "LegendaryDan",
+        "created_at": "2022-03-08T03:29:40+00:00",
+        "updated_at": "2022-03-14T08:40:35+00:00",
+        "closed_at": "2022-03-14T08:40:35+00:00",
+        "comments_count": [
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 15,
+        "title": "Dureader",
+        "body": "Hi，Great job, I find that you release Chinese retrieval model trained on Dureader, Could you please also release your preprocess code or processed datasets.",
+        "state": "closed",
+        "user": "yclzju",
+        "closed_by": "LegendaryDan",
+        "created_at": "2022-01-19T03:52:02+00:00",
+        "updated_at": "2022-04-01T06:34:27+00:00",
+        "closed_at": "2022-04-01T06:34:27+00:00",
+        "comments_count": [
+            "LegendaryDan",
+            "yclzju",
+            "LegendaryDan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 5,
+        "title": "在finetune_args.py 中for_cn应该是False",
+        "body": "如题",
+        "state": "closed",
+        "user": "CSQianDong",
+        "closed_by": "CSQianDong",
+        "created_at": "2021-11-21T16:02:50+00:00",
+        "updated_at": "2021-11-21T16:06:03+00:00",
+        "closed_at": "2021-11-21T16:06:03+00:00",
+        "comments_count": [
+            "CSQianDong"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 21,
+        "title": "建议写个中文的readme",
+        "body": "建议写个中文的readme。既然是国内公司做的，实在不理解为什么没有中文文档。",
+        "state": "open",
+        "user": "Patrick-CH",
+        "closed_by": null,
+        "created_at": "2022-03-25T12:33:11+00:00",
+        "updated_at": "2022-05-15T06:18:34+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "LegendaryDan",
+            "JimReno",
+            "AI-Mart",
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 1,
+        "title": "什么时候发布代码？",
+        "body": null,
+        "state": "closed",
+        "user": "fly2",
+        "closed_by": "LegendaryDan",
+        "created_at": "2021-11-02T06:02:08+00:00",
+        "updated_at": "2021-12-21T02:34:59+00:00",
+        "closed_at": "2021-12-21T02:34:59+00:00",
+        "comments_count": [
+            "ZeyuChen",
+            "Freddy-L",
+            "tianxin1860"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 11,
+        "title": "Titles in MS MARCO Passage Ranking",
+        "body": "Hi! Thanks for the great work and the helpful code release.\r\n\r\nDoes RocketQA[v2] use titles for MS MARCO Passage Ranking? That's my understanding of the released research/* scripts.\r\n\r\nIt might be helpful to document how the titles are obtained and whether they have a significant impact on quality. Perhaps you obtained the titles from the MS MARCO Document Ranking task?",
+        "state": "closed",
+        "user": "okhat",
+        "closed_by": "LegendaryDan",
+        "created_at": "2021-12-21T15:00:49+00:00",
+        "updated_at": "2021-12-27T10:16:24+00:00",
+        "closed_at": "2021-12-27T10:16:24+00:00",
+        "comments_count": [
+            "ReyonRen"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 32,
+        "title": "Without setting UTF-8 may cause UnicodeDecodeError!",
+        "body": "Without setting UTF-8 may cause UnicodeDecodeError in index.py and rocketqa_service.py of faiss_example.\r\n\r\n![faiss3](https://user-images.githubusercontent.com/39551480/167247326-3c793ab3-a5c4-448c-b491-ed2cfce84e3a.png)\r\n\r\n![faiss1](https://user-images.githubusercontent.com/39551480/167247330-35aeeb79-5b6a-46d3-89b8-1456f8884efd.png)\r\n\r\n![faiss2](https://user-images.githubusercontent.com/39551480/167247338-3dba3b81-c969-49e4-ac30-95c82959dc15.png)\r\n\r\n",
+        "state": "closed",
+        "user": "Spider4U",
+        "closed_by": "Spider4U",
+        "created_at": "2022-05-07T09:03:11+00:00",
+        "updated_at": "2022-05-10T06:07:09+00:00",
+        "closed_at": "2022-05-10T06:07:09+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 27,
+        "title": "调用model.encode_para报错",
+        "body": "<b>代码</b>\r\np_emb= model.encode_para(\"美赞臣安婴儿A+亲舒 婴儿奶粉1段850克 0-12个月宝宝\")\r\n\r\n<b>报如下错误</b>\r\n\r\nIndexError                                Traceback (most recent call last)\r\n[<ipython-input-19-d38658e11231>](https://localhost:8080/#) in <module>()\r\n----> 1 p_emb= model.encode_para(\"美赞臣安婴儿A+亲舒 婴儿奶粉1段850克 0-12个月宝宝\")\r\n\r\n2 frames\r\n[/usr/local/lib/python3.7/dist-packages/rocketqa/predict/dual_encoder.py](https://localhost:8080/#) in encode_para(self, para, title)\r\n    167                 data,\r\n    168                 self.batch_size,\r\n--> 169                 shuffle=False))\r\n    170 \r\n    171         self.test_pyreader.start()\r\n\r\n[/usr/local/lib/python3.7/dist-packages/rocketqa/reader/reader_de_predict.py](https://localhost:8080/#) in data_generator(self, samples, batch_size, dev_count, shuffle, phase, read_id)\r\n    295                        phase=None,\r\n    296                        read_id=False):\r\n--> 297         examples = self._read_samples(samples)\r\n    298 \r\n    299         def wrapper():\r\n\r\n[/usr/local/lib/python3.7/dist-packages/rocketqa/reader/reader_de_predict.py](https://localhost:8080/#) in _read_samples(self, batch_samples, quotechar)\r\n    281                     line.append(sample[i].replace(' ', ''))\r\n    282                 else:\r\n--> 283                     line.append(sample[i])\r\n    284             line.append('0')\r\n    285             example = Example(*line)\r\n\r\nIndexError: list index out of range",
+        "state": "closed",
+        "user": "ralgond",
+        "closed_by": "ralgond",
+        "created_at": "2022-04-26T09:53:25+00:00",
+        "updated_at": "2022-04-26T10:07:49+00:00",
+        "closed_at": "2022-04-26T10:07:49+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 24,
+        "title": "DuReader-Retrieval-Baseline 单卡运行报错",
+        "body": "export CUDA_VISIBLE_DEVICES=0\r\nTRAIN_SET=\"dureader-retrieval-baseline-dataset/train/dual.train.tsv\"\r\nMODEL_PATH=\"pretrained-models/ernie_base_1.0_twin_CN/params\"\r\nsh script/run_dual_encoder_train.sh $TRAIN_SET $MODEL_PATH 10 1\r\n\r\n在第一步的时候运行如上命令时会报错：\r\n\r\nOSError: (External) CUBLAS error(7).\r\n  [Hint: 'CUBLAS_STATUS_INVALID_VALUE'.  An unsupported value or parameter was passed to the function (a negative vector size, for example). To correct: ensure that all the parameters being passed have valid values. ] (at /paddle/paddle/fluid/platform/cuda_helper.h:107)\r\n\r\n环境如下：\r\n cuDNN Version: 7.6.\r\ncuda 10.0",
+        "state": "closed",
+        "user": "sunxiaojie99",
+        "closed_by": "LegendaryDan",
+        "created_at": "2022-04-17T02:34:34+00:00",
+        "updated_at": "2022-04-19T07:41:48+00:00",
+        "closed_at": "2022-04-19T07:41:48+00:00",
+        "comments_count": [
+            "sunxiaojie99",
+            "quyingqi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 23,
+        "title": "数据量大一点就报错",
+        "body": "使用 jina_example 运行 python app.py index news.tsv\r\n文件读取完后报错：\r\n du_encoder@21112[E]:IndexError('list index out of range')\r\n add \"--quiet-error\" to suppress the exception details\r\nTraceback (most recent call last):\r\n  File \"D:\\Program Files\\Python3\\lib\\site-packages\\jina\\peapods\\runtimes\\zmq\\zed.py\", line 285, in _msg_callback\r\n    processed_msg = self._callback(msg)\r\n  File \"D:\\Program Files\\Python3\\lib\\site-packages\\jina\\peapods\\runtimes\\zmq\\zed.py\", line 271, in _callback\r\n    msg = self._post_hook(self._handle(self._pre_hook(msg)))\r\n  File \"D:\\Program Files\\Python3\\lib\\site-packages\\jina\\peapods\\runtimes\\zmq\\zed.py\", line 226, in _handle\r\n    peapod_name=self.name,\r\n  File \"D:\\Program Files\\Python3\\lib\\site-packages\\jina\\peapods\\runtimes\\request_handlers\\data_request_handler.py\", line 165, in handle\r\n    field='groundtruths',\r\n  File \"D:\\Program Files\\Python3\\lib\\site-packages\\jina\\executors\\__init__.py\", line 196, in __call__\r\n    self, **kwargs\r\n  File \"D:\\Program Files\\Python3\\lib\\site-packages\\jina\\executors\\decorators.py\", line 105, in arg_wrapper\r\n    return fn(*args, **kwargs)\r\n  File \"D:\\Downloads\\RocketQA-main\\examples\\jina_example\\rocketqa_encoder\\executor.py\", line 31, in encode_passage\r\n    para_embs = self.encoder.encode_para(para=paras, title=titles)\r\n  File \"D:\\Program Files\\Python3\\lib\\site-packages\\rocketqa\\predict\\dual_encoder.py\", line 169, in encode_para\r\n    shuffle=False))\r\n  File \"D:\\Program Files\\Python3\\lib\\site-packages\\rocketqa\\reader\\reader_de_predict.py\", line 297, in data_generator\r\n    examples = self._read_samples(samples)\r\n  File \"D:\\Program Files\\Python3\\lib\\site-packages\\rocketqa\\reader\\reader_de_predict.py\", line 283, in _read_samples\r\n    line.append(sample[i])\r\nIndexError: list index out of range",
+        "state": "closed",
+        "user": "whuter",
+        "closed_by": "LegendaryDan",
+        "created_at": "2022-04-13T17:27:25+00:00",
+        "updated_at": "2022-04-15T05:54:59+00:00",
+        "closed_at": "2022-04-15T05:54:59+00:00",
+        "comments_count": [
+            "whuter"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 26,
+        "title": "如何将encode_query的数据的维度下降到128？",
+        "body": "现在是768维",
+        "state": "closed",
+        "user": "ralgond",
+        "closed_by": "ralgond",
+        "created_at": "2022-04-26T09:43:03+00:00",
+        "updated_at": "2022-04-29T11:22:02+00:00",
+        "closed_at": "2022-04-29T11:22:02+00:00",
+        "comments_count": [
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 29,
+        "title": "如何在RTX系列GPU上进行单机多卡运行",
+        "body": "安装了nccl，\r\n![image](https://user-images.githubusercontent.com/43271630/165797208-83d248e8-a07e-4d4c-a8f2-870fd37f9cc7.png)\r\n\r\nhttps://github.com/PaddlePaddle/Paddle/issues/28757\r\nhttps://github.com/PaddlePaddle/Paddle/issues/29172\r\nhttps://github.com/PaddlePaddle/Paddle/issues/36608\r\n也尝试上述方法，似乎都不太行\r\n",
+        "state": "open",
+        "user": "yysirs",
+        "closed_by": null,
+        "created_at": "2022-04-28T16:15:33+00:00",
+        "updated_at": "2022-05-05T09:55:56+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "yysirs",
+            "yysirs",
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 28,
+        "title": "提问无法收到回复。",
+        "body": "python版本3.7.3\r\njina版本2.4.5\r\n\r\nQuestion: (type `\\q` to quit)Who is Paula Deen's brother?\r\nUserWarning: ignored unknown argument: ['8886']. (raised from /home/fangjiyuan/.local/lib/python3.7/site-packages/jina/helper.py:689)                                                                                         \r\n     du_encoder@63982[E]:AttributeError(\"'generator' object has no attribute 'squeeze'\")\r\n add \"--quiet-error\" to suppress the exception details                                                         \r\nTraceback (most recent call last):\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/peapods/runtimes/zmq/zed.py\", line 285, in _msg_callback\r\n    processed_msg = self._callback(msg)\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/peapods/runtimes/zmq/zed.py\", line 271, in _callback\r\n    msg = self._post_hook(self._handle(self._pre_hook(msg)))\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/peapods/runtimes/zmq/zed.py\", line 226, in _handle\r\n    peapod_name=self.name,\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/peapods/runtimes/request_handlers/data_request_handler.py\", line 165, in handle\r\n    field='groundtruths',\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/executors/__init__.py\", line 196, in __call__\r\n    self, **kwargs\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/executors/decorators.py\", line 105, in arg_wrapper\r\n    return fn(*args, **kwargs)\r\n  File \"/home/fangjiyuan/github_file/RocketQA/examples/jina_example/rocketqa_encoder/executor.py\", line 39, in encode_question\r\n    doc.embedding = query_emb.squeeze()\r\nAttributeError: 'generator' object has no attribute 'squeeze'\r\n    vec_indexer@63990[E]:TypeError(\"can not determine the array type: ['builtins'].NoneType\")\r\n add \"--quiet-error\" to suppress the exception details                                                         \r\nTraceback (most recent call last):\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/peapods/runtimes/zmq/zed.py\", line 285, in _msg_callback\r\n    processed_msg = self._callback(msg)\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/peapods/runtimes/zmq/zed.py\", line 271, in _callback\r\n    msg = self._post_hook(self._handle(self._pre_hook(msg)))\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/peapods/runtimes/zmq/zed.py\", line 226, in _handle\r\n    peapod_name=self.name,\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/peapods/runtimes/request_handlers/data_request_handler.py\", line 165, in handle\r\n    field='groundtruths',\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/executors/__init__.py\", line 196, in __call__\r\n    self, **kwargs\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/executors/decorators.py\", line 105, in arg_wrapper\r\n    return fn(*args, **kwargs)\r\n  File \"/home/fangjiyuan/.jina/hub-packages/zb38xlt4/executor.py\", line 78, in search\r\n    docs.match(self._storage, **match_args)\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/types/arrays/mixins/match.py\", line 141, in match\r\n    dist, idx = lhv._match(rhv, cdist, _limit, normalization, metric_name)\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/types/arrays/mixins/match.py\", line 194, in _match\r\n    dists = cdist(x_mat, y_mat, metric_name)\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/types/arrays/mixins/match.py\", line 127, in <lambda>\r\n    cdist = lambda *x: _cdist(*x, device=device)\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/math/distance/__init__.py\", line 37, in cdist\r\n    x_type = get_array_type(x_mat)\r\n  File \"/home/fangjiyuan/.local/lib/python3.7/site-packages/jina/types/ndarray/__init__.py\", line 310, in get_array_type\r\n    raise TypeError(f'can not determine the array type: {module_tags}.{class_name}')\r\nTypeError: can not determine the array type: ['builtins'].NoneType\r\n<jina.types.document.Document ('id', 'mime_type', 'text') at 140657475693760>\r\n",
+        "state": "closed",
+        "user": "fangjiyuan",
+        "closed_by": "fangjiyuan",
+        "created_at": "2022-04-28T15:34:24+00:00",
+        "updated_at": "2022-05-18T14:53:29+00:00",
+        "closed_at": "2022-05-18T14:53:28+00:00",
+        "comments_count": [
+            "nan-wang",
+            "fangjiyuan",
+            "fangjiyuan",
+            "sfwydyc",
+            "fangjiyuan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 25,
+        "title": "Test faiss_example cause IndexError in RocketQA docker",
+        "body": "I got IndexError in RocketQA docker when I tested the faiss example under the guidance of [README.md](https://github.com/PaddlePaddle/RocketQA#readme), so I can't do the next step. I'll be grateful if someone can help me. Thx!\r\n\r\n![Snipaste_2022-04-26_17-30-44](https://user-images.githubusercontent.com/39551480/165270497-9fffdd09-055c-4c0f-a741-6bfb8a83dad4.png)\r\n\r\n![Snipaste_2022-04-26_17-29-51](https://user-images.githubusercontent.com/39551480/165270606-91e24c59-07bf-4815-bb56-0a1e135a35cd.png)\r\n",
+        "state": "closed",
+        "user": "Spider4U",
+        "closed_by": "Spider4U",
+        "created_at": "2022-04-26T09:40:09+00:00",
+        "updated_at": "2022-05-07T08:06:52+00:00",
+        "closed_at": "2022-05-07T08:06:52+00:00",
+        "comments_count": [
+            "sfwydyc",
+            "Spider4U",
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 30,
+        "title": "关于DuReader-Retrieval-Baseline的疑问",
+        "body": "您好！\r\n我读了RocketQA的原文，发现RocketQA介绍的是关于dual-encoder的训练（即[RocketQA/research/DuReader-Retrieval-Baseline](https://github.com/PaddlePaddle/RocketQA/tree/main/research/DuReader-Retrieval-Baseline)中的step 1）。请问[RocketQA/research/DuReader-Retrieval-Baseline](https://github.com/PaddlePaddle/RocketQA/tree/main/research/DuReader-Retrieval-Baseline)中的step 2 cross-encoder是通过给同一个PTM（比如BERT）输入query和passage的拼接文本作为输入，输出是表示匹配程度的值来训练的吗？如果是，step 2的`TRAIN_SET`，`dureader-retrieval-baseline-dataset/train/cross.train.demo.tsv`，是不是就是用step 1训练的模型所过滤出的最匹配的50个passage？",
+        "state": "closed",
+        "user": "ghost",
+        "closed_by": "quyingqi",
+        "created_at": "2022-05-04T07:01:15+00:00",
+        "updated_at": "2022-05-12T06:29:34+00:00",
+        "closed_at": "2022-05-12T06:29:34+00:00",
+        "comments_count": [
+            "quyingqi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 33,
+        "title": "在自定义数据集上训练之后，保存得到的模型文件没有包含config文件",
+        "body": "在模型保存文件夹中，有stepXXX的文件夹，但是无法加载",
+        "state": "open",
+        "user": "Zhiyuan-Fan",
+        "closed_by": null,
+        "created_at": "2022-05-09T15:33:07+00:00",
+        "updated_at": "2022-05-12T02:39:46+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 34,
+        "title": "Error about training dureader-retrieval-baseline",
+        "body": "Env: Using the docker version `registry.baidubce.com/paddlepaddle/paddle:2.3.0-gpu-cuda11.2-cudnn8`\r\nCommand: Just using `bash run_dual_encoder_train.sh` to train.\r\nGot Error:\r\n```\r\n'RecomputeOptimizer' object has no attribute '_auxiliary_vars'\r\n\r\n  File \"./src/train_de.py\", line 381, in <module>\r\n    main(args)\r\n  File \"./src/train_de.py\", line 174, in main\r\n    use_lamb=args.use_lamb)\r\n  File \"/paddle/Projects/RocketQA/research/DuReader-Retrieval-Baseline/src/optimization.py\", line 121, in optimization\r\n    _, param_grads = optimizer.minimize(loss)\r\n  File \"/usr/local/lib/python3.7/dist-packages/paddle/fluid/incubate/fleet/collective/__init__.py\", line 510, in minimize\r\n    loss, startup_program, parameter_list, no_grad_set=no_grad_set)\r\n  File \"/usr/local/lib/python3.7/dist-packages/paddle/fluid/contrib/mixed_precision/decorator.py\", line 524, in minimize\r\n    scaled_params_grads)\r\n  File \"/usr/local/lib/python3.7/dist-packages/paddle/fluid/contrib/mixed_precision/decorator.py\", line 487, in apply_optimize\r\n    optimize_ops = self.apply_gradients(params_grads)\r\n  File \"/usr/local/lib/python3.7/dist-packages/paddle/fluid/contrib/mixed_precision/decorator.py\", line 354, in apply_gradients\r\n    real_optimizer._set_auxiliary_var('found_inf', found_inf)\r\n  File \"/usr/local/lib/python3.7/dist-packages/paddle/fluid/optimizer.py\", line 303, in _set_auxiliary_var\r\n    self._auxiliary_vars[key] = val\r\nAttributeError: 'RecomputeOptimizer' object has no attribute '_auxiliary_vars'\r\n```",
+        "state": "open",
+        "user": "winterfell2021",
+        "closed_by": null,
+        "created_at": "2022-05-16T12:02:01+00:00",
+        "updated_at": "2025-03-31T09:27:29+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "sfwydyc",
+            "zhangpeng-HEBUT",
+            "cheerful-li",
+            "zhangpeng-HEBUT",
+            "zhangpeng-HEBUT",
+            "njupopsicle"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 35,
+        "title": "返回的embedding为空",
+        "body": "q_embs = dual_encoder.encode_query(query=query_list)，此时q_embs  为空",
+        "state": "open",
+        "user": "Nightbringers",
+        "closed_by": null,
+        "created_at": "2022-05-17T10:38:04+00:00",
+        "updated_at": "2022-05-19T09:56:09+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "sfwydyc",
+            "Nightbringers",
+            "sfwydyc",
+            "Nightbringers",
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 39,
+        "title": "单卡运行无法复现DUreader的baseline结果",
+        "body": "您好，感谢提供实验代码！\r\n我发现在单卡训练cross encoder的时候，结果与baseline的4*V100各项指标上都差不少，请问有原因吗？\r\n\r\n运行环境 Tesla A100 80G，CUDA11.1 Cudnn8.0.5，paddle 2.2.0\r\n\r\n提供模型infer的结果：\r\n{\"MRR@10\": 0.7284, \"QueriesRanked\": 2000, \"recall@1\": 0.6410, \"recall@50\": 0.9175}\r\n自己训练模型的最好结果：\r\n{\"MRR@10\": 0.7028, \"QueriesRanked\": 2000, \"recall@1\": 0.6165, \"recall@50\": 0.9175}\r\n\r\n想问一下这是什么原因？\r\n另，在自己训练时，我们发现使用baseline同样的超参，1.5epoch之后就达到过拟合，请问是单卡的原因吗？",
+        "state": "closed",
+        "user": "Davion-Liu",
+        "closed_by": "Davion-Liu",
+        "created_at": "2022-05-27T01:13:54+00:00",
+        "updated_at": "2022-06-06T08:18:41+00:00",
+        "closed_at": "2022-06-06T08:18:41+00:00",
+        "comments_count": [
+            "Nirvana-2021",
+            "sfwydyc",
+            "Davion-Liu",
+            "quyingqi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 38,
+        "title": "数据集Label的用途",
+        "body": "在提供的训练数据中，最后一列是Label，值为0或者1，请问这个label的用途是什么？\r\n\r\nRocketQA/examples/data/cross.train.tsv\r\nRocketQA/examples/data/dual.train.tsv",
+        "state": "closed",
+        "user": "zhangyuting",
+        "closed_by": "zhangyuting",
+        "created_at": "2022-05-25T10:09:54+00:00",
+        "updated_at": "2022-06-08T04:51:14+00:00",
+        "closed_at": "2022-06-08T04:51:14+00:00",
+        "comments_count": [
+            "sfwydyc",
+            "zhangyuting",
+            "sfwydyc",
+            "zhangyuting"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 41,
+        "title": "ValueError: `type` to initialized an Operator can not be None.",
+        "body": "我在试图将rocketqa配合haystack中的milvus document使用。我参考教程，在DualEncoder的模型中，对rocketqa生成的问题向量进行序列化的时候，在我的项目部署过程中产生了bug。其中，query_emb= model.encode_query(query)。\r\n` File \"/*****************************************/******.py\", line 177, in retrieve\r\n    query_emb = np.array(list(query_emb))\r\n  File \"/usr/local/lib/python3.8/site-packages/rocketqa/encoder/dual_encoder.py\", line 168, in encode_query\r\n    q_rep = self.exe.run(program=self.test_prog,\r\n  File \"/usr/local/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1299, in run\r\n    six.reraise(*sys.exc_info())\r\n  File \"/usr/local/lib/python3.8/site-packages/six.py\", line 719, in reraise\r\n    raise value\r\n  File \"/usr/local/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1285, in run\r\n    res = self._run_impl(\r\n  File \"/usr/local/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1431, in _run_impl\r\n    program = self._add_feed_fetch_ops(\r\n  File \"/usr/local/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 767, in _add_feed_fetch_ops\r\n    tmp_program = program.clone()\r\n  File \"/usr/local/lib/python3.8/site-packages/paddle/fluid/framework.py\", line 5443, in clone\r\n    p._sync_with_cpp()\r\n  File \"/usr/local/lib/python3.8/site-packages/paddle/fluid/framework.py\", line 5983, in _sync_with_cpp\r\n    block._sync_with_cpp()\r\n  File \"/usr/local/lib/python3.8/site-packages/paddle/fluid/framework.py\", line 3771, in _sync_with_cpp\r\n    op = Operator(self, op_desc)\r\n  File \"/usr/local/lib/python3.8/site-packages/paddle/fluid/framework.py\", line 2594, in __init__\r\n    raise ValueError(\r\nValueError: `type` to initialized an Operator can not be None.\r\n`\r\n另外这个bug只有在远程部署的时候会报错。我很疑惑，有人能给我一些帮助吗",
+        "state": "open",
+        "user": "hyunsir",
+        "closed_by": null,
+        "created_at": "2022-06-08T13:58:02+00:00",
+        "updated_at": "2022-06-14T11:10:58+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "hyunsir",
+            "sfwydyc",
+            "hyunsir"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 36,
+        "title": "Test the faiss-example, why the answer rocketqa gived is the whole paragraph, not the short answer!",
+        "body": "  I tested the faiss-example, why the answer rocketqa gived was the whole paragraph, not the short answer. Is there something need to set? Compare with the following picture, it seems to be no part of extracting the short answer.\r\n\r\n<img width=\"876\" alt=\"faq1\" src=\"https://user-images.githubusercontent.com/39551480/169229972-a51cdf26-7981-4a40-a942-4bef11282e29.png\">\r\n",
+        "state": "closed",
+        "user": "Spider4U",
+        "closed_by": "Spider4U",
+        "created_at": "2022-05-19T07:05:16+00:00",
+        "updated_at": "2022-05-22T14:52:51+00:00",
+        "closed_at": "2022-05-22T14:52:51+00:00",
+        "comments_count": [
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 40,
+        "title": "是否有蒸馏过的模型提供？",
+        "body": "你好！请问提供的模型都是原始的比较大的模型吗，响应速度如何？因为我们部署只能在CPU上使用，并且内存有限。如果现有模型都比较大，应该用什么方式去蒸馏？谢谢！",
+        "state": "open",
+        "user": "mingwei-liu",
+        "closed_by": null,
+        "created_at": "2022-05-31T02:33:49+00:00",
+        "updated_at": "2022-06-03T10:37:42+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 42,
+        "title": "如何进行多卡训练？",
+        "body": "example中的例子只能进行单卡训练？",
+        "state": "open",
+        "user": "jianhai0527",
+        "closed_by": null,
+        "created_at": "2022-06-14T06:44:24+00:00",
+        "updated_at": "2022-06-20T03:38:57+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "sfwydyc"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 49,
+        "title": "新版本",
+        "body": "说这个月底会出一个新版本，能提升效率的。计划没有变吧？",
+        "state": "open",
+        "user": "zhaoyiyong",
+        "closed_by": null,
+        "created_at": "2022-06-27T04:08:07+00:00",
+        "updated_at": "2022-06-27T04:08:07+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 45,
+        "title": "同样的q、p、t 为什么得出的score非常低？下面是我的代码。",
+        "body": "import os\r\nimport sys\r\nimport json\r\nimport rocketqa\r\nfrom pprint import pprint\r\n\r\ndef initmodel():\r\n    de_conf = {\r\n        \"model\": 'zh_dureader_de',\r\n        \"use_cuda\": False,\r\n        \"device_id\": 0,\r\n        \"batch_size\": 32\r\n    }\r\n    ce_conf = {\r\n        \"model\": 'zh_dureader_ce',\r\n        \"use_cuda\": False,\r\n        \"device_id\": 0,\r\n        \"batch_size\": 32\r\n    }\r\n    dual_encoder = rocketqa.load_model(**de_conf)\r\n    cross_encoder = rocketqa.load_model(**ce_conf)\r\n    return dual_encoder,cross_encoder\r\n\r\nde,ce = initmodel()\r\n\r\nq=['教育储蓄险是什么险种']\r\np=['教育储蓄险是什么险种']\r\nt=['教育储蓄险是什么险种']\r\n\r\ndescore = de.matching(query=q, para=p, title=t)\r\nprint(descore)\r\ncescore = ce.matching(query=q, para=p, title=t)\r\nprint(cescore)\r\n[463.5213928222656]\r\n[0.7785768508911133]",
+        "state": "closed",
+        "user": "zhaoyiyong",
+        "closed_by": "procedure2012",
+        "created_at": "2022-06-17T03:46:17+00:00",
+        "updated_at": "2022-07-14T02:45:01+00:00",
+        "closed_at": "2022-07-14T02:45:01+00:00",
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 43,
+        "title": "关于Score",
+        "body": "matching(query,para)返回的分值代表什么意思？如何归一化到0-1之间呢？",
+        "state": "open",
+        "user": "jianhai0527",
+        "closed_by": null,
+        "created_at": "2022-06-14T11:25:52+00:00",
+        "updated_at": "2022-06-20T04:05:49+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012",
+            "zhaoyiyong",
+            "procedure2012",
+            "jianhai0527",
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 44,
+        "title": "rocketqa支持多进程并行处理吗？",
+        "body": "在examples/faiss_example中的rocketqa_service.py是个单进程处理的demo，无法适应同时处理多个请求。我将其改为多进程多线程的处理方式，响应就会出现错误，查看错误信息，发现就是调用：\r\n   q_embs = self._dual_encoder.encode_query(query=[query])\r\n  File \"/home/eyundl/anaconda3/envs/paddle_env/lib/python3.7/site-packages/rocketqa/predict/dual_encoder.py\", line 145, in encode_query\r\n    fetch_list=fetch_list)\r\n  File \"/home/eyundl/anaconda3/envs/paddle_env/lib/python3.7/site-packages/paddle/fluid/executor.py\", line 1299, in run\r\n    six.reraise(*sys.exc_info())\r\n  File \"/home/eyundl/anaconda3/envs/paddle_env/lib/python3.7/site-packages/six.py\", line 719, in reraise\r\n    raise value\r\n  File \"/home/eyundl/anaconda3/envs/paddle_env/lib/python3.7/site-packages/paddle/fluid/executor.py\", line 1295, in run\r\n    return_merged=return_merged)\r\n  File \"/home/eyundl/anaconda3/envs/paddle_env/lib/python3.7/site-packages/paddle/fluid/executor.py\", line 1464, in _run_impl\r\n    return new_exe.run(list(feed.keys()), fetch_list, return_numpy)\r\n  File \"/home/eyundl/anaconda3/envs/paddle_env/lib/python3.7/site-packages/paddle/fluid/executor.py\", line 547, in run\r\n    tensors = self._new_exe.run(feed_names, fetch_list)._move_to_list()\r\n请问：调用模型计算的时候，不能并行吗？",
+        "state": "open",
+        "user": "zhaoyiyong",
+        "closed_by": null,
+        "created_at": "2022-06-16T02:09:20+00:00",
+        "updated_at": "2023-01-04T02:27:34+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "sfwydyc",
+            "RussellLuo"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 46,
+        "title": "How to train my own model based on zh_dureader_de_v2(zh_dureader_ce_v2)?",
+        "body": "As the title says, how to train my own model based on zh_dureader_de_v2(zh_dureader_ce_v2)?",
+        "state": "closed",
+        "user": "Spider4U",
+        "closed_by": "Spider4U",
+        "created_at": "2022-06-17T10:24:26+00:00",
+        "updated_at": "2022-06-20T10:07:25+00:00",
+        "closed_at": "2022-06-20T10:07:25+00:00",
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 48,
+        "title": "cross_encoder",
+        "body": "按照示例中的代码运行cross_encoder的训练，报 中断执行 的错误，显示 corrupted double linked list",
+        "state": "closed",
+        "user": "zemu121",
+        "closed_by": "zemu121",
+        "created_at": "2022-06-27T01:29:39+00:00",
+        "updated_at": "2022-07-01T08:37:38+00:00",
+        "closed_at": "2022-07-01T03:38:35+00:00",
+        "comments_count": [
+            "procedure2012",
+            "zemu121",
+            "procedure2012",
+            "zemu121",
+            "zemu121",
+            "YYGe01"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 47,
+        "title": "训练为何会报这个错？你们的训练example.py",
+        "body": "训练文件 example.py\r\n报错信息\r\nTraceback (most recent call last):\r\n  File \"/opt/qa/RocketQA/examples/example.py\", line 66, in <module>\r\n    train_cross_encoder('zh_dureader_ce_v2', './data/cross.train.tsv')\r\n  File \"/opt/qa/RocketQA/examples/example.py\", line 12, in train_cross_encoder\r\n    cross_encoder = rocketqa.load_model(model=base_model, use_cuda=True, device_id=5, batch_s\r\n  File \"/root/anaconda3/lib/python3.9/site-packages/rocketqa/rocketqa.py\", line 122, in load_\r\n    encoder = CrossEncoder(**encoder_conf)\r\n  File \"/root/anaconda3/lib/python3.9/site-packages/rocketqa/encoder/cross_encoder.py\", line \r\n    place = dev_list[device_id]\r\nIndexError: list index out of range\r\n",
+        "state": "open",
+        "user": "yangnianen",
+        "closed_by": null,
+        "created_at": "2022-06-20T09:41:35+00:00",
+        "updated_at": "2022-08-03T08:28:20+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "yangnianen",
+            "sfwydyc",
+            "yangnianen",
+            "yangnianen",
+            "yangnianen",
+            "Tlntin"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 50,
+        "title": "match函数使用方式",
+        "body": "请问既然有encode_query()和encode_para()将问答句子进行编码，为什么match()只支持传入字符串呢？\r\n有方法可以将encode函数编码的到的句子dense representation vectors保存下来，然后在match()的时候重复利用吗？不然效率太低了。\r\n谢谢",
+        "state": "closed",
+        "user": "IamRoBota",
+        "closed_by": "IamRoBota",
+        "created_at": "2022-06-28T16:36:50+00:00",
+        "updated_at": "2022-07-05T01:17:19+00:00",
+        "closed_at": "2022-07-05T01:17:19+00:00",
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 51,
+        "title": "cross_encoder模型训练,  cuda10.2还是有问题",
+        "body": "hi, 我看本项目不支持高版本的cuda, 就在conda上装了个cuda10.2, 发现还是会有同样的问题, 如下:\r\n\r\n```\r\nimport rocketqa\r\nimport paddle\r\nprint(paddle.version.cuda())\r\ncross_encoder = rocketqa.load_model(model=\"zh_dureader_ce\", use_cuda=True, device_id=0, batch_size=8)\r\ncross_encoder.train('./examples/data/cross.train.tsv', 2, 'ce_models', save_steps=1000, learning_rate=1e-5, log_folder='log_ce')\r\n```\r\n\r\n输出:\r\n\r\n```\r\n10.2\r\nRocketQA model [zh_dureader_ce]\r\nWARNING:root:paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\nW0701 18:01:49.768635 2488745 gpu_context.cc:278] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.4, Runtime API Version: 10.2\r\nW0701 18:01:49.772554 2488745 gpu_context.cc:306] device: 0, cuDNN Version: 8.2.\r\nLoad model done\r\nINFO:root:-----------  Configuration Arguments -----------\r\n[INFO] 2022-07-01 18:01:52,875 [     args.py:   69]:\t-----------  Configuration Arguments -----------\r\n省略配置信息\r\nWARNING:root:paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\n[WARNING] 2022-07-01 18:01:52,896 [       io.py:  720]:\tpaddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\nINFO:rocketqa.utils.init:Load pretraining parameters from /home/ubuntu/.rocketqa/zh_dureader_ce/dureader_cross_encoder.\r\n[INFO] 2022-07-01 18:01:54,992 [     init.py:   73]:\tLoad pretraining parameters from /home/ubuntu/.rocketqa/zh_dureader_ce/dureader_cross_encoder.\r\n\r\n\r\n--------------------------------------\r\nC++ Traceback (most recent call last):\r\n--------------------------------------\r\n0   paddle::framework::ThreadPoolTempl<paddle::framework::StlThreadEnvironment>::WorkerLoop(int)\r\n1   paddle::framework::InterpreterCore::RunInstructionAsync(unsigned long, std::vector<std::atomic<unsigned long>, std::allocator<std::atomic<unsigned long> > >*, std::vector<std::atomic<unsigned long>, std::allocator<std::atomic<unsigned long> > >*)\r\n2   paddle::framework::InterpreterCore::CheckGC(paddle::framework::Instruction const&, std::vector<std::atomic<unsigned long>, std::allocator<std::atomic<unsigned long> > >*)\r\n\r\n----------------------\r\nError Message Summary:\r\n----------------------\r\nFatalError: `Segmentation fault` is detected by the operating system.\r\n  [TimeInfo: *** Aborted at 1656669738 (unix time) try \"date -d @1656669738\" if you are using GNU date ***]\r\n  [SignalInfo: *** SIGSEGV (@0x5320) received by PID 2488745 (TID 0x7fb97ffff700) from PID 21280 ***]\r\n\r\n\r\nProcess finished with exit code 139\r\n```",
+        "state": "open",
+        "user": "YYGe01",
+        "closed_by": null,
+        "created_at": "2022-07-01T10:03:42+00:00",
+        "updated_at": "2022-07-15T08:34:53+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012",
+            "fallbernana123456",
+            "procedure2012",
+            "fallbernana123456"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 58,
+        "title": "同一个服务支持组的概念",
+        "body": "训练的时候不同数据标识数据属于不同的组，在查询的时候通过参数来在不同的组的数据里做查询，这样启动一个服务就能支持多个功能查询。\r\n后续会支持这样的功能吗？",
+        "state": "open",
+        "user": "fallbernana123456",
+        "closed_by": null,
+        "created_at": "2022-08-18T05:29:05+00:00",
+        "updated_at": "2022-08-18T05:29:05+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 60,
+        "title": "关于联合训练的问题",
+        "body": null,
+        "state": "closed",
+        "user": "chenhuawei2019",
+        "closed_by": "chenhuawei2019",
+        "created_at": "2022-08-27T02:32:04+00:00",
+        "updated_at": "2022-09-04T13:34:14+00:00",
+        "closed_at": "2022-09-04T13:21:26+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 53,
+        "title": "train的多cpu",
+        "body": "请问下cross_encoder.train 可以配置多个cpu跑吗？默认的这个跑的太慢了。4千条的训练集跑了2天了。",
+        "state": "open",
+        "user": "fallbernana123456",
+        "closed_by": null,
+        "created_at": "2022-07-14T01:04:53+00:00",
+        "updated_at": "2022-07-15T03:14:05+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 52,
+        "title": "加载模型",
+        "body": "请问rocketqa.load_model(\"v2_nq_de\")时，比如我这里传入的模型名称是v2_nq_de， 那意思是我召回阶段使用dual encoder还是说re-rank阶段使用呢，还是两个阶段都是？谢谢",
+        "state": "closed",
+        "user": "IamRoBota",
+        "closed_by": "IamRoBota",
+        "created_at": "2022-07-03T03:58:16+00:00",
+        "updated_at": "2022-07-06T01:33:39+00:00",
+        "closed_at": "2022-07-06T01:33:39+00:00",
+        "comments_count": [
+            "procedure2012",
+            "IamRoBota",
+            "procedure2012",
+            "IamRoBota"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 54,
+        "title": "关于dual-encoder计算相似度得分差距过小的问题",
+        "body": "我想将rocketqa用在短文本相似问题匹配任务中，训练dual encoder后发现问题对的相似度得分非常接近，不管相似问题是否相关，得分都在0.9以上；\r\n我的理解是，关掉cross-batch，损失函数cross_entropy加入scale 20 后，应该和in batch negtive的对比损失 训练方法完全一致，但训练后得分差异小的问题仍然没有解决。\r\n烦请帮忙分析下，是否有遗漏的点",
+        "state": "open",
+        "user": "fangxiang00",
+        "closed_by": null,
+        "created_at": "2022-07-21T07:28:34+00:00",
+        "updated_at": "2022-07-22T06:57:36+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "fangxiang00",
+            "fallbernana123456",
+            "fangxiang00"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 55,
+        "title": "train_dual_encoder 训练效果不好",
+        "body": "我尝试用了一些训练集去训练dual_encoder ，但是效果不好\r\n比如 可怜飞燕倚新妆\\t\\t《清平调》之二 李白\\t\\t\"一枝秾艳露凝香，云雨巫山枉断肠。借问汉宫谁得似，可怜飞燕倚新妆。\"\\t0\r\n但是我查询可怜飞燕倚新妆还是查不出来，\r\n在dureader.para里存放了《清平调》之二 李白\\t\"一枝秾艳露凝香，云雨巫山枉断肠。借问汉宫谁得似，可怜飞燕倚新妆。\"\r\n并且使用了训练后的dual_encoder。\r\n我想问下这个是我的训练集没写对吗还是有其他特别的要求\r\n规格是： query \\t\\t title \\t\\t para \\t 0,1 对吗？",
+        "state": "closed",
+        "user": "fallbernana123456",
+        "closed_by": "procedure2012",
+        "created_at": "2022-07-26T07:12:09+00:00",
+        "updated_at": "2022-08-11T07:17:15+00:00",
+        "closed_at": "2022-08-11T07:17:15+00:00",
+        "comments_count": [
+            "procedure2012",
+            "fallbernana123456",
+            "procedure2012",
+            "fallbernana123456",
+            "fallbernana123456",
+            "fallbernana123456"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 56,
+        "title": "example报错",
+        "body": "--------------------------------------\r\nC++ Traceback (most recent call last):\r\n--------------------------------------\r\n0   paddle::framework::ThreadPoolTempl<paddle::framework::StlThreadEnvironment>::WorkerLoop(int)\r\n1   paddle::framework::InterpreterCore::RunInstructionAsync(unsigned long, std::vector<std::atomic<unsigned long>, std::allocator<std::atomic<unsigned long> > >*, std::vector<std::atomic<unsigned long>, std::allocator<std::atomic<unsigned long> > >*)\r\n2   paddle::framework::InterpreterCore::CheckGC(paddle::framework::Instruction const&, std::vector<std::atomic<unsigned long>, std::allocator<std::atomic<unsigned long> > >*)\r\n\r\n----------------------\r\nError Message Summary:\r\n----------------------\r\nFatalError: `Segmentation fault` is detected by the operating system.\r\n  [TimeInfo: *** Aborted at 1658907377 (unix time) try \"date -d @1658907377\" if you are using GNU date ***]\r\n  [SignalInfo: *** SIGSEGV (@0x9d78) received by PID 7713 (TID 0x7f3ca1d04700) from PID 40312 ***]",
+        "state": "closed",
+        "user": "DzpLab",
+        "closed_by": "procedure2012",
+        "created_at": "2022-07-27T07:38:28+00:00",
+        "updated_at": "2022-07-27T07:40:32+00:00",
+        "closed_at": "2022-07-27T07:40:32+00:00",
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 57,
+        "title": "data question",
+        "body": "自定义数据集,送入到dual_encoder以及cross_encoder的数据集是一样的吗?",
+        "state": "open",
+        "user": "DzpLab",
+        "closed_by": null,
+        "created_at": "2022-08-02T07:59:21+00:00",
+        "updated_at": "2023-04-29T10:47:45+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "DzpLab",
+            "procedure2012",
+            "DzpLab",
+            "procedure2012",
+            "DzpLab",
+            "procedure2012",
+            "DzpLab",
+            "procedure2012",
+            "DzpLab",
+            "DzpLab",
+            "procedure2012",
+            "DzpLab",
+            "procedure2012",
+            "DzpLab",
+            "xyzkk3",
+            "zhangpeng-HEBUT"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 59,
+        "title": "how to deploy a rocketqa model in paddle serving?",
+        "body": "I can't find any instruction on how to deploy rocketqa model in paddle serving. I think this is very basic need for using rocketqa. So could someone give me some advice?\r\n\r\nThanks!",
+        "state": "open",
+        "user": "weileehh",
+        "closed_by": null,
+        "created_at": "2022-08-26T11:01:45+00:00",
+        "updated_at": "2022-09-01T08:34:33+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 66,
+        "title": "参照demo执行，出错",
+        "body": "![image](https://user-images.githubusercontent.com/92854431/199642578-5ba68ee6-950b-4187-af47-87124726846d.png)\r\n\r\n![image](https://user-images.githubusercontent.com/92854431/199642590-36cad741-6082-45df-9312-f4b8178d147a.png)\r\n\r\n请看看怎么解决？",
+        "state": "open",
+        "user": "bm25f",
+        "closed_by": null,
+        "created_at": "2022-11-03T03:31:24+00:00",
+        "updated_at": "2022-11-03T03:31:24+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 69,
+        "title": "demo训练完毕没有生成对应的config文件",
+        "body": "py38\r\ncuda11.2\r\ncudnn8.1\r\n环境配置了半天还是不行有点离谱，所以选择使用拉docker在镜像里面训练，看反馈训练过程是完成的，但是为何没有保存文件呢？\r\n训练开始之前已经chmod 777 ce_models了。\r\n基线代码来源：https://aistudio.baidu.com/aistudio/projectdetail/4356333\r\n训练截图及过程：\r\n![7cc0aad3dbaa44389aae095170fc4dc](https://user-images.githubusercontent.com/34124260/201567205-3c4d836e-a35e-4b1c-8082-b7a758d04518.png)\r\n\r\n\r\nps：咱国产的paddle能不能好好优化下配置环境啊，别的都是框架尽可能的适配cuda环境，咱这是要求用户适配paddle环境，好多cudnn都是11.x就可和cuda11.x适配，用那些tensorflow啊torch都没问题就paddle有问题，而且有些paddlepaddle用着没问题，到了RockerQA，paddlehub就又开始出现问题，是真的难受...\r\n",
+        "state": "closed",
+        "user": "1148330040",
+        "closed_by": "1148330040",
+        "created_at": "2022-11-14T03:14:35+00:00",
+        "updated_at": "2022-11-14T03:34:54+00:00",
+        "closed_at": "2022-11-14T03:34:54+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 61,
+        "title": "微调后的自定义模型太大",
+        "body": "zh_dureader_de_v2 文件757M，自己微调后的保存的文件2.22G，为什么会差别这么多呢",
+        "state": "open",
+        "user": "kg-nlp",
+        "closed_by": null,
+        "created_at": "2022-09-16T08:04:49+00:00",
+        "updated_at": "2022-09-19T02:54:42+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 64,
+        "title": "关于正负样本搜集的小疑惑",
+        "body": "您好，很有趣的文章！\r\nRocketQAv2中提及，正负样本的组成方式为：\r\n融合数据增强构造的样本包括非去噪的和去噪的。使用RocketQA中的检索模型召回top-n的passage作为备选集。非去噪样本由标注正例和对备选集随机采样得到的样本构成；去噪样本由RocketQA的精排模型对备选集内passage打分得到的去噪正负样本构成。\r\n但是，精排模型的损失为：\r\n![image](https://user-images.githubusercontent.com/87848800/198015907-dac2c72c-8d4c-4045-992d-ee02f9c8cf19.png)\r\n我想请问，此处的分子上的p+指的是ground truth呢，还是所有正样本呢？（即ground truth 加所有去噪得到的正样本）\r\n十分感谢！",
+        "state": "open",
+        "user": "MrBlack0220",
+        "closed_by": null,
+        "created_at": "2022-10-26T11:36:27+00:00",
+        "updated_at": "2022-10-27T03:37:02+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 62,
+        "title": "使用Faiss搭建问答系统时创建索引处理非常慢",
+        "body": "使用Faiss搭建问答系统的时候遇到一个问题，当文档文件种的内容过多的时候，创建索引的速度非常的慢\r\n执行慢的代码是 para_embs = np.array(list(para_embs)) 请问有没有什么解决方案呢？",
+        "state": "open",
+        "user": "kenjs",
+        "closed_by": null,
+        "created_at": "2022-10-18T02:42:40+00:00",
+        "updated_at": "2022-12-02T09:05:13+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "small-wang",
+            "procedure2012",
+            "kenjs",
+            "procedure2012",
+            "jyjy007"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 65,
+        "title": "关于RocketQA使用的请教",
+        "body": "您好，我有两个问题想请教一下：\r\n1. 我是否可以直接下载RocketQA step2训练好的cross_encoder对 MARCO数据进行预测，来排除掉伪负例？我好像在某个工作中见过类似的用法，但记不清是哪个工作了，如果在这方面您有一些参考文献可以提供，将非常感谢。\r\n2. 如果我自己按照上述做法进行实验，那排除掉伪负例的threshold（分数大于多少的负例都需要被过滤掉）应该如何设置呢？您是否可以提供一些建议，或者是我需要使用dev set找到最优的超参数？\r\n\r\n再次感谢！",
+        "state": "open",
+        "user": "caiyinqiong",
+        "closed_by": null,
+        "created_at": "2022-10-27T06:36:45+00:00",
+        "updated_at": "2022-10-27T08:45:12+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 67,
+        "title": "提供基于 Elasticsearch 的示例",
+        "body": "很棒的项目，先赞一个 👍 \r\n\r\n请问本项目有打算提供基于 Elasticsearch 的示例吗？Elasticsearch 是业界广泛使用的开源搜索引擎，它 [从 7.3 开始支持向量检索](https://www.elastic.co/cn/blog/text-similarity-search-with-vectors-in-elasticsearch)，当前已经支持 [kNN search](https://www.elastic.co/guide/en/elasticsearch/reference/current/knn-search.html)。对于大多数公司而言，使用 Elasticsearch 进行向量检索的核心优势是 **运维零成本**，因为都是现成的中间件。",
+        "state": "closed",
+        "user": "RussellLuo",
+        "closed_by": "procedure2012",
+        "created_at": "2022-11-04T14:55:19+00:00",
+        "updated_at": "2022-11-09T07:24:23+00:00",
+        "closed_at": "2022-11-09T07:24:23+00:00",
+        "comments_count": [
+            "procedure2012",
+            "RussellLuo",
+            "procedure2012",
+            "RussellLuo",
+            "procedure2012",
+            "RussellLuo",
+            "RussellLuo"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 70,
+        "title": "提供命令行工具用于简化模型训练",
+        "body": "## 问题\r\n\r\n当前训练或微调一个模型，除了构造训练集，还需要做以下多个步骤：\r\n1. 参考 [Train Your Own Model](https://github.com/PaddlePaddle/RocketQA#train-your-own-model) 编写一个训练脚本\r\n2. 训练结束后，需要 [删除其中 *moment* 文件](https://github.com/PaddlePaddle/RocketQA/issues/61)，以减小模型\r\n3. 为了运行模型，需要通过拷贝 [examples/de_models](https://github.com/PaddlePaddle/RocketQA/tree/main/examples/de_models) 或 [examples/ce_models](https://github.com/PaddlePaddle/RocketQA/tree/main/examples/ce_models) 建立模型目录\r\n4. 然后修改 config.json 中的 `${YOUR_MODEL}`，指向第 2 步中的目录（[参考1](https://github.com/PaddlePaddle/RocketQA/issues/33)、[参考2](https://github.com/PaddlePaddle/RocketQA/issues/57#issuecomment-1212667559)）\r\n\r\n个人以为，上述训练操作除了步骤较多比较繁琐，还会对初学者造成比较大的困惑（初学者更喜欢开箱即用和一键操作）。\r\n\r\n## 提议\r\n\r\n新增一个 rocketqa 命令行工具，当前先提供 train 子命令用于训练或微调模型（自动完成上述 4 个步骤），后续可以按需扩展新的子命令。\r\n\r\n`rocketqa` 命令：\r\n\r\n```console\r\n$ rocketqa -h\r\nusage: rocketqa [-h] {train} ...\r\n\r\noptional arguments:\r\n  -h, --help  show this help message and exit\r\n\r\ncommands:\r\n  {train}\r\n    train     train or finetune the dual/cross encoder model\r\n```\r\n\r\n`rocketqa train` 子命令：\r\n\r\n```console\r\n$ rocketqa train -h\r\nusage: rocketqa train [-h] [--use-cuda] [--epoch EPOCH] [--out OUT] [--save-steps SAVE_STEPS] [--learning-rate LEARNING_RATE] base_model train_set\r\n\r\npositional arguments:\r\n  base_model            base model\r\n  train_set             train set\r\n\r\noptional arguments:\r\n  -h, --help            show this help message and exit\r\n  --use-cuda            whether to run models on GPU (default: False)\r\n  --epoch EPOCH         epoch (default: 2)\r\n  --out OUT             output directory (default: ./models)\r\n  --save-steps SAVE_STEPS\r\n                        save steps (default: 1000)\r\n  --learning-rate LEARNING_RATE\r\n                        learning rate (default: 1e-05)\r\n```",
+        "state": "open",
+        "user": "RussellLuo",
+        "closed_by": null,
+        "created_at": "2022-11-17T06:46:57+00:00",
+        "updated_at": "2022-12-05T06:33:07+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012",
+            "RussellLuo",
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 71,
+        "title": "拉取最新docker，跑demo脚本，提示CUDA不兼容，无法使用GPU",
+        "body": "demo脚本：\r\n```python\r\nimport rocketqa\r\n\r\nquery_list = [\"trigeminal definition\"]\r\npara_list = [\r\n    \"Definition of TRIGEMINAL. : of or relating to the trigeminal nerve.ADVERTISEMENT. of or relating to the trigeminal nerve. ADVERTISEMENT.\"]\r\n\r\n# init dual encoder\r\ndual_encoder = rocketqa.load_model(model=\"v1_marco_de\", use_cuda=True, device_id=0, batch_size=16)\r\n\r\n# encode query & para\r\nq_embs = dual_encoder.encode_query(query=query_list)\r\np_embs = dual_encoder.encode_para(para=para_list)\r\n# compute dot product of query representation and para representation\r\ndot_products = dual_encoder.matching(query=query_list, para=para_list)\r\n```\r\n\r\n报错提示：\r\n```shell\r\nλ 1f7e2a779543 ~/download python client.py\r\ngrep: warning: GREP_OPTIONS is deprecated; please use an alias or script\r\n/usr/local/python3.7.0/lib/python3.7/site-packages/paddle/fluid/framework.py:312: UserWarning: You are using GPU version Paddle, but your CUDA device is not set properly. CPU device will be used by default.\r\n  \"You are using GPU version Paddle, but your CUDA device is not set properly. CPU device will be used by default.\"\r\nRocketQA model [v1_marco_de]\r\nTraceback (most recent call last):\r\n  File \"client.py\", line 8, in <module>\r\n    dual_encoder = rocketqa.load_model(model=\"v1_marco_de\", use_cuda=True, device_id=0, batch_size=16)\r\n  File \"/usr/local/python3.7.0/lib/python3.7/site-packages/rocketqa/rocketqa.py\", line 120, in load_model\r\n    encoder = DualEncoder(**encoder_conf)\r\n  File \"/usr/local/python3.7.0/lib/python3.7/site-packages/rocketqa/encoder/dual_encoder.py\", line 63, in __init__\r\n    place = dev_list[device_id]\r\nIndexError: list index out of range\r\n```\r\n",
+        "state": "open",
+        "user": "yuyaxiong",
+        "closed_by": null,
+        "created_at": "2022-11-22T08:30:59+00:00",
+        "updated_at": "2022-11-25T12:07:41+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 72,
+        "title": "执行example.py train官方样例数据 加载完模型后无报错退出,未进入训练阶段",
+        "body": "aistudio环境, A100 40G单卡\r\n模型使用 rocketqa/zh_dureader_de_v2\r\n训练数据使用examples/data/dual.train.tsv\r\n即:\r\ntrain_dual_encoder('zh_dureader_de_v2', './examples/data/dual.train.tsv')\r\n执行到[     init.py:   74]:    Load pretraining parameters from /home/aistudio/.rocketqa/zh_dureader_de_v2/dual_params.\r\n后退出\r\n`\r\n[INFO] 2022-11-29 10:26:59,291 [     args.py:   71]:    verbose: False\r\nINFO:root:vocab_path: /home/aistudio/.rocketqa/zh_dureader_de_v2/zh_vocab.txt\r\n[INFO] 2022-11-29 10:26:59,291 [     args.py:   71]:    vocab_path: /home/aistudio/.rocketqa/zh_dureader_de_v2/zh_vocab.txt\r\nINFO:root:warmup_proportion: 0.1\r\n[INFO] 2022-11-29 10:26:59,291 [     args.py:   71]:    warmup_proportion: 0.1\r\nINFO:root:weight_decay: 0.01\r\n[INFO] 2022-11-29 10:26:59,291 [     args.py:   71]:    weight_decay: 0.01\r\nINFO:root:------------------------------------------------\r\n[INFO] 2022-11-29 10:26:59,291 [     args.py:   72]:    ------------------------------------------------\r\nINFO:root:Device count: 1\r\n[INFO] 2022-11-29 10:26:59,330 [dual_encoder.py:  291]: Device count: 1\r\nINFO:root:Num train examples: 112\r\n[INFO] 2022-11-29 10:26:59,331 [dual_encoder.py:  292]: Num train examples: 112\r\nINFO:root:Max train steps: 7\r\n[INFO] 2022-11-29 10:26:59,331 [dual_encoder.py:  293]: Max train steps: 7\r\nINFO:root:Num warmup steps: 0\r\n[INFO] 2022-11-29 10:26:59,331 [dual_encoder.py:  294]: Num warmup steps: 0\r\nINFO:root:Learning rate: 0.000010\r\n[INFO] 2022-11-29 10:26:59,331 [dual_encoder.py:  295]: Learning rate: 0.000010\r\nWARNING:root:paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\n[WARNING] 2022-11-29 10:26:59,331 [       io.py:  721]: paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\nINFO:rocketqa.utils.init:Load pretraining parameters from /home/aistudio/.rocketqa/zh_dureader_de_v2/dual_params.\r\n[INFO] 2022-11-29 10:27:05,570 [     init.py:   74]:    Load pretraining parameters from /home/aistudio/.rocketqa/zh_dureader_de_v2/dual_params.\r\n`",
+        "state": "closed",
+        "user": "SunYusheng",
+        "closed_by": "SunYusheng",
+        "created_at": "2022-11-29T02:35:29+00:00",
+        "updated_at": "2022-12-29T01:34:18+00:00",
+        "closed_at": "2022-11-29T08:51:01+00:00",
+        "comments_count": [
+            "yslu-TW"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 77,
+        "title": "es_example运行报错",
+        "body": "macOS 10.15.7\r\npython 3.7.5\r\n\r\n依赖版本是按照readme安装的\r\n\r\n运行以下命令\r\npython3 index.py zh data/test.tsv test-index\r\n\r\n报错信息\r\n\r\n```\r\nRocketQA model [zh_dureader_de_v2]\r\nWARNING:root:paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\nLoad model done\r\nTraceback (most recent call last):\r\n  File \"index.py\", line 71, in <module>\r\n    main()\r\n  File \"index.py\", line 66, in main\r\n    result = indexer.index(tps)\r\n  File \"index.py\", line 24, in index\r\n    titles, paras = zip(*tps)\r\nValueError: too many values to unpack (expected 2)\r\n\r\n```",
+        "state": "closed",
+        "user": "wenlincheng",
+        "closed_by": "wenlincheng",
+        "created_at": "2022-12-14T07:33:02+00:00",
+        "updated_at": "2022-12-14T07:36:33+00:00",
+        "closed_at": "2022-12-14T07:36:33+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 73,
+        "title": "如何在 Paddle Inference 中使用 RocketQA 的模型？",
+        "body": "参考 [Paddle Inference 文档](https://www.paddlepaddle.org.cn/inference/master/guides/introduction/workflow.html)：\r\n\r\n> Paddle Inference 原生支持由 [PaddlePaddle](https://github.com/PaddlePaddle/Paddle) 深度学习框架训练产出的推理模型。PaddlePaddle 用于推理的模型分别可通过 `paddle.jit.save` (动态图) 与 `paddle.static.save_inference_model` (静态图) 或 `paddle.Model().save` (高层API) 保存下来。\r\n\r\n目前 RocketQA 使用的是老版本的 PaddlePaddle，用于推理的模型应该需要通过 `fluid.io.save_inference_model` 保存，但目前看代码是通过 `fluid.io.save_persistables` 保存的：\r\n\r\nhttps://github.com/PaddlePaddle/RocketQA/blob/019ad5c1088167e264c5ec799c5f7fd22e39ad27/rocketqa/encoder/dual_encoder.py#L380\r\n\r\nhttps://github.com/PaddlePaddle/RocketQA/blob/019ad5c1088167e264c5ec799c5f7fd22e39ad27/rocketqa/encoder/cross_encoder.py#L326\r\n\r\n请问如何在 Paddle Inference 中使用 RocketQA 的模型？RocketQA 是否有计划支持用 Paddle Inference 进行推理？\r\n",
+        "state": "open",
+        "user": "RussellLuo",
+        "closed_by": null,
+        "created_at": "2022-12-02T09:03:56+00:00",
+        "updated_at": "2022-12-08T10:36:24+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012",
+            "RussellLuo"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 74,
+        "title": "ce打分模型matching卡住，10几秒后异常退出",
+        "body": "打分这段代码：\r\n```\r\n    ce_conf = {\r\n        \"model\": 'zh_dureader_ce_v2',\r\n        \"use_cuda\": True,\r\n        \"device_id\": 0,\r\n        \"batch_size\": 32\r\n    }\r\n    cross_encoder = rocketqa.load_model(**ce_conf)\r\n\r\n    q = ['电力设备行业规模', '电力设备行业规模', '电力设备行业规模', '电力设备行业规模', '电力设备行业规模']\r\n    t = ['电力设备行业的市场规模分析 电力设备行业未来发展前景分...', '电力设备市场细分数据分析_财富号_东方财富网',\r\n         '电力设备行业市场分析', '2021年电力设备制造行业发展概况及趋势分析 - 百...', '2022年电力设备制造行业现状和发展趋势.docx-原创力文档']\r\n    p = ['目前电力设备行业市场规模已经超过5000亿元,行业利润总额产国340亿元。国内电力设备市场正在以持续稳定的增长之势向前发展,我国电力设备行业当前处于行业的快... https://www.chinairn.com/news/20220718/162320712.shtml baidu_2 1658073600',\r\n         '目前电力设备行业的市场规模已经超过5000亿元,行业利润总额产国340亿元。国内电力设备市场正在以持续稳定的增长之势向前发展,2022-2027年中国机械电力设备行业市场供需及重点企业投... https://caifuhao.eastmoney.com/news/20220721184503449012900 baidu_3 1658332800',\r\n         '预计到 2025年，低压电器市场规模将达到 1,240亿元，预计 2021年到 2025年的年均复合增长率为 7.72%，继续保持高速增长的趋势。在电力行业，统电力系统正朝着新型电力系统过渡，... https://baijiahao.baidu.com/s?id=1744016995218803706&wfr=spider&for=pc baidu_4 1663171200',\r\n         '电力设备制造业是机械工业最主要的子行业之一,行业资产总额占整个机械 工业的近 1/4.2015 年,电力设备制造业行业规模继续扩大,资产总额稳步增长, 企业数量有所回升.截至 2015... https://wenku.baidu.com/view/7d481de1d2f34693daef5ef7ba0d4a7302766ca0.html baidu_5 ',\r\n         '从行业规模来看,2019年,电 力设备行业规模继续扩大,企业数量继续回升,资产总额稳步增长。截至2019年底,行业规模以上企业达21,512家,同比增加354家;资产总额达6... https://m.book118.com/html/2022/1110/8137123122005011.shtm baidu_7 1668614400']\r\n\r\n    print('score ...')\r\n    s = list(cross_encoder.matching(query=q, para=p, title=t))\r\n    print(s)\r\n```\r\n对应的输出：\r\n```\r\nRocketQA model [zh_dureader_ce_v2]\r\nWARNING:root:paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\nW1202 17:21:07.773284 52200 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 8.6, Driver API Version: 11.7, Runtime API Version: 11.2\r\nW1202 17:21:07.778347 52200 gpu_resources.cc:91] device: 0, cuDNN Version: 8.2.\r\nLoad model done\r\nscore ...\r\n\r\n进程已结束,退出代码-1073741819 (0xC0000005)\r\n```\r\nmatching的参数不能随意指定文本吗？为什么会卡住不动，过十几秒之后异常退出？\r\n",
+        "state": "closed",
+        "user": "jyjy007",
+        "closed_by": "procedure2012",
+        "created_at": "2022-12-02T09:11:23+00:00",
+        "updated_at": "2022-12-28T13:02:36+00:00",
+        "closed_at": "2022-12-28T13:02:36+00:00",
+        "comments_count": [
+            "jyjy007",
+            "jyjy007",
+            "jyjy007"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 75,
+        "title": "关于rocketqa的一些疑问？",
+        "body": "1. rocketqa是否一定要使用索引？我的目标是对一种类型的文档进行搜索，所以文档内容每次都是不一样的，即没有固定的语料库，但是文章的模式是大致相同的.即文档passages如果都是不一样的是否可以使用rocketqa进行检索。\r\n2. 并且关于rocketqa模型的小样本微调方面，大致需要多少的自定义训练集能达到比较好的效果，在rocketqa中并没有看到相关的数据。是否需要使用dureader retrival数据集再训练，还是直接用我们自己的训练集训练即可\r\n3. 训练集的title有什么用，是否可以不指定，或者说指定是否能提升模型准确度",
+        "state": "closed",
+        "user": "hehuang139",
+        "closed_by": "hehuang139",
+        "created_at": "2022-12-09T03:12:15+00:00",
+        "updated_at": "2022-12-09T12:55:41+00:00",
+        "closed_at": "2022-12-09T12:55:41+00:00",
+        "comments_count": [
+            "hehuang139",
+            "hehuang139",
+            "procedure2012",
+            "hehuang139",
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 76,
+        "title": "language other than english and chinese",
+        "body": "thanks for the great work.\r\n\r\nI was wondering if we can use this toolkit with PLM in other languages (available in huggingface) and build DPR for that language.\r\nimagine we have appropriate data in that language.\r\n\r\nHas anyone had experience developing a model with RocketQA for other languages? \r\n",
+        "state": "closed",
+        "user": "amiroft",
+        "closed_by": "amiroft",
+        "created_at": "2022-12-10T14:54:52+00:00",
+        "updated_at": "2023-01-11T03:55:14+00:00",
+        "closed_at": "2022-12-22T16:20:45+00:00",
+        "comments_count": [
+            "procedure2012",
+            "amiroft",
+            "procedure2012",
+            "anonymousz97",
+            "amiroft",
+            "anonymousz97"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 78,
+        "title": "使用提供的例子进行训练无法输出模型",
+        "body": "日志如下\r\n```\r\nE:\\IdeaProjects\\knowledge-model\\rocketqa_es>python example.py\r\nRocketQA model [zh_dureader_de]\r\nWARNING:root:paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\nW1222 14:00:13.174715  6936 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.7\r\nW1222 14:00:13.178715  6936 gpu_resources.cc:91] device: 0, cuDNN Version: 8.4.\r\nLoad model done\r\nINFO:root:-----------  Configuration Arguments -----------\r\n[INFO] 2022-12-22 14:00:16,089 [     args.py:   69]:    -----------  Configuration Arguments -----------\r\nINFO:root:batch_size: 8\r\n[INFO] 2022-12-22 14:00:16,089 [     args.py:   71]:    batch_size: 8\r\nINFO:root:checkpoints: checkpoints\r\n[INFO] 2022-12-22 14:00:16,090 [     args.py:   71]:    checkpoints: checkpoints\r\nINFO:root:chunk_scheme: IOB\r\n[INFO] 2022-12-22 14:00:16,090 [     args.py:   71]:    chunk_scheme: IOB\r\nINFO:root:decr_every_n_nan_or_inf: 2\r\n[INFO] 2022-12-22 14:00:16,090 [     args.py:   71]:    decr_every_n_nan_or_inf: 2\r\nINFO:root:decr_ratio: 0.8\r\n[INFO] 2022-12-22 14:00:16,091 [     args.py:   71]:    decr_ratio: 0.8\r\nINFO:root:dev_set: None\r\n[INFO] 2022-12-22 14:00:16,091 [     args.py:   71]:    dev_set: None\r\nINFO:root:diagnostic: None\r\n[INFO] 2022-12-22 14:00:16,092 [     args.py:   71]:    diagnostic: None\r\nINFO:root:diagnostic_save: None\r\n[INFO] 2022-12-22 14:00:16,093 [     args.py:   71]:    diagnostic_save: None\r\nINFO:root:do_lower_case: True\r\n[INFO] 2022-12-22 14:00:16,093 [     args.py:   71]:    do_lower_case: True\r\nINFO:root:do_test: True\r\n[INFO] 2022-12-22 14:00:16,094 [     args.py:   71]:    do_test: True\r\nINFO:root:do_train: False\r\n[INFO] 2022-12-22 14:00:16,095 [     args.py:   71]:    do_train: False\r\nINFO:root:do_val: False\r\n[INFO] 2022-12-22 14:00:16,096 [     args.py:   71]:    do_val: False\r\nINFO:root:doc_stride: 128\r\n[INFO] 2022-12-22 14:00:16,096 [     args.py:   71]:    doc_stride: 128\r\nINFO:root:enable_ce: False\r\n[INFO] 2022-12-22 14:00:16,097 [     args.py:   71]:    enable_ce: False\r\nINFO:root:epoch: 2\r\n[INFO] 2022-12-22 14:00:16,098 [     args.py:   71]:    epoch: 2\r\nINFO:root:ernie_config_path: C:\\Users\\lincheng.wen/.rocketqa/zh_dureader_de/zh_config.json\r\n[INFO] 2022-12-22 14:00:16,098 [     args.py:   71]:    ernie_config_path: C:\\Users\\lincheng.wen/.rocketqa/zh_dureader_de/zh_config.json\r\nINFO:root:for_cn: True\r\n[INFO] 2022-12-22 14:00:16,099 [     args.py:   71]:    for_cn: True\r\nINFO:root:in_tokens: False\r\n[INFO] 2022-12-22 14:00:16,100 [     args.py:   71]:    in_tokens: False\r\nINFO:root:incr_every_n_steps: 100\r\n[INFO] 2022-12-22 14:00:16,101 [     args.py:   71]:    incr_every_n_steps: 100\r\nINFO:root:incr_ratio: 2.0\r\n[INFO] 2022-12-22 14:00:16,102 [     args.py:   71]:    incr_ratio: 2.0\r\nINFO:root:init_checkpoint: C:\\Users\\lincheng.wen/.rocketqa/zh_dureader_de/dureader_dual_encoder\r\n[INFO] 2022-12-22 14:00:16,103 [     args.py:   71]:    init_checkpoint: C:\\Users\\lincheng.wen/.rocketqa/zh_dureader_de/dureader_dual_encoder\r\nINFO:root:init_loss_scaling: 102400\r\n[INFO] 2022-12-22 14:00:16,104 [     args.py:   71]:    init_loss_scaling: 102400\r\nINFO:root:init_pretraining_params: None\r\n[INFO] 2022-12-22 14:00:16,105 [     args.py:   71]:    init_pretraining_params: None\r\nINFO:root:is_classify: True\r\n[INFO] 2022-12-22 14:00:16,108 [     args.py:   71]:    is_classify: True\r\nINFO:root:is_distributed: False\r\n[INFO] 2022-12-22 14:00:16,108 [     args.py:   71]:    is_distributed: False\r\nINFO:root:is_regression: False\r\n[INFO] 2022-12-22 14:00:16,109 [     args.py:   71]:    is_regression: False\r\nINFO:root:label_map_config: None\r\n[INFO] 2022-12-22 14:00:16,110 [     args.py:   71]:    label_map_config: None\r\nINFO:root:learning_rate: 1e-05\r\n[INFO] 2022-12-22 14:00:16,110 [     args.py:   71]:    learning_rate: 1e-05\r\nINFO:root:log_folder: de_log\r\n[INFO] 2022-12-22 14:00:16,111 [     args.py:   71]:    log_folder: de_log\r\nINFO:root:lr_scheduler: linear_warmup_decay\r\n[INFO] 2022-12-22 14:00:16,112 [     args.py:   71]:    lr_scheduler: linear_warmup_decay\r\nINFO:root:max_answer_length: 100\r\n[INFO] 2022-12-22 14:00:16,112 [     args.py:   71]:    max_answer_length: 100\r\nINFO:root:max_query_length: 64\r\n[INFO] 2022-12-22 14:00:16,113 [     args.py:   71]:    max_query_length: 64\r\nINFO:root:max_seq_len: 512\r\n[INFO] 2022-12-22 14:00:16,114 [     args.py:   71]:    max_seq_len: 512\r\nINFO:root:metric: simple_accuracy\r\n[INFO] 2022-12-22 14:00:16,115 [     args.py:   71]:    metric: simple_accuracy\r\nINFO:root:metrics: True\r\n[INFO] 2022-12-22 14:00:16,115 [     args.py:   71]:    metrics: True\r\nINFO:root:model_name: zh_dureader_de\r\n[INFO] 2022-12-22 14:00:16,116 [     args.py:   71]:    model_name: zh_dureader_de\r\nINFO:root:n_best_size: 20\r\n[INFO] 2022-12-22 14:00:16,116 [     args.py:   71]:    n_best_size: 20\r\nINFO:root:num_iteration_per_drop_scope: 10\r\n[INFO] 2022-12-22 14:00:16,117 [     args.py:   71]:    num_iteration_per_drop_scope: 10\r\nINFO:root:num_labels: 2\r\n[INFO] 2022-12-22 14:00:16,118 [     args.py:   71]:    num_labels: 2\r\nINFO:root:output_file_name: None\r\n[INFO] 2022-12-22 14:00:16,119 [     args.py:   71]:    output_file_name: None\r\nINFO:root:output_item: 3\r\n[INFO] 2022-12-22 14:00:16,120 [     args.py:   71]:    output_item: 3\r\nINFO:root:p_max_seq_len: 384\r\n[INFO] 2022-12-22 14:00:16,120 [     args.py:   71]:    p_max_seq_len: 384\r\nINFO:root:predict_batch_size: None\r\n[INFO] 2022-12-22 14:00:16,123 [     args.py:   71]:    predict_batch_size: None\r\nINFO:root:q_max_seq_len: 32\r\n[INFO] 2022-12-22 14:00:16,123 [     args.py:   71]:    q_max_seq_len: 32\r\nINFO:root:random_seed: None\r\n[INFO] 2022-12-22 14:00:16,124 [     args.py:   71]:    random_seed: None\r\nINFO:root:save_model_path: de_models\r\n[INFO] 2022-12-22 14:00:16,124 [     args.py:   71]:    save_model_path: de_models\r\nINFO:root:save_steps: 10\r\n[INFO] 2022-12-22 14:00:16,125 [     args.py:   71]:    save_steps: 10\r\nINFO:root:share_parameter: 0\r\n[INFO] 2022-12-22 14:00:16,126 [     args.py:   71]:    share_parameter: 0\r\nINFO:root:shuffle: True\r\n[INFO] 2022-12-22 14:00:16,126 [     args.py:   71]:    shuffle: True\r\nINFO:root:skip_steps: 100\r\n[INFO] 2022-12-22 14:00:16,127 [     args.py:   71]:    skip_steps: 100\r\nINFO:root:task_id: 0\r\n[INFO] 2022-12-22 14:00:16,128 [     args.py:   71]:    task_id: 0\r\nINFO:root:test_data_cnt: 1110000\r\n[INFO] 2022-12-22 14:00:16,129 [     args.py:   71]:    test_data_cnt: 1110000\r\nINFO:root:test_save: ./checkpoints/test_result\r\n[INFO] 2022-12-22 14:00:16,130 [     args.py:   71]:    test_save: ./checkpoints/test_result\r\nINFO:root:test_set: None\r\n[INFO] 2022-12-22 14:00:16,131 [     args.py:   71]:    test_set: None\r\nINFO:root:tokenizer: FullTokenizer\r\n[INFO] 2022-12-22 14:00:16,131 [     args.py:   71]:    tokenizer: FullTokenizer\r\nINFO:root:train_data_size: 0\r\n[INFO] 2022-12-22 14:00:16,132 [     args.py:   71]:    train_data_size: 0\r\nINFO:root:train_set: ./data/dual.train.tsv\r\n[INFO] 2022-12-22 14:00:16,133 [     args.py:   71]:    train_set: ./data/dual.train.tsv\r\nINFO:root:use_cross_batch: False\r\n[INFO] 2022-12-22 14:00:16,134 [     args.py:   71]:    use_cross_batch: False\r\nINFO:root:use_cuda: True\r\n[INFO] 2022-12-22 14:00:16,135 [     args.py:   71]:    use_cuda: True\r\nINFO:root:use_dynamic_loss_scaling: True\r\n[INFO] 2022-12-22 14:00:16,136 [     args.py:   71]:    use_dynamic_loss_scaling: True\r\nINFO:root:use_fast_executor: True\r\n[INFO] 2022-12-22 14:00:16,139 [     args.py:   71]:    use_fast_executor: True\r\nINFO:root:use_lamb: False\r\n[INFO] 2022-12-22 14:00:16,140 [     args.py:   71]:    use_lamb: False\r\nINFO:root:use_mix_precision: False\r\n[INFO] 2022-12-22 14:00:16,141 [     args.py:   71]:    use_mix_precision: False\r\nINFO:root:use_multi_gpu_test: False\r\n[INFO] 2022-12-22 14:00:16,142 [     args.py:   71]:    use_multi_gpu_test: False\r\nINFO:root:use_recompute: False\r\n[INFO] 2022-12-22 14:00:16,143 [     args.py:   71]:    use_recompute: False\r\nINFO:root:validation_steps: 1000\r\n[INFO] 2022-12-22 14:00:16,143 [     args.py:   71]:    validation_steps: 1000\r\nINFO:root:verbose: False\r\n[INFO] 2022-12-22 14:00:16,144 [     args.py:   71]:    verbose: False\r\nINFO:root:vocab_path: C:\\Users\\lincheng.wen/.rocketqa/zh_dureader_de/zh_vocab.txt\r\n[INFO] 2022-12-22 14:00:16,145 [     args.py:   71]:    vocab_path: C:\\Users\\lincheng.wen/.rocketqa/zh_dureader_de/zh_vocab.txt\r\nINFO:root:warmup_proportion: 0.1\r\n[INFO] 2022-12-22 14:00:16,146 [     args.py:   71]:    warmup_proportion: 0.1\r\nINFO:root:weight_decay: 0.01\r\n[INFO] 2022-12-22 14:00:16,146 [     args.py:   71]:    weight_decay: 0.01\r\nINFO:root:------------------------------------------------\r\n[INFO] 2022-12-22 14:00:16,147 [     args.py:   72]:    ------------------------------------------------\r\nINFO:root:Device count: 1\r\n[INFO] 2022-12-22 14:00:16,165 [dual_encoder.py:  291]: Device count: 1\r\nINFO:root:Num train examples: 112\r\n[INFO] 2022-12-22 14:00:16,166 [dual_encoder.py:  292]: Num train examples: 112\r\nINFO:root:Max train steps: 28\r\n[INFO] 2022-12-22 14:00:16,167 [dual_encoder.py:  293]: Max train steps: 28\r\nINFO:root:Num warmup steps: 2\r\n[INFO] 2022-12-22 14:00:16,168 [dual_encoder.py:  294]: Num warmup steps: 2\r\nINFO:root:Learning rate: 0.000010\r\n[INFO] 2022-12-22 14:00:16,170 [dual_encoder.py:  295]: Learning rate: 0.000010\r\nWARNING:root:paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\n[WARNING] 2022-12-22 14:00:16,171 [       io.py:  719]: paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\nINFO:rocketqa.utils.init:Load pretraining parameters from C:\\Users\\lincheng.wen/.rocketqa/zh_dureader_de/dureader_dual_encoder.\r\n[INFO] 2022-12-22 14:00:26,350 [     init.py:   73]:    Load pretraining parameters from C:\\Users\\lincheng.wen/.rocketqa/zh_dureader_de/dureader_dual_encoder.\r\n\r\n```",
+        "state": "closed",
+        "user": "wenlincheng",
+        "closed_by": "wenlincheng",
+        "created_at": "2022-12-22T06:19:22+00:00",
+        "updated_at": "2023-01-03T05:39:21+00:00",
+        "closed_at": "2022-12-22T06:26:15+00:00",
+        "comments_count": [
+            "yslu-TW",
+            "kaihe"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 79,
+        "title": "请问dual.train.tsv cross.train.tsv  训练模型的具体格式是什么",
+        "body": "文档里有写dual.train.tsv的格式是 query、title、param、label (0 或1)，请问cross.train.tsv文件格式呢",
+        "state": "open",
+        "user": "wenlincheng",
+        "closed_by": null,
+        "created_at": "2022-12-23T03:29:51+00:00",
+        "updated_at": "2023-05-09T10:18:06+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012",
+            "wenlincheng",
+            "procedure2012",
+            "wenlincheng",
+            "wenlincheng",
+            "wenlincheng",
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 80,
+        "title": "Load pretraining parameters from dureader_cross_encoder 後終止訓練",
+        "body": "Load pretraining parameters from dureader_cross_encoder 後跳出程序\r\ndureader_cross_encoder有下載下來\r\n\r\n![image](https://user-images.githubusercontent.com/23492343/209496163-ec5e6da2-92e9-4123-b4e7-82282dc3b191.png)\r\n\r\n> 程式碼\r\n```\r\nimport paddle\r\nimport rocketqa\r\ncross_encoder = rocketqa.load_model(model=\"zh_dureader_ce\", use_cuda=True, device_id=1, batch_size=16)\r\ncross_encoder.train('C:/ChaseAI/Chatbot/RocketQA-main/examples/data/cross.train.tsv', 2, 'ce_models', save_steps=1000, learning_rate=1e-5, log_folder='log_ce')\r\n```\r\n> log\r\n\r\n```\r\nW1227 08:33:52.983285 19932 gpu_resources.cc:61] Please NOTE: device: 1, GPU Compute Capability: 7.0, Driver API Version: 11.3, Runtime API Version: 11.2\r\n\r\nW1227 08:33:57.905314 19932 gpu_resources.cc:91] device: 1, cuDNN Version: 8.2.\r\n[INFO] 2022-12-26 11:26:31,443 [     args.py:   69]:\t-----------  Configuration Arguments -----------\r\n[INFO] 2022-12-26 11:26:31,443 [     args.py:   71]:\tbatch_size: 16\r\n[INFO] 2022-12-26 11:26:31,443 [     args.py:   71]:\tcheckpoints: checkpoints\r\n[INFO] 2022-12-26 11:26:31,443 [     args.py:   71]:\tchunk_scheme: IOB\r\n[INFO] 2022-12-26 11:26:31,443 [     args.py:   71]:\tdecr_every_n_nan_or_inf: 2\r\n[INFO] 2022-12-26 11:26:31,443 [     args.py:   71]:\tdecr_ratio: 0.8\r\n[INFO] 2022-12-26 11:26:31,443 [     args.py:   71]:\tdev_set: None\r\n[INFO] 2022-12-26 11:26:31,443 [     args.py:   71]:\tdiagnostic: None\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tdiagnostic_save: None\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tdo_lower_case: True\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tdo_test: True\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tdo_train: False\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tdo_val: False\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tdoc_stride: 128\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tenable_ce: False\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tepoch: 2\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\ternie_config_path: C:\\Users\\Administrator/.rocketqa/zh_dureader_ce/zh_config.json\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tfor_cn: True\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tin_tokens: False\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tincr_every_n_steps: 100\r\n[INFO] 2022-12-26 11:26:31,459 [     args.py:   71]:\tincr_ratio: 2.0\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tinit_checkpoint: C:\\Users\\Administrator/.rocketqa/zh_dureader_ce/dureader_cross_encoder\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tinit_loss_scaling: 102400\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tinit_pretraining_params: None\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tis_classify: True\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tis_distributed: False\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tis_regression: False\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tlabel_map_config: None\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tlearning_rate: 1e-05\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tlog_folder: log_ce\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tlr_scheduler: linear_warmup_decay\r\n[INFO] 2022-12-26 11:26:31,474 [     args.py:   71]:\tmax_answer_length: 100\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tmax_query_length: 64\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tmax_seq_len: 384\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tmetric: simple_accuracy\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tmetrics: True\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tmodel_name: zh_dureader_ce\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tn_best_size: 20\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tnum_iteration_per_drop_scope: 10\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tnum_labels: 2\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\toutput_file_name: None\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\toutput_item: 3\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tp_max_seq_len: 256\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tpredict_batch_size: None\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tq_max_seq_len: 32\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\trandom_seed: None\r\n[INFO] 2022-12-26 11:26:31,490 [     args.py:   71]:\tsave_model_path: ce_models\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\tsave_steps: 1000\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\tshuffle: True\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\tskip_steps: 100\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\ttask_id: 0\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\ttest_data_cnt: 1110000\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\ttest_save: ./checkpoints/test_result\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\ttest_set: None\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\ttokenizer: FullTokenizer\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\ttrain_data_size: 0\r\n[INFO] 2022-12-26 11:26:31,505 [     args.py:   71]:\ttrain_set: C:/ChaseAI/Chatbot/RocketQA-main/examples/data/cross_train_test.tsv\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tuse_cross_batch: False\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tuse_cuda: True\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tuse_dynamic_loss_scaling: True\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tuse_fast_executor: True\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tuse_lamb: False\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tuse_mix_precision: False\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tuse_multi_gpu_test: False\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tuse_recompute: False\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tvalidation_steps: 1000\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tverbose: False\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\tvocab_path: C:\\Users\\Administrator/.rocketqa/zh_dureader_ce/zh_vocab.txt\r\n[INFO] 2022-12-26 11:26:31,521 [     args.py:   71]:\twarmup_proportion: 0.1\r\n[INFO] 2022-12-26 11:26:31,537 [     args.py:   71]:\tweight_decay: 0.01\r\n[INFO] 2022-12-26 11:26:31,537 [     args.py:   72]:\t------------------------------------------------\r\n[INFO] 2022-12-26 11:26:31,568 [reader_ce_train.py:  244]:\tapply sharding 0/1\r\n[INFO] 2022-12-26 11:26:31,584 [cross_encoder.py:  238]:\tDevice count: 1\r\n[INFO] 2022-12-26 11:26:31,584 [cross_encoder.py:  239]:\tNum train examples: 30\r\n[INFO] 2022-12-26 11:26:31,584 [cross_encoder.py:  240]:\tMax train steps: 3\r\n[INFO] 2022-12-26 11:26:31,584 [cross_encoder.py:  241]:\tNum warmup steps: 0\r\n[INFO] 2022-12-26 11:26:31,584 [cross_encoder.py:  242]:\tLearning rate: 0.000010\r\n[WARNING] 2022-12-26 11:26:31,584 [       io.py:  721]:\tpaddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\n[INFO] 2022-12-26 11:26:36,270 [     init.py:   74]:\tLoad pretraining parameters from C:\\Users\\Administrator/.rocketqa/zh_dureader_ce/dureader_cross_encoder.\r\n```",
+        "state": "closed",
+        "user": "yslu-TW",
+        "closed_by": "yslu-TW",
+        "created_at": "2022-12-26T03:33:58+00:00",
+        "updated_at": "2022-12-28T08:47:55+00:00",
+        "closed_at": "2022-12-28T08:47:55+00:00",
+        "comments_count": [
+            "yslu-TW"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 83,
+        "title": "jina和jina3_example区别",
+        "body": "jina_example和jina3_example，两者的区别指的是什么？看其中的README内容都是一样的，不知道哪里的差异",
+        "state": "open",
+        "user": "chansonZ",
+        "closed_by": null,
+        "created_at": "2023-02-06T06:20:41+00:00",
+        "updated_at": "2023-02-06T06:20:41+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 82,
+        "title": "Cant load model for diffirent languages",
+        "body": "Hi, i want to run RocketQA for diffirent languages so i check the issues and find a way to convert pytorch model to your format but it seems not ok. So can you explain or give me a link to find a appropriate way to convert the pytorch model? Thanks again.",
+        "state": "open",
+        "user": "anonymousz97",
+        "closed_by": null,
+        "created_at": "2023-01-09T09:59:01+00:00",
+        "updated_at": "2023-01-14T10:38:43+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "amiroft"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 81,
+        "title": "数据集是否可以增加问题的id列",
+        "body": "业务场景中一般都需要知道搜索出来的问题的id，以进行后续的处理，在导入数据集的时候是否可以增加一列用于存储问题的id\r\n\r\n```\r\nid_1\\ttitle_1\\tparagraph_1\\n\r\nid_2\\ttitle_2\\tparagraph_2\\n\r\n...\r\n```\r\n",
+        "state": "closed",
+        "user": "wenlincheng",
+        "closed_by": "wenlincheng",
+        "created_at": "2023-01-06T03:02:31+00:00",
+        "updated_at": "2023-01-09T08:19:46+00:00",
+        "closed_at": "2023-01-09T08:19:45+00:00",
+        "comments_count": [
+            "procedure2012",
+            "wenlincheng",
+            "procedure2012",
+            "wenlincheng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 84,
+        "title": "q_max_seq_len和p_max_seq_len是问答对的最大字长度吗",
+        "body": "q_max_seq_len：默认问题字长度最大32\r\np_max_seq_len：默认答案字长度最大384\r\n- 如果实际文本超出会导致截断吗，进而导致预测性能下降\r\n- 最大支持多长",
+        "state": "open",
+        "user": "chansonZ",
+        "closed_by": null,
+        "created_at": "2023-02-10T10:14:53+00:00",
+        "updated_at": "2023-06-12T04:19:37+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ylf-Ng",
+            "magicleo",
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 87,
+        "title": "关于RocketQAv2的数据集",
+        "body": "您好，请问RocketQAv2是否使用了RocketQA中的无标签语料扩充了训练集呢",
+        "state": "open",
+        "user": "1749anonymous",
+        "closed_by": null,
+        "created_at": "2023-03-15T08:17:30+00:00",
+        "updated_at": "2023-03-15T08:17:30+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 89,
+        "title": "单机多卡训练异常",
+        "body": "cuda:11.1\r\nnccl: 2.8.4\r\npaddlepaddle-gpu: 2.4.2.post117\r\n\r\nI0318 18:36:03.178817 3109962 reference_count_pass.cc:289] Place number: 1\r\nI0318 18:36:04.082372 3109962 parallel_executor.cc:485] Inplace strategy is enabled, when build_strategy.enable_inplace = True\r\nLAUNCH INFO 2023-03-18 18:36:10,417 Exit code -15\r\nI0318 18:36:04.219031 3109962 parallel_executor.cc:597] Garbage collection strategy is enabled, when FLAGS_eager_delete_tensor_gb = 0\r\nI0318 18:36:04.306317 3110084 buffered_reader.cc:50] BufferedReader\r\nW0318 18:36:05.566799 3110084 gpu_resources.cc:217] WARNING: device: . The installed Paddle is compiled with CUDNN 8.4, but CUDNN version in your machine is 8.2, which may cause serious incompatible bug. Please recompile or reinstall Paddle with compatible CUDNN version.\r\nDEBUG:  classify\r\nworker num is: 4\r\nTraceback (most recent call last):\r\n  File \"./src/train_de.py\", line 379, in <module>\r\n    main(args)\r\n  File \"./src/train_de.py\", line 240, in main\r\n    train_exe.run(fetch_list=[], program=train_program)\r\n  File \"/home/nlp/nlp/anaconda3/envs/jun/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1463, in run\r\n    six.reraise(*sys.exc_info())\r\n  File \"/home/nlp/nlp/anaconda3/envs/jun/lib/python3.8/site-packages/six.py\", line 719, in reraise\r\n    raise value\r\n  File \"/home/nlp/nlp/anaconda3/envs/jun/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1450, in run\r\n    res = self._run_impl(program=program,\r\n  File \"/home/nlp/nlp/anaconda3/envs/jun/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1720, in _run_impl\r\n    return self._run_parallel(program,\r\n  File \"/home/nlp/nlp/anaconda3/envs/jun/lib/python3.8/site-packages/paddle/fluid/executor.py\", line 1254, in _run_parallel\r\n    tensors = exe.run(fetch_var_names, return_merged)._move_to_list()\r\nOSError: (External) NCCL error(5), invalid usage.\r\n",
+        "state": "open",
+        "user": "dignjun",
+        "closed_by": null,
+        "created_at": "2023-03-18T10:55:05+00:00",
+        "updated_at": "2023-03-18T10:55:05+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 88,
+        "title": "PAIR在双编码器预训练出现的问题请教！",
+        "body": "@nomagick @ZeyuChen @jacquesqiao \r\n您好！\r\n在PAIR模型中：我在第一步双编码器预训练时出现了如下情况，这是workerlog.0文件输出的内容，\r\n\r\n`/data/anaconda3/envs/zpPAIR3.7/bin/python: can't open file '127.0.1.1': [Errno 2] No such file or directory\r\n`\r\n环境是已经装好了，只不过paddle版本是2.3.2.post111,  python仍是3.7",
+        "state": "open",
+        "user": "zhangpeng-HEBUT",
+        "closed_by": null,
+        "created_at": "2023-03-18T08:19:14+00:00",
+        "updated_at": "2023-03-18T08:19:14+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 85,
+        "title": "Running with FAISS got a bug",
+        "body": "python3 index.py zh ../data/dureader.para test_index\r\nRocketQA model [zh_dureader_de_v2]\r\nDownload RocketQA model [zh_dureader_de_v2]\r\n100%|███████████████████████████████████████| 693M/693M [00:18<00:00, 38.6MiB/s]\r\n[Errno 28] No space left on device\r\nTraceback (most recent call last):\r\n  File \"/data/RocketQA/examples/faiss_example/index.py\", line 52, in <module>\r\n    build_index(de_conf, index_file, title_list, para_list)\r\n  File \"/data/RocketQA/examples/faiss_example/index.py\", line 10, in build_index\r\n    dual_encoder = rocketqa.load_model(**encoder_conf)\r\n  File \"/data/envs/xuuie/lib/python3.9/site-packages/rocketqa/rocketqa.py\", line 80, in load_model\r\n    raise Exception(f\"RocketQA model [{model_name}] download failed, \\\r\nException: RocketQA model [zh_dureader_de_v2] download failed,                         please check model dir [/root/.rocketqa/zh_dureader_de_v2/]\r\n再次执行\r\nfaiss_example]# python3 index.py zh ../data/dureader.para test_index\r\nRocketQA model [zh_dureader_de_v2]\r\nTraceback (most recent call last):\r\n  File \"/data/envs/xuuie/lib/python3.9/site-packages/rocketqa/model/ernie.py\", line 38, in _parse\r\n    with open(config_path, 'r', encoding='utf8') as json_file:\r\nFileNotFoundError: [Errno 2] No such file or directory: '/root/.rocketqa/zh_dureader_de_v2/zh_config.json'\r\n\r\ncould you pls help me ?\r\nthx\r\n",
+        "state": "open",
+        "user": "ucas010",
+        "closed_by": null,
+        "created_at": "2023-02-23T11:43:17+00:00",
+        "updated_at": "2023-05-08T08:39:24+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 86,
+        "title": "rocketqs 运行demo代码时候报错",
+        "body": "paddle-bfloat                      0.1.7\r\npaddle-pipelines                   0.5.0\r\npaddle2onnx                        0.9.6\r\npaddlefsl                          1.1.0\r\npaddlenlp                          2.5.1\r\npaddleocr                          2.5\r\npaddlepaddle-gpu                   2.3.2.post116\r\nrocketqa                           1.1.0\r\n当运行demo代码时候报错\r\n\r\n# 使用RocketQA预置的模型做预测\r\n\r\nimport rocketqa\r\n\r\nquery_list = [\"交叉验证的作用\"]\r\npara_list = [\"交叉验证(Cross-validation)主要用于建模应用中，例如PCR 、PLS回归建模中。在给定的建模样本中，拿出大部分样本进行建模型，留小部分样本用刚建立的模型进行预报，并求这小部分样本的预报误差，记录它们的平方加和。\"]\r\ntitle_list = [\"交叉验证的介绍\"]\r\n\r\ndual_encoder = rocketqa.load_model(model=\"zh_dureader_de_v2\") # for cpu\r\n\r\nq_embs = dual_encoder.encode_query(query=query_list)\r\np_embs = dual_encoder.encode_para(para=para_list, title=title_list)\r\n\r\n\r\ndot_products = dual_encoder.matching(query=query_list, title=title_list, para=para_list)\r\nprint (dot_products)\r\n\r\n\r\n\r\n\r\n\r\nRocketQA model [zh_dureader_de_v2]\r\nWARNING:root:paddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\n[WARNING] 2023-03-11 14:53:52,916 [       io.py:  721]:\tpaddle.fluid.layers.py_reader() may be deprecated in the near future. Please use paddle.fluid.io.DataLoader.from_generator() instead.\r\n---------------------------------------------------------------------------RuntimeError                              Traceback (most recent call last)/tmp/ipykernel_131/2762825280.py in <module>\r\n      8 \r\n      9 # load model - RocketQA中文检索模型(de)，在DuReader数据集中训练得到\r\n---> 10 dual_encoder = rocketqa.load_model(model=\"zh_dureader_de_v2\") # for cpu\r\n     11 # dual_encoder = rocketqa.load_model(model=\"v1_marco_de\", use_cuda=True, device_id=0, batch_size=16) # for gpu\r\n     12 \r\n/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/rocketqa/rocketqa.py in load_model(model, use_cuda, device_id, batch_size)\r\n    118 \r\n    119     if model_type[0] == \"d\":\r\n--> 120         encoder = DualEncoder(**encoder_conf)\r\n    121     elif model_type[0] == \"c\":\r\n    122         encoder = CrossEncoder(**encoder_conf)\r\n/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/rocketqa/encoder/dual_encoder.py in __init__(self, conf_path, use_cuda, device_id, batch_size, **kwargs)\r\n     90                     ernie_config=self.ernie_config,\r\n     91                     is_prediction=True,\r\n---> 92                     share_parameter=args.share_parameter)\r\n     93 \r\n     94         self.test_prog = self.test_prog.clone(for_test=True)\r\n/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/rocketqa/model/dual_encoder_predict.py in create_predict_model(args, pyreader_name, ernie_config, is_prediction, task_name, share_parameter)\r\n     51     lod_levels=[0, 0, 0, 0, 0,  0, 0, 0, 0, 0,  0, 0],\r\n     52     name=pyreader_name,\r\n---> 53     use_double_buffer=True)\r\n     54 \r\n     55     (src_ids_q, sent_ids_q, pos_ids_q, task_ids_q, input_mask_q,\r\n/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/fluid/layers/io.py in py_reader(capacity, shapes, dtypes, lod_levels, name, use_double_buffer)\r\n    727         lod_levels=lod_levels,\r\n    728         name=name,\r\n--> 729         use_double_buffer=use_double_buffer)\r\n    730 \r\n    731 \r\n/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/fluid/layers/io.py in _py_reader(capacity, shapes, dtypes, lod_levels, name, use_double_buffer, feed_list)\r\n    438 \r\n    439     var = global_scope().var(queue_name)\r\n--> 440     feed_queue = core.init_lod_tensor_blocking_queue(var, capacity, False)\r\n    441 \r\n    442     startup_blk = default_startup_program().current_block()\r\nRuntimeError: (AlreadyExists) LoDTensorBlockingQueueHolder::InitOnce() can only be called once\r\n  [Hint: Expected queue_ == nullptr, but received queue_ != nullptr.] (at /paddle/paddle/fluid/operators/reader/lod_tensor_blocking_queue.h:207)\r\n",
+        "state": "open",
+        "user": "zck573693104",
+        "closed_by": null,
+        "created_at": "2023-03-11T06:59:32+00:00",
+        "updated_at": "2023-05-08T08:36:08+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 90,
+        "title": "预设问答对，无法对问答对拆分处理",
+        "body": "假设设置的标题与内容如下：\r\n张三 \\t 张三，湖北人，现年35岁，目前就职于xx科技有限公司，爱好是篮球与乒乓球。\r\n运行QA，执行查询语句与答案如下：\r\nQ1：张三是哪里人？\r\nA1：张三，湖北人，现年35岁，目前就职于xx科技有限公司，爱好是篮球与乒乓球。\r\n我希望的答案是：湖北人\r\nQ2：张三年龄多大？\r\nA2：张三，湖北人，现年35岁，目前就职于xx科技有限公司，爱好是篮球与乒乓球。\r\n我希望的答案是：35岁\r\nQ3：张三的爱好？\r\nA3：张三，湖北人，现年35岁，目前就职于xx科技有限公司，爱好是篮球与乒乓球。\r\n我希望的答案是：篮球与乒乓球\r\n总结：QA目前无法将答案细分拆解。我采取的方案是对“张三，湖北人，现年35岁，目前就职于xx科技有限公司，爱好是篮球与乒乓球。”这句话进行无监督训练，训练出多个问答对，然后再将这些问答对设置到QA中。",
+        "state": "open",
+        "user": "lixianli1987",
+        "closed_by": null,
+        "created_at": "2023-03-30T02:02:14+00:00",
+        "updated_at": "2023-03-30T07:10:51+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012",
+            "lixianli1987",
+            "procedure2012",
+            "lixianli1987",
+            "lixianli1987",
+            "procedure2012"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 93,
+        "title": "faiss服务启动后如何关闭并重建索引",
+        "body": "用faiss_example示例建立了索引，当下一次重建索引时显示的OSError: [Errno 98] Address already in use，应该是上一个localhost:8888还未关闭吧？而且索引库里面的内容也是上一次的。如何关闭这个服务，并且重建索引库呢？",
+        "state": "closed",
+        "user": "prettyprettyboy",
+        "closed_by": "prettyprettyboy",
+        "created_at": "2023-04-01T08:16:02+00:00",
+        "updated_at": "2023-04-02T12:25:20+00:00",
+        "closed_at": "2023-04-02T12:25:20+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 92,
+        "title": "源文件可以分批次生成索引库么",
+        "body": "例如：问答对源文件source_file.txt，假设源文件的内容比较多，假设文件大小超过100M(如500M)；服务器的配置一般，一次性无法为500M的文件生成索引库。可以分批次生成索引库吗，每次生成100M的源文件，分五次生成索引库的内容。",
+        "state": "open",
+        "user": "lixianli1987",
+        "closed_by": null,
+        "created_at": "2023-03-30T06:23:57+00:00",
+        "updated_at": "2023-08-24T05:13:06+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "procedure2012",
+            "lixianli1987",
+            "ylf-Ng",
+            "Duanexiao"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 91,
+        "title": "索引库中的内容可以指定删除么",
+        "body": "例如：问答对源文件source_file.txt，生成的索引文件test_index。\r\n需求：因某些原因，需要删除或新增source_file.txt文件中的某个问答对，请问在索引中怎么找得到这个问答进行删除或新增。\r\n",
+        "state": "open",
+        "user": "lixianli1987",
+        "closed_by": null,
+        "created_at": "2023-03-30T06:17:07+00:00",
+        "updated_at": "2023-05-08T07:34:08+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lixianli1987",
+            "procedure2012",
+            "lixianli1987",
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 94,
+        "title": "限制使用gpu大小",
+        "body": "hi，请问下使用rocketqa训练的模型如何限制gpu大小？ 使用FLAGS_gpu_memory_limit_mb 设置并没有生效",
+        "state": "open",
+        "user": "yxk9810",
+        "closed_by": null,
+        "created_at": "2023-04-04T02:01:29+00:00",
+        "updated_at": "2023-05-08T09:04:22+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 95,
+        "title": "如何重复加载同一个模型？或者如何释放这个模型然后再次加载？",
+        "body": "rocketqa非常好用，感谢团队的付出！！\r\n我利用rocketqa做self_training，因此在迭代过程中，需要多次load同一模型。先去做inference获得伪标签，再去利用伪标签做finetuning，根据我写的封装逻辑，这个过程要对同一模型加载两次，但paddle框架应该不支持这样操作，因此会报错：\r\n```\r\nTraceback (most recent call last):\r\n  File \"/u01/bankQA/self_training/test_rkqa.py\", line 297, in <module>\r\n    cross_encoder = rocketqa.load_model(**ce_conf)\r\n  File \"/u01/miniconda3/envs/bankqa/lib/python3.8/site-packages/rocketqa/rocketqa.py\", line 122, in load_model\r\n    encoder = CrossEncoder(**encoder_conf)\r\n  File \"/u01/miniconda3/envs/bankqa/lib/python3.8/site-packages/rocketqa/encoder/cross_encoder.py\", line 90, in __init__\r\n    self.test_pyreader, self.graph_vars = create_predict_model(\r\n  File \"/u01/miniconda3/envs/bankqa/lib/python3.8/site-packages/rocketqa/model/cross_encoder_predict.py\", line 39, in create_predict_model\r\n    pyreader = fluid.layers.py_reader(\r\n  File \"/u01/miniconda3/envs/bankqa/lib/python3.8/site-packages/paddle/fluid/layers/io.py\", line 723, in py_reader\r\n    return _py_reader(\r\n  File \"/u01/miniconda3/envs/bankqa/lib/python3.8/site-packages/paddle/fluid/layers/io.py\", line 440, in _py_reader\r\n    feed_queue = core.init_lod_tensor_blocking_queue(var, capacity, False)\r\nRuntimeError: (AlreadyExists) LoDTensorBlockingQueueHolder::InitOnce() can only be called once\r\n  [Hint: Expected queue_ == nullptr, but received queue_ != nullptr.] (at /paddle/paddle/fluid/operators/reader/lod_tensor_blocking_queue.h:207)\r\n```\r\n下面我举一个简单的代码例子，运行起来的话，最后一句就会报错。\r\n```\r\nce_model = “zh_dureader_ce_v2”\r\nce_conf = {\r\n        \"model\": ce_model,\r\n        \"use_cuda\": True,\r\n        \"device_id\": 0,\r\n        \"batch_size\": 32\r\n    }\r\n cross_encoder = rocketqa.load_model(**ce_conf)\r\n cross_encoder = rocketqa.load_model(**ce_conf)\r\n```\r\n请问如何重复加载同一个模型呢？如何释放这个模型然后再次加载？",
+        "state": "closed",
+        "user": "MozerWang",
+        "closed_by": "MozerWang",
+        "created_at": "2023-04-14T08:13:33+00:00",
+        "updated_at": "2023-09-05T02:38:23+00:00",
+        "closed_at": "2023-04-19T06:58:12+00:00",
+        "comments_count": [
+            "procedure2012",
+            "MozerWang",
+            "Duanexiao"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 96,
+        "title": "AssertionError: Not compiled with CUDA",
+        "body": "python3 index.py zh ../data/dureader.para test_index 出现这个错误\r\n![image](https://user-images.githubusercontent.com/44161003/233961386-e5eb9b32-1154-4b5c-ad03-e12cd0d2bf08.png)\r\n",
+        "state": "open",
+        "user": "twwch",
+        "closed_by": null,
+        "created_at": "2023-04-24T09:46:32+00:00",
+        "updated_at": "2023-05-08T07:04:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 97,
+        "title": "请问rocketQA封装好的dual encoder trainer，有用到Cross-batch Negatives吗？",
+        "body": "如题，辛苦解答",
+        "state": "closed",
+        "user": "MozerWang",
+        "closed_by": "MozerWang",
+        "created_at": "2023-04-28T06:16:58+00:00",
+        "updated_at": "2023-05-17T07:40:45+00:00",
+        "closed_at": "2023-05-17T07:40:45+00:00",
+        "comments_count": [
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 98,
+        "title": "可以用来做Q-Q问题对匹配嘛。",
+        "body": "你好，感谢开源。\r\n\r\n我这边有一些QA数据集，用户来了新问题，想先和数据集里的Q做匹配，如果匹配到了，就返回A。\r\n我看本项目的工作，更多的是QA直接匹配，所以想问下QQ匹配的效果，是否可以用QQ数据集，在以下两个模型基础上做一些微调。\r\n效果会不会不好，如果不可以，是否可以推荐一些目前比较好的方法呢\r\n```\r\n        de_model = 'zh_dureader_de_v2'\r\n        ce_model = 'zh_dureader_ce_v2'\r\n```\r\n谢谢。",
+        "state": "open",
+        "user": "YYGe01",
+        "closed_by": null,
+        "created_at": "2023-05-12T06:13:25+00:00",
+        "updated_at": "2023-05-18T11:28:20+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 100,
+        "title": "jina建立索引时，只有前面几十条数据能索引到，后面的数据都索引不到",
+        "body": "您好！我这边有大概1万条中文数据A.para，用jina建立索引（python3 app.py index 自己数据集目录，格式为标题/t文档/n），建完索引之后，python3 app.py query启动网页问询服务，在网页尝试问答时，发现 A.para中只有排在前面几十条的数据能索引到，后面的数据都索引不到，请问是哪里的问题？",
+        "state": "open",
+        "user": "LuWanTong",
+        "closed_by": null,
+        "created_at": "2023-05-23T09:31:54+00:00",
+        "updated_at": "2023-05-23T09:32:23+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 102,
+        "title": "Provide examples data with English language?",
+        "body": "Hello, \r\n\r\nCan you provide examples data: cross.train.tsv, dual.train.tsv with English language? Bacause, Chinese is too hard to understand !!!\r\n\r\n微信分享链接打开app |   | iOS里,把一个页面链接分享给微信好友(会话),好友在微信里打开这个链接,也就是打开了一个网页,点击网页里的某个地方后(比如网页中“打开xx应用程序”的按钮),代码里怎么设置可以跳回到第三方app?知乎的ios客户端就有这种功能,在微信里分享链接后,点开链接,再点网页中的某处,就可以打开知乎客户端显示全部微信中不能用自定义url的方式,微信提供了打开第三方应用的接口:launch3rdApp谢。一般用自带浏览器可以调用起app没问题。微信里面能调出app的,是和腾讯有合作的应用,其他会被过滤掉。有一个公司的产品,叫 魔窗,免费可以接入的 | 1\r\n-- | -- | -- | --\r\n微信分享链接打开app |   | 百度经验:jingyan.baidu.com主要思路就是用一个可以在电脑上面打开手机软件的模拟器,来打开微信。经验内容仅供参考,如果您需解决具体问题(尤其法律、医学等领域),建议您详细咨询相关领域专业人士。个性签名:分享经验,帮助更多人。 | 0\r\n微信分享链接打开app |   | 在里面上传GIF动图或普通图片,生成短链接,在朋友圈评论时,粘贴链接即可。更多实用小程序,参考这篇文章: | 0\r\n微信分享链接打开app |   | 5进入到【链接分享】的位置，点击【创建私密链接】，创建私密链接。6成功创建私密链接之后，会出现链接和提取码，点击【复制链接及密码】，就可以发送给指定好友或者非好友咯~7链接分享可以在qq、微信或者是其他聊天工具中，主要是链接和密码，打开链接后就可以看见文件咯，点击右上方的【下载】即可。END | 0\r\n\r\n\r\n\r\nWhat do columns mean?\r\n\r\n\r\n",
+        "state": "closed",
+        "user": "phanxuanphucnd",
+        "closed_by": "phanxuanphucnd",
+        "created_at": "2023-05-26T04:14:11+00:00",
+        "updated_at": "2023-05-26T04:22:12+00:00",
+        "closed_at": "2023-05-26T04:22:12+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 99,
+        "title": "直接用余弦算相似度的时候，打分好像没有明显的区分，都集中在0.9附近，请问这是正常的吗？",
+        "body": null,
+        "state": "open",
+        "user": "yohohohoho",
+        "closed_by": null,
+        "created_at": "2023-05-18T07:50:30+00:00",
+        "updated_at": "2023-05-18T11:34:41+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ylf-Ng"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 101,
+        "title": "训练dual网络，为什么loss越来越大了？",
+        "body": "您好！感谢rocketQA的工作，我已经成功将rocketQA应用到我们的系统中。\r\n为了能提高rocketQA的召回率，我尝试对zh_dureader_de_v2进行finetune，使用的是repo中自带的训练集，下面是训练代码：\r\n```\r\nimport rocketqa\r\ndual_encoder = rocketqa.load_model(model=\"zh_dureader_de_v2\", use_cuda=True, device_id=0, batch_size=4)\r\ndual_encoder.train('./examples/data/dual.train.tsv', 20, 'de_models', save_steps=500, learning_rate=1e-5, log_folder='log_de')\r\n```\r\n我发现loss是越来越大的，如下图所示，不知道为什么？\r\n![image](https://github.com/PaddlePaddle/RocketQA/assets/7391017/bfcc21b4-273e-4172-ad5b-b436ebfa82f0)\r\n谢谢！",
+        "state": "open",
+        "user": "archwolf118",
+        "closed_by": null,
+        "created_at": "2023-05-25T08:56:20+00:00",
+        "updated_at": "2023-05-26T13:44:28+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "zhangpeng-HEBUT"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 105,
+        "title": "请问针对问答匹配长文本，目前的SOTA模型是什么？",
+        "body": "针对短问题匹配长文本（每段约1000字），目前SOTA的模型是什么？从哪里能看到所有的模型列表和相应的说明\r\n\r\n我看semantic_search_example.py中query和passage都是使用的rocketqa-zh-nano-query-encoder。\r\n在DensePassageRetriever中默认的参数是\r\n`query_embedding_model: Union[Path, str] = \"rocketqa-zh-dureader-query-encoder\",\r\n        passage_embedding_model: Union[Path, str] = \"rocketqa-zh-dureader-para-encoder\",\r\n        `\r\n针对query和document是否要使用不同的模型？",
+        "state": "open",
+        "user": "magicleo",
+        "closed_by": null,
+        "created_at": "2023-06-06T07:13:07+00:00",
+        "updated_at": "2023-06-06T07:13:07+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 106,
+        "title": "为什么完全的同一个模型在不同的GPU上推理结果有非常明显的差异？",
+        "body": "在 A800上训练保存的一个cross encoder模型，在A800上推理和在V100上推理的结果有明显差异，A800上推理出的结果更好一些，这是怎么回事？是在不同的GPU上模型参数精度有什么差异吗？",
+        "state": "closed",
+        "user": "suparek",
+        "closed_by": "suparek",
+        "created_at": "2023-06-08T05:47:13+00:00",
+        "updated_at": "2023-06-08T05:57:35+00:00",
+        "closed_at": "2023-06-08T05:57:35+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 103,
+        "title": "big difference between setting title and not setting title ",
+        "body": "We are using cross decoder to rerank the results.  for some QA pairs. We use following format to get the ranking scores. \r\n\r\n```\r\n<query, para1, title1>\r\n<query, para2, title2>\r\n<query, para3, title3>\r\n```\r\n\r\n```\r\nmodel.matching(query: List[str], para: List[str], title: List[str])\r\n```\r\n\r\nThere's one observation I notice is, for the same question, setting title give me much better results, top1 or top2. However, If I do not set title,  it is really bad (~top10 for 20 records).\r\n\r\nI am curious why `title` makes a big difference here?  In my case, for query, we have many tiles with same name.  I felt adding title is not a big deal but it is\r\n\r\n",
+        "state": "open",
+        "user": "Jeffwan",
+        "closed_by": null,
+        "created_at": "2023-06-01T06:55:00+00:00",
+        "updated_at": "2023-06-01T06:56:07+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Jeffwan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 104,
+        "title": "cross model 训练到70000 step后会中止训练，不释放显存，也没有退出，但训练不再进行了。",
+        "body": "![image](https://github.com/PaddlePaddle/RocketQA/assets/9245996/65cc32d0-e3bd-43db-a4fb-33038aadf685)\r\n\r\n如图所示，是最后的日志，没有报错也没有退出，显存照常占有，但是GPU显示计算已经停止。",
+        "state": "closed",
+        "user": "suparek",
+        "closed_by": "suparek",
+        "created_at": "2023-06-06T03:09:46+00:00",
+        "updated_at": "2023-06-16T04:01:21+00:00",
+        "closed_at": "2023-06-16T04:01:21+00:00",
+        "comments_count": [
+            "zhangpeng-HEBUT",
+            "suparek"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 107,
+        "title": "执行：python index.py zh ../data/dureader.para test_index 报UnicodeDecodeError错",
+        "body": "![image](https://github.com/PaddlePaddle/RocketQA/assets/50103389/6c3c4806-a5c2-4ce9-a374-1d13972d00eb)\r\n\r\n执行：python index.py zh ../data/dureader.para test_index\r\n报错：\r\n****\\anaconda3\\envs\\my_paddlenlp\\lib\\site-packages\\pkg_resources\\__init__.py:121: DeprecationWarning: pkg_resources is deprecated as an API\r\n  warnings.warn(\"pkg_resources is deprecated as an API\", DeprecationWarning)\r\n****\\anaconda3\\envs\\my_paddlenlp\\lib\\site-packages\\pkg_resources\\__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.\r\nImplementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages\r\n  declare_namespace(pkg)\r\n****\\anaconda3\\envs\\my_paddlenlp\\lib\\site-packages\\pkg_resources\\__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.\r\nImplementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages\r\n  declare_namespace(pkg)\r\nTraceback (most recent call last):\r\n  File \"index.py\", line 41, in <module>\r\n    for line in open(data_file):\r\nUnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 4: illegal multibyte sequence",
+        "state": "open",
+        "user": "jamyriver",
+        "closed_by": null,
+        "created_at": "2023-06-08T11:18:52+00:00",
+        "updated_at": "2023-06-09T03:40:10+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "jamyriver"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 108,
+        "title": "zh_dureader_ce和zh_dureader_ce_v2给出的结果一样",
+        "body": "在DuReader-Retrieval-Baseline的dev数据集上跑的结果\r\n评测下来都是：{\"MRR@10\": 0.5428611111111112, \"QueriesRanked\": 2000, \"recall@1\": 0.418, \"recall@50\": 0.9175}\r\n而且抽样看了每条记录的结果也都是一样的\r\n问题：\r\n1. zh_dureader_ce和zh_dureader_ce_v2给出的结果为什么会一样？\r\n2. 这两个模型不都是在DuReader数据上训练的，为什么评测效果这么差？",
+        "state": "open",
+        "user": "sherryhongxy",
+        "closed_by": null,
+        "created_at": "2023-06-21T02:27:13+00:00",
+        "updated_at": "2023-06-21T02:27:13+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 110,
+        "title": "关于cross阶段正负样本比例",
+        "body": "您好，问下cross两阶段正负样本比例，取多大合适呢？",
+        "state": "open",
+        "user": "YYGe01",
+        "closed_by": null,
+        "created_at": "2023-06-25T08:09:26+00:00",
+        "updated_at": "2023-06-25T08:09:26+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 111,
+        "title": "请问怎么继续提升效果",
+        "body": "作者您好，\r\n我想把cross排序模型用在领域数据问题-段落检索中，但实际使用下来，效果还不如es的排序结果。\r\n我使用了几千条领域内的QA数据集做微调，感觉没有什么效果。不知道有没有什么好的建议呢。",
+        "state": "open",
+        "user": "YYGe01",
+        "closed_by": null,
+        "created_at": "2023-06-27T03:25:47+00:00",
+        "updated_at": "2023-06-27T03:33:46+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 109,
+        "title": "加载rocketqa报错，AttributeError: module 'paddle.fluid.libpaddle' has no attribute 'is_compiled_with_npu'",
+        "body": "在按要求安装了环境后，导入时报错，AttributeError: module 'paddle.fluid.libpaddle' has no attribute 'is_compiled_with_npu'，没找到相关的解决方案",
+        "state": "open",
+        "user": "yungangwu",
+        "closed_by": null,
+        "created_at": "2023-06-25T02:33:10+00:00",
+        "updated_at": "2023-08-15T09:50:06+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "sword-light",
+            "sword-light",
+            "sword-light"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 112,
+        "title": "关于tokenizer是如何提取的",
+        "body": "找了很久没有找到如何操作token的，我使用paddlenlp官方的pretrain模型：rocketqa-zh-base-query-encoder和rocketqa-zh-base-para-encoder，想对齐embedding，但是发现对文本使用embedding的维度始终是（1,xx,768），但是这里的baseline都是(1,768)",
+        "state": "open",
+        "user": "JayLin1996",
+        "closed_by": null,
+        "created_at": "2023-07-27T15:27:44+00:00",
+        "updated_at": "2023-07-27T15:27:44+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 115,
+        "title": "encode_query返回的迭代器遍历太慢",
+        "body": "这个函数返回的是一个迭代器，如果输入query只有一条的话，取迭代器里面的数据也需要采用大概2s的耗时，请问这个有办法优化吗\r\n",
+        "state": "open",
+        "user": "cowarder",
+        "closed_by": null,
+        "created_at": "2023-08-17T15:14:26+00:00",
+        "updated_at": "2023-08-17T15:14:26+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 114,
+        "title": "运行faiss example失败，提示Error: Can not import paddle core while this file exists: /home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/paddle/fluid/libpaddle.so",
+        "body": "有解决方案么？\r\n报错信息如下：\r\nError: Can not import paddle core while this file exists: /home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/paddle/fluid/libpaddle.so\r\nTraceback (most recent call last):\r\n  File \"/mnt/sdb/***/master/RocketQA/examples/faiss_example/index.py\", line 5, in <module>\r\n    import rocketqa\r\n  File \"/home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/rocketqa/__init__.py\", line 17, in <module>\r\n    from .rocketqa import load_model\r\n  File \"/home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/rocketqa/rocketqa.py\", line 4, in <module>\r\n    import paddle\r\n  File \"/home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/paddle/__init__.py\", line 31, in <module>\r\n    from .framework import monkey_patch_variable\r\n  File \"/home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/paddle/framework/__init__.py\", line 17, in <module>\r\n    from . import random  # noqa: F401\r\n  File \"/home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/paddle/framework/random.py\", line 17, in <module>\r\n    from paddle import fluid\r\n  File \"/home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/paddle/fluid/__init__.py\", line 36, in <module>\r\n    from . import framework\r\n  File \"/home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/paddle/fluid/framework.py\", line 35, in <module>\r\n    from . import core\r\n  File \"/home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/paddle/fluid/core.py\", line 356, in <module>\r\n    raise e\r\n  File \"/home/***/.conda/envs/RocketQA/lib/python3.10/site-packages/paddle/fluid/core.py\", line 269, in <module>\r\n    from . import libpaddle\r\nImportError: libssl.so.1.1: cannot open shared object file: No such file or directory\r\n\r\n系统环境是：\r\nDistributor ID: Ubuntu\r\nDescription:    Ubuntu 22.04.2 LTS\r\nRelease:        22.04\r\nCodename:       jammy\r\n\r\ncuda: 12.2\r\n\r\npython环境是：\r\nPackage          Version\r\n---------------- -------------\r\nanyio            3.7.1\r\nastor            0.8.1\r\ncertifi          2023.7.22\r\ndecorator        5.1.1\r\nexceptiongroup   1.1.3\r\nfaiss-cpu        1.7.4\r\nh11              0.14.0\r\nhttpcore         0.17.3\r\nhttpx            0.24.1\r\nidna             3.4\r\nnumpy            1.25.2\r\nopt-einsum       3.3.0\r\npaddle-bfloat    0.1.7\r\npaddlepaddle-gpu 2.5.1.post120\r\nPillow           10.0.0\r\npip              23.2.1\r\nprotobuf         4.24.0\r\nrocketqa         1.1.0\r\nsetuptools       68.0.0\r\nsniffio          1.3.0\r\ntornado          6.3.3\r\ntqdm             4.66.1\r\nwheel            0.38.4",
+        "state": "open",
+        "user": "ghost",
+        "closed_by": null,
+        "created_at": "2023-08-17T02:29:35+00:00",
+        "updated_at": "2023-10-13T03:28:41+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "wencan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 113,
+        "title": "rocketqa在python3.10 paddle-gpu2.5.1 下报错",
+        "body": "### 环境\r\npython=3.10.0\r\npaddlepaddle-gpu=2.5.1.post116\r\nCUDA=12.0\r\nrocketqa=1.1.0\r\n\r\n### 报错截图\r\n![image](https://github.com/PaddlePaddle/RocketQA/assets/29936932/7064d6ce-9809-4377-aeef-7c122cf7ce7d)\r\n",
+        "state": "open",
+        "user": "Mewral",
+        "closed_by": null,
+        "created_at": "2023-07-31T10:48:12+00:00",
+        "updated_at": "2023-09-07T07:11:26+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Mewral",
+            "Jeffwan",
+            "Mewral"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 116,
+        "title": "ModuleNotFoundError: No module named 'paddle.fluid.incubate.fleet'",
+        "body": "https://github.com/PaddlePaddle/RocketQA/blob/e2bfcfcfa902ac6cef7f0d359606a9da05b795ac/rocketqa/utils/optimization.py#L25C1-L26C1",
+        "state": "open",
+        "user": "sandzone",
+        "closed_by": null,
+        "created_at": "2023-09-13T14:09:34+00:00",
+        "updated_at": "2023-09-26T03:07:45+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Conqueror712"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 117,
+        "title": "test_index文件在哪里？是什么格式的？",
+        "body": "在通过FASIS使用RocketQA时，找不到test_index文件，请问在哪里可以下载，是什么样的格式的。谢谢好心人解答",
+        "state": "open",
+        "user": "wyzhhhh",
+        "closed_by": null,
+        "created_at": "2023-09-18T08:04:11+00:00",
+        "updated_at": "2023-10-11T06:04:34+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "zhangqiqi1228"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 121,
+        "title": "我在使用 faiss 的例子测试时 报错 AssertionError: Not compiled with CUDA。",
+        "body": "我第一步 运行 `python index.py zh ${your_data} ${index_name} `时要报错，我把 [index.py中48行的](https://github.com/PaddlePaddle/RocketQA/blob/e2bfcfcfa902ac6cef7f0d359606a9da05b795ac/examples/faiss_example/index.py#L48) `\"use_cuda\": True`,换成了  `\"use_cuda\": False`, 然后没有报错了\r\n我继续运行 `python rocketqa_service.py zh ${your_data} ${index_name} &` 时就会报错报错如下\r\n`Traceback (most recent call last):\r\n  File \"rocketqa_service.py\", line 160, in <module>\r\n    app = create_rocketqa_app(sub_address, RocketQAServer, language, data_file, index_file)\r\n  File \"rocketqa_service.py\", line 130, in create_rocketqa_app\r\n    dual_encoder = rocketqa.load_model(**de_conf)\r\n  File \"D:\\Anaconda\\envs\\python3818_0110\\lib\\site-packages\\rocketqa\\rocketqa.py\", line 120, in load_model\r\n    encoder = DualEncoder(**encoder_conf)\r\n  File \"D:\\Anaconda\\envs\\python3818_0110\\lib\\site-packages\\rocketqa\\encoder\\dual_encoder.py\", line 62, in __init__\r\n    dev_list = fluid.cuda_places()\r\n  File \"D:\\Anaconda\\envs\\python3818_0110\\lib\\site-packages\\paddle\\fluid\\framework.py\", line 769, in cuda_places\r\n    assert core.is_compiled_with_cuda(), \\\r\nAssertionError: Not compiled with CUDA`",
+        "state": "open",
+        "user": "LORD-9527",
+        "closed_by": null,
+        "created_at": "2024-01-10T07:38:13+00:00",
+        "updated_at": "2024-01-10T07:38:13+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 118,
+        "title": "关于微调",
+        "body": "请问微调数据集中最后一列的标签指的是什么？需要如何设置这个标签\r\n另外标题全设置为空，是否会影响微调？",
+        "state": "open",
+        "user": "wyzhhhh",
+        "closed_by": null,
+        "created_at": "2023-10-11T07:57:30+00:00",
+        "updated_at": "2023-12-21T11:37:22+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "LeeJodie"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 119,
+        "title": "Could I arise one PR to fix MRR metric statics method ??? ",
+        "body": "I saw \r\nhttps://github.com/PaddlePaddle/RocketQA/blob/main/research/DuReader-Retrieval-Baseline/metric/evaluation.py\r\n[](https://github.com/PaddlePaddle/RocketQA/blob/main/research/DuReader-Retrieval-Baseline/metric/evaluation.py)\r\nline 135 is wrong.\r\n![百度MRR代码问题截图](https://github.com/PaddlePaddle/RocketQA/assets/39296687/7d12f9d7-a875-4ff8-a40a-fe375e2bec3f)\r\n\r\nfor MRR 定义：\r\n![MRR定义](https://github.com/PaddlePaddle/RocketQA/assets/39296687/2ddf598d-37f8-4003-8c28-41a90c270988)\r\n\r\n计算分母时，分母表示的是问题对应的推理答案长度。\r\n\r\n而您的代码在计算时分母是ground_truth的长度。实际应用中ground_truth的长度和推理结果的长度不一定相同，所以您的代码有问题，请求提交PR修改，请批准。\r\n\r\n祝好\r\nYazooliu",
+        "state": "open",
+        "user": "Yazooliu",
+        "closed_by": null,
+        "created_at": "2023-12-01T09:03:44+00:00",
+        "updated_at": "2023-12-19T07:26:35+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Yazooliu"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 122,
+        "title": "如何在paddlepaddle-gpu>2.5.0的环境下运行？关于paddle.fluid被弃用的问题",
+        "body": "如题，因为我想做个整合系统将RocketQA和PaddleNLP中的Information Extraction进行串联。\r\nInformation Extraction要求Paddle版本在2.5.0以上，但是RocketQA只能在2.5.0以下跑通。\r\n主要是在高版本下paddle.fluid中API被弃用的问题，我将所有paddle.fluid都暂时替换成了paddle.base，能解决部分问题，但是没找到能替代“fluid.layers.py_reader()”和“fluid.layers.read_file()”这两个API的方法。\r\n\r\n![image](https://github.com/PaddlePaddle/RocketQA/assets/104071310/2c350a3f-6814-4bd9-aefe-6c5c440e8804)\r\n\r\n请问这个问题应该如何解决？",
+        "state": "open",
+        "user": "zhangqiqi1228",
+        "closed_by": null,
+        "created_at": "2024-01-23T08:32:07+00:00",
+        "updated_at": "2025-04-23T01:31:48+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "z394339702",
+            "zhangqiqi1228",
+            "z394339702",
+            "VictoryBlue",
+            "fangyouqing",
+            "zhangqiqi1228"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 124,
+        "title": "How to calculate and retrieve the best matching document for a query from a list of document?",
+        "body": "I have been trying to fetch the best matched document given a query. But the code given in the examples seems to work only pairwise, given a query and document it finds the similarity. I want to find the best document from a list given a query fast. How can I achieve this please help.",
+        "state": "open",
+        "user": "Aritra02091998",
+        "closed_by": null,
+        "created_at": "2024-03-25T02:45:55+00:00",
+        "updated_at": "2024-03-25T02:45:55+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 125,
+        "title": "Training Own retriever and reranker ",
+        "body": "Hi,\r\n\r\nIs there a way where we can train different retriever and reranker ? if yes how do i create a dataset for both of them\r\n\r\n\r\nThanks",
+        "state": "open",
+        "user": "riyajatar37003",
+        "closed_by": null,
+        "created_at": "2024-07-03T08:52:11+00:00",
+        "updated_at": "2024-07-03T08:52:11+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/RocketQA",
+        "number": 123,
+        "title": "rocketqa在今下盛行的RAG风潮中，应该是很有竞争力的，但项目为什么不再更新了呢？",
+        "body": "RT。希望听听作者的想法，或者大家的见解。\r\n以及在RAG检索环节，有其他可以替代rocketqa，实现Q空间向A空间计算相似的项目吗？谢谢大家给我指路。",
+        "state": "open",
+        "user": "kaderu",
+        "closed_by": null,
+        "created_at": "2024-01-25T07:38:10+00:00",
+        "updated_at": "2024-02-20T02:41:24+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "kaderu"
+        ],
+        "labels": []
+    }
+]

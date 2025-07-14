@@ -1,0 +1,5101 @@
+[
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "350efcb76265572ad2e8abf06c56c585d9aa5cd6",
+        "created_at": "2020-11-03 19:52:43 +0800",
+        "author": "T8T9",
+        "committer": "web-flow",
+        "message": "0.0.25-22",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "25600a14a43016af6381792ec5aa73e4f427f8e1",
+        "created_at": "2020-12-08 02:55:43 +0000",
+        "author": null,
+        "committer": null,
+        "message": "rename-paddle1to2-to-paddle_upgrade_tool",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 12,
+                "changes": 24
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 23,
+                "changes": 46
+            },
+            {
+                "filename": "paddle_upgrade_tool/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle_upgrade_tool/__main__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle_upgrade_tool/common.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle_upgrade_tool/filters.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle_upgrade_tool/fixers.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle_upgrade_tool/main.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            },
+            {
+                "filename": "paddle_upgrade_tool/processors.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle_upgrade_tool/refactor.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "paddle_upgrade_tool/spec.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle_upgrade_tool/tests/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle_upgrade_tool/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddle_upgrade_tool/transformers.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddle_upgrade_tool/utils.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "a2fa458e05dff62738e935a8c2ff1d6e106ae5e6",
+        "created_at": "2021-02-26 13:20:12 +0800",
+        "author": "T8T9",
+        "committer": "web-flow",
+        "message": "add-log-Statistic-30",
+        "files": [
+            {
+                "filename": "paddle_upgrade_tool/common.py",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 1,
+                "changes": 34
+            },
+            {
+                "filename": "paddle_upgrade_tool/main.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "paddle_upgrade_tool/utils.py",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 7,
+                "changes": 43
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "38a03fd26c11e597720e80073510b2025874ce6e",
+        "created_at": "2021-01-06 14:12:37 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "update-spec-27",
+        "files": [
+            {
+                "filename": "paddle_upgrade_tool/spec.py",
+                "status": "modified",
+                "additions": 151,
+                "deletions": 1,
+                "changes": 152
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "fd63272739e700b45a04ae4429f7d1653bc1261b",
+        "created_at": "2021-03-05 16:10:57 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "update-spec-for-paddle2.0.1-31",
+        "files": [
+            {
+                "filename": "paddle_upgrade_tool/spec.py",
+                "status": "modified",
+                "additions": 497,
+                "deletions": 11,
+                "changes": 508
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "cf7bb5af2695eee95b765eb6720feb08109a0d28",
+        "created_at": "2021-02-24 21:10:55 +0800",
+        "author": "T8T9",
+        "committer": "web-flow",
+        "message": "bug-fix-add-import-paddle-force.-29",
+        "files": [
+            {
+                "filename": "fissix/fixer_util.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddle_upgrade_tool/refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "ea1499bb67722b86a8bb977b341eb894d04e2ac5",
+        "created_at": "2020-11-11 18:39:22 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "fix-fc-bugs-23",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "95d7ef9cf4b5751067dfa5c1dfe5a3ff7bf49759",
+        "created_at": "2021-01-12 19:15:28 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "remove-prepare_context-28",
+        "files": [
+            {
+                "filename": "paddle_upgrade_tool/spec.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 6,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "c7e5963349daa6a6101a3562add0f4bdcd815c1e",
+        "created_at": "2021-03-09 13:09:48 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "update-api-32",
+        "files": [
+            {
+                "filename": "paddle_upgrade_tool/spec.py",
+                "status": "modified",
+                "additions": 117,
+                "deletions": 50,
+                "changes": 167
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "4a711ea310242d0a18e692ddebf3e02f90457b8f",
+        "created_at": "2021-03-09 14:02:20 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "remove-apis-33",
+        "files": [
+            {
+                "filename": "paddle_upgrade_tool/spec.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 18,
+                "changes": 18
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "b5fbea1543a542e8e467048c9c83562b870f7325",
+        "created_at": "2020-11-12 13:29:47 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "Fix-fc-bugs-24",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "ade6f44160f8a8bf98dc841fde1396e7e79c9e79",
+        "created_at": "2020-11-19 14:44:09 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "add-clip-data-spec-26",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "0b5535b545ee330f349530b50d1ed4b59b62f149",
+        "created_at": "2020-09-24 16:02:20 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.23",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "0ae499be0547ad87db7ff82780d3655eb90a9c8c",
+        "created_at": "2020-11-03 19:25:22 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "update-spec-to-rc-21",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 494,
+                "deletions": 1762,
+                "changes": 2256
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "8ca99a6ecfa206435ac1204597c044eace5f977f",
+        "created_at": "2020-09-30 14:31:22 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "update-spec-20",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 3426,
+                "deletions": 3712,
+                "changes": 7138
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "50183d14deca0e2741062bec18c4b1813663dd1d",
+        "created_at": "2020-09-22 17:03:21 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.22",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "cd9f052343b9ebc0989c61cefdec772cc39c749b",
+        "created_at": "2020-09-11 19:04:14 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.19",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "9a98ca9bfb8c20a268383f690fe491dd34c93ed4",
+        "created_at": "2020-09-22 11:30:25 +0800",
+        "author": null,
+        "committer": null,
+        "message": "enhance-readme-and-setup.py",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 44,
+                "deletions": 39,
+                "changes": 83
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "a29ee35e1e2a6f14f39a79003fc24ef421c7158c",
+        "created_at": "2020-09-22 16:59:36 +0800",
+        "author": "T8T9",
+        "committer": "web-flow",
+        "message": "Fix-left-operand-18",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 1,
+                "changes": 14
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "b6f0e09b60efe19d8a072e0fe08fa06c1dd1f31c",
+        "created_at": "2020-09-24 16:00:50 +0800",
+        "author": "T8T9",
+        "committer": "web-flow",
+        "message": "1.-add-option-parallel.-can-specify-the-maximum-number-of-concurrent-19",
+        "files": [
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7
+            },
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 6,
+                "changes": 13
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 2,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "b7a4e27638307ae6478a0da6d51887d74dca3505",
+        "created_at": "2020-09-22 12:33:40 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.21",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "955d5cf720cf9d1a7b26bba9a4fe0b964b9f1d6b",
+        "created_at": "2020-09-15 11:16:46 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-get_lineno",
+        "files": [
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 8,
+                "changes": 15
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "9319358d0b6103686247d5a2c80f6a52b7df43d6",
+        "created_at": "2020-09-15 13:52:35 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.20",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "702eb25ea24fc3e8bd2587333ef645194e700ec6",
+        "created_at": "2020-09-15 13:48:49 +0800",
+        "author": null,
+        "committer": null,
+        "message": "if-need_confirm-refactor-files-in-one-process-one-by-one-to-avoid-log-disorder",
+        "files": [
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 2,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "10124456e1e2074af3d34194e921fb59e5aa9633",
+        "created_at": "2020-09-11 14:10:25 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-color",
+        "files": [
+            {
+                "filename": "paddle1to2/common.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "tools/click.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "479d80414e904a3b0e5f94866db34e80d5f015da",
+        "created_at": "2020-09-11 18:55:34 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-newline-for-different-os-platform",
+        "files": [
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "fissix/fixer_util.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddle1to2/transformers.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 1,
+                "changes": 26
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "859729a9ad24c96ee40bddc54aba51a61cffb49d",
+        "created_at": "2020-09-11 13:56:59 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-color",
+        "files": [
+            {
+                "filename": "paddle1to2/common.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 7,
+                "changes": 16
+            },
+            {
+                "filename": "tools/click.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "736f7738d278e9b4148f781983f294b557f82c6b",
+        "created_at": "2020-09-11 10:32:15 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "2683d422d636abeae33e5c00e23df58f03397ede",
+        "created_at": "2020-09-10 21:31:06 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "533adc58e564f398f0b7df5223cbbc20f7fbaeef",
+        "created_at": "2020-09-10 21:41:31 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "fd18db9d0b017dc2df226b1eb31d109f52eeca0f",
+        "created_at": "2020-09-10 21:22:26 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "ae7bc97ab5ec660d2dae0ff4f190b51b34bc1a37",
+        "created_at": "2020-09-11 10:21:45 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.18",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "cf04f43ac82e3b0f40a54891ac317096574ae3cb",
+        "created_at": "2020-09-10 20:32:55 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-README",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "c514229eedc681d1521c900543447c1af2d64e0d",
+        "created_at": "2020-09-10 21:29:10 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "f200341c670d6fffdfd3d071e4bd7cfa8bbc0631",
+        "created_at": "2020-09-10 21:14:15 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 3,
+                "changes": 17
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "63eed4f0e99a349e8768735f6086f33c772970e2",
+        "created_at": "2020-09-10 20:43:20 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-README",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "42d6499a55d08238ea13f4f1456c46aba151390c",
+        "created_at": "2020-09-10 20:25:39 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-README",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "2fd5862c56d209caf9d9e2afe0dc7d1cd29a1aab",
+        "created_at": "2020-09-10 20:20:36 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-README",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "e54b7cbc4d6e56c7ebe5bb425195bfbd0cceacd5",
+        "created_at": "2020-09-10 19:59:25 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "e7e5f9a44d0501ca7ff8176dd83c53f08e3d0bdb",
+        "created_at": "2020-09-10 20:13:03 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 8,
+                "changes": 25
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "9e564b018046dd15119c8ee0849f661893b9fe4b",
+        "created_at": "2020-09-10 19:33:41 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "1d1d1576f0576a69b1009df6addf648af347c549",
+        "created_at": "2020-09-10 20:19:54 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "36e80c5d8101f5e12a1188e032341fa5ce12d5ab",
+        "created_at": "2020-09-10 19:45:45 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 9,
+                "changes": 21
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "fc03d9bc3ec6471cec257a0c5b8792439cbe6c9d",
+        "created_at": "2020-09-10 19:22:31 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "83f64074f827e5e0d75f566717c659cd9d8e33ee",
+        "created_at": "2020-09-10 19:51:39 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "3ca10f9717a49ada3b94c21d95a9eabdd0de74a6",
+        "created_at": "2020-09-10 19:27:46 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "b23d58a110f88f33e7dc85d37871c7dee624f20b",
+        "created_at": "2020-09-10 19:15:36 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-windows-unittest",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 2,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "42d144d69c4e01fdefec48c451e16e6415f99c4a",
+        "created_at": "2020-09-10 19:32:02 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 13,
+                "changes": 23
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "9be936171a84ae56fcd278e3cac541015a68c374",
+        "created_at": "2020-09-10 18:46:05 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 11,
+                "changes": 35
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "788be67c22111795635e579500d3b31668be9a87",
+        "created_at": "2020-09-10 19:08:54 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "a6bbb5b800209f5a988e3f1ae2a3c9e41879c1d1",
+        "created_at": "2020-09-10 19:02:31 +0800",
+        "author": null,
+        "committer": null,
+        "message": "modify-travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 15,
+                "changes": 29
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "a6810ef88ada9f690b16af3ba63d1b774ad48207",
+        "created_at": "2020-09-10 17:02:55 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-unittest",
+        "files": [
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 3,
+                "changes": 10
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "ca40b692255469fad56025b1ade97908fd37ef1e",
+        "created_at": "2020-09-10 17:33:34 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-.travis.yml",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "added",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "df3183c4e996b2fcc34ac8f8ad525a5e6d1882f3",
+        "created_at": "2020-09-10 17:33:21 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.17",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "c0c326097c65ad31dc24a500de57277559f2a8b6",
+        "created_at": "2020-09-09 17:03:07 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.16",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "fd24e17e288d4f5ba18745e977511d53675ad35b",
+        "created_at": "2020-09-10 16:37:39 +0800",
+        "author": null,
+        "committer": null,
+        "message": "enhance-readme",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 1,
+                "changes": 19
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "3d18867f92690823e6e01c64f2930d0c5edbf290",
+        "created_at": "2020-09-10 16:56:30 +0800",
+        "author": null,
+        "committer": null,
+        "message": "remove-redundant-code",
+        "files": [
+            {
+                "filename": "bowler/query.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "ca84d9d7d6a45dd46a209f3c0f9e594f8310a0e1",
+        "created_at": "2020-09-09 16:53:29 +0800",
+        "author": null,
+        "committer": null,
+        "message": "support-color-on-windows",
+        "files": [
+            {
+                "filename": "paddle1to2/common.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "5917663568fc5e3cf4c0987c709a62b5a33d01c9",
+        "created_at": "2020-09-09 16:25:34 +0800",
+        "author": null,
+        "committer": null,
+        "message": "use-in_process-mode-if-windows",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 2,
+                "changes": 10
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "6d52a8dec08714d0ee3342319b49355decfa27af",
+        "created_at": "2020-09-09 17:02:17 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "710beb6060d98fdbafdd24991b0576f6de007151",
+        "created_at": "2020-09-09 15:28:11 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-no-confirm-option.-default-is-confirm-mode",
+        "files": [
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 4,
+                "changes": 17
+            },
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 17,
+                "changes": 31
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "47999a9e5541c3f0b31ea55bdd06b912140b1a76",
+        "created_at": "2020-09-09 14:17:45 +0800",
+        "author": null,
+        "committer": null,
+        "message": "remove-sh-dependency",
+        "files": [
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 55,
+                "changes": 69
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "2ef2a82a9686a3e027d6ce8e6b15633650fc847b",
+        "created_at": "2020-09-09 11:49:49 +0800",
+        "author": null,
+        "committer": null,
+        "message": "remove-click-dependency",
+        "files": [
+            {
+                "filename": "bowler/helpers.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "tools/click.py",
+                "status": "added",
+                "additions": 131,
+                "deletions": 0,
+                "changes": 131
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "696eafd56cc2fb60a1caffc1b57429fff42ba119",
+        "created_at": "2020-09-09 13:37:46 +0800",
+        "author": null,
+        "committer": null,
+        "message": "remove-attrs-dependency",
+        "files": [
+            {
+                "filename": "bowler/imr.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 14,
+                "changes": 26
+            },
+            {
+                "filename": "bowler/query.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "bowler/types.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 8,
+                "changes": 14
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "06a986db8fa79d95890e333bce5319c79b6f7141",
+        "created_at": "2020-09-09 10:16:31 +0800",
+        "author": null,
+        "committer": null,
+        "message": "remove-fissix-main.py",
+        "files": [
+            {
+                "filename": "fissix/__main__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4
+            },
+            {
+                "filename": "fissix/main.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 342,
+                "changes": 342
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "49d0fde519f82ddf63544fc5d9bc05af4496808a",
+        "created_at": "2020-09-08 15:59:25 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.14",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "eb3637aab8635c1fc39f6bea4d44bc07186ce0d5",
+        "created_at": "2020-09-09 10:13:38 +0800",
+        "author": null,
+        "committer": null,
+        "message": "remove-bowler-main.py",
+        "files": [
+            {
+                "filename": "bowler/__main__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 14,
+                "changes": 14
+            },
+            {
+                "filename": "bowler/main.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 142,
+                "changes": 142
+            },
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "41ed5544b021b079132bb44cb9490d488ea97ad6",
+        "created_at": "2020-09-08 15:58:39 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-forward-funcdef-with-decorator",
+        "files": [
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 58,
+                "deletions": 0,
+                "changes": 58
+            },
+            {
+                "filename": "paddle1to2/transformers.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 2,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "8c8a6fb7c5e0b105fc576a6f15fc46a627af2042",
+        "created_at": "2020-09-08 12:36:26 +0800",
+        "author": null,
+        "committer": null,
+        "message": "paddle.nn.function-paddle.nn.functional",
+        "files": [
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddle1to2/transformers.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "d106ed46e634c66edd21b0db81b35031f6a09e2d",
+        "created_at": "2020-09-08 12:48:55 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.13",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "2eb5fe0be9f751fc172b3f713a7a20931ca90a43",
+        "created_at": "2020-09-07 20:28:13 +0800",
+        "author": null,
+        "committer": null,
+        "message": "adjust-log-level",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 18,
+                "changes": 36
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 3,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "f157caef659c3a6f9eb9376d5fe301a706e36061",
+        "created_at": "2020-09-08 10:42:21 +0800",
+        "author": null,
+        "committer": null,
+        "message": "insert-self._act-act-to-make-it-visible",
+        "files": [
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 3,
+                "changes": 11
+            },
+            {
+                "filename": "paddle1to2/transformers.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 5,
+                "changes": 17
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "ed3e62a25d1ad11eca85a84878d8aa349ff3453e",
+        "created_at": "2020-09-07 20:13:59 +0800",
+        "author": null,
+        "committer": null,
+        "message": "refactor-act-arg",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 5,
+                "changes": 9
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 63,
+                "deletions": 0,
+                "changes": 63
+            },
+            {
+                "filename": "paddle1to2/transformers.py",
+                "status": "modified",
+                "additions": 111,
+                "deletions": 4,
+                "changes": 115
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 29,
+                "deletions": 3,
+                "changes": 32
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "2c5cf63e5b33b4716e4ab541091d6d283fbff115",
+        "created_at": "2020-09-07 15:33:52 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-paddle.enable_static-after-paddle.disable_static",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 4,
+                "changes": 21
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "paddle1to2/transformers.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 10,
+                "changes": 27
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "2fdb257cfb06925bc91c958485f938e06c073a4b",
+        "created_at": "2020-09-07 12:43:31 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-with-dedent-node-prefix",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 3,
+                "changes": 16
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "7e523a1cbaabd8e61673e6e630a2691fbce20d86",
+        "created_at": "2020-09-07 14:21:51 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "Fix-spec-bugs-15",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "445b301e43787d760f7f74dbabf35b0f6459bcd1",
+        "created_at": "2020-09-07 13:15:49 +0800",
+        "author": null,
+        "committer": null,
+        "message": "bug-fix-paddle_imported-and-paddle_found-should-be-thread-safe",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 10,
+                "changes": 18
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "8f40e196eb9e523fe287bd8790b299de86c1967d",
+        "created_at": "2020-09-03 19:48:45 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.10",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "5e2255c551fd977d89f11ece037ace1592a6025d",
+        "created_at": "2020-09-03 19:23:41 +0800",
+        "author": null,
+        "committer": null,
+        "message": "refactor-args_to_kwargs-and-modify_kwargs",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 88,
+                "deletions": 211,
+                "changes": 299
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 16,
+                "changes": 30
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 163,
+                "deletions": 16,
+                "changes": 179
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "299420b1d7f73a6d0624dbdee35be0eda3b27186",
+        "created_at": "2020-09-07 12:51:52 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "fix-momentum-14",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 1,
+                "changes": 22
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "5b9b4faf8698a44d37bdec8fcc05890bba58654e",
+        "created_at": "2020-09-03 19:42:48 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-bug",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 5,
+                "changes": 13
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 3,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "be1c5426e5c8384d02d63a35e54da9adde0cfdc6",
+        "created_at": "2020-09-03 13:19:38 +0800",
+        "author": null,
+        "committer": null,
+        "message": "code_repr-return-tree",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 2,
+                "changes": 8
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "0f7c0cbf174f459d38a08080ed8862d5b1a096c4",
+        "created_at": "2020-09-03 10:42:14 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "fix-some-spec-13",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 26,
+                "changes": 46
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "d47cdd18b056f2725d0ef7e5efaad480e305a8a5",
+        "created_at": "2020-09-02 16:58:38 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.9",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "7216c8af114c40ff1ee73497e672227d311d5083",
+        "created_at": "2020-09-02 14:55:55 +0800",
+        "author": null,
+        "committer": null,
+        "message": "check-if-file-encoding-is-utf-8",
+        "files": [
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 26,
+                "deletions": 9,
+                "changes": 35
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "966f70310c246efee5e094ffcf6852768e0d095c",
+        "created_at": "2020-09-02 15:07:39 +0800",
+        "author": null,
+        "committer": null,
+        "message": "0.0.8",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "d1401f72295eb29ffc438d779405345a9a0ccdfe",
+        "created_at": "2020-09-02 12:38:06 +0800",
+        "author": null,
+        "committer": null,
+        "message": "remove-bowler-and-fissix-tests",
+        "files": [
+            {
+                "filename": "bowler/tests/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 19,
+                "changes": 19
+            },
+            {
+                "filename": "bowler/tests/__main__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 11,
+                "changes": 11
+            },
+            {
+                "filename": "bowler/tests/helpers.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 125,
+                "changes": 125
+            },
+            {
+                "filename": "bowler/tests/lib.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 255,
+                "changes": 255
+            },
+            {
+                "filename": "bowler/tests/query.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 228,
+                "changes": 228
+            },
+            {
+                "filename": "bowler/tests/smoke-target.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 14,
+                "changes": 14
+            },
+            {
+                "filename": "bowler/tests/smoke.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 84,
+                "changes": 84
+            },
+            {
+                "filename": "bowler/tests/tool.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 165,
+                "changes": 165
+            },
+            {
+                "filename": "bowler/tests/type_inference.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 194,
+                "changes": 194
+            },
+            {
+                "filename": "fissix/fixes/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "fissix/fixes/fix_apply.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 70,
+                "changes": 70
+            },
+            {
+                "filename": "fissix/fixes/fix_asserts.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 36,
+                "changes": 36
+            },
+            {
+                "filename": "fissix/fixes/fix_basestring.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 15,
+                "changes": 15
+            },
+            {
+                "filename": "fissix/fixes/fix_buffer.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 22,
+                "changes": 22
+            },
+            {
+                "filename": "fissix/fixes/fix_dict.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 109,
+                "changes": 109
+            },
+            {
+                "filename": "fissix/fixes/fix_except.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 100,
+                "changes": 100
+            },
+            {
+                "filename": "fissix/fixes/fix_exec.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 39,
+                "changes": 39
+            },
+            {
+                "filename": "fissix/fixes/fix_execfile.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 66,
+                "changes": 66
+            },
+            {
+                "filename": "fissix/fixes/fix_exitfunc.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 73,
+                "changes": 73
+            },
+            {
+                "filename": "fissix/fixes/fix_filter.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 94,
+                "changes": 94
+            },
+            {
+                "filename": "fissix/fixes/fix_funcattrs.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 20,
+                "changes": 20
+            },
+            {
+                "filename": "fissix/fixes/fix_future.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 23,
+                "changes": 23
+            },
+            {
+                "filename": "fissix/fixes/fix_getcwdu.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 20,
+                "changes": 20
+            },
+            {
+                "filename": "fissix/fixes/fix_has_key.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 122,
+                "changes": 122
+            },
+            {
+                "filename": "fissix/fixes/fix_idioms.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 157,
+                "changes": 157
+            },
+            {
+                "filename": "fissix/fixes/fix_import.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 99,
+                "changes": 99
+            },
+            {
+                "filename": "fissix/fixes/fix_imports.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 153,
+                "changes": 153
+            },
+            {
+                "filename": "fissix/fixes/fix_imports2.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 16,
+                "changes": 16
+            },
+            {
+                "filename": "fissix/fixes/fix_input.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 26,
+                "changes": 26
+            },
+            {
+                "filename": "fissix/fixes/fix_intern.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 41,
+                "changes": 41
+            },
+            {
+                "filename": "fissix/fixes/fix_isinstance.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 56,
+                "changes": 56
+            },
+            {
+                "filename": "fissix/fixes/fix_itertools.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 45,
+                "changes": 45
+            },
+            {
+                "filename": "fissix/fixes/fix_itertools_imports.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 62,
+                "changes": 62
+            },
+            {
+                "filename": "fissix/fixes/fix_long.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 19,
+                "changes": 19
+            },
+            {
+                "filename": "fissix/fixes/fix_map.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 115,
+                "changes": 115
+            },
+            {
+                "filename": "fissix/fixes/fix_metaclass.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 227,
+                "changes": 227
+            },
+            {
+                "filename": "fissix/fixes/fix_methodattrs.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 21,
+                "changes": 21
+            },
+            {
+                "filename": "fissix/fixes/fix_ne.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 23,
+                "changes": 23
+            },
+            {
+                "filename": "fissix/fixes/fix_next.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 106,
+                "changes": 106
+            },
+            {
+                "filename": "fissix/fixes/fix_nonzero.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 22,
+                "changes": 22
+            },
+            {
+                "filename": "fissix/fixes/fix_numliterals.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 38,
+                "changes": 38
+            },
+            {
+                "filename": "fissix/fixes/fix_operator.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 100,
+                "changes": 100
+            },
+            {
+                "filename": "fissix/fixes/fix_paren.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 44,
+                "changes": 44
+            },
+            {
+                "filename": "fissix/fixes/fix_print.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 83,
+                "changes": 83
+            },
+            {
+                "filename": "fissix/fixes/fix_raise.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 95,
+                "changes": 95
+            },
+            {
+                "filename": "fissix/fixes/fix_raw_input.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 18,
+                "changes": 18
+            },
+            {
+                "filename": "fissix/fixes/fix_reduce.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 34,
+                "changes": 34
+            },
+            {
+                "filename": "fissix/fixes/fix_reload.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 38,
+                "changes": 38
+            },
+            {
+                "filename": "fissix/fixes/fix_renames.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 79,
+                "changes": 79
+            },
+            {
+                "filename": "fissix/fixes/fix_repr.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 23,
+                "changes": 23
+            },
+            {
+                "filename": "fissix/fixes/fix_set_literal.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 52,
+                "changes": 52
+            },
+            {
+                "filename": "fissix/fixes/fix_standarderror.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 18,
+                "changes": 18
+            },
+            {
+                "filename": "fissix/fixes/fix_sys_exc.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 33,
+                "changes": 33
+            },
+            {
+                "filename": "fissix/fixes/fix_throw.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 57,
+                "changes": 57
+            },
+            {
+                "filename": "fissix/fixes/fix_tuple_params.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 178,
+                "changes": 178
+            },
+            {
+                "filename": "fissix/fixes/fix_types.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 62,
+                "changes": 62
+            },
+            {
+                "filename": "fissix/fixes/fix_unicode.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 45,
+                "changes": 45
+            },
+            {
+                "filename": "fissix/fixes/fix_urllib.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 255,
+                "changes": 255
+            },
+            {
+                "filename": "fissix/fixes/fix_ws_comma.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 43,
+                "changes": 43
+            },
+            {
+                "filename": "fissix/fixes/fix_xrange.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 75,
+                "changes": 75
+            },
+            {
+                "filename": "fissix/fixes/fix_xreadlines.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 25,
+                "changes": 25
+            },
+            {
+                "filename": "fissix/fixes/fix_zip.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 46,
+                "changes": 46
+            },
+            {
+                "filename": "fissix/tests/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "fissix/tests/__main__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4
+            },
+            {
+                "filename": "fissix/tests/data/README",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 6,
+                "changes": 6
+            },
+            {
+                "filename": "fissix/tests/data/bom.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/tests/data/crlf.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            },
+            {
+                "filename": "fissix/tests/data/different_encoding.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 7,
+                "changes": 7
+            },
+            {
+                "filename": "fissix/tests/data/false_encoding.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/tests/data/fixers/bad_order.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 6,
+                "changes": 6
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_explicit.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 8,
+                "changes": 8
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_first.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 8,
+                "changes": 8
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_last.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 9,
+                "changes": 9
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_parrot.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 14,
+                "changes": 14
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_preorder.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 8,
+                "changes": 8
+            },
+            {
+                "filename": "fissix/tests/data/fixers/no_fixer_cls.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "fissix/tests/data/fixers/parrot_example.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/tests/data/infinite_recursion.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 3936,
+                "changes": 3936
+            },
+            {
+                "filename": "fissix/tests/data/py2_test_grammar.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 1251,
+                "changes": 1251
+            },
+            {
+                "filename": "fissix/tests/data/py3_test_grammar.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 959,
+                "changes": 959
+            },
+            {
+                "filename": "fissix/tests/pytree_idempotency.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 97,
+                "changes": 97
+            },
+            {
+                "filename": "fissix/tests/support.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 63,
+                "changes": 63
+            },
+            {
+                "filename": "fissix/tests/test_all_fixers.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 27,
+                "changes": 27
+            },
+            {
+                "filename": "fissix/tests/test_fixers.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 4766,
+                "changes": 4766
+            },
+            {
+                "filename": "fissix/tests/test_main.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 187,
+                "changes": 187
+            },
+            {
+                "filename": "fissix/tests/test_parser.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 738,
+                "changes": 738
+            },
+            {
+                "filename": "fissix/tests/test_pytree.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 479,
+                "changes": 479
+            },
+            {
+                "filename": "fissix/tests/test_refactor.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 351,
+                "changes": 351
+            },
+            {
+                "filename": "fissix/tests/test_util.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 604,
+                "changes": 604
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "7bfc6da70080732301fe986a6e6db6ca6bbe57b1",
+        "created_at": "2020-09-02 14:43:04 +0800",
+        "author": null,
+        "committer": null,
+        "message": "check-if-files-are-windows-file",
+        "files": [
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 11,
+                "changes": 17
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "f6dc54fbd0e6f442d7855427a3a44c9a2fdabf12",
+        "created_at": "2020-09-02 10:29:05 +0800",
+        "author": null,
+        "committer": null,
+        "message": "support-python-3.5",
+        "files": [
+            {
+                "filename": "bowler/helpers.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            },
+            {
+                "filename": "bowler/imr.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "bowler/query.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 18,
+                "changes": 32
+            },
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 23,
+                "changes": 45
+            },
+            {
+                "filename": "fissix/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/pgen2/tokenize.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "e64e6b74d1e84b6768cf67c3a716b391246dd6bf",
+        "created_at": "2020-09-02 11:38:53 +0800",
+        "author": null,
+        "committer": null,
+        "message": "force-load-from-grammar-file-and-don-t-save-pickle-file",
+        "files": [
+            {
+                "filename": "fissix/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 57,
+                "changes": 57
+            },
+            {
+                "filename": "fissix/patcomp.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/pgen2/driver.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "2d845bf52b388e91f98652d0289dae7bff0cb8e6",
+        "created_at": "2020-09-02 16:53:47 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "update-some-api-12",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 146,
+                "deletions": 9,
+                "changes": 155
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "d5af1f6d81faa91edc1755b444142f4ce73ac45a",
+        "created_at": "2020-09-02 10:40:14 +0800",
+        "author": null,
+        "committer": null,
+        "message": "enhance-setup.py",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "e54d86ebc2ffcac22aa587e9786d9a0343cc1de6",
+        "created_at": "2020-09-01 21:01:07 +0800",
+        "author": null,
+        "committer": null,
+        "message": "bowler-support-py35",
+        "files": [
+            {
+                "filename": "bowler/helpers.py",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 22,
+                "changes": 44
+            },
+            {
+                "filename": "bowler/imr.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 23,
+                "changes": 47
+            },
+            {
+                "filename": "bowler/main.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "bowler/query.py",
+                "status": "modified",
+                "additions": 73,
+                "deletions": 73,
+                "changes": 146
+            },
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 28,
+                "changes": 56
+            },
+            {
+                "filename": "bowler/type_inference.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "bowler/types.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 12,
+                "changes": 22
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "6695ae8e167096ceb409fcb8f3cf95d3934f9578",
+        "created_at": "2020-08-31 16:37:28 +0800",
+        "author": null,
+        "committer": null,
+        "message": "version-0.0.7",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "4db10b28f68825013bd05da8aa18a753bd0b68d3",
+        "created_at": "2020-09-01 20:05:03 +0800",
+        "author": null,
+        "committer": null,
+        "message": "with_refactor-done",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 65,
+                "deletions": 4,
+                "changes": 69
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 148,
+                "deletions": 3,
+                "changes": 151
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "f8fc0674725abe6ef23b844576a3c3461b684dd2",
+        "created_at": "2020-08-31 16:35:48 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-backup-option",
+        "files": [
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 3,
+                "changes": 19
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "17b04d688ddbb5b29a715dbe579c49a0335330fa",
+        "created_at": "2020-08-31 14:54:52 +0800",
+        "author": "MingMingShangTian",
+        "committer": "web-flow",
+        "message": "add-args-prefix-11",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 3,
+                "changes": 7
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "9a5a86aa354f965666b6b03dabe4e684f97af409",
+        "created_at": "2020-08-31 14:06:14 +0800",
+        "author": null,
+        "committer": null,
+        "message": "bug-fix",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 7,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "7d743f0ca01482019bd25b61772738885fb22318",
+        "created_at": "2020-08-30 17:27:18 +0800",
+        "author": null,
+        "committer": null,
+        "message": "version-0.0.3",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "5d3be915f5134a33546b9685578e3d3f87c7c1b5",
+        "created_at": "2020-08-31 12:44:31 +0800",
+        "author": "MingMingShangTian",
+        "committer": "web-flow",
+        "message": "modify-log-format-10",
+        "files": [
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 21,
+                "changes": 48
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "e57d10d9bd6397bfee51d1bd27868864e05bcb22",
+        "created_at": "2020-08-31 12:10:48 +0800",
+        "author": "MingMingShangTian",
+        "committer": "web-flow",
+        "message": "Args-warning-5",
+        "files": [
+            {
+                "filename": "cases/test.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 174,
+                "deletions": 61,
+                "changes": 235
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 57,
+                "deletions": 0,
+                "changes": 57
+            },
+            {
+                "filename": "paddle1to2/transformers.py",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "b2744cfd3f79587d64b39d019346d056250100c9",
+        "created_at": "2020-08-30 17:26:03 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-unittest-for-underscore-api",
+        "files": [
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "063740629408c0068b27e2720f64e418c0dd9a8c",
+        "created_at": "2020-08-31 12:08:00 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-log-functions-and-node2code-function-to-remove-first-prefix",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 7,
+                "changes": 18
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "4a4ccdbf8a9c7064c2b6dc8fff42e54787e15490",
+        "created_at": "2020-08-30 17:39:40 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "add-alias-8",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 6,
+                "changes": 17
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "bef9cc07989e2e09d1634c7a1ec0ba75515ef484",
+        "created_at": "2020-08-30 16:44:59 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-version-to-0.0.2",
+        "files": [
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "dd48b47046c8d24054c01ee771d6a8292626637b",
+        "created_at": "2020-08-30 17:21:33 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-module-path-startswith-enhance-readme",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "ab4373d0eab262ecda3aa65465cf8ba7c81b62c3",
+        "created_at": "2020-08-30 16:40:31 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "fix-change_spec-7",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 101,
+                "deletions": 56,
+                "changes": 157
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "c1eed03c744c233677de8190bbd4357cbb3edb78",
+        "created_at": "2020-08-30 16:39:42 +0800",
+        "author": null,
+        "committer": null,
+        "message": "opt-log",
+        "files": [
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "36274299ca46871729555872554f5b5ff7addb8c",
+        "created_at": "2020-08-30 15:09:19 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-readme",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "978a11085a368408ec35eb38c311e7bfc688bd0e",
+        "created_at": "2020-08-30 16:07:58 +0800",
+        "author": null,
+        "committer": null,
+        "message": "confirm-to-write-in-place",
+        "files": [
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 4,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "a63fbc53d9a4cc037143eaef3ac097109829550e",
+        "created_at": "2020-08-30 14:49:55 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-unittest-for-api_rename_and_warning",
+        "files": [
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "b0f700515f30863f5f035e0c6162f60754224723",
+        "created_at": "2020-08-30 14:38:27 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-readme",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "1b64e5a9e8bc5c46ad644cb4d6793a705a1da93d",
+        "created_at": "2020-08-30 15:41:20 +0800",
+        "author": null,
+        "committer": null,
+        "message": "print-diff-header-only-once",
+        "files": [
+            {
+                "filename": "bowler/tool.py",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 7,
+                "changes": 24
+            },
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "4c1d50d76063220057a88dfe3fef9e97d05f989d",
+        "created_at": "2020-08-30 15:46:27 +0800",
+        "author": "TCChenlong",
+        "committer": "web-flow",
+        "message": "add_change_spec-6",
+        "files": [
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 4465,
+                "deletions": 17,
+                "changes": 4482
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "041fd9c4467d1cdfd8c8ceb647cfbbb5bf7cf308",
+        "created_at": "2020-08-30 14:35:54 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-readme",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 1,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "68e52a89a4868eaaa5c5f16b4b117a658a2c848e",
+        "created_at": "2020-08-30 10:58:03 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-unittest-for-refactor_import-and-norm_api_alias",
+        "files": [
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 130,
+                "deletions": 4,
+                "changes": 134
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "c08005657a7682c25a41c64ed4649e7a9392bd1f",
+        "created_at": "2020-08-29 18:47:18 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-unittest",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "df5edf5d2107bcb12eee057c8a50a7d77668c4f3",
+        "created_at": "2020-08-29 17:42:05 +0800",
+        "author": null,
+        "committer": null,
+        "message": "use-list-rather-than-tuple",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "a6669b8135618e92c3a99ae2d6591597060cf87f",
+        "created_at": "2020-08-29 16:47:40 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-README",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 43,
+                "deletions": 1,
+                "changes": 44
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "ce72ba9cba6036939a16df18c54463532f7052b8",
+        "created_at": "2020-08-29 16:57:07 +0800",
+        "author": null,
+        "committer": null,
+        "message": "update-readme",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "6c398a0674013c9c72ffa6644c661aed1d2aacba",
+        "created_at": "2020-08-29 16:00:45 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-console-command",
+        "files": [
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "3b0e45bfe759d481bb2cb3e7bd8e1fba3a1235b0",
+        "created_at": "2020-08-29 15:09:31 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-LICENSE-setup.py",
+        "files": [
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 204,
+                "deletions": 0,
+                "changes": 204
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "setup.py",
+                "status": "added",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "f96ae384f709323168d2ab4cb402b0ffb880f280",
+        "created_at": "2020-08-29 13:44:16 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-bowler-module",
+        "files": [
+            {
+                "filename": "bowler/README.md",
+                "status": "added",
+                "additions": 212,
+                "deletions": 0,
+                "changes": 212
+            },
+            {
+                "filename": "bowler/__init__.py",
+                "status": "added",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            },
+            {
+                "filename": "bowler/__main__.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "bowler/helpers.py",
+                "status": "added",
+                "additions": 220,
+                "deletions": 0,
+                "changes": 220
+            },
+            {
+                "filename": "bowler/imr.py",
+                "status": "added",
+                "additions": 242,
+                "deletions": 0,
+                "changes": 242
+            },
+            {
+                "filename": "bowler/main.py",
+                "status": "added",
+                "additions": 142,
+                "deletions": 0,
+                "changes": 142
+            },
+            {
+                "filename": "bowler/query.py",
+                "status": "added",
+                "additions": 1016,
+                "deletions": 0,
+                "changes": 1016
+            },
+            {
+                "filename": "bowler/tests/__init__.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "bowler/tests/__main__.py",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            },
+            {
+                "filename": "bowler/tests/helpers.py",
+                "status": "added",
+                "additions": 125,
+                "deletions": 0,
+                "changes": 125
+            },
+            {
+                "filename": "bowler/tests/lib.py",
+                "status": "added",
+                "additions": 255,
+                "deletions": 0,
+                "changes": 255
+            },
+            {
+                "filename": "bowler/tests/query.py",
+                "status": "added",
+                "additions": 228,
+                "deletions": 0,
+                "changes": 228
+            },
+            {
+                "filename": "bowler/tests/smoke-target.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "bowler/tests/smoke.py",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "bowler/tests/tool.py",
+                "status": "added",
+                "additions": 165,
+                "deletions": 0,
+                "changes": 165
+            },
+            {
+                "filename": "bowler/tests/type_inference.py",
+                "status": "added",
+                "additions": 194,
+                "deletions": 0,
+                "changes": 194
+            },
+            {
+                "filename": "bowler/tool.py",
+                "status": "added",
+                "additions": 365,
+                "deletions": 0,
+                "changes": 365
+            },
+            {
+                "filename": "bowler/type_inference.py",
+                "status": "added",
+                "additions": 191,
+                "deletions": 0,
+                "changes": 191
+            },
+            {
+                "filename": "bowler/types.py",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "281d0abfe4785383e4fc6296442659351d0acab8",
+        "created_at": "2020-08-29 11:48:56 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-None-change-unittest",
+        "files": [
+            {
+                "filename": "fissix/refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 8,
+                "changes": 21
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "9d6ad15336d4a965687bc7499364b2f9aafd3c84",
+        "created_at": "2020-08-29 15:37:49 +0800",
+        "author": null,
+        "committer": null,
+        "message": "move-code-to-paddle1to2-module",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "paddle1to2/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddle1to2/__main__.py",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "paddle1to2/common.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle1to2/filters.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle1to2/fixers.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "paddle1to2/main.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 5,
+                "changes": 11
+            },
+            {
+                "filename": "paddle1to2/processors.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle1to2/refactor.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 6,
+                "changes": 10
+            },
+            {
+                "filename": "paddle1to2/spec.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle1to2/tests/__init__.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle1to2/tests/test_refactor.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddle1to2/utils.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "tools/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/find_pattern.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "c316dee4020c247fd5b8f14d7bc5353a95933cf0",
+        "created_at": "2020-08-28 20:04:14 +0800",
+        "author": null,
+        "committer": null,
+        "message": "bug-fix.-add-fixer_by_fixer-traverse-strategy",
+        "files": [
+            {
+                "filename": "fissix/refactor.py",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 5,
+                "changes": 38
+            },
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "27e812dc6709732a17c10da7cc9bd9cc7fc7f7c4",
+        "created_at": "2020-08-28 20:52:42 +0800",
+        "author": null,
+        "committer": null,
+        "message": "optimize-fissix-traverse-algorithm",
+        "files": [
+            {
+                "filename": "fissix/refactor.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 48,
+                "changes": 75
+            },
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 6,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "61f5450aa86c4f4e177eb14ed009cfdd3ea59504",
+        "created_at": "2020-08-28 18:34:04 +0800",
+        "author": null,
+        "committer": null,
+        "message": "revert-fissix.-add-spec-case",
+        "files": [
+            {
+                "filename": "fissix/refactor.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 3,
+                "changes": 8
+            },
+            {
+                "filename": "spec.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "76232f65de2afce7bb7098e5e8a4fcb81121ad4b",
+        "created_at": "2020-08-28 18:32:06 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-filename-and-lineno-to-warning-message",
+        "files": [
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 2,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "0c685376f23c971db94591b77d94ad4cdcef1fb6",
+        "created_at": "2020-08-28 04:24:35 -0500",
+        "author": "MingMingShangTian",
+        "committer": "web-flow",
+        "message": "Args-warning-4",
+        "files": [
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 11,
+                "changes": 47
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "c67393fd0c0969c73465738be4208df1bbe4a3b8",
+        "created_at": "2020-08-28 16:43:32 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-ColorFormatter",
+        "files": [
+            {
+                "filename": "common.py",
+                "status": "modified",
+                "additions": 32,
+                "deletions": 1,
+                "changes": 33
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "50b190bef419e8283913b5a77ae22e908f579ecb",
+        "created_at": "2020-08-28 16:17:58 +0800",
+        "author": null,
+        "committer": null,
+        "message": "refactor-api_rename_and_warning-done",
+        "files": [
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 57,
+                "deletions": 25,
+                "changes": 82
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "745e18b107e72e54565d6a6c42fda3c30cd8c8fb",
+        "created_at": "2020-08-28 14:54:22 +0800",
+        "author": null,
+        "committer": null,
+        "message": "remove-redundant-coderedundant",
+        "files": [
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 36,
+                "changes": 37
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "e663d7a4b4a3e827eb560376f0f5b14e39fbf486",
+        "created_at": "2020-08-28 14:42:40 +0800",
+        "author": null,
+        "committer": null,
+        "message": "refactor-norm_api_alias-done",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/refactor.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            },
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 77,
+                "deletions": 5,
+                "changes": 82
+            },
+            {
+                "filename": "spec.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "utils.py",
+                "status": "added",
+                "additions": 37,
+                "deletions": 0,
+                "changes": 37
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "10730f0853096cd75f8760a3e701ca2c3368fd45",
+        "created_at": "2020-08-27 20:43:59 -0500",
+        "author": "MingMingShangTian",
+        "committer": "web-flow",
+        "message": "add-args-warning-refactor-3",
+        "files": [
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "1b0dd86e2d48ba73573ca9ba87e185a11af2724e",
+        "created_at": "2020-08-28 11:28:24 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-fissix-to-repo",
+        "files": [
+            {
+                "filename": "fissix/Grammar.txt",
+                "status": "added",
+                "additions": 156,
+                "deletions": 0,
+                "changes": 156
+            },
+            {
+                "filename": "fissix/PatternGrammar.txt",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "fissix/__init__.py",
+                "status": "added",
+                "additions": 57,
+                "deletions": 0,
+                "changes": 57
+            },
+            {
+                "filename": "fissix/__main__.py",
+                "status": "added",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "fissix/btm_matcher.py",
+                "status": "added",
+                "additions": 178,
+                "deletions": 0,
+                "changes": 178
+            },
+            {
+                "filename": "fissix/btm_utils.py",
+                "status": "added",
+                "additions": 286,
+                "deletions": 0,
+                "changes": 286
+            },
+            {
+                "filename": "fissix/fixer_base.py",
+                "status": "added",
+                "additions": 188,
+                "deletions": 0,
+                "changes": 188
+            },
+            {
+                "filename": "fissix/fixer_util.py",
+                "status": "added",
+                "additions": 522,
+                "deletions": 0,
+                "changes": 522
+            },
+            {
+                "filename": "fissix/fixes/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "fissix/fixes/fix_apply.py",
+                "status": "added",
+                "additions": 70,
+                "deletions": 0,
+                "changes": 70
+            },
+            {
+                "filename": "fissix/fixes/fix_asserts.py",
+                "status": "added",
+                "additions": 36,
+                "deletions": 0,
+                "changes": 36
+            },
+            {
+                "filename": "fissix/fixes/fix_basestring.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "fissix/fixes/fix_buffer.py",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "fissix/fixes/fix_dict.py",
+                "status": "added",
+                "additions": 109,
+                "deletions": 0,
+                "changes": 109
+            },
+            {
+                "filename": "fissix/fixes/fix_except.py",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "fissix/fixes/fix_exec.py",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "fissix/fixes/fix_execfile.py",
+                "status": "added",
+                "additions": 66,
+                "deletions": 0,
+                "changes": 66
+            },
+            {
+                "filename": "fissix/fixes/fix_exitfunc.py",
+                "status": "added",
+                "additions": 73,
+                "deletions": 0,
+                "changes": 73
+            },
+            {
+                "filename": "fissix/fixes/fix_filter.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": "fissix/fixes/fix_funcattrs.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "fissix/fixes/fix_future.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "fissix/fixes/fix_getcwdu.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "fissix/fixes/fix_has_key.py",
+                "status": "added",
+                "additions": 122,
+                "deletions": 0,
+                "changes": 122
+            },
+            {
+                "filename": "fissix/fixes/fix_idioms.py",
+                "status": "added",
+                "additions": 157,
+                "deletions": 0,
+                "changes": 157
+            },
+            {
+                "filename": "fissix/fixes/fix_import.py",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            },
+            {
+                "filename": "fissix/fixes/fix_imports.py",
+                "status": "added",
+                "additions": 153,
+                "deletions": 0,
+                "changes": 153
+            },
+            {
+                "filename": "fissix/fixes/fix_imports2.py",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "fissix/fixes/fix_input.py",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "fissix/fixes/fix_intern.py",
+                "status": "added",
+                "additions": 41,
+                "deletions": 0,
+                "changes": 41
+            },
+            {
+                "filename": "fissix/fixes/fix_isinstance.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "fissix/fixes/fix_itertools.py",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "fissix/fixes/fix_itertools_imports.py",
+                "status": "added",
+                "additions": 62,
+                "deletions": 0,
+                "changes": 62
+            },
+            {
+                "filename": "fissix/fixes/fix_long.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "fissix/fixes/fix_map.py",
+                "status": "added",
+                "additions": 115,
+                "deletions": 0,
+                "changes": 115
+            },
+            {
+                "filename": "fissix/fixes/fix_metaclass.py",
+                "status": "added",
+                "additions": 227,
+                "deletions": 0,
+                "changes": 227
+            },
+            {
+                "filename": "fissix/fixes/fix_methodattrs.py",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "fissix/fixes/fix_ne.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "fissix/fixes/fix_next.py",
+                "status": "added",
+                "additions": 106,
+                "deletions": 0,
+                "changes": 106
+            },
+            {
+                "filename": "fissix/fixes/fix_nonzero.py",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "fissix/fixes/fix_numliterals.py",
+                "status": "added",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            },
+            {
+                "filename": "fissix/fixes/fix_operator.py",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "fissix/fixes/fix_paren.py",
+                "status": "added",
+                "additions": 44,
+                "deletions": 0,
+                "changes": 44
+            },
+            {
+                "filename": "fissix/fixes/fix_print.py",
+                "status": "added",
+                "additions": 83,
+                "deletions": 0,
+                "changes": 83
+            },
+            {
+                "filename": "fissix/fixes/fix_raise.py",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "fissix/fixes/fix_raw_input.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "fissix/fixes/fix_reduce.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "fissix/fixes/fix_reload.py",
+                "status": "added",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            },
+            {
+                "filename": "fissix/fixes/fix_renames.py",
+                "status": "added",
+                "additions": 79,
+                "deletions": 0,
+                "changes": 79
+            },
+            {
+                "filename": "fissix/fixes/fix_repr.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "fissix/fixes/fix_set_literal.py",
+                "status": "added",
+                "additions": 52,
+                "deletions": 0,
+                "changes": 52
+            },
+            {
+                "filename": "fissix/fixes/fix_standarderror.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "fissix/fixes/fix_sys_exc.py",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "fissix/fixes/fix_throw.py",
+                "status": "added",
+                "additions": 57,
+                "deletions": 0,
+                "changes": 57
+            },
+            {
+                "filename": "fissix/fixes/fix_tuple_params.py",
+                "status": "added",
+                "additions": 178,
+                "deletions": 0,
+                "changes": 178
+            },
+            {
+                "filename": "fissix/fixes/fix_types.py",
+                "status": "added",
+                "additions": 62,
+                "deletions": 0,
+                "changes": 62
+            },
+            {
+                "filename": "fissix/fixes/fix_unicode.py",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "fissix/fixes/fix_urllib.py",
+                "status": "added",
+                "additions": 255,
+                "deletions": 0,
+                "changes": 255
+            },
+            {
+                "filename": "fissix/fixes/fix_ws_comma.py",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "fissix/fixes/fix_xrange.py",
+                "status": "added",
+                "additions": 75,
+                "deletions": 0,
+                "changes": 75
+            },
+            {
+                "filename": "fissix/fixes/fix_xreadlines.py",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "fissix/fixes/fix_zip.py",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "fissix/main.py",
+                "status": "added",
+                "additions": 342,
+                "deletions": 0,
+                "changes": 342
+            },
+            {
+                "filename": "fissix/patcomp.py",
+                "status": "added",
+                "additions": 205,
+                "deletions": 0,
+                "changes": 205
+            },
+            {
+                "filename": "fissix/pgen2/__init__.py",
+                "status": "added",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "fissix/pgen2/conv.py",
+                "status": "added",
+                "additions": 254,
+                "deletions": 0,
+                "changes": 254
+            },
+            {
+                "filename": "fissix/pgen2/driver.py",
+                "status": "added",
+                "additions": 175,
+                "deletions": 0,
+                "changes": 175
+            },
+            {
+                "filename": "fissix/pgen2/grammar.py",
+                "status": "added",
+                "additions": 195,
+                "deletions": 0,
+                "changes": 195
+            },
+            {
+                "filename": "fissix/pgen2/literals.py",
+                "status": "added",
+                "additions": 65,
+                "deletions": 0,
+                "changes": 65
+            },
+            {
+                "filename": "fissix/pgen2/parse.py",
+                "status": "added",
+                "additions": 206,
+                "deletions": 0,
+                "changes": 206
+            },
+            {
+                "filename": "fissix/pgen2/pgen.py",
+                "status": "added",
+                "additions": 393,
+                "deletions": 0,
+                "changes": 393
+            },
+            {
+                "filename": "fissix/pgen2/token.py",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "fissix/pgen2/tokenize.py",
+                "status": "added",
+                "additions": 650,
+                "deletions": 0,
+                "changes": 650
+            },
+            {
+                "filename": "fissix/pygram.py",
+                "status": "added",
+                "additions": 41,
+                "deletions": 0,
+                "changes": 41
+            },
+            {
+                "filename": "fissix/pytree.py",
+                "status": "added",
+                "additions": 868,
+                "deletions": 0,
+                "changes": 868
+            },
+            {
+                "filename": "fissix/refactor.py",
+                "status": "added",
+                "additions": 746,
+                "deletions": 0,
+                "changes": 746
+            },
+            {
+                "filename": "fissix/tests/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "fissix/tests/__main__.py",
+                "status": "added",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "fissix/tests/data/README",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "fissix/tests/data/bom.py",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/tests/data/crlf.py",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "fissix/tests/data/different_encoding.py",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "fissix/tests/data/false_encoding.py",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/tests/data/fixers/bad_order.py",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_explicit.py",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_first.py",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_last.py",
+                "status": "added",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_parrot.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "fissix/tests/data/fixers/myfixes/fix_preorder.py",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "fissix/tests/data/fixers/no_fixer_cls.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "fissix/tests/data/fixers/parrot_example.py",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "fissix/tests/data/infinite_recursion.py",
+                "status": "added",
+                "additions": 3936,
+                "deletions": 0,
+                "changes": 3936
+            },
+            {
+                "filename": "fissix/tests/data/py2_test_grammar.py",
+                "status": "added",
+                "additions": 1251,
+                "deletions": 0,
+                "changes": 1251
+            },
+            {
+                "filename": "fissix/tests/data/py3_test_grammar.py",
+                "status": "added",
+                "additions": 959,
+                "deletions": 0,
+                "changes": 959
+            },
+            {
+                "filename": "fissix/tests/pytree_idempotency.py",
+                "status": "added",
+                "additions": 97,
+                "deletions": 0,
+                "changes": 97
+            },
+            {
+                "filename": "fissix/tests/support.py",
+                "status": "added",
+                "additions": 63,
+                "deletions": 0,
+                "changes": 63
+            },
+            {
+                "filename": "fissix/tests/test_all_fixers.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "fissix/tests/test_fixers.py",
+                "status": "added",
+                "additions": 4766,
+                "deletions": 0,
+                "changes": 4766
+            },
+            {
+                "filename": "fissix/tests/test_main.py",
+                "status": "added",
+                "additions": 187,
+                "deletions": 0,
+                "changes": 187
+            },
+            {
+                "filename": "fissix/tests/test_parser.py",
+                "status": "added",
+                "additions": 738,
+                "deletions": 0,
+                "changes": 738
+            },
+            {
+                "filename": "fissix/tests/test_pytree.py",
+                "status": "added",
+                "additions": 479,
+                "deletions": 0,
+                "changes": 479
+            },
+            {
+                "filename": "fissix/tests/test_refactor.py",
+                "status": "added",
+                "additions": 346,
+                "deletions": 0,
+                "changes": 346
+            },
+            {
+                "filename": "fissix/tests/test_util.py",
+                "status": "added",
+                "additions": 604,
+                "deletions": 0,
+                "changes": 604
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "56feaa84fe901f0ee07fd51c40a8ab0bb739fe10",
+        "created_at": "2020-08-27 14:25:10 +0800",
+        "author": null,
+        "committer": null,
+        "message": "refactor-import-done",
+        "files": [
+            {
+                "filename": "common.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 72,
+                "deletions": 94,
+                "changes": 166
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "01f5d4d8dfd4438d1f0a26985d1599355dfc7a26",
+        "created_at": "2020-08-27 01:53:37 -0500",
+        "author": "MingMingShangTian",
+        "committer": "web-flow",
+        "message": "Args-branch-2",
+        "files": [
+            {
+                "filename": "cases/test.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 39,
+                "deletions": 1,
+                "changes": 40
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "d155e68751bccb5663a1b0914acd962960380a5d",
+        "created_at": "2020-08-26 21:48:55 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-module_imports-rename",
+        "files": [
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 4,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "3698bc35252282b78d9c8624371d299acb11f65f",
+        "created_at": "2020-08-26 21:34:34 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fluid.api-paddle.fluid.api",
+        "files": [
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 165,
+                "deletions": 2,
+                "changes": 167
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "594b6cbc9a814813a4a2044db1a767a728558046",
+        "created_at": "2020-08-26 15:00:58 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-post-process-demo-and-fixer-demo",
+        "files": [
+            {
+                "filename": "fixers.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "processors.py",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 3,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "9e40b4500a76ccddb1147f9e73be32ce67310055",
+        "created_at": "2020-08-26 11:07:32 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-debug-option-print-match",
+        "files": [
+            {
+                "filename": "filters.py",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 1,
+                "changes": 8
+            },
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "7fcd0c9c46c6da3274a5e69c9c15ff0ef2e26c24",
+        "created_at": "2020-08-25 15:41:28 +0800",
+        "author": null,
+        "committer": null,
+        "message": "add-refactor-option-for-debug",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 36,
+                "changes": 54
+            },
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "tools/find_match_node.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/find_pattern.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "ddc06b79c863e9abc6c80fb8c46d760e2854e6e8",
+        "created_at": "2020-08-25 14:15:13 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-refactor.py",
+        "files": [
+            {
+                "filename": "refactor.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "48716fdea79a912d385ca0ffa9e7898f0425c200",
+        "created_at": "2020-08-25 14:10:45 +0800",
+        "author": null,
+        "committer": null,
+        "message": "interface-and-framework-design",
+        "files": [
+            {
+                "filename": "cases/test.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "common.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "framework.py",
+                "status": "modified",
+                "additions": 149,
+                "deletions": 1,
+                "changes": 150
+            },
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 58,
+                "deletions": 9,
+                "changes": 67
+            },
+            {
+                "filename": "refactor.py",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "refactor_test.py",
+                "status": "added",
+                "additions": 40,
+                "deletions": 0,
+                "changes": 40
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "spec.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "a5adc4495cb8cd38bf020492a284d8d87a7b1374",
+        "created_at": "2020-08-25 14:13:22 +0800",
+        "author": null,
+        "committer": null,
+        "message": "fix-readme",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "dc33c0d4058760a761082669486df26b63836433",
+        "created_at": "2020-08-25 14:11:19 +0800",
+        "author": null,
+        "committer": null,
+        "message": "use-bowler-package-at-first",
+        "files": [
+            {
+                "filename": "framework.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 163,
+                "changes": 163
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "sha": "39108950175226b769d539acf6996ee5c363bc5f",
+        "created_at": "2020-08-24 16:48:55 +0800",
+        "author": null,
+        "committer": null,
+        "message": "first-commit",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "common.py",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "find_match_node.py",
+                "status": "added",
+                "additions": 61,
+                "deletions": 0,
+                "changes": 61
+            },
+            {
+                "filename": "find_pattern.py",
+                "status": "added",
+                "additions": 101,
+                "deletions": 0,
+                "changes": 101
+            },
+            {
+                "filename": "framework.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "main.py",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            }
+        ]
+    }
+]

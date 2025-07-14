@@ -1,0 +1,194 @@
+[
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 80,
+        "title": "代码阅读及文档更新",
+        "body": "### 一、问题描述 📚\r\n在 PaDiff 仓库进行功能更新后，仓库的使用文档未进行同步更新，且仓库还缺乏一个新版本的模块设计图\r\n\r\n### 二、 任务目标 🚀\r\n对docs目录下的文档进行更新，其中大部分文档是旧版本的，将它们适配到新版本\r\n\r\n### 三、TIPS：\r\n仓库中的 `docs/Interfaces.md` 已进行了简要更新，也可以提供参考",
+        "state": "open",
+        "user": "feifei-111",
+        "closed_by": null,
+        "created_at": "2023-06-20T03:06:56+00:00",
+        "updated_at": "2023-06-20T11:20:36+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 83,
+        "title": "更新setup.py",
+        "body": "### 一、问题描述 📚\r\nPaDiff 在更新文件结构后，使用 setup.py 无法正确从源码安装，原因是datas 文件夹下的数据文件没有被打包。\r\n\r\n### 二、任务目标 🚀\r\n更新 PaDiff 仓库的 setup.py 文件，正确打包 PaDiff 工具",
+        "state": "closed",
+        "user": "feifei-111",
+        "closed_by": "feifei-111",
+        "created_at": "2023-06-20T09:02:40+00:00",
+        "updated_at": "2023-08-23T07:53:08+00:00",
+        "closed_at": "2023-08-23T07:53:08+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 82,
+        "title": "过滤框架组件内部的 API 检查",
+        "body": "### 一、 问题描述📚\r\nPaDiff 能够进行 API 级别的对齐检查，其原理是将框架内的组网 API 包装成一个模型，然后给这个模型设置 hook，这使得所有 API 调用必定会进入 hook 逻辑，对于框架提供的模型组件而言（非用户自定义）也是如此。\r\n\r\n### 二、 任务目标🚀\r\n修改 PaDiff 的 hook 逻辑，检查当前 API 的触发位置，若该 API 触发于 paddle/torch 框架提供的模型组件下，则略过此 API 的信息记录。\r\n\r\n### 三、TIPS\r\n熟悉 report 模块下的内容，结合 PaDiff 工具维护的栈结构进行判断",
+        "state": "open",
+        "user": "feifei-111",
+        "closed_by": null,
+        "created_at": "2023-06-20T08:55:22+00:00",
+        "updated_at": "2023-06-20T11:22:05+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 79,
+        "title": "删除yaml文件的影响",
+        "body": "### 一、问题描述 📚\r\nPaDiff 仓库中有一份 yaml 文件（datas文件夹下），该文件标注了paddle与torch提供的组件权重之间的差异，例如linear的weight需要转置才能对齐。此外，在进行对齐检查时还有一个actions机制（在checker文件夹下），根据当前传入的类型名来选取不同的比较函数。目前这两个机制是独立的，actions实际上只有一种没有起作用。\r\n\r\n### 二、 任务目标 🚀\r\n修改checker模块下，关于模型权重以及梯度的对齐逻辑，剔除yamls的影响，改为使用actions机制（同时可以优化一下`get_action()`接口）\r\n\r\nP.S. 该 yaml 文件在权重初始化功能中仍被使用，权重初始化是一个独立的模块。就对齐工具而言只处理 checker 模块下的部分即可。\r\n\r\n### 三、 TIPS\r\n在获取actions时，需要区分当前的对齐目标：针对模型输出 or 模型权重。不同的对齐目标应当影响返回的 action 类型，为此，可能需要为 dump 下来的文件添加额外信息",
+        "state": "open",
+        "user": "feifei-111",
+        "closed_by": null,
+        "created_at": "2023-06-20T03:03:30+00:00",
+        "updated_at": "2023-06-20T11:20:08+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 78,
+        "title": "标记tensor功能",
+        "body": "### 一、问题描述 📚\r\n在模型精度检查时，有时只需要监控特定的几个关键 `Tensor` 。提供一个接口，用户将调用这个接口侵入式地修改组网代码，标记需要监控的 `Tensor` 。这个接口与其他接口是互相独立的。\r\n\r\n### 二、任务目标 🚀\r\n该接口收到一个 `Tensor` 后，应当保存这个 `Tensor` 的信息（到某个全局变量/闭包/或者其他机制），并注册反向 `hook` 。在一个`step` 后提供某种机制，将这个 `step` 中记录的 `Tensor` 信息保存下来。\r\n\r\n### 三、 TIPS\r\n具体的做法可以参考仓库中 `report` 文件夹下的 `report` 与 `tensor_hoo`k 之间的互动。最后，还需要提供一个 `dump` 记录信息的接口。",
+        "state": "open",
+        "user": "feifei-111",
+        "closed_by": null,
+        "created_at": "2023-06-20T03:00:41+00:00",
+        "updated_at": "2023-06-20T09:08:01+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 81,
+        "title": "🚀 PaDiff 精度对齐工具快乐开源任务 🎉",
+        "body": "### 一、Background 📚\r\n\r\nPaDiff，全称 Paddle Automatically Diff precision toolkits —— 是基于 PaddlePaddle 与 PyTorch 的模型精度对齐工具。传入 Paddle 或 Torch 模型，对齐训练中间结果以及训练后的模型权重，并提示精度 diff 第一次出现的位置。\r\n\r\n+ 文档目录 [Guides](https://github.com/PaddlePaddle/PaDiff/blob/develop/docs/README.md)\r\n+ 使用教程 [Tutorial](https://github.com/PaddlePaddle/PaDiff/blob/develop/docs/Tutorial.md)\r\n+ 对齐ViTPose流程 [ViTPose](https://github.com/PaddlePaddle/PaDiff/blob/develop/docs/CheckViTPose.md)\r\n+ 接口参数说明 [Interface](https://github.com/PaddlePaddle/PaDiff/blob/develop/docs/Interfaces.md)\r\n+ 常见问题解答 [FAQs](https://github.com/PaddlePaddle/PaDiff/blob/develop/docs/FAQs.md)\r\n\r\n\r\n### 二、Motivation 🚀\r\n**参与本项目，你可以：**\r\n- 深入理解深度学习框架 （paddle/torch）的运行机制\r\n- 深入了解模型精度对齐的场景需求和常见问题\r\n\r\n\r\n### 三、Issue Tasks 🙋🏻‍♀️\r\n\r\n| 序号 | 任务名             | 难度 |  issue                                               |  认领人 | 提交PR |\r\n| :----: |:--------: |:----:|:----------------------:|:-----------:|:------:|\r\n| 1    |  新增支持标记 Tensor 功能     | 中等 | [#78](https://github.com/PaddlePaddle/PaDiff/issues/78) |       |        |\r\n| 2    | 解耦 yaml 配置文件 | 中等 | [#79](https://github.com/PaddlePaddle/PaDiff/issues/79) |       |        |\r\n| 3    | 过滤框架组件内部的 API 检查 | 中等 | [#82](https://github.com/PaddlePaddle/PaDiff/issues/82) |      |        |\r\n| 4    | 更新和升级 setup.py 打包逻辑| 简单 | [#83](https://github.com/PaddlePaddle/PaDiff/issues/83) | @littsk | #84 \r\n\r\n> **Note**\r\n> 决定认领任务后，记得及时联系管理员哦~",
+        "state": "open",
+        "user": "feifei-111",
+        "closed_by": null,
+        "created_at": "2023-06-20T03:25:56+00:00",
+        "updated_at": "2023-06-25T08:20:01+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 98,
+        "title": "RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn",
+        "body": "```python\r\nimport torch\r\n\r\nimport paddle\r\n\r\nimport numpy as np\r\n\r\nfrom padiff import create_model, auto_diff\r\n\r\n\r\nclass SparseDownSampleCloseBase(torch.nn.Module):\r\n    def __init__(self, stride):\r\n        super(SparseDownSampleCloseBase, self).__init__()\r\n        self.pooling = torch.nn.MaxPool2d(stride, stride)\r\n        self.large_number = 600\r\n\r\n    def forward(self, d, mask):\r\n        encode_d = -(1 - mask) * self.large_number - d\r\n\r\n        d = -self.pooling(encode_d)\r\n        mask_result = self.pooling(mask)\r\n        d_result = d - (1 - mask_result) * self.large_number\r\n\r\n        return d_result, mask_result\r\n\r\n\r\nclass SparseDownSampleCloseRaw(paddle.nn.Layer):\r\n    def __init__(self, stride):\r\n        super(SparseDownSampleCloseRaw, self).__init__()\r\n        self.pooling = paddle.nn.MaxPool2D(stride, stride)\r\n        self.large_number = 600\r\n\r\n    def forward(self, d, mask):\r\n        encode_d = -(1 - mask) * self.large_number - d\r\n\r\n        d = -self.pooling(encode_d)\r\n        mask_result = self.pooling(mask)\r\n        d_result = d - (1 - mask_result) * self.large_number\r\n\r\n        return d_result, mask_result\r\n\r\nmodule = create_model(SparseDownSampleCloseBase(1))\r\nlayer = create_model(SparseDownSampleCloseRaw(1))\r\n\r\nx = np.random.randn(1, 320, 320, 1).astype(\"float32\")\r\ny = np.random.randn(1, 320, 320, 1).astype(\"float32\")\r\ninp = ({\"d\": torch.as_tensor(x),\r\n        \"mask\": torch.as_tensor(y)},\r\n        {\"d\": paddle.to_tensor(x),\r\n        \"mask\": paddle.to_tensor(y)})\r\nauto_diff(module, layer, inp, auto_weights=True, atol=1e-4)\r\n\r\n```\r\n\r\n```\r\nVariable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\r\nRuntimeError: element 0 of tensors does not require grad and does not have a grad_fn\r\n```",
+        "state": "closed",
+        "user": "GreatV",
+        "closed_by": "GreatV",
+        "created_at": "2023-08-23T07:01:12+00:00",
+        "updated_at": "2023-09-04T02:41:30+00:00",
+        "closed_at": "2023-09-04T02:41:30+00:00",
+        "comments_count": [
+            "feifei-111",
+            "feifei-111",
+            "GreatV",
+            "feifei-111",
+            "GreatV",
+            "feifei-111",
+            "feifei-111",
+            "feifei-111",
+            "GreatV"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 97,
+        "title": "MultiheadAttention初始化失败",
+        "body": "在样例代码上加入MultiheadAttention，尝试进行参数值复制，但失败\r\n\r\n版本：\r\npaddlepaddle-gpu == 2.4.2\r\ntorch == 1.12.0+cu102\r\n\r\n代码\r\n```\r\nimport paddle\r\nimport torch\r\nfrom padiff import assign_weight, create_model, auto_diff\r\nimport torch\r\nimport paddle\r\nimport paddle\r\nimport signal\r\nimport os\r\nfrom padiff import add_special_init\r\n\r\nclass SimpleModule(torch.nn.Module):\r\n  def __init__(self):\r\n      super(SimpleModule, self).__init__()\r\n      self.linear1 = torch.nn.Linear(100, 10)\r\n      self.attention = torch.nn.MultiheadAttention(64, 8, dropout=0.1, batch_first=True)\r\n  def forward(self, x):\r\n      x = self.linear1(x)\r\n      return x\r\n\r\nclass SimpleLayer(paddle.nn.Layer):\r\n  def __init__(self):\r\n      super(SimpleLayer, self).__init__()\r\n      self.linear1 = paddle.nn.Linear(100, 10)\r\n      self.attention = paddle.nn.MultiHeadAttention(64, 8, dropout=0.1)\r\n  def forward(self, x):\r\n      x = self.linear1(x)\r\n      return x\r\n  \r\nmodule = create_model(SimpleModule())\r\nmodule.auto_layer_map(\"base\")\r\nlayer = create_model(SimpleLayer())\r\nlayer.auto_layer_map(\"raw\")\r\n\r\nassign_weight(module, layer)\r\n```\r\n\r\n报错：\r\nRuntimeError:  Error occured when trying init weights, between:\r\n    base_model: `MultiheadAttention()`\r\n                `SimpleModule.attention.in_proj_weight`\r\n    raw_model: `Linear(in_features=64, out_features=64, dtype=float32)`\r\n               `SimpleLayer.attention.q_proj.weight`\r\n\r\n模型架构日志文件:\r\npadiff_log/weight_init_SimpleModule.log:\r\n```\r\nSimpleModule\r\n========================================\r\n    SimpleModule\r\n     |--- Linear\r\n     +--- MultiheadAttention    <---  *** HERE ***\r\n           +--- NonDynamicallyQuantizableLinear  (skip)\r\n\r\n```\r\npadiff_log/weight_init_SimpleLayer.log:\r\n\r\n```\r\nSimpleLayer\r\n========================================\r\n    SimpleLayer\r\n     |--- Linear\r\n     +--- MultiHeadAttention  (skip)\r\n           |--- Linear    <---  *** HERE ***\r\n           |--- Linear\r\n           |--- Linear\r\n           +--- Linear\r\n```\r\n\r\n请问应该如何修改呢？",
+        "state": "closed",
+        "user": "ToddBear",
+        "closed_by": "feifei-111",
+        "created_at": "2023-08-14T09:17:01+00:00",
+        "updated_at": "2023-08-23T07:27:20+00:00",
+        "closed_at": "2023-08-23T07:27:20+00:00",
+        "comments_count": [
+            "feifei-111"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 95,
+        "title": "TypeError: auto_diff() got an unexpected keyword argument 'atol'",
+        "body": "版本：\r\n- torch == 1.11.0 + cu102\r\n- paddlepaddle-gpu == 2.4.2\r\n- padiff == 0.2.0\r\n\r\n跑下面的demo代码出错：\r\n\r\n```\r\nimport paddle\r\nimport torch\r\nfrom padiff import auto_diff\r\nimport torch\r\nimport paddle\r\n\r\nclass SimpleModule(torch.nn.Module):\r\n  def __init__(self):\r\n      super(SimpleModule, self).__init__()\r\n      self.linear1 = torch.nn.Linear(100, 10)\r\n  def forward(self, x):\r\n      x = self.linear1(x)\r\n      return x\r\n\r\nclass SimpleLayer(paddle.nn.Layer):\r\n  def __init__(self):\r\n      super(SimpleLayer, self).__init__()\r\n      self.linear1 = paddle.nn.Linear(100, 10)\r\n  def forward(self, x):\r\n      x = self.linear1(x)\r\n      return x\r\n\r\nmodule = SimpleModule()\r\nlayer = SimpleLayer()\r\n\r\ninp = paddle.rand((100, 100)).numpy().astype(\"float32\")\r\ninp = ({'x': torch.as_tensor(inp) },\r\n     {'x': paddle.to_tensor(inp)})\r\n\r\nauto_diff(module, layer, inp, atol=1e-4, auto_init=True)\r\n```\r\n\r\n报错信息如下：\r\n```\r\nTraceback (most recent call last):\r\n  File \"padiff_test.py\", line 63, in <module>\r\n    auto_diff(module, layer, inp, atol=1e-4, auto_init=True)\r\nTypeError: auto_diff() got an unexpected keyword argument 'atol'\r\n```",
+        "state": "closed",
+        "user": "ToddBear",
+        "closed_by": "ToddBear",
+        "created_at": "2023-08-10T09:34:10+00:00",
+        "updated_at": "2023-08-14T02:46:21+00:00",
+        "closed_at": "2023-08-14T02:46:21+00:00",
+        "comments_count": [
+            "ToddBear"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 106,
+        "title": "[AutoDiff] ==========Err occurs when compare grads!!!==========",
+        "body": "## Version版本\r\n```shell\r\n> pip show padiff\r\nName: padiff\r\nVersion: 0.3.0\r\nSummary: A tools to automatically diff precision between Paddle and Pytorch Model.\r\n```\r\n## Run 运行代码：\r\n```\r\nbase_model_path_pd = \"Qwen/Qwen2-0.5B\"\r\nbase_model_path_hf = \"/media/wuyuhuan/Qwen2-0.5B_hf\"\r\n\r\nimport os\r\nos.environ['CUDA_VISIBLE_DEVICES'] = '1,3'\r\nos.environ['NVIDIA_TF32_OVERRIDE'] = '0'\r\nos.environ['FLAGS_embedding_deterministic'] = '1'\r\nos.environ['FLAGS_cudnn_deterministic'] = '1'\r\n\r\n\r\n\r\nimport numpy as np\r\nimport paddle\r\nimport torch\r\n\r\nfrom padiff import auto_diff\r\n\r\nfrom transformers import AutoConfig as AutoConfig_hf\r\nfrom transformers import AutoModelForCausalLM as AutoModelForCausalLM_hf\r\nfrom peft import LoKrConfig as LoKrConfig_hf, get_peft_model\r\nfrom peft.tuners.lokr import Linear as LoKrLinear_hf \r\n\r\n\r\nfrom paddlenlp.transformers import AutoConfig as AutoConfig_pd, AutoModelForCausalLM as AutoModelForCausalLM_pd\r\nfrom paddlenlp.peft.lokr import LoKrLinear as LoKrLinear_pd, LoKrConfig as LoKrConfig_pd, LoKrModel as LoKrModel_pd\r\n\r\nDEFAULT_TEST_CONFIG = {\r\n    \"base_model_name_or_path\": \"/home/wuyuhuan/.paddlenlp/models/Qwen/Qwen2-0.5B\",\r\n    \"target_modules\": [\".*q_proj*.\", \".*v_proj*.\"],\r\n    \"lokr_alpha\": 8,\r\n    \"lora_dim\": 8,\r\n    \"decompose_both\": False,\r\n    \"factor\": -1,\r\n}\r\n\r\ndef eval_model_convert():\r\n    print(\"CUDA_VISIBLE_DEVICES: \", os.environ['CUDA_VISIBLE_DEVICES'])\r\n    print(\"NVIDIA_TF32_OVERRIDE:\", os.environ['NVIDIA_TF32_OVERRIDE'])\r\n    print(\"FLAGS_embedding_deterministic:\", os.environ['FLAGS_embedding_deterministic'])\r\n    print(\"FLAGS_cudnn_deterministic:\", os.environ['FLAGS_cudnn_deterministic'])\r\n\r\n    paddle_input_ids = paddle.to_tensor([[0, 345, 232, 328, 740, 140, 1695, 69, 6078, 1588, 2]])\r\n    torch_input_ids = torch.LongTensor([[0, 345, 232, 328, 740, 140, 1695, 69, 6078, 1588, 2]])\r\n\r\n    # paddle model\r\n    paddle_ckpt_path = base_model_path_pd\r\n    config_paddle = AutoConfig_pd.from_pretrained(paddle_ckpt_path)\r\n    model_paddle = AutoModelForCausalLM_pd.from_pretrained(paddle_ckpt_path, config=config_paddle, dtype=\"float32\")\r\n\r\n    lokr_config_pd = LoKrConfig_pd(**DEFAULT_TEST_CONFIG)\r\n    model_paddle = LoKrModel_pd(model_paddle, lokr_config_pd)\r\n    # model_paddle = create_model(model_paddle, name=\"model_paddle\")\r\n                             \r\n    # torch model\r\n    torch_ckpt_path = base_model_path_hf\r\n    config_torch = AutoConfig_hf.from_pretrained(torch_ckpt_path, trust_remote_code=True)\r\n    config_torch.dtype = \"float32\"\r\n    model_torch = AutoModelForCausalLM_hf.from_pretrained(torch_ckpt_path, config=config_torch, trust_remote_code=True)\r\n\r\n    lokr_config_hf = LoKrConfig_hf(\r\n                target_modules=[\"q_proj\", \"v_proj\"],\r\n                r=8,\r\n                alpha=8,\r\n                decompose_factor = -1,\r\n                decompose_both = False)\r\n    \r\n    model_torch = get_peft_model(model_torch,lokr_config_hf,adapter_name=\"default\")\r\n    # model_torch = create_model(model_torch, name=\"model_torch\")\r\n\r\n    model_paddle.eval()\r\n    model_torch.eval()\r\n\r\n    # 手动验证\r\n    out_paddle = model_paddle(paddle_input_ids)[0]\r\n    out_torch = model_torch(torch_input_ids, return_dict=False)[0]\r\n    assert np.allclose(out_paddle.numpy(), out_torch.detach().numpy(), rtol=1e-5, atol=1e-4)\r\n    print(\"手动验证对齐\")\r\n\r\n    # 使用padiff验证\r\n    inp = [{\"input_ids\": torch_input_ids,\r\n            \"use_cache\": False,\r\n            \"output_attentions\": False,\r\n            \"output_hidden_states\": False,\r\n            \"return_dict\": False},\r\n        {\"input_ids\": paddle_input_ids}]\r\n    # diff_phase 可以设置为forward，backword和both\r\n    auto_diff(model_torch, model_paddle, inp, atol = 1e-4, rtol = 1e3, diff_phase = \"both\", compare_mode = \"strict\")\r\n\r\neval_model_convert()\r\n```\r\n\r\n## 错误信息\r\n```\r\n[2024-11-11 14:58:23,070] [    INFO] - Mark only lokr and trainable_module as trainable.\r\n手动验证对齐\r\n[AutoDiff] Your options:\r\n{\r\n  atol: `0.0001`\r\n  rtol: `1000.0`\r\n  auto_init: `False`\r\n  compare_mode: `strict`\r\n  single_step: `False`\r\n  use_loss: `False`\r\n  use_opt: `False`\r\n}\r\n[AutoDiff] check cfg {'atol': 0.0001, 'rtol': 1000.0, 'compare_mode': 'strict'}\r\n[AutoDiff] Checking report in /home/wuyuhuan/performance_compare/padiff_dump/PeftModel_base_model/auto_diff and /home/wuyuhuan/performance_compare/padiff_dump/LoKrModel_raw_model/auto_diff\r\n[AutoDiff] Check grads cfg: {'atol': 0.0001, 'rtol': 1000.0, 'compare_mode': 'strict'}\r\n[AutoDiff] Checking grads in /home/wuyuhuan/performance_compare/padiff_dump/PeftModel_base_model/auto_diff and /home/wuyuhuan/performance_compare/padiff_dump/LoKrModel_raw_model/auto_diff\r\n[AutoDiff] ==========Err occurs when compare grads!!!==========\r\n\r\nstring indices must be integers\r\n[AutoDiff] FAILED !!!\r\n```\r\n\r\n我搜索找不到这一行错误信息是在哪里打印的。看日志，可能是某一个操作操作出现了问题。\r\n\r\n查看了report文件也没有具体说明哪里的grad出现了问题，希望能够得到反馈！\r\n",
+        "state": "closed",
+        "user": "WhuanY",
+        "closed_by": "WhuanY",
+        "created_at": "2024-11-11T08:23:36+00:00",
+        "updated_at": "2024-11-13T08:23:25+00:00",
+        "closed_at": "2024-11-13T08:23:24+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 99,
+        "title": "from paddle.utils import flatten, pack_sequence_as, map_structure",
+        "body": "在paddle2.4.2中这句话执行失败，请问有适配2.4.2的padiff吗",
+        "state": "open",
+        "user": "WenmuZhou",
+        "closed_by": null,
+        "created_at": "2023-08-25T08:10:32+00:00",
+        "updated_at": "2024-01-05T08:18:58+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "feifei-111"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaDiff",
+        "number": 100,
+        "title": "包含InstanceNorm2D的模型，用padiff会报错",
+        "body": "```Python\r\nimport paddle\r\nimport paddle.nn as nn\r\n\r\nimport torch\r\n\r\nimport numpy as np\r\n\r\nfrom padiff import auto_diff, create_model\r\n\r\nimport paddle.nn as nn\r\n\r\nclass SimpleModel(nn.Layer):\r\n    def __init__(self,\r\n                 c1,\r\n                 c2,\r\n                 k=1,\r\n                 s=1,\r\n                 p=None,\r\n                 g=1,\r\n                 dropout_p=0.0):\r\n        super().__init__()\r\n        c_ = 1280\r\n        if p is None:\r\n            p = k // 2\r\n        self.conv = nn.Conv2D(c1, c_, k, s, padding=p, groups=g)\r\n        self.norm = nn.InstanceNorm2D(c_)\r\n        self.pool = nn.AdaptiveAvgPool2D(1)\r\n        self.drop = nn.Dropout(p=dropout_p)\r\n        self.linear = nn.Linear(c_, c2)\r\n\r\n    def forward(self, x):\r\n        if isinstance(x, list):\r\n            x = paddle.concat(x, 1)\r\n        return self.linear(self.drop(self.pool(self.norm(self.conv(x))).flatten(1)))\r\n\r\n\r\nmodel = SimpleModel(3, 10)\r\n\r\npaddle.summary(model, (1, 3, 224, 224))\r\n\r\nstate_dict = model.state_dict()\r\nfor key in state_dict:\r\n    print(key, state_dict[key].shape)\r\n\r\n\r\nclass SimpleModelRef(torch.nn.Module):\r\n    def __init__(self,\r\n                 c1,\r\n                 c2,\r\n                 k=1,\r\n                 s=1,\r\n                 p=None,\r\n                 g=1,\r\n                 dropout_p=0.0):\r\n        super().__init__()\r\n        c_ = 1280\r\n        if p is None:\r\n            p = k // 2\r\n        self.conv = torch.nn.Conv2d(c1, c_, k, s, padding=p, groups=g)\r\n        self.norm = torch.nn.InstanceNorm2d(c_)\r\n        self.pool = torch.nn.AdaptiveAvgPool2d(1)\r\n        self.drop = torch.nn.Dropout(p=dropout_p, inplace=True)\r\n        self.linear = torch.nn.Linear(c_, c2)\r\n\r\n    def forward(self, x):\r\n        if isinstance(x, list):\r\n            x = torch.cat(x, 1)\r\n        return self.linear(self.drop(self.pool(self.norm(self.conv(x))).flatten(1)))\r\n\r\n\r\n\r\nmodel = SimpleModelRef(3, 10)\r\n\r\nprint(\"---\" * 20)\r\nstate_dict = model.state_dict()\r\n\r\nfor key in state_dict:\r\n    print(key, state_dict[key].shape)\r\n\r\nmodule = create_model(SimpleModelRef(3, 10))\r\nmodule.auto_layer_map(\"base\")\r\n\r\nlayer = create_model(SimpleModel(3, 10))\r\nlayer.auto_layer_map(\"raw\")\r\n\r\ninput = np.random.randn(4, 3, 320, 320).astype(\"float32\")\r\ninp = ({\"x\": torch.as_tensor(input)}, {\"x\": paddle.to_tensor(input)})\r\nauto_diff(module, layer, inp, auto_weights=True)\r\n\r\n\r\n```\r\n\r\n```\r\n[AutoDiff] Auto set layer_map start searching...\r\n\r\n[AutoDiff] Auto set layer_map start searching...\r\n\r\n[AutoDiff] Your options:\r\n{\r\n  auto_init: `True`\r\n  single_step: `False`\r\n  use_loss: `False`\r\n  use_opt: `False`\r\n  atol: `0`\r\n  rtol: `1e-07`\r\n  compare_mode: `mean`\r\n}\r\n[AutoDiff] Assign weight Failed !!!\r\n\r\nRuntimeError:  Error occured when trying init weights, between:\r\n    base_model: `Linear(in_features=1280, out_features=10, bias=True)`\r\n                `SimpleModelRef.linear.weight`\r\n    raw_model: `InstanceNorm2D(num_features=1280, epsilon=1e-05)`\r\n               `SimpleModel.norm.scale`\r\nAssertionError:  Shape of param `weight` in torch::Linear and param `scale` in paddle::InstanceNorm2D is not the same. [10, 1280] vs [1280]\r\n\r\nWeight init log saved to \r\n    /home/greatx/repos/DocTrPP/padiff_log/weight_init_SimpleModelRef.log\r\n    /home/greatx/repos/DocTrPP/padiff_log/weight_init_SimpleModel.log\r\n\r\nPlease view the reports and checkout the layer marked with `<---  *** HERE ***` !\r\nHint:\r\n    1. Check the definition order of params is same in submodels.\r\n    2. Check the corresponding submodel have the same style:\r\n       param <=> param, buffer <=> buffer, embedding <=> embedding ...\r\n       cases like param <=> buffer, param <=> embedding are not allowed.\r\n    3. If can not change model codes, try to use a `LayerMap`\r\n       which can solve most problems.\r\n    4. (skip) means this layer is skipped because it is under black_list, or it has no param.\r\n    0. Visit `https://github.com/PaddlePaddle/PaDiff` to find more infomation.\r\n```",
+        "state": "closed",
+        "user": "GreatV",
+        "closed_by": "GreatV",
+        "created_at": "2023-09-28T03:43:11+00:00",
+        "updated_at": "2023-10-20T05:56:57+00:00",
+        "closed_at": "2023-10-20T05:56:57+00:00",
+        "comments_count": [
+            "GreatV",
+            "feifei-111",
+            "feifei-111"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    }
+]

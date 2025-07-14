@@ -1,0 +1,873 @@
+[
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 7,
+        "title": "add merge batch normalization tools ",
+        "body": "When the training process is finished, we can merge the batch normalization with the convolution or fully connected layer.  Merge batch normalization speeds up the forward process by around 30%.",
+        "state": "closed",
+        "user": "NHZlX",
+        "closed_by": "NHZlX",
+        "created_at": "2017-09-25T15:12:59+00:00",
+        "updated_at": "2017-09-28T02:44:58+00:00",
+        "closed_at": "2017-09-28T02:44:58+00:00",
+        "comments_count": [],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 19,
+        "title": "a paddle_merge_model script is needed",
+        "body": "paddle_merge_model  can integrate the model config file and parameter to one files.\r\nIt would be very convenient if  there is a script.",
+        "state": "closed",
+        "user": "NHZlX",
+        "closed_by": "Xreki",
+        "created_at": "2017-10-25T06:45:30+00:00",
+        "updated_at": "2017-11-07T04:08:27+00:00",
+        "closed_at": "2017-11-07T04:08:27+00:00",
+        "comments_count": [],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 17,
+        "title": "Remove mobilenet.py and resnet.py in models or flowers102.",
+        "body": "Mobilenet.py and resnet.py are duplicated in this two directories.",
+        "state": "closed",
+        "user": "hedaoyuan",
+        "closed_by": "NHZlX",
+        "created_at": "2017-10-24T07:37:34+00:00",
+        "updated_at": "2017-10-25T03:52:53+00:00",
+        "closed_at": "2017-10-25T03:52:53+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 9,
+        "title": "add rounding  evaluating",
+        "body": "Given floating parameters `V`, first our goal is to represent `V` as 8-bit integers `V'`. And then we transformed back `V'` back into its approximate high-precision value by performing the inverse of the quantization operation. At last, we perform gzip to our quantized && inverse-quantized model. The whole process can reduces our model by 70%.",
+        "state": "closed",
+        "user": "NHZlX",
+        "closed_by": "hedaoyuan",
+        "created_at": "2017-09-26T04:50:40+00:00",
+        "updated_at": "2017-09-28T01:51:58+00:00",
+        "closed_at": "2017-09-28T01:51:58+00:00",
+        "comments_count": [],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 25,
+        "title": "SSD Demo on Android and iOS",
+        "body": "We are planing to build a SSD (Single Shot MultiBox Detector) demo running on Android and iOS. PaddlePaddle has integrated the SSD algorithm and posted an example to demonstrate how to use the SSD model for object detection, https://github.com/PaddlePaddle/models/tree/develop/ssd.\r\n\r\n# Goals\r\n\r\nTo show PaddlePaddle's ability on mobile, we choose to run inference of SSD model on Android and iOS with following goals:\r\n\r\n- Build a demo application which can use mobile's camera to capture images and show detected objects to users.\r\n- Run fast enough to show the results in real-time.\r\n\r\n# Tasks\r\n\r\n- Training SSD model based on mobilenet, with input image of size 224 x 224  (@NHZlX  , 2017-11-13)\r\n- Anything needed to do on back-end (@Xreki)\r\n  - Basic demo runs on linux to show how to use the ssd model with C-API (https://github.com/Xreki/Mobile/tree/add_ssd_linux_demo/Demo/linux/ssd) .\r\n  - Providing merged model \r\n    - [vgg_ssd_net.paddle](http://cloud.dlnel.org/filepub/?uuid=1116a5f3-7762-44b5-82bb-9954159cb5d4), input size `300 x 300`, means `[104, 117, 124]`\r\n  - Packing C-API into a class `ImageRecoginizer` with three inferfaces: `init()`, `infer()`, `release()`\r\n  - Resizing input image\r\n  - Rotating input image (support 0, 90, 180, 270)\r\n  - Transfering HWC to CHW \r\n- A mobile demo application to show on Baidu World on 2017-11-16  (@nickyfantasy ) \r\n  - iOS for high priority\r\n  - Using camera to capture images in real-time\r\n  - Showing the rectangle, category, and score of the detected objects\r\n  - Ready for testing on 2017-11-14\r\n\r\n# Details\r\n\r\n- Input: pixels of a colored image\r\n  - Shape, 300 x 300 for current vgg based model (224 x 224 for mobilenet bases model).\r\n  - Data type: float\r\n  - Storage format: CHW order, that is `[RRRRRR][GGGGGG][BBBBBB]`\r\n- Output\r\n\r\n  The inference's output type is `paddle_matrix`. The height of the matrix is the number of detected objects, and the width is fixed to 7. \r\n  - row[i][0]: the index in a minibatch. For our case, the minibatch is fixed to 1, so row[i][0] always is `0.0`.\r\n  - row[i][1]: the label of the object. You can find the label list in https://github.com/PaddlePaddle/models/blob/develop/ssd/data/label_list. If row[i][1] is 15, it means the detected object is a `person`.\r\n  - row[i][2]: the score of detected rectangle and object.\r\n  - row[i][3] - row[i][6]: `(xmin, ymin, xmax, ymax)`, the relative coordinate of the rectangle.\r\n\r\n  ```bash\r\n  $ ./build/vgg_ssd_demo \r\n  I1107 06:36:18.600690 16092 Util.cpp:166] commandline:  --use_gpu=False \r\n  Prob: 7 x 7\r\n  row 0: 0.000000 5.000000 0.010291 0.605270 0.749781 0.668338 0.848811 \r\n  row 1: 0.000000 12.000000 0.530176 0.078279 0.640581 0.721344 0.995839 \r\n  row 2: 0.000000 12.000000 0.017214 0.069217 0.000000 1.000000 0.972674 \r\n  row 3: 0.000000 15.000000 0.998061 0.091996 0.000000 0.995694 1.000000 \r\n  row 4: 0.000000 15.000000 0.040476 0.835338 0.014217 1.000000 0.446740 \r\n  row 5: 0.000000 15.000000 0.010271 0.718238 0.006743 0.993035 0.659929 \r\n  row 6: 0.000000 18.000000 0.012227 0.069217 0.000000 1.000000 0.972674 \r\n  ```\r\n\r\n- Show\r\n\r\n  The rectangle, category, and score of the detected objects are wished to be correctly shown, like\r\n![image](https://user-images.githubusercontent.com/12538138/32490640-d3ad12c6-c3ee-11e7-8fa2-088f1f49d2c9.png)\r\n\r\n\r\n# Reference\r\n1. tensorflow: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android\r\n2. caffe2: https://github.com/bwasti/AICamera\r\n3. caffe2: https://caffe2.ai/docs/mobile-integration.html",
+        "state": "open",
+        "user": "Xreki",
+        "closed_by": null,
+        "created_at": "2017-11-07T11:03:21+00:00",
+        "updated_at": "2017-11-28T07:22:07+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 4,
+        "title": "mobilenet_pruning这个为什么我跑出来是11M而不是说明中提到的4.3M",
+        "body": "训练mobilenet_pruning，跟mobilenet那个相比，由12M变为11M，并没有那里面提到的变为4.3M，是为什么呢？",
+        "state": "closed",
+        "user": "bushidonggua",
+        "closed_by": "NHZlX",
+        "created_at": "2017-09-15T02:17:00+00:00",
+        "updated_at": "2017-10-25T04:02:56+00:00",
+        "closed_at": "2017-10-25T04:02:56+00:00",
+        "comments_count": [
+            "NHZlX",
+            "bushidonggua",
+            "NHZlX",
+            "bushidonggua",
+            "NHZlX",
+            "bushidonggua",
+            "NHZlX"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 27,
+        "title": "Deadlink in benchmark/tool/C",
+        "body": "https://github.com/PaddlePaddle/Mobile/tree/develop/benchmark/tool/C\r\n\r\n> Refer to this document to compile the Android version of PaddlePaddle\r\n\r\nThe link to `this document` is a dead link. What does the `PADDLE_ROOT` mean in the cmake arguments? \r\n\r\n```bash\r\ncmake .. \\\r\n-DANDROID_ABI=arm64-v8a \\\r\n-DANDROID_STANDALONE_TOOLCHAIN=your/path/to/arm64_standalone_toolchain \\\r\n-DPADDLE_ROOT=The output path generated in the first step \\\r\n-DCMAKE_BUILD_TYPE=MinSizeRel\r\n```",
+        "state": "closed",
+        "user": "qingqing01",
+        "closed_by": "hedaoyuan",
+        "created_at": "2017-11-15T02:24:05+00:00",
+        "updated_at": "2017-11-15T03:30:33+00:00",
+        "closed_at": "2017-11-15T03:30:33+00:00",
+        "comments_count": [
+            "hedaoyuan",
+            "qingqing01"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 3,
+        "title": "训练报错",
+        "body": "错误如下：\r\n    net = mobile_net(image)\r\n  File \"mobilenet_pruning.py\", line 70, in mobile_net\r\n    stride=1)\r\n  File \"mobilenet_pruning.py\", line 43, in depthwise_separable\r\n    pa0 = ParamAttr(update_hooks = Hook('dynamic_pruning', sparsity_upper_bound=0.75))\r\nTypeError: __init__() got an unexpected keyword argument 'sparsity_upper_bound' ",
+        "state": "closed",
+        "user": "bushidonggua",
+        "closed_by": "bushidonggua",
+        "created_at": "2017-09-12T08:09:24+00:00",
+        "updated_at": "2017-09-15T02:14:23+00:00",
+        "closed_at": "2017-09-15T02:14:23+00:00",
+        "comments_count": [
+            "NHZlX"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 23,
+        "title": "The links for How to build PaddlePaddle for mobile are broken",
+        "body": "There are two links under How to build PaddlePaddle for mobile. They are\r\n\r\n- Build PaddlePaddle for Android\r\n- Build PaddlePaddle for Raspberry Pi3\r\n\r\nAnd they are both broken right now. This might relate to the recent rearrangement in Paddle.",
+        "state": "closed",
+        "user": "jetfuel",
+        "closed_by": "Xreki",
+        "created_at": "2017-11-06T22:24:14+00:00",
+        "updated_at": "2017-11-07T05:16:20+00:00",
+        "closed_at": "2017-11-07T05:16:20+00:00",
+        "comments_count": [
+            "lk1ngaa7",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 32,
+        "title": "Investigate SNPE (with tensorflow and Caffe2)",
+        "body": "https://developer.qualcomm.com/software/snapdragon-neural-processing-engine\r\n\r\nArch:\r\n\r\n<img width=\"669\" alt=\"snpe_arch\" src=\"https://user-images.githubusercontent.com/7845005/33125097-4ad7f65a-cfba-11e7-8635-996f8168255f.png\">\r\n",
+        "state": "open",
+        "user": "qingqing01",
+        "closed_by": null,
+        "created_at": "2017-11-20T02:30:28+00:00",
+        "updated_at": "2017-11-22T11:21:18+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 33,
+        "title": "In depth survey of TensorFlow Lite and MutliGPU support of TensorFlow.",
+        "body": "Here are the links to my previous survey so far:\r\n1.  https://github.com/PaddlePaddle/Paddle/pull/5412\r\n2. https://github.com/PaddlePaddle/Paddle/pull/5284",
+        "state": "closed",
+        "user": "kavyasrinet",
+        "closed_by": "kavyasrinet",
+        "created_at": "2017-11-23T01:02:55+00:00",
+        "updated_at": "2017-12-15T00:26:25+00:00",
+        "closed_at": "2017-12-15T00:26:25+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 30,
+        "title": "Investigate Android NN",
+        "body": "https://developer.android.com/ndk/guides/neuralnetworks/index.html",
+        "state": "closed",
+        "user": "abhinavarora",
+        "closed_by": "abhinavarora",
+        "created_at": "2017-11-18T13:14:49+00:00",
+        "updated_at": "2018-01-03T05:52:12+00:00",
+        "closed_at": "2017-11-28T10:56:32+00:00",
+        "comments_count": [
+            "abhinavarora",
+            "graycreate",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 31,
+        "title": "Investigate TF Lite",
+        "body": "https://www.tensorflow.org/mobile/tflite/",
+        "state": "closed",
+        "user": "abhinavarora",
+        "closed_by": "kavyasrinet",
+        "created_at": "2017-11-18T13:15:27+00:00",
+        "updated_at": "2017-12-01T18:23:18+00:00",
+        "closed_at": "2017-12-01T18:23:18+00:00",
+        "comments_count": [
+            "NHZlX",
+            "kavyasrinet",
+            "kavyasrinet"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 36,
+        "title": "refine the doc of the inference demo ",
+        "body": "the following Sentence is confused to users.\r\n\r\n`./inference --merged_model ./model/mobilenet.paddle --input_size 150528\r\n`\r\n\r\n1.what's the input_size\r\n2.how to generate the mobilenet.paddle\r\n",
+        "state": "closed",
+        "user": "NHZlX",
+        "closed_by": "Xreki",
+        "created_at": "2017-11-29T10:58:40+00:00",
+        "updated_at": "2017-12-05T09:36:58+00:00",
+        "closed_at": "2017-12-05T09:36:58+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 39,
+        "title": "add the ssd mobilenet to models",
+        "body": "add the ssd mobilenet to models",
+        "state": "closed",
+        "user": "NHZlX",
+        "closed_by": "NHZlX",
+        "created_at": "2017-12-01T10:49:09+00:00",
+        "updated_at": "2017-12-12T05:09:17+00:00",
+        "closed_at": "2017-12-12T05:09:17+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 35,
+        "title": "Investigate CoreML",
+        "body": "https://developer.apple.com/documentation/coreml",
+        "state": "closed",
+        "user": "abhinavarora",
+        "closed_by": "abhinavarora",
+        "created_at": "2017-11-28T11:24:27+00:00",
+        "updated_at": "2017-11-30T07:27:20+00:00",
+        "closed_at": "2017-11-30T07:27:20+00:00",
+        "comments_count": [
+            "abhinavarora"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 41,
+        "title": "Investigate FlatBuffers",
+        "body": "FlatBuffers are the serialization format used by TensorFlowLite: https://google.github.io/flatbuffers/",
+        "state": "closed",
+        "user": "kavyasrinet",
+        "closed_by": "kavyasrinet",
+        "created_at": "2017-12-01T18:20:04+00:00",
+        "updated_at": "2017-12-01T18:22:50+00:00",
+        "closed_at": "2017-12-01T18:22:50+00:00",
+        "comments_count": [
+            "kavyasrinet"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 34,
+        "title": "The num_filters of depthwise_separable seems wrong in mobilenet",
+        "body": "The  mobile net paper said \"We use depthwise convolutions to apply a single filter per each input channel (input depth)\".\r\nBut in paddlepaddle implementation\r\n```\r\n    tmp = depthwise_separable(tmp,\r\n                              num_filters1=32,\r\n                              num_filters2=64,\r\n                              num_groups=32,\r\n                              stride=1, scale = scale)\r\n```\r\nthe num_filters1 is the same as num_groups and the input channel is 32, it will cause a single filter be precessed by 32 filter. so the num_filters1 here should be 1 rather than 32\r\nI‘m glad to fix if possible:)\r\n",
+        "state": "closed",
+        "user": "lhsoft",
+        "closed_by": "NHZlX",
+        "created_at": "2017-11-23T10:08:56+00:00",
+        "updated_at": "2017-12-07T03:01:36+00:00",
+        "closed_at": "2017-12-07T03:01:36+00:00",
+        "comments_count": [
+            "hedaoyuan",
+            "NHZlX",
+            "lhsoft",
+            "NHZlX"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 42,
+        "title": "Model Format Conversion and Freeze Graph",
+        "body": "To make a model work with TensorFlowLite, we need to have a converter that could convert any standard model to a tflite model format.",
+        "state": "open",
+        "user": "kavyasrinet",
+        "closed_by": null,
+        "created_at": "2017-12-01T18:33:53+00:00",
+        "updated_at": "2017-12-01T18:35:59+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 46,
+        "title": "benchmark failed because of the update of protobuf's version",
+        "body": "See the detailed error:\r\n```\r\nLinking CXX executable inference\r\n/home/work/.jumbo/bin/cmake -E cmake_link_script CMakeFiles/inference.dir/link.txt --verbose=1\r\n/home/work/liuyiqun/install/android/toolchains/arm64-android-21/bin/aarch64-linux-android-g++  --sysroot=/home/work/liuyiqun/install/android/toolchains/arm64-android-21/sysroot  -ffunction-sections -fdata-sections -march=armv8-a  -O3 -DNDEBUG  -pie -fPIE -Wl,--gc-sections  CMakeFiles/inference.dir/inference.cc.o  -o inference  -L/home/work/liuyiqun/PaddlePaddle/Paddle/build_paddle/dist_android/lib/arm64-v8a  -L/home/work/liuyiqun/PaddlePaddle/Paddle/build_paddle/dist_android/third_party/gflags/lib/arm64-v8a  -L/home/work/liuyiqun/PaddlePaddle/Paddle/build_paddle/dist_android/third_party/glog/lib/arm64-v8a  -L/home/work/liuyiqun/PaddlePaddle/Paddle/build_paddle/dist_android/third_party/protobuf/lib/arm64-v8a  -L/home/work/liuyiqun/PaddlePaddle/Paddle/build_paddle/dist_android/third_party/zip/lib/arm64-v8a  -L/home/work/liuyiqun/PaddlePaddle/Paddle/build_paddle/dist_android/third_party/openblas/lib/arm64-v8a  -Wl,--start-group -Wl,--whole-archive -lpaddle_capi_layers -Wl,--no-whole-archive -lpaddle_capi_engine -Wl,--end-group -lglog -lgflags -lprotobuf -lz -lopenblas \r\n/home/work/liuyiqun/install/android/toolchains/arm64-android-21/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: /lib64/libz.so.1: no version information available (required by /home/work/liuyiqun/install/android/toolchains/arm64-android-21/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld)\r\n/home/work/liuyiqun/PaddlePaddle/Paddle/build_paddle/dist_android/third_party/protobuf/lib/arm64-v8a/libprotobuf.a(common.cc.o): In function `google::protobuf::internal::DefaultLogHandler(google::protobuf::LogLevel, char const*, int, std::string const&)':\r\ncommon.cc:(.text._ZN6google8protobuf8internal17DefaultLogHandlerENS0_8LogLevelEPKciRKSs[_ZN6google8protobuf8internal17DefaultLogHandlerENS0_8LogLevelEPKciRKSs]+0xc0): undefined reference to `__android_log_write'\r\ncommon.cc:(.text._ZN6google8protobuf8internal17DefaultLogHandlerENS0_8LogLevelEPKciRKSs[_ZN6google8protobuf8internal17DefaultLogHandlerENS0_8LogLevelEPKciRKSs]+0x12c): undefined reference to `__android_log_write'\r\ncollect2: error: ld returned 1 exit status\r\nmake[2]: *** [inference] Error 1\r\nmake[2]: Leaving directory `/home/work/liuyiqun/PaddlePaddle/Mobile/benchmark/tool/C/build_android'\r\nmake[1]: *** [CMakeFiles/inference.dir/all] Error 2\r\nmake[1]: Leaving directory `/home/work/liuyiqun/PaddlePaddle/Mobile/benchmark/tool/C/build_android'\r\nmake: *** [all] Error 2\r\n```\r\n\r\nNeed to link Android's `log` library.",
+        "state": "closed",
+        "user": "Xreki",
+        "closed_by": "Xreki",
+        "created_at": "2017-12-07T07:52:19+00:00",
+        "updated_at": "2017-12-07T08:41:22+00:00",
+        "closed_at": "2017-12-07T08:41:22+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 52,
+        "title": "Move tools into deployment",
+        "body": "The `deployment` directory can contain the following two parts.\r\n1. Compile optimization for Paddle Mobile Inference Library.\r\n2. Compile optimization of Paddle training model to Paddle inference model (see #51).\r\n",
+        "state": "closed",
+        "user": "hedaoyuan",
+        "closed_by": "hedaoyuan",
+        "created_at": "2017-12-12T06:54:50+00:00",
+        "updated_at": "2017-12-12T09:49:56+00:00",
+        "closed_at": "2017-12-12T09:49:56+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 43,
+        "title": "请问有paddlepaddle应用到Android的Demo吗",
+        "body": "我看了那么久的文档，都不知道怎么使用，比如在手机上识别手写数字",
+        "state": "closed",
+        "user": "yeyupiaoling",
+        "closed_by": "yeyupiaoling",
+        "created_at": "2017-12-03T04:58:52+00:00",
+        "updated_at": "2017-12-07T14:16:23+00:00",
+        "closed_at": "2017-12-07T14:16:23+00:00",
+        "comments_count": [
+            "Xreki",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "Xreki",
+            "yeyupiaoling",
+            "Xreki",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "Xreki",
+            "Xreki",
+            "yeyupiaoling",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 50,
+        "title": "Need to add Chinese README of how to benchmark Paddle on Android",
+        "body": "",
+        "state": "closed",
+        "user": "Xreki",
+        "closed_by": "Xreki",
+        "created_at": "2017-12-11T09:16:57+00:00",
+        "updated_at": "2017-12-13T06:06:38+00:00",
+        "closed_at": "2017-12-13T06:06:38+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 48,
+        "title": "这条命令的参数是什么意思,我是这是有没有出错?",
+        "body": "我在[这个教程](https://github.com/PaddlePaddle/Mobile/tree/develop/benchmark/tool/C)的最后一步的命令,我执行了这个代码`./inference --merged_model ./mobilenet.paddle --input_size 784`,因为我是使用paddlepaddle的手写数字识别的,报以下的错误,那条命令的的第一个参数是什么?\r\n```\r\ngeneric:/data/local/tmp # ./inference --merged_model ./mobilenet.paddle --input_size 784                            \r\nWARNING: linker: /data/local/tmp/inference: unused DT entry: type 0xf arg 0x826\r\nI1208 12:45:52.141201  2114 Util.cpp:166] commandline:  \r\nTime of init paddle 1085.49 ms.\r\nTime of create from merged model file 300.789 ms.\r\nTime of forward time 0.0035536 ms.\r\npaddle forward error!\r\n```",
+        "state": "closed",
+        "user": "yeyupiaoling",
+        "closed_by": "yeyupiaoling",
+        "created_at": "2017-12-08T04:53:27+00:00",
+        "updated_at": "2017-12-13T11:20:05+00:00",
+        "closed_at": "2017-12-13T11:08:07+00:00",
+        "comments_count": [
+            "Xreki",
+            "yeyupiaoling",
+            "Xreki",
+            "yeyupiaoling",
+            "Xreki",
+            "hedaoyuan",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "Xreki",
+            "yeyupiaoling",
+            "Xreki",
+            "yeyupiaoling",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 56,
+        "title": "Cannot use |= to paddle_error",
+        "body": "We use `|=` to `paddle_error` in our benchmark. \r\nhttps://github.com/PaddlePaddle/Mobile/blob/6b68be7a97cb66885f47816fd360b41896fc1147/benchmark/tool/C/inference.cc#L21-L24\r\n\r\nHowever, the definition of `paddle_error` is:\r\nhttps://github.com/PaddlePaddle/Paddle/blob/c8d4efb20eecab5a2edd55ccf923dac78afc6d78/paddle/capi/error.h#L23-L30\r\n\r\n```c\r\ntypedef enum {\r\n  kPD_NO_ERROR = 0,\r\n  kPD_NULLPTR = 1,\r\n  kPD_OUT_OF_RANGE = 2,\r\n  kPD_PROTOBUF_ERROR = 3,\r\n  kPD_NOT_SUPPORTED = 4,\r\n  kPD_UNDEFINED_ERROR = -1,\r\n} paddle_error;\r\n```\r\n\r\nThe different bit of different error may be the same. If we use `|=` to two variables of `paddle_error`, we may lose the error information.\r\n\r\nAlso, we need to print the error information, or it will be difficult for users to debug, like in #48 .",
+        "state": "open",
+        "user": "Xreki",
+        "closed_by": null,
+        "created_at": "2017-12-12T07:58:48+00:00",
+        "updated_at": "2017-12-12T08:00:32+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 51,
+        "title": "Compile training model into inference model",
+        "body": "Based on the previous survey, various inference frameworks have a phase that transforms a training model into an inference model. Like `Compilation` in AndroidNN, `Conversion` in CoreML, `Build` in TensorRT, `Converter` in Tensorflow-Lite. Paddle Mobile also needs a compilation tool that transforms the training model into an inference model.\r\n\r\nThis compilation tool needs to be able to support the following features:\r\n- Compile Paddle's training config and parameter files into one inference file.\r\n- Support Rounding-based parameter compression.\r\n- Supports model optimization for Merge Batch Normalization.\r\n- Support float32 to float16 parameter compression optimization.\r\n- Support float32 to unit8 parameter compression optimization.\r\n",
+        "state": "open",
+        "user": "hedaoyuan",
+        "closed_by": null,
+        "created_at": "2017-12-12T05:52:51+00:00",
+        "updated_at": "2017-12-15T06:56:26+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "NHZlX"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 54,
+        "title": "Refine `models` directory",
+        "body": "The `models` directory needs to contain two parts. The first part is some standard model configuration files, such as MobileNet, ResNet, etc., that can be used as benchmark test data. The second part contains some well-trained model parameter files, such as the `mobilenet ssd pascal model`, which can be directly converted to inference model files for deployment to mobile.",
+        "state": "closed",
+        "user": "hedaoyuan",
+        "closed_by": "hedaoyuan",
+        "created_at": "2017-12-12T07:19:36+00:00",
+        "updated_at": "2017-12-13T03:22:36+00:00",
+        "closed_at": "2017-12-13T03:22:36+00:00",
+        "comments_count": [
+            "Xreki",
+            "hedaoyuan",
+            "NHZlX",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 58,
+        "title": "Need to add Chinese version README of iOS demo",
+        "body": "",
+        "state": "closed",
+        "user": "Xreki",
+        "closed_by": "Xreki",
+        "created_at": "2017-12-13T08:33:00+00:00",
+        "updated_at": "2017-12-14T03:01:46+00:00",
+        "closed_at": "2017-12-14T03:01:46+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 59,
+        "title": "Need to add travis-ci for checking pre-commit",
+        "body": "",
+        "state": "closed",
+        "user": "luotao1",
+        "closed_by": "Xreki",
+        "created_at": "2017-12-13T09:08:20+00:00",
+        "updated_at": "2017-12-14T03:38:27+00:00",
+        "closed_at": "2017-12-14T03:38:27+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 67,
+        "title": "refine merge model tools",
+        "body": "add batch normalization and rounding tool to merge_model tools",
+        "state": "open",
+        "user": "NHZlX",
+        "closed_by": null,
+        "created_at": "2017-12-18T11:11:55+00:00",
+        "updated_at": "2017-12-18T11:11:55+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 69,
+        "title": "请问 能否提供一个 shufflenet + ssd 的移动版本 ",
+        "body": "",
+        "state": "closed",
+        "user": "ballackscholl",
+        "closed_by": "ballackscholl",
+        "created_at": "2017-12-21T07:22:47+00:00",
+        "updated_at": "2017-12-23T02:54:47+00:00",
+        "closed_at": "2017-12-23T02:54:47+00:00",
+        "comments_count": [
+            "Xreki",
+            "ballackscholl",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 71,
+        "title": "编译Paddle Android demo，在生成inference时，make出现错误",
+        "body": "参照 [安卓文档](https://github.com/PaddlePaddle/Mobile/blob/develop/benchmark/tool/C/README_cn.md)，在进行第二步 make时提示下面的错误：\r\n\r\nroot@wyf-virtual-machine:/home/wyf/Paddle-Android/Mobile/benchmark/tool/C/build# make\r\nScanning dependencies of target inference\r\n[100%] Building CXX object CMakeFiles/inference.dir/inference.cc.o\r\nLinking CXX executable inference\r\n/home/wyf/Paddle-Android/arm64_standalone_toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: cannot find -lprotobuf\r\ncollect2: error: ld returned 1 exit status\r\nmake[2]: *** [inference] 错误 1\r\nmake[1]: *** [CMakeFiles/inference.dir/all] 错误 2\r\nmake: *** [all] 错误 2\r\n\r\n然后参考了 [Fix linking problem of protobuf-3.2](https://github.com/PaddlePaddle/Mobile/pull/45)，但没有看明白怎样修改的CMakeLists.txt，我的  ANDROID_ABI = arm64-v8a，能否较详细说下怎样修改呢？谢谢\r\n\r\n\r\n",
+        "state": "open",
+        "user": "breaknormal1",
+        "closed_by": null,
+        "created_at": "2017-12-29T04:11:30+00:00",
+        "updated_at": "2018-04-27T02:44:36+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Xreki",
+            "breaknormal1",
+            "zhaofenqiang",
+            "IceHee",
+            "frozenfires",
+            "frozenfires"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 70,
+        "title": "安装android版paddle，cmake提示错误",
+        "body": "按照文档[Inference demo](https://github.com/PaddlePaddle/Mobile/blob/develop/benchmark/tool/C/README.md)配置android，cmake提示下面的错误：\r\n\r\nCMake Error at CMakeLists.txt:32 (project):\r\n  The CMAKE_CXX_COMPILER:\r\n\r\n    /Home/wyf/android-ndk-r14b/build/tools/arm64_standlone_toolchain/bin/aarch64-linux-android-g++\r\n\r\n  is not a full path to an existing compiler tool.\r\n\r\n  Tell CMake where to find the compiler by setting either the environment\r\n  variable \"CXX\" or the CMake cache entry CMAKE_CXX_COMPILER to the full path\r\n  to the compiler, or to the compiler name if it is in the PATH.\r\n\r\n\r\nCMake Error at CMakeLists.txt:32 (project):\r\n  The CMAKE_C_COMPILER:\r\n\r\n    /Home/wyf/android-ndk-r14b/build/tools/arm64_standlone_toolchain/bin/aarch64-linux-android-gcc\r\n\r\n  is not a full path to an existing compiler tool.\r\n\r\n  Tell CMake where to find the compiler by setting either the environment\r\n  variable \"CC\" or the CMake cache entry CMAKE_C_COMPILER to the full path to\r\n  the compiler, or to the compiler name if it is in the PATH.\r\n\r\n\r\n-- Configuring incomplete, errors occurred!\r\n\r\n\r\n什么原因呢？是什么路径不对吗？还是缺少了哪一步？",
+        "state": "open",
+        "user": "breaknormal1",
+        "closed_by": null,
+        "created_at": "2017-12-27T06:29:19+00:00",
+        "updated_at": "2017-12-29T08:48:08+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Xreki",
+            "breaknormal1",
+            "breaknormal1",
+            "Xreki",
+            "breaknormal1",
+            "Xreki",
+            "Xreki",
+            "breaknormal1",
+            "breaknormal1",
+            "Xreki",
+            "breaknormal1",
+            "breaknormal1",
+            "Xreki",
+            "breaknormal1",
+            "breaknormal1",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 73,
+        "title": "缕清几个Android 应用Paddle时的概念",
+        "body": "[示例程序](https://github.com/PaddlePaddle/Mobile/blob/develop/benchmark/tool/C/README_cn.md)提到的生成merged model（也就是 *.paddle文件）要准备好准备好模型配置文件（.py）和参数文件（.tar.gz）。\r\n问题：\r\n1.参数文件（.tar.gz）是经过PC训练生成的吧？\r\n2.模型配置文件mobilenet.py，是个啥东东？超链接打不开，看不到是啥\r\n3.在PC上使用模型预测时，不需要这个“模型配置文件”吧？\r\n4.Android APP我在Windows环境下用过Android Studio开发过，请问将paddle库、merge生成的 *.paddle文件分别放到对应的文件夹下，之后就可以在Android Studio 调api了，最后打包成apk，是这样吗？还是要像[示例程序]第4步？\r\n谢谢。。。",
+        "state": "open",
+        "user": "breaknormal1",
+        "closed_by": null,
+        "created_at": "2018-01-05T03:13:11+00:00",
+        "updated_at": "2018-04-12T07:15:26+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Xreki",
+            "IceHee"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 72,
+        "title": "PaddlePaddle新年大礼！周边产品送不停！",
+        "body": "各位亲爱的PaddlePaddle用户：\r\n\r\n2017年已经过去，感谢你们一直陪伴PaddlePaddle在深度学习领域共同成长，无论是应用、贡献、还是review、纠错；每一个人的付出对于PaddlePaddle都是至关重要的。**值此新年，PaddlePaddle准备了一批周边小礼物赠送给各位，与各位一同迎接更好的2018！PaddlePaddle，一起加油！**\r\n\r\n**周边礼物领取方式如下：**\r\n请各位使用者、贡献者将**如下信息**发到PaddlePaddle-TechWriter@baidu.com\r\n**【“姓名“+“github账号名” +“周边礼物快递邮寄地址”+”快递联系电话“+”定制卫衣号码（S：160，M：165，L：170，XL：175，xxL：180）“】** →发到PaddlePaddle-TechWriter@baidu.com\r\n我们会根据邮件中的地址为您送上PaddlePaddle周边礼物一份。\r\n您也可以同时回复此issue-”你对PaddlePaddle的祝福和嘱咐“或“PaddlePaddle，一起加油！”来提醒我们查收您的邮件。\r\n\r\n# 礼物内容如下：\r\n每位发送邮件的用户都能获得PaddlePaddle**礼袋一个，内置“LOGO卫衣+贴纸+纪念小徽章“**\r\n\r\n![image](https://user-images.githubusercontent.com/27677185/34556980-9ed91f42-f173-11e7-974c-e0db65314868.png)\r\n\r\n\r\n# 重要贡献用户随机加发下列周边产品之一：\r\n## PaddlePaddle定制款-膳魔师保温水杯\r\n\r\n![image](https://user-images.githubusercontent.com/27677185/34556983-a3bcbed8-f173-11e7-9c0c-7fe35348b0c7.png)\r\n\r\n## PaddlePaddle定制款-机械键盘\r\n\r\n![image](https://user-images.githubusercontent.com/27677185/34556989-a9dc7c4a-f173-11e7-80d0-5af5ec9f2a20.png)\r\n\r\n\r\n## PaddlePaddle定制款-树莓派\r\n\r\n![image](https://user-images.githubusercontent.com/27677185/34557019-d4f113e6-f173-11e7-9489-265ac6ba207b.png)\r\n\r\n# 如有其他疑问，可以直接回复本issue~~感谢大家的支持！",
+        "state": "open",
+        "user": "angelashane",
+        "closed_by": null,
+        "created_at": "2018-01-04T09:27:17+00:00",
+        "updated_at": "2018-01-10T03:00:01+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "realsnake"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 74,
+        "title": "建议加上iOS和安卓平台编译好的release库，以便开发者直接下载使用",
+        "body": "Hi，\r\n我看文档介绍都是从源码编译出库来再使用，通常是比较费时费力，且提高了使用门槛。 建议加上官方发布的release版本，直接提供下载使用。",
+        "state": "closed",
+        "user": "realsnake",
+        "closed_by": "realsnake",
+        "created_at": "2018-01-08T09:15:27+00:00",
+        "updated_at": "2018-01-09T01:56:05+00:00",
+        "closed_at": "2018-01-09T01:56:05+00:00",
+        "comments_count": [
+            "hedaoyuan",
+            "realsnake"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 75,
+        "title": "希望支持paddlepaddle的model转换成coreML的model",
+        "body": "TensorFlow lite已经支持了，这个convert工具最好paddle官方也能支持",
+        "state": "open",
+        "user": "realsnake",
+        "closed_by": null,
+        "created_at": "2018-01-09T01:57:45+00:00",
+        "updated_at": "2021-11-22T11:34:20+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Xreki",
+            "hzhang33BEI"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 76,
+        "title": "capi加载模型出错mapGet(type, creatorMap_, &creator) Unknown class type: data",
+        "body": "[ar_infer.paddle.zip](https://github.com/PaddlePaddle/Mobile/files/1615122/ar_infer.paddle.zip)\r\n我使用了merge_model 生成了.paddle文件以供capi加载\r\n\r\ninit没报错应该是成功了，paddle_gradient_machine_create_for_inference_with_parameters报错了，传入的参数buf无为空，size对比模型文件本身大小是一致的，错误log如下：\r\n```\r\nI0109 20:28:47.075923 3058023296 Util.cpp:166] commandline:  --use_gpu=False --pool_limit_size=0 \r\nF0109 20:28:58.992383 3058023296 ClassRegistrar.h:65] Check failed: mapGet(type, creatorMap_, &creator) Unknown class type: data\r\n*** Check failure stack trace: ***\r\n2018-01-09 20:28:59.041616+0800 IphoneCom[3630:2417368] Task <A23BCE12-DE2B-4E27-92CD-C29598C63E49>.<2> finished with error - code: -1001\r\n2018-01-09 20:28:59.047358+0800 IphoneCom[3630:2417138] TIC TCP Conn Failed [2:0x1c0176500]: 3:-9802 Err(-9802)\r\n2018-01-09 20:28:59.048243+0800 IphoneCom[3630:2417138] Task <A23BCE12-DE2B-4E27-92CD-C29598C63E49>.<2> HTTP load failed (error code: -999 [1:89])\r\n    @        0x1059942e0  google::LogMessage::Fail()\r\n    @        0x105993408  google::LogMessage::SendToLog()\r\n    @        0x105993bdc  google::LogMessage::Flush()\r\n    @        0x1059971b4  google::LogMessageFatal::~LogMessageFatal()\r\n    @        0x105994620  google::LogMessageFatal::~LogMessageFatal()\r\n    @        0x105918f10  _ZN6paddle14ClassRegistrarINS_5LayerEJNS_11LayerConfigEEE12createByTypeERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEES2_\r\n    @        0x105918d94  paddle::Layer::create()\r\n    @        0x10591a75c  paddle::NeuralNetwork::init()::$_0::operator()()\r\n    @        0x10591a010  paddle::NeuralNetwork::init()\r\n    @        0x10591f250  paddle::GradientMachine::create()\r\n    @        0x105917410  paddle_gradient_machine_create_for_inference_with_parameters\r\n    @        0x1043e0548  init_machine()\r\n    @        0x1043e0280  -[BNLocationManager init]\r\n    @        0x1043dff10  +[BNLocationManager GetInstance]\r\n    @        0x104520878  +[BNCoreServices LocationService]\r\n    @        0x10451c988  -[BNCoreServices doAfterInitEngine]\r\n    @        0x1045195bc  __40-[BNCoreServices startSericesAsyn:fail:]_block_invoke_2\r\n    @        0x10f87d2cc  _dispatch_call_block_and_release\r\n    @        0x10f87d28c  _dispatch_client_callout\r\n    @        0x10f881ea0  _dispatch_main_queue_callback_4CF\r\n    @        0x1851b2544  <redacted>\r\n    @        0x1851b0120  <redacted>\r\n    @        0x1850cfe58  CFRunLoopRunSpecific\r\n    @        0x186f7cf84  GSEventRunModal\r\n    @        0x18e74f67c  UIApplicationMain\r\n    @        0x102ee0c30  main\r\n    @        0x184bec56c  <redacted>\r\n```",
+        "state": "closed",
+        "user": "realsnake",
+        "closed_by": "realsnake",
+        "created_at": "2018-01-09T12:49:27+00:00",
+        "updated_at": "2018-01-10T02:51:52+00:00",
+        "closed_at": "2018-01-10T02:51:51+00:00",
+        "comments_count": [
+            "Xreki",
+            "Xreki",
+            "realsnake"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 77,
+        "title": "Android demo和iOS demo的对比体验",
+        "body": "下载了Android分支的demo，编译之后安装之后发现和iOS的不一样，android的相机界面没有识别出来物体",
+        "state": "closed",
+        "user": "afantree",
+        "closed_by": "afantree",
+        "created_at": "2018-01-16T08:08:10+00:00",
+        "updated_at": "2018-01-23T10:12:44+00:00",
+        "closed_at": "2018-01-22T07:39:46+00:00",
+        "comments_count": [
+            "Xreki",
+            "afantree",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 79,
+        "title": "能否提Android项目的整个项目结构",
+        "body": "项目https://github.com/PaddlePaddle/Mobile/tree/develop/Demo/Android/AICamera\r\n这个项目有很多目录都没有，我不知道它的结构是什么，能否把整一个项目目录发我 ，我的邮箱为：yeyupiaoling@foxmail.com",
+        "state": "closed",
+        "user": "yeyupiaoling",
+        "closed_by": "yeyupiaoling",
+        "created_at": "2018-02-26T05:55:44+00:00",
+        "updated_at": "2018-03-04T11:13:08+00:00",
+        "closed_at": "2018-03-04T11:13:08+00:00",
+        "comments_count": [
+            "Xreki",
+            "yeyupiaoling",
+            "Xreki",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "yeyupiaoling"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 83,
+        "title": "Error when building linux ssd demo ",
+        "body": "I followed this [guide](https://github.com/PaddlePaddle/Mobile/tree/develop/Demo/linux) to build the ssd demo on Ubuntu 16.04.  \r\nEverything is ok untill `make` , the error is: \r\n\r\n> /home/zfq/Mobile/Demo/linux/paddle_image_recognizer.h:23:59: error: ‘const char* paddle_error_string(paddle_error)’ was declared ‘extern’ and later ‘static’ [-fpermissive]\r\n\r\nI am new at C++, so could anyone help me, please, thanks!",
+        "state": "open",
+        "user": "zhaofenqiang",
+        "closed_by": null,
+        "created_at": "2018-03-12T05:10:58+00:00",
+        "updated_at": "2018-03-12T05:11:20+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 78,
+        "title": "编译Android的PaddlePaddle库最低支持Android API多少",
+        "body": "在文档http://www.paddlepaddle.org/docs/develop/documentation/zh/mobile/cross_compiling_for_android_cn.html中提到\r\n>由于arm64架构要求Android API不小于21\r\n\r\n如果只是使用到`armeabi-v7a`，最低支持的Android API是多少？",
+        "state": "closed",
+        "user": "yeyupiaoling",
+        "closed_by": "yeyupiaoling",
+        "created_at": "2018-02-25T12:52:49+00:00",
+        "updated_at": "2018-02-27T08:33:44+00:00",
+        "closed_at": "2018-02-27T08:33:44+00:00",
+        "comments_count": [
+            "Xreki",
+            "yeyupiaoling"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 80,
+        "title": "使用Android Studio开发是要选择C++支持吗？",
+        "body": "在用Android Studio创建Android项目时，要选择C++支持吗，还是默认就可以了？",
+        "state": "closed",
+        "user": "yeyupiaoling",
+        "closed_by": "yeyupiaoling",
+        "created_at": "2018-02-26T15:17:33+00:00",
+        "updated_at": "2018-02-27T08:33:02+00:00",
+        "closed_at": "2018-02-27T08:33:02+00:00",
+        "comments_count": [
+            "Xreki",
+            "yeyupiaoling"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 81,
+        "title": "Android加载PaddlePaddle库失败",
+        "body": "我创建一个Android项目，使用官方的[FindPaddle.cmake](https://github.com/PaddlePaddle/Mobile/blob/477186702e368a55c6a3319f2b78257c7c0ac51d/Demo/Android/AICamera/app/FindPaddle.cmake)和[CMakeLists.txt](https://github.com/PaddlePaddle/Mobile/blob/477186702e368a55c6a3319f2b78257c7c0ac51d/Demo/Android/AICamera/app/CMakeLists.txt)，只是修改下面部分，报错，无法构建项目\r\n```\r\nadd_library( # Sets the name of the library.\r\n             paddle_image_recognizer\r\n\r\n             # Sets the library as a shared library.\r\n             SHARED\r\n\r\n             # Provides a relative path to your source file(s).\r\n             src/main/cpp/image_recognizer_jni.cpp\r\n             src/main/cpp/paddle_image_recognizer.cpp\r\n             src/main/cpp/binary_reader.cpp\r\n             src/main/cpp/image_utils.cpp )\r\n```\r\n报错如下：\r\n![image](https://user-images.githubusercontent.com/26297768/36777609-14ea837c-1ca5-11e8-878e-5353f5dfce8f.png)\r\n\r\n输出日志：\r\n[CMakeOutput.log](https://github.com/PaddlePaddle/Mobile/files/1766263/CMakeOutput.log)\r\n\r\n**如果不是使用官方的CMakeLists.txt**\r\n就不会报上面的错，可能是我没有修改里面的东西，这就没有加载PaddlePaddle库，就报错如下：\r\n![image](https://user-images.githubusercontent.com/26297768/36823150-a550c912-1d36-11e8-86d9-3f1a17593a81.png)\r\n",
+        "state": "closed",
+        "user": "yeyupiaoling",
+        "closed_by": "yeyupiaoling",
+        "created_at": "2018-03-04T11:08:10+00:00",
+        "updated_at": "2018-03-16T11:01:47+00:00",
+        "closed_at": "2018-03-16T11:01:47+00:00",
+        "comments_count": [
+            "Xreki",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "Xreki",
+            "yeyupiaoling",
+            "Xreki",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "yeyupiaoling"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 82,
+        "title": "Android初始化PaddlePaddle问题",
+        "body": "看Android得例子，初始化代码应该是这一段\r\nhttps://github.com/PaddlePaddle/Mobile/blob/477186702e368a55c6a3319f2b78257c7c0ac51d/Demo/Android/AICamera/app/src/main/cpp/paddle_image_recognizer.cpp#L66-L75\r\n\r\n其中`--pool_limit_size=0`是什么意思，是否可以在初始化PaddlePaddle的时候指定使用使用GPU\r\n我看到代码指定是否使用GPU是这一段\r\nhttps://github.com/PaddlePaddle/Mobile/blob/477186702e368a55c6a3319f2b78257c7c0ac51d/Demo/Android/AICamera/app/src/main/cpp/paddle_image_recognizer.cpp#L239-L242",
+        "state": "closed",
+        "user": "yeyupiaoling",
+        "closed_by": "yeyupiaoling",
+        "created_at": "2018-03-08T05:37:09+00:00",
+        "updated_at": "2018-05-24T01:49:04+00:00",
+        "closed_at": "2018-05-24T01:49:04+00:00",
+        "comments_count": [
+            "yeyupiaoling"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 84,
+        "title": " \" Unknown class type: recurrent_layer_group\"  when using capi in ios ",
+        "body": "\" Unknown class type: recurrent_layer_group\" error occur  when I run inference using RNN model\r\ncapi: download from the pre-compiled libs in paddle mobile\r\nios：iphone7\r\n\r\nF0322 17:16:18.261178 3028687744 ClassRegistrar.h:65] Check failed: mapGet(type, creatorMap_, &creator) Unknown class type: recurrent_layer_group\r\n*** Check failure stack trace: ***\r\n    @        0x102c7e0bc  google::LogMessage::Fail()\r\n    @        0x102c7d1e4  google::LogMessage::SendToLog()\r\n    @        0x102c7d9b8  google::LogMessage::Flush()\r\n    @        0x102c80f90  google::LogMessageFatal::~LogMessageFatal()\r\n    @        0x102c7e3fc  google::LogMessageFatal::~LogMessageFatal()\r\n    @        0x102bc0a54  _ZN6paddle14ClassRegistrarINS_5LayerEJNS_11LayerConfigEEE12createByTypeERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEES2_\r\n    @        0x102bc08d8  paddle::Layer::create()\r\n    @        0x102be650c  paddle::NeuralNetwork::init()::$_0::operator()()\r\n    @        0x102be5dc0  paddle::NeuralNetwork::init()\r\n    @        0x102beaae0  paddle::GradientMachine::create()\r\n    @        0x102c0689c  paddle_gradient_machine_create_for_inference_with_parameters",
+        "state": "open",
+        "user": "spencerlisp",
+        "closed_by": null,
+        "created_at": "2018-03-22T09:22:48+00:00",
+        "updated_at": "2018-03-23T03:28:19+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Xreki",
+            "spencerlisp",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 87,
+        "title": "请问老师几个paddlepaddle移植安卓上的问题",
+        "body": "请问：是不是我只有一个模型就不需要用到这一步：使用模型配置文件（如config.py）和模型参数（例如params_pass_0.tar.gz）来获得合并的模型文件？\r\n",
+        "state": "open",
+        "user": "IceHee",
+        "closed_by": null,
+        "created_at": "2018-04-13T03:04:38+00:00",
+        "updated_at": "2018-04-16T04:58:27+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 90,
+        "title": "AICamera android: cannot run normally, because there is no resize process and yuv2rgb function return negative value?",
+        "body": "Why push code that bugs exist and cannot run normally to github ?  And to mislead others  on purpose.",
+        "state": "open",
+        "user": "youngstu",
+        "closed_by": null,
+        "created_at": "2018-04-27T11:23:36+00:00",
+        "updated_at": "2018-04-28T02:05:45+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Xreki",
+            "youngstu",
+            "youngstu",
+            "youngstu",
+            "youngstu",
+            "youngstu",
+            "Xreki",
+            "youngstu",
+            "youngstu",
+            "Xreki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 92,
+        "title": "demo linux ",
+        "body": "我在树莓派上编译demo/linux.报如下的错误，提示找不到protobuf，可是protobuf明明在啊，请问是为什么呢\r\n\r\n-- Found PaddlePaddle (include: /usr/include; library: /usr/lib/libpaddle_capi_layers.a, /usr/lib/libpaddle_capi_engine.a)\r\nCMake Warning at FindPaddle.cmake:70 (message):\r\n  Cannot find protobuf under /home/paddle/_install/third_party\r\nCall Stack (most recent call first):\r\n  FindPaddle.cmake:75 (third_party_library)\r\n  CMakeLists.txt:19 (find_package)\r\n\r\n\r\n-- Found glog: /home/paddle/_install/third_party/glog/lib/libglog.a\r\n-- Found openblas: /home/paddle/_install/third_party/openblas/lib/libopenblas.a\r\n-- Found gflags: /home/paddle/_install/third_party/gflags/lib/libgflags.a\r\n-- Found zlib: /home/paddle/_install/third_party/zlib/lib/libz.a\r\n-- Configuring done\r\n-- Generating done\r\n-- Build files have been written to: /home/paddle/Mobile/Demo/linux/build",
+        "state": "open",
+        "user": "CHNEG8805",
+        "closed_by": null,
+        "created_at": "2018-05-11T04:03:20+00:00",
+        "updated_at": "2018-09-26T03:20:47+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lcxywfe"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "number": 93,
+        "title": "Android手机读取图像问题",
+        "body": "@Xreki 我根据Android的Dome做了一个图像分类的，但是在读取出了点问题。在Java中，是把图像转成字节数组的，所以我也是这个样做，如下代码。但是pixels这个字节数组得到的结果是不定长的，但是图像明明都是3\\*32\\*32的。大小应该都是3072才对。这是为什么呢？\r\n```java\r\n\r\n    public String infer(String img_path) {\r\n        //把图像读取成一个Bitmap对象\r\n        Bitmap bitmap = BitmapFactory.decodeFile(img_path);\r\n        ByteArrayOutputStream baos = new ByteArrayOutputStream();\r\n        bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);\r\n        //把图像生成一个字节数组\r\n        byte[] pixels = baos.toByteArray();\r\n        Log.i(\"datas大小为\", String.valueOf(pixels.length));\r\n        try {\r\n            baos.close();\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        }\r\n\r\n        if (mRgbBytes == null) {\r\n            mRgbBytes = new byte[3072];\r\n        }\r\n        for (int i = 0; i < pixels.length; i++) {\r\n            mRgbBytes[i] = pixels[i];\r\n            Log.i(\"ImageRecognition\", String.valueOf(mRgbBytes[i]));\r\n        }\r\n        // 获取预测结果\r\n        float[] result = infer(mRgbBytes);\r\n        // 把概率最大的结果提取出来\r\n        float max = 0;\r\n        int number = 0;\r\n        for (int i = 0; i < result.length; i++) {\r\n            if (result[i] > max) {\r\n                max = result[i];\r\n                number = i;\r\n            }\r\n        }\r\n        String msg = \"类别为：\" + clasName[number] + \"，可信度为：\" + max;\r\n        Log.i(\"ImageRecognition\", msg);\r\n\r\n        return msg;\r\n    }\r\n```\r\n\r\n就是因为上面的大小没有充满矩阵，导致array很多都是0的。\r\n```c\r\n    for (size_t c = 0; c < 3; ++c) {\r\n        for (size_t h = 0; h < 32; ++h) {\r\n            for (size_t w = 0; w < 32; ++w) {\r\n                array[index] =\r\n                        static_cast<float>(((pixels[(h * 32 + w) * 3 + c]) - means[c]) / 255.0);\r\n                LOGI(\"array_src:%f\", array[index]);\r\n                index++;\r\n            }\r\n        }\r\n    }\r\n```\r\n这个怎么解决？？？求解答。",
+        "state": "closed",
+        "user": "yeyupiaoling",
+        "closed_by": "yeyupiaoling",
+        "created_at": "2018-05-23T06:23:55+00:00",
+        "updated_at": "2018-05-25T12:55:03+00:00",
+        "closed_at": "2018-05-25T12:55:03+00:00",
+        "comments_count": [
+            "yeyupiaoling"
+        ],
+        "labels": []
+    }
+]

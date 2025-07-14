@@ -1,0 +1,65 @@
+[
+    {
+        "repo": "PFCCLab/release-notes-drafter",
+        "number": 2,
+        "title": "issue stats script added",
+        "body": null,
+        "issue_number": "2",
+        "state": "closed",
+        "merged": true,
+        "user": "jzhang533",
+        "merged_by": "jzhang533",
+        "created_at": "2024-02-29T05:12:55+00:00",
+        "closed_at": "2024-02-29T05:13:04+00:00",
+        "additions": 166,
+        "deletions": 0,
+        "changed_files": 3,
+        "commits": [
+            "f0254352f2afdded96228f1ed46328104981b895"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/release-notes-drafter",
+        "number": 3,
+        "title": " Get the values of pr_category and pr_types from the 'PR template'",
+        "body": "从PR模板中获取到PR的Category和Types内容",
+        "issue_number": "3",
+        "state": "closed",
+        "merged": true,
+        "user": "XieYunshen",
+        "merged_by": "jzhang533",
+        "created_at": "2024-06-18T08:55:12+00:00",
+        "closed_at": "2025-03-26T09:19:32+00:00",
+        "additions": 66,
+        "deletions": 28,
+        "changed_files": 2,
+        "commits": [
+            "aeaef6ffe2a670bb81abd3ec57f74424885045be"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/release-notes-drafter",
+        "number": 1,
+        "title": "fix bug when node is none",
+        "body": "不知道为啥，有时候拉下来的author是空值，导致脚本出错",
+        "issue_number": "1",
+        "state": "closed",
+        "merged": true,
+        "user": "sunzhongkai588",
+        "merged_by": "jzhang533",
+        "created_at": "2023-11-30T06:26:30+00:00",
+        "closed_at": "2023-11-30T06:29:27+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "f691ef8a7d5de84c57369fbf36638d1d5aa7d51b"
+        ],
+        "comment_by": [],
+        "review_by": []
+    }
+]

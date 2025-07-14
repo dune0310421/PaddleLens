@@ -1,0 +1,1211 @@
+[
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "d305c68604f55a0b9cf735f2718e39bac1732cdc",
+        "created_at": "2023-03-10 15:53:42 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-main.py",
+        "files": [
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "a11c324f04109672ad8cdc2d6a76b7befae295bd",
+        "created_at": "2023-03-17 10:34:56 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "9ceab0e3a2e5cd73641bab441c36f75527bf4092",
+        "created_at": "2023-03-10 15:54:06 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-main.py",
+        "files": [
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "5bed6b61804fef6df9c5f2552558121f7f8770ba",
+        "created_at": "2023-02-25 02:06:55 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 3,
+                "changes": 11
+            },
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "main.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "src/paddle_tools.py",
+                "status": "modified",
+                "additions": 29,
+                "deletions": 3,
+                "changes": 32
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "ca57bd7b12b1e357bd3e064a6d0b5123bdc6a874",
+        "created_at": "2023-03-14 19:07:43 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "add-paddleslim",
+        "files": [
+            {
+                "filename": "src/paddle_tools.py",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 1,
+                "changes": 34
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "dce2be19378357f986c1030a0b799b2a8cef8c2c",
+        "created_at": "2023-06-17 19:56:36 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-auto_install_paddle.sh",
+        "files": [
+            {
+                "filename": "src/auto_install_paddle.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "40d8597723d6cb171e50eeb6c94bebd7c7ebffb1",
+        "created_at": "2023-02-24 23:15:39 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix-windows",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 14,
+                "changes": 39
+            },
+            {
+                "filename": "paddle_tools.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 5,
+                "changes": 36
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "68f5e8edfde827ee4385c14b770112c0e7348e81",
+        "created_at": "2023-02-25 02:30:16 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "copy_cudnn.py",
+                "status": "modified",
+                "additions": 57,
+                "deletions": 1,
+                "changes": 58
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "bee29277a1d4791edcdd0b754b0cf37f31ae1373",
+        "created_at": "2023-03-17 10:36:02 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "d0422a728694239d1bb1fb6c21c8f1f3a1349a65",
+        "created_at": "2023-03-14 19:18:42 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "add-paddleslim",
+        "files": [
+            {
+                "filename": "src/paddle_tools.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "882a568ad0a71be4bfd74b66ca8a7690f82008f2",
+        "created_at": "2023-03-10 15:01:02 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "main.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "abffa0e6e1a416339e5b3de580e1223584177243",
+        "created_at": "2023-07-31 18:35:22 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-auto_install_paddle.sh",
+        "files": [
+            {
+                "filename": "src/auto_install_paddle.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "6f70c71cc08efc28c62f04fe7b5c025f0b62d3b8",
+        "created_at": "2023-02-21 19:05:30 +0800",
+        "author": "anine09",
+        "committer": "anine09",
+        "message": "modify-modify-upgrade-method-of-pip",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "c87949d01b9ca2c31c54fc86b80f50b4939f304f",
+        "created_at": "2023-02-24 16:23:52 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "add-paddle_sub",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 119,
+                "deletions": 25,
+                "changes": 144
+            },
+            {
+                "filename": "paddle_tools.py",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "c194cae9366a359198cc95fe34354c29a41f392b",
+        "created_at": "2023-02-22 22:49:57 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "60d52ac63ba628583fa81c08509b518143a88743",
+        "created_at": "2023-02-20 19:48:19 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "add-cudnn",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 52,
+                "deletions": 8,
+                "changes": 60
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "6f19be4b41c13571fea02067bdb789cd86838132",
+        "created_at": "2023-02-21 20:36:30 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-4-from-anine09-main",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "ad7810fb35b22f366c84d2824ebb1a881c6db180",
+        "created_at": "2023-02-22 22:40:59 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix-cudnn-version",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            },
+            {
+                "filename": "copy_cudnn.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "0bfcb82a00c5bc7e9c5b84b01e6f15962218b1e2",
+        "created_at": "2023-02-20 21:49:05 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-3-from-anine09-main",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "85e83521ef00b5c361df0be2981a71b23b961d15",
+        "created_at": "2023-02-19 21:34:46 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-auto_install_paddle_WIN.py",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 8,
+                "changes": 15
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "8d7b41731e5892a5204ec58a752f0b4f465d21a1",
+        "created_at": "2023-02-20 21:45:01 +0800",
+        "author": "anine09",
+        "committer": "anine09",
+        "message": "add-copy_cudnn.py",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 9,
+                "changes": 11
+            },
+            {
+                "filename": "copy_cudnn.py",
+                "status": "added",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "a36d36f45c2e4e9b09827bdac47af6cee20c7b52",
+        "created_at": "2023-02-21 18:59:52 +0800",
+        "author": "anine09",
+        "committer": "anine09",
+        "message": "fix-copy-cudnn-to-existing-folder",
+        "files": [
+            {
+                "filename": "copy_cudnn.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "414122dd683160305c5ae4bc178d13f70604de29",
+        "created_at": "2023-02-19 21:38:44 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-2-from-anine09-main",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "b1b27fa8c27bcb835fe45bcfeaae0d09a9745f47",
+        "created_at": "2023-02-19 21:37:54 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-auto_install_paddle_WIN.py",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "c1f6db3c723d6bb594b876c4d2fb73f3bf515ff8",
+        "created_at": "2023-02-19 19:52:27 +0800",
+        "author": "anine09",
+        "committer": "anine09",
+        "message": "update",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "871c6059612a62318e099de74387cd89a9b35661",
+        "created_at": "2023-02-19 19:41:48 +0800",
+        "author": "anine09",
+        "committer": "anine09",
+        "message": "add-.gitignore",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "4fccc54ab2d164c7d6a657487a8f974efcfcfa52",
+        "created_at": "2023-02-19 19:40:51 +0800",
+        "author": "anine09",
+        "committer": "anine09",
+        "message": "modify-cuda-install-method",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 10,
+                "changes": 20
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "1969fb6a54a5c12cac51b4d4b27298ca7d2465bf",
+        "created_at": "2023-02-19 21:02:03 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Delete-.gitignore",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "9524c862437891a2ea6549397dae299756bf7874",
+        "created_at": "2023-02-19 19:20:07 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-1-from-anine09-patch-1",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "9441dd5a51603955571f66b594aec9ebe555f6bb",
+        "created_at": "2023-02-19 19:10:20 +0800",
+        "author": "anine09",
+        "committer": "web-flow",
+        "message": "fix-powershell-command-error",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "14bb03c1aed365e7473a7ce44a67d18bf9cc0036",
+        "created_at": "2023-02-14 14:53:25 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "src/auto_install_paddle.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "7a8dcc0de6a290de405161c0435b00ba0d7a5b8c",
+        "created_at": "2023-02-17 10:47:28 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix-pip",
+        "files": [
+            {
+                "filename": "src/auto_install_paddle.sh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "c523394059847b498aefae22f7f9e75d6a3e240a",
+        "created_at": "2023-02-17 10:57:44 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix-nlp",
+        "files": [
+            {
+                "filename": "src/PaddleNLP.sh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "4e523767188a55b28384ac36c517682986d47a79",
+        "created_at": "2023-02-19 18:43:20 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "add-windows",
+        "files": [
+            {
+                "filename": "auto_install_paddle_WIN.py",
+                "status": "added",
+                "additions": 117,
+                "deletions": 0,
+                "changes": 117
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "71eb57387b2aca6be70584f6b845a347b8464b4e",
+        "created_at": "2023-02-14 14:44:22 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "fool-proof-paddle.zip",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "main.sh",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "src/auto_install_paddle.sh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 14,
+                "changes": 19
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "6f69ef72e8e96d3114e4db1029eaea3ae31825ac",
+        "created_at": "2023-02-17 09:50:25 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "rm-python-m",
+        "files": [
+            {
+                "filename": "src/auto_install_paddle.sh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "53f0633d77299f02641aa71df89466e45fd92ffb",
+        "created_at": "2023-02-14 14:13:11 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix-source",
+        "files": [
+            {
+                "filename": "src/auto_install_paddle.sh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "d989d5788dd6c710f5878d1b66ec21b1914597ed",
+        "created_at": "2023-02-14 14:12:16 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix-source",
+        "files": [
+            {
+                "filename": "src/auto_install_paddle.sh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "13bf6a0bb688e09a247cd734fca0819c37de2664",
+        "created_at": "2023-02-12 16:05:27 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "0212",
+        "files": [
+            {
+                "filename": "main.sh",
+                "status": "modified",
+                "additions": 54,
+                "deletions": 2,
+                "changes": 56
+            },
+            {
+                "filename": "src/FastDeploy.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/PaddleClas.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/PaddleDetection.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/PaddleGAN.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/PaddleNLP.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/PaddleOCR.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/PaddleSeg.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/PaddleSlim.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/PaddleSpeech.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/PaddleVideo.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "da600c2c3e60785128a262e131902936fde8792e",
+        "created_at": "2023-02-12 17:12:38 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fx",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            },
+            {
+                "filename": "fool-proof-paddle.zip",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "08aff4dc8a07c81f0d0ab5b386c8c4fd937c4164",
+        "created_at": "2023-02-11 21:40:52 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "8c11444e6f85b7358e3c7499e152b62d1774db94",
+        "created_at": "2023-02-11 21:37:26 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 5,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "695dcab6aeaa95ad58d97669be302e2f1ba72e3e",
+        "created_at": "2023-02-12 15:22:55 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "update",
+        "files": [
+            {
+                "filename": "main.sh",
+                "status": "added",
+                "additions": 70,
+                "deletions": 0,
+                "changes": 70
+            },
+            {
+                "filename": "src/auto_install_paddle.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/download_paddle.sh",
+                "status": "modified",
+                "additions": 94,
+                "deletions": 20,
+                "changes": 114
+            },
+            {
+                "filename": "src/ppcls_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/ppdet_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/ppfd_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/ppgan_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/ppnlp_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/ppocr_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/ppseg_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/ppslim_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/ppspeech_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/ppvideo_install.sh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "1ef77a752e19a266036af10c89af61be4b547ab8",
+        "created_at": "2023-02-11 22:11:04 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "69aa96a1a9b47770bd49dd10e96175165a9ceb5d",
+        "created_at": "2023-02-11 21:44:48 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "edede927f1d84318ba18bb32ec40fb8ca4728b6e",
+        "created_at": "2023-02-11 20:22:16 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "d54bc1224a2a6b5b2b3994686f69d6b508ff2239",
+        "created_at": "2023-02-11 21:38:14 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "Merge-branch-main-of-github.com-sanbuphy-fool-proof-paddle",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "30bf4df32763f1594b4fdaa515aff43fa51ecc9d",
+        "created_at": "2023-02-11 20:03:41 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "7dbe3ba69fdd11065d8866a7d9f14f3bdf312495",
+        "created_at": "2023-02-11 19:53:54 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "fix",
+        "files": [
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 1,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "016b14ac6d05ec63a7b7fa6b2a6be047926f64a2",
+        "created_at": "2023-02-11 18:05:56 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "Merge-branch-main-of-github.com-sanbuphy-fool-proof-paddle",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "80ac5a29e7ce7a2afb9040652e037437927b20e7",
+        "created_at": "2023-02-10 23:15:17 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "2f7c807f13f1fa75a558e1cb9e553a6e64640676",
+        "created_at": "2023-02-11 18:07:17 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "update",
+        "files": [
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "dd8364ffff178ba692f8fb6a59e48b41a30289d3",
+        "created_at": "2023-02-11 18:05:30 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "update",
+        "files": [
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "modified",
+                "additions": 63,
+                "deletions": 11,
+                "changes": 74
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "4e2407da4b349f0c2f256de4de25843c6842fb56",
+        "created_at": "2023-02-10 22:58:13 +0800",
+        "author": "sanbuphy",
+        "committer": "web-flow",
+        "message": "Initial-commit",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "sha": "b2a3c4a151b600e04a30644de1332871ad2c423e",
+        "created_at": "2023-02-10 23:06:45 +0800",
+        "author": "sanbuphy",
+        "committer": "sanbuphy",
+        "message": "0210",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "\"auto_install_paddle\\346\\234\\200\\346\\226\\260\\347\\211\\210.sh\"",
+                "status": "added",
+                "additions": 147,
+                "deletions": 0,
+                "changes": 147
+            },
+            {
+                "filename": "download_paddle.sh",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "ppcls_install.sh",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "ppdet_install.sh",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "ppfd_install.sh",
+                "status": "added",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            },
+            {
+                "filename": "ppgan_install.sh",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "ppnlp_install.sh",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "ppocr_install.sh",
+                "status": "added",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": "ppseg_install.sh",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "ppslim_install.sh",
+                "status": "added",
+                "additions": 69,
+                "deletions": 0,
+                "changes": 69
+            },
+            {
+                "filename": "ppspeech_install.sh",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "ppvideo_install.sh",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            }
+        ]
+    }
+]

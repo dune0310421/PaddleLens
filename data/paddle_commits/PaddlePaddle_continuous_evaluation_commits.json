@@ -1,0 +1,4129 @@
+[
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "0e8a60cd1f51c565b233cfe342e5fc1448f68945",
+        "created_at": "2020-03-11 09:32:23 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "models/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "c4b2047cc985b60f514eafb5de4e310830aa678b",
+        "created_at": "2019-11-14 21:12:28 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Create-init_python.sh",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/init_python.sh",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "7817d12bb641b3ffa132d2deae3fc4a8896c3b97",
+        "created_at": "2019-12-11 17:08:24 +0800",
+        "author": null,
+        "committer": null,
+        "message": "change-some-function",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/db.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "continuous_evaluation_py23/web/api.py",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 12,
+                "changes": 31
+            },
+            {
+                "filename": "continuous_evaluation_py23/web/main.py",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 9,
+                "changes": 32
+            },
+            {
+                "filename": "continuous_evaluation_py23/web/view.py",
+                "status": "modified",
+                "additions": 66,
+                "deletions": 18,
+                "changes": 84
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "473006a5c1d6e1f6451c2584caae52973f19f145",
+        "created_at": "2019-11-14 19:44:38 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-db.py",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/db.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "09cc84c0b9c7b59f0317b43b22ac93022f734c28",
+        "created_at": "2019-11-27 11:52:15 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.py",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "b2a61ba3d917e878bf0508ed7acef4392ff8fa73",
+        "created_at": "2019-09-16 15:55:03 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.xsh",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "2bf2db9b8699fb3d5a5fa197b8ecf51a18392c6f",
+        "created_at": "2019-11-14 19:45:00 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-db.py",
+        "files": [
+            {
+                "filename": "db.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "8a661990a6e03d2062062ecfc4e8bab9616484b9",
+        "created_at": "2019-11-14 21:17:21 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-init_python.sh",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/init_python.sh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "9774aab77bbb7dd23aa3c55e4f6b4063a3a044ad",
+        "created_at": "2019-12-11 19:52:29 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.py",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/web/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "4fb8e9a1561662ed075cedadeaed9cd9df33b79a",
+        "created_at": "2019-11-27 11:49:58 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.py",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "63f2b8d8d854316e1684f68375ff7c8f72b9dff5",
+        "created_at": "2019-11-27 11:46:26 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-_config.py",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/_config.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "7347ed8e89f345bf9fbaac754fba2d757636586e",
+        "created_at": "2019-12-11 19:52:56 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-api.py",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/web/api.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "5b07db60057101b090d86b261d99c487a4f2eb97",
+        "created_at": "2019-06-04 15:16:34 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.xsh",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "09057373af0778c1129cc514f7e90df8d320a60f",
+        "created_at": "2019-05-20 09:53:39 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "edea606fc51650c61a61ef4028123c254a12e8b8",
+        "created_at": "2019-06-04 18:45:45 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "change-mod-147",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/build_paddle.xsh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "continuous_evaluation_py23/repo.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "a349a883dd09558ecd8eb3b63f6c615c10d9b6c2",
+        "created_at": "2019-06-04 15:14:58 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.py",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "7057291df2d2b3af011749529ed6d6b159fb2102",
+        "created_at": "2019-07-12 13:04:36 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-Dockerfile",
+        "files": [
+            {
+                "filename": "Dockerfile",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "72d59588989e567f9772c776f045e778e06a7e74",
+        "created_at": "2019-01-30 13:04:24 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.py-144",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "2585ef9d257ff4193fff34f286bdc2a87e7896d6",
+        "created_at": "2019-05-15 14:31:44 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.xsh-146",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "fc3aa9efce0c3366edd02a179d8471f74e9c56a0",
+        "created_at": "2019-01-15 15:03:04 +0800",
+        "author": "zhengya01",
+        "committer": "kolinwei",
+        "message": "Develop-info-141",
+        "files": [
+            {
+                "filename": "_config.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 2,
+                "changes": 11
+            },
+            {
+                "filename": "continuous_evaluation_py23/_config.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 2,
+                "changes": 11
+            },
+            {
+                "filename": "continuous_evaluation_py23/db.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "continuous_evaluation_py23/kpi.py",
+                "status": "modified",
+                "additions": 42,
+                "deletions": 0,
+                "changes": 42
+            },
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 55,
+                "deletions": 6,
+                "changes": 61
+            },
+            {
+                "filename": "continuous_evaluation_py23/persistence.py",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 1,
+                "changes": 29
+            },
+            {
+                "filename": "db.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "kpi.py",
+                "status": "modified",
+                "additions": 42,
+                "deletions": 0,
+                "changes": 42
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 54,
+                "deletions": 4,
+                "changes": 58
+            },
+            {
+                "filename": "persistence.py",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 1,
+                "changes": 29
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "bf685084a824482218705bbc68fb49d40af96cf3",
+        "created_at": "2019-01-30 10:27:22 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.py-143",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "3e687d5219974b7853911050824dc9543a621cb7",
+        "created_at": "2019-06-04 10:11:20 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.py",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "539dd2c8499966f60f740ed74e6f195416f8f1c7",
+        "created_at": "2019-01-15 20:07:38 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.xsh-142",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "042e7ead00115e7765e2c087f702a8a8e3e52f3e",
+        "created_at": "2019-01-10 12:31:14 +0800",
+        "author": "zhengya01",
+        "committer": "kolinwei",
+        "message": "Update-py23-140",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "06e39a62b0a228e9613e65d89d41c31220bfbf31",
+        "created_at": "2019-01-09 14:47:11 +0800",
+        "author": "zhengya01",
+        "committer": "kolinwei",
+        "message": "update-py23-139",
+        "files": [
+            {
+                "filename": "_config.py",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "continuous_evaluation_py23/_config.py",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "continuous_evaluation_py23/build_paddle.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "continuous_evaluation_py23/db.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "continuous_evaluation_py23/eva.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            },
+            {
+                "filename": "continuous_evaluation_py23/kpi.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 1,
+                "changes": 26
+            },
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "modified",
+                "additions": 30,
+                "deletions": 26,
+                "changes": 56
+            },
+            {
+                "filename": "continuous_evaluation_py23/persistence.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 5,
+                "changes": 11
+            },
+            {
+                "filename": "continuous_evaluation_py23/repo.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "continuous_evaluation_py23/tools/gen_report.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "continuous_evaluation_py23/web/api.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "continuous_evaluation_py23/web/main.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "continuous_evaluation_py23/web/view.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "db.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "eva.xsh",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            },
+            {
+                "filename": "kpi.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 22,
+                "changes": 45
+            },
+            {
+                "filename": "persistence.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "repo.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "tools/gen_report.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "web/api.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "web/view.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "509796a79ba7a8ae997b9b41b4134b664deec08c",
+        "created_at": "2019-01-07 20:23:10 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "add-detail-info-138",
+        "files": [
+            {
+                "filename": "kpi.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 3,
+                "changes": 9
+            },
+            {
+                "filename": "persistence.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "ed1d7b6b3ff350872d7c9c2a8a247a533275b239",
+        "created_at": "2019-01-04 21:34:52 +0800",
+        "author": "zhengya01",
+        "committer": "kolinwei",
+        "message": "add-continuous_evaluation_py23-137",
+        "files": [
+            {
+                "filename": "continuous_evaluation_py23/Dockerfile",
+                "status": "added",
+                "additions": 144,
+                "deletions": 0,
+                "changes": 144
+            },
+            {
+                "filename": "continuous_evaluation_py23/README.md",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "continuous_evaluation_py23/analysis_kpis.py",
+                "status": "added",
+                "additions": 65,
+                "deletions": 0,
+                "changes": 65
+            },
+            {
+                "filename": "continuous_evaluation_py23/build_paddle.py",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "continuous_evaluation_py23/build_paddle.xsh",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "continuous_evaluation_py23/config.py",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "continuous_evaluation_py23/db.py",
+                "status": "added",
+                "additions": 63,
+                "deletions": 0,
+                "changes": 63
+            },
+            {
+                "filename": "continuous_evaluation_py23/eva.py",
+                "status": "added",
+                "additions": 126,
+                "deletions": 0,
+                "changes": 126
+            },
+            {
+                "filename": "continuous_evaluation_py23/kpi.py",
+                "status": "added",
+                "additions": 250,
+                "deletions": 0,
+                "changes": 250
+            },
+            {
+                "filename": "continuous_evaluation_py23/main.py",
+                "status": "added",
+                "additions": 310,
+                "deletions": 0,
+                "changes": 310
+            },
+            {
+                "filename": "continuous_evaluation_py23/main.xsh",
+                "status": "added",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "continuous_evaluation_py23/models/README.md",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "continuous_evaluation_py23/persistence.py",
+                "status": "added",
+                "additions": 49,
+                "deletions": 0,
+                "changes": 49
+            },
+            {
+                "filename": "continuous_evaluation_py23/repo.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "continuous_evaluation_py23/tools/gen_report.py",
+                "status": "added",
+                "additions": 122,
+                "deletions": 0,
+                "changes": 122
+            },
+            {
+                "filename": "continuous_evaluation_py23/tools/html.py",
+                "status": "added",
+                "additions": 214,
+                "deletions": 0,
+                "changes": 214
+            },
+            {
+                "filename": "continuous_evaluation_py23/tools/send_email.sh",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "continuous_evaluation_py23/tools/teamcity_api.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "continuous_evaluation_py23/tools/week_report.sh",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "continuous_evaluation_py23/tools/wiki_api.py",
+                "status": "added",
+                "additions": 68,
+                "deletions": 0,
+                "changes": 68
+            },
+            {
+                "filename": "continuous_evaluation_py23/utils.py",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "continuous_evaluation_py23/web/api.py",
+                "status": "added",
+                "additions": 215,
+                "deletions": 0,
+                "changes": 215
+            },
+            {
+                "filename": "continuous_evaluation_py23/web/main.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": "continuous_evaluation_py23/web/view.py",
+                "status": "added",
+                "additions": 394,
+                "deletions": 0,
+                "changes": 394
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "2bd185b20cf2e6b851ff14a74fe4a935e46544fe",
+        "created_at": "2018-11-02 11:55:47 +0800",
+        "author": "kolinwei",
+        "committer": "Superjomn",
+        "message": "Update-mongodb-132",
+        "files": [
+            {
+                "filename": "web/api.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "84127ed7aaa185c5f569f5dd88ef71e76be04bc4",
+        "created_at": "2019-01-03 13:13:19 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "Update-main.xsh-136",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "0a11fba5a7fd6d57ef1bc72534c8c7153fa050ba",
+        "created_at": "2018-08-25 20:38:10 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "failed-models-including-exceptions-125",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "6e08c41fd3242cf0b321cc1170e9afee1a77e872",
+        "created_at": "2018-11-12 13:18:23 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "update-main.py-modicy-mode-type-in-update-baseline-134",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "8ff96f08252c44dcd5573ed76fc436066f969ad9",
+        "created_at": "2018-10-10 10:34:08 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "set-WITH_INFERENCE_API_TEST-OFF-130",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "e0fdad91119dae2db381ec132697b756caa778b4",
+        "created_at": "2018-10-30 10:56:03 +0800",
+        "author": "kolinwei",
+        "committer": "Superjomn",
+        "message": "Update-config.py-131",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "84a5d7c062a4ae4feef6a6756bff3207209b68df",
+        "created_at": "2018-09-04 19:02:48 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "add-weekly-report-for-CE-using-teamcity-data-db-and-daily-report-122",
+        "files": [
+            {
+                "filename": "tools/gen_report.py",
+                "status": "modified",
+                "additions": 67,
+                "deletions": 36,
+                "changes": 103
+            },
+            {
+                "filename": "tools/html.py",
+                "status": "modified",
+                "additions": 40,
+                "deletions": 22,
+                "changes": 62
+            },
+            {
+                "filename": "tools/send_email.sh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "tools/teamcity_api.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "tools/week_report.sh",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "tools/wiki_api.py",
+                "status": "added",
+                "additions": 68,
+                "deletions": 0,
+                "changes": 68
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "3df6fcbe0e6d624cc9ef5dd9160466ad21bcb919",
+        "created_at": "2018-08-25 14:22:38 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "add-fail-models-for-fail-info-124",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "c1fd30f42831b33d97d354c8ff0297f6d7979b94",
+        "created_at": "2018-08-19 20:11:38 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Revert-fail-info-not-shown-123",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "0751f34ada7dbfedd4a64e90cb89b8bc8147c1bd",
+        "created_at": "2018-08-18 12:57:38 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Exception-121",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 6,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "e3727bf3575cdb4c3ee4673de06ea5970c648108",
+        "created_at": "2018-08-13 15:39:08 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-main.xsh-118",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "cd6443e90906d902e2e89e0ee0803bffeb4bcd0f",
+        "created_at": "2018-08-15 16:35:16 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "add-unit-for-models-117",
+        "files": [
+            {
+                "filename": "web/api.py",
+                "status": "modified",
+                "additions": 37,
+                "deletions": 2,
+                "changes": 39
+            },
+            {
+                "filename": "web/view.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 3,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "68a7d8a728800224ac990a116f62191dc4a0fe46",
+        "created_at": "2018-08-13 21:09:45 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Revert-Update-main.xsh-118-119",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "80aecdad4736c4d55c5c5c84836b51d51fa728a1",
+        "created_at": "2018-08-10 15:12:55 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "fail-info-not-shown-115",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "3dfb631fdd093fdbd24451dc3c2485ebc194e36e",
+        "created_at": "2018-08-15 16:35:37 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "add-weekly-report-tool-for-CE-93",
+        "files": [
+            {
+                "filename": "tools/gen_report.py",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "tools/html.py",
+                "status": "added",
+                "additions": 196,
+                "deletions": 0,
+                "changes": 196
+            },
+            {
+                "filename": "tools/send_email.sh",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "67e108011014c69dfb660a6ab0ec07d45d43c4b3",
+        "created_at": "2018-08-09 21:41:35 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-main.xsh",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "999b6760633339f770d38693724695083a8a1550",
+        "created_at": "2018-08-11 10:15:20 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "fix-bugs-that-dict-unordered-116",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 8,
+                "changes": 17
+            },
+            {
+                "filename": "persistence.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 4,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "79d4081b4ba9e1004ab99182429a8d2b47e30d8b",
+        "created_at": "2018-08-08 15:39:10 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Retry-for-ssh-112",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "95aabca7ad1eccff858fbbc7f4d30bdd3475b2fe",
+        "created_at": "2018-08-09 22:12:47 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-main.xsh-114",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "adbe249d740a9be9fb08e0cfb2ee29ec3f295d9d",
+        "created_at": "2018-08-08 15:33:17 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-kpi.py",
+        "files": [
+            {
+                "filename": "kpi.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "677dfb16d377b83301590f8344ee54920da2b25c",
+        "created_at": "2018-08-08 13:14:28 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "add-retry-for-ssh-from-github-111",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 3,
+                "changes": 19
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "80a6ccf7348bcfb8a0aba397653675fde93a104a",
+        "created_at": "2018-08-08 00:24:09 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-kpi.py",
+        "files": [
+            {
+                "filename": "kpi.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "2aa6d9ae2b3182942b8ebf3e9aa26dc90ac05e58",
+        "created_at": "2018-08-07 18:56:27 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "support-from-models-repo-task-pre-check-110",
+        "files": [
+            {
+                "filename": "eva.xsh",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 2,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "188cc01d8bfdea00c05dc26e2c613f1b285dd3b9",
+        "created_at": "2018-07-26 16:55:35 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "support-for-models-repo-101",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 2,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "e0ded57b4f527df485524e6d9a4c80786f48b1e3",
+        "created_at": "2018-08-03 22:32:58 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Set-repo-flag-107",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "548f240b7ff7e12b6d22c129155cc1075d93078e",
+        "created_at": "2018-08-03 19:55:33 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Set-tasks-or-models-to-run-105",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "1ae0019ad2f92c9f2b98fb496ca8a6f4278736d1",
+        "created_at": "2018-08-04 08:57:02 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "better-compatible-for-other-kinds-of-tasks-108",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 5,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "2bf59b3cd8f8033e283e24f084ef7d2f2dad1646",
+        "created_at": "2018-08-03 20:19:45 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "add-ce-conf-for-models-repo-s-model-106",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 2,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "f8c30141c833a3c97382fc1fce93deb1a7bbb6ae",
+        "created_at": "2018-07-19 16:32:44 +0800",
+        "author": "guochaorong",
+        "committer": "Superjomn",
+        "message": "fix-bug-specific_tasks-is-used-for-debug-debug-data-should-not-record-to-db-97",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "a317237964ea3a74aab0941a96d705102d6f66f0",
+        "created_at": "2018-07-26 23:43:27 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-main.xsh-103",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "eb0d79bc42708d7f384c26eab84675ccc0dc1cf6",
+        "created_at": "2018-07-23 21:39:34 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-analysis_kpis.py-99",
+        "files": [
+            {
+                "filename": "analysis_kpis.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "a52609f7c9368752c4c9cc90cefc8619945c3c20",
+        "created_at": "2018-07-05 01:17:08 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-config.py-90",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "2dc3deff1b3c6d002d6168b636e85593bab6bf8d",
+        "created_at": "2018-06-29 17:19:19 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "refactor-specific_tasks",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "dcb413de8a3d714c1047baaa16d35592dd09177b",
+        "created_at": "2018-06-29 13:15:18 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "fix-specific_tasks-bug",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "72a79f87e616ec928a9d5beaeb54b4f821a51676",
+        "created_at": "2018-06-29 17:13:48 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Update-main.xsh",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "bd767ed907b50a6c3130fa688691d71270deb562",
+        "created_at": "2018-06-29 10:31:38 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Update-main.xsh",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "e91f2c9a34bd1443a568565a7cbbd8c735c52153",
+        "created_at": "2018-06-29 13:29:52 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "fix-bug-for-tasks-log",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "69ee28efa937cb73d39397b55a4fb2e2a191b9e2",
+        "created_at": "2018-06-29 10:35:39 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Update-main.xsh",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "65a7b2cb249537f0f0d72651ed9c4dbbb9a25238",
+        "created_at": "2018-06-29 00:15:38 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "support-specific-tasks-87",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 1,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "81e0895e0c6fad41288e13b3c1b5b1a387704268",
+        "created_at": "2018-06-28 21:32:05 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Update-build_paddle.xsh",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "498213c69186f2fcafce5f843cb3705241cdefa5",
+        "created_at": "2018-06-28 21:33:10 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Update-build_paddle.xsh",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "6162c29dd477cba9b8a15583283fb79bfa220aa3",
+        "created_at": "2018-06-28 21:18:13 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Update-build_paddle.xsh",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "a507cd1e0b6d42c578afce0138950439b7d32943",
+        "created_at": "2018-06-25 17:14:18 +0800",
+        "author": "guochaorong",
+        "committer": "Superjomn",
+        "message": "fix-build-paddle-85",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 18,
+                "changes": 36
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "9e1b60741b353a3f8a07c2c7dd64e95a812e4cc9",
+        "created_at": "2018-06-22 18:16:05 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "set-relative-paddle-path-in-env-81",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "cb9530d7dc0cb53ed0a7ec5d5aa637ae485f1ef7",
+        "created_at": "2018-06-22 10:25:35 +0800",
+        "author": "guochaorong",
+        "committer": "Superjomn",
+        "message": "Update-config.py-79",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "ab69984fb993968c52c209a6121677f45061d967",
+        "created_at": "2018-06-22 18:10:49 +0800",
+        "author": "guochaorong",
+        "committer": "dzhwinter",
+        "message": "set-num-of-scale-to-80-82",
+        "files": [
+            {
+                "filename": "web/view.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "52918bec794f4cea770c5c42727881bad85ae672",
+        "created_at": "2018-06-21 21:43:19 +0800",
+        "author": "guochaorong",
+        "committer": "Superjomn",
+        "message": "fix-bug-when-exception-occur-in-tasks-77",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 19,
+                "changes": 47
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "7a050e192b558ed5fa92384049ba66158eb33b8f",
+        "created_at": "2018-06-19 12:58:36 +0800",
+        "author": "guochaorong",
+        "committer": "Superjomn",
+        "message": "Update-main.xsh-73",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "803583cba38f6680f1277303738ca6cf98d706db",
+        "created_at": "2018-06-15 13:59:35 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-main.xsh-72",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "d35c87d0d41b1e746e8ffa4c9ddfa9d4e5ecbe54",
+        "created_at": "2018-06-15 13:36:58 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-utils.xsh-69",
+        "files": [
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "3943d4e0122931700be4f9f2dfffe165e73e7b1a",
+        "created_at": "2018-06-15 09:44:21 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-analysis_kpis.py-52",
+        "files": [
+            {
+                "filename": "analysis_kpis.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "5945dd660a75a61c98c430222e37a21d490e069e",
+        "created_at": "2018-06-14 20:13:41 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Update-build_paddle.xsh",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "e2c9e7908ef4b4d492132f1c9d8eb4880dc739d4",
+        "created_at": "2018-06-15 10:19:38 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "fix-compile-with-anakin-70",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 15,
+                "changes": 33
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "c5844b501ec3e7c5b06390d6708d9d9dce801a94",
+        "created_at": "2018-06-13 11:18:14 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Adjust-db-struct-to-make-faster-and-clearer-59",
+        "files": [
+            {
+                "filename": "db.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "web/api.py",
+                "status": "added",
+                "additions": 180,
+                "deletions": 0,
+                "changes": 180
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            },
+            {
+                "filename": "web/view.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 114,
+                "changes": 127
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "420265bb0768487768e533a49ca7ea0c1dbecc61",
+        "created_at": "2018-06-07 13:23:47 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-main.xsh-64",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 7,
+                "changes": 43
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "01b29283b7c2c71113e1fd6d2ec27bc507479176",
+        "created_at": "2018-06-11 15:37:08 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-main.xsh-65",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "e18a9080dc0401256ae2d705e98d23b0561cd275",
+        "created_at": "2018-05-29 19:51:14 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "add-scalar-56",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "persistence.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 2,
+                "changes": 13
+            },
+            {
+                "filename": "web/pypage",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "web/view.py",
+                "status": "modified",
+                "additions": 71,
+                "deletions": 7,
+                "changes": 78
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "59d99f5777ee8acfe429ceea6cd4959100a98584",
+        "created_at": "2018-05-29 19:37:37 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-build_paddle.xsh-58",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "f896f8cca91f9e49143f616e1f55db999e3dbc5d",
+        "created_at": "2018-05-28 23:45:53 -0700",
+        "author": "putcn",
+        "committer": "guochaorong",
+        "message": "switch-paddle-build-command-from-cmake-to-comprehensive-paddle_build.sh-55",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 21,
+                "changes": 35
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "c0e56d6ad3da4179bea6e82212f787c5b1d3f152",
+        "created_at": "2018-05-23 13:09:46 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-eva.xsh-51",
+        "files": [
+            {
+                "filename": "eva.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "98d29c4a23f04413e324e16f4b8499c3514f860d",
+        "created_at": "2018-05-22 13:00:06 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "add-pre-commit-50",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 3,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "0124743a8411619b908412313f811ffe31c3df86",
+        "created_at": "2018-05-28 10:13:00 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "Update-config.py-54",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "9966b34bdadbd0f3681896c102d6456b1d3f3882",
+        "created_at": "2018-05-23 10:33:42 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "set-to-ignore-not-actived-kpis-for-ce-task-49",
+        "files": [
+            {
+                "filename": "analysis_kpis.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 7,
+                "changes": 16
+            },
+            {
+                "filename": "eva.xsh",
+                "status": "modified",
+                "additions": 30,
+                "deletions": 11,
+                "changes": 41
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 5,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "0098bb367c58e70a144e2a074f431ec764d9c1b9",
+        "created_at": "2018-05-21 17:20:52 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "update-ce-log-from-info-to-warn-48",
+        "files": [
+            {
+                "filename": "analysis_kpis.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "eva.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 13,
+                "changes": 18
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "4cee8ddd480895ddc2af31a38cc1ae0d9b0a31d4",
+        "created_at": "2018-05-17 16:39:38 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "add-log-info-when-failed-47",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "2fa0240aba5f5c94371e51545c22216b8ab59e84",
+        "created_at": "2018-05-10 16:02:44 +0800",
+        "author": "guochaorong",
+        "committer": "web-flow",
+        "message": "add-script-for-models-repo-stable-36",
+        "files": [
+            {
+                "filename": "analysis_kpis.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 1,
+                "changes": 10
+            },
+            {
+                "filename": "eva.xsh",
+                "status": "modified",
+                "additions": 45,
+                "deletions": 7,
+                "changes": 52
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "654af7bcd18d56c515eb9a4a2fa98f42ff5bc652",
+        "created_at": "2018-05-02 05:00:45 +0000",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "bugfix",
+        "files": [
+            {
+                "filename": "kpi.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 6,
+                "changes": 15
+            },
+            {
+                "filename": "persistence.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 6,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "91ed483940f38e97f471b29a8a7d57ddf3151495",
+        "created_at": "2018-05-02 13:50:18 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "fea-change_actived_false-34",
+        "files": [
+            {
+                "filename": "kpi.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "persistence.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "8fcf4a77b3bab13e851dd2ed9b439e90d231c004",
+        "created_at": "2018-04-27 11:26:38 +0000",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "Merge-branch-develop-of-github.com-PaddlePaddle-continuous_evaluation-into-develop",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "2654f04c308090e577af0c8adac06a6f556cad52",
+        "created_at": "2018-05-02 09:23:15 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "fea-add-unit-representation-33",
+        "files": [
+            {
+                "filename": "analysis_kpis.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 10,
+                "changes": 23
+            },
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "kpi.py",
+                "status": "modified",
+                "additions": 40,
+                "deletions": 14,
+                "changes": 54
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "persistence.py",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 7,
+                "changes": 22
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 4,
+                "changes": 6
+            },
+            {
+                "filename": "web/view.py",
+                "status": "modified",
+                "additions": 40,
+                "deletions": 33,
+                "changes": 73
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "62edbc527206a8a9b781029b38ba94d5a75bc628",
+        "created_at": "2018-04-27 18:42:11 +0800",
+        "author": "dzhwinter",
+        "committer": "web-flow",
+        "message": "cuda9-30",
+        "files": [
+            {
+                "filename": "Dockerfile",
+                "status": "added",
+                "additions": 144,
+                "deletions": 0,
+                "changes": 144
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "91e9e69db3106e2d1de00b8826b0834b324df0b5",
+        "created_at": "2018-04-28 08:57:14 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "bugfix-fix_selected_update-31",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 2,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "3bbb32a9161d9b99a2f26d13ac49c28c5aed7b2a",
+        "created_at": "2018-05-02 08:16:50 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "fea-active-separate-tests-32",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 109,
+                "changes": 109
+            },
+            {
+                "filename": "kpi.py",
+                "status": "modified",
+                "additions": 44,
+                "deletions": 36,
+                "changes": 80
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 14,
+                "changes": 32
+            },
+            {
+                "filename": "persistence.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "560dd94ec88b11fd22495bb1092e6d4be6236f59",
+        "created_at": "2018-04-27 11:26:20 +0000",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "enhance-web",
+        "files": [
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "4742121a52afb814a8b7f88160dcb09c0e6c1322",
+        "created_at": "2018-04-27 14:00:09 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "update-kpi_update_threshold-29",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "3e619a4ee45d9924b435aa438b7a6f3eb39e45c9",
+        "created_at": "2018-04-26 18:18:48 +0800",
+        "author": "kolinwei",
+        "committer": "web-flow",
+        "message": "add-benchmark-data-analysis-19",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "analysis_kpis.py",
+                "status": "added",
+                "additions": 52,
+                "deletions": 0,
+                "changes": 52
+            },
+            {
+                "filename": "eva.xsh",
+                "status": "added",
+                "additions": 65,
+                "deletions": 0,
+                "changes": 65
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "be297f0d3a01b19265b8feae8d09ae52b5a42ac4",
+        "created_at": "2018-04-24 07:13:22 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "fea-only-update-better-kpi-24",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 2,
+                "changes": 17
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "07f0ec9226593408320a27ff7dc3764172d4e826",
+        "created_at": "2018-04-24 07:10:04 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Delete-push.xsh",
+        "files": [
+            {
+                "filename": "push.xsh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "2b0214f3f102c16e0671d4146bcdcde6f87d3692",
+        "created_at": "2018-04-23 20:23:16 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Update-build_paddle.xsh",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "b3372909e1fde4d61669ed9a4bd2012c521d34f8",
+        "created_at": "2018-04-23 20:29:04 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "add-num_workers-for-make-23",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "5681c7a9e65645ad8b2b7910a4ffe24427469df7",
+        "created_at": "2018-04-21 23:06:03 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "simplify-build-paddle",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "e3b6008d6cb25927b15f66a28511ead68e31067f",
+        "created_at": "2018-04-20 10:01:15 +0800",
+        "author": "panyx0718",
+        "committer": "web-flow",
+        "message": "add-models-dir-20",
+        "files": [
+            {
+                "filename": "models/README.md",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "1e19ed81abd17e7ac0d8c4450c768fdebb6eb5c5",
+        "created_at": "2018-04-23 20:22:35 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "add-num_workers-to-make",
+        "files": [
+            {
+                "filename": "build_paddle.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "fb0bd8a15e0a20d0166ebccc815f3f4e3a31a1a3",
+        "created_at": "2018-03-28 13:42:14 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Merge-branch-master-into-develop",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "f9f8e6caa4f0ce6a343a86b88bb39c9ebea85220",
+        "created_at": "2018-04-12 15:17:06 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "refactor-code-for-simpler-implementation-18",
+        "files": [
+            {
+                "filename": ".gitmodules",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "baseline.xsh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 9,
+                "changes": 9
+            },
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 147,
+                "changes": 147
+            },
+            {
+                "filename": "baseline_strategy_test.xsh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 28,
+                "changes": 28
+            },
+            {
+                "filename": "build_paddle.xsh",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 73,
+                "changes": 86
+            },
+            {
+                "filename": "core.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 152,
+                "changes": 152
+            },
+            {
+                "filename": "core_test.xsh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 72,
+                "changes": 72
+            },
+            {
+                "filename": "db.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "doc/howto.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 102,
+                "changes": 102
+            },
+            {
+                "filename": "gstate.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 97,
+                "changes": 97
+            },
+            {
+                "filename": "kpi.py",
+                "status": "added",
+                "additions": 218,
+                "deletions": 0,
+                "changes": 218
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 141,
+                "deletions": 81,
+                "changes": 222
+            },
+            {
+                "filename": "persistence.py",
+                "status": "added",
+                "additions": 37,
+                "deletions": 0,
+                "changes": 37
+            },
+            {
+                "filename": "prepare.xsh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 31,
+                "changes": 31
+            },
+            {
+                "filename": "push.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 4,
+                "changes": 7
+            },
+            {
+                "filename": "repo.xsh",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 15,
+                "changes": 23
+            },
+            {
+                "filename": "repo_test.xsh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 16,
+                "changes": 16
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 4,
+                "changes": 4
+            },
+            {
+                "filename": "tests.xsh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 11,
+                "changes": 11
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 138,
+                "changes": 138
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 113,
+                "changes": 113
+            },
+            {
+                "filename": "web/__init__.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "web/logics.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 77,
+                "changes": 77
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 57,
+                "deletions": 37,
+                "changes": 94
+            },
+            {
+                "filename": "web/pypage",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "web/template/base.html",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 211,
+                "changes": 211
+            },
+            {
+                "filename": "web/template/dashboard.html",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 91,
+                "changes": 91
+            },
+            {
+                "filename": "web/template/history.html",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 30,
+                "changes": 30
+            },
+            {
+                "filename": "web/template/index.html",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 362,
+                "changes": 362
+            },
+            {
+                "filename": "web/view.py",
+                "status": "added",
+                "additions": 420,
+                "deletions": 0,
+                "changes": 420
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "93b15ccdabb9de178451f46969d21e01640e1ae3",
+        "created_at": "2018-03-30 19:44:39 -0700",
+        "author": "wangkuiyi",
+        "committer": "Superjomn",
+        "message": "Update-the-simplified-design-of-continuous-evaluation-system-16",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 62,
+                "deletions": 41,
+                "changes": 103
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "96f99791b60434df4166e61cbc65b9e86d721654",
+        "created_at": "2018-03-29 22:30:35 -0700",
+        "author": "wangkuiyi",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 52,
+                "deletions": 129,
+                "changes": 181
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "6cf4730ede591889f78c6653de1a2550f83f0afe",
+        "created_at": "2018-03-28 13:20:47 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "support-teamcity-13",
+        "files": [
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            },
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "core.py",
+                "status": "modified",
+                "additions": 29,
+                "deletions": 0,
+                "changes": 29
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 48,
+                "changes": 67
+            },
+            {
+                "filename": "tests.xsh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "7eabc71f0fad3c9cfcc179fa5f574dbaf30a2bb9",
+        "created_at": "2018-03-28 10:26:48 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "enable-baseline-test-12",
+        "files": [
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 4,
+                "changes": 9
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 26,
+                "changes": 35
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "8ee55a7f030e8279ee4a2ec3d565d7a7406a3727",
+        "created_at": "2018-03-28 10:23:46 +0800",
+        "author": "kolinwei",
+        "committer": "Superjomn",
+        "message": "add-new-factor-11",
+        "files": [
+            {
+                "filename": "core.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "fa57647bb7927538dabfa4e804a93a67049e3b1b",
+        "created_at": "2018-03-26 16:45:32 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "Merge-branch-master-into-develop",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "31f3ab3cd9a4c79baa4eaa4f3381bc055acce252",
+        "created_at": "2018-03-27 18:27:40 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Fea-support-teamcity-10",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "core.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 34,
+                "changes": 56
+            },
+            {
+                "filename": "tests.xsh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "06a1b07a0564bcda9b4259368e44a5b046669741",
+        "created_at": "2018-03-21 14:05:23 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "doc-how-to-add-evaluation-4",
+        "files": [
+            {
+                "filename": "doc/howto.md",
+                "status": "added",
+                "additions": 102,
+                "deletions": 0,
+                "changes": 102
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "1f16293ca41fe47c65766eb19899ed2399354b64",
+        "created_at": "2018-03-19 17:40:54 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "Merge-branch-master-of-github.com-PaddlePaddle-ModelCE-into-feature-alpha",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "f5cc2391a0478d13fae726d1f60a4dd4d775c217",
+        "created_at": "2018-03-20 10:51:35 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-evaluation-records",
+        "files": [
+            {
+                "filename": "gstate.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "web/logics.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "fb088b78421e5a9d749d3533f0cd9b00e3680c05",
+        "created_at": "2018-03-21 08:40:57 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-2-from-PaddlePaddle-feature-alpha",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "eba7b1c2d75197a4675a3877bd390c6fcf5fd6b3",
+        "created_at": "2018-03-19 21:21:18 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-cache",
+        "files": [
+            {
+                "filename": "gstate.py",
+                "status": "modified",
+                "additions": 16,
+                "deletions": 2,
+                "changes": 18
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "web/logics.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7
+            },
+            {
+                "filename": "web/template/base.html",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "web/template/dashboard.html",
+                "status": "modified",
+                "additions": 44,
+                "deletions": 16,
+                "changes": 60
+            },
+            {
+                "filename": "web/template/index.html",
+                "status": "modified",
+                "additions": 144,
+                "deletions": 115,
+                "changes": 259
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "1b293e1c0b4d031254e60709486c0fe1ba8f2483",
+        "created_at": "2018-03-19 17:35:17 +0800",
+        "author": "Superjomn",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-1-from-PaddlePaddle-design-update",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "5b791be753ffd68e2e43b1f396de6dd2e0613aac",
+        "created_at": "2018-03-19 17:05:05 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "fine-tune",
+        "files": [
+            {
+                "filename": "core.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 3,
+                "changes": 9
+            },
+            {
+                "filename": "gstate.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 1,
+                "changes": 13
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 5,
+                "changes": 15
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 5,
+                "changes": 9
+            },
+            {
+                "filename": "web/logics.py",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 1,
+                "changes": 7
+            },
+            {
+                "filename": "web/template/base.html",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "web/template/dashboard.html",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 1,
+                "changes": 16
+            },
+            {
+                "filename": "web/template/history.html",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "6ea1b17939793bbd3f8fffa448a40343faf26ea6",
+        "created_at": "2018-03-19 14:26:30 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-history-page",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 10,
+                "changes": 20
+            },
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "core.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 3,
+                "changes": 10
+            },
+            {
+                "filename": "gstate.py",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 22,
+                "deletions": 2,
+                "changes": 24
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "web/logics.py",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 2,
+                "changes": 16
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 9,
+                "changes": 36
+            },
+            {
+                "filename": "web/template/base.html",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 10,
+                "changes": 31
+            },
+            {
+                "filename": "web/template/dashboard.html",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "web/template/index.html",
+                "status": "modified",
+                "additions": 333,
+                "deletions": 0,
+                "changes": 333
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "d954bd0a000f662493ddbcc744904e97c82c37c9",
+        "created_at": "2018-03-19 12:54:10 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-progress-support-in-web",
+        "files": [
+            {
+                "filename": "gstate.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 1,
+                "changes": 10
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "web/logics.py",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 1,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "a81ec9892b689ac54f57f23a971407873b304d98",
+        "created_at": "2018-03-19 11:01:29 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "rename-GState-to-gstate",
+        "files": [
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "gstate.py",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 9,
+                "changes": 29
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 5,
+                "changes": 15
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 35,
+                "deletions": 6,
+                "changes": 41
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "web/logics.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 14,
+                "changes": 45
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 4,
+                "changes": 13
+            },
+            {
+                "filename": "web/template/index.html",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 310,
+                "changes": 310
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "1c2dfbc1720f9f1a1d93988639180c712090ed51",
+        "created_at": "2018-03-18 17:44:10 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "init-web",
+        "files": [
+            {
+                "filename": "push.xsh",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "web/logics.py",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "web/main.py",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "web/template/index.html",
+                "status": "added",
+                "additions": 310,
+                "deletions": 0,
+                "changes": 310
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "f07e00e7d76b157283b7b8460ee14d9c25e7c16d",
+        "created_at": "2018-03-19 11:56:44 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-web",
+        "files": [
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9
+            },
+            {
+                "filename": "prepare.xsh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 23,
+                "changes": 54
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "modified",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "web/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "web/logics.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 7,
+                "changes": 18
+            },
+            {
+                "filename": "web/main.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "web/template/base.html",
+                "status": "added",
+                "additions": 187,
+                "deletions": 0,
+                "changes": 187
+            },
+            {
+                "filename": "web/template/dashboard.html",
+                "status": "added",
+                "additions": 49,
+                "deletions": 0,
+                "changes": 49
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "e65be5d4a43d3b6b0e837dc053739af156510d6e",
+        "created_at": "2018-03-18 16:31:58 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "make-core.xsh-core.py",
+        "files": [
+            {
+                "filename": "baseline.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "baseline_strategy_test.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 11,
+                "changes": 29
+            },
+            {
+                "filename": "core_test.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "repo.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "repo_test.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "a2f9054d6c738ac98276c6fa48d4dceeb0f50ee4",
+        "created_at": "2018-03-18 17:43:13 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "move-gstate-out-as-a-module",
+        "files": [
+            {
+                "filename": "config.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "gstate.py",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 23,
+                "deletions": 31,
+                "changes": 54
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "cbbccb29ff958d586caab009d3619cf7386b2bf2",
+        "created_at": "2018-03-16 20:17:03 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "github-workflow-fixed",
+        "files": [
+            {
+                "filename": "baseline.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 13,
+                "changes": 31
+            },
+            {
+                "filename": "baseline_strategy_test.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "config.xsh",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "core.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 5,
+                "changes": 16
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 38,
+                "deletions": 21,
+                "changes": 59
+            },
+            {
+                "filename": "repo.xsh",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 15,
+                "changes": 32
+            },
+            {
+                "filename": "tests.xsh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 1,
+                "changes": 28
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "1b9a3c1334816aea383e33a7b71a73dfe1966727",
+        "created_at": "2018-03-16 16:46:25 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "fix-baseline-test",
+        "files": [
+            {
+                "filename": "baseline.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 8,
+                "changes": 18
+            },
+            {
+                "filename": "config.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "core.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 10,
+                "changes": 21
+            },
+            {
+                "filename": "prepare.xsh",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 7,
+                "changes": 21
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "351f0e6f0e9b12788d34232ab06f97d902081cb4",
+        "created_at": "2018-03-18 15:42:08 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-GState-to-maintain-states-by-file-system",
+        "files": [
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "config.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 3,
+                "changes": 8
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 7,
+                "changes": 13
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 5,
+                "changes": 23
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 8,
+                "changes": 15
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "248c81d5204da2909e69f0a2905156a30ebfc900",
+        "created_at": "2018-03-16 14:01:54 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "fix-travis",
+        "files": [
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "config.xsh",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 2,
+                "changes": 9
+            },
+            {
+                "filename": "main.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "329f36e807e78a2924938fc00524d01487c26d20",
+        "created_at": "2018-03-16 11:56:43 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-baseline_strategy_test",
+        "files": [
+            {
+                "filename": "baseline_strategy_test.xsh",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "be53da83bbd8b9ba2a5b50eb5359e00bd47f986b",
+        "created_at": "2018-03-16 10:53:14 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-travis",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "dependencies.txt",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 2,
+                "changes": 2
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "7646c0c704b118e5b66c52aea3689d21e1873b89",
+        "created_at": "2018-03-15 15:58:44 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "Merge-branch-feature-alpha-of-github.com-PaddlePaddle-ModelCE-into-feature-alpha",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "3d50436289a9bd675c17b4a85b67c9010a15d146",
+        "created_at": "2018-03-15 15:57:18 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-more-tests",
+        "files": [
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 31,
+                "changes": 59
+            },
+            {
+                "filename": "config.xsh",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 16,
+                "changes": 34
+            },
+            {
+                "filename": "repo.xsh",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 2,
+                "changes": 7
+            },
+            {
+                "filename": "tests.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "608a59dd73dc465fb63cdbbba13b0e52e1a6c981",
+        "created_at": "2018-03-15 13:08:29 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "update-syntax-highlight",
+        "files": [
+            {
+                "filename": ".gitattributes",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "da4edb1f610b2e86e022db354c01c640e963e789",
+        "created_at": "2018-03-15 12:20:32 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "init",
+        "files": [
+            {
+                "filename": "__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "baseline.xsh",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "baseline_strategy.xsh",
+                "status": "added",
+                "additions": 140,
+                "deletions": 0,
+                "changes": 140
+            },
+            {
+                "filename": "config.xsh",
+                "status": "added",
+                "additions": 61,
+                "deletions": 0,
+                "changes": 61
+            },
+            {
+                "filename": "core.py",
+                "status": "added",
+                "additions": 110,
+                "deletions": 0,
+                "changes": 110
+            },
+            {
+                "filename": "core_test.xsh",
+                "status": "added",
+                "additions": 71,
+                "deletions": 0,
+                "changes": 71
+            },
+            {
+                "filename": "dependencies.txt",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "main.xsh",
+                "status": "added",
+                "additions": 89,
+                "deletions": 0,
+                "changes": 89
+            },
+            {
+                "filename": "prepare.xsh",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "repo.xsh",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "repo_test.xsh",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "utils.xsh",
+                "status": "added",
+                "additions": 69,
+                "deletions": 0,
+                "changes": 69
+            },
+            {
+                "filename": "utils_test.xsh",
+                "status": "added",
+                "additions": 50,
+                "deletions": 0,
+                "changes": 50
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "772afdc6919f5663a3d03b2e816c899e4a2c2658",
+        "created_at": "2018-03-15 12:23:11 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "add-tests.xsh",
+        "files": [
+            {
+                "filename": "repo_test.xsh",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tests.xsh",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "74c2a063e35bb0a050a6a4bf49ff164d8e67d43f",
+        "created_at": "2018-03-15 10:26:02 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "grammer-fix",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/continuous_evaluation",
+        "sha": "b79cc5f91f57ced0802ea737e8643be1f9da36c3",
+        "created_at": "2018-03-14 20:08:09 +0800",
+        "author": "Superjomn",
+        "committer": "Superjomn",
+        "message": "init-design",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            }
+        ]
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "repo": "PaddlePaddle/hapi",
+        "number": 86,
+        "title": "transform 输入图片报错",
+        "body": "![image](https://user-images.githubusercontent.com/33951338/89755721-fab0b380-db12-11ea-9ecf-e8c1e7684756.png)\r\n",
+        "state": "open",
+        "user": "liuxianyi",
+        "closed_by": null,
+        "created_at": "2020-08-10T06:08:57+00:00",
+        "updated_at": "2020-08-10T06:08:57+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/hapi",
+        "number": 85,
+        "title": "about syncBN in hapi/classification example",
+        "body": "does the paddle support syncBN when training in multi-gpus using hapi API?",
+        "state": "open",
+        "user": "Feynman1999",
+        "closed_by": null,
+        "created_at": "2020-07-31T15:20:00+00:00",
+        "updated_at": "2020-07-31T15:20:37+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/hapi",
+        "number": 113,
+        "title": "关于高层API导出推理模型",
+        "body": "高层API要怎么样才能保存为静态推理模型（.pdmodel）呢？",
+        "state": "closed",
+        "user": "Peacefuldoge",
+        "closed_by": "Peacefuldoge",
+        "created_at": "2021-11-05T11:50:10+00:00",
+        "updated_at": "2021-11-06T20:07:15+00:00",
+        "closed_at": "2021-11-06T20:07:15+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/hapi",
+        "number": 80,
+        "title": "paddlevision.png typo error",
+        "body": "https://github.com/PaddlePaddle/hapi/blob/master/image/paddlevision.png\r\n\r\n![](https://github.com/PaddlePaddle/hapi/blob/master/image/paddlevision.png?raw=true)\r\n\r\n`optim` should be `optimizer` in model.prepare",
+        "state": "closed",
+        "user": "ZHUI",
+        "closed_by": "ZHUI",
+        "created_at": "2020-05-21T06:21:33+00:00",
+        "updated_at": "2020-11-09T05:14:23+00:00",
+        "closed_at": "2020-11-09T05:14:23+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/hapi",
+        "number": 87,
+        "title": "2D卷积层报错 ",
+        "body": "![image](https://user-images.githubusercontent.com/33951338/89779737-986fa700-db42-11ea-89f4-2d427b52b9fd.png)\r\n",
+        "state": "open",
+        "user": "liuxianyi",
+        "closed_by": null,
+        "created_at": "2020-08-10T11:49:31+00:00",
+        "updated_at": "2021-03-04T07:05:34+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lmk123568"
+        ],
+        "labels": []
+    }
+]

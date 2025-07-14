@@ -1,0 +1,113 @@
+[
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "number": 3,
+        "title": "add copy_cudnn.py",
+        "body": null,
+        "issue_number": "3",
+        "state": "closed",
+        "merged": true,
+        "user": "anine09",
+        "merged_by": "sanbuphy",
+        "created_at": "2023-02-20T13:47:29+00:00",
+        "closed_at": "2023-02-20T13:49:06+00:00",
+        "additions": 11,
+        "deletions": 9,
+        "changed_files": 2,
+        "commits": [
+            "8d7b41731e5892a5204ec58a752f0b4f465d21a1"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "number": 4,
+        "title": "fix copy_cudnn.py and modify update method of pip",
+        "body": null,
+        "issue_number": "4",
+        "state": "closed",
+        "merged": true,
+        "user": "anine09",
+        "merged_by": "sanbuphy",
+        "created_at": "2023-02-21T11:07:34+00:00",
+        "closed_at": "2023-02-21T12:36:30+00:00",
+        "additions": 3,
+        "deletions": 2,
+        "changed_files": 2,
+        "commits": [
+            "a36d36f45c2e4e9b09827bdac47af6cee20c7b52",
+            "6f70c71cc08efc28c62f04fe7b5c025f0b62d3b8"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "number": 2,
+        "title": "modify the cuda installation",
+        "body": null,
+        "issue_number": "2",
+        "state": "closed",
+        "merged": true,
+        "user": "anine09",
+        "merged_by": "sanbuphy",
+        "created_at": "2023-02-19T11:42:57+00:00",
+        "closed_at": "2023-02-19T13:38:44+00:00",
+        "additions": 12,
+        "deletions": 9,
+        "changed_files": 1,
+        "commits": [
+            "4fccc54ab2d164c7d6a657487a8f974efcfcfa52",
+            "871c6059612a62318e099de74387cd89a9b35661",
+            "c1f6db3c723d6bb594b876c4d2fb73f3bf515ff8",
+            "1969fb6a54a5c12cac51b4d4b27298ca7d2465bf",
+            "85e83521ef00b5c361df0be2981a71b23b961d15",
+            "b1b27fa8c27bcb835fe45bcfeaae0d09a9745f47"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "number": 6,
+        "title": "fix zlib.dll missing error(Not Test Yet)",
+        "body": null,
+        "issue_number": "6",
+        "state": "open",
+        "merged": false,
+        "user": "anine09",
+        "merged_by": null,
+        "created_at": "2023-03-31T13:28:04+00:00",
+        "closed_at": null,
+        "additions": 6,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "ee2f8592ffc57b24114a3a2385fdf4544afd7764"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PFCCLab/fool-proof-paddle-installation",
+        "number": 1,
+        "title": "fix powershell command error",
+        "body": null,
+        "issue_number": "1",
+        "state": "closed",
+        "merged": true,
+        "user": "anine09",
+        "merged_by": "sanbuphy",
+        "created_at": "2023-02-19T11:10:41+00:00",
+        "closed_at": "2023-02-19T11:20:07+00:00",
+        "additions": 2,
+        "deletions": 2,
+        "changed_files": 1,
+        "commits": [
+            "9441dd5a51603955571f66b594aec9ebe555f6bb"
+        ],
+        "comment_by": [],
+        "review_by": []
+    }
+]

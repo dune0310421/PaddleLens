@@ -1,0 +1,32 @@
+[
+    {
+        "repo": "PFCCLab/PaddleAPITest",
+        "number": 8,
+        "title": "paddle.matmul 未完全支持",
+        "body": "@cszdrg \n\npaddle.matmul 在 https://github.com/PFCCLab/PaddleAPITest/pull/4 修复后，有部分测试配置仍位于 https://github.com/PFCCLab/PaddleAPITest/blob/main/tester/api_config/api_config_merged_not_support.txt#L401 中未被移除，且经测试未完全通过，不通过的配置为：\n```\npaddle.matmul(x=Tensor([3, 2, 2, 5],\"float64\"), y=Tensor([5],\"float64\"), transpose_x=False, transpose_y=True, )\n```\n\n测试结果：\n\n![Image](https://github.com/user-attachments/assets/9e73093b-ac7f-4fc8-bd2b-756ca5b7422b)\n\n劳烦陈同学修复了😘",
+        "state": "closed",
+        "user": "cangtianhuang",
+        "closed_by": "cangtianhuang",
+        "created_at": "2025-04-02T07:25:29+00:00",
+        "updated_at": "2025-04-18T03:17:46+00:00",
+        "closed_at": "2025-04-18T03:17:46+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PFCCLab/PaddleAPITest",
+        "number": 355,
+        "title": "Fix label_smooth rule and remove some invalid config",
+        "body": "- Fix ```LabelSmoothRule```\r\n torch 无对应的api，rule中应该将result的dtype保持和输入的一致。由于```epsilon``` 为float32，因此输入为float16时经过自动类型转换，result也会变成float32\r\n\r\n-  [Remove paddle.multiplex invalid config](https://github.com/PFCCLab/PaddleAPITest/commit/d1cf62f448b766ab7692d032b971bbfee3a0ef2d)\r\nmultiplex 为paddle特有的api，api文档描述中明确要求输入的所有tensor的shape保持一致。删掉了shape不同的config\r\n![image](https://github.com/user-attachments/assets/39d8ce63-52cf-46ef-bf15-bb953393ab61)\r\n\r\n- [Remove paddle.linalg.cov invalid config](https://github.com/PFCCLab/PaddleAPITest/commit/5f58284832d4b8e12616268223786394e798d8ff)\r\n一些config导致输出dtype对不上。troch的问题。torch要求aweights必须为float，因此尽管x为float16，输出的结果也会成为float 。删除了aweights必须为float16的配置",
+        "state": "open",
+        "user": "DanielSun11",
+        "closed_by": null,
+        "created_at": "2025-07-08T16:22:36+00:00",
+        "updated_at": "2025-07-08T16:22:42+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "paddle-bot[bot]"
+        ],
+        "labels": []
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 18
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 17
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 22
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 30
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 16
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 29
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 19
+    },
+    {
+        "repo": "PaddlePaddle/paddle_upgrade_tool",
+        "number": 25,
+        "title": "PyPI sdist setup.py fails",
+        "body": "```py\r\nTraceback (most recent call last):\r\n  File \"setup.py\", line 5, in <module>\r\n    with open('requirements.txt') as f:\r\nFileNotFoundError: [Errno 2] No such file or directory: 'requirements.txt'\r\n```",
+        "state": "closed",
+        "user": "jayvdb",
+        "closed_by": "T8T9",
+        "created_at": "2020-11-14T03:36:42+00:00",
+        "updated_at": "2021-01-08T10:59:39+00:00",
+        "closed_at": "2021-01-06T06:07:28+00:00",
+        "comments_count": [
+            "jayvdb",
+            "jayvdb",
+            "jayvdb"
+        ],
+        "labels": []
+    }
+]

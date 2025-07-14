@@ -1,0 +1,156 @@
+[
+    {
+        "repo": "PaddlePaddle/examples",
+        "number": 4,
+        "title": "add recompute demo",
+        "body": "This demo belongs to the Forward Recomputation Backpropagation Document.",
+        "issue_number": "4",
+        "state": "closed",
+        "merged": true,
+        "user": "mapingshuo",
+        "merged_by": "guru4elephant",
+        "created_at": "2019-11-13T12:09:10+00:00",
+        "closed_at": "2019-11-13T12:11:11+00:00",
+        "additions": 83,
+        "deletions": 0,
+        "changed_files": 2,
+        "commits": [
+            "a16aecfd6e5d02f4e9c52d6f077d9843cbf193fb"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/examples",
+        "number": 2,
+        "title": "add sequence_pad example",
+        "body": "An example of sequence_pad, for reference.",
+        "issue_number": "2",
+        "state": "closed",
+        "merged": true,
+        "user": "mapingshuo",
+        "merged_by": "guru4elephant",
+        "created_at": "2019-09-26T14:22:41+00:00",
+        "closed_at": "2019-09-26T14:34:35+00:00",
+        "additions": 60,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "2c7e79fe935026d956081ebd6565081474df0ff7"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/examples",
+        "number": 3,
+        "title": "Update README.md",
+        "body": "",
+        "issue_number": "3",
+        "state": "closed",
+        "merged": true,
+        "user": "huxiaoman7",
+        "merged_by": "guru4elephant",
+        "created_at": "2019-10-08T11:48:53+00:00",
+        "closed_at": "2019-10-11T00:06:44+00:00",
+        "additions": 6,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "4b703a4af31c26e38d505058d41b11034415fd42"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/examples",
+        "number": 6,
+        "title": "add print_tensor example",
+        "body": "“如何获取tensor的值”是常见的用户问题，这个example提供python端打印var的方法。\r\n期望输出：\r\n\r\n```shell\r\nFinished FF\r\nFinished optimize\r\nstep: 0, fc_0.w_0: [[-0.10529901 -0.07054191 -0.13647291 ... -0.10602473 -0.07899033\r\n   0.15065548]\r\n [-0.04140715 -0.01182835  0.16131984 ... -0.07984839  0.12133842\r\n   0.15614812]\r\n [ 0.16184261  0.01715499 -0.09326355 ...  0.10960961  0.17152914\r\n  -0.02638819]\r\n ...\r\n [ 0.05344178  0.19962896  0.17339653 ... -0.12717575 -0.14681083\r\n  -0.16763136]\r\n [ 0.07024567 -0.0378227  -0.14555416 ... -0.08571725 -0.08764564\r\n  -0.14416358]\r\n [ 0.06530999 -0.10522798 -0.17464371 ... -0.05483579 -0.11235257\r\n   0.10698551]]\r\nstep: 1, fc_0.w_0: [[-0.11046122 -0.07491808 -0.1330026  ... -0.10606746 -0.07532178\r\n   0.14474227]\r\n [-0.04575856 -0.01516406  0.16354485 ... -0.08130027  0.12380067\r\n   0.15079008]\r\n [ 0.15696704  0.0131518  -0.09024835 ...  0.10900916  0.17475878\r\n  -0.03210694]\r\n ...\r\n [ 0.04812807  0.19505358  0.17711368 ... -0.12689237 -0.14290507\r\n  -0.17364672]\r\n [ 0.0644531  -0.04303571 -0.14103071 ... -0.08423778 -0.08296889\r\n  -0.15049967]\r\n [ 0.06018575 -0.1095545  -0.17123453 ... -0.0549566  -0.10874285\r\n   0.101098  ]]\r\n...\r\n```\r\n\r\n注意，只有在exe.run(fluid.default_startup_program())之后，参数才有值，才可以使用`print(scope.var(\"fc_0.w_0\").get_tensor().__array__())`打印。",
+        "issue_number": "6",
+        "state": "closed",
+        "merged": true,
+        "user": "mapingshuo",
+        "merged_by": "guru4elephant",
+        "created_at": "2019-12-03T14:47:08+00:00",
+        "closed_at": "2019-12-03T14:50:01+00:00",
+        "additions": 60,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "e3ae8de2dda68f573b5e6b78c12ca291e2a1e01d",
+            "d2448497dadf1fd4b4a81122ff3e9403d7d86fb4"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/examples",
+        "number": 1,
+        "title": "add prune_with_input example",
+        "body": "prune_with_input allows users to prune a program from feeded_var to targets. I add a sample to make the usage more clearly.",
+        "issue_number": "1",
+        "state": "closed",
+        "merged": true,
+        "user": "mapingshuo",
+        "merged_by": "guru4elephant",
+        "created_at": "2019-09-26T12:28:37+00:00",
+        "closed_at": "2019-09-26T14:53:19+00:00",
+        "additions": 51,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "5eb03ba7efac0fe807c742f7c024f42f928e9523",
+            "f26d0d1d55e5552100b787a5ae830ef126b12d6b"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/examples",
+        "number": 5,
+        "title": "add fluid inference demo",
+        "body": "使用paddle进行预测以及onnx的使用。",
+        "issue_number": "5",
+        "state": "closed",
+        "merged": true,
+        "user": "ForFishes",
+        "merged_by": "guru4elephant",
+        "created_at": "2019-11-19T13:07:24+00:00",
+        "closed_at": "2019-11-19T13:15:23+00:00",
+        "additions": 154,
+        "deletions": 0,
+        "changed_files": 3,
+        "commits": [
+            "b8bc6d6fc994cb57c73d34a5fef1efd724268c74"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/examples",
+        "number": 7,
+        "title": "add example for reduce ops",
+        "body": "add example for reduce op and check the correction of results when dim = []",
+        "issue_number": "7",
+        "state": "closed",
+        "merged": true,
+        "user": "qjing666",
+        "merged_by": "guru4elephant",
+        "created_at": "2020-01-07T03:14:50+00:00",
+        "closed_at": "2020-03-30T15:59:25+00:00",
+        "additions": 52,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "36fac5f01e8f819d817f81837d2af9a5080a2582",
+            "01000c86dd060ae5a8b2ee024b8b6104bbcfa7d8",
+            "bdb47e0fd284627a4b79db36db8714fd942b9d68"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "guru4elephant",
+            "qjing666"
+        ]
+    }
+]

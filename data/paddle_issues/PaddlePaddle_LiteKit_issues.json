@@ -1,0 +1,199 @@
+[
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 6,
+        "title": "人像分割出来的为啥是顺时针偏转90度？",
+        "body": "刚启动demo出来的效果是偏转90度，退出重新点击手机上的App启动，这时才是正常的。是什么原因造成这种现象？能调吗？",
+        "state": "open",
+        "user": "xiakegan05",
+        "closed_by": null,
+        "created_at": "2021-12-13T09:30:50+00:00",
+        "updated_at": "2021-12-13T09:30:50+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 9,
+        "title": "iOS视频超分失败",
+        "body": "调用`superResolutionWithInputData:outputData:error:`接口，传入的视频帧为640*360的I420数据，outputData结构体中的数据为空且错误error为`Error` Domain=kMMLVideoSuperResolution Code=-6`，在doc目录下找不到-6对应的解释，不知道怎么继续排查问题了\r\n\r\n\r\n",
+        "state": "open",
+        "user": "MenThu",
+        "closed_by": null,
+        "created_at": "2022-03-18T09:09:59+00:00",
+        "updated_at": "2022-03-18T09:09:59+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 8,
+        "title": "DEMO是图片超分非视频超分",
+        "body": "DEMO是图片超分非视频超分",
+        "state": "open",
+        "user": "enduringstack",
+        "closed_by": null,
+        "created_at": "2022-01-14T06:36:56+00:00",
+        "updated_at": "2022-01-14T06:36:56+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 7,
+        "title": "这个融合之后的图像可以推流到ngix服务器上去吗？",
+        "body": "如题",
+        "state": "open",
+        "user": "xiakegan05",
+        "closed_by": null,
+        "created_at": "2021-12-15T09:40:52+00:00",
+        "updated_at": "2021-12-15T09:40:52+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 3,
+        "title": "想尝试在自己的工程里集成一下，超分器创建不起来",
+        "body": " TestAppOC[1592:611596] 出错1 ==== > Error Domain=kMMLVideoSuperResolution Code=-2 \"(null)\"\r\n\r\n想知道下可能是什么原因",
+        "state": "open",
+        "user": "shixingbang",
+        "closed_by": null,
+        "created_at": "2021-04-12T11:58:45+00:00",
+        "updated_at": "2021-04-30T07:11:40+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "shixingbang",
+            "lemon0132",
+            "lemon0132",
+            "shixingbang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 2,
+        "title": "iOS LiteKitDemo项目编译错误",
+        "body": "iOS LiteKitDemo\r\nhttps://github.com/PaddlePaddle/LiteKit/tree/develop/LiteKitDemo/iOS/LiteKitDemo/LiteKitDemo\r\n按照\r\npod install --repo-update\r\n之后打开项目，编译出错\r\n---------------------\r\nShowing All Messages\r\nUndefined symbol: _OBJC_CLASS_$_LiteKitVideoSuperResolutionor\r\nUndefined symbol: _OBJC_CLASS_$_LiteKitHandGestureDetector\r\nUndefined symbol: _OBJC_CLASS_$_LiteKitPortraitSegmentor\r\nUndefined symbol: _vImageScale_PlanarF\r\n---------------------\r\n貌似项目需要一个libPods-LiteKitDemo.a文件，但是develop/main/release-v0.1分支下面都没有\r\n\r\n![image](https://user-images.githubusercontent.com/5095810/112832433-e2a09b00-90c7-11eb-878a-5ef20d19fa1d.png)\r\n\r\n![image](https://user-images.githubusercontent.com/5095810/112832866-80946580-90c8-11eb-8d62-0f342689bd7d.png)\r\n",
+        "state": "open",
+        "user": "gdgggithub",
+        "closed_by": null,
+        "created_at": "2021-03-29T11:54:12+00:00",
+        "updated_at": "2021-04-30T06:56:30+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lemon0132",
+            "gdgggithub",
+            "lemon0132"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 5,
+        "title": "人像分割出来的效果是不是太差了",
+        "body": "如题",
+        "state": "open",
+        "user": "xiakegan05",
+        "closed_by": null,
+        "created_at": "2021-12-08T01:36:00+00:00",
+        "updated_at": "2022-05-23T07:18:43+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "roybill"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 1,
+        "title": "体积是不是太大依赖opencv这样的第三方库",
+        "body": "体积是不是太大依赖opencv这样的第三方库",
+        "state": "open",
+        "user": "renmoqiqi",
+        "closed_by": null,
+        "created_at": "2021-02-27T04:30:36+00:00",
+        "updated_at": "2021-03-24T07:56:05+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lemon0132"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 4,
+        "title": "内存泄露",
+        "body": "![image](https://user-images.githubusercontent.com/11804357/115490108-05ba0700-a290-11eb-8ab3-1c9883d9ec2c.png)\r\n\r\n在ijkplayer里接入了一下litekit，发现内存1s涨几十m，有点顶不住，看起来有内存泄露",
+        "state": "open",
+        "user": "shixingbang",
+        "closed_by": null,
+        "created_at": "2021-04-21T02:55:45+00:00",
+        "updated_at": "2021-04-30T09:11:11+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lemon0132"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 11,
+        "title": "按照集成步骤,直接运行LiteKitDemo,找不到依赖的库是怎么回事?",
+        "body": "1.配置的local.properties:\r\n## This file must *NOT* be checked into Version Control Systems,\r\n# as it contains information specific to your local configuration.\r\n#\r\n# Location of the SDK. This is only used by Gradle.\r\n# For customization when using a Version Control System, please read the\r\n# header note.\r\n#Wed May 11 13:53:11 CST 2022\r\n\r\nMAVEN_REPO_LOCAL = git clone https://gitee.com/paddlepaddle/LiteKit\r\n\r\nsdk.dir=C\\:\\\\Users\\\\maomaonlp\\\\AppData\\\\Local\\\\Android\\\\Sdk\r\n\r\n\r\n2.报错信息:\r\nExecution failed for task ':app:mergeDebugResources'.\r\n> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.\r\n   > Could not find com.baidu.litekit:handgesturedetector:0.3.0.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/com/baidu/litekit/handgesturedetector/0.3.0/handgesturedetector-0.3.0.pom\r\n       - https://jcenter.bintray.com/com/baidu/litekit/handgesturedetector/0.3.0/handgesturedetector-0.3.0.pom\r\n       - file:/D:/LiteKitDemo/app/git clone https:/gitee.com/paddlepaddle/LiteKit/Android/repository/com/baidu/litekit/handgesturedetector/0.3.0/handgesturedetector-0.3.0.pom\r\n     Required by:\r\n         project :app\r\n   > Could not find com.baidu.litekit:portraitsegmentation:0.3.0.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/com/baidu/litekit/portraitsegmentation/0.3.0/portraitsegmentation-0.3.0.pom\r\n       - https://jcenter.bintray.com/com/baidu/litekit/portraitsegmentation/0.3.0/portraitsegmentation-0.3.0.pom\r\n       - file:/D:/LiteKitDemo/app/git clone https:/gitee.com/paddlepaddle/LiteKit/Android/repository/com/baidu/litekit/portraitsegmentation/0.3.0/portraitsegmentation-0.3.0.pom\r\n     Required by:\r\n         project :app\r\n   > Could not find com.baidu.litekit:videosuperresolution:0.3.0.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/com/baidu/litekit/videosuperresolution/0.3.0/videosuperresolution-0.3.0.pom\r\n       - https://jcenter.bintray.com/com/baidu/litekit/videosuperresolution/0.3.0/videosuperresolution-0.3.0.pom\r\n       - file:/D:/LiteKitDemo/app/git clone https:/gitee.com/paddlepaddle/LiteKit/Android/repository/com/baidu/litekit/videosuperresolution/0.3.0/videosuperresolution-0.3.0.pom\r\n     Required by:\r\n         project :app\r\n   > Could not find com.baidu.litekit:ocr:0.3.0.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/com/baidu/litekit/ocr/0.3.0/ocr-0.3.0.pom\r\n       - https://jcenter.bintray.com/com/baidu/litekit/ocr/0.3.0/ocr-0.3.0.pom\r\n       - file:/D:/LiteKitDemo/app/git clone https:/gitee.com/paddlepaddle/LiteKit/Android/repository/com/baidu/litekit/ocr/0.3.0/ocr-0.3.0.pom\r\n     Required by:\r\n         project :app\r\n\r\nPossible solution:\r\n - Declare repository providing the artifact, see the documentation at https://docs.gradle.org/current/userguide/declaring_repositories.html\r\n\r\n",
+        "state": "closed",
+        "user": "roybill",
+        "closed_by": "roybill",
+        "created_at": "2022-05-11T06:58:06+00:00",
+        "updated_at": "2022-05-12T09:38:28+00:00",
+        "closed_at": "2022-05-12T09:38:28+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 10,
+        "title": "请问下nativePredictBitmap等native方法的实现，是否可以开源",
+        "body": "如题。",
+        "state": "open",
+        "user": "langxuelang",
+        "closed_by": null,
+        "created_at": "2022-04-01T03:39:58+00:00",
+        "updated_at": "2022-04-01T03:39:58+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 12,
+        "title": "想把人像分割的效果通过RTMP推流出去有什么好的方法呢?",
+        "body": null,
+        "state": "open",
+        "user": "roybill",
+        "closed_by": null,
+        "created_at": "2022-05-13T06:53:09+00:00",
+        "updated_at": "2022-05-13T06:53:09+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/LiteKit",
+        "number": 13,
+        "title": "这项目已经停止支持了吗? 支持自定义model吗?",
+        "body": "如题, 谢谢",
+        "state": "open",
+        "user": "badboy-tian",
+        "closed_by": null,
+        "created_at": "2023-03-15T01:46:56+00:00",
+        "updated_at": "2023-03-15T01:46:56+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    }
+]

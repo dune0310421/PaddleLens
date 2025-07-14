@@ -1,0 +1,16 @@
+[
+    {
+        "repo": "PFCCLab/dochooks",
+        "number": 1,
+        "title": "☑️ Dependency Dashboard",
+        "body": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/PFCCLab/dochooks).\n\n## Open\n\nThese updates have all been created already. Click a checkbox below to force a retry/rebase of any.\n\n - [ ] <!-- rebase-branch=renovate/astral-sh-setup-uv-6.x -->[⬆️ deps: Update astral-sh/setup-uv action to v6](../pull/52)\n\n## Detected dependencies\n\n<details><summary>github-actions</summary>\n<blockquote>\n\n<details><summary>.github/workflows/lint-and-fmt.yml</summary>\n\n - `actions/checkout v4`\n - `astral-sh/setup-uv v5`\n - `actions/setup-python v5`\n - `extractions/setup-just v3`\n\n</details>\n\n<details><summary>.github/workflows/release.yml</summary>\n\n - `actions/checkout v4`\n - `astral-sh/setup-uv v5`\n - `actions/setup-python v5`\n - `extractions/setup-just v3`\n - `actions/upload-artifact v4`\n - `actions/download-artifact v4`\n - `actions/download-artifact v4`\n - `softprops/action-gh-release v2`\n - `python 3.x`\n\n</details>\n\n<details><summary>.github/workflows/unit-test.yml</summary>\n\n - `actions/checkout v4`\n - `astral-sh/setup-uv v5`\n - `actions/setup-python v5`\n - `extractions/setup-just v3`\n\n</details>\n\n</blockquote>\n</details>\n\n<details><summary>pep621</summary>\n<blockquote>\n\n<details><summary>pyproject.toml</summary>\n\n - `python >=3.9`\n - `typing-extensions >=4.3.0`\n - `pyright >=1.1.386`\n - `ruff >=0.7.1`\n - `pytest >=8.3.3`\n - `pytest-rerunfailures >=14.0`\n - `tomli >=2.0.2`\n - `pre-commit >=4.0.1`\n\n</details>\n\n</blockquote>\n</details>\n\n<details><summary>renovate-config-presets</summary>\n<blockquote>\n\n<details><summary>.github/renovate.json5</summary>\n\n\n</details>\n\n</blockquote>\n</details>\n\n---\n\n- [ ] <!-- manual job -->Check this box to trigger a request for Renovate to run again on this repository\n\n",
+        "state": "open",
+        "user": "renovate[bot]",
+        "closed_by": null,
+        "created_at": "2022-07-15T11:36:14+00:00",
+        "updated_at": "2025-05-13T13:25:18+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    }
+]

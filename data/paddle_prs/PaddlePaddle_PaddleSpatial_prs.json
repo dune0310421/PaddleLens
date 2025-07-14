@@ -1,0 +1,439 @@
+[
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 317,
+        "title": "Add seenet",
+        "body": null,
+        "issue_number": "317",
+        "state": "closed",
+        "merged": true,
+        "user": "agave233",
+        "merged_by": "ramber1836",
+        "created_at": "2023-06-14T08:35:48+00:00",
+        "closed_at": "2023-06-14T08:40:59+00:00",
+        "additions": 1745,
+        "deletions": 1,
+        "changed_files": 17,
+        "commits": [
+            "06ff05951d23eef5ddf0c5fd62f47b371db8a395",
+            "77dbd5cbd9bab880332c9c2cf45216afd42bb86a"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 175,
+        "title": "remove useless comments",
+        "body": null,
+        "issue_number": "175",
+        "state": "closed",
+        "merged": true,
+        "user": "linlang1837",
+        "merged_by": "zhoujingbo",
+        "created_at": "2022-06-15T08:19:04+00:00",
+        "closed_at": "2022-06-20T07:08:37+00:00",
+        "additions": 3,
+        "deletions": 607,
+        "changed_files": 4,
+        "commits": [
+            "6d8d671f700f91c53309e23ad6e75ad9d4cc9c89",
+            "e8287250bbd33761a4e8f0d38bc348f8db3cc529"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 315,
+        "title": "add seenet",
+        "body": "release the source code of our KDD23 paper \"Multi-Temporal Relationship Inference in Urban Areas\"",
+        "issue_number": "315",
+        "state": "closed",
+        "merged": false,
+        "user": "agave233",
+        "merged_by": null,
+        "created_at": "2023-06-12T03:24:58+00:00",
+        "closed_at": "2023-06-14T08:33:20+00:00",
+        "additions": 1744,
+        "deletions": 0,
+        "changed_files": 16,
+        "commits": [
+            "06ff05951d23eef5ddf0c5fd62f47b371db8a395"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 314,
+        "title": "feat: support inverse with option",
+        "body": "works on #313 ",
+        "issue_number": "314",
+        "state": "closed",
+        "merged": true,
+        "user": "koseoyoung",
+        "merged_by": "ramber1836",
+        "created_at": "2023-06-07T22:19:15+00:00",
+        "closed_at": "2023-06-08T11:31:18+00:00",
+        "additions": 7,
+        "deletions": 0,
+        "changed_files": 2,
+        "commits": [
+            "783edb95cada1bd23e38e6cff8531347be679553"
+        ],
+        "comment_by": [
+            "CLAassistant",
+            "Jiaxiang-J"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 318,
+        "title": "add SHGNN",
+        "body": null,
+        "issue_number": "318",
+        "state": "closed",
+        "merged": false,
+        "user": "Xiao-congxi",
+        "merged_by": null,
+        "created_at": "2023-06-14T08:48:37+00:00",
+        "closed_at": "2023-06-14T08:58:01+00:00",
+        "additions": 1099,
+        "deletions": 0,
+        "changed_files": 8,
+        "commits": [
+            "f31cc6a27b2af27e61528faddf46afa258b46044",
+            "9aab577c8662fff0afbafa98254bf19d38d9a649",
+            "1c2496e50ae182375dac6840905d18f8d5f88ce9"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 316,
+        "title": "first commit for the code of KDD23 SHGNN",
+        "body": null,
+        "issue_number": "316",
+        "state": "closed",
+        "merged": false,
+        "user": "Xiao-congxi",
+        "merged_by": null,
+        "created_at": "2023-06-14T08:16:34+00:00",
+        "closed_at": "2023-06-14T08:47:01+00:00",
+        "additions": 1099,
+        "deletions": 0,
+        "changed_files": 8,
+        "commits": [
+            "f31cc6a27b2af27e61528faddf46afa258b46044",
+            "9aab577c8662fff0afbafa98254bf19d38d9a649",
+            "1c2496e50ae182375dac6840905d18f8d5f88ce9"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 24,
+        "title": "fix evaluation days",
+        "body": "> https://aistudio.baidu.com/aistudio/competition/detail/152/0/datasets\r\n> We will evaluate the model by 48 hours ahead prediction (instead of the previous 42 hours ahead prediction) to simplify the evaluation setting and to avoid confusion.\r\n\r\nSo here it should be 2 days?",
+        "issue_number": "24",
+        "state": "closed",
+        "merged": false,
+        "user": "h3z",
+        "merged_by": null,
+        "created_at": "2022-04-13T04:23:31+00:00",
+        "closed_at": "2022-04-14T06:35:06+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "585095304a41281aa9562c26ba8262d040954dc7"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 309,
+        "title": "Create gen_adj_mx.py",
+        "body": "Graph Construction for METR_LA Los Angeles",
+        "issue_number": "309",
+        "state": "open",
+        "merged": false,
+        "user": "seeingisbelieveing",
+        "merged_by": null,
+        "created_at": "2023-02-24T06:38:52+00:00",
+        "closed_at": null,
+        "additions": 63,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "eed508f9901e5b12597bc3e86f9ad4ddcb96ae37"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 234,
+        "title": "add references",
+        "body": "add some reference codes link",
+        "issue_number": "234",
+        "state": "closed",
+        "merged": true,
+        "user": "aptx1231",
+        "merged_by": "zhoujingbo",
+        "created_at": "2022-07-01T14:43:17+00:00",
+        "closed_at": "2022-07-04T07:16:28+00:00",
+        "additions": 5,
+        "deletions": 0,
+        "changed_files": 4,
+        "commits": [
+            "8bb83d4bfc76a009d42d59d0578fcb63dff4d899"
+        ],
+        "comment_by": [
+            "aptx1231"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 95,
+        "title": "first commit, add TINT",
+        "body": null,
+        "issue_number": "95",
+        "state": "closed",
+        "merged": true,
+        "user": "linlang1837",
+        "merged_by": "zhoujingbo",
+        "created_at": "2022-05-23T08:37:49+00:00",
+        "closed_at": "2022-05-23T10:03:25+00:00",
+        "additions": 1788,
+        "deletions": 0,
+        "changed_files": 7,
+        "commits": [
+            "52a35ecb8d19364be7de88e6600ae99dc49cbfcf",
+            "7821899ee9c72217e7d827b0f34b2e3975303897"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 31,
+        "title": "【Hackathon No.87】PaddleSpatial添加路网表征学习模块",
+        "body": "【Hackathon No.87】PaddleSpatial添加路网表征学习模块\r\n",
+        "issue_number": "31",
+        "state": "closed",
+        "merged": true,
+        "user": "aptx1231",
+        "merged_by": "mingzhang1998",
+        "created_at": "2022-04-26T15:26:27+00:00",
+        "closed_at": "2022-04-29T11:53:56+00:00",
+        "additions": 135802,
+        "deletions": 0,
+        "changed_files": 15,
+        "commits": [
+            "5dd9a69417f6f6921d3b4886483552f3bb8a94a0",
+            "b79ec570f308e362de9e5d1c0b1a561249a66683",
+            "6c7011956594956ca150d1c164061e85f08d3901",
+            "9d4f09032c214c74203b651ac2db00fe3e71823a",
+            "3504c8e79a50cde7d41bbc465dcedf15a33b2d16",
+            "b4a91678325d08ea0742293c7dac51b8b55a89c0"
+        ],
+        "comment_by": [
+            "aptx1231",
+            "mingzhang1998",
+            "aptx1231"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 2,
+        "title": "Open source genregion package",
+        "body": "The genregion package has beed changed.",
+        "issue_number": "2",
+        "state": "closed",
+        "merged": true,
+        "user": "mingzhang1998",
+        "merged_by": "mingzhang1998",
+        "created_at": "2022-03-15T07:43:35+00:00",
+        "closed_at": "2022-03-15T07:43:48+00:00",
+        "additions": 5680,
+        "deletions": 175926,
+        "changed_files": 55,
+        "commits": [
+            "6550f1bbceb812c95cdb6ac1c0c262223cd9dab5",
+            "a607fd72688e7f9fbfba6cf3a971a41ab7c01dc1"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 319,
+        "title": "add SHGNN",
+        "body": null,
+        "issue_number": "319",
+        "state": "closed",
+        "merged": true,
+        "user": "Xiao-congxi",
+        "merged_by": "ramber1836",
+        "created_at": "2023-06-14T09:03:39+00:00",
+        "closed_at": "2023-06-15T09:18:33+00:00",
+        "additions": 1099,
+        "deletions": 0,
+        "changed_files": 8,
+        "commits": [
+            "18381bd6c8536dab438a073aeed6e7a0bfc29cff"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 326,
+        "title": "Add code for KDD24 research paper ReFound",
+        "body": null,
+        "issue_number": "326",
+        "state": "closed",
+        "merged": false,
+        "user": "Xiao-congxi",
+        "merged_by": null,
+        "created_at": "2024-09-05T05:56:08+00:00",
+        "closed_at": "2024-09-05T06:06:48+00:00",
+        "additions": 3625,
+        "deletions": 0,
+        "changed_files": 20,
+        "commits": [
+            "d4d0be11c645630725818dd3a629dfc1d6fd3d5e",
+            "7a1c2e9af18b5b6948729362dc41831f260dbd0c",
+            "6c4a44bf9398369c84411d34a8fe10facf3e90b0",
+            "f4595129ba7a63639fa12c4dc67b0b9eb515e032"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 327,
+        "title": " Add code for KDD24 research paper ReFound",
+        "body": null,
+        "issue_number": "327",
+        "state": "closed",
+        "merged": false,
+        "user": "Xiao-congxi",
+        "merged_by": null,
+        "created_at": "2024-09-05T06:07:46+00:00",
+        "closed_at": "2024-09-05T06:19:45+00:00",
+        "additions": 3626,
+        "deletions": 0,
+        "changed_files": 20,
+        "commits": [
+            "d4d0be11c645630725818dd3a629dfc1d6fd3d5e",
+            "7a1c2e9af18b5b6948729362dc41831f260dbd0c",
+            "6c4a44bf9398369c84411d34a8fe10facf3e90b0",
+            "f4595129ba7a63639fa12c4dc67b0b9eb515e032",
+            "8d4c6f4e5cdae1de8fb15b3accbf01429e29a25c",
+            "fadf7101ab8f14bbadd52b5c3a2ef92464341794"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 328,
+        "title": "Add code for KDD24 research paper ReFound",
+        "body": null,
+        "issue_number": "328",
+        "state": "closed",
+        "merged": false,
+        "user": "Xiao-congxi",
+        "merged_by": null,
+        "created_at": "2024-09-05T06:20:18+00:00",
+        "closed_at": "2024-09-05T06:22:33+00:00",
+        "additions": 3626,
+        "deletions": 0,
+        "changed_files": 20,
+        "commits": [
+            "d4d0be11c645630725818dd3a629dfc1d6fd3d5e",
+            "7a1c2e9af18b5b6948729362dc41831f260dbd0c",
+            "6c4a44bf9398369c84411d34a8fe10facf3e90b0",
+            "f4595129ba7a63639fa12c4dc67b0b9eb515e032",
+            "8d4c6f4e5cdae1de8fb15b3accbf01429e29a25c",
+            "fadf7101ab8f14bbadd52b5c3a2ef92464341794"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 325,
+        "title": "add HTP",
+        "body": "add HTP",
+        "issue_number": "325",
+        "state": "closed",
+        "merged": true,
+        "user": "immortal5655",
+        "merged_by": "ramber1836",
+        "created_at": "2024-07-30T13:41:30+00:00",
+        "closed_at": "2024-08-05T07:57:35+00:00",
+        "additions": 762666,
+        "deletions": 0,
+        "changed_files": 51,
+        "commits": [
+            "9f8ea2e5c5467b1528b9fc6443d6da65575fdbf8",
+            "5019dc19d5c03cbaa6c079785dd45b187029cbd6",
+            "03b37b7ba0971b2342518e72be72b75aa0e010ce",
+            "4513bbc6673fae7abd0c6de303206bac6bed6771",
+            "f3ae748bbe98d01098aa247db43106bcab2a7ca3",
+            "de342c319e840c9c282d64408c4bdc6ba5ba4848",
+            "ad49580836fc88ad24b38516a54b3dc128f83633",
+            "c21ee4c2988aaa0ddeafc3b422ab9bdc6a04534b",
+            "3988fd144c97fb7357204926f6670587351d092a"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 329,
+        "title": "ReFound code",
+        "body": null,
+        "issue_number": "329",
+        "state": "open",
+        "merged": false,
+        "user": "Xiao-congxi",
+        "merged_by": null,
+        "created_at": "2024-09-05T06:26:28+00:00",
+        "closed_at": null,
+        "additions": 3626,
+        "deletions": 0,
+        "changed_files": 20,
+        "commits": [
+            "7da73b44dd04ab9e9765c2d27fed6a61589ef8e3"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    }
+]

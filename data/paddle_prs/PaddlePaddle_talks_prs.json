@@ -1,0 +1,224 @@
+[
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 4,
+        "title": "add paddle development environment illustration files",
+        "body": "",
+        "issue_number": "4",
+        "state": "closed",
+        "merged": true,
+        "user": "helinwang",
+        "merged_by": "wangkuiyi",
+        "created_at": "2017-04-25T21:37:49+00:00",
+        "closed_at": "2017-04-25T23:14:55+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 4,
+        "commits": [
+            "0185259fbd8adc3a067569a518a402269328ea00"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 10,
+        "title": "Add ArchSummit PPT",
+        "body": "",
+        "issue_number": "10",
+        "state": "closed",
+        "merged": true,
+        "user": "reyoung",
+        "merged_by": "wangkuiyi",
+        "created_at": "2017-12-21T05:18:13+00:00",
+        "closed_at": "2017-12-21T05:24:11+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 2,
+        "commits": [
+            "51457c779888ddf6206f3f49ea19c4dc02659df2"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 6,
+        "title": "Add a Bash script to list figures in README.md",
+        "body": "",
+        "issue_number": "6",
+        "state": "closed",
+        "merged": true,
+        "user": "wangkuiyi",
+        "merged_by": "helinwang",
+        "created_at": "2017-05-02T17:34:52+00:00",
+        "closed_at": "2017-05-02T18:33:04+00:00",
+        "additions": 27,
+        "deletions": 0,
+        "changed_files": 3,
+        "commits": [
+            "d77e11176619468583b8e118f98b2de2fd823557"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 7,
+        "title": "Add GTC slides",
+        "body": "",
+        "issue_number": "7",
+        "state": "closed",
+        "merged": true,
+        "user": "wangkuiyi",
+        "merged_by": "wangkuiyi",
+        "created_at": "2017-10-05T19:01:48+00:00",
+        "closed_at": "2017-10-06T01:14:15+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 2,
+        "commits": [
+            "7c6114bc5c25e6d0691a39a27bf3b4c59b439356"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 3,
+        "title": "Add paddle-cloud-design",
+        "body": "![](https://raw.githubusercontent.com/wangkuiyi/talks/e04ccd3abbec4ae7b0a2ba5b5cd3e8198f33e3a3/figures/paddle-cloud-design.png)",
+        "issue_number": "3",
+        "state": "closed",
+        "merged": true,
+        "user": "wangkuiyi",
+        "merged_by": "wangkuiyi",
+        "created_at": "2017-04-25T03:18:29+00:00",
+        "closed_at": "2017-04-25T03:19:07+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 2,
+        "commits": [
+            "e04ccd3abbec4ae7b0a2ba5b5cd3e8198f33e3a3"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 5,
+        "title": "Move figures from root dir to figures/",
+        "body": "I noticed that some figures are in the root directory. I am moving them into `figures/`.",
+        "issue_number": "5",
+        "state": "closed",
+        "merged": true,
+        "user": "wangkuiyi",
+        "merged_by": "helinwang",
+        "created_at": "2017-05-02T17:23:35+00:00",
+        "closed_at": "2017-05-02T18:22:43+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 4,
+        "commits": [
+            "9c1c040961eba1f1f6fa5a00a6bd63185d76a7c4"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 9,
+        "title": "Add paddlepaddle intro ppt",
+        "body": "This is some update work on previous @gangliao 's work.",
+        "issue_number": "9",
+        "state": "closed",
+        "merged": true,
+        "user": "typhoonzero",
+        "merged_by": "llxxxll",
+        "created_at": "2017-12-14T02:49:07+00:00",
+        "closed_at": "2017-12-14T02:53:04+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 2,
+        "commits": [
+            "d019f4c5f5a3f8b6eba339f7de3a2256cbc791e0"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 8,
+        "title": "A three-page slide updating the status of the project by the end of 2017",
+        "body": "",
+        "issue_number": "8",
+        "state": "closed",
+        "merged": false,
+        "user": "wangkuiyi",
+        "merged_by": null,
+        "created_at": "2017-10-20T19:58:06+00:00",
+        "closed_at": "2017-12-21T05:25:00+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 2,
+        "commits": [
+            "3298b2aac2147c10f7f00a6c0c6fa830cafecea0"
+        ],
+        "comment_by": [
+            "llxxxll",
+            "wangkuiyi"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 2,
+        "title": "Merge to develop branch",
+        "body": "The default branch has already become develop, merge master branch.\r\n\r\n",
+        "issue_number": "2",
+        "state": "closed",
+        "merged": true,
+        "user": "Yancey0623",
+        "merged_by": "wangkuiyi",
+        "created_at": "2017-04-20T06:05:00+00:00",
+        "closed_at": "2017-04-20T13:32:26+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 6,
+        "commits": [
+            "34a15157521ff018586a4d3c9fca0df6c96be104",
+            "adf69f1ea667aa3dece85d6ad0824793620de762",
+            "f13ffc5482e27b35d14f2f0f15b4bcc0e85ec883",
+            "9f3b315ab6f685eb444b4a2b0c575dc60789a353"
+        ],
+        "comment_by": [
+            "wangkuiyi"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/talks",
+        "number": 1,
+        "title": "Add some existing figures",
+        "body": "Fixes https://github.com/PaddlePaddle/Paddle/issues/1819",
+        "issue_number": "1",
+        "state": "closed",
+        "merged": true,
+        "user": "wangkuiyi",
+        "merged_by": "wangkuiyi",
+        "created_at": "2017-04-20T00:53:11+00:00",
+        "closed_at": "2017-04-20T01:28:15+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 6,
+        "commits": [
+            "34a15157521ff018586a4d3c9fca0df6c96be104",
+            "adf69f1ea667aa3dece85d6ad0824793620de762",
+            "f13ffc5482e27b35d14f2f0f15b4bcc0e85ec883"
+        ],
+        "comment_by": [
+            "gongweibao"
+        ],
+        "review_by": []
+    }
+]

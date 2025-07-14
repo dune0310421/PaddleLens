@@ -1,0 +1,1606 @@
+[
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 7
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 3
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 9
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 6
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 5
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 8
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 10,
+        "title": "【PaddlePaddle Hackathon 2】114、PaddleSpatial添加时间序列预测模块",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 第二期活动的任务 ISSUE，更多详见 https://github.com/PaddlePaddle/Paddle/issues/40234）\r\n\r\n【任务说明】\r\n任务标题： PaddleSpatial添加路时间序列预测模块\r\n技术标签：Python、 PaddlePaddle\r\n任务难度：简单\r\n详细描述：实现最新的时间序列预测算法，完善PaddleSpatial时间序列预测能力\r\n包括：1） 基于RNN的时序预测（非常简单）\r\n           2）论文 Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting (AAAI'21 Best Paper)\r\n【提交流程】\r\n直接PR至 https://github.com/PaddlePaddle/PaddleSpatial/tree/main/paddlespatial/modelzoo/timeseries即可开启验收。\r\n【提交内容】\r\n相关模块源代码、开发文档、Benchmark。\r\n【合入标准】\r\n开发完成，并参与后续维护至正式版本发布。\r\n【技术要求】\r\n熟悉PaddlePaddle基本算法模块。\r\n【参考内容】\r\ninformer：https://github.com/zhouhaoyi/Informer2020 包含informer的实现代码；\r\nSeq2Seq:https://github.com/LibCity/Bigscity-LibCity/blob/master/libcity/model/traffic_speed_prediction/Seq2Seq.py  \r\n 中含有一个RNN做时间序列预测的示例。\r\n【答疑交流】\r\n如果在开发中对于上述任务有任何问题，欢迎在本 ISSUE 下留言交流。\r\n对于开发中的共性问题，在活动过程中，会定期组织答疑，请大家关注官网&QQ群的通知，及时参与。",
+        "state": "closed",
+        "user": "zhoujingbo",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-04-02T05:06:40+00:00",
+        "updated_at": "2022-05-26T06:44:21+00:00",
+        "closed_at": "2022-05-26T06:44:21+00:00",
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 11
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 1,
+        "title": "【PaddlePaddle Hackathon 2】87、PaddleSpatial添加路网表征学习模块",
+        "body": "（此 ISSUE 为 PaddlePaddle Hackathon 第二期活动的任务 ISSUE，更多详见 [【PaddlePaddle Hackathon 第二期】任务总览](https://github.com/PaddlePaddle/Paddle/issues/40234)）\r\n\r\n【任务说明】\r\n\r\n- 任务标题： PaddleSpatial添加路网表征学习模块\r\n\r\n- 技术标签：Python、 PaddlePaddle\r\n\r\n- 任务难度：中等\r\n\r\n- 详细描述：路网表征学习是时空大数据分析中的关键任务之一。需要实现基于 Geom-GCN，chebCovn等表征学习方法（[代码](https://github.com/LibCity/Bigscity-LibCity/blob/master/libcity/model/road_representation/GeomGCN.py)）， 完成路网表征学习的功能模块。 作为中等任务，需要实现4种路网表征学习模块（Geom-GCN, ChebConv, DeepWalk, LINE) 。\r\n\r\n【提交流程】\r\n\r\n- 直接PR至 https://github.com/PaddlePaddle/PaddleSpatial/tree/main/paddlespatial 即可开启验收。\r\n\r\n【提交内容】\r\n\r\n- 相关模块源代码、开发文档、Benchmark。\r\n\r\n【合入标准】\r\n\r\n- 开发完成，并参与后续维护至正式版本发布。\r\n\r\n【技术要求】\r\n\r\n- 熟悉PaddlePaddle和PGL基本算法模块。\r\n\r\n【参考内容】\r\n\r\nhttps://github.com/LibCity/Bigscity-LibCity/tree/master/libcity/model/road_representation 中含有路网表征学习的实现情况。\r\n\r\n【答疑交流】\r\n\r\n- 如果在开发中对于上述任务有任何问题，欢迎在本 ISSUE 下留言交流。\r\n- 对于开发中的共性问题，在活动过程中，会定期组织答疑，请大家关注官网&QQ群的通知，及时参与。",
+        "state": "closed",
+        "user": "TCChenlong",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-03-08T10:54:28+00:00",
+        "updated_at": "2022-05-04T16:54:10+00:00",
+        "closed_at": "2022-05-04T16:54:10+00:00",
+        "comments_count": [],
+        "labels": [
+            "PaddlePaddle Hackathon"
+        ]
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 12
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 13
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 16
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 4,
+        "title": "提几个建议,望各位大佬采纳",
+        "body": "1.教程目前是英文的,能否提供中文版本,很简单吧.目前教程目录中的几个链接也都是英文的,希望提供中文.\r\n2.[PaddleSpatial](https://github.com/PaddlePaddle/PaddleSpatial)仓库开设之前,我就一直跟某个飞桨大佬提议,开设时空序列预测仓库,因为我使用了easydl的时间预测序列,效果不好,说白了就是性能差,完全达不到预期,希望能有更专业的仓库,比如可以提供多种算法,easydl只需要我提供数据execl,我完全不知道内部做了什么,而且效果不怎么样.时间序列预测,应该是一个学术界研究热点,如果有一个很牛逼的时间预测序列算法,每个人都可以炒股发财了,哈哈哈哈.开个玩笑.不指望时间预测序列能预测股票,但希望,可以复现顶级论文算法,很多时间预测序列算法很牛逼的样子,似乎前景也不错,希望复现.\r\n3.作为仓库的开发者,你们希望,输入数据,是一种怎样的组织形式呢?用execl?\r\n4.房价预测问题,只需要弄个3层小神经网络,就可以达到很好的效果.输入是13维数组,模型输出是房价,训练时数据集得分成训练集和验证集.我想说的是,现实世界中,往往做一个实验,可以找到很多数据,输入N维数据,得到某个输出数据,比如为了研究重力和质量的关系,通过实验,得到了大量数据集,使用这些数据集是否就能得出关系呢?神经网络是否可以很好的拟合两者之间的关系呢?这个问题很简单,是正比关系,但是对于一些关系很复杂,目前不知道存在什么关系的情况下,神经网络能否很好拟合呢?举个例子,端流就很难.这也可以看出输入N维数据,输出某个结果.你们目前提供这种输入N维数据,输出某个结果的模型吗?好比房价预测问题,输入13维数据,输出房价.",
+        "state": "closed",
+        "user": "yuwoyizhan",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-03-24T07:07:15+00:00",
+        "updated_at": "2022-04-10T13:11:25+00:00",
+        "closed_at": "2022-04-10T13:11:25+00:00",
+        "comments_count": [
+            "zhoujingbo",
+            "yuwoyizhan",
+            "zhoujingbo"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 15
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 17
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 18
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 19
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 20
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 23
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 22
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 21
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 25
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 26
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 14,
+        "title": "建议",
+        "body": "1.我虽然看不懂英文,但我通过百度搜索Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecas,看到了很多关于该篇论文的解读,主要就是作者认为Transformer用于长时间序列预测研究潜力很大,但目前存在3个问题,分别提出了解决办法,并且效果验证还不错.可是论文很多东西没有涉及.\r\n比方说,论文采用官方数据集这种方式进行模型效果验证,这样一来,因变量y由几个自变量x决定,已经由数据集定义好了,可是现实生活中不是这样的.为了通过多维x预测y,我们首先得确定哪些维度x会影响y.我想问问,假设我为了预测一个变量y,我通过实验或者某种方法,得到了100维自变量的数据和因变量y的数据,但我如何通过一个算法或者模型,判断哪些维度的自变量x是关于y的有效自变量,哪些维度的自变量x是关于y的无效自变量.比如为了预测引力,我得到了物体质量,体积这2个维度的数据和重力数据,我如何通过一个算法或者模型,得到引力只跟质量有关,跟体积无关这个结论?我又如何通过模型,得到引力不仅仅跟质量有关,还跟某个或某些未知自变量有关的结论?(注:引力=[引力常量]乘以两物体质量的[乘积]除以它们距离的平方。)\r\n希望百度paddlespatial可以提供这个模型或者算法,谢谢.这对我很重要.\r\n2.时间序列预测,在我看来分为两类,一类是短时间时间预测序列,比如根据过去值,预测未来一天的值.听过多数论文都是研究短时间时间预测序列.这种短时间时间序列预测是重中之重,希望可以提供很多模型.比如clas图像分类就提供了不下于100个模型.上面那篇论文提到的似乎属于长时间时间预测序列.我经常听说长时间预测序列并不靠谱,根据过去很长一段时间的天气温度,湿度等变量,预测30天后的天气温度?这不扯淡一样吗?\r\n不知道现在技术如何了,真能做到长时间序列预测吗?\r\n扯远了,我想说的是,对于时间预测序列,我应该使用过去多长时间的数据去训练,去预测.比如预测天气,我应该使用过去一年,过去一月,还是过去一周的数据进行模型训练和预测呢?目前好像没有人提供这种模型,告诉我应该选择过去多久的数据进行训练和预测.\r\n希望百度paddlespatial可以提供这个模型或者算法,谢谢.这对我很重要.\r\n3.上个问题,我认为你们回答了一半吧.通过issue交流很不方便,我也知道罗马帝国不是一天建成的,paddlespatial肯定也不是短时间可以取得巨大成功.希望你们可以多复现那些SOTA算法,无论短时间时间序列预测还是长时间时间序列预测.其实在我看来,短时间时间序列预测和长时间时间预测序列应该使用不同的模型算法,不知道你们认为如何.\r\n4.能加个QQ聊聊吗?issue太不方便了,微信也行,拜托.QQ:1226194560   微信:18820785964",
+        "state": "closed",
+        "user": "yuwoyizhan",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-04-09T04:17:22+00:00",
+        "updated_at": "2022-04-10T13:11:37+00:00",
+        "closed_at": "2022-04-10T13:11:37+00:00",
+        "comments_count": [
+            "zhoujingbo"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 27
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 28
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 29
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 32
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 30
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 33
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 34
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 35
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 36
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 37
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 38
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 40
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 39
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 41
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 42
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 43
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 44
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 45
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 48
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 46
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 47
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 49
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 50
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 51
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 52
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 54
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 53
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 55
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 56
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 57
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 58
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 59
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 60
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 62
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 61
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 63
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 64
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 65
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 66
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 67
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 70
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 68
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 69
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 71
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 72
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 73
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 74
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 75
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 78
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 76
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 80
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 81
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 82
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 83
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 84
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 86
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 77,
+        "title": "现在leaderboard 的结果是需要提交代码的吗....confusing.....",
+        "body": "![image](https://user-images.githubusercontent.com/29778965/169195329-5f2c3124-12cb-477a-90a0-9bb60c55163b.png)\r\n 想问一下当前提交的结果是根据给的245 的最后15天，然后预测未来两天的结果吗？",
+        "state": "closed",
+        "user": "perveil",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-05-19T03:04:30+00:00",
+        "updated_at": "2022-05-24T17:36:38+00:00",
+        "closed_at": "2022-05-24T17:36:38+00:00",
+        "comments_count": [
+            "ramber1836",
+            "mb-Ma",
+            "zhoujingbo"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 79,
+        "title": "in KDD cup, I have a question ",
+        "body": "![image](https://user-images.githubusercontent.com/87846187/169220306-7d2f3eff-3495-4bb2-8453-b7eb19e27c88.png)\r\n\r\n\r\nin image, what is means the \"framework\" argument ??? ",
+        "state": "closed",
+        "user": "Yoontae6719",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-05-19T05:57:02+00:00",
+        "updated_at": "2022-10-11T08:37:37+00:00",
+        "closed_at": "2022-05-24T17:35:42+00:00",
+        "comments_count": [
+            "ramber1836",
+            "zhoujingbo",
+            "ramber1836"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 88
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 89
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 90
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 91
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 85,
+        "title": "'NoneType' object has no attribute 'forecast'",
+        "body": "hi, when I use base environment, I  got error like this, 'NoneType' object has no attribute 'forecast'. \r\nBut I did define the correct predict.py and prepare.py files, and I can run \"python evaluation.py\" locally to get the results on my server.",
+        "state": "closed",
+        "user": "q3erf",
+        "closed_by": "q3erf",
+        "created_at": "2022-05-20T08:00:33+00:00",
+        "updated_at": "2022-10-11T09:15:48+00:00",
+        "closed_at": "2022-05-20T12:34:20+00:00",
+        "comments_count": [
+            "ramber1836",
+            "q3erf",
+            "q3erf",
+            "q3erf",
+            "q3erf"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 93
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 92
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 94
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 87,
+        "title": "lightgbm maybe not correctly installed in base environment",
+        "body": "At the beginning, I found that it would appear `'NoneType' object has no attribute 'forecast'` when using lightgbm in the base environment, and  After commenting `import lightgbm as lgb`, this error is solved. could you please check the base environment whether lightgbm is installed correctly. thank you! ",
+        "state": "closed",
+        "user": "q3erf",
+        "closed_by": "q3erf",
+        "created_at": "2022-05-20T12:32:47+00:00",
+        "updated_at": "2022-05-22T03:06:20+00:00",
+        "closed_at": "2022-05-22T03:06:20+00:00",
+        "comments_count": [
+            "ramber1836",
+            "ramber1836",
+            "q3erf"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 97
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 98
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 99
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 100
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 101
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 102
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 103
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 96,
+        "title": "Excessive usage of memory",
+        "body": "## Problem\r\nI am using the full dataset and baseline code, with modification only to the file path in prepare.py. I can successfully train my 134 models, but when I want to evaluate, the program always use too much memory (like over 32 GB). Have inspected the code and suspect that it's the responses list [256:common.py] taking too much memory, but I don't know what to do with it. Can somebody help me.\r\n\r\n## My project structure\r\n./wpf_baseline_gru\r\n| --- /data\r\n    | --- wtbdata_245days.csv\r\n| ---- ... rest of files\r\n",
+        "state": "closed",
+        "user": "anmicius0",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-05-23T15:44:52+00:00",
+        "updated_at": "2022-05-24T17:36:18+00:00",
+        "closed_at": "2022-05-24T17:36:18+00:00",
+        "comments_count": [
+            "ramber1836",
+            "anmicius0",
+            "ramber1836"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 104
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 106
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 107
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 108
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 109
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 110
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 111
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 112
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 114
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 113
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 105,
+        "title": "AGAIN! lightgbm maybe not correctly installed in base environment",
+        "body": "We encountered this problem again`'NoneType' object has no attribute 'forecast' ` in **base** environment.\r\n \r\nCan you confirm that lightGBM is correctly installed in the base environment. \r\n\r\nThx!",
+        "state": "closed",
+        "user": "q3erf",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-05-26T03:15:30+00:00",
+        "updated_at": "2022-05-30T17:17:19+00:00",
+        "closed_at": "2022-05-30T17:17:19+00:00",
+        "comments_count": [
+            "ramber1836"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 115
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 116
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 117
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 118
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 119
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 120
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 121
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 123
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 122
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 124
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 125
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 126
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 127
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 128
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 129
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 130
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 131
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 132
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 133
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 134
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 135
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 136
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 137
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 138
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 139
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 140
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 142
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 141
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 143
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 144
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 145
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 146
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 147
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 148
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 150
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 149
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 151
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 152
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 154
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 153
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 158
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 155
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 156
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 159
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 160
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 161
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 162
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 165
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 163
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 166
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 167
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 164
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 157,
+        "title": "Package Requirements for WPF",
+        "body": "hi, we want to try the model ensemble of machine learning models and deep learning models. Could you install lightgbm==3.3.2 in the pytorch environment? thx!",
+        "state": "closed",
+        "user": "q3erf",
+        "closed_by": "q3erf",
+        "created_at": "2022-06-08T08:13:13+00:00",
+        "updated_at": "2022-06-08T13:28:08+00:00",
+        "closed_at": "2022-06-08T13:28:08+00:00",
+        "comments_count": [
+            "ramber1836",
+            "q3erf"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 168
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 169
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 173
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 170
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 171
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 174
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 172
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 176
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 177
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 178
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 181
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 179
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 182
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 180
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 183
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 185
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 184
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 186
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 187
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 189
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 188
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 190
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 191
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 192
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 193
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 194
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 195
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 197
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 196
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 198
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 199
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 200
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 201
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 203
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 202
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 204
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 205
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 206
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 207
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 208
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 209
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 211
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 210
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 212
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 213
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 214
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 215
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 216
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 217
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 218
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 219
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 220
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 221
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 222
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 224
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 223
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 225
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 227
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 226
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 228
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 229
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 230
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 231
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 233
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 232
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 236
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 235
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 237
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 238
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 239
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 240
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 242
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 241
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 243
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 244
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 245
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 246
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 247
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 248
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 250
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 249
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 251
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 252
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 253
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 254
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 255
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 258
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 257
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 256
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 259
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 261
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 260
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 262
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 265
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 264
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 263
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 267
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 268
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 266
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 269
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 270
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 271
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 272
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 274
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 273
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 275
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 276
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 277
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 279
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 278
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 282
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 280
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 283
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 285
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 284
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 287
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 289
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 286
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 288
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 290
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 291
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 281,
+        "title": "kddcup22-sdwpf-evaluation提交结果报错",
+        "body": "在此次比赛中，我们队伍的提交结果总是提示 Error occurred：Err: Accuracy (-0.004) is lower than Zero, which means that the RMSE (in latest 24 hours) of the 120...\r\n\r\n因为 Err 显示不完全，我们并不清楚是哪里产生了错误，导致无法得到测试结果的分数。\r\n\r\n我们在本地运行 evaluation.py 是完全可以跑通的，没用任何报错，可否提供远程服务器完整的报错信息？",
+        "state": "closed",
+        "user": "miraclefish",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-07-17T01:48:19+00:00",
+        "updated_at": "2022-07-19T11:12:19+00:00",
+        "closed_at": "2022-07-19T11:12:19+00:00",
+        "comments_count": [
+            "ramber1836"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 292
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 293
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 294
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 296
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 297
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 295
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 299
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 302
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 298
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 300,
+        "title": "Data of wpf",
+        "body": "Where can I find the wpf data?",
+        "state": "closed",
+        "user": "Arthur-Null",
+        "closed_by": "zhoujingbo",
+        "created_at": "2022-08-26T06:40:57+00:00",
+        "updated_at": "2022-08-29T19:30:11+00:00",
+        "closed_at": "2022-08-29T19:30:11+00:00",
+        "comments_count": [
+            "zhoujingbo"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 306,
+        "title": "NotImplementedError: You must implement the backward function for custom autograd.Function.",
+        "body": "- Thank you for your wonderful work. When I reproduced the pytorch version of  d3vae, the following error occurred.\r\n\r\n```\r\nTraceback (most recent call last):\r\n  File \"main.py\", line 112, in <module>\r\n    exp.train(setting)\r\n  File \"/root/Project/Seq_diff/d3vae_pytorch/exp/exp_model.py\", line 131, in train\r\n    loss.backward()\r\n  File \"/root/miniconda3/envs/seq_DM/lib/python3.6/site-packages/torch/tensor.py\", line 221, in backward\r\n    torch.autograd.backward(self, gradient, retain_graph, create_graph)\r\n  File \"/root/miniconda3/envs/seq_DM/lib/python3.6/site-packages/torch/autograd/__init__.py\", line 132, in backward\r\n    allow_unreachable=True)  # allow_unreachable flag\r\n  File \"/root/miniconda3/envs/seq_DM/lib/python3.6/site-packages/torch/autograd/function.py\", line 89, in apply\r\n    return self._forward_cls.backward(self, *args)  # type: ignore\r\n  File \"/root/miniconda3/envs/seq_DM/lib/python3.6/site-packages/torch/autograd/function.py\", line 201, in backward\r\n    raise NotImplementedError(\"You must implement the backward function for custom\"\r\nNotImplementedError: You must implement the backward function for custom autograd.Function.\r\n```\r\n\r\n- My pytoch version is 1.7.1\r\n\r\n- Solution\r\n  - Add neural_operations.py at line 68 of the code `@staticmethod`  to fix the bug.",
+        "state": "closed",
+        "user": "Bitterdhg",
+        "closed_by": "ramber1836",
+        "created_at": "2023-01-22T17:21:39+00:00",
+        "updated_at": "2023-02-09T12:37:24+00:00",
+        "closed_at": "2023-02-09T12:37:24+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 301,
+        "title": "I wonder whether there will be a preprocessing py and it prompted that you must implement the backward function for custom autograd.Function",
+        "body": "Hello, I want to ask whether the author can provide preprocessing code, otherwise it is difficult to reproduce the corresponding results. In addition, I put wind.csv into data folder and found that it prompted that you must implement the backward function for custom autograd.Function",
+        "state": "closed",
+        "user": "phet1113",
+        "closed_by": "ramber1836",
+        "created_at": "2022-12-05T17:02:33+00:00",
+        "updated_at": "2022-12-08T08:39:06+00:00",
+        "closed_at": "2022-12-08T08:39:06+00:00",
+        "comments_count": [
+            "ramber1836"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 303,
+        "title": "Reproducibility of D3VAE",
+        "body": "Hi, I have been trying to reproduce the results published in the paper [D3VAE](https://arxiv.org/abs/2301.03028), with the following command:\r\n```\r\npython main.py       --root_path ~/data/ETDataset-main/ETT-small --data_path ETTh1.csv \\\r\n                     --input_dim 7 --percentage 0.05 --diff_steps 1000 \\\r\n                     --beta_end 0.1\r\n```\r\n\r\nThe last lines I got were:\r\n```\r\nmse:0.3795701265335083, mae:0.4926460385322571\r\n0.4403777 0.0682598 0.5076214 0.040027253\r\n```\r\nIf I understand well, 0.4403777 is the average mse over several runs of the experiment. But I do not find this value in the paper rather the value indicated is 0.292. \r\n\r\nIs there something I am missing?\r\n",
+        "state": "closed",
+        "user": "brunorigal",
+        "closed_by": "zhoujingbo",
+        "created_at": "2023-01-13T13:53:47+00:00",
+        "updated_at": "2023-05-16T07:03:02+00:00",
+        "closed_at": "2023-05-16T07:03:02+00:00",
+        "comments_count": [
+            "ramber1836",
+            "brunorigal",
+            "ramber1836",
+            "brunorigal",
+            "timm-gatg",
+            "timm-gatg",
+            "yl4467",
+            "BenjiKCF"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 304,
+        "title": "D3VAE number of disentanglement factors?",
+        "body": "Hi, the paper states in 3.1 implementation details:\r\n\"The number of disentanglement factors is chosen from {4, 8}\"\r\n\r\nHowever, I don't see an option to configure that in the provided python code (both the paddlepaddle and the pytorch based ones). Is that option named differently or is that hard-coded somewhere?",
+        "state": "closed",
+        "user": "timm-gatg",
+        "closed_by": "zhoujingbo",
+        "created_at": "2023-01-18T17:21:25+00:00",
+        "updated_at": "2023-05-16T07:03:42+00:00",
+        "closed_at": "2023-05-16T07:03:42+00:00",
+        "comments_count": [
+            "yl4467"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 305,
+        "title": "Commands in README to reproduce results don't match paper information",
+        "body": "Hi, trying to reproduce the results as well right now, and reading through the paper there is a mismatch between information in the paper and the commands describe in https://github.com/PaddlePaddle/PaddleSpatial/blob/main/research/D3VAE/README.md\r\nin the \"Reproduce Experimental Results\" section.\r\n\r\nThe paper states in 3.1 Implementation Details: \"The trade-off hyperparameters are set as ψ = 0.05, λ = 0.1, γ = 0.001 for ETTs, and ψ = 0.5, λ = 1.0, γ = 0.01 for others\"\r\n\r\nBut in the README the parameters psi, gamma and lambda1 do not get changed for any of the datasets? (the default to the non-ETT parameters).\r\n",
+        "state": "closed",
+        "user": "timm-gatg",
+        "closed_by": "ramber1836",
+        "created_at": "2023-01-18T17:25:44+00:00",
+        "updated_at": "2023-05-16T07:53:24+00:00",
+        "closed_at": "2023-05-16T07:53:23+00:00",
+        "comments_count": [
+            "ramber1836"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 307,
+        "title": "D3VAE: overwrites timestamps?",
+        "body": "Hi,\r\n\r\nI came across something weird in the D3VAE code. In data_loader.py, line 93, you just manually overwrite the timestamps of the data:\r\n\r\n`df_stamp = pd.date_range(start='4/1/2018',periods=border2-border1, freq='H')`\r\n`data_stamp = time_features(df_stamp, timeenc=self.timeenc, freq=self.freq)`\r\n\r\nCan you tell me why that is?",
+        "state": "closed",
+        "user": "timm-gatg",
+        "closed_by": "ramber1836",
+        "created_at": "2023-01-24T11:59:20+00:00",
+        "updated_at": "2023-02-09T12:37:05+00:00",
+        "closed_at": "2023-02-09T12:37:05+00:00",
+        "comments_count": [
+            "yl4467"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 310,
+        "title": "About dataset file",
+        "body": "Hi ,do you have the .csv files of these three datasets?\r\nElectricity   Traffic  Weather\r\n \r\n\r\n",
+        "state": "open",
+        "user": "zhoujiajuly",
+        "closed_by": null,
+        "created_at": "2023-03-02T14:08:52+00:00",
+        "updated_at": "2023-03-02T14:08:52+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 308,
+        "title": "Issue with the scoring net part of D3VAE's PyTorch code  ",
+        "body": "First of all, thank you for your interesting work and for releasing the code on github!\r\n\r\nI ran into an issue when I tried to reproduce the paper's results on the ETTh1 dataset. The issue is related to the line below:\r\n\r\nhttps://github.com/PaddlePaddle/PaddleSpatial/blob/13bd2d9d8310dbe438f291caa3338d96dea964c9/research/D3VAE/d3vae_pytorch/model/resnet.py#L152\r\n\r\nor one of the previos steps, since it only seems to work with evenly numbered batch sizes. \r\n\r\nTo reproduce, with a fresh clone of the repository, run https://github.com/PaddlePaddle/PaddleSpatial/blob/main/research/D3VAE/d3vae_pytorch/main.py\r\nwith all arguments set to default except for the path to the dataset, the batch_size and optionally specify which gpu to use. If run with an even integer as batch_size it works:\r\npython main.py --root_path /path/to/ETDataset/ETT-small/ --data_path ETTh1.csv --batch_size 2 --gpu 0\r\nbut if the batch_size is uneven, e.g. 1, the code crashes with the following error:\r\n`PaddleSpatial/research/D3VAE/d3vae_pytorch/model/resnet.py\", line 152, in forward\r\n    output = output.view(-1, int(self.hw/8)*int(self.hw/8)*8*self.dim)\r\nRuntimeError: shape '[-1, 8192]' is invalid for input of size `",
+        "state": "closed",
+        "user": "Paandaman",
+        "closed_by": "ramber1836",
+        "created_at": "2023-01-26T08:51:05+00:00",
+        "updated_at": "2023-02-09T12:36:43+00:00",
+        "closed_at": "2023-02-09T12:36:43+00:00",
+        "comments_count": [
+            "yl4467"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 321,
+        "title": "sagnn方位sector划分",
+        "body": "感谢代码开源~\r\n关于sagnn模型的sector划分，我有如下问题想请教一下：\r\n`PaddleSpatial/paddlespatial/networks/sagnn.py`的`def get_subgraphs(self, g)`中，` sec_ind = int(angle / (np.pi / self.num_sectors)) `（第115行）是什么含义呢？\r\n我理解的`self.num_sectors`是将一个**整圆**均分为`self.num_sectors`个扇区，但是`(np.pi / self.num_sectors)`只是将一个**半圆**分成了`self.num_sectors`个扇区。\r\n期待您的解答~",
+        "state": "open",
+        "user": "HQ-LV",
+        "closed_by": null,
+        "created_at": "2023-08-05T02:40:16+00:00",
+        "updated_at": "2023-08-05T02:40:16+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 311,
+        "title": "Questioning the validity of the diffusion module",
+        "body": "I have run the pytorch version code and found a unreasonable result: I set the parameter _\"diff_steps\"_ to 0, 10, 50, 100, 200, 500, 1000, then run the code in ETTh1 and  wind datasets. What I find is that , as the number of diffusion steps increases, the results are getting worse. (Both mse and mae are). Below is the result record I run on ETTh1.  I also turn the mse result into a picture (at the end of this issue). So I doubt the validity of the diffusion module.\r\n\r\n```python\r\n\r\ndataset name: ETTh1\r\nprediction_length: 8\r\ndiff_steps: 0\r\nmse mean:0.24760339\r\nmse std:0.020427\r\nmae std:0.3878688\r\nmae std:0.017404405\r\n\r\ndataset name: ETTh1\r\nprediction_length: 8\r\ndiff_steps: 10\r\nmse mean:0.26035553\r\nmse std:0.012089639\r\nmae std:0.39704275\r\nmae std:0.017935857\r\n\r\ndataset name: ETTh1\r\nprediction_length: 8\r\ndiff_steps: 50\r\nmse mean:0.26268333\r\nmse std:0.0169106\r\nmae std:0.40157977\r\nmae std:0.015663896\r\n\r\ndataset name: ETTh1\r\nprediction_length: 8\r\ndiff_steps: 100\r\nmse mean:0.281945\r\nmse std:0.06063651\r\nmae std:0.41526827\r\nmae std:0.051474944\r\n\r\ndataset name: ETTh1\r\nprediction_length: 8\r\ndiff_steps: 200\r\nmse mean:0.26382175\r\nmse std:0.03267344\r\nmae std:0.39231223\r\nmae std:0.028107507\r\n\r\ndataset name: ETTh1\r\nprediction_length: 8\r\ndiff_steps: 500\r\nmse mean:0.363977\r\nmse std:0.06955655\r\nmae std:0.45770007\r\nmae std:0.048627686\r\n\r\ndataset name: ETTh1\r\nprediction_length: 8\r\ndiff_steps: 1000\r\nmse mean:0.35823375\r\nmse std:0.05329487\r\nmae std:0.4454666\r\nmae std:0.032828197\r\n``` \r\n![wind-length16](https://user-images.githubusercontent.com/78310004/230750463-208b4801-ae06-4c65-81b3-3b1506b0de78.jpg)\r\n![ETTh1-length8](https://user-images.githubusercontent.com/78310004/230750470-13dff055-0d89-4e9e-b722-9e34700d43d4.jpg)\r\n",
+        "state": "closed",
+        "user": "PLUTO-SCY",
+        "closed_by": "ramber1836",
+        "created_at": "2023-04-09T02:05:49+00:00",
+        "updated_at": "2023-05-17T06:25:52+00:00",
+        "closed_at": "2023-05-17T06:25:52+00:00",
+        "comments_count": [
+            "ramber1836"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 322,
+        "title": "Dependency confusion supply-chain vulnerability detected",
+        "body": "Hi,\r\n\r\nI'm a Cybersecurity researcher developing PackjGuard [1]. Our tool has detected a dependency confusion vulnerability in this repository. In order for me to disclose it, kindly enable GitHub Private vulnerability reporting, which allows security research to responsibly disclose a security vulnerability.\r\n\r\nThanks!\r\n\r\nPackjGuard is a Github app that monitors repos for malicious, vulnerable, abandoned, and other \"risky\" dependencies and mitigates attacks by creating pull requests for automatic remediation https://github.com/marketplace/packjguard",
+        "state": "open",
+        "user": "ashishbijlani",
+        "closed_by": null,
+        "created_at": "2023-08-08T17:14:47+00:00",
+        "updated_at": "2023-08-08T17:14:47+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 312,
+        "title": "quit",
+        "body": null,
+        "state": "open",
+        "user": "boxaio",
+        "closed_by": null,
+        "created_at": "2023-06-01T10:14:50+00:00",
+        "updated_at": "2023-06-07T03:24:23+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "boxaio",
+            "ramber1836"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 313,
+        "title": "Are there any ways to inverse the pred.npy in D3VAE? ",
+        "body": "Hi, I'm planning to utilize the D3VAE in this repo. \r\n\r\nThe result of prediction (pred.npy) seems normalized and there is no option to inverse the result. Are there any ways to inverse the pred.npy and get the real prediction results? \r\nIf not, I can also make a PR. \r\n\r\nThanks! ",
+        "state": "closed",
+        "user": "koseoyoung",
+        "closed_by": "koseoyoung",
+        "created_at": "2023-06-06T13:52:20+00:00",
+        "updated_at": "2023-06-08T14:44:59+00:00",
+        "closed_at": "2023-06-08T14:44:59+00:00",
+        "comments_count": [
+            "ramber1836",
+            "koseoyoung"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 320,
+        "title": "Hod to adapt framework to custom data?",
+        "body": "Hi team,\r\ngreat work first of all. I would like to use your framework for the domain of sports. I have a time series data of players in regards to different parameters. How would I use the data witht the current model? In what input format does the data have to be in? Is a dataframe sufficient that is grouped by player and his parameters? Can the model be trained on the data of an entire team and then predict a parameter of a given player?\r\nThank's a lot in advance!",
+        "state": "closed",
+        "user": "gabriead",
+        "closed_by": "ramber1836",
+        "created_at": "2023-06-20T05:37:20+00:00",
+        "updated_at": "2023-06-30T04:34:01+00:00",
+        "closed_at": "2023-06-30T04:34:01+00:00",
+        "comments_count": [
+            "ramber1836"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 323,
+        "title": "result is nan",
+        "body": "Run the Conformer model, python -u train.py --data ECL, the output result is all nan, and the loss is also nan, what is the reason?",
+        "state": "open",
+        "user": "knight9630",
+        "closed_by": null,
+        "created_at": "2023-12-06T10:29:23+00:00",
+        "updated_at": "2024-10-29T11:42:32+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleSpatial",
+        "number": 324,
+        "title": "MIG",
+        "body": "How do we calculate the MIG cause the sequence does not have the ground truth factor?",
+        "state": "open",
+        "user": "amasawa",
+        "closed_by": null,
+        "created_at": "2023-12-16T11:08:05+00:00",
+        "updated_at": "2023-12-16T11:08:05+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    }
+]

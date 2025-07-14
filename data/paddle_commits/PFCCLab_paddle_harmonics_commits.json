@@ -1,0 +1,433 @@
+[
+    {
+        "repo": "PFCCLab/paddle_harmonics",
+        "sha": "4e7c9ed50f7496812d00e2798f64203d105a812c",
+        "created_at": "2025-01-22 11:44:32 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "HydrogenSulfate",
+        "message": "skip-TestDiscreteContinuousConvolution",
+        "files": [
+            {
+                "filename": "tests/test_convolution.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_harmonics",
+        "sha": "b6bee9d983c8fe3520fd8fc169687c4a527f8d1a",
+        "created_at": "2024-11-26 15:51:16 +0800",
+        "author": "co63oc",
+        "committer": "co63oc",
+        "message": "Fix",
+        "files": [
+            {
+                "filename": "pyproject.toml",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_harmonics",
+        "sha": "ffab9148ce9b09b8a9325bd492605c03de3b1907",
+        "created_at": "2024-12-27 08:23:29 +0800",
+        "author": "co63oc",
+        "committer": "co63oc",
+        "message": "Fix",
+        "files": [
+            {
+                "filename": "pyproject.toml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_harmonics",
+        "sha": "a8a90f0e535c87705462a2bf5990e8aaa7ce0118",
+        "created_at": "2025-01-16 18:02:15 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "HydrogenSulfate",
+        "message": "update-UT",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "tests/test_distributed.py",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 12,
+                "changes": 24
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_harmonics",
+        "sha": "513337158e5a9d4fa7416cb355d5eb5509767c40",
+        "created_at": "2024-11-18 09:34:46 +0800",
+        "author": "co63oc",
+        "committer": "co63oc",
+        "message": "Fix",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 143,
+                "deletions": 0,
+                "changes": 143
+            },
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "LICENSE",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 201,
+                "changes": 228
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 78,
+                "deletions": 2,
+                "changes": 80
+            },
+            {
+                "filename": "examples/minimal_example.py",
+                "status": "added",
+                "additions": 96,
+                "deletions": 0,
+                "changes": 96
+            },
+            {
+                "filename": "examples/train_sfno.py",
+                "status": "added",
+                "additions": 526,
+                "deletions": 0,
+                "changes": 526
+            },
+            {
+                "filename": "notebooks/conditioning_sht.ipynb",
+                "status": "added",
+                "additions": 468,
+                "deletions": 0,
+                "changes": 468
+            },
+            {
+                "filename": "notebooks/getting_started.ipynb",
+                "status": "added",
+                "additions": 566,
+                "deletions": 0,
+                "changes": 566
+            },
+            {
+                "filename": "notebooks/gradient_analysis.ipynb",
+                "status": "added",
+                "additions": 226,
+                "deletions": 0,
+                "changes": 226
+            },
+            {
+                "filename": "notebooks/helmholtz.ipynb",
+                "status": "added",
+                "additions": 765,
+                "deletions": 0,
+                "changes": 765
+            },
+            {
+                "filename": "notebooks/plot_spherical_harmonics.ipynb",
+                "status": "added",
+                "additions": 233,
+                "deletions": 0,
+                "changes": 233
+            },
+            {
+                "filename": "notebooks/plotting.py",
+                "status": "added",
+                "additions": 121,
+                "deletions": 0,
+                "changes": 121
+            },
+            {
+                "filename": "notebooks/quadrature.ipynb",
+                "status": "added",
+                "additions": 552,
+                "deletions": 0,
+                "changes": 552
+            },
+            {
+                "filename": "notebooks/shallow_water_equations.ipynb",
+                "status": "added",
+                "additions": 619,
+                "deletions": 0,
+                "changes": 619
+            },
+            {
+                "filename": "notebooks/train_sfno.ipynb",
+                "status": "added",
+                "additions": 489,
+                "deletions": 0,
+                "changes": 489
+            },
+            {
+                "filename": "paddle_harmonics/__init__.py",
+                "status": "added",
+                "additions": 41,
+                "deletions": 0,
+                "changes": 41
+            },
+            {
+                "filename": "paddle_harmonics/_disco_convolution.py",
+                "status": "added",
+                "additions": 459,
+                "deletions": 0,
+                "changes": 459
+            },
+            {
+                "filename": "paddle_harmonics/convolution.py",
+                "status": "added",
+                "additions": 555,
+                "deletions": 0,
+                "changes": 555
+            },
+            {
+                "filename": "paddle_harmonics/distributed/__init__.py",
+                "status": "added",
+                "additions": 49,
+                "deletions": 0,
+                "changes": 49
+            },
+            {
+                "filename": "paddle_harmonics/distributed/distributed_sht.py",
+                "status": "added",
+                "additions": 600,
+                "deletions": 0,
+                "changes": 600
+            },
+            {
+                "filename": "paddle_harmonics/distributed/primitives.py",
+                "status": "added",
+                "additions": 160,
+                "deletions": 0,
+                "changes": 160
+            },
+            {
+                "filename": "paddle_harmonics/distributed/utils.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": "paddle_harmonics/examples/__init__.py",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "paddle_harmonics/examples/pde_sphere.py",
+                "status": "added",
+                "additions": 208,
+                "deletions": 0,
+                "changes": 208
+            },
+            {
+                "filename": "paddle_harmonics/examples/sfno/__init__.py",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "paddle_harmonics/examples/sfno/models/__init__.py",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": "paddle_harmonics/examples/sfno/models/activations.py",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "paddle_harmonics/examples/sfno/models/contractions.py",
+                "status": "added",
+                "additions": 122,
+                "deletions": 0,
+                "changes": 122
+            },
+            {
+                "filename": "paddle_harmonics/examples/sfno/models/factorizations.py",
+                "status": "added",
+                "additions": 204,
+                "deletions": 0,
+                "changes": 204
+            },
+            {
+                "filename": "paddle_harmonics/examples/sfno/models/layers.py",
+                "status": "added",
+                "additions": 436,
+                "deletions": 0,
+                "changes": 436
+            },
+            {
+                "filename": "paddle_harmonics/examples/sfno/models/sfno.py",
+                "status": "added",
+                "additions": 592,
+                "deletions": 0,
+                "changes": 592
+            },
+            {
+                "filename": "paddle_harmonics/examples/sfno/utils/pde_dataset.py",
+                "status": "added",
+                "additions": 133,
+                "deletions": 0,
+                "changes": 133
+            },
+            {
+                "filename": "paddle_harmonics/examples/shallow_water_equations.py",
+                "status": "added",
+                "additions": 440,
+                "deletions": 0,
+                "changes": 440
+            },
+            {
+                "filename": "paddle_harmonics/legendre.py",
+                "status": "added",
+                "additions": 163,
+                "deletions": 0,
+                "changes": 163
+            },
+            {
+                "filename": "paddle_harmonics/quadrature.py",
+                "status": "added",
+                "additions": 205,
+                "deletions": 0,
+                "changes": 205
+            },
+            {
+                "filename": "paddle_harmonics/random_fields.py",
+                "status": "added",
+                "additions": 156,
+                "deletions": 0,
+                "changes": 156
+            },
+            {
+                "filename": "paddle_harmonics/sht.py",
+                "status": "added",
+                "additions": 469,
+                "deletions": 0,
+                "changes": 469
+            },
+            {
+                "filename": "paddle_harmonics/utils/paddle_aux.py",
+                "status": "added",
+                "additions": 129,
+                "deletions": 0,
+                "changes": 129
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "added",
+                "additions": 66,
+                "deletions": 0,
+                "changes": 66
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "setup.py",
+                "status": "added",
+                "additions": 103,
+                "deletions": 0,
+                "changes": 103
+            },
+            {
+                "filename": "tests/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tests/gradcheck.py",
+                "status": "added",
+                "additions": 1231,
+                "deletions": 0,
+                "changes": 1231
+            },
+            {
+                "filename": "tests/test_convolution.py",
+                "status": "added",
+                "additions": 457,
+                "deletions": 0,
+                "changes": 457
+            },
+            {
+                "filename": "tests/test_distributed.py",
+                "status": "added",
+                "additions": 416,
+                "deletions": 0,
+                "changes": 416
+            },
+            {
+                "filename": "tests/test_sht.py",
+                "status": "added",
+                "additions": 190,
+                "deletions": 0,
+                "changes": 190
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/paddle_harmonics",
+        "sha": "76aa8e503e03af08e8ebc23fad1b148c4561c62d",
+        "created_at": "2024-11-18 09:28:46 +0800",
+        "author": "co63oc",
+        "committer": "web-flow",
+        "message": "Initial-commit",
+        "files": [
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 201,
+                "deletions": 0,
+                "changes": 201
+            },
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    }
+]

@@ -1,0 +1,1908 @@
+[
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "c10a8c3d51d5b3b10847cd21e286cf971070e0cc",
+        "created_at": "2022-10-24 04:14:51 +0000",
+        "author": "WenmuZhou",
+        "committer": "WenmuZhou",
+        "message": "update-PP-Structurev-to-PP-StructureV",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 4,
+                "changes": 7
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "4dbf1c5949640f94e18415b2d1bee84583805979",
+        "created_at": "2021-01-12 01:17:36 +0800",
+        "author": "Zhouzd21",
+        "committer": "web-flow",
+        "message": "Update-README.md-1687",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "062165a48b3905f007d942424ccf46439617b934",
+        "created_at": "2024-03-27 17:30:41 +0800",
+        "author": "GreatV",
+        "committer": "web-flow",
+        "message": "fix-AttributeError-11556-11686",
+        "files": [
+            {
+                "filename": "engine/text_drawers.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "44d209c0aa821fe769dd2e388d1fcea1bf0ff034",
+        "created_at": "2023-07-17 14:42:30 +0800",
+        "author": "livingbody",
+        "committer": "web-flow",
+        "message": "upgrade-pillow-to-10.0.0-10405",
+        "files": [
+            {
+                "filename": "engine/text_drawers.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "1369b3b4a1806d82afce5833385046b4d9463a72",
+        "created_at": "2024-12-09 21:54:52 +0800",
+        "author": "GreatV",
+        "committer": "web-flow",
+        "message": "Update-README.md-2",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "e565a5da5a99267001e5a0c75ad1cdbda9e56c0e",
+        "created_at": "2021-07-02 10:38:04 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "dbg-3236",
+        "files": [
+            {
+                "filename": "engine/text_drawers.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "2d13e790aec3e7a00c16708716c8f4482a2a560b",
+        "created_at": "2021-02-22 11:14:13 +0800",
+        "author": null,
+        "committer": "web-flow",
+        "message": "improve-style-text-infer-process-2055",
+        "files": [
+            {
+                "filename": "engine/predictors.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 1,
+                "changes": 25
+            },
+            {
+                "filename": "engine/synthesisers.py",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 7,
+                "changes": 20
+            },
+            {
+                "filename": "engine/text_drawers.py",
+                "status": "modified",
+                "additions": 44,
+                "deletions": 17,
+                "changes": 61
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "8b8b843ad3823a673f5f29a67e95400e01f1dda9",
+        "created_at": "2024-12-09 21:54:34 +0800",
+        "author": "GreatV",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md-3",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "af4a70c21810b41e1efdcd72ad368cc595bf949e",
+        "created_at": "2022-10-24 07:40:44 +0000",
+        "author": "WenmuZhou",
+        "committer": "WenmuZhou",
+        "message": "update-style-text-doc",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "bffd31edc8af06ec876817e8a92b2d9e0a18fdff",
+        "created_at": "2024-04-21 21:46:20 +0800",
+        "author": "GreatV",
+        "committer": "web-flow",
+        "message": "add-pre-commit-workflow-11973",
+        "files": [
+            {
+                "filename": "arch/base_module.py",
+                "status": "modified",
+                "additions": 75,
+                "deletions": 62,
+                "changes": 137
+            },
+            {
+                "filename": "arch/decoder.py",
+                "status": "modified",
+                "additions": 87,
+                "deletions": 35,
+                "changes": 122
+            },
+            {
+                "filename": "arch/encoder.py",
+                "status": "modified",
+                "additions": 53,
+                "deletions": 28,
+                "changes": 81
+            },
+            {
+                "filename": "arch/spectral_norm.py",
+                "status": "modified",
+                "additions": 34,
+                "deletions": 34,
+                "changes": 68
+            },
+            {
+                "filename": "arch/style_text_rec.py",
+                "status": "modified",
+                "additions": 50,
+                "deletions": 37,
+                "changes": 87
+            },
+            {
+                "filename": "engine/corpus_generators.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            },
+            {
+                "filename": "engine/predictors.py",
+                "status": "modified",
+                "additions": 21,
+                "deletions": 14,
+                "changes": 35
+            },
+            {
+                "filename": "engine/style_samplers.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "engine/synthesisers.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 6,
+                "changes": 14
+            },
+            {
+                "filename": "engine/text_drawers.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 8,
+                "changes": 15
+            },
+            {
+                "filename": "engine/writers.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 4,
+                "changes": 6
+            },
+            {
+                "filename": "tools/synth_dataset.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "tools/synth_image.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "utils/config.py",
+                "status": "modified",
+                "additions": 57,
+                "deletions": 63,
+                "changes": 120
+            },
+            {
+                "filename": "utils/load_params.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 5,
+                "changes": 9
+            },
+            {
+                "filename": "utils/logging.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "utils/math_functions.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 3,
+                "changes": 9
+            },
+            {
+                "filename": "utils/sys_funcs.py",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 12,
+                "changes": 31
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "a3a23ce2cfaf28805043daa28fb4b2dc5331f3b6",
+        "created_at": "2021-01-27 19:04:54 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "language-1810",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "af4f558edba956eff0313baecdf3009675a45321",
+        "created_at": "2022-10-24 04:17:29 +0000",
+        "author": "WenmuZhou",
+        "committer": "WenmuZhou",
+        "message": "update-doc",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "e88332bc2ad54014121c4ac80bbac970a061d912",
+        "created_at": "2021-01-11 00:10:52 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "Merge-https-github.com-PaddlePaddle-PaddleOCR-into-dygraph",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "8f763baeb797711d74b61a35220f304f209d5ca1",
+        "created_at": "2021-01-11 01:13:45 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "dbg",
+        "files": [
+            {
+                "filename": "engine/predictors.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 4,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "cb71f285a75922070fbd36ea10847d9b9ba1fb4e",
+        "created_at": "2020-12-22 10:10:50 +0800",
+        "author": "LDOUBLEV",
+        "committer": "LDOUBLEV",
+        "message": "Merge-branch-dygraph-of-https-github.com-PaddlePaddle-PaddleOCR-into-dyg_db",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "abeac24bdca1afdf1ba7d87f25eb5b123243cee7",
+        "created_at": "2020-12-19 20:10:54 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "80dbce22906353eecb123e6978f3a5d62ca11f20",
+        "created_at": "2020-12-21 16:39:24 +0800",
+        "author": "LDOUBLEV",
+        "committer": "LDOUBLEV",
+        "message": "fix-conflicts",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "aaa0103ba8bdbd355715a707acf8133787cd2c20",
+        "created_at": "2020-12-19 12:02:20 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "disable-gpu-windows",
+        "files": [
+            {
+                "filename": "engine/predictors.py",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "50ec2923d44b3447f78874d84e312445cfca1587",
+        "created_at": "2020-12-21 16:37:04 +0800",
+        "author": "LDOUBLEV",
+        "committer": "web-flow",
+        "message": "Merge-branch-dygraph-into-dyg_db",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "8a3edaad4afc6b47501745f44cadcee0f44ad7cf",
+        "created_at": "2020-12-19 20:07:06 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "42378bb6230b3e636057b1a8e65898b75b481be6",
+        "created_at": "2020-12-21 16:30:04 +0800",
+        "author": "LDOUBLEV",
+        "committer": "LDOUBLEV",
+        "message": "python-to-python3",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "593fe8cd23fe133eb7ce7bc791360ab5a21953e8",
+        "created_at": "2020-12-19 20:11:21 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "0d0bb2f3ae0046ec0f37b7259c3988d6d2e41a60",
+        "created_at": "2020-12-19 20:02:58 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "49ecf48155508f63f2455d4241f2ba5236b8b016",
+        "created_at": "2020-12-19 20:02:39 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "37dd1366025d7a27f5618de2fa77f5497730f353",
+        "created_at": "2020-12-19 11:56:00 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "Merge-https-github.com-PaddlePaddle-PaddleOCR-into-dygraph",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "6e1bd3dcb81d90d8ac4dc846836b6d0649ffb836",
+        "created_at": "2020-12-17 15:28:19 +0800",
+        "author": null,
+        "committer": "web-flow",
+        "message": "add-support-for-cpu-infer-1480",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 5,
+                "changes": 11
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            },
+            {
+                "filename": "engine/predictors.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "tools/synth_dataset.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            },
+            {
+                "filename": "tools/synth_image.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "88e5c619c78570cdc0446cb6a634e041e80edcac",
+        "created_at": "2020-12-18 19:38:43 +0800",
+        "author": "Evezerest",
+        "committer": "web-flow",
+        "message": "Merge-branch-dygraph-into-dy3",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "0081b8675af6bc061368aed3e3ebb308478a877d",
+        "created_at": "2020-12-16 20:16:20 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "Merge-https-github.com-PaddlePaddle-PaddleOCR-into-dygraph",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "8b0a41aed33ded9e7d3606c93ba22d3a859d6373",
+        "created_at": "2020-12-16 20:14:26 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "add-notice-in-size-of-style-images",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "993ca7afbb5ab1d64c7b838e5201d59806eb3967",
+        "created_at": "2020-12-16 20:20:18 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "add-notice-in-height-of-style-images.-1475",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "b34a93d37dcfe6bdb0136126445e09066f8b737b",
+        "created_at": "2020-12-17 14:57:20 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "Merge-https-github.com-PaddlePaddle-PaddleOCR-into-dygraph",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "83b6879b515b24d91bf51a35fca29e57de5b7f88",
+        "created_at": "2020-12-16 16:35:16 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "add-examples-in-doc",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 1,
+                "changes": 13
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "configs/dataset_config.yml",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "examples/corpus/example.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "examples/style_images/12.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "d9fc6ac1c0d0811df07964e871d95dda993f405b",
+        "created_at": "2020-12-16 16:55:28 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "Add-batch-examples-in-StyleText-doc-1469",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 1,
+                "changes": 13
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "configs/dataset_config.yml",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "doc/images/12.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/corpus/example.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "5e4ae027794d9a060b28eb4e2b24d34b6be8347c",
+        "created_at": "2020-12-16 16:38:23 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "modify-files",
+        "files": [
+            {
+                "filename": "doc/images/12.png",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/style_images/12.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "331998797ef372358de1aa802bbd5de320826782",
+        "created_at": "2020-12-16 16:36:34 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "add-files",
+        "files": [
+            {
+                "filename": "doc/images/12.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "957a6f46349f346b186af57a23b55e1e61d04b82",
+        "created_at": "2020-12-16 16:46:47 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "dbg-typo",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "fe212b3b57b6c09f727bd1ded4ed27e2553bcdec",
+        "created_at": "2020-12-16 11:41:34 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "d26ba02c86b948e2c7b6736d19e5206a7116373f",
+        "created_at": "2020-12-16 11:42:14 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "e2565936a9a19596502f654f955ef0990c816e59",
+        "created_at": "2020-12-16 11:36:35 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 1,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "a74c101b0793a7153b29fe0ba59b4620c43e00b4",
+        "created_at": "2020-12-16 11:28:52 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "8b7d341d3775e392e714cee60ad6874b4add467c",
+        "created_at": "2020-12-16 11:36:59 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "d290fe3f0ba2f369433045fb0acd45e6edc89fb5",
+        "created_at": "2020-12-16 11:28:20 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "152ed755eb1bc99a441915399d881f3bbd7a4778",
+        "created_at": "2020-12-16 00:54:56 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README.md",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "f2dfe260e42757ae6bfc1ae31f5ad815c0132b8c",
+        "created_at": "2020-12-16 00:59:32 +0800",
+        "author": null,
+        "committer": "web-flow",
+        "message": "fix-table-1454",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 3,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "da41a5fe9bdb91419350c2f96e9245891acd04fb",
+        "created_at": "2020-12-16 00:58:41 +0800",
+        "author": "weisy11",
+        "committer": "web-flow",
+        "message": "update-images-1453",
+        "files": [
+            {
+                "filename": "doc/images/11.png",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/12.png",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "450808c5c8b75d60dfaf86d873f6a32cd14557f7",
+        "created_at": "2020-12-16 00:43:45 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-1451-from-weisy11-dygraph",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "605159aae2d7facf46893839113a0c0625496073",
+        "created_at": "2020-12-15 16:44:38 +0000",
+        "author": "littletomatodonkey",
+        "committer": "littletomatodonkey",
+        "message": "fix-doc",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 66,
+                "deletions": 55,
+                "changes": 121
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "e613a4afc100282cb3c9be3cec58f9d8e2669114",
+        "created_at": "2020-12-15 16:47:21 +0000",
+        "author": "littletomatodonkey",
+        "committer": "littletomatodonkey",
+        "message": "fix-conflict",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "f0aebc9b016ffc77b6369296aa5d04c30d0fc9bb",
+        "created_at": "2020-12-16 00:43:06 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "dbg",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "7fd13bb00f8e422e273de1c3a8a56da869a64a72",
+        "created_at": "2020-12-16 00:41:10 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "1fe91f840d6387f0dbfe4a8d04c411fe4d17dd75",
+        "created_at": "2020-12-15 16:36:08 +0000",
+        "author": "littletomatodonkey",
+        "committer": "littletomatodonkey",
+        "message": "Merge-branch-dygraph-of-https-github.com-PaddlePaddle-PaddleOCR-into-dyg-fix_en_st",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "c5d3d4034cc5c8fd408e3abe91f24987708f61cb",
+        "created_at": "2020-12-16 00:41:56 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "fc48834bb03fd907f3f60e899b2b0fd9c6a95366",
+        "created_at": "2020-12-16 00:20:01 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "add-example-images-for-English",
+        "files": [
+            {
+                "filename": "doc/images/10.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/11.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/12.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/9.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "4658a60cb20fdac6a943de9b5e71dc4a0138ae94",
+        "created_at": "2020-12-15 16:35:38 +0000",
+        "author": "littletomatodonkey",
+        "committer": "littletomatodonkey",
+        "message": "fix-doc",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 6,
+                "changes": 15
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "6d66c9b28813c49aa0f92b2d26f12323868e285b",
+        "created_at": "2020-12-16 00:21:13 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Merge-pull-request-1450-from-weisy11-dygraph",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "1deddb626105da92acc99a2994c7940bf3e761ec",
+        "created_at": "2020-12-16 00:32:11 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "add-file-descriptions",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 15,
+                "changes": 30
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "acf6969259e17ced629fbb8d8a8a378d6e84b77c",
+        "created_at": "2020-12-15 16:01:08 +0000",
+        "author": "littletomatodonkey",
+        "committer": "littletomatodonkey",
+        "message": "Merge-branch-dygraph-of-https-github.com-PaddlePaddle-PaddleOCR-into-dyg-fix_en_st",
+        "files": []
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "0dc548942648b1a7e40fe86819f2db9b9957ffff",
+        "created_at": "2020-12-16 00:05:36 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "change-images",
+        "files": [
+            {
+                "filename": "doc/images/4.jpg",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/7.jpg",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/8.jpg",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/style_images/2.jpg",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "58ce395c3c6abc39e1513ae18b6807c1d3fdd2f8",
+        "created_at": "2020-12-15 23:57:56 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 7,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "deefa4dd556f36f62672e0f82805b858a37e5732",
+        "created_at": "2020-12-15 16:00:00 +0000",
+        "author": "littletomatodonkey",
+        "committer": "littletomatodonkey",
+        "message": "fix-typo",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "22aa18a0b8ac18fb346a9ca96f6bbeaef4d41438",
+        "created_at": "2020-12-15 23:46:59 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 3,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "df43770f3b8be2dfab18e660480a9252c807afc3",
+        "created_at": "2020-12-15 23:49:07 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 3,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "eb1a58e684a105d54127b2264855f545ce289730",
+        "created_at": "2020-12-15 23:37:10 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "f3a55835d6d62be26aac4c2b8be29cb5f18344a8",
+        "created_at": "2020-12-15 23:38:16 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "dd2e21d1e9ee7b701ff35b11d020c224add21377",
+        "created_at": "2020-12-15 23:37:39 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "a8a51c3065dcc075bbe0c470863c6edb6a675f32",
+        "created_at": "2020-12-15 23:36:13 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 3,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "7bc295a0406db27698ae8f407a7d9b85658e0ea9",
+        "created_at": "2020-12-15 15:34:07 +0000",
+        "author": "littletomatodonkey",
+        "committer": "littletomatodonkey",
+        "message": "fix-style-exit-readme",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 115,
+                "deletions": 38,
+                "changes": 153
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "f1bc7d37167a81b6e566988b1b8a108f24d1bf1a",
+        "created_at": "2020-12-15 23:33:09 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "182b59b49890cef844ad3f0aa33e46c6622797ed",
+        "created_at": "2020-12-15 23:35:10 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 1,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "8f1c607d4eb2fb4400461b5e3443f5ce99e96441",
+        "created_at": "2020-12-15 23:30:03 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "update-doc",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 9,
+                "changes": 23
+            },
+            {
+                "filename": "doc/images/7.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/8.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "c540cbb346006df2881ad377bd9044d6d2e809ee",
+        "created_at": "2020-12-15 23:32:33 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "f44110980bf69b5cc62a378e73dcff6094151bb6",
+        "created_at": "2020-12-15 23:20:35 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "add-description",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "da275674893c9fc9e46f267cfb71f204883daa93",
+        "created_at": "2020-12-15 23:12:17 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "update-doc",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 15,
+                "changes": 27
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "ac45696001d9c0219bf9bf526b591aa6c77a2998",
+        "created_at": "2020-12-15 23:02:41 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "31cc68da5fdec4a44165daddc5033168ec54b7ab",
+        "created_at": "2020-12-15 23:03:24 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "5712f4721c312b5f9aff6deb89fad4ec1c194691",
+        "created_at": "2020-12-15 22:57:50 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "bf734bad60154dd0f13f8f22c2cb5985817d6f45",
+        "created_at": "2020-12-15 22:53:07 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "c927e19ca05fb4a89e45613fab6722115c22c347",
+        "created_at": "2020-12-15 22:54:15 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "530176f2cd43d275a70c1010f8c6e6097bebba51",
+        "created_at": "2020-12-15 22:53:28 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "463bd2e4f9f1e3203a91355fe412452529e36a53",
+        "created_at": "2020-12-15 22:52:44 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 4,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "f7a32f52b96b059799deac72565de45de5e6f639",
+        "created_at": "2020-12-15 22:46:58 +0800",
+        "author": "weisy11",
+        "committer": "weisy11",
+        "message": "rename-style_text_rec-style_text",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 106,
+                "deletions": 0,
+                "changes": 106
+            },
+            {
+                "filename": "README_ch.md",
+                "status": "added",
+                "additions": 166,
+                "deletions": 0,
+                "changes": 166
+            },
+            {
+                "filename": "__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "arch/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "arch/base_module.py",
+                "status": "added",
+                "additions": 255,
+                "deletions": 0,
+                "changes": 255
+            },
+            {
+                "filename": "arch/decoder.py",
+                "status": "added",
+                "additions": 251,
+                "deletions": 0,
+                "changes": 251
+            },
+            {
+                "filename": "arch/encoder.py",
+                "status": "added",
+                "additions": 186,
+                "deletions": 0,
+                "changes": 186
+            },
+            {
+                "filename": "arch/spectral_norm.py",
+                "status": "added",
+                "additions": 150,
+                "deletions": 0,
+                "changes": 150
+            },
+            {
+                "filename": "arch/style_text_rec.py",
+                "status": "added",
+                "additions": 285,
+                "deletions": 0,
+                "changes": 285
+            },
+            {
+                "filename": "configs/config.yml",
+                "status": "added",
+                "additions": 54,
+                "deletions": 0,
+                "changes": 54
+            },
+            {
+                "filename": "configs/dataset_config.yml",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "doc/images/1.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/2.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/3.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/4.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/5.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "doc/images/6.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "engine/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "engine/corpus_generators.py",
+                "status": "added",
+                "additions": 66,
+                "deletions": 0,
+                "changes": 66
+            },
+            {
+                "filename": "engine/predictors.py",
+                "status": "added",
+                "additions": 115,
+                "deletions": 0,
+                "changes": 115
+            },
+            {
+                "filename": "engine/style_samplers.py",
+                "status": "added",
+                "additions": 62,
+                "deletions": 0,
+                "changes": 62
+            },
+            {
+                "filename": "engine/synthesisers.py",
+                "status": "added",
+                "additions": 71,
+                "deletions": 0,
+                "changes": 71
+            },
+            {
+                "filename": "engine/text_drawers.py",
+                "status": "added",
+                "additions": 57,
+                "deletions": 0,
+                "changes": 57
+            },
+            {
+                "filename": "engine/writers.py",
+                "status": "added",
+                "additions": 71,
+                "deletions": 0,
+                "changes": 71
+            },
+            {
+                "filename": "examples/corpus/example.txt",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/image_list.txt",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "examples/style_images/1.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/style_images/2.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "fonts/ch_standard.ttf",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "fonts/en_standard.ttf",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "fonts/ko_standard.ttf",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/synth_dataset.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "tools/synth_image.py",
+                "status": "added",
+                "additions": 82,
+                "deletions": 0,
+                "changes": 82
+            },
+            {
+                "filename": "utils/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "utils/config.py",
+                "status": "added",
+                "additions": 224,
+                "deletions": 0,
+                "changes": 224
+            },
+            {
+                "filename": "utils/load_params.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "utils/logging.py",
+                "status": "added",
+                "additions": 65,
+                "deletions": 0,
+                "changes": 65
+            },
+            {
+                "filename": "utils/math_functions.py",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "utils/sys_funcs.py",
+                "status": "added",
+                "additions": 67,
+                "deletions": 0,
+                "changes": 67
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/StyleText",
+        "sha": "dc82b436a4e0f0ddf781a60d41da31cf7c122372",
+        "created_at": "2020-12-15 22:50:48 +0800",
+        "author": "dyning",
+        "committer": "web-flow",
+        "message": "Update-README_ch.md",
+        "files": [
+            {
+                "filename": "README_ch.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    }
+]

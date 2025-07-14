@@ -1,0 +1,16 @@
+[
+    {
+        "repo": "PFCCLab/ci-bypass",
+        "number": 17,
+        "title": "☑️ Dependency Dashboard",
+        "body": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/PFCCLab/ci-bypass).\n\n## Pending Approval\n\nThese branches will be created by Renovate only once you click their checkbox below.\n\n - [ ] <!-- approve-branch=renovate/github-local-action-4.x -->⬆️ deps: Update dependency @github/local-action to v4\n\n## Detected dependencies\n\n<details><summary>github-actions</summary>\n<blockquote>\n\n<details><summary>.github/workflows/check-dist.yml</summary>\n\n - `actions/checkout v4`\n - `pnpm/action-setup v4`\n - `actions/setup-node v4`\n - `actions/upload-artifact v4`\n\n</details>\n\n<details><summary>.github/workflows/ci.yml</summary>\n\n - `actions/checkout v4`\n - `pnpm/action-setup v4`\n - `actions/setup-node v4`\n\n</details>\n\n<details><summary>.github/workflows/codeql-analysis.yml</summary>\n\n - `actions/checkout v4`\n - `github/codeql-action v3`\n - `github/codeql-action v3`\n - `github/codeql-action v3`\n\n</details>\n\n<details><summary>.github/workflows/example-workflow.yml</summary>\n\n - `actions/checkout v4`\n\n</details>\n\n</blockquote>\n</details>\n\n<details><summary>nodenv</summary>\n<blockquote>\n\n<details><summary>.node-version</summary>\n\n - `node 22.17.0`\n\n</details>\n\n</blockquote>\n</details>\n\n<details><summary>npm</summary>\n<blockquote>\n\n<details><summary>package.json</summary>\n\n - `@actions/core ^1.11.1`\n - `@actions/github ^6.0.0`\n - `@github/local-action ^3.1.4`\n - `@types/node ^22.14.1`\n - `prettier ^3.5.3`\n - `rolldown 1.0.0-beta.24`\n - `tsx ^4.19.3`\n - `typescript ^5.8.3`\n - `vitest ^3.1.1`\n - `node >=21`\n - `pnpm 10.12.4`\n\n</details>\n\n</blockquote>\n</details>\n\n<details><summary>renovate-config-presets</summary>\n<blockquote>\n\n<details><summary>.github/renovate.json5</summary>\n\n\n</details>\n\n</blockquote>\n</details>\n\n---\n\n- [ ] <!-- manual job -->Check this box to trigger a request for Renovate to run again on this repository\n\n",
+        "state": "open",
+        "user": "renovate[bot]",
+        "closed_by": null,
+        "created_at": "2025-04-12T04:43:58+00:00",
+        "updated_at": "2025-07-07T22:50:30+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    }
+]

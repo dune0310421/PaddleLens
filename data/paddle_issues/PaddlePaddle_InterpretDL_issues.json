@@ -1,0 +1,916 @@
+[
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 8,
+        "title": "How can I check the 'target_layer_name' in Score CAM?",
+        "body": "",
+        "state": "closed",
+        "user": "zbp-xxxp",
+        "closed_by": "zbp-xxxp",
+        "created_at": "2021-03-15T03:48:31+00:00",
+        "updated_at": "2021-03-15T05:52:49+00:00",
+        "closed_at": "2021-03-15T05:52:49+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 3,
+        "title": "求指教这个问题怎么导致的呢",
+        "body": "你好，同是厂内开发人员，尝试用这个工具，跑了代码库里的InterpretDL/tutorials/normlime_tutorial_nlp.ipynb\r\n，模型数据都下好了，跑的时候报错，不知道具体是什么意思，求指教\r\ntotal of 1200 sentences\r\n  0%|          | 0/1200 [00:00<?, ?it/s]2020-12-18 11:44:57,011-WARNING: /Users/wanghao81/senta_model/bilstm_model/params/checkpoint.pdparams not found, try to load model file saved with [ save_params, save_persistables, save_vars ]\r\n2020-12-18 11:44:57,211-WARNING: /Users/wanghao81/senta_model/bilstm_model/params.pdparams not found, try to load model file saved with [ save_params, save_persistables, save_vars ]\r\n2020-12-18 11:44:57,211-WARNING: variable file [ /Users/wanghao81/senta_model/bilstm_model/params/learning_rate_0 /Users/wanghao81/senta_model/bilstm_model/params/lstm_0.b_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/fc_2.b_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/fc_0.b_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/embedding_0.w_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/lstm_1.w_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/fc_0.w_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/fc_3.w_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/fc_1.b_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/fc_1.w_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/fc_3.b_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/lstm_1.b_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/fc_2.w_0_moment_0 /Users/wanghao81/senta_model/bilstm_model/params/lstm_0.w_0_moment_0 ] not used\r\nLoad model from /Users/wanghao81/senta_model/bilstm_model/params\r\n  4%|▍         | 52/1200 [00:03<01:09, 16.61it/s]\r\nTraceback (most recent call last):\r\n  File \"/Users/wanghao81/InterpretDL/tutorials/test.py\", line 67, in <module>\r\n    batch_size=10)\r\n  File \"/Users/wanghao81/InterpretDL/interpretdl/interpreter/_normlime_base.py\", line 400, in interpret\r\n    auto_save=(i % 10) == 0)\r\n  File \"/Users/wanghao81/InterpretDL/interpretdl/interpreter/_normlime_base.py\", line 271, in _get_lime_weights\r\n    batch_size=batch_size)\r\n  File \"/Users/wanghao81/InterpretDL/interpretdl/interpreter/lime.py\", line 342, in interpret\r\n    probability = self.predict_fn(*self.model_inputs)[0]\r\n  File \"/Users/wanghao81/InterpretDL/interpretdl/interpreter/lime.py\", line 417, in predict_fn\r\n    for i, d in enumerate(params)})\r\n  File \"/Users/wanghao81/opt/anaconda3/envs/paddle_env/lib/python3.6/site-packages/paddle/fluid/executor.py\", line 1071, in run\r\n    six.reraise(*sys.exc_info())\r\n  File \"/Users/wanghao81/opt/anaconda3/envs/paddle_env/lib/python3.6/site-packages/six.py\", line 703, in reraise\r\n    raise value\r\n  File \"/Users/wanghao81/opt/anaconda3/envs/paddle_env/lib/python3.6/site-packages/paddle/fluid/executor.py\", line 1066, in run\r\n    return_merged=return_merged)\r\n  File \"/Users/wanghao81/opt/anaconda3/envs/paddle_env/lib/python3.6/site-packages/paddle/fluid/executor.py\", line 1154, in _run_impl\r\n    use_program_cache=use_program_cache)\r\n  File \"/Users/wanghao81/opt/anaconda3/envs/paddle_env/lib/python3.6/site-packages/paddle/fluid/executor.py\", line 1229, in _run_program\r\n    fetch_var_name)\r\npaddle.fluid.core_avx.EnforceNotMet: \r\n\r\n--------------------------------------------\r\nC++ Call Stacks (More useful to developers):\r\n--------------------------------------------\r\n0   std::string paddle::platform::GetTraceBackString<std::string const&>(std::string const&&&, char const*, int)\r\n1   void paddle::operators::math::CopyValidData<float>(paddle::framework::Tensor*, paddle::framework::Tensor const*, paddle::framework::CPUVector<unsigned long> const&, int, int, bool, paddle::operators::math::CopyType, paddle::operators::math::PadLayout)\r\n2   paddle::operators::math::UnpaddingLoDTensorFunctor<paddle::platform::CPUDeviceContext, float>::operator()(paddle::platform::CPUDeviceContext const&, paddle::framework::LoDTensor const&, paddle::framework::LoDTensor*, int, int, bool, paddle::operators::math::PadLayout)\r\n3   paddle::operators::SequenceUnpadOpKernel<paddle::platform::CPUDeviceContext, float>::Compute(paddle::framework::ExecutionContext const&) const\r\n4   std::__1::__function::__func<paddle::framework::OpKernelRegistrarFunctor<paddle::platform::CPUPlace, false, 0ul, paddle::operators::SequenceUnpadOpKernel<paddle::platform::CPUDeviceContext, float>, paddle::operators::SequenceUnpadOpKernel<paddle::platform::CPUDeviceContext, double>, paddle::operators::SequenceUnpadOpKernel<paddle::platform::CPUDeviceContext, int>, paddle::operators::SequenceUnpadOpKernel<paddle::platform::CPUDeviceContext, long long> >::operator()(char const*, char const*, int) const::'lambda'(paddle::framework::ExecutionContext const&), std::__1::allocator<paddle::framework::OpKernelRegistrarFunctor<paddle::platform::CPUPlace, false, 0ul, paddle::operators::SequenceUnpadOpKernel<paddle::platform::CPUDeviceContext, float>, paddle::operators::SequenceUnpadOpKernel<paddle::platform::CPUDeviceContext, double>, paddle::operators::SequenceUnpadOpKernel<paddle::platform::CPUDeviceContext, int>, paddle::operators::SequenceUnpadOpKernel<paddle::platform::CPUDeviceContext, long long> >::operator()(char const*, char const*, int) const::'lambda'(paddle::framework::ExecutionContext const&)>, void (paddle::framework::ExecutionContext const&)>::operator()(paddle::framework::ExecutionContext const&)\r\n5   paddle::framework::OperatorWithKernel::RunImpl(paddle::framework::Scope const&, paddle::platform::Place const&, paddle::framework::RuntimeContext*) const\r\n6   paddle::framework::OperatorWithKernel::RunImpl(paddle::framework::Scope const&, paddle::platform::Place const&) const\r\n7   paddle::framework::OperatorBase::Run(paddle::framework::Scope const&, paddle::platform::Place const&)\r\n8   paddle::framework::Executor::RunPartialPreparedContext(paddle::framework::ExecutorPrepareContext*, paddle::framework::Scope*, long long, long long, bool, bool, bool)\r\n9   paddle::framework::Executor::Run(paddle::framework::ProgramDesc const&, paddle::framework::Scope*, int, bool, bool, std::__1::vector<std::string, std::__1::allocator<std::string > > const&, bool, bool)\r\n10  void pybind11::cpp_function::initialize<paddle::pybind::pybind11_init_core_avx(pybind11::module&)::$_111, void, paddle::framework::Executor&, paddle::framework::ProgramDesc const&, paddle::framework::Scope*, int, bool, bool, std::__1::vector<std::string, std::__1::allocator<std::string > > const&, pybind11::name, pybind11::is_method, pybind11::sibling>(paddle::pybind::pybind11_init_core_avx(pybind11::module&)::$_111&&, void (*)(paddle::framework::Executor&, paddle::framework::ProgramDesc const&, paddle::framework::Scope*, int, bool, bool, std::__1::vector<std::string, std::__1::allocator<std::string > > const&), pybind11::name const&, pybind11::is_method const&, pybind11::sibling const&)::'lambda'(pybind11::detail::function_call&)::__invoke(pybind11::detail::function_call&)\r\n11  pybind11::cpp_function::dispatcher(_object*, _object*, _object*)\r\n\r\n------------------------------------------\r\nPython Call Stacks (More useful to users):\r\n------------------------------------------\r\n  File \"/Users/wanghao81/opt/anaconda3/envs/paddle_env/lib/python3.6/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\r\n    attrs=kwargs.get(\"attrs\", None))\r\n  File \"/Users/wanghao81/opt/anaconda3/envs/paddle_env/lib/python3.6/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\r\n    return self.main_program.current_block().append_op(*args, **kwargs)\r\n  File \"/Users/wanghao81/opt/anaconda3/envs/paddle_env/lib/python3.6/site-packages/paddle/fluid/layers/sequence_lod.py\", line 1057, in sequence_unpad\r\n    outputs={'Out': out})\r\n  File \"/Users/wanghao81/InterpretDL/tutorials/assets/bilstm.py\", line 106, in bilstm\r\n    emb = fluid.layers.sequence_unpad(emb, length=seq_len)\r\n  File \"/Users/wanghao81/InterpretDL/tutorials/test.py\", line 36, in paddle_model\r\n    probs = bilstm(word_ids, seq_len, None, DICT_DIM, is_prediction=True)\r\n  File \"/Users/wanghao81/InterpretDL/interpretdl/interpreter/lime.py\", line 392, in _paddle_prepare\r\n    probs = self.paddle_model(*data_ops)\r\n  File \"/Users/wanghao81/InterpretDL/interpretdl/interpreter/lime.py\", line 340, in interpret\r\n    self._paddle_prepare()\r\n  File \"/Users/wanghao81/InterpretDL/interpretdl/interpreter/_normlime_base.py\", line 271, in _get_lime_weights\r\n    batch_size=batch_size)\r\n  File \"/Users/wanghao81/InterpretDL/interpretdl/interpreter/_normlime_base.py\", line 400, in interpret\r\n    auto_save=(i % 10) == 0)\r\n  File \"/Users/wanghao81/InterpretDL/tutorials/test.py\", line 67, in <module>\r\n    batch_size=10)\r\n\r\n----------------------\r\nError Message Summary:\r\n----------------------\r\nError: The padded sequence length can not be less than its original length.\r\n  [Hint: Expected pad_seq_len >= valid_seq_len, but received pad_seq_len:256 < valid_seq_len:278.] at (/home/teamcity/work/ef54dc8a5b211854/paddle/fluid/operators/math/sequence_padding.cc:38)\r\n  [operator < sequence_unpad > error]\r\n\r\nProcess finished with exit code 1",
+        "state": "closed",
+        "user": "wanghao19970205",
+        "closed_by": "wanghao19970205",
+        "created_at": "2020-12-18T03:55:34+00:00",
+        "updated_at": "2020-12-18T10:10:10+00:00",
+        "closed_at": "2020-12-18T10:10:10+00:00",
+        "comments_count": [
+            "wanghao19970205",
+            "XuanyuWu123",
+            "wanghao19970205"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 9,
+        "title": "安装问题",
+        "body": "使用pip直接安装报错：\r\n`  ERROR: Could not find a version that satisfies the requirement interpretDL (from versions: none)\r\nERROR: No matching distribution found for interpretDL`\r\n",
+        "state": "closed",
+        "user": "HansenLYX0708",
+        "closed_by": "holyseven",
+        "created_at": "2021-04-26T02:11:04+00:00",
+        "updated_at": "2022-08-17T07:06:29+00:00",
+        "closed_at": "2021-05-07T09:49:44+00:00",
+        "comments_count": [
+            "holyseven"
+        ],
+        "labels": [
+            "installation"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 6,
+        "title": "InterpretDL 使用的时候都是传预训练的模型给解释器， 是否可以直接给他已经训练好的模型呢",
+        "body": "",
+        "state": "closed",
+        "user": "heimao63531",
+        "closed_by": "holyseven",
+        "created_at": "2021-02-23T03:30:05+00:00",
+        "updated_at": "2021-05-07T06:57:38+00:00",
+        "closed_at": "2021-05-07T06:57:38+00:00",
+        "comments_count": [
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 2,
+        "title": "请问 这个工具支持带有gcb的resnet模型的feature map的可视化吗",
+        "body": "如题，期待回复。\r\n谢谢",
+        "state": "closed",
+        "user": "IamMegatron2025",
+        "closed_by": "holyseven",
+        "created_at": "2020-09-04T09:40:09+00:00",
+        "updated_at": "2021-04-20T12:51:15+00:00",
+        "closed_at": "2021-04-20T12:51:15+00:00",
+        "comments_count": [
+            "holyseven",
+            "wanghao19970205",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 5,
+        "title": "grad-CAM or score-CAM visualization with a Mask R-CNN model",
+        "body": "Hi there. I am trying to implement CAM visualizations with a Mask R-CNN model. As you know, Mask R-CNN performs classifications per ROI, but the backbone network (for ex. a FPN with Resnet50 conv blocks) extracts features over the entire input image. Could you provide some guidance as to how to use InterpretDL to generate CAM with a Mask R-CNN model? Much appreciated!",
+        "state": "closed",
+        "user": "jessecanada",
+        "closed_by": "holyseven",
+        "created_at": "2021-01-16T05:05:38+00:00",
+        "updated_at": "2022-08-17T07:01:55+00:00",
+        "closed_at": "2022-08-15T07:56:59+00:00",
+        "comments_count": [
+            "holyseven",
+            "XuanyuWu123",
+            "nomurakeiya",
+            "Kartiky246",
+            "holyseven",
+            "holyseven"
+        ],
+        "labels": [
+            "good first issue"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 1,
+        "title": "Implementation of Score-CAM",
+        "body": "Score-CAM is a new gradient-free variant of CAMs. Is there any interest to implement it in Paddle?\r\n\r\nPaper: [Score-CAM](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Wang_Score-CAM_Score-Weighted_Visual_Explanations_for_Convolutional_Neural_Networks_CVPRW_2020_paper.pdf)\r\nPytorch Code:[Implementation](https://github.com/haofanwang/Score-CAM)",
+        "state": "closed",
+        "user": "haofanwang",
+        "closed_by": "haofanwang",
+        "created_at": "2020-07-28T01:57:21+00:00",
+        "updated_at": "2022-08-17T07:00:39+00:00",
+        "closed_at": "2020-08-18T17:38:23+00:00",
+        "comments_count": [
+            "holyseven",
+            "haofanwang",
+            "holyseven",
+            "haofanwang",
+            "holyseven",
+            "haofanwang"
+        ],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 4,
+        "title": "你好，请问对一般离散特征的数值型数据，怎么使用该工具包呢",
+        "body": "比如在推荐系统中，我们一般使用的数据很少是图片和text类型的，一般都是数值型连续或者离散特征的数据，对于这种普遍的应用场景，有没有打算支持呢？",
+        "state": "closed",
+        "user": "wanghao19970205",
+        "closed_by": "holyseven",
+        "created_at": "2021-01-04T09:11:01+00:00",
+        "updated_at": "2021-04-20T12:51:26+00:00",
+        "closed_at": "2021-04-20T12:51:25+00:00",
+        "comments_count": [
+            "holyseven",
+            "wanghao19970205",
+            "holyseven",
+            "wanghao19970205"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 7,
+        "title": "运行基于模型中间特征的算法时，有一个'feature_maps' is not defined的报错",
+        "body": "我的代码如下：\r\n~~~\r\nimport interpretdl as it\r\nfrom interpretdl.data_processor.visualizer import visualize_grayscale\r\n\r\nResNet18_PATH = \"ResNet18_chk_points/final.pdparams\"\r\nResNet18 = paddle.vision.models.resnet18(pretrained=True, num_classes=6)\r\nResNet18_state_dict = paddle.load(ResNet18_PATH)\r\nResNet18.set_dict(ResNet18_state_dict)\r\n\r\nResNet18_gradcam = it.GradCAMInterpreter(ResNet18, use_cuda=True)\r\n\r\nResNet18_gradients = ResNet18_gradcam.interpret(\"face/Trump/1.jpg\", target_layer_name='concat_0.tmp_0', visual=True, save_path=None)  #展示结果\r\n\r\nvisualize_grayscale(ResNet18_gradients[0])   #将结果转化为灰度图，展示效果更直观\r\n~~~\r\n\r\n输出结果：\r\n~~~\r\n---------------------------------------------------------------------------NameError                                 Traceback (most recent call last)<ipython-input-32-384a620fc707> in <module>\r\n      1 ResNet18_gradcam = it.GradCAMInterpreter(ResNet18, use_cuda=True)\r\n      2 \r\n----> 3 ResNet18_gradients = ResNet18_gradcam.interpret(\"face/Trump/1.jpg\", target_layer_name='concat_0.tmp_0', visual=True, save_path=None)  #展示结果\r\n      4 \r\n      5 visualize_grayscale(ResNet18_gradients[0])   #将结果转化为灰度图，展示效果更直观\r\n/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/interpretdl/interpreter/gradient_cam.py in interpret(self, inputs, target_layer_name, labels, visual, save_path)\r\n     91         bsz = len(data)\r\n     92         if labels is None:\r\n---> 93             _, _, preds = self.predict_fn(data, labels)\r\n     94             labels = preds\r\n     95         labels = np.array(labels).reshape((bsz, ))\r\n/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/interpretdl/interpreter/gradient_cam.py in predict_fn(data, labels)\r\n    151                 target = paddle.sum(out * labels_onehot, axis=1)\r\n    152                 gradients = paddle.grad(\r\n--> 153                     outputs=[target], inputs=[feature_maps])[0]\r\n    154                 return feature_maps.numpy(), gradients.numpy(), labels\r\n    155 \r\nNameError: name 'feature_maps' is not defined\r\n~~~",
+        "state": "closed",
+        "user": "zbp-xxxp",
+        "closed_by": "holyseven",
+        "created_at": "2021-03-15T03:02:18+00:00",
+        "updated_at": "2022-08-17T07:02:19+00:00",
+        "closed_at": "2021-08-03T04:38:04+00:00",
+        "comments_count": [
+            "zbp-xxxp",
+            "XuanyuWu123",
+            "zbp-xxxp",
+            "lixingjian"
+        ],
+        "labels": [
+            "good first issue"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 10,
+        "title": "paddledetection模型",
+        "body": "训练好了paddledetection模型，怎么使用interpretDL进行可视化？",
+        "state": "closed",
+        "user": "Monday-Leo",
+        "closed_by": "holyseven",
+        "created_at": "2021-05-05T04:45:17+00:00",
+        "updated_at": "2021-07-14T11:37:10+00:00",
+        "closed_at": "2021-07-14T11:37:10+00:00",
+        "comments_count": [
+            "holyseven",
+            "Monday-Leo",
+            "Monday-Leo",
+            "Monday-Leo",
+            "holyseven",
+            "Monday-Leo"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 11,
+        "title": "能否在推断模型上计算得到gradient？",
+        "body": "现在的模型都是基于“”训练模型“上做的。\r\n如果要考虑到部署的情况，能否在“推断模型”上，去得到输出层到最后一层conv层的gradient？",
+        "state": "closed",
+        "user": "youwei2567",
+        "closed_by": "holyseven",
+        "created_at": "2021-06-29T07:40:44+00:00",
+        "updated_at": "2021-08-03T04:40:06+00:00",
+        "closed_at": "2021-08-03T04:38:21+00:00",
+        "comments_count": [
+            "holyseven",
+            "youwei2567",
+            "holyseven",
+            "youwei2567",
+            "holyseven",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 13,
+        "title": "Any interest for supporting LayerCAM",
+        "body": "Our paper \"LayerCAM: Exploring Hierarchical Class Activation Maps for Localization\" is accepted by TIP recently, which can visualize the class activation maps from any cnn layer of an off-the-shelf network. Could you add our method to your popular repository for more people to try this method? Our method is a simple modification of Grad-CAM. It should easy to implement. Here is the [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9462463) and [code](https://github.com/PengtaoJiang/LayerCAM). Hope for your reply.",
+        "state": "open",
+        "user": "PengtaoJiang",
+        "closed_by": null,
+        "created_at": "2021-07-04T09:19:50+00:00",
+        "updated_at": "2022-08-17T07:00:04+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "holyseven",
+            "PengtaoJiang"
+        ],
+        "labels": [
+            "enhancement",
+            "help wanted"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 12,
+        "title": "gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed",
+        "body": "Unable to init server: Could not connect: Connection refused\r\nUnable to init server: Could not connect: Connection refused\r\n/usr/local/lib/python3.8/dist-packages/matplotlib/backends/backend_gtk3.py:40: DeprecationWarning: Gdk.Cursor.new is deprecated\r\n  cursors.MOVE:          Gdk.Cursor.new(Gdk.CursorType.FLEUR),\r\n\r\n(gmlp_view.py:513934): Gdk-CRITICAL **: 01:20:32.911: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed\r\nKilled\r\n",
+        "state": "closed",
+        "user": "zbp-xxxp",
+        "closed_by": "holyseven",
+        "created_at": "2021-06-30T17:23:04+00:00",
+        "updated_at": "2021-08-03T04:40:56+00:00",
+        "closed_at": "2021-08-03T04:40:51+00:00",
+        "comments_count": [
+            "zbp-xxxp",
+            "zbp-xxxp",
+            "holyseven",
+            "zbp-xxxp",
+            "holyseven",
+            "zbp-xxxp",
+            "holyseven",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 21,
+        "title": "静态图的可视化有支持吗？我看例子都是动态图的",
+        "body": null,
+        "state": "closed",
+        "user": "Bobo-y",
+        "closed_by": "Bobo-y",
+        "created_at": "2021-08-06T09:51:22+00:00",
+        "updated_at": "2021-08-06T10:05:52+00:00",
+        "closed_at": "2021-08-06T10:05:52+00:00",
+        "comments_count": [
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 17,
+        "title": "你好，我想杠一下",
+        "body": "https://github.com/PaddlePaddle/InterpretDL/blob/1d27e39f4ffc9029003f4d3f81c20d0f8d85c65d/interpretdl/interpreter/gradient_cam.py#L105\r\n\r\neval之后是有梯度的，具体可见[PPMA](https://github.com/lmk123568/Paddle_Model_Analysis)\r\n感谢你们项目，获取梯度参考了你们几行代码\r\npaddle完善hook，可能会更舒服一点\r\n纯属交流~如果我理解有错欢迎讨论哈",
+        "state": "closed",
+        "user": "lmk123568",
+        "closed_by": "holyseven",
+        "created_at": "2021-07-20T14:30:42+00:00",
+        "updated_at": "2021-08-03T04:41:32+00:00",
+        "closed_at": "2021-08-03T04:41:27+00:00",
+        "comments_count": [
+            "holyseven",
+            "lmk123568",
+            "holyseven",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 27,
+        "title": "NormLIMENLPInterpreter的interpret函数多次调用结果会有异常",
+        "body": "NormLIMENLPInterpreter的interpret函数会调用lime方法，并将结果根据一个临时索引dict_key保存在一个字典中，下次调用如果索引存在则不调用lime方法，直接取字典中索引对应的结果。\r\n但是dict_key每次都是从0开始计数的，所以如果连续多次调用interpret且输入的data不同，就会返回错误的结果。\r\n![abfcf46cad65db0b4a9fc4279993f42e](https://user-images.githubusercontent.com/20926735/160118685-1ee92d12-c9b5-45e9-8533-49b9af413f07.png)\r\n![e9492608aa4b244747f2a2a82f426944](https://user-images.githubusercontent.com/20926735/160118694-581d06f2-062a-4ff7-9627-2fc173ee9203.png)\r\n\r\n另外temp_data_file设置为None时可否不保存结果，现在每次调用都会生成一个结果文件感觉不太方便。\r\n",
+        "state": "closed",
+        "user": "zhangyimi",
+        "closed_by": "holyseven",
+        "created_at": "2022-03-25T12:15:17+00:00",
+        "updated_at": "2022-08-17T07:03:20+00:00",
+        "closed_at": "2022-03-31T07:51:36+00:00",
+        "comments_count": [
+            "holyseven"
+        ],
+        "labels": [
+            "bug",
+            "documentation"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 26,
+        "title": "Assets Uploading Place ",
+        "body": null,
+        "state": "closed",
+        "user": "holyseven",
+        "closed_by": "holyseven",
+        "created_at": "2022-03-23T02:07:04+00:00",
+        "updated_at": "2022-09-24T02:31:22+00:00",
+        "closed_at": "2022-08-17T06:59:33+00:00",
+        "comments_count": [
+            "holyseven",
+            "holyseven",
+            "holyseven",
+            "holyseven",
+            "holyseven",
+            "holyseven",
+            "holyseven",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 23,
+        "title": "interpretdl-特征可视化",
+        "body": "请问我使用https://blog.csdn.net/PaddlePaddle/article/details/114609592这里面的教程\r\n\r\nvisualize_grayscale(gradients[0]) #将结果转化为灰度图，\r\n对于这一句代码 我并没有找到库或是源文件什么的\r\n加入我想要把特征激活的图转换灰度的 需要怎么做呢（例如：把激活的地方就是白色 未激活的就是黑色）\r\n十分感谢你们的回复！",
+        "state": "closed",
+        "user": "NICECPU",
+        "closed_by": "holyseven",
+        "created_at": "2021-11-27T06:43:21+00:00",
+        "updated_at": "2021-12-04T12:23:23+00:00",
+        "closed_at": "2021-12-04T12:23:23+00:00",
+        "comments_count": [
+            "holyseven",
+            "NICECPU",
+            "holyseven",
+            "NICECPU",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 45
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 46
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 38,
+        "title": "customized input data",
+        "body": "\r\n## 🚀 Feature\r\nInput data processing needs to be flexible and can be customized.\r\n\r\n\r\n## Motivation and Additional context\r\nCurrently, images are normalized according to natural images, like ImageNet statistics. However, for medical, remote sensing, and other types of 2D inputs (or even more complex data), current pipelines cannot deal with.\r\n\r\n\r\n\r\n## Alternatives\r\nMaybe `paddle.vision.transforms` or other transformations can be used.\r\n\r\n",
+        "state": "open",
+        "user": "holyseven",
+        "closed_by": null,
+        "created_at": "2022-08-17T06:58:30+00:00",
+        "updated_at": "2022-08-17T06:58:53+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 37,
+        "title": "Error upon installation",
+        "body": "Hi, my name is Matt Cremeens and am interested in using your work for a research project.\r\n\r\n---\r\n\r\n## 🐛 Bug\r\n\r\nError upon installation\r\n\r\n### To Reproduce\r\n\r\nSteps to reproduce the behavior:\r\n\r\n1. Installed PaddlePaddle following these instructions: https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/install/pip/macos-pip.html\r\n2. pip install interpretdl\r\n3. Received error below\r\n\r\nIf you have a code sample, error messages, stack traces, please provide it here as well.\r\n\r\n```python\r\nFailed to build numpy\r\n      ERROR: Could not build wheels for numpy, which is required to install pyproject.toml-based projects\r\n      [end of output]\r\n  \r\n  note: This error originates from a subprocess, and is likely not a problem with pip.\r\nerror: subprocess-exited-with-error\r\n\r\n× pip subprocess to install build dependencies did not run successfully.\r\n\r\n```\r\n\r\n## (optional) Enviroment\r\n\r\nIf you know well the environment of your machine, please put the information below:\r\n\r\nmacOS\r\npython3.9\r\n",
+        "state": "closed",
+        "user": "Hoozits728",
+        "closed_by": "Hoozits728",
+        "created_at": "2022-08-17T00:45:53+00:00",
+        "updated_at": "2022-08-17T11:57:56+00:00",
+        "closed_at": "2022-08-17T11:57:56+00:00",
+        "comments_count": [
+            "holyseven",
+            "Hoozits728"
+        ],
+        "labels": [
+            "installation"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 40,
+        "title": "运行example_grad_cam_cv.ipynb时报错",
+        "body": "(optional) Briefly introduce yourself.\r\n\r\n---\r\n\r\n## 🐛 Bug\r\n\r\n运行[example_grad_cam_cv.ipynb](https://github.com/PaddlePaddle/InterpretDL/blob/master/examples/example_grad_cam_cv.ipynb)时会报错\r\n\r\n### To Reproduce\r\n\r\nSteps to reproduce the behavior:\r\n\r\n1. 直接运行该notebook\r\n2. 报错信息如下\r\n\r\n```\r\n---------------------------------------------------------------------------\r\nAxisError                                 Traceback (most recent call last)\r\n/paddle/temp/ipykernel_14605/90004086.py in <module>\r\n      9         label=None,\r\n     10         visual=True,\r\n---> 11         save_path=None)\r\n\r\n/paddle/code/gry/InterpretDL/interpretdl/interpreter/gradient_cam.py in interpret(self, inputs, target_layer_name, label, resize_to, crop_to, visual, save_path)\r\n     99 \r\n    100         # the core algorithm\r\n--> 101         cam_weights = np.mean(g, (2, 3), keepdims=True)\r\n    102         heatmap = cam_weights * f\r\n    103         heatmap = heatmap.mean(1)\r\n\r\n<__array_function__ internals> in mean(*args, **kwargs)\r\n\r\n/usr/local/python3.7.0/lib/python3.7/site-packages/numpy/core/fromnumeric.py in mean(a, axis, dtype, out, keepdims, where)\r\n   3439 \r\n   3440     return _methods._mean(a, axis=axis, dtype=dtype,\r\n-> 3441                           out=out, **kwargs)\r\n   3442 \r\n   3443 \r\n\r\n/usr/local/python3.7.0/lib/python3.7/site-packages/numpy/core/_methods.py in _mean(a, axis, dtype, out, keepdims, where)\r\n    165     is_float16_result = False\r\n    166 \r\n--> 167     rcount = _count_reduce_items(arr, axis, keepdims=keepdims, where=where)\r\n    168     if rcount == 0 if where is True else umr_any(rcount == 0, axis=None):\r\n    169         warnings.warn(\"Mean of empty slice.\", RuntimeWarning, stacklevel=2)\r\n\r\n/usr/local/python3.7.0/lib/python3.7/site-packages/numpy/core/_methods.py in _count_reduce_items(arr, axis, keepdims, where)\r\n     74         items = nt.intp(1)\r\n     75         for ax in axis:\r\n---> 76             items *= arr.shape[mu.normalize_axis_index(ax, arr.ndim)]\r\n     77     else:\r\n     78         # TODO: Optimize case when `where` is broadcast along a non-reduction\r\n\r\n```\r\n\r\n\r\n报错的命令为\r\n\r\n<img width=\"500\" alt=\"image\" src=\"https://user-images.githubusercontent.com/14270174/191889938-6ce66439-b995-479c-a332-1ca5af5bac33.png\">\r\n\r\n",
+        "state": "closed",
+        "user": "littletomatodonkey",
+        "closed_by": "littletomatodonkey",
+        "created_at": "2022-09-23T04:01:25+00:00",
+        "updated_at": "2022-09-23T04:56:07+00:00",
+        "closed_at": "2022-09-23T04:56:07+00:00",
+        "comments_count": [
+            "holyseven",
+            "littletomatodonkey",
+            "littletomatodonkey"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 47,
+        "title": "Interface",
+        "body": "\r\n## 🚀 Feature\r\nAn interface for using the explanation algorithms in InterpretDL.\r\n\r\n## Motivation\r\nMuch easier to use.\r\n\r\n\r\n## Alternatives\r\n[Mindinsight](https://github.com/mindspore-ai/mindinsight), [EISeg](https://github.com/PaddlePaddle/PaddleSeg/tree/release/2.7/EISeg). \r\n\r\n",
+        "state": "closed",
+        "user": "holyseven",
+        "closed_by": "holyseven",
+        "created_at": "2022-12-22T03:36:24+00:00",
+        "updated_at": "2023-02-21T13:45:50+00:00",
+        "closed_at": "2023-02-21T13:45:50+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 42,
+        "title": "关于分割模型的可视化",
+        "body": "请问目前有关于分割模型可视化的热力图方法吗，\r\n我使用gradcam的教程在自己网络尝试，\r\n显示我的维度不对，不知道该怎么处理。",
+        "state": "closed",
+        "user": "xiaodaomingye459",
+        "closed_by": "holyseven",
+        "created_at": "2022-11-08T06:26:49+00:00",
+        "updated_at": "2023-03-14T05:55:32+00:00",
+        "closed_at": "2023-03-14T05:55:32+00:00",
+        "comments_count": [
+            "holyseven",
+            "xiaodaomingye459",
+            "holyseven",
+            "holyseven",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 41,
+        "title": "热力图",
+        "body": "(optional) Briefly introduce yourself.\r\n\r\n请问使用interpretDL绘制ppyoloe的热力图，如何加载模型？\r\n如果在infer.py里这样写会报这样的错误\r\n![image](https://user-images.githubusercontent.com/99952437/199042829-c50688e0-3382-4cdd-85ce-2fb35d98af1e.png)\r\n![image](https://user-images.githubusercontent.com/99952437/199042921-aecf020b-0f14-4f33-8229-10111950d127.png)\r\n\r\n\r\n\r\n## ❓ Questions and Help\r\n",
+        "state": "closed",
+        "user": "NwTbbetter",
+        "closed_by": "holyseven",
+        "created_at": "2022-10-31T12:43:03+00:00",
+        "updated_at": "2024-01-21T02:03:48+00:00",
+        "closed_at": "2024-01-21T02:03:48+00:00",
+        "comments_count": [
+            "holyseven",
+            "NwTbbetter",
+            "holyseven",
+            "NwTbbetter",
+            "holyseven",
+            "NwTbbetter",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 44,
+        "title": "Infidelity metric not found, probably a new release needed",
+        "body": "## ❓ Questions and Help\r\nCould you make a new release so that pip install includes newer features like the Infidelity metric? Other metrics are found without problems",
+        "state": "closed",
+        "user": "adubowski",
+        "closed_by": "holyseven",
+        "created_at": "2022-12-14T15:47:53+00:00",
+        "updated_at": "2023-03-14T05:55:47+00:00",
+        "closed_at": "2023-03-14T05:55:47+00:00",
+        "comments_count": [
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 52,
+        "title": "Gradient computation changed since paddle2.4",
+        "body": "Thanks @CarlZhang1020 for reporting the issue and the [PR](https://github.com/PaddlePaddle/InterpretDL/pull/51). See the modification in the [PR](https://github.com/PaddlePaddle/InterpretDL/pull/51) for example of gradcam. \r\n> grad method changed in paddle2.4, need to check more code about grad process....grad-cam for example\r\n\r\nBefore solving this issue completely, we are suggesting using paddle2.3.2 currently.",
+        "state": "open",
+        "user": "holyseven",
+        "closed_by": null,
+        "created_at": "2023-02-10T03:04:15+00:00",
+        "updated_at": "2023-05-18T01:36:40+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 48,
+        "title": "长宽不相等的图像怎么输入",
+        "body": "interpret的resize_to参数只能填一个数,我的网络长和宽不相等怎么送进gradcam分析\r\n## ❓ Questions and Help\r\n",
+        "state": "closed",
+        "user": "245680",
+        "closed_by": "holyseven",
+        "created_at": "2023-01-12T01:55:10+00:00",
+        "updated_at": "2024-01-21T02:04:00+00:00",
+        "closed_at": "2024-01-21T02:04:00+00:00",
+        "comments_count": [
+            "holyseven",
+            "245680",
+            "holyseven",
+            "245680",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 53,
+        "title": "分割可视化",
+        "body": "我用给的示例代码运行分割模型\r\n尝试了ppliteseg官方代码和权重，以及自己训练的权重，可视化的图形如下，是什么原因呢？\r\n![image](https://user-images.githubusercontent.com/45037914/220294880-358235de-a473-406e-ad59-b6c3bf537dac.png)\r\n",
+        "state": "closed",
+        "user": "m828",
+        "closed_by": "holyseven",
+        "created_at": "2023-02-21T08:50:39+00:00",
+        "updated_at": "2023-05-15T08:36:28+00:00",
+        "closed_at": "2023-05-15T08:36:28+00:00",
+        "comments_count": [
+            "holyseven",
+            "m828",
+            "holyseven",
+            "m828",
+            "m828",
+            "holyseven",
+            "m828",
+            "holyseven",
+            "m828",
+            "holyseven",
+            "m828",
+            "holyseven",
+            "m828",
+            "m828",
+            "holyseven",
+            "m828",
+            "holyseven",
+            "m828",
+            "holyseven",
+            "m828",
+            "holyseven",
+            "holyseven",
+            "m828",
+            "holyseven",
+            "m828"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 54,
+        "title": "Shapely Value",
+        "body": "(optional) Briefly introduce yourself.\r\n\r\n---\r\n\r\n\r\n## ❓ Questions and Help\r\n\r\n似乎InterpretDL没有提供shapely value的相关计算工具和可视化功能？我没有很了解，是否有大佬能提供帮助和讯息，paddle有没有提供类似的计算方法呀？\r\n主要shap库：https://github.com/slundberg/shap\r\n依赖pytroch，pytroch又跟paddle不兼并。搞的我用paddle训练的模型，无法用shapely value 去做解释说明诶...",
+        "state": "closed",
+        "user": "AprilDomLin",
+        "closed_by": "AprilDomLin",
+        "created_at": "2023-03-10T10:47:26+00:00",
+        "updated_at": "2023-08-14T01:58:50+00:00",
+        "closed_at": "2023-08-14T01:58:50+00:00",
+        "comments_count": [
+            "holyseven",
+            "AprilDomLin",
+            "holyseven",
+            "AprilDomLin",
+            "AprilDomLin",
+            "holyseven",
+            "AprilDomLin"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 58,
+        "title": "请问这里边有没有和自然语言处理相关的",
+        "body": "(optional) Briefly introduce yourself.\r\n\r\n---\r\n\r\n\r\n## ❓ Questions and Help\r\n",
+        "state": "closed",
+        "user": "chongchongL",
+        "closed_by": "chongchongL",
+        "created_at": "2023-03-26T13:14:50+00:00",
+        "updated_at": "2023-07-27T02:26:33+00:00",
+        "closed_at": "2023-07-27T02:26:33+00:00",
+        "comments_count": [
+            "holyseven",
+            "chongchongL",
+            "holyseven",
+            "chongchongL",
+            "chongchongL",
+            "holyseven",
+            "chongchongL"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 56,
+        "title": "GradcamSeg是否支持paddle2.4以上版本？",
+        "body": "![屏幕截图 2023-03-15 171819](https://user-images.githubusercontent.com/45309448/225263536-c94f9f91-5ac6-4f16-97b8-eadcaeb3af1d.png)\r\n",
+        "state": "closed",
+        "user": "FelixYHH",
+        "closed_by": "holyseven",
+        "created_at": "2023-03-15T09:18:45+00:00",
+        "updated_at": "2023-05-15T08:35:24+00:00",
+        "closed_at": "2023-05-15T08:35:24+00:00",
+        "comments_count": [
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 60,
+        "title": " softmax(): argument 'x' (position 0) must be Tensor, but got list",
+        "body": "import paddle\r\nfrom PIL import Image\r\nimport interpretdl as it\r\nfrom interpretdl.data_processor.readers import read_image\r\nfrom paddleseg.models import MixVisionTransformer_B5\r\nfrom paddleseg.models.backbones import *\r\n\r\nurl = 'https://bj.bcebos.com/paddleseg/dygraph/pretrained_models/vit_small_patch16_384_augreg.tar.gz'\r\npaddle_model = ViT_base_patch16_384(pretrained=url, num_classes=2)\r\n\r\nresult = [n for n, v in paddle_model.named_sublayers()]\r\nprint(result)\r\n\r\ntam = it.TAMInterpreter(paddle_model)\r\n\r\nPath = \"imgs/catdog.jpg\"\r\n\r\nLayer = 'norm1'\r\n\r\nheatmap = tam.interpret(\r\n        Path,\r\n        start_layer=4,\r\n        label=None,  # cat\r\n        visual=True,\r\n        save_path=None)\r\n\r\n\r\n## ❓ Questions and Help\r\n代码如上，不管我换什么网络换什么层显示都报这个错\r\n泪目了，求助\r\nTraceback (most recent call last):\r\n  File \"D:\\project\\InterpretDL-master\\test.py\", line 20, in <module>\r\n    heatmap = tam.interpret(\r\n  File \"D:\\project\\InterpretDL-master\\interpretdl\\interpreter\\transition_attention_maps.py\", line 78, in interpret\r\n    attns, _, preds = self.predict_fn(data)\r\n  File \"D:\\project\\InterpretDL-master\\interpretdl\\interpreter\\transition_attention_maps.py\", line 149, in predict_fn\r\n    out = paddle.nn.functional.softmax(out, axis=1)\r\n  File \"C:\\soft\\anaconda3\\envs\\paddle\\lib\\site-packages\\paddle\\nn\\functional\\activation.py\", line 1142, in softmax\r\n    return _C_ops.softmax(outs_cast, axis)\r\nValueError: (InvalidArgument) softmax(): argument 'x' (position 0) must be Tensor, but got list (at ..\\paddle\\fluid\\pybind\\eager_utils.cc:894)",
+        "state": "closed",
+        "user": "toouki",
+        "closed_by": "holyseven",
+        "created_at": "2023-04-05T06:31:04+00:00",
+        "updated_at": "2023-05-15T08:34:35+00:00",
+        "closed_at": "2023-05-15T08:34:35+00:00",
+        "comments_count": [
+            "holyseven",
+            "toouki",
+            "toouki"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 63,
+        "title": "Tutorial error",
+        "body": "location: https://github.com/PaddlePaddle/InterpretDL/blob/master/tutorials/GradCAM_Segmentation.ipynb\r\n\r\n## 🐛 Bug\r\n\r\nin funciton GradCAMSegInterpreter._build_predict_fn( ).predict_fn( ) : \r\n```\r\n# paddle gradient computation changes since 2.4\r\npaddle_version=tuple(map(int, paddle.__version__.split(\".\")))\r\nif paddle_version>=(2,4,0):\r\n       loss.backward(retain_graph=True) #since paddle 2.4\r\n       gradients = paddle.grad(\r\n             outputs=[target], inputs=[self._feature_maps[self._target_layer_name]])[0]\r\nelse:\r\n       oss.backward()\r\n       gradients = self._feature_maps[self._target_layer_name].grad\r\n```\r\n\r\nerror: ***target*** is not defined,it should be ***loss***\r\n",
+        "state": "closed",
+        "user": "miaomaomiaomaoda",
+        "closed_by": "miaomaomiaomaoda",
+        "created_at": "2023-05-15T03:34:55+00:00",
+        "updated_at": "2023-05-15T08:46:36+00:00",
+        "closed_at": "2023-05-15T08:46:36+00:00",
+        "comments_count": [
+            "holyseven",
+            "miaomaomiaomaoda",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 55,
+        "title": "Grad-CAM可视化分割模型",
+        "body": "(optional) Briefly introduce yourself.\r\n\r\n---请问有Grad-CAM可视化分割模型的时间安排吗？\r\n\r\n\r\n## ❓ Questions and Help\r\n",
+        "state": "closed",
+        "user": "FelixYHH",
+        "closed_by": "FelixYHH",
+        "created_at": "2023-03-13T07:51:45+00:00",
+        "updated_at": "2024-10-12T12:49:29+00:00",
+        "closed_at": "2023-03-15T01:45:05+00:00",
+        "comments_count": [
+            "holyseven",
+            "FelixYHH",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven",
+            "zcswdt",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 65,
+        "title": "Failed to apply gradcam on mobileNetv3-large",
+        "body": "## 🐛 Bug\r\n\r\nI attempted to apply the Grad-CAM algorithm to mobilenetv3-large but failed. Here are the error messages and version information I have. I think it may have some connection with the issue mentioned in this topic.\r\n\r\n### To Reproduce\r\n\r\nSteps to reproduce the behavior:\r\n\r\n1. The model is from paddle.vision.models, and the only modification is the output dimentsion of last fc layer since my number of classes doesnt match the pretrained paremeter.\r\n2. After training, the pdmodel is stored locally, and use the python code below to load the model arch and parameter, attempting to extract the feature map.\r\n\r\n```python\r\nimport interpretdl as it\r\nfrom interpretdl.data_processor.readers import read_image\r\nfrom paddle.vision.models import mobilenet_v3_large\r\nfrom paddle.vision.models import resnet50\r\n\r\nimport os\r\nimport paddle\r\npaddle.device.set_device('gpu:0')\r\n\r\n# paddle_model = resnet50(pretrained=True)\r\npaddle_model = mobilenet_v3_large(pretrained=True, num_classes=150) \r\ncheckpoint_path = \"\"\r\nif os.path.exists(checkpoint_path):\r\n    param_state_dict = paddle.load(os.path.join(checkpoint_path, \"mobileNetv3_5_16.pdparams\"))\r\n    paddle_model.set_state_dict(param_state_dict)\r\n\r\ngradcam = it.GradCAMInterpreter(paddle_model, device='gpu:0')\r\nlayers_name = []\r\nfor n, v in paddle_model.named_sublayers():\r\n    layers_name.append(n)\r\nprint(layers_name)\r\nimg_path = ''\r\nprint(paddle_model)\r\nheatmap = gradcam.interpret(\r\n        img_path,\r\n        'lastconv.0',\r\n        label=None,\r\n        visual=True,\r\n        save_path=None)\r\n```\r\n\r\n### Stacktrace \r\n\r\n```\r\nTraceback (most recent call last):\r\n  File \"interpretability.py\", line 24, in <module>\r\n    heatmap = gradcam.interpret(\r\n  File \"/home/xyt/.conda/envs/paddle/lib/python3.8/site-packages/interpretdl/interpreter/gradient_cam.py\", line 90, in interpret\r\n    feature_map, gradients, preds = self.predict_fn(data, label)\r\n  File \"/home/xyt/.conda/envs/paddle/lib/python3.8/site-packages/interpretdl/interpreter/gradient_cam.py\", line 140, in predict_fn\r\n    out = self.model(data)\r\n  File \"/home/xyt/.conda/envs/paddle/lib/python3.8/site-packages/paddle/fluid/dygraph/layers.py\", line 1012, in __call__\r\n    return self.forward(*inputs, **kwargs)\r\n  File \"/home/xyt/.conda/envs/paddle/lib/python3.8/site-packages/paddle/vision/models/mobilenetv3.py\", line 237, in forward\r\n    x = self.conv(x)\r\n  File \"/home/xyt/.conda/envs/paddle/lib/python3.8/site-packages/paddle/fluid/dygraph/layers.py\", line 1012, in __call__\r\n    return self.forward(*inputs, **kwargs)\r\n  File \"/home/xyt/.conda/envs/paddle/lib/python3.8/site-packages/paddle/fluid/dygraph/container.py\", line 98, in forward\r\n    input = layer(input)\r\n  File \"/home/xyt/.conda/envs/paddle/lib/python3.8/site-packages/paddle/fluid/dygraph/layers.py\", line 1012, in __call__\r\n    return self.forward(*inputs, **kwargs)\r\n  File \"/home/xyt/.conda/envs/paddle/lib/python3.8/site-packages/paddle/nn/layer/conv.py\", line 712, in forward\r\n    out = F.conv._conv_nd(\r\n  File \"/home/xyt/.conda/envs/paddle/lib/python3.8/site-packages/paddle/nn/functional/conv.py\", line 140, in _conv_nd\r\n    pre_bias = _C_ops.conv2d(\r\nOSError: (External) CUDNN error(4), CUDNN_STATUS_INTERNAL_ERROR. \r\n  [Hint: Please search for the error code(4) on website (https://docs.nvidia.com/deeplearning/cudnn/api/index.html#cudnnStatus_t) to get Nvidia's official solution and advice about CUDNN Error.] (at /paddle/paddle/phi/backends/gpu/gpu_resources.cc:227)\r\n```\r\n\r\n## Enviroment\r\n- paddlepaddle-gpu          2.4.2.post116        \r\n- NVIDIA A10         CUDA Version: 11.6\r\n\r\n- PaddlePaddle version (eg. 2.1):  2.4.2.post116 \r\n- CPU: AMD EPYC 7713 64-Core Processor\r\n- GPU: 11.6/8.4.1\r\n- OS Platform (eg. Mac OS 10.14): ubuntu18.04\r\n- Graphics card storage: 23028MiB\r\n\r\n",
+        "state": "closed",
+        "user": "AndreasXie",
+        "closed_by": "AndreasXie",
+        "created_at": "2023-05-18T01:59:13+00:00",
+        "updated_at": "2023-05-18T07:07:04+00:00",
+        "closed_at": "2023-05-18T07:07:04+00:00",
+        "comments_count": [
+            "AndreasXie",
+            "holyseven",
+            "AndreasXie",
+            "holyseven",
+            "holyseven",
+            "AndreasXie"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 66,
+        "title": "在语义分割中应用GradCAM时，如何对整幅图像进行热力图显示，传入的pixels大小如何确定",
+        "body": "(optional) Briefly introduce yourself.\r\n在语义分割中应用GradCAM时，如何对整幅图像进行热力图显示，传入的pixels大小如何确定，我修改不同的pixels数值，结果不太一样\r\n---\r\n\r\n\r\n## ❓ Questions and Help\r\n",
+        "state": "closed",
+        "user": "aidongmandexiaowowo",
+        "closed_by": "holyseven",
+        "created_at": "2023-09-17T12:20:38+00:00",
+        "updated_at": "2024-01-21T02:04:35+00:00",
+        "closed_at": "2024-01-21T02:04:35+00:00",
+        "comments_count": [
+            "holyseven",
+            "aidongmandexiaowowo"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 67,
+        "title": "怎么拿出paddledetection中间的某一层进行可视化",
+        "body": "怎么拿出paddledetection中间的某一层进行可视化呢？\r\n",
+        "state": "closed",
+        "user": "guoqsGary",
+        "closed_by": "holyseven",
+        "created_at": "2023-09-29T11:51:26+00:00",
+        "updated_at": "2024-01-21T02:05:35+00:00",
+        "closed_at": "2024-01-21T02:05:35+00:00",
+        "comments_count": [
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 69,
+        "title": "UFuncTypeError: Cannot cast ufunc 'add' output from dtype('O') to dtype('float64') with casting rule 'same_kind'",
+        "body": "This is my code:\r\n`!pip install paddlepaddle-gpu\r\n!git clone https://github.com/PaddlePaddle/InterpretDL.git\r\nimport os\r\nimport sys\r\nos.chdir(/content/InterpretDL)\r\nsys.path.insert(0, os.getcwd())\r\nimport interpretdl as it\r\n!wget -c https://paddle-imagenet-models-name.bj.bcebos.com/dygraph/ViT_base_patch16_224_pretrained.pdparams -P /content/InterpretDL/tutorials/assets/\r\nfrom tutorials.assets.vision_transformer import ViT_base_patch16_224\r\npaddle_model = ViT_base_patch16_224()\r\nMODEL_PATH = /content/InterpretDL/tutorials/assets/ViT_base_patch16_224_pretrained.pdparams\r\npaddle_model.state_dict(paddle.load(MODEL_PATH))\r\nimg_path = /content/InterpretDL/imgs/catdog.jpg\r\ntam = it.TAMInterpreter(paddle_model)\r\nheatmap = tam.interpret(\r\n        img_path,\r\n        start_layer=4,\r\n        label=None,  # cat\r\n        visual=True,\r\n        save_path=None)'\r\nBut i keep getting this error: \r\nUFuncTypeError: Cannot cast ufunc 'add' output from dtype('O') to dtype('float64') with casting rule 'same_kind'\r\nwhy?\r\n\r\n",
+        "state": "closed",
+        "user": "rojinakashefi",
+        "closed_by": "rojinakashefi",
+        "created_at": "2023-11-18T13:06:41+00:00",
+        "updated_at": "2023-11-20T15:07:30+00:00",
+        "closed_at": "2023-11-20T15:07:30+00:00",
+        "comments_count": [
+            "rojinakashefi",
+            "holyseven",
+            "rojinakashefi",
+            "rojinakashefi",
+            "holyseven",
+            "rojinakashefi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 68,
+        "title": "wrong url",
+        "body": "https://github.com/PaddlePaddle/InterpretDL/blame/ae200116fc31e4ffeff24c5d16dbfc565172ed48/interpretdl/evaluate_interpreter/perturbation.py#L28",
+        "state": "closed",
+        "user": "neouyghur",
+        "closed_by": "holyseven",
+        "created_at": "2023-10-04T05:59:18+00:00",
+        "updated_at": "2024-01-21T02:05:49+00:00",
+        "closed_at": "2024-01-21T02:05:49+00:00",
+        "comments_count": [
+            "holyseven",
+            "neouyghur"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 70,
+        "title": "pip install interpretdl ERROR: Failed building wheel for scikit-learn",
+        "body": "当我pip install interpretdl的时候\r\n报错\r\nFailed to build scikit-learn\r\nERROR: Could not build wheels for scikit-learn, which is required to install pyproject.toml-based projects\r\n请问是为什么",
+        "state": "open",
+        "user": "moonnnpie",
+        "closed_by": null,
+        "created_at": "2023-12-04T09:37:26+00:00",
+        "updated_at": "2024-04-01T09:59:40+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "holyseven",
+            "yudizhangzyd",
+            "holyseven",
+            "yudizhangzyd",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 71,
+        "title": "请问grad cam对于单通道图片输入应该办呢",
+        "body": "我使用grad cam做语义分割的可解释性，我训练好的模型也是单通道训练的，我是用gradcam的时候也是单通道，会报下面这个错误，请问我该怎么修改呢\r\n\r\n---------------------------------------------------------------------------\r\nAssertionError                            Traceback (most recent call last)\r\n/tmp/ipykernel_2663/1576993860.py in <module>\r\n      4 pixels = [(30, 30)]\r\n      5 # good layers for deeplabv3p: backbone.bb_3_2.relu, head.aspp, head.decoder.conv\r\n----> 6 exp = gradcam.interpret(img_path, pixels, target_layer_name='backbone.norm4', resize_to=512, crop_to=512)\r\n\r\n/tmp/ipykernel_2663/3928282195.py in interpret(self, inputs, pixels, labels, target_layer_name, gradient_of, resize_to, crop_to, visual, save_path)\r\n    217                 vis_explanation = explanation_to_vis(imgs[i],\r\n    218                                                      gradcam_explanation[i],\r\n--> 219                                                      style='overlay_heatmap')\r\n    220                 if visual:\r\n    221                     show_vis_explanation(vis_explanation)\r\n\r\n~/.data/webide/pip/lib/python3.7/site-packages/interpretdl/data_processor/visualizer.py in explanation_to_vis(batched_image, explanation, style)\r\n     51         assert len(batched_image.shape) == 3\r\n     52 \r\n---> 53     assert len(explanation.shape) == 2, f\"image shape {batched_image.shape} vs \" \\\r\n     54                                         f\"explanation {explanation.shape}\"\r\n     55 \r\n\r\nAssertionError: image shape (512, 512, 3) vs explanation (512,)",
+        "state": "open",
+        "user": "wanghonen",
+        "closed_by": null,
+        "created_at": "2024-08-19T21:41:31+00:00",
+        "updated_at": "2024-08-26T03:11:55+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "holyseven",
+            "wanghonen",
+            "holyseven",
+            "wanghonen",
+            "wanghonen",
+            "holyseven",
+            "wanghonen",
+            "wanghonen",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 72,
+        "title": "Grad-CAM",
+        "body": "请教一下如何将InterpretDL应用到PaddleSeg模型中呢？",
+        "state": "open",
+        "user": "zcswdt",
+        "closed_by": null,
+        "created_at": "2024-09-24T06:05:01+00:00",
+        "updated_at": "2024-09-25T05:58:08+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "holyseven",
+            "zcswdt",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 73,
+        "title": "示例GradCAM bug",
+        "body": "(optional) Briefly introduce yourself.\r\n\r\n---我按照gradcam的example代码运行如下\r\n```\r\nfrom PIL import Image\r\nimport paddle\r\nimport interpretdl as it\r\nfrom interpretdl.data_processor.readers import read_image\r\n# load from paddle.vision\r\n\r\nfrom paddle.vision.models import resnet50\r\npaddle_model = resnet50(pretrained=True)\r\ngradcam = it.GradCAMInterpreter(paddle_model, device='cpu')\r\nimg_path = 'dog_and_cat.png'\r\nx = Image.fromarray(read_image(img_path)[0])\r\nx\r\nlayers_name = []\r\nfor n, v in paddle_model.named_sublayers():\r\n    layers_name.append(n)\r\nprint(layers_name)\r\n\r\nheatmap = gradcam.interpret(\r\n        img_path,\r\n        'layer4.2.conv3',\r\n        label=None,\r\n        visual=True,\r\n        save_path=None)\r\n```\r\n随后，出现了报错\r\n## 🐛 Bug\r\nAxisError                                 Traceback (most recent call last)\r\nCell In[6], [line 1](vscode-notebook-cell:?execution_count=6&line=1)\r\n----> [1](vscode-notebook-cell:?execution_count=6&line=1) heatmap = gradcam.interpret(\r\n      [2](vscode-notebook-cell:?execution_count=6&line=2)         img_path,\r\n      [3](vscode-notebook-cell:?execution_count=6&line=3)         'layer4.2.conv3',\r\n      [4](vscode-notebook-cell:?execution_count=6&line=4)         label=None,\r\n      [5](vscode-notebook-cell:?execution_count=6&line=5)         visual=True,\r\n      [6](vscode-notebook-cell:?execution_count=6&line=6)         save_path=None)\r\n\r\nFile d:\\Anaconda\\envs\\pyside_app\\lib\\site-packages\\interpretdl\\interpreter\\gradient_cam.py:101, in GradCAMInterpreter.interpret(self, inputs, target_layer_name, label, resize_to, crop_to, visual, save_path)\r\n     [96](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/interpretdl/interpreter/gradient_cam.py:96) g = gradients\r\n     [98](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/interpretdl/interpreter/gradient_cam.py:98) # print(f.shape, g.shape)  # [bsz, channels, w, h]\r\n     [99](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/interpretdl/interpreter/gradient_cam.py:99) \r\n    [100](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/interpretdl/interpreter/gradient_cam.py:100) # the core algorithm\r\n--> [101](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/interpretdl/interpreter/gradient_cam.py:101) cam_weights = np.mean(g, (2, 3), keepdims=True)\r\n    [102](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/interpretdl/interpreter/gradient_cam.py:102) heatmap = cam_weights * f\r\n    [103](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/interpretdl/interpreter/gradient_cam.py:103) heatmap = heatmap.mean(1)\r\n\r\nFile <__array_function__ internals>:200, in mean(*args, **kwargs)\r\n\r\nFile d:\\Anaconda\\envs\\pyside_app\\lib\\site-packages\\numpy\\core\\fromnumeric.py:3464, in mean(a, axis, dtype, out, keepdims, where)\r\n   [3461](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/numpy/core/fromnumeric.py:3461)     else:\r\n   [3462](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/numpy/core/fromnumeric.py:3462)         return mean(axis=axis, dtype=dtype, out=out, **kwargs)\r\n-> [3464](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/numpy/core/fromnumeric.py:3464) return _methods._mean(a, axis=axis, dtype=dtype,\r\n...\r\n     [81](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/numpy/core/_methods.py:81)     # axis and full sum is more excessive than needed.\r\n     [82](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/numpy/core/_methods.py:82) \r\n     [83](file:///D:/Anaconda/envs/pyside_app/lib/site-packages/numpy/core/_methods.py:83)     # guarded to protect circular imports\r\n\r\nAxisError: axis 2 is out of bounds for array of dimension 0\r\nBriefly describe the bug.\r\n\r\n### To Reproduce\r\n\r\nSteps to reproduce the behavior:\r\n\r\n1.\r\n2.\r\n3.\r\n\r\nIf you were running a command, please post the exact command that you were running.\r\n\r\n```bash\r\n\r\n```\r\n\r\nIf you have a code sample, error messages, stack traces, please provide it here as well.\r\n\r\n```python\r\n\r\n```\r\n\r\n## (optional) Enviroment\r\n\r\nIf you know well the environment of your machine, please put the information below:\r\n\r\n- PaddlePaddle version (eg. 2.1):\r\n- CPU: \r\n- GPU: including CUDA/CUDNN version\r\n- OS Platform (eg. Mac OS 10.14): \r\n- Graphics card storage: \r\n- Other imformation:\r\n",
+        "state": "open",
+        "user": "jiqibuaixuexi",
+        "closed_by": null,
+        "created_at": "2024-10-08T14:06:55+00:00",
+        "updated_at": "2024-10-23T02:25:40+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "holyseven",
+            "jiqibuaixuexi",
+            "holyseven"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 75,
+        "title": "Outdated dependencies and broken pins in InterpretDL block installation on modern macOS (Apple Silicon) with Python 3.10+",
+        "body": "Hi team,\n\nI’m a user trying to install InterpretDL on a MacBook Pro M1 running macOS with Python 3.10, and I ran into several installation problems due to outdated dependency requirements.\n\n---\n\n### What Happened  \n- **Problem with scikit-learn:**  \n  InterpretDL (v0.8.0) requires `scikit-learn<=0.24`. Unfortunately, scikit-learn 0.24 was released in 2020–2021 and was built only for older versions of Python (up to 3.9) and x86 architectures. On my M1 Mac running Python 3.10, pip cannot find prebuilt wheels for scikit-learn 0.24. Instead, pip falls back to compiling from source, which fails with various errors (e.g. due to the deprecated `numpy.distutils`, unsupported compiler flag `-faltivec`, missing type definitions like `int_t`, etc.).  \n- **Secondary Build Failures:**  \n  Additionally, many dependent packages (like an older version of NumPy required by scikit-learn 0.24) are not compatible with the ARM architecture and modern Python toolchains, further contributing to the build failures.  \n- **Version Conflict:**  \n  I even tried installing a newer version of scikit-learn that has ARM wheels (e.g. 1.3.2), but InterpretDL insists on the old version and outputs a version conflict message.\n\n### How I Solved It  \nMy final working setup was to downgrade the Python version from 3.10 to **Python 3.8.18** using pyenv. Then I manually installed all the dependencies required by InterpretDL in versions that work on my M1. Specifically, I installed:  \n- `scikit-learn==0.24.2`  \n- `tqdm`, `matplotlib`, `IPython`, `requests`, `scikit-image`, and `opencv-python`  \nFinally, I installed InterpretDL itself using `--no-deps` (to prevent pip from attempting to override my manually managed versions).\n\n### To Reproduce  \n1. Create a virtual environment using Python 3.10 on macOS M1, then activate it.  \n2. Run `pip install interpretdl` (this will trigger the build of scikit-learn 0.24 from source, resulting in errors).  \n3. Attempt to import interpretdl → errors will occur due to the failed builds and version conflicts.\n\n### Environment  \n- **Python:** tried 3.12 (fails) then created venv 3.10.16 (fails too), final working version: 3.8.18  \n- **Architecture:** macOS M1 (Apple Silicon)  \n- **OS:** macOS Sequoia\n- **PaddlePaddle:** Installed with CPU support  ",
+        "state": "open",
+        "user": "kreciszj",
+        "closed_by": null,
+        "created_at": "2025-04-10T19:04:56+00:00",
+        "updated_at": "2025-04-10T19:04:56+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 74,
+        "title": "ViT 可解释代码无法运行",
+        "body": "尝试用可解释代码运行自己训练的ViT_small_patch16_224, 遇到了一些问题，请问有没有什么建议：\n1） sg = it.SmoothGradInterpreter(paddle_model, device='cpu')\n\ngradients = sg.interpret(\n        img_path, \n        noise_amount=0.1,\n        visual=True, \n        labels=None, \n        save_path=None)\n\n该程序运行出的结果有斑块状噪声\n\n<img width=\"236\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/c7d2aaaa-29e4-4102-92b2-40d5e1e2a006\" />\n\n2） 运行以下程序会报错：\n\ntam = it.TAMInterpreter(paddle_model, device='cpu')\n\nheatmap = tam.interpret(\n        img_path,\n        start_layer=4,\n        label=None,  # cat\n        visual=True,\n        save_path=None)\n\n错误如下：\n\nTAMInterpreter.interpret(self, inputs, start_layer, steps, label, resize_to, crop_to, visual, save_path)\n     96     data_scaled = data * alpha\n     97     _, gradients, _ = self.predict_fn(data_scaled, label=label)\n---> 99     total_gradients += gradients\n    101 W_state = np.mean((total_gradients / steps).clip(min=0), axis=1)[:, 0, :].reshape((b, 1, s))\n    103 tam_explanation = (states * W_state)[:, 0, 1:].reshape((-1, 14, 14))\n\nUFuncTypeError: Cannot cast ufunc 'add' output from dtype('O') to dtype('float64') with casting rule 'same_kind'\n\n3）运行以下程序会报错：\n\nbt = it.BTCVInterpreter(paddle_model, device='gpu:0')\n\nheatmap = bt.interpret(\n        img_path,\n        ap_mode = 'head',\n        start_layer=4,\n        label=None,  # cat\n        visual=True,\n        save_path=None)\n\n\n错误如下：\n\n  495     raise ValueError(\"`gradient_of` should be one of [logits, probability].\")\n    497 for i, attn in enumerate(block_attns):\n--> 498     grad = attn.grad.numpy()\n    499     block_attns_grads.append(grad)\n    500     block_attns[i] = attn.numpy()\n\nAttributeError: 'NoneType' object has no attribute 'numpy'",
+        "state": "open",
+        "user": "SonoHistology",
+        "closed_by": null,
+        "created_at": "2025-02-19T03:27:13+00:00",
+        "updated_at": "2025-02-24T17:09:02+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "SonoHistology",
+            "holyseven",
+            "SonoHistology",
+            "holyseven",
+            "SonoHistology",
+            "SonoHistology"
+        ],
+        "labels": []
+    }
+]

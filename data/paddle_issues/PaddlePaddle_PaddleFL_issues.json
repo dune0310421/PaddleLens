@@ -1,0 +1,2047 @@
+[
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 15,
+        "title": "add a run time agent master to schedule current active users for training",
+        "body": "we need to add an agent master node during training: \r\n1) there can be thousands of users who participate FL training, and in each FL step, only hundreds of users can do training. a scheduler should assign current active users that can do training\r\n2) Different scheduling algorithms can be implemented in the run-time agent master\r\n3) for industrial deployment, an agent master is easier to collect information of all workers and servers.",
+        "state": "closed",
+        "user": "guru4elephant",
+        "closed_by": "guru4elephant",
+        "created_at": "2019-11-13T05:02:45+00:00",
+        "updated_at": "2020-01-03T01:41:03+00:00",
+        "closed_at": "2020-01-03T01:34:28+00:00",
+        "comments_count": [],
+        "labels": [
+            "FeatureRequest"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 27,
+        "title": "we need to improve FedAvg strategy to support more optimizers ",
+        "body": "FedAvg strategy supports only SGD and cannot be replaced. Other gradients optimizers like Adam, Momentum, AdaGrad can have the same param aggregation and update behaviors as SGD. We need to make them available and pluggable in FedAvg strategy, since a dozen of jobs need them.",
+        "state": "closed",
+        "user": "honshj",
+        "closed_by": "qjing666",
+        "created_at": "2019-12-17T02:33:03+00:00",
+        "updated_at": "2020-01-03T01:37:45+00:00",
+        "closed_at": "2019-12-25T03:11:30+00:00",
+        "comments_count": [],
+        "labels": [
+            "FeatureRequest"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 25,
+        "title": "Python Indentation Bugs",
+        "body": "I'm afraid it is unwise to mix tabs and spaces in some files, which may cause compatibility problem. \r\n![image](https://user-images.githubusercontent.com/8311461/70588961-597eff80-1c09-11ea-90f8-b71ef2013bec.png)\r\n\r\nAccording to Python Docs\r\n\r\n> Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up to and including the replacement is a multiple of eight (this is intended to be the same rule as used by Unix). The total number of spaces preceding the first non-blank character then determines the line’s indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace up to the first backslash determines the indentation.\r\n\r\nreindent.py can fix this problem well. \r\nHere are some examples before and after modification.\r\n![image](https://user-images.githubusercontent.com/8311461/70589251-399c0b80-1c0a-11ea-99ff-d861f3318ddc.png)\r\nIt is easy to see that the meaning of tab is unstable in different environment.\r\n\r\n![image](https://user-images.githubusercontent.com/8311461/70589272-4a4c8180-1c0a-11ea-879a-e3f9e4b984e4.png)\r\n![image](https://user-images.githubusercontent.com/8311461/70590562-170bf180-1c0e-11ea-847f-7435577aa19a.png)\r\n\r\nAfter modification, the installation performs well under my environment.\r\n![image](https://user-images.githubusercontent.com/8311461/70590933-538c1d00-1c0f-11ea-8699-0d9bc3f8f081.png)\r\n",
+        "state": "closed",
+        "user": "giddenslee",
+        "closed_by": "qjing666",
+        "created_at": "2019-12-11T06:46:37+00:00",
+        "updated_at": "2020-01-03T01:39:40+00:00",
+        "closed_at": "2019-12-12T08:31:41+00:00",
+        "comments_count": [],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 12,
+        "title": "we shall add paddlepaddle as requirement of paddle-fl",
+        "body": "when a user run\r\n```\r\npip install paddle-fl\r\n```\r\npaddlepaddle should be installed automatically, i.e., we should add paddlepaddle in requirements.txt",
+        "state": "closed",
+        "user": "guru4elephant",
+        "closed_by": "guru4elephant",
+        "created_at": "2019-11-12T14:52:53+00:00",
+        "updated_at": "2020-01-03T01:41:15+00:00",
+        "closed_at": "2020-01-03T01:31:07+00:00",
+        "comments_count": [],
+        "labels": [
+            "FeatureRequest"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 10,
+        "title": "运行quick start时报错AttributeError: 'FedAvgTrainer' object has no attribute 'train_inner_loop'",
+        "body": "batch 1 start train\r\nTraceback (most recent call last):\r\n  File \"2.py\", line 26, in <module>\r\n    trainer.train_inner_loop(reader)\r\nAttributeError: 'FedAvgTrainer' object has no attribute 'train_inner_loop'",
+        "state": "closed",
+        "user": "HoyTiger",
+        "closed_by": "guru4elephant",
+        "created_at": "2019-11-12T07:06:14+00:00",
+        "updated_at": "2020-01-03T01:41:28+00:00",
+        "closed_at": "2020-01-03T01:31:27+00:00",
+        "comments_count": [
+            "HoyTiger",
+            "guru4elephant",
+            "guru4elephant",
+            "HoyTiger",
+            "guru4elephant"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 23,
+        "title": "Prediction error on test set in training process",
+        "body": "``` python\r\n    if args.do_eval:\r\n        dev_data_generator = processor.data_generator(batch_size=args.batch_size, phase='dev',\r\n                                                      with_pos=with_pos)\r\n        dev_loader.decorate_sample_list_generator(dev_data_generator, places=fluid.CPUPlace())\r\n        dev_program = trainer._main_program.clone(for_test=True)\r\n\r\n    train_loader.decorate_sample_list_generator(train_data_generator, places=fluid.CPUPlace())\r\n    train_fetch_list = [\"accuracy_0.tmp_0\", \"accuracy_0.tmp_1\", \"create_tensor_0\"]\r\n    steps = 0\r\n\r\n    for epoch in range(args.epoch):\r\n        for train_data in train_loader:\r\n            steps += 1\r\n            outputs = trainer.run(feed=train_data, fetch=train_fetch_list)\r\n            acc, num_seqs, loss = outputs\r\n            if steps % args.disp_freq == 0:\r\n                print(\"[train] epoch: {0} step: {1}, accuray: {2}, num_seqs: {3},\"\r\n                      \" loss: {4}\".format(epoch, steps, acc, num_seqs, loss))\r\n            if steps % args.valid_freq and args.do_eval:\r\n                total_cost, total_acc, total_num_seqs = [], [], []\r\n                for dev_data in dev_loader:\r\n                    np_acc, np_num_seqs, np_loss = trainer.exe.run(program=dev_program,\r\n                                                                   feed=dev_data,\r\n                                                                   fetch_list=train_fetch_list,\r\n                                                                   return_numpy=False)\r\n\r\n```\r\nI want to evaluate the model in the training process, and create a `dev_program ` program for test as above in `fl_trainer.py` module. However, an error occurred when the trainer is executed, the error detail is as follows:\r\n```\r\n------------------------------------------\r\nPython Call Stacks (More useful to users):\r\n------------------------------------------\r\n  File \"/usr/local/lib/python3.7/site-packages/paddle/fluid/framework.py\", line 2459, in append_op\r\n    attrs=kwargs.get(\"attrs\", None))\r\n  File \"/usr/local/lib/python3.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\r\n    return self.main_program.current_block().append_op(*args, **kwargs)\r\n  File \"/usr/local/lib/python3.7/site-packages/paddle/fluid/layers/nn.py\", line 1835, in dropout\r\n    'dropout_implementation': dropout_implementation,\r\n  File \"/Users/wangleyi/PycharmProjects/sms-ai-screening/audit/src/paddle_classifier/classifiers/textcnn.py\", line 86, in _conv_layer\r\n    convs_drop = fluid.layers.dropout(convs_out, self.dropout_rate)\r\n  File \"/Users/wangleyi/PycharmProjects/sms-ai-screening/audit/src/paddle_classifier/classifiers/textcnn.py\", line 43, in build_model\r\n    convs_drop = self._conv_layer(emb)\r\n  File \"/Users/wangleyi/PycharmProjects/sms-ai-screening/audit/src/paddle_classifier/federated/fl_master.py\", line 67, in _init_model\r\n    self.accuracy, self.num_seqs, self.loss = self.model.build_model()\r\n  File \"/Users/wangleyi/PycharmProjects/sms-ai-screening/audit/src/paddle_classifier/federated/fl_master.py\", line 35, in __init__\r\n    self._init_model(args.model_type)\r\n  File \"/Users/wangleyi/PycharmProjects/sms-ai-screening/audit/src/paddle_classifier/federated/fl_master.py\", line 83, in create_fl_job\r\n    model = Model(args)\r\n  File \"/Users/wangleyi/PycharmProjects/sms-ai-screening/audit/src/paddle_classifier/federated/fl_master.py\", line 110, in <module>\r\n    create_fl_job(endpoints=server_endpoint_list, output=configure_save_dir)\r\n  File \"/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/runpy.py\", line 85, in _run_code\r\n    exec(code, run_globals)\r\n  File \"/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/runpy.py\", line 193, in _run_module_as_main\r\n    \"__main__\", mod_spec)\r\n\r\n----------------------\r\nError Message Summary:\r\n----------------------\r\nPaddleCheckError: Expected ctx->Attrs().Get<bool>(\"is_test\") == false, but received ctx->Attrs().Get<bool>(\"is_test\"):1 != false:0.\r\nGradOp is only callable when is_test is false at [/home/teamcity/work/ef54dc8a5b211854/paddle/fluid/operators/dropout_op.cc:108]\r\n\r\n```\r\n<img width=\"1318\" alt=\"MacHi 2019-11-26 18-33-56\" src=\"https://user-images.githubusercontent.com/10727709/69622183-72b97500-107b-11ea-8b0b-10fd3e0546e5.png\">\r\n\r\nI learned that this error is caused by the `program` define later than optimizer. However the optimizer is defined in the 'fl_master. py' module, how can I  use the `dev_program`  if  it is defined in the `fl_master.py`?\r\n",
+        "state": "closed",
+        "user": "leyiwang",
+        "closed_by": "guru4elephant",
+        "created_at": "2019-11-26T09:41:48+00:00",
+        "updated_at": "2020-01-03T01:40:51+00:00",
+        "closed_at": "2020-01-03T01:32:51+00:00",
+        "comments_count": [
+            "guru4elephant"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 28,
+        "title": "support the case of \"one party owns the model, and would like to improve using others' data\"",
+        "body": "It's a usual case in federated learning that, one party owns a new or a partial-trained model, and would like to improve it using other parties' dataset. During the training, other parties' data should keep invisible. It's good for FL to support this case.\r\n\r\nFurthermore, the model owner would like to keep the model private. It's more challenging, and need the help of HE or SMC.",
+        "state": "closed",
+        "user": "honshj",
+        "closed_by": "honshj",
+        "created_at": "2019-12-17T02:37:55+00:00",
+        "updated_at": "2020-09-01T01:51:50+00:00",
+        "closed_at": "2020-09-01T01:51:50+00:00",
+        "comments_count": [
+            "guru4elephant",
+            "qjing666",
+            "honshj"
+        ],
+        "labels": [
+            "FeatureRequest"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 8,
+        "title": "what privacy_budget means in dpsgd?",
+        "body": "Hi, i am interested in the implement of dpsgd.\r\nAfter reading the code,  i have a question that what privacy_budget means in dpsgd which is located in `\\examples\\dpsgd_demo\\fl_trainer.py `?\r\nAnd what is the use of funtion `compute_privacy_budget` ?",
+        "state": "closed",
+        "user": "Joeyqcy",
+        "closed_by": "guru4elephant",
+        "created_at": "2019-11-08T01:11:24+00:00",
+        "updated_at": "2020-01-03T01:41:42+00:00",
+        "closed_at": "2020-01-03T01:31:52+00:00",
+        "comments_count": [
+            "jhjiangcs",
+            "Joeyqcy",
+            "honshj"
+        ],
+        "labels": [
+            "documentation"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 7,
+        "title": "运行fl_server报错“PaddleCheckError: Expected optimize_blocks.size() >= 1, but received optimize_blocks.size():0 < 1:1.”",
+        "body": "我想把现有的一个目标检测模型SSD (https://github.com/PaddlePaddle/models/tree/develop/PaddleCV/ssd) 的训练过程改写成FL的方式，目前运行fl_master没有提示出错，但是之后运行fl_server的时候报错“PaddleCheckError: Expected optimize_blocks.size() >= 1, but received optimize_blocks.size():0 < 1:1.”，不知道是哪里出的问题啊？相关的代码贴在了下面\r\n\r\n**1. fl_master.py**\r\n```python\r\nimport paddle.fluid as fluid\r\nfrom paddle.fluid.initializer import MSRA\r\nfrom paddle.fluid.param_attr import ParamAttr\r\nimport paddle_fl as fl\r\nfrom paddle_fl.core.master.job_generator import JobGenerator\r\nfrom paddle_fl.core.strategy.fl_strategy_base import FLStrategyFactory\r\n\r\n\r\nbatch_size = 2  # 64\r\ntrain_images = 10  # 16551\r\nlr = 0.001\r\nlr_epochs = [40, 60, 80, 100]\r\nlr_decay = [1, 0.5, 0.25, 0.1, 0.01]\r\nimage_shape = [3, 300, 300]\r\nclass_num = 6 # 21\r\nap_version = '11point'\r\n\r\n\r\nclass NetSSD:\r\n    def __init__(self, image, class_num, image_shape):\r\n        self.img = image\r\n        self.num_classes = class_num\r\n        self.img_shape = image_shape\r\n\r\n    def ssd_net(self, scale=1.0):\r\n        # 300x300\r\n        tmp = self.conv_bn(self.img, 3, int(32 * scale), 2, 1)\r\n        # 150x150\r\n        tmp = self.depthwise_separable(tmp, 32, 64, 32, 1, scale)\r\n        tmp = self.depthwise_separable(tmp, 64, 128, 64, 2, scale)\r\n        # 75x75\r\n        tmp = self.depthwise_separable(tmp, 128, 128, 128, 1, scale)\r\n        tmp = self.depthwise_separable(tmp, 128, 256, 128, 2, scale)\r\n        # 38x38\r\n        tmp = self.depthwise_separable(tmp, 256, 256, 256, 1, scale)\r\n        tmp = self.depthwise_separable(tmp, 256, 512, 256, 2, scale)\r\n\r\n        # 19x19\r\n        for i in range(5):\r\n            tmp = self.depthwise_separable(tmp, 512, 512, 512, 1, scale)\r\n        module11 = tmp\r\n        tmp = self.depthwise_separable(tmp, 512, 1024, 512, 2, scale)\r\n\r\n        # 10x10\r\n        module13 = self.depthwise_separable(tmp, 1024, 1024, 1024, 1, scale)\r\n        module14 = self.extra_block(module13, 256, 512, 1, 2)\r\n        # 5x5\r\n        module15 = self.extra_block(module14, 128, 256, 1, 2)\r\n        # 3x3\r\n        module16 = self.extra_block(module15, 128, 256, 1, 2)\r\n        # 2x2\r\n        module17 = self.extra_block(module16, 64, 128, 1, 2)\r\n\r\n        mbox_locs, mbox_confs, box, box_var = fluid.layers.multi_box_head(\r\n            inputs=[\r\n                module11, module13, module14, module15, module16, module17\r\n            ],\r\n            image=self.img,\r\n            num_classes=self.num_classes,\r\n            min_ratio=20,\r\n            max_ratio=90,\r\n            min_sizes=[60.0, 105.0, 150.0, 195.0, 240.0, 285.0],\r\n            max_sizes=[[], 150.0, 195.0, 240.0, 285.0, 300.0],\r\n            aspect_ratios=[[2.], [2., 3.], [2., 3.], [2., 3.], [2., 3.],\r\n                           [2., 3.]],\r\n            base_size=self.img_shape[2],\r\n            offset=0.5,\r\n            flip=True)\r\n\r\n        self.loss = fluid.layers.ssd_loss(mbox_locs, mbox_confs, gt_box, gt_label, box,\r\n                                     box_var)\r\n        self.loss = fluid.layers.reduce_sum(self.loss)\r\n        self.startup_program = fluid.default_startup_program()\r\n\r\n    def conv_bn(self,\r\n                input,\r\n                filter_size,\r\n                num_filters,\r\n                stride,\r\n                padding,\r\n                num_groups=1,\r\n                act='relu',\r\n                use_cudnn=True):\r\n        parameter_attr = ParamAttr(learning_rate=0.1, initializer=MSRA())\r\n        conv = fluid.layers.conv2d(\r\n            input=input,\r\n            num_filters=num_filters,\r\n            filter_size=filter_size,\r\n            stride=stride,\r\n            padding=padding,\r\n            groups=num_groups,\r\n            act=None,\r\n            use_cudnn=use_cudnn,\r\n            param_attr=parameter_attr,\r\n            bias_attr=False)\r\n        return fluid.layers.batch_norm(input=conv, act=act)\r\n\r\n    def depthwise_separable(self, input, num_filters1, num_filters2, num_groups,\r\n                            stride, scale):\r\n        depthwise_conv = self.conv_bn(\r\n            input=input,\r\n            filter_size=3,\r\n            num_filters=int(num_filters1 * scale),\r\n            stride=stride,\r\n            padding=1,\r\n            num_groups=int(num_groups * scale),\r\n            use_cudnn=False)\r\n\r\n        pointwise_conv = self.conv_bn(\r\n            input=depthwise_conv,\r\n            filter_size=1,\r\n            num_filters=int(num_filters2 * scale),\r\n            stride=1,\r\n            padding=0)\r\n        return pointwise_conv\r\n\r\n    def extra_block(self, input, num_filters1, num_filters2, num_groups, stride):\r\n        # 1x1 conv\r\n        pointwise_conv = self.conv_bn(\r\n            input=input,\r\n            filter_size=1,\r\n            num_filters=int(num_filters1),\r\n            stride=1,\r\n            num_groups=int(num_groups),\r\n            padding=0)\r\n\r\n        # 3x3 conv\r\n        normal_conv = self.conv_bn(\r\n            input=pointwise_conv,\r\n            filter_size=3,\r\n            num_filters=int(num_filters2),\r\n            stride=2,\r\n            num_groups=int(num_groups),\r\n            padding=1)\r\n        return normal_conv\r\n\r\n\r\ndef optimizer_setting():\r\n    iters = train_images // batch_size\r\n    boundaries = [i * iters  for i in lr_epochs]\r\n    values = [ i * lr for i in lr_decay]\r\n\r\n    optimizer = fluid.optimizer.RMSProp(\r\n        learning_rate=fluid.layers.piecewise_decay(boundaries, values),\r\n        regularization=fluid.regularizer.L2Decay(0.00005), )\r\n\r\n    return optimizer\r\n\r\npy_reader = fluid.layers.py_reader(\r\n            capacity=64,\r\n            shapes=[[-1] + image_shape, [-1, 4], [-1, 1], [-1, 1]],\r\n            lod_levels=[0, 1, 1, 1],\r\n            dtypes=[\"float32\", \"float32\", \"int32\", \"int32\"],\r\n            use_double_buffer=True)\r\nimage, gt_box, gt_label, difficult = fluid.layers.read_file(py_reader)\r\n\r\nssd_model = NetSSD(image, class_num, image_shape)\r\nssd_model.ssd_net()\r\n\r\njob_generator = JobGenerator()\r\noptimizer = optimizer_setting()\r\n\r\njob_generator.set_optimizer(optimizer)\r\njob_generator.set_losses([ssd_model.loss])\r\njob_generator.set_startup_program(ssd_model.startup_program)\r\njob_generator.set_infer_feed_and_target_names(\r\n    [ssd_model.img.name], [ssd_model.loss.name])\r\n\r\nbuild_strategy = FLStrategyFactory()\r\nbuild_strategy.fed_avg = True\r\nbuild_strategy.inner_step = 1\r\nstrategy = build_strategy.create_fl_strategy()\r\n\r\n# endpoints will be collected through the cluster\r\n# in this example, we suppose endpoints have been collected\r\nendpoints = [\"127.0.0.1:8181\"]\r\noutput = \"fl_job_config\"\r\njob_generator.generate_fl_job(\r\n    strategy, server_endpoints=endpoints, worker_num=2, output=output)\r\n# fl_job_config will  be dispatched to workers\r\n\r\n```\r\n\r\n**2. fl_server.py**\r\n```python\r\nimport paddle_fl as fl\r\nimport paddle.fluid as fluid\r\nfrom paddle_fl.core.server.fl_server import FLServer\r\nfrom paddle_fl.core.master.fl_job import FLRunTimeJob\r\nserver = FLServer()\r\nserver_id = 0\r\njob_path = \"fl_job_config\"\r\njob = FLRunTimeJob()\r\njob.load_server_job(job_path, server_id)\r\nserver.set_server_job(job)\r\nserver.start()\r\n```\r\n\r\n**3. fl_trainer.py**\r\n```python\r\nfrom paddle_fl.core.trainer.fl_trainer import FLTrainerFactory\r\nfrom paddle_fl.core.master.fl_job import FLRunTimeJob\r\nfrom paddle_fl.reader.gru4rec_reader import Gru4rec_Reader\r\nimport paddle.fluid as fluid\r\nimport numpy as np\r\nimport sys\r\nimport os\r\nimport logging\r\nimport ssd_reader\r\nlogging.basicConfig(filename=\"test.log\", filemode=\"w\", format=\"%(asctime)s %(name)s:%(levelname)s:%(message)s\", datefmt=\"%d-%M-%Y %H:%M:%S\", level=logging.DEBUG)\r\n\r\n\r\ntrainer_id = int(sys.argv[1]) # trainer id for each guest\r\nuse_gpu = False\r\nbatch_size = 64\r\nepoch_num =120\r\ndataset = 'mydata'\r\nmodel_save_dir = 'model/model_trainer_%d' % trainer_id\r\npretrained_model = 'pretrained/ssd_mobilenet_v1_coco/'\r\nap_version = '11point'\r\nimage_shape = [3, 300, 300]\r\nmean_BGR = [127.5, 127.5, 127.5]\r\ndata_dir = 'data/data_%d/%s' % (trainer_id, dataset)\r\nlabel_file = 'label_list.txt'\r\ntrain_file_list = 'all.txt'\r\n\r\n\r\ndata_args = ssd_reader.Settings(\r\n        dataset=dataset,\r\n        data_dir=data_dir,\r\n        label_file=label_file,\r\n        resize_h=image_shape[1],\r\n        resize_w=image_shape[2],\r\n        mean_value=mean_BGR,\r\n        apply_distort=True,\r\n        apply_expand=True,\r\n        ap_version = ap_version)\r\n\r\n\r\n\r\nplace = fluid.CUDAPlace(0) if use_gpu else fluid.CPUPlace()\r\njob_path = \"fl_job_config\"\r\njob = FLRunTimeJob()\r\njob.load_trainer_job(job_path, trainer_id)\r\ntrainer = FLTrainerFactory().create_fl_trainer(job)\r\ntrainer.start()\r\n\r\ntrain_reader = ssd_reader.train(data_args,\r\n                                train_file_list,\r\n                                batch_size,\r\n                                shuffle=True,\r\n                                use_multiprocess=False,\r\n                                num_workers=1,\r\n                                )\r\n\r\nstep_i = 0\r\nwhile not trainer.stop():\r\n    step_i += 1\r\n    print(\"batch %d start train\" % (step_i))\r\n    for data in train_reader():\r\n        #print(np.array(data['src_wordseq']))\r\n        ret_avg_cost = trainer.run(feed=data,\r\n                    fetch=[])\r\n        avg_ppl = np.exp(ret_avg_cost[0])\r\n        newest_ppl = np.mean(avg_ppl)\r\n        print(\"ppl:%.3f\" % (newest_ppl))\r\n    save_dir = (model_save_dir + \"/epoch_%d\") % step_i\r\n    if trainer_id == 0:\r\n        print(\"start save\")\r\n        trainer.save_inference_program(save_dir)\r\n    if step_i >= 40:\r\n        break\r\n\r\n```",
+        "state": "closed",
+        "user": "XDUXK",
+        "closed_by": "guru4elephant",
+        "created_at": "2019-10-29T02:34:23+00:00",
+        "updated_at": "2020-01-03T01:42:03+00:00",
+        "closed_at": "2020-01-03T01:34:56+00:00",
+        "comments_count": [
+            "XDUXK",
+            "XDUXK",
+            "guru4elephant",
+            "XDUXK"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 41,
+        "title": "Celeba",
+        "body": "",
+        "state": "closed",
+        "user": "guru4elephant",
+        "closed_by": "qjing666",
+        "created_at": "2020-02-26T08:16:07+00:00",
+        "updated_at": "2020-02-27T02:52:13+00:00",
+        "closed_at": "2020-02-27T02:52:13+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 40,
+        "title": "Synthetic Dataset",
+        "body": "",
+        "state": "closed",
+        "user": "guru4elephant",
+        "closed_by": "qjing666",
+        "created_at": "2020-02-26T08:16:02+00:00",
+        "updated_at": "2020-02-27T02:52:25+00:00",
+        "closed_at": "2020-02-27T02:52:25+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 43,
+        "title": "Shakespeare",
+        "body": "",
+        "state": "closed",
+        "user": "guru4elephant",
+        "closed_by": "qjing666",
+        "created_at": "2020-02-26T08:16:21+00:00",
+        "updated_at": "2020-02-27T02:49:54+00:00",
+        "closed_at": "2020-02-27T02:49:54+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 33,
+        "title": "femnist例子跑不通",
+        "body": "femnist例子跑不通，最新paddlepaddle-gpu和paddle-fl0.1.5，\r\nTraceback (most recent call last):\r\n  File \"fl_trainer.py\", line 1, in <module>\r\n    from paddle_fl.core.trainer.fl_trainer import FLTrainerFactory\r\n  File \"<frozen importlib._bootstrap>\", line 983, in _find_and_load\r\n  File \"<frozen importlib._bootstrap>\", line 963, in _find_and_load_unlocked\r\n  File \"<frozen importlib._bootstrap>\", line 906, in _find_spec\r\n  File \"<frozen importlib._bootstrap_external>\", line 1280, in find_spec\r\n  File \"<frozen importlib._bootstrap_external>\", line 1254, in _get_spec\r\n  File \"<frozen importlib._bootstrap_external>\", line 1235, in _legacy_get_spec\r\n  File \"<frozen importlib._bootstrap>\", line 441, in spec_from_loader\r\n  File \"<frozen importlib._bootstrap_external>\", line 594, in spec_from_file_location\r\n  File \"/home/yogurt/anaconda3/envs/paddle/lib/python3.7/site-packages/paddle_fl-0.1.5-py3.7.egg/paddle_fl/core/trainer/fl_trainer.py\", line 128\r\n    self.exe.run(self._main_program,\r\n                                   ^\r\nTabError: inconsistent use of tabs and spaces in indentation",
+        "state": "closed",
+        "user": "Yogurt2019",
+        "closed_by": "guru4elephant",
+        "created_at": "2020-01-13T07:15:21+00:00",
+        "updated_at": "2020-02-26T15:17:02+00:00",
+        "closed_at": "2020-02-26T15:17:02+00:00",
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 42,
+        "title": "Twitter",
+        "body": "",
+        "state": "closed",
+        "user": "guru4elephant",
+        "closed_by": "qjing666",
+        "created_at": "2020-02-26T08:16:17+00:00",
+        "updated_at": "2020-02-27T02:50:00+00:00",
+        "closed_at": "2020-02-27T02:50:00+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 44,
+        "title": "FEMNIST",
+        "body": "",
+        "state": "closed",
+        "user": "guru4elephant",
+        "closed_by": "qjing666",
+        "created_at": "2020-02-26T08:16:27+00:00",
+        "updated_at": "2020-02-27T02:49:45+00:00",
+        "closed_at": "2020-02-27T02:49:45+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 50,
+        "title": "增加serving的部分",
+        "body": "横向联邦学习，希望增加serving的部分",
+        "state": "closed",
+        "user": "guru4elephant",
+        "closed_by": "qjing666",
+        "created_at": "2020-04-10T04:32:44+00:00",
+        "updated_at": "2020-09-03T02:22:10+00:00",
+        "closed_at": "2020-09-03T02:22:10+00:00",
+        "comments_count": [],
+        "labels": [
+            "FeatureRequest"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 49,
+        "title": "the federate learning detail",
+        "body": "Are there any papers to explain the PaddleFL in detail, for example, the crypt algorithms used in the PaddleFL? ",
+        "state": "closed",
+        "user": "whyseu",
+        "closed_by": "qjing666",
+        "created_at": "2020-04-07T12:17:34+00:00",
+        "updated_at": "2020-08-28T08:55:52+00:00",
+        "closed_at": "2020-08-28T08:55:52+00:00",
+        "comments_count": [
+            "qjing666",
+            "whyseu",
+            "honshj",
+            "whyseu",
+            "qjing666",
+            "whyseu",
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 51,
+        "title": "readme 疏漏",
+        "body": "FL-Strategy: a user can define federated learning strategies with FL-Strategy such as Fed-Avg[1]\r\n\r\n是否应改为：\r\n\r\nFL-Strategy: a user can define federated learning strategies with FL-Strategy such as Fed-Avg[2]",
+        "state": "closed",
+        "user": "Zouxxyy",
+        "closed_by": "guru4elephant",
+        "created_at": "2020-04-13T02:27:49+00:00",
+        "updated_at": "2020-05-06T15:09:21+00:00",
+        "closed_at": "2020-05-06T15:09:21+00:00",
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 53,
+        "title": "保存一个fl可以拆分的program",
+        "body": "加载单机定义好的模型，将其转换成FL可执行的Program",
+        "state": "closed",
+        "user": "qjing666",
+        "closed_by": "guru4elephant",
+        "created_at": "2020-04-13T12:50:51+00:00",
+        "updated_at": "2020-05-11T01:57:08+00:00",
+        "closed_at": "2020-05-11T01:57:08+00:00",
+        "comments_count": [],
+        "labels": [
+            "FeatureRequest"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 55,
+        "title": "Paddlefl如何实现多机交互",
+        "body": "Paddlefl目前支持fl_master.py，fl_scheduler.py，fl_server.py在一台机子上跑，其余的trainer在多台机器上运行的情况吗？有多机交互的例程吗？",
+        "state": "closed",
+        "user": "Daniel-Ming",
+        "closed_by": "qjing666",
+        "created_at": "2020-04-21T02:43:46+00:00",
+        "updated_at": "2020-08-28T08:57:10+00:00",
+        "closed_at": "2020-08-28T08:57:09+00:00",
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 58,
+        "title": "检测任务分割成fl program后，py_reader报错",
+        "body": "![image](https://user-images.githubusercontent.com/19721227/80486656-1fcb4d00-898e-11ea-9dcf-0e554f1c43de.png)\r\n",
+        "state": "closed",
+        "user": "qjing666",
+        "closed_by": "qjing666",
+        "created_at": "2020-04-28T12:23:36+00:00",
+        "updated_at": "2020-08-20T02:06:08+00:00",
+        "closed_at": "2020-08-20T02:06:08+00:00",
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 71,
+        "title": "准备出版国内首部：图解版本的联邦学习图书",
+        "body": "根据博文·电子工业出版社要求，准备出版国内首部：图解版本的联邦学习图书，重点是tf-fed，腾讯FATE，百度pp-fl，已经有三个模块库的全套架构图。有意者请+vx zwpython qq：357811819 私聊。\r\n资料参见：《python创作者联盟》 http://www.topquant.vip/?p=1723 和 http://zwpython.com/index.php?s=/index/article/index/id/34.html",
+        "state": "closed",
+        "user": "ziwang-com",
+        "closed_by": "honshj",
+        "created_at": "2020-05-14T09:47:43+00:00",
+        "updated_at": "2020-07-30T03:23:01+00:00",
+        "closed_at": "2020-07-30T03:23:01+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 57,
+        "title": "请教一下client与server的通信协议是什么？是gRPC吗？",
+        "body": "",
+        "state": "closed",
+        "user": "liuluyeah",
+        "closed_by": "qjing666",
+        "created_at": "2020-04-24T02:43:23+00:00",
+        "updated_at": "2020-08-28T08:57:26+00:00",
+        "closed_at": "2020-08-28T08:57:26+00:00",
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 63,
+        "title": "有没有国内的交流群啊，案例好像都没有什么文档",
+        "body": "",
+        "state": "closed",
+        "user": "zhilangtaosha",
+        "closed_by": "zhilangtaosha",
+        "created_at": "2020-04-30T11:53:26+00:00",
+        "updated_at": "2021-04-15T13:42:24+00:00",
+        "closed_at": "2020-05-07T04:12:04+00:00",
+        "comments_count": [
+            "qjing666",
+            "zhilangtaosha",
+            "qjing666",
+            "zhilangtaosha",
+            "qjing666",
+            "zhilangtaosha",
+            "qjing666",
+            "tanjuntao",
+            "qjing666",
+            "Thewindrisers"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 65,
+        "title": "一些疑问：如果在FL训练时，其中一个client中途挂了，会怎样呢？",
+        "body": "训练能继续吗？如果能继续，是否有设置最小client个数？\r\n\r\nclient 挂了，能继续上线参与FL吗？\r\n\r\n谢谢！",
+        "state": "closed",
+        "user": "Zouxxyy",
+        "closed_by": "Zouxxyy",
+        "created_at": "2020-05-06T15:21:07+00:00",
+        "updated_at": "2020-05-09T08:44:52+00:00",
+        "closed_at": "2020-05-09T08:44:52+00:00",
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 56,
+        "title": "Paddlefl内部例子中的IP地址如何理解",
+        "body": "请问IP address 127.0.0.1的意义是什么该如何理解，这个是固定死的吗？scheduler以及server都是以此为基础在后面加port号。127.0.0.1这串能改动吗？",
+        "state": "closed",
+        "user": "Daniel-Ming",
+        "closed_by": "qjing666",
+        "created_at": "2020-04-21T09:06:30+00:00",
+        "updated_at": "2020-04-26T03:23:28+00:00",
+        "closed_at": "2020-04-26T03:23:28+00:00",
+        "comments_count": [
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666",
+            "qjing666",
+            "Daniel-Ming",
+            "qjing666"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 80,
+        "title": "ValueError when save detection model",
+        "body": "There is a value error: \"var im_id not in this block\" when save a detection model. While \"im_id\" exists in trainer main program. \r\n\r\n**fl_trainer.py:** \r\n\r\njob_path = \"fl_job_config\"\r\njob = FLRunTimeJob()\r\njob.load_trainer_job(job_path, trainer_id)\r\njob._scheduler_ep = \"127.0.0.1:9091\"  # Inform scheduler IP address to trainer\r\ntrainer = FLTrainerFactory().create_fl_trainer(job)\r\ntrainer._current_ep = \"127.0.0.1:{}\".format(9000 + trainer_id)\r\ntrainer.start(fluid.CUDAPlace(trainer_id+1))\r\n\r\ntest_program = trainer._main_program.clone(for_test=True)\r\n\r\nimage = fluid.layers.data(name='image', shape=[3, None, None], dtype = 'float32',lod_level=0)\r\nim_info = fluid.layers.data(name='im_info', shape=[None, 3], dtype = 'float32',lod_level=0)\r\nim_id = fluid.layers.data(name='im_id', shape=[None, 1], dtype = 'int64',lod_level=0)\r\ngt_bbox = fluid.layers.data(name='gt_bbox', shape=[None,4], dtype = 'float32', lod_level=1)\r\ngt_class = fluid.layers.data(name='gt_class', shape=[None,1], dtype = 'int32', lod_level=1)\r\nis_crowd = fluid.layers.data(name='is_crowd', shape=[None,1], dtype = 'int32', lod_level=1)\r\nplace = fluid.CUDAPlace(trainer_id)\r\nfeeder = fluid.DataFeeder(feed_list=[image, im_info, im_id, gt_bbox, gt_class, is_crowd], place=place)\r\n\r\noutput_folder = \"model_node%d\" % trainer_id\r\nepoch_id = 0\r\nstep = 0\r\n\r\nwhile not trainer.stop():\r\n    \r\n    epoch_id += 1\r\n    \r\n    if epoch_id > 10:\r\n        break\r\n    \r\n    print(\"epoch %d start train\" % (epoch_id))\r\n    test_class = TestReader()\r\n    data_loader = test_class.test_loader()\r\n    \r\n    for step_id, data in enumerate(data_loader):\r\n        acc = trainer.run(feeder.feed(data), fetch=['sum_0.tmp_0'])\r\n        step += 1\r\n        print(\"step: {}, loss: {}\".format(step, acc))\r\n\r\n    if trainer_id == 0:\r\n        save_dir = (output_folder + \"/epoch_%d\") % epoch_id\r\n        trainer.save_inference_program(output_folder)\r\n\r\n\r\n**Trainer main program Intercept：**\r\n\r\nvars {\r\n    name: \"im_id\"\r\n    type {\r\n      type: LOD_TENSOR\r\n      lod_tensor {\r\n        tensor {\r\n          data_type: INT64\r\n          dims: -1\r\n          dims: 1\r\n        }\r\n        lod_level: 0\r\n      }\r\n    }\r\n    persistable: false\r\n    need_check_feed: true\r\n  }\r\n\r\n",
+        "state": "closed",
+        "user": "qjing666",
+        "closed_by": "qjing666",
+        "created_at": "2020-05-25T08:10:30+00:00",
+        "updated_at": "2020-06-11T03:26:41+00:00",
+        "closed_at": "2020-06-11T03:26:41+00:00",
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 89,
+        "title": "更新 fl demo 脚本以及log info",
+        "body": "更新 fl demo 脚本以及log info #88  #87 ",
+        "state": "closed",
+        "user": "hysunflower",
+        "closed_by": "qjing666",
+        "created_at": "2020-07-28T10:37:59+00:00",
+        "updated_at": "2020-08-28T08:57:40+00:00",
+        "closed_at": "2020-08-28T08:57:40+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 85,
+        "title": "Femnist_demo运行准确率问题",
+        "body": "在运行咱们的Femnist_demo例子的过程中，发现准确率很低，这个是正常现象嘛？参数都使用默认的，没有进行修改，trainer0.log的具体内容为：\r\n[trainer0.log](https://github.com/PaddlePaddle/PaddleFL/files/4803208/trainer0.log)\r\n感谢回复！",
+        "state": "closed",
+        "user": "yayflying",
+        "closed_by": "yayflying",
+        "created_at": "2020-06-19T08:04:03+00:00",
+        "updated_at": "2020-10-16T06:06:49+00:00",
+        "closed_at": "2020-10-16T06:06:49+00:00",
+        "comments_count": [
+            "qjing666",
+            "yayflying"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 91,
+        "title": "using loss scaling to improve model accuracy",
+        "body": "Due the 64bit fixed-point type used in MPC, the smallest number is 2^-16. As a result, gradients less than 2^-16 during backward pass will become zeros, which degrades the accuracy of the result model. A technique like loss scaling (https://arxiv.org/abs/1710.03740) can be used to alleviate this issue.",
+        "state": "open",
+        "user": "honshj",
+        "closed_by": null,
+        "created_at": "2020-07-30T03:22:05+00:00",
+        "updated_at": "2020-07-30T03:22:05+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 90,
+        "title": "install paddleFL / make -j$(nproc)",
+        "body": "I trie to install PaddleFL:\r\n\r\nDid it:\r\n`cmake ../ -DPYTHON_EXECUTABLE=${PYTHON_EXECUTABLE} -DPYTHON_INCLUDE_DIRS=${python_include_dir} -DCMAKE_CXX_COMPILER=${g++_path}`\r\nGet it: [screen](https://imgur.com/a/g2AUHDi)\r\n\r\nDid it:\r\n`make -j$(nproc)`\r\n\r\nGet Error: [screen](https://imgur.com/a/froN1WM)\r\n\r\nWhich means It cant see op_registry.h file in paddle/fluid/framework\r\n\r\nBut this file exists! What can I do to fix it?",
+        "state": "closed",
+        "user": "saviord7",
+        "closed_by": "saviord7",
+        "created_at": "2020-07-28T15:41:33+00:00",
+        "updated_at": "2020-07-30T03:35:35+00:00",
+        "closed_at": "2020-07-30T03:35:35+00:00",
+        "comments_count": [
+            "qjing666",
+            "saviord7",
+            "saviord7",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "saviord7"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 86,
+        "title": "使用docker image安装时报错，疑似由于Python版本为2.6.6过低",
+        "body": "开发者你好，我通过readme里面的docker image安装方式，在container的bash4.1环境里执行pip install paddle_fl，结果报错：\r\nbash-4.1# pip install paddlepaddle-gpu==1.8.\r\nDEPRECATION: Python 2.6 is no longer supported by the Python core team, please upgrade your Python. A future version of pip will drop support for Python 2.6\r\nCollecting paddlepaddle-gpu==1.8.\r\n  Could not find a version that satisfies the requirement paddlepaddle-gpu==1.8. (from versions: )\r\nNo matching distribution found for paddlepaddle-gpu==1.8.\r\n\r\n找了Paddle的同学说是因为Python版本过低只有2.6。由于这个Python2.6应该是你发布的image里面配置的，以及本身image里面也没有pip，我专门去找了Python2.6的pip安装。想请问是不是我的安装出了什么问题？",
+        "state": "closed",
+        "user": "SilentShabby",
+        "closed_by": "qjing666",
+        "created_at": "2020-06-30T05:31:49+00:00",
+        "updated_at": "2020-08-28T08:57:32+00:00",
+        "closed_at": "2020-08-28T08:57:32+00:00",
+        "comments_count": [
+            "qjing666",
+            "SilentShabby",
+            "qjing666",
+            "SilentShabby",
+            "qjing666",
+            "SilentShabby",
+            "qjing666",
+            "SilentShabby",
+            "qjing666",
+            "SilentShabby",
+            "qjing666",
+            "SilentShabby",
+            "qjing666",
+            "SilentShabby"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 92,
+        "title": "PaddleFL in docker ",
+        "body": "Hello. Its me again.\r\n\r\nWanna ask you about work with PaddleFL in docker.\r\nDo I need to pull only paddlepaddle/paddlefl image.\r\nOr I also need something else?\r\n\r\nWhat I need to do after: `docker run --name paddleFL --net=host -it -v $PWD:/paddle 00f3ce75fc83 /bin/bash`\r\n00f3ce75fc83 - image id of paddlefl\r\nConatiner is started but I didnt work with docker before ans dont know what next.\r\n\r\nHow can I run for example uci_demo script?",
+        "state": "closed",
+        "user": "saviord7",
+        "closed_by": "qjing666",
+        "created_at": "2020-07-30T04:58:17+00:00",
+        "updated_at": "2020-12-30T07:36:06+00:00",
+        "closed_at": "2020-08-28T08:58:00+00:00",
+        "comments_count": [
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "qjing666",
+            "saviord7",
+            "saviord7",
+            "kaih70",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "saviord7",
+            "qjing666",
+            "pftom"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 99,
+        "title": "本地虚拟环境import paddle_fl报错",
+        "body": "创建了conda虚拟环境，安装好了paddle、paddle_fl，但是在import paddle_fl的时候报错。import paddle正常。环境：Cuda10.1 Nvidia driver440 ，系统centos7.7\r\n![image](https://user-images.githubusercontent.com/22416239/89999841-f4146e80-dcc1-11ea-9de4-b661f8a009b7.png)\r\n",
+        "state": "open",
+        "user": "Ethantequila",
+        "closed_by": null,
+        "created_at": "2020-08-12T09:35:15+00:00",
+        "updated_at": "2020-08-12T11:12:04+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 101,
+        "title": "detection demo训练占用显存过大，如何减小显存",
+        "body": "在训练detection demo的时候显存达到10G，想问一下有什么办法，可以减小训练显存吗？看到fl_tarin.py里面的batch_size已经是1了，不知道还有没有其他参数可以调整。\r\n![image](https://user-images.githubusercontent.com/22416239/90090980-f3c6b280-dd57-11ea-8333-812509a3f5d6.png)\r\n",
+        "state": "closed",
+        "user": "Ethantequila",
+        "closed_by": "qjing666",
+        "created_at": "2020-08-13T03:28:18+00:00",
+        "updated_at": "2020-08-28T08:59:31+00:00",
+        "closed_at": "2020-08-28T08:59:31+00:00",
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 103,
+        "title": "Paddle FL MPC  running on Multy Machines",
+        "body": "Nvm",
+        "state": "closed",
+        "user": "saviord7",
+        "closed_by": "saviord7",
+        "created_at": "2020-08-19T17:08:21+00:00",
+        "updated_at": "2020-10-13T03:23:23+00:00",
+        "closed_at": "2020-08-24T11:08:38+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 98,
+        "title": "如何运行detection_demo",
+        "body": "我想要在docker里面跑detection demo，但是发现运行时会报ExternalError:  Cuda error(38), no CUDA-capable device is detected.这个是否需要装nvidia-docker才能运行。源码安装的方式去跑也会出现问题，报错如下 `E0810 16:09:46.794160 36124 pybind.cc:1277] Cannot use GPU because you have installed CPU version PaddlePaddle.\r\nIf you want to use GPU, please try to install GPU version PaddlePaddle by: pip install paddlepaddle-gpu\r\nIf you only have CPU, please change CUDAPlace(0) to be CPUPlace().\r\nE0810 16:09:48.875759 36419 pybind.cc:1277] Cannot use GPU because you have installed CPU version PaddlePaddle.\r\nIf you want to use GPU, please try to install GPU version PaddlePaddle by: pip install paddlepaddle-gpu\r\nIf you only have CPU, please change CUDAPlace(1) to be CPUPlace().` 但是paddlepaddle-gpu已经都装好了，还是找不到paddlepaddle-gpu这个包？\r\n![image](https://user-images.githubusercontent.com/22416239/89765557-250d6b80-db29-11ea-9e51-691bd32c167d.png)\r\n",
+        "state": "closed",
+        "user": "Ethantequila",
+        "closed_by": "qjing666",
+        "created_at": "2020-08-10T08:47:43+00:00",
+        "updated_at": "2020-08-28T08:58:20+00:00",
+        "closed_at": "2020-08-28T08:58:19+00:00",
+        "comments_count": [
+            "qjing666",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "Ethantequila",
+            "Ethantequila",
+            "qjing666",
+            "qjing666",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "qjing666",
+            "Ethantequila",
+            "qjing666",
+            "qjing666",
+            "Ethantequila",
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 114,
+        "title": "两方预测的定点数模块和triplet generator模块",
+        "body": "添加两方预测的核心运算模块fixedpoint tensor，包含预测所需要的各种基础运算，如加减乘除等，由于里面的乘法需要用到triplet，所以同时添加triplet generator模块",
+        "state": "closed",
+        "user": "Yanghello",
+        "closed_by": "honshj",
+        "created_at": "2020-09-01T12:54:53+00:00",
+        "updated_at": "2020-11-25T15:00:28+00:00",
+        "closed_at": "2020-11-25T15:00:28+00:00",
+        "comments_count": [],
+        "labels": [
+            "FeatureRequest"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 120,
+        "title": "add relu、sigmoid、argmax operations for two-party fixedpoint tensor",
+        "body": "为两方预测的fixedpoint tensor模块添加激活函数相关运算，包括relu、sigmoid、argmax。同时将两方ot相关操作分为单独的一个类",
+        "state": "open",
+        "user": "Yanghello",
+        "closed_by": null,
+        "created_at": "2020-09-10T06:30:57+00:00",
+        "updated_at": "2020-09-10T06:30:57+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 102,
+        "title": "请问有纵向LR和SecureGBM的例子吗",
+        "body": "你好，请问有纵向LR的example，另外看到paddle发布了secureGBM的paper，这个有相关实现吗？",
+        "state": "closed",
+        "user": "huajinghua",
+        "closed_by": "honshj",
+        "created_at": "2020-08-14T23:55:43+00:00",
+        "updated_at": "2020-12-30T08:14:01+00:00",
+        "closed_at": "2020-12-16T08:31:29+00:00",
+        "comments_count": [
+            "qjing666",
+            "pftom"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 126,
+        "title": "框架有支持ipv6的打算吗",
+        "body": "PaddleFL有支持ipv6的打算吗",
+        "state": "closed",
+        "user": "ctios",
+        "closed_by": "honshj",
+        "created_at": "2020-10-11T08:06:45+00:00",
+        "updated_at": "2020-12-16T08:30:18+00:00",
+        "closed_at": "2020-12-16T08:30:18+00:00",
+        "comments_count": [
+            "honshj"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 128,
+        "title": "Mixed Protocol Framework",
+        "body": "Hello again!\r\n\r\nHow we divided data in mpc examples with aby3 ? Is it just parallel data dividying ?\r\n\r\nFor example, I have dataset 90x10 and when I am using this method I will get three encrypted parts 30x10 ?\r\nOr how?",
+        "state": "open",
+        "user": "heads7",
+        "closed_by": null,
+        "created_at": "2020-10-13T15:30:47+00:00",
+        "updated_at": "2020-11-16T13:52:59+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "honshj",
+            "heads7",
+            "honshj",
+            "heads7",
+            "heads7",
+            "heads7"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 127,
+        "title": "AttributeError: 'module' object has no attribute 'softmax_with_cross_entropy' ",
+        "body": "Hello!\r\n\r\nI am going to run Paddle FL MNIST Demo in differents NN scheme.\r\n\r\nAnd have this woth logistic regression:\r\n\r\n\r\n```\r\nTraceback (most recent call last):\r\n  File \"train_fc_softmax.py\", line 50, in <module>\r\n    cost, softmax = pfl_mpc.layers.softmax_with_cross_entropy(logits=fc_out,\r\nAttributeError: 'module' object has no attribute 'softmax_with_cross_entropy'\r\nTraceback (most recent call last):\r\n  File \"train_fc_softmax.py\", line 50, in <module>\r\n    cost, softmax = pfl_mpc.layers.softmax_with_cross_entropy(logits=fc_out,\r\nAttributeError: 'module' object has no attribute 'softmax_with_cross_entropy'\r\nTraceback (most recent call last):\r\n  File \"train_fc_softmax.py\", line 50, in <module>\r\n    cost, softmax = pfl_mpc.layers.softmax_with_cross_entropy(logits=fc_out,\r\nAttributeError: 'module' object has no attribute 'softmax_with_cross_entropy'\r\n```\r\n\r\nAnd this with conv2d NN  (lenet)\r\n\r\nTraceback (most recent call last):\r\n```\r\n  File \"train_lenet.py\", line 78, in <module>\r\n    cost, softmax = model.lenet5()\r\n  File \"train_lenet.py\", line 65, in lenet5\r\n    conv_1 = pfl_mpc.layers.conv2d(input=x, num_filters=16, filter_size=5, act='relu')\r\nAttributeError: 'module' object has no attribute 'conv2d'\r\nTraceback (most recent call last):\r\n  File \"train_lenet.py\", line 78, in <module>\r\n    cost, softmax = model.lenet5()\r\n  File \"train_lenet.py\", line 65, in lenet5\r\n    conv_1 = pfl_mpc.layers.conv2d(input=x, num_filters=16, filter_size=5, act='relu')\r\nAttributeError: 'module' object has no attribute 'conv2d'\r\nTraceback (most recent call last):\r\n  File \"train_lenet.py\", line 78, in <module>\r\n    cost, softmax = model.lenet5()\r\n  File \"train_lenet.py\", line 65, in lenet5\r\n    conv_1 = pfl_mpc.layers.conv2d(input=x, num_filters=16, filter_size=5, act='relu')\r\nAttributeError: 'module' object has no attribute 'conv2d'\r\n```\r\n\r\nWhat is the reason that it can not see some modules ? \r\nI try to import it manually like `from y import x` , but it is not succesfull.",
+        "state": "closed",
+        "user": "heads7",
+        "closed_by": "heads7",
+        "created_at": "2020-10-13T03:32:05+00:00",
+        "updated_at": "2020-10-13T17:29:15+00:00",
+        "closed_at": "2020-10-13T17:29:15+00:00",
+        "comments_count": [
+            "honshj",
+            "heads7",
+            "heads7",
+            "honshj",
+            "heads7"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 138,
+        "title": "add tensor gc bit",
+        "body": "添加gc bit模块，处理底层单个比特的基础操作，xor、or、and等，为后续gc整数模块做铺垫",
+        "state": "closed",
+        "user": "Yanghello",
+        "closed_by": "Yanghello",
+        "created_at": "2020-12-03T11:10:33+00:00",
+        "updated_at": "2020-12-08T06:59:00+00:00",
+        "closed_at": "2020-12-08T06:59:00+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 129,
+        "title": "Is it possible to have Federated Learning on Cloud-Edge?",
+        "body": "Hi everyone,\r\n\r\nCurrently I am working on a school project about federated learning and came across your framework during exploratory analysis. My project should utilize federated learning in this manner - I have an aggregation server (let's say in a cloud). I want this server to provide model to my 2 Raspberry PIs. These two RPIs would then train the model on a local data for x epochs and provide the trained models/gradients back to the global server. On this server, the results would be federated averaged and new model would be sent to the PIs. Is such a workflow possible with your framework? If so, could you provide me a hint?\r\n\r\nThank you,\r\nBest regards",
+        "state": "closed",
+        "user": "Martiniann",
+        "closed_by": "honshj",
+        "created_at": "2020-10-14T21:44:36+00:00",
+        "updated_at": "2020-12-16T08:30:57+00:00",
+        "closed_at": "2020-12-16T08:30:57+00:00",
+        "comments_count": [
+            "honshj"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 131,
+        "title": "Centralized federated learning",
+        "body": "Good afternoon! \r\n\r\nPaddle FL in Horizontal Data partition suggests 1 or more aggragation server as shown in the picture.\r\n![image](https://user-images.githubusercontent.com/23639951/96580027-5c925400-12e0-11eb-8b14-5df13694840b.png)\r\n\r\nHow I can use 2 or more servers in my federated stratagy ? Can I make hierarchically system by using more than one server ?\r\n\r\nIf I have 4 trainers and 2 servers, for example, how can I aggragate parameters ?  \r\n1 and 2 trainers work with server 1\r\n3 and 4 work with server 2\r\nCan I have combine results from these two branches ?\r\n\r\nThanks.",
+        "state": "closed",
+        "user": "saviord7",
+        "closed_by": "saviord7",
+        "created_at": "2020-10-20T11:32:55+00:00",
+        "updated_at": "2020-10-28T10:56:08+00:00",
+        "closed_at": "2020-10-28T10:56:08+00:00",
+        "comments_count": [
+            "honshj"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 141,
+        "title": "add gc fixedpoint module",
+        "body": "gc fixedpoint模块以实现gc定点数的RELU、sigmoid、argmax、以及基于gc长除法的softmax域名算",
+        "state": "open",
+        "user": "Yanghello",
+        "closed_by": null,
+        "created_at": "2020-12-08T07:03:28+00:00",
+        "updated_at": "2020-12-15T06:37:06+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 133,
+        "title": "How to execute Kubernetes service?",
+        "body": "after kubectl apply -f config.yaml\r\n\r\nservice/fl-master unchanged\r\nservice/fl-scheduler unchanged\r\nservice/fl-server unchanged\r\nservice/trainer0 unchanged\r\nservice/trainer1 unchanged\r\ndeployment.apps/fl-master unchanged\r\ndeployment.apps/fl-scheduler unchanged\r\ndeployment.apps/fl-server unchanged\r\ndeployment.apps/trainer0 unchanged\r\ndeployment.apps/trainer1 unchanged\r\n\r\n\r\nWhat should be the next step?\r\nwhere to run the following command？\r\n\r\n\r\nCompile time\r\nMaster\r\n#Define distributed training config for trainer and server\r\npython fl_master.py --trainer_num 2\r\ntar -zcvf fl_job_config.tar.gz fl_job_config\r\n\r\n#Start HTTP server and wait download request from trainer and server\r\npython -m SimpleHTTPServer 8000\r\nRun time\r\nScheduler\r\n#Start a Scheduler\r\npython fl_scheduler.py --trainer_num 2\r\nServer\r\n#Download job config file from master\r\nwget ${FL_MASTER_SERVICE_HOST}:${FL_MASTER_SERVICE_PORT_FL_MASTER}/fl_job_config.tar.gz\r\ntar -xf fl_job_config.tar.gz\r\n\r\n#Start a Server\r\npython -u fl_server.py > server.log 2>&1\r\nTrainer\r\n#Download job config file from master\r\nwget ${FL_MASTER_SERVICE_HOST}:${FL_MASTER_SERVICE_PORT_FL_MASTER}/fl_job_config.tar.gz\r\ntar -xf fl_job_config.tar.gz\r\n\r\n#Start the ith trainer\r\npython -u fl_trainer.py i",
+        "state": "open",
+        "user": "jiahuigeng",
+        "closed_by": null,
+        "created_at": "2020-11-11T20:37:16+00:00",
+        "updated_at": "2020-11-13T07:23:05+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 146,
+        "title": "PaddleFL question",
+        "body": "1.  Inner Step in paddle_fl module.\r\ndefault `inner_step = 10`\r\nThis variable means that we will send parameters from nodes to sever every 10 steps ?\r\nFor example, 10.000 lines in dataset:\r\nbatch = 100, inner step = 10\r\nMeans: 10.000 / 100 = 100 steps\r\n100 / 10 = 10 times nodes will send parameters during 1 epoch? True?\r\n\r\n2.  How I can create NN in MPC with operators I have now?\r\nI only see Linear Regression, Logistic and CNN. Any examples with simple NN, for example, with 2 hidden layers.\r\n\r\n\r\nThanks!",
+        "state": "open",
+        "user": "qwertyuiop-s",
+        "closed_by": null,
+        "created_at": "2020-12-14T16:08:25+00:00",
+        "updated_at": "2021-01-22T10:19:27+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "jhjiangcs",
+            "qwertyuiop-s",
+            "jhjiangcs",
+            "qwertyuiop-s",
+            "qjing666",
+            "qwertyuiop-s"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 144,
+        "title": "逻辑回归中怎么体现使用了PrivC技术",
+        "body": "请问逻辑回归中怎么体现使用了PrivC技术？\r\n\r\n在这个例子里面倒是看到有aby3:\r\nhttps://github.com/PaddlePaddle/PaddleFL/blob/8140ad95693b668578ec7918b2e1b0a44dbee6e9/python/paddle_fl/mpc/examples/logistic_with_mnist/train_fc_softmax.py#L39 ",
+        "state": "closed",
+        "user": "Paul0M",
+        "closed_by": "Paul0M",
+        "created_at": "2020-12-10T10:40:01+00:00",
+        "updated_at": "2020-12-22T09:55:31+00:00",
+        "closed_at": "2020-12-22T09:55:31+00:00",
+        "comments_count": [
+            "honshj"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 147,
+        "title": "你好，你们的论文SecureGBM: Secure Multi-Party Gradient Boosting，PaddleFL里有实现吗",
+        "body": "* https://arxiv.org/pdf/1911.11997.pdf",
+        "state": "closed",
+        "user": "wardseptember",
+        "closed_by": "wardseptember",
+        "created_at": "2020-12-16T13:43:58+00:00",
+        "updated_at": "2020-12-18T05:09:45+00:00",
+        "closed_at": "2020-12-18T05:09:45+00:00",
+        "comments_count": [
+            "honshj",
+            "wardseptember"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 145,
+        "title": "Paddle FL data",
+        "body": "Good night!\r\n\r\nI have some question about MPC in PFL.\r\n\r\nAs I understand right, we can use only three nodes(machines, servers) for training job, right?\r\n\r\nBut we could have nore than 3 Input Party or no? Cause in doc to ABY3 says that we could have many data holders as well.\r\n\r\nSo we could share our data in holders , use PSI for finding Intersection and ALIGN to align and filter data....but if we have more than 3 data holders ( dataset parts) , we need do align several times? \r\n\r\nAlso, with what type of data package MPC work? You write it is for vertical, can I use it for horizontal or not ? ",
+        "state": "closed",
+        "user": "saviord7",
+        "closed_by": "saviord7",
+        "created_at": "2020-12-10T21:00:06+00:00",
+        "updated_at": "2021-01-13T05:27:17+00:00",
+        "closed_at": "2021-01-13T05:27:17+00:00",
+        "comments_count": [
+            "honshj",
+            "saviord7",
+            "saviord7",
+            "saviord7",
+            "jhjiangcs",
+            "jhjiangcs"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 149,
+        "title": "Calculate metrics in mpc",
+        "body": "Good afternoon!\r\n\r\nHow I can calculate loss in [this example?](https://github.com/PaddlePaddle/PaddleFL/blob/8b3b982b0ca95c631ce0e51a273b35e5b6bac6ea/python/paddle_fl/mpc/examples/logistic_with_mnist/train_fc_sigmoid.py)\r\n\r\nI tried next:\r\n\r\n- In training process add `loss = exe.run(feed=sample, fetch_list=[avg_loss])` and try to decrypt by `load_decrypt_data(loss_file, (1,), decrypt_file_loss)`\r\nHave next: \r\n![image](https://user-images.githubusercontent.com/75999504/104410599-c33eab00-5579-11eb-9124-13e4cd523c04.png)\r\n\r\n- Also I tried to calculate loss during the infer ( or testing) by adding `prediction, loss = exe.run(program=infer_program, feed=sample, fetch_list=[softmax, avg_loss])` and I get Error: \r\n```\r\n`NotFoundError: Input variable(mean_0.tmp_0) cannot be found in scope for operator 'Fetch'.Confirm that you have used the fetch `Variable` format instead of the string literal('mean_0.tmp_0') in `fetch_list` parameter when using `executor.run` method. In other words, the format of `executor.run(fetch_list=[fetch_var])`(fetch_var is a Variable) is recommended.\r\n  [Hint: fetch_var should not be null.] at (/paddle/paddle/fluid/operators/controlflow/fetch_op.cc:82)\r\n  [operator < fetch > error]`\r\n```\r\n\r\n\r\nWhat is the right way ?\r\n\r\nBest wishes!\r\n",
+        "state": "open",
+        "user": "qwertyuiop-s",
+        "closed_by": null,
+        "created_at": "2021-01-13T05:34:34+00:00",
+        "updated_at": "2021-01-22T08:29:32+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "jhjiangcs"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 148,
+        "title": "Computing metrics in mpc",
+        "body": "Dublicated post (you can delete it)",
+        "state": "closed",
+        "user": "qwertyuiop-s",
+        "closed_by": "qwertyuiop-s",
+        "created_at": "2021-01-13T05:34:11+00:00",
+        "updated_at": "2021-01-13T05:36:31+00:00",
+        "closed_at": "2021-01-13T05:35:45+00:00",
+        "comments_count": [
+            "qwertyuiop-s"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 150,
+        "title": "femnist 例子跑不通",
+        "body": "已经尝试过 pip install paddle_fl 和 在python 目录下运行 python setup.py  install\r\nubuntu 18.04\r\npython3.8\r\n\r\n>>> from paddle_fl.core.trainer.fl_trainer import FLTrainerFactory\r\nsh: 1: patchelf: not found\r\nsh: 1: patchelf: not found\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\n  File \"/home/gjh/Projects/PaddleFL/python/paddle_fl/__init__.py\", line 15, in <module>\r\n    from . import mpc\r\n  File \"/home/gjh/Projects/PaddleFL/python/paddle_fl/mpc/__init__.py\", line 59, in <module>\r\n    fluid.load_op_library(_paddle_enc_lib)\r\n  File \"/home/gjh/Projects/PaddleFL/python/py38/lib/python3.8/site-packages/paddlepaddle-2.0.0rc1-py3.8-linux-x86_64.egg/paddle/fluid/framework.py\", line 5503, in load_op_library\r\n    core.load_op_library(lib_filename)\r\nRuntimeError: (PreconditionNotMet) The third-party dynamic library (/home/gjh/Projects/PaddleFL/python/py38/lib/python3.8/site-packages/paddle_fl/mpc/libs/libpaddle_enc.so) that Paddle depends on is not configured correctly. (error code is /home/gjh/Projects/PaddleFL/python/py38/lib/python3.8/site-packages/paddle_fl/mpc/libs/libpaddle_enc.so: cannot open shared object file: No such file or directory)\r\n",
+        "state": "closed",
+        "user": "jiahuigeng",
+        "closed_by": "jiahuigeng",
+        "created_at": "2021-01-14T17:30:22+00:00",
+        "updated_at": "2021-11-15T03:49:49+00:00",
+        "closed_at": "2021-01-14T17:35:09+00:00",
+        "comments_count": [
+            "liyuntong9"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 151,
+        "title": "1.1.0 version in paddle_fl module",
+        "body": "Bug with serving_api still here in` paddle_fl == 1.1.0`\r\n\r\n ```\r\nFile \"fl_trainer.py\", line 1, in <module>\r\n    from paddle_fl.paddle_fl.core.trainer.fl_trainer import FLTrainerFactory\r\n  File \"/opt/conda/envs/python27-paddle120-env/lib/python2.7/site-packages/paddle_fl/paddle_fl/core/trainer/fl_trainer.py\", line 22, in <module>\r\n    import paddle_serving_client.io as serving_io\r\nImportError: No module named paddle_serving_client.io\r\n```\r\n",
+        "state": "closed",
+        "user": "saviord7",
+        "closed_by": "saviord7",
+        "created_at": "2021-01-18T15:14:50+00:00",
+        "updated_at": "2021-01-18T16:10:21+00:00",
+        "closed_at": "2021-01-18T16:10:21+00:00",
+        "comments_count": [
+            "saviord7",
+            "saviord7"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 152,
+        "title": "How does PaddleFL handle unstable connection between mobile-trainer and Server.",
+        "body": "For example, some mobiles get power down during the training process.",
+        "state": "closed",
+        "user": "zpcalan",
+        "closed_by": "zpcalan",
+        "created_at": "2021-01-26T06:14:53+00:00",
+        "updated_at": "2021-03-02T07:18:53+00:00",
+        "closed_at": "2021-03-02T07:18:53+00:00",
+        "comments_count": [
+            "qjing666",
+            "zpcalan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 158,
+        "title": "在python中import paddle_fl遇到了illegal instruction问题如下图",
+        "body": "本人采用虚拟机linux方式安装paddlefl，系统为Ubuntu18.04，pip20.3.4，python2.7。\r\n无论是采用pip还是redis方式安装，在python中import paddle_fl都存在illegal instruction问题如下图：",
+        "state": "closed",
+        "user": "BigHoney15",
+        "closed_by": "BigHoney15",
+        "created_at": "2021-04-15T03:40:07+00:00",
+        "updated_at": "2021-04-15T03:41:02+00:00",
+        "closed_at": "2021-04-15T03:41:02+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 153,
+        "title": "Installing paddle in docker container fails.",
+        "body": "`docker pull paddlepaddle/paddlefl:latest`\r\n`docker run  --network=host -it --name my_paddle_fl paddlepaddle/paddlefl:latest /bin/bash`\r\nOS: ubuntu 16.04\r\n\r\nAfter `pip install paddle`, the error is below:\r\n```\r\nCollecting paddle\r\n  Downloading https://files.pythonhosted.org/packages/55/cf/e4b6b9a54d2f072e4491e34317bf5f5fea260da8a3072e641832dc9ce770/paddle-1.0.2.tar.gz (579kB)\r\n    100% |████████████████████████████████| 583kB 24kB/s\r\n    Complete output from command python setup.py egg_info:\r\n    Traceback (most recent call last):\r\n      File \"<string>\", line 1, in <module>\r\n      File \"/tmp/pip-install-T3GpzM/paddle/setup.py\", line 3, in <module>\r\n        import paddle\r\n      File \"paddle/__init__.py\", line 5, in <module>\r\n        import common, dual, tight, data, prox\r\n      File \"paddle/common.py\", line 8, in <module>\r\n        import pylab\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/site-packages/pylab.py\", line 1, in <module>\r\n        from matplotlib.pylab import *\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/site-packages/matplotlib/pylab.py\", line 252, in <module>\r\n        from matplotlib import cbook, mlab, pyplot as plt\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/site-packages/matplotlib/pyplot.py\", line 115, in <module>\r\n        _backend_mod, new_figure_manager, draw_if_interactive, _show = pylab_setup()\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/site-packages/matplotlib/backends/__init__.py\", line 62, in pylab_setup\r\n        [backend_name], 0)\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/site-packages/matplotlib/backends/backend_tkagg.py\", line 4, in <module>\r\n        from . import tkagg  # Paint image to Tk photo blitter extension.\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/site-packages/matplotlib/backends/tkagg.py\", line 5, in <module>\r\n        from six.moves import tkinter as Tk\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/site-packages/six.py\", line 203, in load_module\r\n        mod = mod._resolve()\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/site-packages/six.py\", line 115, in _resolve\r\n        return _import_module(self.mod)\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/site-packages/six.py\", line 82, in _import_module\r\n        __import__(name)\r\n      File \"/opt/_internal/cpython-2.7.11-ucs4/lib/python2.7/lib-tk/Tkinter.py\", line 39, in <module>\r\n        import _tkinter # If this fails your Python may not be configured for Tk\r\n    ImportError: libtk8.5.so: cannot open shared object file: No such file or directory\r\n\r\n    ----------------------------------------\r\nCommand \"python setup.py egg_info\" failed with error code 1 in /tmp/pip-install-T3GpzM/paddle/\r\n\r\n```\r\n\r\nWhat's the reason of this? \r\nI refered to the instruction in [https://paddlefl.readthedocs.io/en/latest/compile_and_intall.html](https://paddlefl.readthedocs.io/en/latest/compile_and_intall.html)",
+        "state": "closed",
+        "user": "zpcalan",
+        "closed_by": "zpcalan",
+        "created_at": "2021-02-26T09:58:17+00:00",
+        "updated_at": "2021-03-04T01:57:50+00:00",
+        "closed_at": "2021-03-04T01:57:50+00:00",
+        "comments_count": [
+            "saviord7",
+            "zpcalan",
+            "qjing666",
+            "zpcalan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 155,
+        "title": "动态图转换",
+        "body": "请问如何将paddle库中的动态图模型转化或者保存为PaddleFL中的program_file",
+        "state": "open",
+        "user": "Jianqiuer",
+        "closed_by": null,
+        "created_at": "2021-03-16T01:56:24+00:00",
+        "updated_at": "2021-04-02T09:01:17+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "jhjiangcs"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 154,
+        "title": "DPSGD question",
+        "body": "Could you clarify implementation details for DPSGD:\r\n1) where clipping operation is implemented   - client (trainer) or aggregator (server)?\r\n2) where noise addition is implemented - client (trainer) or aggregator (server)?\r\n3) what is the purpose for batch_size for the server?",
+        "state": "open",
+        "user": "EveNovikova",
+        "closed_by": null,
+        "created_at": "2021-03-03T16:00:55+00:00",
+        "updated_at": "2021-04-02T08:55:23+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "jhjiangcs",
+            "EveNovikova",
+            "jhjiangcs"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 156,
+        "title": "PSI question",
+        "body": "I am a bit confused with PSI tools in Paddle FL.\r\nWhen I do PSI align with two vertical divided parts of dataset, I have not the same align data in two files:\r\n\r\n![image](https://user-images.githubusercontent.com/23639951/114208574-4a77a100-9966-11eb-8255-863367a2d6e7.png)\r\n![image](https://user-images.githubusercontent.com/23639951/114208630-5c594400-9966-11eb-8f8b-efb8de96816b.png)\r\n\r\nAs you can see the beginning of the data is different, so that we will have failure data when concating them.\r\n\r\n\r\nBy the way, it  doesn’t happen all the time, sometimes I have the right set of align IDs.\r\n\r\nIs it problem with PSI tools or I do something wrong ?",
+        "state": "closed",
+        "user": "saviord7",
+        "closed_by": "saviord7",
+        "created_at": "2021-04-09T16:08:00+00:00",
+        "updated_at": "2021-04-12T08:18:55+00:00",
+        "closed_at": "2021-04-12T08:18:54+00:00",
+        "comments_count": [
+            "kaih70",
+            "saviord7"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 159,
+        "title": "在python中import paddle_fl，出现了illegal instruction的问题如下图所示：",
+        "body": "![9b7a6edf7c4a8b0705ea867d5c0a008](https://user-images.githubusercontent.com/69409210/114813719-42e04e00-9de5-11eb-8d25-f3d57149b2d0.jpg)\r\n![b1d9f80afb07ea8be57ef2df55699bb](https://user-images.githubusercontent.com/69409210/114813761-58557800-9de5-11eb-8f2e-9226a4d4f3f0.jpg)\r\n本人采用虚拟机linux的方式按照说明的步骤安装paddlefl，系统为Ubuntu18.04，python2.7，pip20.3.4\r\n无论用pip安装还是用redis安装都会出现这种情况\r\n",
+        "state": "open",
+        "user": "BigHoney15",
+        "closed_by": null,
+        "created_at": "2021-04-15T04:25:56+00:00",
+        "updated_at": "2021-04-16T05:29:39+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "kaih70",
+            "Thewindrisers",
+            "kaih70"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 161,
+        "title": "paddlefl在ubuntu上import失败（import ）：undefined symbol: _ZNK6paddle9framework12O",
+        "body": "在通过直接安装paddle以及paddlefl，想跑一下github上的ctrdemo，但import paddlefl语句出现报错：\r\n![图片](https://user-images.githubusercontent.com/50702353/115172993-fb193980-a0f8-11eb-9699-f085d8498fe1.png)\r\n\r\n请问这是不是环境不兼容的问题呢？\r\n服务器的环境配置如下所示：\r\npython3.6.12\r\npaddle-fl                 1.1.0                     \r\npaddlepaddle              2.0.2                    \r\npaddlepaddle-gpu          2.0.2             \r\ncuda:10.2       ",
+        "state": "open",
+        "user": "Thewindrisers",
+        "closed_by": null,
+        "created_at": "2021-04-19T02:27:21+00:00",
+        "updated_at": "2021-05-28T11:02:13+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "honshj",
+            "Thewindrisers",
+            "saviord7",
+            "wangzy0327",
+            "Thewindrisers",
+            "wangzy0327",
+            "YueWang1996",
+            "jhjiangcs",
+            "jhjiangcs"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 162,
+        "title": "/PaddleFL/python/paddle_fl/mpc/examples/logistic_with_mnist/train_fc_sigmoid.py numpy报错",
+        "body": "Hi guys,\r\n\r\n当我想在单机上尝试`logistic_with_mnist`的时候，在跟随README.md执行后，在本步遇到报错\r\n\r\n```\r\nsh run_standalone.sh train_fc_sigmoid.py\r\n```\r\n\r\n在脚本中python执行过程中报错\r\n\r\n```\r\nTraceback (most recent call last):\r\n  File \"logistic_with_mnist/train_fc_sigmoid.py\", line 22, in <module>\r\n    import numpy as np\r\nTraceback (most recent call last):\r\nImportError  File \"logistic_with_mnist/train_fc_sigmoid.py\", line 22, in <module>\r\n: No module named numpy\r\n    import numpy as np\r\nImportError: No module named numpy\r\nTraceback (most recent call last):\r\n  File \"logistic_with_mnist/train_fc_sigmoid.py\", line 22, in <module>\r\n    import numpy as np\r\nImportError: No module named numpy\r\n```\r\n\r\n看上去是因为没有找到`numpy`安装的原因，但是当我检查环境中的numpy库，\r\n\r\n```\r\n[root@docker-desktop examples]# pip list | grep numpy\r\nnumpy                              1.15.4\r\n```\r\n\r\n请问各位知不知道是什么导致了这个问题？谢谢啦～（虽然我知道这个问题可能有点弱智）\r\n\r\nBest regards,\r\nRL",
+        "state": "open",
+        "user": "Yuchen-Li",
+        "closed_by": null,
+        "created_at": "2021-04-28T03:04:15+00:00",
+        "updated_at": "2021-05-07T03:21:21+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "honshj"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 163,
+        "title": "关于femnist的demo训练效果",
+        "body": "尊敬的开发人员你好，我今天跑了paddlefl中的femnist demo，发现在默认配置环境下，经过30轮训练，精度始终在10以下，请问这种情况正常吗，是模型的问题导致精度上不去吗，希望得到您的解答！\r\n![图片](https://user-images.githubusercontent.com/50702353/117538137-5f178980-b037-11eb-8160-fe9e6e01d42c.png)\r\n",
+        "state": "open",
+        "user": "Thewindrisers",
+        "closed_by": null,
+        "created_at": "2021-05-08T11:56:52+00:00",
+        "updated_at": "2023-03-14T07:04:03+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qjing666",
+            "pengbc917",
+            "Thewindrisers",
+            "pengbc917"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 170,
+        "title": "Examples in Recognize Digits with DPSGD and in LEAF Dataset with FedAvg: get_pserver_program() is deprecated, call get_pserver_programs() to get pserver main and startup in a single call.",
+        "body": "Environment: \r\npip installation on Ubuntu\r\nexecution procedure:\r\nhttps://github.com/PaddlePaddle/PaddleFL/tree/master/python/paddle_fl/paddle_fl/examples/femnist_demo\r\nhttps://github.com/PaddlePaddle/PaddleFL/tree/master/python/paddle_fl/paddle_fl/examples/dpsgd_demo\r\n\r\nWhen trying examples in Recognize Digits with DPSGD and in LEAF Dataset with FedAvg, both occur the errors as below:\r\n\r\n```\r\n[root@sgx5 femnist_demo]# python fl_master.py\r\nget_pserver_program() is deprecated, call get_pserver_programs() to get pserver main and startup in a single call.\r\n```\r\n\r\n```\r\n[root@sgx5 dpsgd_demo]# python3 fl_master.py\r\nAPI is deprecated since 2.0.0 Please use FleetAPI instead.\r\nWIKI: https://github.com/PaddlePaddle/Fleet/blob/develop/markdown_doc/transpiler\r\n\r\nAPI is deprecated since 2.0.0 Please use FleetAPI instead.\r\nWIKI: https://github.com/PaddlePaddle/Fleet/blob/develop/markdown_doc/transpiler\r\n\r\nAPI is deprecated since 2.0.0 Please use FleetAPI instead.\r\nWIKI: https://github.com/PaddlePaddle/Fleet/blob/develop/markdown_doc/transpiler\r\n\r\nAPI is deprecated since 2.0.0 Please use FleetAPI instead.\r\nWIKI: https://github.com/PaddlePaddle/Fleet/blob/develop/markdown_doc/transpiler\r\n\r\nAPI is deprecated since 2.0.0 Please use FleetAPI instead.\r\nWIKI: https://github.com/PaddlePaddle/Fleet/blob/develop/markdown_doc/transpiler\r\n\r\nget_pserver_program() is deprecated, call get_pserver_programs() to get pserver main and startup in a single call.\r\n```\r\nBut I don't find this function `get_pserver_program()` inside code files.\r\nHelp, please!",
+        "state": "closed",
+        "user": "YueWang1996",
+        "closed_by": "YueWang1996",
+        "created_at": "2021-06-08T10:12:57+00:00",
+        "updated_at": "2021-06-08T12:46:58+00:00",
+        "closed_at": "2021-06-08T12:46:58+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 164,
+        "title": "PaddleFL source code Compile problem",
+        "body": "environment:\r\nCentOS Linux release 7.9.2009 (Core)\r\nPython3.6（from anaconda3 conda env）\r\npip 21.0.1\r\ncuda 10.0\r\ncudnn  7.6.5\r\npython -m pip install paddlepaddle-gpu==2.0.0.post100 -f https://paddlepaddle.org.cn/whl/stable.html\r\npaddlepaddle release 2.0.0（dependencies >=1.8）\r\n\r\nThen pip install paddle_fl successfully\r\nIpython Test:\r\nimport padddle_fl \r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\n  File \"/home/wzy/anaconda3/envs/paddleFL-1.8.5/lib/python3.6/site-packages/paddle_fl/__init__.py\", line 15, in <module>\r\n    from . import mpc\r\n  File \"/home/wzy/anaconda3/envs/paddleFL-1.8.5/lib/python3.6/site-packages/paddle_fl/mpc/__init__.py\", line 59, in <module>\r\n    fluid.load_op_library(_paddle_enc_lib)\r\nAttributeError: module 'paddle.fluid' has no attribute 'load_op_library'\r\n",
+        "state": "open",
+        "user": "wangzy0327",
+        "closed_by": null,
+        "created_at": "2021-05-19T01:47:39+00:00",
+        "updated_at": "2021-05-28T10:19:43+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "honshj",
+            "wangzy0327",
+            "honshj",
+            "wangzy0327",
+            "honshj",
+            "wangzy0327",
+            "jhjiangcs"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 168,
+        "title": "About PaddleFL Training Mechanism",
+        "body": "尊敬的paddlefl开发人员您好！\r\n通过分析日志和源码，我有一处不太理解：我们设置了inner_step作为每次更新的步数，在代码中是这样表示的：\r\n![图片](https://user-images.githubusercontent.com/50702353/120126074-ac79b780-c1ed-11eb-8a8d-74082f7c9175.png)\r\n\r\n我理解的是recv和send的操作将在同一轮进行，这里我不太明白：如果inner_step为10的时候，训练步骤就是训练9轮->recv->训练一轮->send，这样训练的前9轮效果是否不起作用了呢？是不是应该将下面sendprogram的运行判断改成（if self.cur_step % self._step == self._step-1）呢？可能是我理解错了，希望得到您的解答！",
+        "state": "open",
+        "user": "Thewindrisers",
+        "closed_by": null,
+        "created_at": "2021-05-31T00:58:22+00:00",
+        "updated_at": "2021-06-03T03:35:04+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 165,
+        "title": "About using profiler in Paddle_fl ",
+        "body": "尊敬的开发人员您好，我希望使用profiler工具获取联邦学习过程中各个program的ops时间分布，为此查看了timeline使用文档https://www.paddlepaddle.org.cn/documentation/docs/zh/1.8/advanced_guide/performance_improving/analysis_tools/timeline_cn.html#local\r\n![图片](https://user-images.githubusercontent.com/50702353/118761363-dacecd00-b8a6-11eb-8614-272fb7501dff.png)\r\n我所理解应该是使用如图中分布式的方法，但关于第2步环境变量的添加没有太明白其中表达的含义，目前我只在fl_trainer的训练过程中增加了profiler工具，最后也生成了一个profile_ps_1794596834表示服务器过程的文件（但似乎不完整，没有recv的操作，只有sum和scale）\r\n希望能够得到您的回复，最好可以稍微介绍一下联邦学习使用profiler（timeline）的教程，非常感谢!",
+        "state": "open",
+        "user": "Thewindrisers",
+        "closed_by": null,
+        "created_at": "2021-05-19T05:38:28+00:00",
+        "updated_at": "2021-05-27T06:48:22+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qjing666",
+            "Thewindrisers",
+            "qjing666",
+            "Thewindrisers",
+            "qjing666",
+            "Thewindrisers",
+            "qjing666",
+            "Thewindrisers",
+            "qjing666",
+            "Thewindrisers",
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 166,
+        "title": "Compilation failure from source code and pip",
+        "body": "### Environment\r\nUbuntu 20.04.2 LTS\r\nPython 3.7.7 \r\npip 21.0.1\r\ng++ (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0\r\nRedis server v=5.0.8\r\nPaddlePaddle 1.8.0\r\ncmake version 3.16.0\r\n\r\n### Compilation error message\r\n```\r\n/PaddleFL/build# cmake ../ -DPYTHON_EXECUTABLE=/root/miniconda/bin/python3 -DPYTHON_INCLUDE_DIRS=/root/miniconda/include/python3.7m -DCMAKE_CXX_COMPILER=/usr/bin/g++\r\n-- The C compiler identification is GNU 9.3.0\r\n-- The CXX compiler identification is GNU 9.3.0\r\n-- Check for working C compiler: /usr/bin/cc\r\n-- Check for working C compiler: /usr/bin/cc -- works\r\n-- Detecting C compiler ABI info\r\n-- Detecting C compiler ABI info - done\r\n-- Detecting C compile features\r\n-- Detecting C compile features - done\r\n-- Check for working CXX compiler: /usr/bin/g++\r\n-- Check for working CXX compiler: /usr/bin/g++ -- works\r\n-- Detecting CXX compiler ABI info\r\n-- Detecting CXX compiler ABI info - done\r\n-- Detecting CXX compile features\r\n-- Detecting CXX compile features - done\r\n-- Using paddlepaddle installation of 1.8.0\r\n-- paddlepaddle include directory: /root/miniconda/lib/python3.7/site-packages/paddle/include\r\n-- paddlepaddle libraries directory: /root/miniconda/lib/python3.7/site-packages/paddle/libs\r\n-- python libraries directory: /root/miniconda/lib/python3.7/site-packages\r\n-- Do not have AVX2 intrinsics and disabled MKL-DNN\r\n-- use pre defined download url\r\n-- GLOO_NAME: gloo, GLOO_URL: https://paddlefl.bj.bcebos.com/gloo.tar.gz\r\n-- use pre defined download url\r\n-- Looking for pthread.h\r\n-- Looking for pthread.h - found\r\n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\r\n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\r\n-- Looking for pthread_create in pthreads\r\n-- Looking for pthread_create in pthreads - not found\r\n-- Looking for pthread_create in pthread\r\n-- Looking for pthread_create in pthread - found\r\n-- Found Threads: TRUE\r\n-- Found OpenMP_C: -fopenmp (found version \"4.5\")\r\n-- Found OpenMP_CXX: -fopenmp (found version \"4.5\")\r\n-- Found OpenMP: TRUE (found version \"4.5\")\r\n-- Configuring done\r\n-- Generating done\r\n-- Build files have been written to: /PaddleFL/build\r\n/PaddleFL/build# make -j$(nproc)\r\n...\r\n/root/miniconda/lib/python3.7/site-packages/paddle/include/paddle/fluid/platform/device_context.h:32:10: fatal error: mkldnn.hpp: No such file or directory\r\n   32 | #include \"mkldnn.hpp\"\r\n      |          ^~~~~~~~~~~~\r\ncompilation terminated.\r\n[ 32%] Building CXX object core/paddlefl_mpc/operators/CMakeFiles/mpc_ops_o.dir/conv_op.cc.o\r\nmake[2]: *** [core/paddlefl_mpc/mpc_protocol/CMakeFiles/mpc_protocol_o.dir/build.make:63: core/paddlefl_mpc/mpc_protocol/CMakeFiles/mpc_protocol_o.dir/aby3_protocol.cc.o] Error 1\r\nmake[2]: *** Waiting for unfinished jobs....\r\nmake[2]: *** [core/paddlefl_mpc/mpc_protocol/CMakeFiles/mpc_protocol_o.dir/build.make:102: core/paddlefl_mpc/mpc_protocol/CMakeFiles/mpc_protocol_o.dir/context_holder.cc.o] Error 1\r\nIn file included from /root/miniconda/lib/python3.7/site-packages/paddle/include/paddle/fluid/framework/tensor.h:27,\r\n                 from /PaddleFL/./core/paddlefl_mpc/mpc_protocol/mpc_operators.h:20,\r\n                 from /PaddleFL/./core/paddlefl_mpc/mpc_protocol/mpc_protocol.h:23,\r\n                 from /PaddleFL/core/paddlefl_mpc/mpc_protocol/mpc_instance.h:20,\r\n                 from /PaddleFL/core/paddlefl_mpc/mpc_protocol/mpc_instance.cc:15:\r\n/root/miniconda/lib/python3.7/site-packages/paddle/include/paddle/fluid/platform/device_context.h:32:10: fatal error: mkldnn.hpp: No such file or directory\r\n   32 | #include \"mkldnn.hpp\"\r\n      |          ^~~~~~~~~~~~\r\ncompilation terminated.\r\n[ 32%] Building CXX object core/paddlefl_mpc/operators/CMakeFiles/mpc_ops_o.dir/mpc_adam_op.cc.o\r\nmake[2]: *** [core/paddlefl_mpc/mpc_protocol/CMakeFiles/mpc_protocol_o.dir/build.make:115: core/paddlefl_mpc/mpc_protocol/CMakeFiles/mpc_protocol_o.dir/mpc_instance.cc.o] Error 1\r\n[ 33%] Building CXX object core/paddlefl_mpc/operators/CMakeFiles/mpc_ops_o.dir/mpc_batch_norm_op.cc.o\r\n[ 34%] Building CXX object core/paddlefl_mpc/operators/CMakeFiles/mpc_ops_o.dir/mpc_compare_op.cc.o\r\nIn file included from /root/miniconda/lib/python3.7/site-packages/paddle/include/paddle/fluid/framework/tensor.h:27,\r\n                 from /root/miniconda/lib/python3.7/site-packages/paddle/include/paddle/fluid/framework/eigen.h:17,\r\n                 from /PaddleFL/core/paddlefl_mpc/operators/./conv_op.h:21,\r\n                 from /PaddleFL/core/paddlefl_mpc/operators/conv_op.cc:15:\r\n/root/miniconda/lib/python3.7/site-packages/paddle/include/paddle/fluid/platform/device_context.h:32:10: fatal error: mkldnn.hpp: No such file or directory\r\n   32 | #include \"mkldnn.hpp\"\r\n      |          ^~~~~~~~~~~~\r\ncompilation terminated.\r\nmake[2]: *** [core/paddlefl_mpc/operators/CMakeFiles/mpc_ops_o.dir/build.make:63: core/paddlefl_mpc/operators/CMakeFiles/mpc_ops_o.dir/conv_op.cc.o] Error 1\r\nmake[2]: *** Waiting for unfinished jobs....\r\n.....\r\n```\r\n\r\nPlease have a look and give some help :) Thanks!",
+        "state": "open",
+        "user": "YueWang1996",
+        "closed_by": null,
+        "created_at": "2021-05-24T09:18:47+00:00",
+        "updated_at": "2021-05-28T10:04:53+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "YueWang1996",
+            "kaih70",
+            "YueWang1996",
+            "jhjiangcs",
+            "YueWang1996",
+            "jhjiangcs",
+            "jhjiangcs",
+            "YueWang1996",
+            "jhjiangcs",
+            "YueWang1996",
+            "jhjiangcs"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 171,
+        "title": "AttributeError: module 'paddle_fl.mpc.layers' has no attribute 'share' in PaddleFL-MPC UCI Housing Demo",
+        "body": "Environment:\r\npip installation on Ubuntu20.04\r\nPython 3.6.9 :: Anaconda, Inc.\r\npaddlepaddle: 1.8.0\r\npaddlefl: 1.0.1\r\n\r\nCommands:\r\n```\r\nroot@7058038a3c01:/PaddleFL/python/paddle_fl/mpc/examples/logistic_with_mnist# export PATH_TO_REDIS_BIN=/usr/local/bin/ && export REDIS_PORT=6379 && export LOCALHOST=localhost && export PYTHON=/root/miniconda/bin/python3\r\nroot@7058038a3c01:/PaddleFL/python/paddle_fl/mpc/examples/logistic_with_mnist# cd /PaddleFL/python/paddle_fl/mpc/examples/linear_reg_with_uci\r\nroot@7058038a3c01:/PaddleFL/python/paddle_fl/mpc/examples/linear_reg_with_uci# python3 prepare.py\r\nCache file /root/.cache/paddle/dataset/uci_housing/housing.data not found, downloading http://paddlemodels.bj.bcebos.com/uci_housing/housing.data\r\nBegin to download\r\n............\r\nDownload finished\r\n2021-06-08 18:38:07,939-INFO: Generating new fontManager, this may take some time...\r\nroot@7058038a3c01:/PaddleFL/python/paddle_fl/mpc/examples/linear_reg_with_uci# bash ../run_standalone.sh uci_demo.py\r\nredis home in /usr/local/bin/, server is localhost, port is 6379\r\n1582:M 08 Jun 2021 18:41:04.580 * DB saved on disk\r\nOK\r\nTraceback (most recent call last):\r\n  File \"uci_demo.py\", line 35, in <module>\r\n    feature_reader, label_reader = process_data.generate_encrypted_data_online(role, server, port)\r\n  File \"/PaddleFL/python/paddle_fl/mpc/examples/linear_reg_with_uci/process_data.py\", line 83, in generate_encrypted_data_online\r\n    feature_list_1 = list(encrypted_data_generator(0, sample_reader, 0, 0, 5)) #party_0 has features 0~4\r\n  File \"/PaddleFL/python/paddle_fl/mpc/examples/linear_reg_with_uci/process_data.py\", line 68, in encrypted_data_generator\r\n    out = pfl_mpc.layers.share(input, party_id=data_location_party)\r\nAttributeError: module 'paddle_fl.mpc.layers' has no attribute 'share'\r\n```\r\nHelp, please!\r\n\r\nIs it because of the version of paddlefl? I see the official paddlefl image uses version 1.1.0",
+        "state": "closed",
+        "user": "YueWang1996",
+        "closed_by": "YueWang1996",
+        "created_at": "2021-06-08T16:51:34+00:00",
+        "updated_at": "2021-07-02T14:59:51+00:00",
+        "closed_at": "2021-07-02T14:59:51+00:00",
+        "comments_count": [
+            "saviord7",
+            "YueWang1996"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 172,
+        "title": "About using profiler in Paddle_fl（in send\\recv op）",
+        "body": "\r\n尊敬的开发人员您好，上个issue[https://github.com/PaddlePaddle/PaddleFL/issues/165]听您了解到：当前profiler的设计是统计计算Kernel的时间，按照我的理解，是不是意思是通信的op统计的时间是传输数据在用户和tcp协议栈内核中的时间？请问client端统计出的send和recv等通信op的时间具体代表的是只包含传输数据在用户和内核态的时间（传输数据到网卡之前，也就是不包括在网络中传输的时间），还是整个的每轮梯度传输更新的通信时间呢？\r\n![图片](https://user-images.githubusercontent.com/50702353/122628059-67f38480-d0e6-11eb-8942-f15fc114476d.png)\r\n\r\n",
+        "state": "open",
+        "user": "Thewindrisers",
+        "closed_by": null,
+        "created_at": "2021-06-19T02:10:55+00:00",
+        "updated_at": "2021-06-22T03:57:17+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 180,
+        "title": "About Http2 communication in Paddlefl",
+        "body": "尊敬的paddlefl开发人员您好！我了解到paddlefl的通信框架是采用的Grpc的方式，通过分析通信源码，我理解到Paddlefl应该是采用了第一种Grpc通信方式：即不包含流传输，采用了一般的rpc调用，一个请求对象对应一个返回对象。\r\n通过运行demo时采用wireshark抓包我发现，数据包全都是TCP类型，没有http2协议的握手包和传输包，其应用层数据部分也不含http包头。\r\n对此我有个问题：Grpc作为一个基于http2开发的通信框架，为何在paddlefl的调用过程中没有使用http2协议呢？是因为paddlefl采取的是第一种通信方式（一般的rpc调用）从而不会用到http2协议吗？还是说我的抓包方式有问题，实际还是HTTP2传输的呢？\r\n![图片](https://user-images.githubusercontent.com/50702353/126026272-816120fb-042e-4e09-9cff-20ad76d39a90.png)\r\n",
+        "state": "open",
+        "user": "Thewindrisers",
+        "closed_by": null,
+        "created_at": "2021-07-17T05:01:50+00:00",
+        "updated_at": "2021-07-21T06:38:35+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "honshj",
+            "Thewindrisers"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 173,
+        "title": "why use redis in PaddleFL MPC programs",
+        "body": "你好，我想问下Redis数据库在PFM的example里的作用是什么？ 我猜测是PaddleFL会从redis数据库里读取并加载训练模型，这样理解对吗？ 是如何实现的呢，可否方便贴下涉及到redis的相关函数的链接，非常感谢！！",
+        "state": "closed",
+        "user": "YueWang1996",
+        "closed_by": "YueWang1996",
+        "created_at": "2021-07-02T15:22:51+00:00",
+        "updated_at": "2021-12-09T09:25:37+00:00",
+        "closed_at": "2021-12-09T09:23:32+00:00",
+        "comments_count": [
+            "honshj",
+            "Eval2021",
+            "YueWang1996"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 202,
+        "title": "如何使用wireshark分析paddlefl的grpc通信http2数据包",
+        "body": "尊敬的paddlefl开发人员您好！我了解到paddlefl的通信框架是采用的Grpc的方式，通过分析通信源码，我理解到Paddlefl应该是采用了第一种Grpc通信方式：即不包含流传输，采用了一般的rpc调用，一个请求对象对应一个返回对象。\r\n通过运行横向联邦学习的例子时采用wireshark抓包我发现，数据包全都是TCP类型，没有http2协议的握手包和传输包，其应用层数据部分也不含http包头，这个问题已经在https://github.com/PaddlePaddle/PaddleFL/issues/180中提出。\r\n我了解到可能是wireshark软件没有设置proto路径导致不能分析GRpc，（https://cloud.tencent.com/developer/article/1801855）\r\n![图片](https://user-images.githubusercontent.com/50702353/127587766-5c3d3a8a-ecb3-49c8-be32-7c472897d25a.png)\r\n目前我在源码中找到了这些proto文件，还是无法显示http2类型的数据包，\r\n请问该如何分析paddlefl通信过程中的http2数据包呢？",
+        "state": "open",
+        "user": "Thewindrisers",
+        "closed_by": null,
+        "created_at": "2021-07-30T01:54:17+00:00",
+        "updated_at": "2021-07-30T01:54:17+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 194,
+        "title": "k8s deployment example doesn't work",
+        "body": "kubectl apply -f ./python/paddle_fl/paddle_fl/examples/k8s_deployment/master.yaml\r\n\r\n<img width=\"1327\" alt=\"paddle\" src=\"https://user-images.githubusercontent.com/3197038/127423605-15636afc-64e5-4a33-8638-c94439079e14.png\">\r\n\r\nk8s cluster:\r\n\r\n![image](https://user-images.githubusercontent.com/3197038/127424021-b655e01e-6a16-44ab-ae32-a6c2ae2c836d.png)\r\n",
+        "state": "closed",
+        "user": "thinkall",
+        "closed_by": "thinkall",
+        "created_at": "2021-07-29T02:49:04+00:00",
+        "updated_at": "2021-09-08T06:29:20+00:00",
+        "closed_at": "2021-09-08T06:29:20+00:00",
+        "comments_count": [
+            "qjing666",
+            "thinkall"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 207,
+        "title": "why cannot find mpc_data_utils module ?what can I get help",
+        "body": "cannot find module named mpc_data_utils",
+        "state": "closed",
+        "user": "wangzy0327",
+        "closed_by": "wangzy0327",
+        "created_at": "2021-08-09T03:13:58+00:00",
+        "updated_at": "2021-08-09T03:24:59+00:00",
+        "closed_at": "2021-08-09T03:24:59+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 205,
+        "title": "Is it support running on Intel Atom processor?",
+        "body": "Introduction of [Intel Atom](https://www.intel.com/content/www/us/en/products/details/processors/atom.html)",
+        "state": "open",
+        "user": "jiahaoc1993",
+        "closed_by": null,
+        "created_at": "2021-08-04T09:11:59+00:00",
+        "updated_at": "2021-08-05T03:51:59+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "honshj"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 206,
+        "title": "when I run PaddleFL-MPC UCI Housing Demo,I get module no attribute",
+        "body": ">>> help(paddle_fl.mpc.data_utils.data_utils)\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\nAttributeError: module 'paddle_fl.mpc.data_utils' has no attribute 'data_utils'\r\n",
+        "state": "open",
+        "user": "wangzy0327",
+        "closed_by": null,
+        "created_at": "2021-08-05T08:19:21+00:00",
+        "updated_at": "2021-08-09T03:12:07+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "gaina99",
+            "wangzy0327"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 215,
+        "title": "Can FLServer be shared？",
+        "body": "尊敬的paddlefl开发人员您好！关于paddlefl横向联邦，从examples的一些示例，我了解到FLServer与FLTrainer之间是通过grpc通信的，每起一个任务，必须启动一个FLServer和多个FLTrainer，如果同时跑多个任务就要启动多个FLServer，暴露多个端口。是否可以通过一些配置或者源码的修改实现多个任务共享一个FLServer？",
+        "state": "open",
+        "user": "zhangtiegang2014",
+        "closed_by": null,
+        "created_at": "2021-08-19T03:07:54+00:00",
+        "updated_at": "2021-08-20T02:35:54+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "honshj",
+            "zhangtiegang2014"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 218,
+        "title": "youtubednn_with_movielens example run Error?",
+        "body": "my environment is:\r\npaddle-fl 1.1.2\r\npaddlepaddle-gpu 1.8.0.post107\r\ncuda 10.0.130\r\ncudnn 7.6\r\n![c5f454b4cce0a0662cdb42358ce2ce2](https://user-images.githubusercontent.com/22990858/131472283-3e299c91-75e4-469e-8c3c-0cbc323d1c86.png)\r\nWhen I run youtubenn_with_movielens example,I get Error\r\n![8cafc722b4d02238228c9b0e61b69d8](https://user-images.githubusercontent.com/22990858/131473242-5a3d7a1a-5b2f-4c38-89e6-8110f64fe097.png)\r\n\r\n\r\n",
+        "state": "closed",
+        "user": "wangzy0327",
+        "closed_by": "honshj",
+        "created_at": "2021-08-31T08:54:14+00:00",
+        "updated_at": "2021-09-03T05:36:24+00:00",
+        "closed_at": "2021-09-03T05:36:24+00:00",
+        "comments_count": [
+            "honshj"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 219,
+        "title": "Run youtubenn_with_movielens example  in docker no module named '_bz2'",
+        "body": "my docker images:paddlepaddle/paddlefl:1.1.2\r\nWhen I run youtubenn_with_movieslens example case, I get belows\r\n  File \"train_youtubednn.py\", line 148, in train\r\n    f.write(np.array(video_array).tobytes())\r\nTypeError: write() argument must be str, not bytes ?\r\nso I try to convert bytes to str,I get belows\r\n\r\n  File \"train_youtubednn.py\", line 148, in train\r\n    f.write(np.array(video_array).tobytes().decode())\r\n    train(args)\r\nUnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte\r\n  File \"train_youtubednn.py\", line 148, in train\r\n    f.write(np.array(video_array).tobytes().decode())\r\nUnicodeDecodeError: 'utf-8' codec can't decode byte 0xbf in position 0: invalid start byte\r\n\r\nHow to solve the Problems?\r\n\r\n![image](https://user-images.githubusercontent.com/22990858/131776542-f13bc2ab-ad0c-4a24-9241-fdea76452038.png)\r\n\r\n\r\n\r\n![image](https://user-images.githubusercontent.com/22990858/131776520-d6c34331-59df-4d20-abca-89f16459b9ca.png)\r\n\r\n\r\n![image](https://user-images.githubusercontent.com/22990858/131797950-401408cd-d30f-49f1-8db5-3c6e4817120c.png)\r\n![image](https://user-images.githubusercontent.com/22990858/131798688-2c2dfb6b-2151-4e89-a78c-1af3b0e0a269.png)\r\n",
+        "state": "closed",
+        "user": "wangzy0327",
+        "closed_by": "honshj",
+        "created_at": "2021-09-02T03:22:47+00:00",
+        "updated_at": "2021-09-03T05:35:29+00:00",
+        "closed_at": "2021-09-03T05:35:29+00:00",
+        "comments_count": [
+            "gaina99",
+            "wangzy0327"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 216,
+        "title": "When I run YoutubeDNN demo，I get some Error,What Can I get help?",
+        "body": "\r\n![image](https://user-images.githubusercontent.com/22990858/130760673-599d7152-046b-4f07-89c4-3f44d72c72f8.png)\r\n\r\n![微信图片_20210825165427](https://user-images.githubusercontent.com/22990858/130760540-f1bb18d7-acd3-4e62-9fc9-8fb4c5deba4f.png)\r\n",
+        "state": "closed",
+        "user": "wangzy0327",
+        "closed_by": "honshj",
+        "created_at": "2021-08-25T08:56:23+00:00",
+        "updated_at": "2021-09-03T05:36:12+00:00",
+        "closed_at": "2021-09-03T05:36:12+00:00",
+        "comments_count": [
+            "jhjiangcs",
+            "wangzy0327",
+            "wangzy0327"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 222,
+        "title": "paddleFL docker cannot support paddlepaddle-gpu ？",
+        "body": "I use docker image paddlefl:1.1.2, its paddle version is paddlepaddle 1.8.5 (cpu),I want to run youtubenn_movie case with GPU,how should I do ? My host env cuda env is as below.\r\n![image](https://user-images.githubusercontent.com/22990858/131975328-acf63f46-65bf-4bd2-beb9-28dfabe245af.png)\r\n\r\nThese are errors as below.\r\n![image](https://user-images.githubusercontent.com/22990858/131973804-a9e2c6ea-52ab-44ce-85c3-7a0d35a253b2.png)\r\n![image](https://user-images.githubusercontent.com/22990858/131974066-fc3a8e45-4d4f-409d-9c16-4f04e48b952f.png)\r\n![image](https://user-images.githubusercontent.com/22990858/131974393-6b7920ca-505f-4c3f-958e-06eafae89f87.png)\r\n\r\n",
+        "state": "open",
+        "user": "wangzy0327",
+        "closed_by": null,
+        "created_at": "2021-09-03T08:20:03+00:00",
+        "updated_at": "2021-09-06T03:06:01+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "honshj"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 224,
+        "title": "ImportError: cannot import name 'CipherUtils' from 'paddle.fluid.core_avx' (/usr/local/python/lib/python3.8/site-packages/paddle/fluid/core_avx.so)",
+        "body": "尊敬的开发人员你好，\r\n我按照步骤，使用nvidia-docker直接拉取了PaddleFL的项目,在运行ctr_demo时报错:\r\n找不到paddle_serving_client模块，安装好padlle_serving_client模块后,再次运行\r\n报了下述错误,请问是什么原因呢?\r\n File \"/usr/local/python/lib/python3.8/site-packages/paddle_serving_client/io/__init__.py\", line 24, in <module>\r\n    from paddle.fluid.core import CipherUtils\r\nImportError: cannot import name 'CipherUtils' from 'paddle.fluid.core_avx' (/usr/local/python/lib/python3.8/site-packages/paddle/fluid/core_avx.so)\r\n\r\n运行环境centos7，nvidia-docker\r\npython包环境只加了一个paddle_serving_client\r\n![wrong2](https://user-images.githubusercontent.com/13082828/133219429-d6d1f888-4c2b-4f36-885b-8880ef82081e.jpg)\r\n\r\n非常感谢",
+        "state": "closed",
+        "user": "liuyubiao",
+        "closed_by": "liuyubiao",
+        "created_at": "2021-09-14T08:02:44+00:00",
+        "updated_at": "2021-09-15T05:58:44+00:00",
+        "closed_at": "2021-09-15T05:58:44+00:00",
+        "comments_count": [
+            "liuyubiao"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 223,
+        "title": "--eval module for paddleFL",
+        "body": "Dear developer, will paddleFL soon acquire modules like --eval in paddle detection? I had trouble finding metrics like bbox mAP in paddleFL. Is there a way to show such metrics in paddleFL and how?",
+        "state": "open",
+        "user": "118010298",
+        "closed_by": null,
+        "created_at": "2021-09-08T12:03:54+00:00",
+        "updated_at": "2021-09-10T02:36:41+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "honshj",
+            "118010298"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 226,
+        "title": "指定traineri所使用的数据集",
+        "body": "您好，我有一个关于加载自定义数据集的问题。\r\n如果我有已经划分好的想用于4个work_num的数据集。共8个csv文件，希望在运行过程中traineri对data_i__train.csv和data_i_test.csv中的数据进行训练。\r\n请问，这可能实现吗？如果可以的话，请问是否有可供参考的数据reader封装案例呢？\r\n谢谢。",
+        "state": "closed",
+        "user": "MaDanting",
+        "closed_by": "MaDanting",
+        "created_at": "2021-10-20T06:14:46+00:00",
+        "updated_at": "2022-01-06T15:20:57+00:00",
+        "closed_at": "2022-01-06T15:20:57+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 225,
+        "title": "请问PaddleFL有对paddle最新版本支持的计划吗？",
+        "body": "最近在使用PaddleFL中，发现只能支持到paddle1.8.5，而paddle1.8.5-gpu只能支持cuda10，而我们的显卡不能支持cuda11以下。请问PaddleFL有对paddle最新版本支持的计划吗？",
+        "state": "open",
+        "user": "zhangtiegang2014",
+        "closed_by": null,
+        "created_at": "2021-10-15T02:18:34+00:00",
+        "updated_at": "2021-10-16T14:43:14+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "guru4elephant"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 229,
+        "title": "询问",
+        "body": "有没有交流群QQ或者WeChat",
+        "state": "open",
+        "user": "ITerydh",
+        "closed_by": null,
+        "created_at": "2021-10-28T11:58:17+00:00",
+        "updated_at": "2021-10-28T11:58:17+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 236,
+        "title": "转自Paddle issue",
+        "body": "https://github.com/PaddlePaddle/Paddle/issues/37522， 麻烦帮忙看下这个问题",
+        "state": "open",
+        "user": "LielinJiang",
+        "closed_by": null,
+        "created_at": "2021-11-25T10:02:43+00:00",
+        "updated_at": "2021-11-25T10:02:43+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 246,
+        "title": "关于多机交互的docker网络设置问题",
+        "body": "您好。\r\n我正在尝试在两台虚拟机上使用fedavg进行联邦学习。当使用‘--net=host’时，可以正常训练。由于我想通过‘docker stats’对容器的运行状况进行检测，但是在这种网络设置下，docker stats检测到的网络流量为0B。 只能通过其他的比如iftop来检测两台虚拟机之间的网络流量。所以我尝试了用其他的网络设置，比如默认的桥接模式创建容器。但是遇到了几个问题：\r\n1. 使用默认的桥接模式，但是server和scheduler无法完成部署，开放端口映射到主机之后，server 和scheduler的日志中通常无任何信息，或者有时server会有如下错误:\r\n<img width=\"676\" alt=\"2\" src=\"https://user-images.githubusercontent.com/72608535/149762039-6cf895ff-7f47-4ec7-8789-64126f273b23.png\">\r\n也尝试更改了防火墙\r\n2. 尝试更改了一些设置或者Ip后，server可以完成监听，但是scheduler无法部署成功。尝试在scheduler的代码中打印了一些日志：\r\n<img width=\"496\" alt=\"微信图片_20220117142921\" src=\"https://user-images.githubusercontent.com/72608535/149761936-90212379-c331-4199-98d8-cc9d4c7d15cb.png\">\r\n\r\n请问，该如何不使用‘--net=host’创建容器，并进行多机交互呢？",
+        "state": "closed",
+        "user": "MaDanting",
+        "closed_by": "MaDanting",
+        "created_at": "2022-01-17T11:32:43+00:00",
+        "updated_at": "2022-03-01T18:51:30+00:00",
+        "closed_at": "2022-03-01T18:51:30+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 230,
+        "title": "在使用运行paddlefl的example中femnist例子时报错",
+        "body": "安装的是官方给的docker镜像。\r\ndocker pull paddlepaddle/paddlefl:1.1.2\r\ndocker run --name <docker_name> --net=host -it -v $PWD:/paddle <image id> /bin/bash\r\n\r\n进入后来到例子下的目录，输入以下命令，报错\r\n[root@kuboard-slaver femnist_demo]# python3 fl_master.py\r\nget_pserver_program() is deprecated, call get_pserver_programs() to get pserver main and startup in a single call.\r\n",
+        "state": "open",
+        "user": "izttt",
+        "closed_by": null,
+        "created_at": "2021-10-30T13:07:05+00:00",
+        "updated_at": "2023-02-07T16:01:30+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "izttt",
+            "pengbc917",
+            "pengbc917"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 238,
+        "title": "Enhancement of FE feature (PR #235)",
+        "body": "Guys, several question of about new feature of PR #235 \r\n\r\n1. what does the the directory of 'PaddleFL/feature' mean? does it mean 'PaddleFL/feature_engineering'? if yes, use the full spell.\r\n2. why not put the 'feature' code to the 'PaddleFL/python/'?\r\n3. do we need to install the whole PaddleFL to use the feature engineering functionalities?\r\n4. have no idea how to use the new pkg in  my code. Should I import PaddleFL first or something else?\r\n5. the README.md should be put under 'PaddleFL/feature' rather than under 'example'?\r\n6. you can generate pb files according to proto in CMakeFiles, rather than asking users to run it with separate python scripts\r\n7. we usually say 'Federated' rather than 'Federal'.\r\n\r\nHope to see responses to above @kaih70 @Sprate . Thx!\r\n\r\n-hj ",
+        "state": "closed",
+        "user": "honshj",
+        "closed_by": "honshj",
+        "created_at": "2021-11-26T16:24:43+00:00",
+        "updated_at": "2021-12-06T10:59:23+00:00",
+        "closed_at": "2021-12-06T10:58:57+00:00",
+        "comments_count": [
+            "honshj"
+        ],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 250,
+        "title": "请问有QQ或微信的交流群吗",
+        "body": null,
+        "state": "open",
+        "user": "ur2001",
+        "closed_by": null,
+        "created_at": "2022-03-04T09:49:35+00:00",
+        "updated_at": "2022-03-04T09:49:35+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 248,
+        "title": "关于文档中compile_and_intall部分，cmake和make失败的问题",
+        "body": "环境就是从hub.docker上pull的PaddleFL latest image，应该完全没有问题（下面也是在该image生成的container里跑的）\r\n然后当我根据官方文档中compile_and_intall部分的指示一步步做时:\r\n\r\n1. 先在cmake的时候遇到了问题，错误信息如下：![12](https://user-images.githubusercontent.com/32504103/155723382-b1b2a457-8c02-4d3f-b975-4d36e280fe6b.png)。这个属实有点搞笑🤣 官方文档里要求的paddle版本是1.8.0，并且官方的docker image里装的版本确实是1.8.0，而github上的cmake里被改成了<1.8.5就不给你干活（（ 当然后来通过魔改对应的cmake文件成功cmake了\r\n\r\n2. 下一个问题是，这样cmake之后就make失败了，如下图：\r\n![13](https://user-images.githubusercontent.com/32504103/155724432-4a187ace-4f30-4f3a-b3d1-b2c595421799.png)\r\n不知道是因为我之前魔改cmake文件导致的错误还是因为什么别的错误，反正我是完全按照文档里的指示去做了（（\r\n\r\n蹲一个解答qwq\r\n",
+        "state": "open",
+        "user": "JYYHH",
+        "closed_by": null,
+        "created_at": "2022-02-25T13:39:45+00:00",
+        "updated_at": "2022-02-25T14:47:35+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "JYYHH"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 251,
+        "title": "“数据的分片和重构支持离线和在线两种模式” 在哪里？",
+        "body": "README.md文档中，基于MPC训练，“安全训练和推理工作完成后，模型（或预测结果）将由计算方以加密形式输出。结果方可以收集加密的结果，使用PFM中的工具对其进行解密，并将明文结果传递给用户（目前数据的分片和重构支持离线和在线两种模式）。” ，其中的 \"在线进行数据的分片和重构\" 在哪个demo中可以看到？\r\nhttps://github.com/PaddlePaddle/PaddleFL/blob/master/README_cn.md#c-%E7%BB%93%E6%9E%9C%E9%87%8D%E6%9E%84\r\n![image](https://user-images.githubusercontent.com/45615979/156875458-3556ad89-73b0-4eb3-9651-c5e0d75fef70.png)\r\n",
+        "state": "open",
+        "user": "MDGBDGMG",
+        "closed_by": null,
+        "created_at": "2022-03-05T08:38:37+00:00",
+        "updated_at": "2022-03-05T09:02:28+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 249,
+        "title": "greater_equal和mul不能放在一起使用的问题",
+        "body": "您好，我在使用paddlefl框架时遇到了如下问题：下面的乘法代码运行时会报如下错误，当我注释掉“ op_ge = pfl_mpc.layers.greater_equal(x=x, y=y)”这一行代码时，乘法可以正常运行。我的理解是pfl_mpc.layers某些算法不能放在一起使用，例如基于混淆电路的greater_equal和基于算数电路的mul。如果我想在一起使用这些算法的话，需要怎么做呢？\r\n\r\n\r\nFAIL: test_ge (__main__.TestOptest)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"test.py\", line 51, in test_ge\r\n    self.assertEqual(ret[0], True)\r\nAssertionError: EnforceNotMet('\\n\\n----------------------[5701 chars]or]') != True\r\n\r\n----------------------------------------------------------------------\r\n\r\n\r\n`import unittest\r\nfrom multiprocessing import Manager\r\n\r\nimport numpy as np\r\nimport paddle.fluid as fluid\r\nimport paddle_fl.mpc as pfl_mpc\r\nimport test_op_base\r\nfrom paddle_fl.mpc.data_utils.data_utils import get_datautils\r\n\r\naby3 = get_datautils('aby3')\r\n\r\n\r\nclass TestOptest(test_op_base.TestOpBase):\r\n\r\n    def ge(self, **kwargs):\r\n        role = kwargs['role']\r\n        d_1 = kwargs['data_1'][role]\r\n        d_2 = kwargs['data_2'][role]\r\n        d_3 = kwargs['data_3'][role]\r\n        expected_out = kwargs['expect_results'][role]\r\n        pfl_mpc.init(\"aby3\", role, \"localhost\", self.server, int(self.port))\r\n        x = pfl_mpc.data(name='x', shape=[1], dtype='int64')\r\n        y = fluid.data(name='y', shape=[1], dtype='float32')\r\n        z = pfl_mpc.data(name='z', shape=[1], dtype='int64')\r\n        op_ge = pfl_mpc.layers.greater_equal(x=x, y=y)\r\n        exe = fluid.Executor(place=fluid.CPUPlace())\r\n        #results = exe.run(feed={'x': d_1, 'y': d_2}, fetch_list=[op_ge])\r\n        #print(results)\r\n        #self.assertEqual(results[0].shape, (1, ))\r\n        #self.assertTrue(np.allclose(results[0], expected_out))\r\n\r\n        print(\"here\")\r\n        op_mul = pfl_mpc.layers.mul(x=x, y=z)\r\n        results2 = exe.run(feed={'x': d_1, 'z': d_1}, fetch_list=[op_mul])\r\n        print(results2)\r\n\r\n    def test_ge(self):\r\n        data_1 = np.full((1), fill_value=6553.6)\r\n        data_1_shares = aby3.make_shares(data_1)\r\n        data_1_all3shares = np.array([aby3.get_shares(data_1_shares, i) for i in range(3)])\r\n        data_2 = [np.array([65536]).astype('float32')] * self.party_num\r\n        data_3 = np.full((1), fill_value=655.36)\r\n        data_3_shares = aby3.make_shares(data_1)\r\n        data_3_all3shares = np.array([aby3.get_shares(data_1_shares, i) for i in range(3)])\r\n        expect_results = [np.array([0])] * self.party_num\r\n        ret = self.multi_party_run(target=self.ge,\r\n                                   data_1=data_1_all3shares,\r\n                                   data_2=data_2,\r\n                                   data_3=data_3_all3shares,\r\n                                   expect_results=expect_results)\r\n        self.assertEqual(ret[0], True)\r\n\r\nif __name__ == '__main__':\r\n    unittest.main()\r\n`",
+        "state": "closed",
+        "user": "qwerfdg",
+        "closed_by": "qwerfdg",
+        "created_at": "2022-03-02T06:58:43+00:00",
+        "updated_at": "2022-03-09T06:24:47+00:00",
+        "closed_at": "2022-03-09T06:24:47+00:00",
+        "comments_count": [
+            "kaih70",
+            "qwerfdg",
+            "kaih70",
+            "qwerfdg"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 254,
+        "title": "不能找到mpc_data_utils",
+        "body": null,
+        "state": "open",
+        "user": "style507",
+        "closed_by": null,
+        "created_at": "2022-03-13T07:11:59+00:00",
+        "updated_at": "2022-03-13T07:12:20+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "style507"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 255,
+        "title": "逻辑回归demo中的bug以及可能的解决方案",
+        "body": "https://github.com/PaddlePaddle/PaddleFL/blob/08bfddb9160f9595b9ad9fb8563e16e39860e1ac/python/paddle_fl/mpc/examples/logistic_with_mnist/process_data.py#L142\r\n逻辑回归模型的预测输出结果是1维的，在得到预测分类的时候却使用了argmax函数寻找多个维度中的最大值，这里输出的结果只能是0，这里存在bug。以sigmod二分类为例，我认为这里预测输出的结果应该是属于0-1之间的一个概率，大于0.5时结果分类为标签1，小于0.5时结果分类为标签0，应该改成如下这样：\r\n`if i > 0.5:\r\n    f.write(str(1) + '\\n')\r\nelse :\r\n    f.write(str(0) + '\\n')`",
+        "state": "open",
+        "user": "qwerfdg",
+        "closed_by": null,
+        "created_at": "2022-03-21T03:44:45+00:00",
+        "updated_at": "2022-03-21T03:44:45+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 256,
+        "title": "报错 Can not find library: libpaddle_enc.so",
+        "body": "安装paddlefl-1.2.0后出现以下报错，但是1.1.2版本没有问题，是安装的paddlepaddle版本不对的问题吗？\r\n\r\nW0321 17:36:40.948619 17754 dynamic_loader.cc:120] Can not find library: /home/zyj/anaconda3/envs/paddle_env/lib/python3.7/site-packages/paddle_fl/mpc/libs/libpaddle_enc.so. The process maybe hang. Please try to add the lib path to LD_LIBRARY_PATH.\r\nTraceback (most recent call last):\r\n  File \"fl_trainer.py\", line 1, in <module>\r\n    from paddle_fl.paddle_fl.core.trainer.fl_trainer import FLTrainerFactory\r\n  File \"/home/zyj/anaconda3/envs/paddle_env/lib/python3.7/site-packages/paddle_fl/__init__.py\", line 15, in <module>\r\n    from . import mpc\r\n  File \"/home/zyj/anaconda3/envs/paddle_env/lib/python3.7/site-packages/paddle_fl/mpc/__init__.py\", line 59, in <module>\r\n    fluid.load_op_library(_paddle_enc_lib)\r\n  File \"/home/zyj/anaconda3/envs/paddle_env/lib/python3.7/site-packages/paddle/fluid/framework.py\", line 5162, in load_op_library\r\n    core.load_op_library(lib_filename)\r\npaddle.fluid.core_avx.EnforceNotMet: \r\n\r\n\r\n",
+        "state": "open",
+        "user": "ur2001",
+        "closed_by": null,
+        "created_at": "2022-03-21T09:43:14+00:00",
+        "updated_at": "2022-03-21T09:43:14+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 258,
+        "title": "PadddleFL加载预训练模型 可以加在PaddleHub里CV的模型吗？还是只可以加载联邦学习的模型",
+        "body": "PadddleFL加载预训练模型 可以加在PaddleHub里CV的模型吗？还是只可以加载PaddleFL的联邦学习的模型",
+        "state": "open",
+        "user": "13136983989",
+        "closed_by": null,
+        "created_at": "2022-04-28T03:02:35+00:00",
+        "updated_at": "2022-04-28T03:02:35+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 259,
+        "title": "请问边缘测是否支持使用PaddleLite？",
+        "body": "您好，\r\n\r\n由于边缘侧设备算力有限，可能是瑞芯微百八十块钱的芯片，联邦学习边缘设备上是否可以用PaddleLite（因为看到PaddleLite介绍说支持很多芯片种类）代替PaddlePaddle？\r\n或者您这个项目是否直接支持在低算力芯片上跑联邦学习神经网络算法呢？\r\n\r\n感谢！",
+        "state": "open",
+        "user": "quanh1990",
+        "closed_by": null,
+        "created_at": "2022-06-07T11:48:36+00:00",
+        "updated_at": "2022-06-07T11:48:36+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 260,
+        "title": "Would it be possible to have the Dockerfile?",
+        "body": "Hi,\r\nI attempted to testify the software via installation package, getting different errors according to the installed paddlepaddle version (I tried with the 1.8.5 and with the latest and the 2.0.0), whereas the docker container runs without problems. I would like to change a script to run both horizontal federated learning and vertical federated learning, but since I will need the Dockerfile which I did not find this is impossible. Would you be kind eventually to give me your email address? Thank you ",
+        "state": "open",
+        "user": "nataleletizia",
+        "closed_by": null,
+        "created_at": "2022-06-10T09:07:21+00:00",
+        "updated_at": "2022-06-10T09:07:21+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 263,
+        "title": "PaddleFl是否支持ARM服务器部署呢》有没有做过适配测试",
+        "body": "我们这边在ARM服务器上使用pip install paddle fl这种 扫描发现还是有x86的依赖，执行测试也会报错",
+        "state": "open",
+        "user": "zxc190615",
+        "closed_by": null,
+        "created_at": "2022-09-15T09:38:34+00:00",
+        "updated_at": "2022-09-15T09:38:34+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 262,
+        "title": "逻辑回归建模完成后导出的模型怎么重构出参数w和b？",
+        "body": null,
+        "state": "open",
+        "user": "senai0",
+        "closed_by": null,
+        "created_at": "2022-09-09T03:45:31+00:00",
+        "updated_at": "2022-09-09T03:45:31+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 261,
+        "title": "cannot find paddle_serving_client",
+        "body": "Traceback (most recent call last):\r\n  File \"fl_trainer.py\", line 15, in <module>\r\n    from paddle_fl.paddle_fl.core.trainer.fl_trainer import FLTrainerFactory\r\n  File \"/usr/local/python/lib/python3.8/site-packages/paddle_fl/paddle_fl/core/trainer/fl_trainer.py\", line 22, in <module>\r\n    import paddle_serving_client.io as serving_io\r\nModuleNotFoundError: No module named 'paddle_serving_client'\r\n",
+        "state": "open",
+        "user": "NLGithubWP",
+        "closed_by": null,
+        "created_at": "2022-06-14T16:55:51+00:00",
+        "updated_at": "2022-11-04T02:53:45+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ghost",
+            "qjing666"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 268,
+        "title": "How can i use detection_demo example",
+        "body": "Hello, I have implemented the detection_demo example in PaddleFl. It outputed files with the extension \"pdmodel, pdopt, pdparams\". How can I detect fruit using this trained model? I could not find it. Please help me.",
+        "state": "open",
+        "user": "natalialinov",
+        "closed_by": null,
+        "created_at": "2022-12-08T12:02:02+00:00",
+        "updated_at": "2022-12-08T12:02:02+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 275,
+        "title": "[咨询] ABY3.Truncation 算法出处问题",
+        "body": "你好～\r\n\r\n在项目里看到一个很漂亮的ABY3 Truncation算法\r\n\r\nhttps://github.com/PaddlePaddle/PaddleFL/blob/master/core/privc3/fixedpoint_tensor_imp.h#L290\r\n\r\n请问下面这个Truncation算法有论文出处吗？想去看文章学习一下\r\n\r\n谢谢～",
+        "state": "open",
+        "user": "rivertalk",
+        "closed_by": null,
+        "created_at": "2023-01-05T07:50:04+00:00",
+        "updated_at": "2023-01-05T07:50:04+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 274,
+        "title": "PaddleFL psi协议",
+        "body": "请问PaddleFL中实现的psi是基于哪篇文章呢？我看代码感觉像是[kkrt16](https://dl.acm.org/doi/10.1145/2976749.2978381)",
+        "state": "open",
+        "user": "qwerfdg",
+        "closed_by": null,
+        "created_at": "2022-12-22T06:20:26+00:00",
+        "updated_at": "2022-12-22T06:20:26+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 276,
+        "title": "AttributeError: module 'paddle.fluid' has no attribute 'load_op_library'",
+        "body": "1、docker pull registry.baidubce.com/paddlepaddle/paddle:2.4.1\r\n2、docker run --name docker_paddle  -it -v $PWD:/root registry.baidubce.com/paddlepaddle/paddle:2.4.1 /bin/bash\r\n3、pip install paddle_fl -i http://pypi.douban.com/simple --trusted-host pypi.douban.com\r\n4、docker容器中执行paddle，如下图\r\n![a9ee1375de6a620de0bec215f7b35695](https://user-images.githubusercontent.com/54620072/210760561-53b82a0f-003a-4795-beff-7671dad8df2d.png)\r\n5、执行example示例dpsgd_dem，报错如下图：\r\n<img width=\"915\" alt=\"image\" src=\"https://user-images.githubusercontent.com/54620072/210760931-fdd6fa42-fdb5-46ce-8aa8-64814ae41a19.png\">\r\n尝试修复问题的步骤\r\n1、docker容器使用2.1.0版本，怀疑paddle最新版本删除了对应的函数，找到发版时间小于paddle_fl的2021-12-06的时间执行上述步骤docker pull registry.baidubce.com/paddlepaddle/paddle:2.1.0重复步骤1/2/3/4/5，问题依然复现\r\n2、使用paddle2.4.1的源码编译产生的paddlepaddle-0.0.0-cp37-cp37m-linux_x86_64.whl，使用pip install -U paddlepaddle-0.0.0-cp37-cp37m-linux_x86_64.whl ，重复步骤5，问题依然复现，源码编译步骤如下链接地址：\r\nhttps://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/install/compile/linux-compile.html\r\n3、paddle降到2.0.1版本，上述错误没有出现，出现libpaddle_enc.so：that Paddle depends on is not configured correctly错误如下图：\r\n<img width=\"839\" alt=\"image\" src=\"https://user-images.githubusercontent.com/54620072/210784621-776badf7-e889-487c-83ce-9b4315724cb8.png\">\r\n<img width=\"1222\" alt=\"image\" src=\"https://user-images.githubusercontent.com/54620072/210784440-02a771c0-e186-44ce-bb70-f8cc2d8efe6b.png\">\r\n\r\n\r\n\r\n",
+        "state": "open",
+        "user": "icedrugs1989",
+        "closed_by": null,
+        "created_at": "2023-01-05T10:45:30+00:00",
+        "updated_at": "2023-01-05T12:54:15+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 277,
+        "title": "Container exiting after running for few seconds",
+        "body": "I guess there is some issue with the image\r\n![image](https://user-images.githubusercontent.com/73957024/217314064-4565bd20-f84c-4a8d-baac-afa36c34887e.png)\r\n",
+        "state": "open",
+        "user": "alok27a",
+        "closed_by": null,
+        "created_at": "2023-02-07T17:06:50+00:00",
+        "updated_at": "2023-02-07T17:06:50+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 278,
+        "title": "【咨询】dynamic_gru算法出现问题",
+        "body": "代码片段：\r\n```\r\n        conv_1 = pfl_mpc.layers.conv2d(\r\n           input=x, num_filters=6, filter_size=3, act='relu', padding=1)\r\n        pool_1 = pfl_mpc.layers.pool2d(\r\n            input=conv_1, pool_size=2, pool_stride=2)\r\n        conv_2 = pfl_mpc.layers.conv2d(\r\n            input=pool_1, num_filters=12, filter_size=3, act='relu', padding=1)\r\n        pool_2 = pfl_mpc.layers.pool2d(\r\n            input=conv_2, pool_size=2, pool_stride=2)\r\n        f = pfl_mpc.layers.fc(pool_2, 1, 3, act='relu')\r\n        f = layers.squeeze(f, [4])\r\n        f = layers.transpose(f, [0, 1, 3, 2])\r\n        for i in range(BATCH_SIZE): // 将batch_size中的数据一个一个取出\r\n            f_t = f[:, i:i+1, :, :]\r\n            f_t = layers.squeeze(f_t, [1])\r\n            sequenceout_t = pfl_mpc.layers.fc(input=f_t, size=12*3)\r\n            sequenceout_t = layers.transpose(sequenceout_t, [1, 0, 2])\r\n            sequenceout_t = pfl_mpc.layers.dynamic_gru(input=sequenceout_t, size=12) // 将数据放入dynamic_gru函数之中，也是该函数发出报错，只接受lod_level=1的数据输入 \r\n            if i == 0:\r\n                sequenceout = layers.unsqueeze(sequenceout_t, [1])\r\n            else:\r\n                sequenceout_t = layers.unsqueeze(sequenceout_t, [1])\r\n                sequenceout = layers.concat(input=[sequenceout, sequenceout_t], axis=1)\r\n                sequenceout_t = layers.squeeze(sequenceout_t, [1])\r\n        featureout = pfl_mpc.layers.batch_norm(input=sequenceout, act='relu')\r\n        fc_out = pfl_mpc.layers.fc(input=featureout, size=100)\r\n        fc_out = pfl_mpc.layers.fc(input=fc_out, size=10)\r\n        cost, softmax = pfl_mpc.layers.softmax_with_cross_entropy(\r\n            logits=fc_out, label=y, soft_label=True, return_softmax=True)\r\n        return cost, softmax\r\n```\r\n\t\r\n1、报错：\r\n`      Expected lods.size() == 1UL, but received lods.size():0 != 1UL:1.`\r\n      报错中，查看负责检查lods.size()的语句是: \r\n      \r\n```\r\n      auto lods = lod_tensor.lod();\r\n      PADDLE_ENFORCE_EQ(lods.size(), 1UL, \"Only support one level sequence now.\");\r\n```\r\n可以得知这里的lods.size()就是lod数组的第0维大小，检查是否等于1UL，就是检查是否第0维大小是1，即是否属于lod_level=1的类型。\r\n\r\n2、paddlefl中MpcVariable类型的数据无法调用LoDTensor中的成员函数，无法直接修改和继承lod信息。请问这二者之间有什么关系，能否互相转换以及自动生成lod数组呢？",
+        "state": "open",
+        "user": "silence-will20",
+        "closed_by": null,
+        "created_at": "2023-02-13T03:18:11+00:00",
+        "updated_at": "2023-02-13T07:22:23+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 284,
+        "title": "Default security parameter of the ABY3 protocol",
+        "body": "Hi, can I ask what is the default security parameter of the ABY3 protocol and how to change it in the program, for example, in the uci demo example: https://github.com/PaddlePaddle/PaddleFL/blob/master/python/paddle_fl/mpc/examples/linear_reg_with_uci/uci_demo.py Thanks in advance!",
+        "state": "open",
+        "user": "lemonviv",
+        "closed_by": null,
+        "created_at": "2023-03-31T12:54:01+00:00",
+        "updated_at": "2023-03-31T12:54:01+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 285,
+        "title": "PaddleFL升级到paddle2.4的计划",
+        "body": "有没有将PaddleFL升级到paddle2.4的计划，希望可以继续维护PaddleFL，能够升级到paddle2.4，并提供对应的例子",
+        "state": "open",
+        "user": "zixingpan",
+        "closed_by": null,
+        "created_at": "2023-04-18T05:57:13+00:00",
+        "updated_at": "2023-04-18T05:57:13+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 286,
+        "title": "安装包安装完之后，导入paddle失败",
+        "body": "我的python版本是3.8.0，发现当paddle1.8.5安装进来之后，无法导入关于paddle的所有包，报错了。。。\r\n这个是遗留问题吗？有没有最新解决方案（除了换docker部署除外）\r\n\r\n(paddlefl) [root@localhost Desktop]# python\r\nPython 3.8.0 (default, Nov  6 2019, 21:49:08) \r\n[GCC 7.3.0] :: Anaconda, Inc. on linux\r\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\r\n>>> **import paddle**\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/__init__.py\", line 37, in <module>\r\n    import paddle.complex\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/complex/__init__.py\", line 15, in <module>\r\n    from . import tensor\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/complex/tensor/__init__.py\", line 15, in <module>\r\n    from . import math\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/complex/tensor/math.py\", line 15, in <module>\r\n    from paddle.common_ops_import import *\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/common_ops_import.py\", line 15, in <module>\r\n    from paddle.fluid.layer_helper import LayerHelper\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/fluid/__init__.py\", line 51, in <module>\r\n    from . import io\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/fluid/io.py\", line 31, in <module>\r\n    from paddle.fluid import layers\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/fluid/layers/__init__.py\", line 19, in <module>\r\n    from . import nn\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/fluid/layers/nn.py\", line 33, in <module>\r\n    from .tensor import concat, assign, fill_constant, zeros, tensor_array_to_tensor, cast\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/fluid/layers/tensor.py\", line 27, in <module>\r\n    from . import utils\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/paddle/fluid/layers/utils.py\", line 25, in <module>\r\n    def convert_to_list(value, n, name, dtype=np.int):\r\n  File \"/root/miniconda3/envs/paddlefl/lib/python3.8/site-packages/numpy/__init__.py\", line 305, in __getattr__\r\n    raise AttributeError(__former_attrs__[attr])\r\nAttributeError: module 'numpy' has no attribute 'int'.\r\n`np.int` was a deprecated alias for the builtin `int`. To avoid this error in existing code, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.\r\nThe aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:\r\n    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations\r\n>>> \r\n",
+        "state": "open",
+        "user": "Mash2065",
+        "closed_by": null,
+        "created_at": "2023-04-20T15:02:13+00:00",
+        "updated_at": "2023-04-20T15:02:13+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFL",
+        "number": 288,
+        "title": " Which communication protocol and serialization method is supported?",
+        "body": "Dear Paddle Team,\r\n\r\nI am currently writing a survey paper on Federated Computing. One part of it describes existing FL frameworks. Could you please let me know which communication protocol (e.g., gRPC, WebSocket, HTTP, GLOO) and serialization method (e.g., Pickle, JSON, Protobuf, FOBS) Paddle supports? I already saw in your code base that you support gRPC, but maybe there is more.\r\n\r\nAny help is highly appreciated.",
+        "state": "open",
+        "user": "Rene36",
+        "closed_by": null,
+        "created_at": "2024-03-21T12:13:12+00:00",
+        "updated_at": "2024-03-21T12:13:12+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    }
+]

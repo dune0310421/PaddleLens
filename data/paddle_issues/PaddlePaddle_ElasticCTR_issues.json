@@ -1,0 +1,44 @@
+[
+    {
+        "repo": "PaddlePaddle/ElasticCTR",
+        "number": 7,
+        "title": "执行报错“error: unable to recognize \"fileserver.yaml\": no matches for kind \"Deployment\" in version \"apps/v1beta1\"”",
+        "body": "在配置好k8s，mlflow，hadoop，hdfs，volcano\r\n后，\r\n执行，\r\n`bash elastic-control.sh -r -u 4 -m 4 -t 2 -p 2 -b 5 -s slot.conf -f data.config`\r\n报错，报错信息如下：\r\n```\r\ncube.yaml written to ./cube.yaml\r\ntransfer.yaml written to ./transfer.yaml\r\nFile server yaml written to fileserver.yaml\r\nMain yaml written to fleet-ctr.yaml\r\nstart file-server pod\r\nservice/file-server created\r\nerror: unable to recognize \"fileserver.yaml\": no matches for kind \"Deployment\" in version \"apps/v1beta1\"\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nsearching file-server external IP, wait a moment.\r\nerror in K8S cluster, cannot continue. Aborted\r\n[FAILED] config_resource: upload_slot_conf failed\r\n```\r\n想请教下，是需要更改fileserver.yaml中的配置嘛还是？\r\n谢谢",
+        "state": "open",
+        "user": "riverind",
+        "closed_by": null,
+        "created_at": "2023-03-09T10:27:53+00:00",
+        "updated_at": "2023-03-09T10:39:26+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/ElasticCTR",
+        "number": 6,
+        "title": "这个是否达到生产可用？文档能否多一些？",
+        "body": "请问有微信群或者QQ群吗？或者维护人员的微信给一个也行",
+        "state": "open",
+        "user": "readthecodes",
+        "closed_by": null,
+        "created_at": "2021-01-12T17:04:46+00:00",
+        "updated_at": "2021-01-12T17:04:46+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/ElasticCTR",
+        "number": 5,
+        "title": "cluster_config.md 文档中的kubectl链接表述有问题",
+        "body": "[cluster_config.md](https://github.com/PaddlePaddle/ElasticCTR/blob/master/cluster_config.md) 中给出的kubectl下载链接只能用在mac（darwin）不能用在linux，没有给出说明",
+        "state": "open",
+        "user": "barrierye",
+        "closed_by": null,
+        "created_at": "2020-04-23T05:38:33+00:00",
+        "updated_at": "2020-07-03T23:50:20+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    }
+]

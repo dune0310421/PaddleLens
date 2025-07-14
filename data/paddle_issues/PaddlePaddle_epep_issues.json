@@ -1,0 +1,64 @@
+[
+    {
+        "repo": "PaddlePaddle/epep",
+        "number": 4,
+        "title": "batch_norm效果异常求解答",
+        "body": "实现了一个ranknet，网络是fc-bn-fc-bn-fc-bn-fc-bn-fc-bn-fc，fc神经元的数量除了最后一层是1，其他都是32. fc没有激活，bn用的relu。 输入是 样本label永远是1，左边是pos，右边是neg，左边永远大于右边；设计是希望pos和neg走同一个上面的网络，计算出最后一层结果，然后进入margin_rank_loss，所以永远是pos-neg，然后做sigmoid和二元交叉熵logloss，最后取均值作为loss。\r\n逻辑是，希望网络能够根据特征计算相关性得分，然后pos-neg差值越大越好。\r\n\r\n**现在问题是，训练时loss迅速降为0.001，预测时效果很差**。加载训练好的模型再进行训练，loss 0.001，但是一旦bn使用全局状态（use_global_stats设为True，不更新bn参数，模拟预测），立刻loss暴涨。 辛苦帮忙看下是bn层有异常么？\r\n其中一层FC-bn\r\n![BaiduHi_2019-11-26_10-41-4](https://user-images.githubusercontent.com/9897441/69595313-29950100-103a-11ea-926f-52fa3419eb37.png)\r\n\r\n最后一层fc\r\n![2](https://user-images.githubusercontent.com/9897441/69595324-2dc11e80-103a-11ea-85a3-711ce5bd4c35.png)\r\n\r\nloss的构成\r\n![3](https://user-images.githubusercontent.com/9897441/69595331-3154a580-103a-11ea-9323-6c8352ef326e.png)\r\n",
+        "state": "open",
+        "user": "Archimondecy",
+        "closed_by": null,
+        "created_at": "2019-11-26T02:48:04+00:00",
+        "updated_at": "2019-11-26T02:48:04+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/epep",
+        "number": 3,
+        "title": "预测时，加载历史训练的模型文件后，可以自定义model_output，比如输出预测得分 || 词向量中间值等等。 ",
+        "body": "",
+        "state": "closed",
+        "user": "Archimondecy",
+        "closed_by": "anpark",
+        "created_at": "2019-10-08T03:32:51+00:00",
+        "updated_at": "2019-10-11T00:06:27+00:00",
+        "closed_at": "2019-10-11T00:06:27+00:00",
+        "comments_count": [
+            "anpark"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/epep",
+        "number": 2,
+        "title": "加载之前训练的模型，继续训练",
+        "body": "训练中难免会有中断的情况，希望可以加载之前的模型，继续训练",
+        "state": "closed",
+        "user": "Archimondecy",
+        "closed_by": "anpark",
+        "created_at": "2019-09-19T11:57:03+00:00",
+        "updated_at": "2019-10-11T00:06:38+00:00",
+        "closed_at": "2019-10-11T00:06:38+00:00",
+        "comments_count": [
+            "anpark"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/epep",
+        "number": 1,
+        "title": "训练时，每隔n个batch进行一次自定义的操作",
+        "body": "希望能够提供功能：训练时，每隔n个batch进行一次自定义的操作。比如保存模型，比如跑一次预测。",
+        "state": "closed",
+        "user": "Archimondecy",
+        "closed_by": "anpark",
+        "created_at": "2019-09-19T11:56:15+00:00",
+        "updated_at": "2019-10-11T00:06:48+00:00",
+        "closed_at": "2019-10-11T00:06:48+00:00",
+        "comments_count": [
+            "anpark"
+        ],
+        "labels": []
+    }
+]

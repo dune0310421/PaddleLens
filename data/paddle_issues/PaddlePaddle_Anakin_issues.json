@@ -1,0 +1,1421 @@
+[
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 16,
+        "title": "Dockerfiles build error",
+        "body": " Dockerfile can't be built successfully",
+        "state": "closed",
+        "user": "pangge",
+        "closed_by": "pangge",
+        "created_at": "2018-05-28T15:36:29+00:00",
+        "updated_at": "2018-05-29T06:28:35+00:00",
+        "closed_at": "2018-05-29T06:28:35+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 14,
+        "title": "Anakin Can't build with mklml...",
+        "body": "",
+        "state": "closed",
+        "user": "pangge",
+        "closed_by": "pangge",
+        "created_at": "2018-05-28T15:31:18+00:00",
+        "updated_at": "2018-05-30T07:38:03+00:00",
+        "closed_at": "2018-05-30T07:38:03+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 21,
+        "title": "how to run model on android device",
+        "body": "",
+        "state": "closed",
+        "user": "huayong",
+        "closed_by": "throneclay",
+        "created_at": "2018-05-29T12:21:04+00:00",
+        "updated_at": "2019-06-24T11:27:14+00:00",
+        "closed_at": "2019-06-24T11:27:14+00:00",
+        "comments_count": [
+            "pangge"
+        ],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 29,
+        "title": "build failed on Centos",
+        "body": "make会提示如下错误，直接解开tar包是没问题的，mklml的包也成功下载下来了，多次编译也不能通过\r\n```\r\n[  1%] Performing download step for 'extern_mklml'\r\n--2018-05-30 21:14:26--  http://paddlepaddledeps.cdn.bcebos.com/mklml_lnx_2018.0.3.20180406.tgz\r\n正在解析主机 paddlepaddledeps.cdn.bcebos.com (paddlepaddledeps.cdn.bcebos.com)... 221.195.34.35\r\n正在连接 paddlepaddledeps.cdn.bcebos.com (paddlepaddledeps.cdn.bcebos.com)|221.195.34.35|:80... 已连接。\r\n已发出 HTTP 请求，正在等待回应... 416 Requested Range Not Satisfiable\r\n\r\n    文件已下载完成；不会进行任何操作。\r\n\r\ntar: DOWNLOAD_NO_PROGRESS：归档中找不到\r\ntar: 1：归档中找不到\r\ntar: 由于前次错误，将以上次的错误状态退出\r\nmake[2]: *** [third-party/mklml/src/extern_mklml-stamp/extern_mklml-download] 错误 2\r\nmake[1]: *** [CMakeFiles/extern_mklml.dir/all] 错误 2\r\nmake: *** [all] 错误 2\r\n```",
+        "state": "closed",
+        "user": "throneclay",
+        "closed_by": "pangge",
+        "created_at": "2018-05-30T13:16:17+00:00",
+        "updated_at": "2018-05-31T08:37:19+00:00",
+        "closed_at": "2018-05-31T08:37:19+00:00",
+        "comments_count": [
+            "pangge"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 42,
+        "title": "Remove unnecessary null pointer checks",
+        "body": "[An extra null pointer check is not needed in functions](https://isocpp.org/wiki/faq/freestore-mgmt#delete-handles-null \"Do I need to check for null before delete p?\") like the following.\r\n- [Graph](https://github.com/PaddlePaddle/Anakin/blob/af7d12fe0a6d2fc25835b8e5080e3b8e22e23a52/framework/graph/graph.h#L49 \"Destructor for Graph\")\r\n- [Node](https://github.com/PaddlePaddle/Anakin/blob/931bf899166c627888d38372f00675b9d85b8d6d/framework/graph/node.h#L124 \"Destructor for Node\")\r\n- [SaberConv2DActPooling](https://github.com/PaddlePaddle/Anakin/blob/880b269c89c2786db2a4534a4060c3d67b26ebe5/saber/funcs/impl/x86/saber_conv_act_pooling.h#L53 \"Destructor for SaberConv2DActPooling\")",
+        "state": "open",
+        "user": "elfring",
+        "closed_by": null,
+        "created_at": "2018-06-03T12:20:32+00:00",
+        "updated_at": "2018-06-25T18:22:17+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "throneclay",
+            "elfring"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 12,
+        "title": "build faild when USE X86 OFF",
+        "body": "",
+        "state": "closed",
+        "user": "cyj1986",
+        "closed_by": "LittleMaer",
+        "created_at": "2018-05-28T10:21:59+00:00",
+        "updated_at": "2018-05-28T11:32:22+00:00",
+        "closed_at": "2018-05-28T11:32:22+00:00",
+        "comments_count": [
+            "LittleMaer"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 11,
+        "title": "ubuntu 16.04 build fail on gcc 4.8.5",
+        "body": "based on ubuntu [Dockerfile](https://github.com/PaddlePaddle/Anakin/blob/master/docker/gpu/centos7-cuda8-cudnn7-anakin-release/Dockerfile), and changed gcc version to 4.8.5.\r\nerror message as follows.\r\n\r\nLinking CXX executable ../../output/unit_test/test_saber_buffer_NV\r\n/usr/bin/ld: ../../output/libanakin.so.2.0.1: undefined reference to symbol 'cudnnGetRNNLinLayerBiasParams'\r\n/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/libcudnn.so: error adding symbols: DSO missing from command line\r\ncollect2: error: ld returned 1 exit status\r\ntest/CMakeFiles/test_TargetWrapper.dir/build.make:93: recipe for target '../output/unit_test/test_TargetWrapper' failed\r\nmake[2]: *** [../output/unit_test/test_TargetWrapper] Error 1\r\nCMakeFiles/Makefile2:757: recipe for target 'test/CMakeFiles/test_TargetWrapper.dir/all' failed\r\nmake[1]: *** [test/CMakeFiles/test_TargetWrapper.dir/all] Error 2",
+        "state": "closed",
+        "user": "micytw",
+        "closed_by": "pangge",
+        "created_at": "2018-05-28T07:46:29+00:00",
+        "updated_at": "2018-06-14T10:17:32+00:00",
+        "closed_at": "2018-06-14T10:16:48+00:00",
+        "comments_count": [
+            "pangge",
+            "pangge"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 4,
+        "title": "ubuntu build fail ",
+        "body": "使用ubuntu 16.04 编译报错，gcc版本5.4。报错信息如下：\r\n`/usr/include/c++/5/bits/stl_function.h:357:20: error: no match for ‘operator==’ (operand types are ‘const anakin::graph::io’ and ‘const anakin::graph::io’)\r\n       { return __x == __y; }`",
+        "state": "closed",
+        "user": "throneclay",
+        "closed_by": "pangge",
+        "created_at": "2018-05-26T08:32:48+00:00",
+        "updated_at": "2018-05-29T14:03:44+00:00",
+        "closed_at": "2018-05-29T14:03:44+00:00",
+        "comments_count": [
+            "pangge"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 24,
+        "title": "need embedding and scale op",
+        "body": "",
+        "state": "closed",
+        "user": "cyj1986",
+        "closed_by": "pangge",
+        "created_at": "2018-05-30T07:26:03+00:00",
+        "updated_at": "2018-05-30T08:43:59+00:00",
+        "closed_at": "2018-05-30T08:43:59+00:00",
+        "comments_count": [
+            "pangge"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 43,
+        "title": "reserved identifier violation",
+        "body": "I would like to point out that an identifier like \"[`_Op`](https://github.com/PaddlePaddle/Anakin/blob/931bf899166c627888d38372f00675b9d85b8d6d/framework/graph/node.h#L265 \"Update candidate\")\" [does eventually not fit](https://www.securecoding.cert.org/confluence/display/cplusplus/DCL51-CPP.+Do+not+declare+or+define+a+reserved+identifier \"Do not use identifiers which are reserved for the compiler implementation.\") to the expected naming convention of the C++ language standard.\r\nWould you like to adjust your selection for unique names?",
+        "state": "open",
+        "user": "elfring",
+        "closed_by": null,
+        "created_at": "2018-06-03T12:38:22+00:00",
+        "updated_at": "2018-06-04T03:04:59+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "LittleMaer"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 54,
+        "title": " Could NOT find OpenMP_C on mac ",
+        "body": "",
+        "state": "closed",
+        "user": "Lighted",
+        "closed_by": "Lighted",
+        "created_at": "2018-06-05T02:44:25+00:00",
+        "updated_at": "2018-06-05T02:52:51+00:00",
+        "closed_at": "2018-06-05T02:52:26+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 44,
+        "title": "Improve exception safety with smart pointers",
+        "body": "Would you like to [wrap any pointers](https://github.com/PaddlePaddle/Anakin/blob/af7d12fe0a6d2fc25835b8e5080e3b8e22e23a52/framework/model_parser/parser/parser.cpp#L55 \"Update candidate: load()\") with the class template “[std::unique_ptr](https://en.wikipedia.org/wiki/Smart_pointer#unique_ptr \"Description for the usage of smart pointers\")”?",
+        "state": "open",
+        "user": "elfring",
+        "closed_by": null,
+        "created_at": "2018-06-03T13:37:36+00:00",
+        "updated_at": "2018-06-04T08:43:11+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "pangge"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 77,
+        "title": "Support and benchmark for int8",
+        "body": "Hi!, I am interested in the Anakin project. \r\n\r\nI would like to know if there are any supports & benchmark results for int8?  If not, will there be any?  thx!",
+        "state": "closed",
+        "user": "hxbloom",
+        "closed_by": "LittleMaer",
+        "created_at": "2018-06-07T09:09:01+00:00",
+        "updated_at": "2018-06-12T12:05:29+00:00",
+        "closed_at": "2018-06-11T02:51:29+00:00",
+        "comments_count": [
+            "LittleMaer",
+            "hxbloom"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 98,
+        "title": "Support for different input shapes between frames",
+        "body": "Hi, I have a new question,\r\n\r\nDoes Anakin support “variadic” input shapes?   For example, in frame 1, I have one standard 224*224 image as input. But in frame 2, I have another image of any arbitrary size like 456*789.    I would like to know if Anakin could support. \r\n\r\nThank you~ ~",
+        "state": "closed",
+        "user": "hxbloom",
+        "closed_by": "hxbloom",
+        "created_at": "2018-06-12T12:04:51+00:00",
+        "updated_at": "2018-06-15T08:55:46+00:00",
+        "closed_at": "2018-06-15T08:55:46+00:00",
+        "comments_count": [
+            "LittleMaer",
+            "hxbloom"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 119,
+        "title": "argmax compute error",
+        "body": "",
+        "state": "closed",
+        "user": "cyj1986",
+        "closed_by": "cyj1986",
+        "created_at": "2018-06-21T08:14:14+00:00",
+        "updated_at": "2018-06-29T09:13:48+00:00",
+        "closed_at": "2018-06-29T09:13:48+00:00",
+        "comments_count": [
+            "cyj1986"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 133,
+        "title": "no example",
+        "body": "no example for new user",
+        "state": "closed",
+        "user": "qq332982511",
+        "closed_by": "LittleMaer",
+        "created_at": "2018-06-25T11:33:59+00:00",
+        "updated_at": "2018-06-28T12:18:29+00:00",
+        "closed_at": "2018-06-28T12:18:29+00:00",
+        "comments_count": [
+            "HaoLiuHust"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 101,
+        "title": "TensorRT MobileNet benchmark results",
+        "body": "I am curious about how you implement depthwise plugin layer in TRT by yourselves? The MobileNet v1, v2 test results do not make sense to me. Why so little latency difference between batchsize=1 and 2?",
+        "state": "closed",
+        "user": "chybhao666",
+        "closed_by": "LittleMaer",
+        "created_at": "2018-06-13T02:57:58+00:00",
+        "updated_at": "2018-08-07T08:04:46+00:00",
+        "closed_at": "2018-08-06T19:13:09+00:00",
+        "comments_count": [
+            "giranntu",
+            "LittleMaer",
+            "giranntu"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 129,
+        "title": "convert tool error when convert caffe model",
+        "body": "liuhao@umaster:~/OpenSource/Anakin/tools/external_converter_v2$ python converter.py \r\nTraceback (most recent call last):\r\n  File \"converter.py\", line 16, in <module>\r\n    from parser import *\r\n  File \"/home/liuhao/OpenSource/Anakin/tools/external_converter_v2/parser/__init__.py\", line 8, in <module>\r\n    from graph import *\r\n  File \"/home/liuhao/OpenSource/Anakin/tools/external_converter_v2/parser/graph.py\", line 6, in <module>\r\n    from proto import *\r\n  File \"/home/liuhao/OpenSource/Anakin/tools/external_converter_v2/parser/proto/__init__.py\", line 5, in <module>\r\n    from graph_pb2 import *\r\n  File \"/home/liuhao/OpenSource/Anakin/tools/external_converter_v2/parser/proto/graph_pb2.py\", line 15, in <module>\r\n    import node_pb2 as node__pb2\r\n  File \"/home/liuhao/OpenSource/Anakin/tools/external_converter_v2/parser/proto/node_pb2.py\", line 15, in <module>\r\n    import operator_pb2 as operator__pb2\r\n  File \"/home/liuhao/OpenSource/Anakin/tools/external_converter_v2/parser/proto/operator_pb2.py\", line 22, in <module>\r\n    serialized_pb=_b('\\n\\x0eoperator.proto\\\"e\\n\\x07OpProto\\x12\\x0c\\n\\x04name\\x18\\x01 \\x01(\\t\\x12\\x16\\n\\x0eis_commutative\\x18\\x02 \\x01(\\x08\\x12\\x0e\\n\\x06in_num\\x18\\x03 \\x01(\\x05\\x12\\x0f\\n\\x07out_num\\x18\\x04 \\x01(\\x05\\x12\\x13\\n\\x0b\\x64\\x65scription\\x18\\x05 \\x01(\\tb\\x06proto3')\r\nTypeError: __new__() got an unexpected keyword argument 'serialized_options'",
+        "state": "open",
+        "user": "HaoLiuHust",
+        "closed_by": null,
+        "created_at": "2018-06-23T10:28:17+00:00",
+        "updated_at": "2018-09-21T03:25:59+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "HaoLiuHust",
+            "HaoLiuHust",
+            "qichaotang",
+            "HaoLiuHust",
+            "Shixiaowei02"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 136,
+        "title": "only debug mode can work",
+        "body": "when I complied with release flag, benchmark will exit with segment fault, but debug will be ok",
+        "state": "closed",
+        "user": "HaoLiuHust",
+        "closed_by": "LittleMaer",
+        "created_at": "2018-06-25T13:31:24+00:00",
+        "updated_at": "2018-07-10T09:11:03+00:00",
+        "closed_at": "2018-07-10T09:11:03+00:00",
+        "comments_count": [
+            "LittleMaer"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 135,
+        "title": "how to set gpu id",
+        "body": "seems it uses all gpus, is there a way to specify one?",
+        "state": "closed",
+        "user": "HaoLiuHust",
+        "closed_by": "LittleMaer",
+        "created_at": "2018-06-25T12:38:12+00:00",
+        "updated_at": "2018-07-10T09:12:44+00:00",
+        "closed_at": "2018-07-10T09:12:44+00:00",
+        "comments_count": [
+            "xyoungli"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 161,
+        "title": "load saved model failed",
+        "body": " WAN| 08:46:02.00618| 6.902s| main_thread| parser.cpp:138]  Parsing in edges of node : relu5_4\r\n FTL| 08:46:02.00618| 6.902s| main_thread| graph_base.inl:57] Check failed: (this->has_vertex(arc.bottom()) && this->has_vertex(arc.top()))  The arc's top or bottom is not vertex!\r\n *** Check failed: (this->has_vertex(arc.bottom()) && this->has_vertex(arc.top()))  fatal error: stack trace: ***\r\n 6             0x4a3329 ./anakin_demo() [0x4a3329]\r\n 5       0x7febe6ff2830 __libc_start_main + 240 [??:0]\r\n4             0x4a420b ./anakin_demo() [0x4a420b]\r\n 3       0x7febe8878e96 anakin::graph::Graph<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0>::load(std::string) + 202 [??:0]\r\n 2       0x7febe877e99a anakin::Status anakin::parser::load<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0>(anakin::graph::Graph<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0>*, std::string&) + 69 [??:0]\r\n 1       0x7febe877f4d2 anakin::Status anakin::parser::load<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0>(anakin::graph::Graph<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0>*, char const*) + 2656 [??:0]\r\n 0             0x4e5cbd anakin::graph::GraphBase<std::string, std::shared_ptr<anakin::graph::Node<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0> >, anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, anakin::saber::NCHW>*, anakin::graph::Edge<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1> >::add_in_arc(anakin::graph::Edge<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1>&) + 451 [??:?]\r\n",
+        "state": "closed",
+        "user": "adeagle",
+        "closed_by": "adeagle",
+        "created_at": "2018-06-29T01:09:55+00:00",
+        "updated_at": "2018-06-30T04:09:20+00:00",
+        "closed_at": "2018-06-30T04:09:20+00:00",
+        "comments_count": [
+            "LittleMaer",
+            "adeagle"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 202,
+        "title": "GCC 7.2.0 build request.h error",
+        "body": "\r\n\r\nrequest.h:30:63: error: cannot call member function ‘const string anakin::type_id<T>::type_info() [with T = void; std::__cxx11::string = std::__cxx11::basic_string<char>]’ without object\r\n     const std::string info = anakin::type_id<type>::type_info();\r\n\r\n\r\nAnakin/framework/core/operator/operator.h:120:67: error: expected primary-expression before ‘>’ token\r\n     T get_attr(std::string attr_name) { return _node_p->get_attr<T>(attr_name); }\r\n\r\n\r\n",
+        "state": "closed",
+        "user": "leiyu1980",
+        "closed_by": "leiyu1980",
+        "created_at": "2018-07-11T06:37:21+00:00",
+        "updated_at": "2018-08-01T06:46:02+00:00",
+        "closed_at": "2018-08-01T06:46:02+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 188,
+        "title": "Wrong shape of input tensor.",
+        "body": "Thanks for the great library.\r\nI want to run my model on ARM and model was converted successfully.\r\nI follow the arm inference example classification.cpp.\r\nModel loaded successfully and graph.get_outs() returns OK.\r\nBut d_tensor_in_p->valid_shape() returns all 0.\r\nI can see the correct shapes on web model dashboard.\r\n\r\n    Net<ARM, AK_FLOAT, Precision::FP32, OpRunType::SYNC> net_executer(graph, ctx1, true);\r\n\r\n    //! get in\r\n    LOG(INFO) << \"get input\";\r\n    auto d_tensor_in_p = net_executer.get_in(\"input_0\");\r\n    auto valid_shape_in = d_tensor_in_p->valid_shape();\r\n    for (int i = 0; i < valid_shape_in.size(); i++) {\r\n        LOG(INFO) << \"detect input dims[\" << i << \"]\" << valid_shape_in[i];\r\n    }\r\n\r\nI've used exactly same code from classification.cpp.\r\nHope to any suggestions.",
+        "state": "open",
+        "user": "Alan-Turing-Ko",
+        "closed_by": null,
+        "created_at": "2018-07-04T08:46:27+00:00",
+        "updated_at": "2018-07-06T05:22:29+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xyoungli"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 208,
+        "title": "How to run in ios deveces？",
+        "body": "Hello, I want to benchmark Anakin in ios device. But, I can't find relate informataion in Anakin's wiki page.  Do you have verified Anakin in ios devices？ Thanks.",
+        "state": "open",
+        "user": "tkpei",
+        "closed_by": null,
+        "created_at": "2018-07-12T08:24:08+00:00",
+        "updated_at": "2018-07-25T23:39:39+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xyoungli"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 210,
+        "title": "Wrong calculation in pooling layer. < pooling3x3s2_max >",
+        "body": "**Function: pooling3x3s2_max   ( arm/impl/pooling_arm_impl.cpp )**\r\n**Layer Definition:**\r\nlayer {\r\n  name: \"Pooling1\"\r\n  type: \"Pooling\"\r\n  bottom: \"Convolution3\"\r\n  top: \"Pooling1\"\r\n  pooling_param {\r\n    pool: MAX\r\n    kernel_size: 3\r\n    stride: 2\r\n  }\r\n}\r\n**Input dim: 1, 64, 61, 61**\r\n**Output dim: 1, 64, 30, 30**\r\n**Input Values:**\r\n<0, 0>:0.072792\r\n...\r\n<1, 57>: 0.021526\r\n<1, 58>: 0.021526\r\n<1, 59>: 0.021526\r\n<1, 60>: 0.041485\r\n\r\n**Output Values:**\r\n<0, 27>:0.021526\r\n<0, 28>:0.021526\r\n<0, 29>:0.021526\r\n<1, 0>: 0.072792\r\n\r\nI think Output<0, 29> must be 0.041485.\r\nPlease check and fix bug asap.",
+        "state": "open",
+        "user": "Alan-Turing-Ko",
+        "closed_by": "Alan-Turing-Ko",
+        "created_at": "2018-07-13T12:27:24+00:00",
+        "updated_at": "2018-07-25T23:40:59+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xyoungli"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 191,
+        "title": "wrong impl init",
+        "body": "base.h has some wrong impl init.",
+        "state": "closed",
+        "user": "throneclay",
+        "closed_by": "xyoungli",
+        "created_at": "2018-07-06T05:06:56+00:00",
+        "updated_at": "2018-07-12T03:13:25+00:00",
+        "closed_at": "2018-07-12T03:13:25+00:00",
+        "comments_count": [
+            "xyoungli"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 195,
+        "title": "Help!!  Crash in Net init.",
+        "body": "Thanks for the great library.\r\nI want to run mobilenet (in benchmark example) on ARM in jni and model was converted successfully.\r\nI follow the arm inference example classification.cpp.\r\nModel loaded successfully and graph.get_outs() returns OK.\r\nBut when call \r\n    Net<ARM, AK_FLOAT, Precision::FP32, OpRunType::SYNC> net_executer(graph, ctx1, true);\r\napp crashes.\r\nCrash context is following module in net.cpp.\r\n\r\ntemplate<typename Ttype, DataType Dtype, Precision Ptype, OpRunType RunType>\r\nvoid Net<Ttype, Dtype, Ptype, RunType>::init(graph::Graph<Ttype, Dtype, Ptype>& graph, \\\r\n    OpContextPtr<Ttype> ctx) {\r\n\r\n    init_env(graph);\r\n    // shallow copy\r\n    _graph_p->CopyFrom(graph);\r\n    auto node_names_in_exec_order = graph.get_nodes_in_order();\r\n    // infer basic shape and parsing parameter from graph\r\n    for (auto& node_name : node_names_in_exec_order) {\r\n        auto node_ptr = (*_graph_p)[node_name];\r\n        //LOG(ERROR) << \"get node \" << node_name << \", op type \" << node_ptr->get_op_name();\r\n        if (node_ptr->get_op_name() == \"Output\") {\r\n            continue;\r\n        }\r\n\r\n        // create operations\r\n        auto* op_pointer = OpFactory<Ttype, Dtype, Ptype>::Global()[node_ptr->get_op_name()]; // Crash\r\n\r\nnode_ptr->get_op_name() is \"Input\".\r\nGlobal().get_list_op_name() returns empty list.\r\n\r\nWhat can be the issue?\r\nHope to any suggestions.\r\n",
+        "state": "open",
+        "user": "Alan-Turing-Ko",
+        "closed_by": null,
+        "created_at": "2018-07-09T09:32:05+00:00",
+        "updated_at": "2018-07-12T03:12:14+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xyoungli"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 247,
+        "title": "[BUG] 7cdf32 commit",
+        "body": "",
+        "state": "open",
+        "user": "Shixiaowei02",
+        "closed_by": null,
+        "created_at": "2018-07-27T13:42:00+00:00",
+        "updated_at": "2018-07-27T13:42:00+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 249,
+        "title": "Anakin arm branch: run squeezenet_v1.1,  result is all zero!!!",
+        "body": "    Hello, I run Anakin arm branch for benchmark squeezenet_v1.1 and vgg16, but I get a wrong result. Net output is all Zero.  I have verify my code in mobilenet 1.0, I can get the right result. But, with squeezenet_v1.1 and vgg16, some wrong happen.  \r\n    I don`t get warning when load net parameter, that mean all operators should been support by Anakin. Log also show \"constructs the executer net success\". \r\n    I want to know what happen? Do you have verify you code in squeezenet and vgg16?\r\nThanks !!!",
+        "state": "open",
+        "user": "tkpei",
+        "closed_by": null,
+        "created_at": "2018-07-28T03:59:04+00:00",
+        "updated_at": "2018-07-28T03:59:04+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 253,
+        "title": "saber_normalize occasionally wrong result when param.across_spatial=true ",
+        "body": "",
+        "state": "open",
+        "user": "MyPandaShaoxiang",
+        "closed_by": null,
+        "created_at": "2018-07-31T04:14:36+00:00",
+        "updated_at": "2018-07-31T04:14:36+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 238,
+        "title": "gpu multi-stream sync error ",
+        "body": "tensores are not synced when ops are launched in different streams",
+        "state": "open",
+        "user": "xyoungli",
+        "closed_by": null,
+        "created_at": "2018-07-25T23:42:57+00:00",
+        "updated_at": "2018-07-26T02:31:53+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "pangge"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 288,
+        "title": "convert tool failed caffe",
+        "body": "https://github.com/PaddlePaddle/Anakin/blob/developing/benchmark/README_GPU.md \r\ntry to test: Vgg16\r\nproto: from https://github.com/OpenHero/caffe/tree/dev\r\nprototxt: from http://www.robots.ox.ac.uk/~vgg/research/very_deep/ | https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md\r\nmodel:  from http://www.robots.ox.ac.uk/~vgg/research/very_deep/ | https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md\r\nmacos, protobuf3.5\r\nrun python converter.py\r\ngenerate error.\r\n![image](https://user-images.githubusercontent.com/12878507/43814095-32652540-9afb-11e8-80c5-3d95489dedb0.png)\r\n",
+        "state": "closed",
+        "user": "qichaotang",
+        "closed_by": "qichaotang",
+        "created_at": "2018-08-08T03:07:31+00:00",
+        "updated_at": "2018-08-13T15:51:53+00:00",
+        "closed_at": "2018-08-13T15:51:53+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 257,
+        "title": "download third party labraries when make the project",
+        "body": "Before we make the project, it will check the dependences in cmake cmd. After cmake, we make the project. However, it still download some third party libraries from Internet. The downloading behavior should not in makefile.",
+        "state": "closed",
+        "user": "wenyawei",
+        "closed_by": "LittleMaer",
+        "created_at": "2018-07-31T09:09:15+00:00",
+        "updated_at": "2018-08-06T19:13:33+00:00",
+        "closed_at": "2018-08-06T19:13:33+00:00",
+        "comments_count": [
+            "pangge"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 258,
+        "title": "where are the head files?",
+        "body": "There is NOT a \"Inlcude\" folder in Anakin root folder or in the build folder, so it is really diffucult to find the head files.\r\n\r\nIn the examples,  it includes some head files, but I can NOT find them in the root folder and build folder.\r\n\r\n```\r\n#include \"utils/logger/logger.h\"\r\n#include \"graph.h\"\r\n#include `\"net.h\"\r\n```\r\n\r\n",
+        "state": "open",
+        "user": "wenyawei",
+        "closed_by": null,
+        "created_at": "2018-07-31T09:16:02+00:00",
+        "updated_at": "2018-08-01T09:45:00+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "pangge"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 306,
+        "title": "Crash when Optimize Graph?",
+        "body": "**code here**：\r\n\r\n> auto status = graph->load(\"./output/lenet.anakin.bin\");\r\n> graph->ResetBatchSize(\"input_0\", batch_size);\r\n> graph->Reshape(\"input_0\", {1, 1, 28, 28});\r\n> //! optimize the graph\r\n>  LOG(INFO) << \"optimize the graph\";\r\n> graph->Optimize();\r\n\r\nit's crash when run at \"graph->Optimize()\".\r\n\r\n**error here**:\r\n![image](https://user-images.githubusercontent.com/6835981/44015230-9a113534-9f02-11e8-92b3-66e8a17c8b46.png)\r\n\r\nif I comment _graph->Optimize()_ ,there will be all dim of input is 0.\r\n> auto d_tensor_in_p = net_executer.get_in(\"input_0\");\r\n> auto valid_shape_in = d_tensor_in_p->valid_shape();\r\n> for (int i = 0; i < valid_shape_in.size(); i++) {\r\n>         LOG(INFO) << \"detect input dims[\" << i << \"]\" << valid_shape_in[i];\r\n> }\r\n\r\n![image](https://user-images.githubusercontent.com/6835981/44015377-3a593ea6-9f03-11e8-9a7e-6166b1af5f94.png)\r\n",
+        "state": "open",
+        "user": "dmxj",
+        "closed_by": null,
+        "created_at": "2018-08-13T06:15:00+00:00",
+        "updated_at": "2018-08-14T12:53:26+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "LittleMaer",
+            "dmxj",
+            "pangge",
+            "dmxj",
+            "throneclay"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 350,
+        "title": "Will Windows be supported?",
+        "body": "Hi,\r\n\r\nWill Windows be supported?\r\n\r\nThanks",
+        "state": "open",
+        "user": "Martyn10",
+        "closed_by": null,
+        "created_at": "2018-08-22T04:44:56+00:00",
+        "updated_at": "2018-11-21T09:17:35+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "pangge",
+            "leiyu1980",
+            "icedream2linxi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 394,
+        "title": "编译错误",
+        "body": "",
+        "state": "closed",
+        "user": "RayLiu2015",
+        "closed_by": "RayLiu2015",
+        "created_at": "2018-08-30T14:06:10+00:00",
+        "updated_at": "2018-08-30T14:06:41+00:00",
+        "closed_at": "2018-08-30T14:06:41+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 344,
+        "title": "Error while runtime !   Target attr name(weight_2) not found",
+        "body": "I have converted the Mobilenet-SSD caffemodel to anakin model, it generated a file named  mobilenet_ssd.anakin.bin. Then I use the example example_nv_cnn_net.cpp to test my bin file, but I got the error:\r\n`0| 11:20:33.00349| 0.436s|         1F5B7040| cuda_device.cpp:45] Device id: 0 , name: Quadro K1200\r\n\r\n   0| 11:20:33.00349| 0.436s|         1F5B7040| cuda_device.cpp:47] Multiprocessors: 4\r\n\r\n   0| 11:20:33.00349| 0.436s|         1F5B7040| cuda_device.cpp:50] frequency:1032MHz\r\n\r\n   0| 11:20:33.00349| 0.436s|         1F5B7040| cuda_device.cpp:52] CUDA Capability : 5.0\r\n\r\n   0| 11:20:33.00349| 0.436s|         1F5B7040| cuda_device.cpp:54] total global memory: 4041MBytes.\r\n\r\n   0| 11:20:33.00350| 0.437s|         1F5B7040| cuda_device.cpp:45] Device id: 1 , name: Quadro K1200\r\n\r\n   0| 11:20:33.00350| 0.437s|         1F5B7040| cuda_device.cpp:47] Multiprocessors: 4\r\n\r\n   0| 11:20:33.00350| 0.437s|         1F5B7040| cuda_device.cpp:50] frequency:1032MHz\r\n\r\n   0| 11:20:33.00350| 0.437s|         1F5B7040| cuda_device.cpp:52] CUDA Capability : 5.0\r\n\r\n   0| 11:20:33.00350| 0.437s|         1F5B7040| cuda_device.cpp:54] total global memory: 4041MBytes.\r\n\r\n WAN| 11:20:33.00529| 0.617s|         1F5B7040| net.cpp:665] Current used device id : 0\r\n\r\n WAN| 11:20:33.00532| 0.619s|         1F5B7040| input.cpp:16] Parsing Input op parameter.\r\n\r\n   0| 11:20:33.00532| 0.619s|         1F5B7040| input.cpp:19]  |-- shape [0]: 1\r\n\r\n   0| 11:20:33.00532| 0.619s|         1F5B7040| input.cpp:19]  |-- shape [1]: 3\r\n\r\n   0| 11:20:33.00532| 0.619s|         1F5B7040| input.cpp:19]  |-- shape [2]: 300\r\n\r\n   0| 11:20:33.00532| 0.619s|         1F5B7040| input.cpp:19]  |-- shape [3]: 300\r\n\r\n FTL| 11:20:33.00532| 0.619s|         1F5B7040| node.h:180] Target attr name(weight_2) not found.\r\n\r\n***  fatal error stack trace: ***:\r\n\r\n 6             0x4115d9 ./a.out() [0x4115d9]\r\n\r\n 5       0x7ff054ca2b45 __libc_start_main + 245\r\n\r\n4             0x411cdf ./a.out() [0x411cdf]\r\n\r\n 3       0x7ff055c633fc anakin::Net<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0, (anakin::OpRunType)1>::Net(anakin::graph::Graph<anakin::saber::TargetType<(anakin::saber::TargetTypeE\r\nnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0>&, bool) + 172\r\n\r\n 2       0x7ff055c626ca anakin::Net<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>,(anakin::saber::DataType)1, (anakin::Precision)0,(anakin::OpRunType)1>::init(anakin::graph::Graph<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0>&) + 1034\r\n\r\n 1       0x7ff055dca3d0 anakin::ops::SassConvReluHelper<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0>::InitParam() + 752\r\n\r\n 0       0x7ff055c62296 anakin::PBlock<float, anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1> > anakin::graph::Node<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1>, (anakin::saber::DataType)1, (anakin::Precision)0>::get_attr<anakin::PBlock<float, anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)1> > >(std::string&) + 182 \r\nAborted`\r\n\r\nwhat is the wrong? I can't understand the error information.\r\n",
+        "state": "open",
+        "user": "dancingpipi",
+        "closed_by": null,
+        "created_at": "2018-08-21T03:28:10+00:00",
+        "updated_at": "2018-09-11T05:29:01+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "LittleMaer",
+            "wzzju"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 379,
+        "title": "请问 developing 分支和 dev_2 有什么区别？",
+        "body": "请问 developing 分支和 dev_2 有什么区别？,我发现更新 dev_2 比 developing 要快",
+        "state": "open",
+        "user": "leiyu1980",
+        "closed_by": null,
+        "created_at": "2018-08-27T07:16:51+00:00",
+        "updated_at": "2018-09-21T03:21:32+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Shixiaowei02"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 381,
+        "title": "has opencl(ARMGPU ) supported now?",
+        "body": "",
+        "state": "open",
+        "user": "loliod",
+        "closed_by": null,
+        "created_at": "2018-08-28T11:42:28+00:00",
+        "updated_at": "2018-10-09T01:55:31+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Shixiaowei02",
+            "leiyu1980"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 393,
+        "title": "How to bind net on specific GPU id",
+        "body": "how to set gpu id ?",
+        "state": "open",
+        "user": "crqcrq001",
+        "closed_by": null,
+        "created_at": "2018-08-30T08:19:29+00:00",
+        "updated_at": "2018-09-21T10:07:12+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Shixiaowei02",
+            "crqcrq001",
+            "Shixiaowei02"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 401,
+        "title": "改变输入尺寸",
+        "body": "请问有没有例子演示 改变输入的尺寸？\r\n第一次输入{1，3，800，600}\r\n第二次输入{1，3，400，400}\r\n这样改变宽高的\r\n或者\r\n宽高不变改变batchsize？\r\n",
+        "state": "open",
+        "user": "crqcrq001",
+        "closed_by": null,
+        "created_at": "2018-09-02T08:15:08+00:00",
+        "updated_at": "2018-09-21T03:01:26+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Shixiaowei02"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 414,
+        "title": "Anakin docker build error on ubuntu 16.04 for Nvidia-GPU",
+        "body": "I followed the [anakin docker guide](https://github.com/PaddlePaddle/Anakin/blob/developing/docker/README.md) guide.\r\n\r\nand issue the command \r\n\r\n```\r\nsudo ./anakin_docker_build_and_run.sh -p NVIDIA-GPU -o Ubuntu -m Build\r\n```\r\n\r\nerror occur:\r\n```\r\n-- cudnn include header is CUDNN_INCLUDE_DIR-NOTFOUND/cudnn.h\r\n-- cudnn library is /usr/lib/x86_64-linux-gnu/libcudnn.so/libcudnn.so\r\nCMake Error at cmake/cuda.cmake:126 (message):\r\n  Could not find cudnn library in:\r\nCall Stack (most recent call first):\r\n  cmake/gather.cmake:16 (anakin_find_cudnn)\r\n  CMakeLists.txt:178 (include)\r\n\r\n\r\n-- Found CUDA: /usr/local/cuda (found suitable version \"8.0\", minimum required is \"7.5\") \r\n-- Building fat-bin for cuda code !\r\n--  `--support arch :  3.5\r\n--  `--support arch :  5.0\r\n--  `--support arch :  6.0\r\n--  `--support arch :  6.1\r\n-- Looking for include file pthread.h\r\n-- Looking for include file pthread.h - found\r\n-- Looking for pthread_create\r\n-- Looking for pthread_create - not found\r\n-- Looking for pthread_create in pthreads\r\n-- Looking for pthread_create in pthreads - not found\r\n-- Looking for pthread_create in pthread\r\n-- Looking for pthread_create in pthread - found\r\n-- Found Threads: TRUE  \r\n-- Found PROTOBUF: /usr/local/lib/libprotobuf.so  \r\n-- Found protobuf in /usr/local/include\r\n-- \r\n-- ================================ configuration ==================================\r\n-- General:\r\n--   anakin version            : 0.1.2\r\n--   System                    : Linux\r\n--   C++ compiler              : /usr/bin/c++\r\n--   C flags                   : \r\n--   CXX flags                 :  -std=c++11 -fPIC -ldl -lrt -W  -pthread    -Wno-unused-variable      -fpermissive  -fdiagnostics-show-option -Wno-undef -Wno-narrowing -Wno-unknown-pragmas -Wno-delete-non-virtual-dtor -Wno-comment -Wno-sign-compare -Wno-ignored-qualifiers -Wno-enum-compare -O3 -DNDEBUG\r\n--   Build type                : Release;FORCE\r\n--   Build cross plantform     : ON\r\n--   Build anakin fp32         : ON\r\n-- \r\n--   Build shared libs         : YES\r\n--   Build with unit test      : YES\r\n-- \r\n--   Enable verbose message    : NO\r\n--   Enable noisy warnings     : NO\r\n--   Disable all warnings      : YES\r\n-- \r\n--   Use local logger          : logger\r\n--   Use google protobuf       : ON\r\n--   Use local Unit test       : aktest\r\n--   USE_OPENCV                : OFF\r\n--   USE_BOOST                 : OFF\r\n--   USE_OPENMP                : \r\n-- \r\n-- Cuda:\r\n--   USE_CUDA                  : ON\r\n--     |--CUDA version         : 8.0\r\n--     `--NVCC flags           :   -Xcompiler -fPIC -O3 -std=c++11 --default-stream per-thread -Wno-deprecated-gpu-targets  --generate-code arch=compute_35,code=sm_35  --generate-code arch=compute_50,code=sm_50  --generate-code arch=compute_60,code=sm_60  --generate-code arch=compute_61,code=sm_61 \r\n--   USE_CUBLAS                : ON\r\n--   USE_CURAND                : ON\r\n--   USE_CUFFT                 : ON\r\n--   USE_CUDNN                 : ON\r\n--     `--Cudnn version        : \r\n-- \r\n--   USE_OPENCL                : OFF\r\n-- \r\n--   SELECT_GPU_PLACE          : YES\r\n-- \r\n--   Configuation path         : /Anakin/gpu_build_sm61/anakin_config.h\r\n-- ================================ End ==================================\r\n-- Configuring incomplete, errors occurred!\r\nSee also \"/Anakin/gpu_build_sm61/CMakeFiles/CMakeOutput.log\".\r\nSee also \"/Anakin/gpu_build_sm61/CMakeFiles/CMakeError.log\".\r\nmake: *** No targets specified and no makefile found.  Stop.\r\nsha256:694bca37cbee627f47bfc46e71af099147bb61045fddf6ec3abd1beeab69d00d\r\n```",
+        "state": "closed",
+        "user": "kezunlin",
+        "closed_by": "kezunlin",
+        "created_at": "2018-09-04T00:53:17+00:00",
+        "updated_at": "2019-09-24T12:03:53+00:00",
+        "closed_at": "2018-09-20T03:32:23+00:00",
+        "comments_count": [
+            "kezunlin",
+            "xiaoweiChen"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 428,
+        "title": "使用脚本编译Anakin Lite库，直接运行lite_ios_build_armv7/8.sh，出现很多error",
+        "body": "In file included from error/usr/include/c++/4.2.1/vector: :65:\r\nIn file included from /usr/include/c++/4.2.1/bits/functexcept.h:Unsupported41 :\r\narchitectureIn file included from /usr/include/c++/4.2.1/bits/c++config.h\r\n:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:71:\r\nIn file included from /usr/include/_types.h:27:\r\nIn file included from /usr/include/sys/_types.h:32:\r\n/usr/include/sys/cdefs.h#error Unsupported architecture:\r\n763: ^2\r\n: error: Unsupported architecture\r\n#error Unsupported architecture\r\n ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/tensor_lite.h:19:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h:17:\r\nIn file included from /usr/include/c++/4.2.1/vector:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/functexcept.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61In file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.h:18:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/tensor_lite.h:19:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h:17:\r\nIn file included from /usr/include/c++/4.2.1/vector:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/functexcept.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:71:\r\nIn file included from /usr/include/_types.h:27:\r\nIn file included from /usr/include/sys/_types.h:33:\r\n/usr/include/machine/_types.h:34:2: error: architecture not:\r\nIn file included from /usr/include/unistd.h:71:\r\nIn file included from /usr/include/_types.h:27:\r\nIn file included from /usr/include/sys/_types.h:33:\r\n/usr/include/machine/_types.h:34:2: error: architecture not supported\r\n#error architecture not supported\r\n ^\r\nIn file included from  supported\r\n/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/context_lite.cpp:1#error architecture not supported:\r\n\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/context_lite.h ^:\r\n17:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:71:\r\nIn file included from /usr/include/_types.h:27:\r\nIn file included from /usr/include/sys/_types.h:32:\r\n/usr/include/sys/cdefs.h:763:2: error: Unsupported architecture\r\n#error Unsupported architecture\r\n ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/context_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/context_lite.h:17:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:71:\r\nIn file included from /usr/include/_types.h:27:\r\nIn file included from /usr/include/sys/_types.h:33:\r\n/usr/include/machine/_types.h:34:2: error: architecture not supported\r\n#error architecture not supported\r\n ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/buffer_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/buffer_lite.h:18:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:71:\r\nIn file included from /usr/include/_types.h:27:\r\nIn file included from /usr/include/sys/_types.h:32:\r\n/usr/include/sys/cdefs.h:763:2: error: Unsupported architecture\r\n#error Unsupported architecture\r\n ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/buffer_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/buffer_lite.h:18:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:71:\r\nIn file included from /usr/include/_types.h:27:\r\nIn file included from /usr/include/sys/_types.h:33:\r\n/usr/include/machine/_types.h:34:2: error: architecture not supported\r\n#error architecture not supported\r\n ^\r\nIn file included from In file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/buffer_lite.cpp/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.cpp::11:\r\n:\r\nIn file included from In file included from In file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/buffer_lite.h/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.h/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_lite.cpp:::18181:\r\n:\r\n:\r\nIn file included from In file included from In file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/tensor_lite.h/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/teIn file included from nsor_lite.h/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/context_lite.cpp:::11918:\r\n:\r\n:\r\nIn file included from In file included from In file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/context_lite.h/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h/usr/include/c++/4.2.1/memory:::171753:\r\n:\r\n:\r\nIn file included from In file included from In file included from /usr/include/c++/4.2.1/vector/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h/usr/include/c++/4.2.1/bits/stl_algobase.h:::651865:\r\n:\r\n:\r\nIn file included from In file included from In file included from /usr/include/c++/4.2.1/bits/functexcept.h/usr/include/c++/4.2.1/memory/usr/include/c++/4.2.1/bits/c++config.h:::534141:\r\n:\r\n:\r\nIn file included from In file included from In file included from /usr/include/c++/4.2.1/bits/stl_algobase.h/usr/include/c++/4.2.1/bits/c++config.h/usr/include/c++/4.2.1/bits/os_defines.h:::654161:\r\n:\r\n:\r\nIn file included from In file included from In file included from /usr/include/c++/4.2.1/bits/os_defines.h/usr/include/c++/4.2.1/bits/c++config.h/usr/include/unistd.h:::416171:\r\n:\r\n:\r\nIn file included from In file included from In file included from /usr/include/c++/4.2.1/bits/os_defines.h/usr/include/unistd.h/usr/include/_types.h:::617127:\r\n:\r\n:\r\nIn file included from In file included from /usr/include/unistd.h/usr/include/_types.h/usr/include/sys/_types.h:::277155:\r\n:\r\n:In file included from 9/usr/include/sys/_types.h/usr/include/_types.h::: 5527::\r\n9error:/usr/include/sys/_types.h:  :55:unknown9error :: type  nameunknown error '__int64_t': type \r\nname unknown'__int64_t' type\r\n name '__int64_t'\r\ntypedef __int64_t       __darwin_blkcnt_t;      /* total blocks */\r\n        ^\r\ntypedef __int64_t       __darwin_blkcnt_t;      /* total blocks */\r\n        ^typedef __int64_t       __darwin_blkcnt_t;      /* total blocks */\r\n\r\n        ^\r\n:19:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h:17:\r\nIn file included from /usr/include/c++/4.2.1/vector:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/functexcept.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:71:\r\nIn file included from /usr/include/_types.h:27:\r\n/usr/include/sys/_types.h:55:9: error: unknown type name '__int64_t'\r\ntypedef __int64_t       __darwin_blkcnt_t;      /* total blocks */\r\n        ^\r\n/usr/include/sys/_types.h:56/usr/include/sys/_types.h::956:: 9: error: error: unknown typeunknown  nametype  '__int32_t'name \r\n'__int32_t'\r\ntypedef __int32_t       __darwin_blksize_t;     /* preferred block size */typedef __int32_t       __darwin_blksize_t;     /* preferred block size */\r\n\r\n        ^        ^\r\n\r\n/usr/include/sys/_types.h:56:9: error: unknown type name '__int32_t'\r\ntypedef __int32_t       __darwin_blksize_t;     /* preferred block size */\r\n        ^\r\n/usr/include/sys/_types.h:/usr/include/sys/_types.h57::579::9 : error: error: unknown unknowntype  typename  name'__int32_t' '__int32_t'\r\n\r\ntypedef __int32_t       __darwin_dev_t;         /* dev_t */\r\ntypedef __int32_t       __darwin_dev_t;         /* dev_t */\r\n        ^\r\n        ^\r\n/usr/include/sys/_types.h:57:9: error: unknown type name '__int32_t'\r\ntypedef __int32_t       __darwin_dev_t;         /* dev_t */\r\n        ^\r\n/usr/include/sys/_types.h:60:9: error/usr/include/sys/_types.h:60:9: error: unknown type name '__uint32_t'\r\n/usr/include/sys/_types.h:56:9: error: unknown /usr/include/sys/_types.htype: : 60:typedef __uint32_t      __darwin_gid_t;         /* [???] process and gro...9unknown: \r\n type         ^errorname\r\n : '__uint32_t'unknown\r\n type name '__uint32_t'\r\ntypedef __uint32_t      __darwin_gid_t;         /* [???] process and gro...\r\ntypedef __uint32_t      __darwin_gid_t;         /* [???] process and gro...\r\n        ^\r\n        ^\r\n/usr/include/sys/_types.h:61:9: error: unknown type name '__uint32_t'\r\n/usr/include/sys/_types.h:61:9: error: unknowntypedef __uint32_t      __darwin_id_t;          /* [XSI] pid_t, uid_t, o... \r\ntype         ^namename  '__int32_t'\r\n'__uint32_t'\r\n\r\ntypedef __int32_t       __darwin_blksize_t;     /* preferred block size */typedef __uint32_t      __darwin_id_t;          /* [XSI] pid_t, uid_t, o...\r\n\r\n        ^        ^\r\n\r\n/usr/include/sys/_types.h:62:9: error: unknown type name '__uint64_t'\r\n/usr/include/sys/_types.h:62:9: error: unknown type name '__uint64_t'/usr/include/sys/_types.h\r\n:57:typedef __uint64_t      __darwin_ino64_t;       /* [???] Used for 64 bi...9\r\n:         ^\r\nerror: unknown type name '__int32_t'\r\ntypedef __uint64_t      __darwin_ino64_t;       /* [???] Used for 64 bi...\r\n        ^\r\ntypedef __int32_t       __darwin_dev_t;         /* dev_t */\r\n        ^\r\n/usr/include/sys/_types.h:60:9: error: unknown type name '__uint32_t'\r\ntypedef __uint32_t      __darwin_gid_t;         /* [???] process and gro...\r\n        ^\r\n/usr/include/sys/_types.h:61:9: error: unknown type/usr/include/sys/_types.h :name61 :'__uint32_t'9:\r\n error: unknown type name '__uint32_t'\r\ntypedef __uint32_t      __darwin_id_t;          /* [XSI] pid_t, uid_t, o...\r\n        ^\r\ntypedef __uint32_t      __darwin_id_t;          /* [XSI] pid_t, uid_t, o...\r\n        ^\r\n/usr/include/sys/_types.h:62:9: error: unknown/usr/include/sys/_types.h :type62 :name9 :'__uint64_t' \r\nerror: unknown type name '__uint64_t'\r\ntypedef __uint64_t      __darwin_ino64_t;       /* [???] Used for 64 bi...\r\n        ^\r\ntypedef __uint64_t      __darwin_ino64_t;       /* [???] Used for 64 bi...\r\n        ^\r\n/usr/include/sys/_types.h:68:9: error: unknown type name '__darwin_natural_t'\r\ntypedef __darwin_natural_t __darwin_mach_port_name_t; /* Used by mach */\r\n        ^\r\n/usr/include/sys/_types.h:68:9: error: unknown type name '__darwin_natural_t'\r\ntypedef __darwin_natural_t __darwin_mach_port_name_t; /* Used by mach */\r\n        ^\r\n/usr/include/sys/_types.h:70:9: error: unknown type name '__uint16_t'\r\ntypedef __uint16_t      __darwin_mode_t;        /* [???] Some file attributes */\r\n        ^\r\n/usr/include/sys/_types.h:70:9: error: unknown type name '__uint16_t'\r\ntypedef __uint16_t      __darwin_mode_t;        /* [???] Some file attributes */\r\n        ^\r\n/usr/include/sys/_types.h:71:9: error: unknown type name '__int64_t'\r\ntypedef __int64_t       __darwin_off_t;         /* [???] Used for file sizes */\r\n        ^\r\n/usr/include/sys/_types.h:68:9: error: unknown type name '__darwin_natural_t'\r\ntypedef __darwin_natural_t __darwin_mach_port_name_t; /* Used by mach */\r\n        ^\r\n/usr/include/sys/_types.h:71:9: error: unknown type name '__int64_t'\r\n/usr/include/sys/_types.h:72:9typedef __int64_t       __darwin_off_t;         /* [???] Used for file sizes */: \r\n        ^error\r\n: unknown type name '__int32_t'\r\ntypedef __int32_t       __darwin_pid_t;         /* [???] process and gro...\r\n        ^\r\n/usr/include/sys/_types.h:70:9: error: unknown type name '__uint16_t'\r\n/usr/include/sys/_types.h:72:typedef __uint16_t      __darwin_mode_t;        /* [???] Some file attributes */9\r\n:         ^\r\nerror: unknown type name '__int32_t'\r\n/usr/include/sys/_types.h:73:9typedef __int32_t       __darwin_pid_t;         /* [???] process and gro...:\r\n         ^\r\nerror: unknown type name '__uint32_t'\r\ntypedef __uint32_t      __darwin_sigset_t;      /* [???] signal set */\r\n        ^\r\n/usr/include/sys/_types.h:71:9: error: unknown type name '__int64_t'\r\ntypedef __int64_t       __darwin_off_t;         /* [???] Used for file sizes */\r\n        ^\r\n/usr/include/sys/_types.h:73:9: error/usr/include/sys/_types.h: :74:9:unknown  type errorname:  '__uint32_t'unknown\r\n type name '__int32_t'\r\ntypedef __uint32_t      __darwin_sigset_t;      /* [???] signal set */\r\n        ^\r\ntypedef __int32_t       __darwin_suseconds_t;   /* [???] microseconds */\r\n        ^\r\n/usr/include/sys/_types.h:68:9: /usr/include/sys/_types.h:72error:: 9: unknown type errorname: unknown  '__darwin_natural_t'type\r\n name '__int32_t'\r\ntypedef __darwin_natural_t __darwin_mach_port_name_t; /* Used by mach */\r\n        ^\r\ntypedef __int32_t       __darwin_pid_t;         /* [???] process and gro...\r\n        ^\r\n/usr/include/sys/_types.h:74:9: error: unknown type name '__int32_t'\r\ntypedef __int32_t       __darwin_suseconds_t;   /* [???] microseconds */\r\n        ^\r\n/usr/include/sys/_types.h:73:9: /usr/include/sys/_types.herror:: 70:9unknown:  type nameerror : '__uint32_t'\r\nunknown type name '__uint16_t'\r\ntypedef __uint32_t      __darwin_sigset_t;      /* [???] signal set */\r\n        ^\r\ntypedef __uint16_t      __darwin_mode_t;        /* [???] Some file attributes */\r\n        ^\r\n/usr/include/sys/_types.h:75:9: error: unknown type name '__uint32_t'\r\n/usr/include/sys/_types.h:74:9: error: unknowntypedef __uint32_t      __darwin_uid_t;         /* [???] user IDs */ \r\ntype /usr/include/sys/_types.h        ^name:\r\n 71'__int32_t':9\r\n: error: unknown type name '__int64_t'\r\ntypedef __int32_t       __darwin_suseconds_t;   /* [???] microseconds */\r\n        ^\r\ntypedef __int64_t       __darwin_off_t;         /* [???] Used for file sizes */\r\n        ^\r\n/usr/include/sys/_types.h:76:9: error: /usr/include/sys/_types.hunknown:75:9: /usr/include/sys/_types.h:72error:: 9: unknown typeerror : name '__uint32_t'unknown \r\ntype name '__int32_t'\r\ntypedef __uint32_t      __darwin_uid_t;         /* [???] user IDs */\r\n        ^\r\ntypedef __int32_t       __darwin_pid_t;         /* [???] process and gro...\r\n        ^\r\n/usr/include/sys/_types.h:75:9: error: unknown type name '__uint32_t'\r\ntypedef __uint32_t      __darwin_uid_t;         /* [???] user IDs */\r\n        ^\r\n/usr/include/sys/_types.h:76:9: error: unknown type/usr/include/sys/_types.h :name73 :'__uint32_t'9:\r\n error: unknown type name '__uint32_t'\r\ntypedef __uint32_t      __darwin_useconds_t;    /* [???] microseconds */\r\n        ^\r\ntypedef __uint32_t      __darwin_sigset_t;      /* [???] signal set */\r\n        ^\r\n/usr/include/sys/_types.h:76:9: error: unknown type name '__uint32_t'\r\n/usr/include/sys/_types.h:74:9: error: unknown type nametypedef __uint32_t      __darwin_useconds_t;    /* [???] microseconds */ \r\n'__int32_t'        ^\r\n\r\ntypedef __int32_t       __darwin_suseconds_t;   /* [???] microseconds */\r\n        ^\r\n/usr/include/sys/_types.h:75:9:  errortype: unknown type  name '__uint32_t'\r\ntypedef __uint32_t      __darwin_uid_t;         /* [???] user IDs */\r\n        ^\r\nname '__uint32_t'\r\ntypedef __uint32_t      __darwin_useconds_t;    /* [???] microseconds */\r\n        ^\r\n/usr/include/sys/_types.h:76:9: error: unknown type name '__uint32_t'\r\ntypedef __uint32_t      __darwin_useconds_t;    /* [???] microseconds */\r\n        ^\r\nIn file included from In file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/context_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/context_lite.h:17:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:180:\r\n/usr/include/sys/_types/_size_t.h:31:9: error: unknown type name\r\n      '__darwin_size_t'; did you mean '__darwin_ino_t'?\r\ntypedef __darwin_size_t        size_t; \r\n        ^\r\n/usr/include/sys/_types.h:64:26: note: '__darwin_ino_t' declared here\r\ntypedef __darwin_ino64_t __darwin_ino_t;        /* [???] Used for inodes */\r\n                         ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/tensor_lite.h:19:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h:17:\r\nIn file included from /usr/include/c++/4.2.1/vector:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/functexcept.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:180:\r\n/usr/include/sys/_types/_size_t.h:31:9: error: unknown/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/buffer_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/buffer_lite.h:18:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:180:\r\n/usr/include/sys/_types/_size_t.h:31:9: error: unknown type name\r\n      '__darwin_size_t'; did you mean '__darwin_ino_t'?\r\ntypedef __darwin_size_t        size_t; \r\n        ^\r\n/usr/include/sys/_types.h:64:26: note: '__darwin_ino_t'  declared here\r\ntypedef __darwin_ino64_t __darwin_ino_t;        /* [???] Used for inodes */\r\n                         ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.h:18:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/tensor_lite.htype name\r\n      '__darwin_size_t'; did you mean '__darwin_ino_t'?\r\ntypedef __darwin_size_t        size_t; \r\n        ^\r\n/usr/include/sys/_types.h:64:26: note: '__darwin_ino_t' declared here\r\n:19:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h:17:\r\nIn file included from /usr/include/c++/4.2.1/vectortypedef __darwin_ino64_t __darwin_ino_t;        /* [???] Used for inodes */:\r\n65:\r\nIn file included from                          ^/usr/include/c++/4.2.1/bits/functexcept.h\r\n:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:180:\r\n/usr/include/sys/_types/_size_t.h:31:9: error: unknown type name\r\n      '__darwin_size_t'; did you mean '__darwin_ino_t'?\r\ntypedef __darwin_size_t        size_t; \r\n        ^\r\n/usr/include/sys/_types.h:64:26: note: '__darwin_ino_t' declared here\r\ntypedef __darwin_ino64_t __darwin_ino_t;        /* [???] Used for inodes */\r\n                         ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/buffer_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/buffer_lite.h:18:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:199:\r\nIn file included from /usr/include/sys/_types/_ssize_t.h:30:\r\n/usr/include/machine/types.h:37:2: error: architecture not supported\r\n#error architecture not supported\r\n ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/tensor_lite.h:19:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h:17:\r\nIn file included from /usr/include/c++/4.2.1/vector:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/functexcept.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:199:\r\nIn file included from /usr/include/sys/_types/_ssize_t.h:30:\r\n/usr/include/machine/types.h:37:2: error: architecture not supported\r\n#error architecture not supported\r\n ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/context_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/context_lite.h:17:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:199:\r\nIn file included from /usr/include/sys/_types/_ssize_t.h:30:\r\n/usr/include/machine/types.h:37:2: error: architecture not supported\r\n#error architecture not supported\r\n ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/buffer_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/buffer_lite.h:18:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:199:\r\n/usr/include/sys/_types/_ssize_t.h:31:9: error: unknown type name\r\n      '__darwin_ssize_t'\r\ntypedef __darwin_ssize_t        ssize_t; \r\n        ^\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.h:18:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/tensor_lite.h:19:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h:17:\r\nIn file included from /usr/include/c++/4.2.1/vector:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/functexcept.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:199:\r\nIn file included from /usr/include/sys/_types/_ssize_t.h:30:\r\n/usr/include/machine/types.h:37:2: error: architecture not supported\r\n#error architecture not supported\r\n ^\r\nfatal error: too many errors emitted, stopping now [-ferror-limit=]\r\nIn file included from In file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/context_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/context_lite.h:17:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/common_lite.h:18:\r\nIn file included from /usr/include/c++/4.2.1/memory:53:\r\nIn file included from /usr/include/c++/4.2.1/bits/stl_algobase.h:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:199:\r\n/usr/include/sys/_types/_ssize_t.h:31:9: error: unknown type name\r\n      '__darwin_ssize_t'\r\ntypedef __darwin_ssize_t        ssize_t; \r\n        ^\r\n/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_lite.cpp:In file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.cpp:1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.h:18:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/tensor_lite.h:19:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h:17:\r\nIn file included from /usr/include/c++/4.2.1/vector:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/functexcept.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:199:\r\n/usr/include/sys/_types/_ssize_t.h:31:9: error: unknown type name\r\n      '__darwin_ssize_t'\r\ntypedef __darwin_ssize_t        ssize_t; \r\n        ^\r\n1:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/tensor_lite.h:19:\r\nIn file included from /Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/tools/anakin-lite/../../saber/lite/../../saber/lite/core/shape_lite.h:17:\r\nIn file included from /usr/include/c++/4.2.1/vector:65:\r\nIn file included from /usr/include/c++/4.2.1/bits/functexcept.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/c++config.h:41:\r\nIn file included from /usr/include/c++/4.2.1/bits/os_defines.h:61:\r\nIn file included from /usr/include/unistd.h:72:\r\nIn file included from /usr/include/sys/unistd.h:199:\r\n/usr/include/sys/_types/_ssize_t.h:31:9: error: unknown type name\r\n      '__darwin_ssize_t'\r\ntypedef __darwin_ssize_t        ssize_t; \r\n        ^\r\nfatal error: too many errors emitted, stopping now [-ferror-limit=]\r\nfatal error: too many errors emitted, stopping now [-ferror-limit=]\r\nfatal error: too many errors emitted, stopping now [-ferror-limit=]\r\n20 errors generated.\r\nmake[2]: *** [CMakeFiles/ANAKIN_LITE_OBJS.dir/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/buffer_lite.cpp.o] Error 1\r\nmake[2]: *** Waiting for unfinished jobs....\r\n20 errors generated.\r\n20 errors generated.\r\nmake[2]: *** [CMakeFiles/ANAKIN_LITE_OBJS.dir/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_op_lite.cpp.o] Error 1\r\n20 errors generated.\r\nmake[2]: *** [CMakeFiles/ANAKIN_LITE_OBJS.dir/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/tensor_lite.cpp.o] Error 1\r\nmake[2]: *** [CMakeFiles/ANAKIN_LITE_OBJS.dir/Users/v_zhangxiaoqing01/Desktop/新/Anakin-arm_lite/saber/lite/core/context_lite.cpp.o] Error 1\r\nmake[1]: *** [CMakeFiles/ANAKIN_LITE_OBJS.dir/all] Error 2\r\nmake: *** [all] Error 2\r\n",
+        "state": "open",
+        "user": "xiaoqingq",
+        "closed_by": null,
+        "created_at": "2018-09-06T04:07:31+00:00",
+        "updated_at": "2018-09-13T06:50:36+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xyoungli"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 452,
+        "title": "使用external_converter_v2目录下的converter.py转换mobilenet-ssd的caffemodle模型失败",
+        "body": "config.yaml的文件内容如下:\r\n```\r\nOPTIONS:\r\n    Framework: CAFFE\r\n    SavePath: ./output\r\n    ResultName: mobilenet-ssd\r\n    Config:\r\n        LaunchBoard: ON\r\n        Server:\r\n            ip: 0.0.0.0\r\n            port: 8888\r\n        OptimizedGraph: \r\n            enable: OFF\r\n            path: /home/public/CLionProjects/Anakin/tools/external_converter_v2/anakin_optimized/mobilenet.anakin.bin.saved\r\n    LOGGER:\r\n        LogToPath: ./log/\r\n        WithColor: ON \r\n\r\nTARGET:\r\n    CAFFE:\r\n        # path to proto files\r\n        ProtoPaths:\r\n            - /home/public/CLionProjects/Anakin/tools/external_converter_v2/caffe.proto\r\n        PrototxtPath: /home/public/CLionProjects/Anakin/tools/external_converter_v2/mobilenet-ssd/MobileNetSSD_deploy.prototxt\r\n        ModelPath: /home/public/CLionProjects/Anakin/tools/external_converter_v2/mobilenet-ssd/MobileNetSSD_deploy.caffemodel\r\n```\r\n\r\n其中caffe.proto文件使用来源为:`https://github.com/weiliu89/caffe/blob/ssd/src/caffe/proto/caffe.proto`\r\nMobileNet-SSD模型来源为:`https://github.com/chuanqi305/MobileNet-SSD`\r\n\r\n运行`python converter.py`命令,执行过程中出现如下错误:\r\n```\r\nINF | 2018-09-12 19:56:12.527134 | parser_caffe.py:539 _Parsing_new() ]    `--[ Match ]Parsing [Permute:    conv11_mbox_conf_perm] \r\nINF | 2018-09-12 19:56:12.527407 | parser_caffe.py:524 _Parsing_new() ]   Dectect [Flatten: conv11_mbox_conf_flat] \r\nINF | 2018-09-12 19:56:12.527663 | parser_caffe.py:539 _Parsing_new() ]    `--[ Match ]Parsing [Flatten:    conv11_mbox_conf_flat] \r\nINF | 2018-09-12 19:56:12.527922 | parser_caffe.py:524 _Parsing_new() ]   Dectect [PriorBox:    conv11_mbox_priorbox] \r\nINF | 2018-09-12 19:56:12.528170 | parser_caffe.py:539 _Parsing_new() ]    `--[ Match ]Parsing [PriorBox:   conv11_mbox_priorbox] \r\nTraceback (most recent call last):\r\n  File \"converter.py\", line 20, in <module>\r\n    graph = Graph(config)\r\n  File \"/home/public/CLionProjects/Anakin/tools/external_converter_v2/parser/graph.py\", line 39, in __init__\r\n    self.graph_io = self.parser()\r\n  File \"/home/public/CLionProjects/Anakin/tools/external_converter_v2/parser/caffe/parser_caffe.py\", line 34, in __call__\r\n    return self._Parsing_new()\r\n  File \"/home/public/CLionProjects/Anakin/tools/external_converter_v2/parser/caffe/parser_caffe.py\", line 570, in _Parsing_new\r\n    CAFFE_LAYER_PARSER[source_layer_type](nodeIO, rlayer, tensors, opIO) # call parser automatically\r\n  File \"/home/public/CLionProjects/Anakin/tools/external_converter_v2/parser/operations/op.py\", line 42, in __call__\r\n    return self.parser(args)\r\n  File \"/home/public/CLionProjects/Anakin/tools/external_converter_v2/parser/caffe/caffe_layer_param_transmit.py\", line 39, in warpper_args\r\n    Parser(args)\r\n  File \"/home/public/CLionProjects/Anakin/tools/external_converter_v2/parser/caffe/caffe_layer_param_transmit.py\", line 1081, in Parser_priorbox\r\n    OpsRegister()[\"PriorBox\"].fixed_size = list(prior_box_param.fixed_size)\r\nAttributeError: 'PriorBoxParameter' object has no attribute 'fixed_size'\r\n```\r\n请求帮助,非常感谢!",
+        "state": "open",
+        "user": "wzzju",
+        "closed_by": null,
+        "created_at": "2018-09-12T12:30:37+00:00",
+        "updated_at": "2019-01-14T06:50:18+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xyoungli",
+            "wzzju",
+            "ljayx",
+            "ljayx",
+            "Shixiaowei02",
+            "ljayx"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 457,
+        "title": "where can i get anakin_third_party.tar.gz?",
+        "body": "",
+        "state": "closed",
+        "user": "SnailTowardThesun",
+        "closed_by": "SnailTowardThesun",
+        "created_at": "2018-09-17T06:51:37+00:00",
+        "updated_at": "2018-09-18T00:38:38+00:00",
+        "closed_at": "2018-09-18T00:38:37+00:00",
+        "comments_count": [
+            "SnailTowardThesun"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 462,
+        "title": "使用external_converter_v2目录下的converter.py转换caffemodle模型失败",
+        "body": "config.yaml\r\n```\r\nOPTIONS:\r\n    Framework: CAFFE\r\n    SavePath: ./output\r\n    ResultName: ocr\r\n    Config:\r\n        LaunchBoard: ON\r\n        Server:\r\n            ip: 0.0.0.0\r\n            port: 8888\r\n        OptimizedGraph: \r\n            enable: OFF\r\n            path: ./anakin_optimized/ocr.anakin.bin.saved\r\n    LOGGER:\r\n        LogToPath: ./log/\r\n        WithColor: ON \r\n\r\nTARGET:\r\n    CAFFE:\r\n        # path to proto files\r\n        ProtoPaths:\r\n            - /home/kezunlin/program/caffe/src/caffe/proto/caffe.proto\r\n        PrototxtPath: ./input_model/ocr/ocr.prototxt\r\n        ModelPath: ./input_model/mnist/ocr.caffemodel\r\n```\r\n\r\nrun converter and get error output:\r\n```\r\n$ python converter.py\r\nINF | 2018-09-20 14:02:34.567382 | __init__.py:20 <module>() ]  Import Module: caffe_pb2\r\nINF | 2018-09-20 14:02:34.581084 | parser_caffe.py:470 _Parsing_new() ]   [CAFFE] Parsing ...\r\nTraceback (most recent call last):\r\n  File \"converter.py\", line 20, in <module>\r\n    graph = Graph(config)\r\n  File \"/home/kezunlin/program/anakin/tools/external_converter_v2/parser/graph.py\", line 39, in __init__\r\n    self.graph_io = self.parser()\r\n  File \"/home/kezunlin/program/anakin/tools/external_converter_v2/parser/caffe/parser_caffe.py\", line 34, in __call__\r\n    return self._Parsing_new()\r\n  File \"/home/kezunlin/program/anakin/tools/external_converter_v2/parser/caffe/parser_caffe.py\", line 471, in _Parsing_new\r\n    self._DetectionArch()\r\n  File \"/home/kezunlin/program/anakin/tools/external_converter_v2/parser/caffe/parser_caffe.py\", line 41, in _DetectionArch\r\n    self._FilterNet()\r\n  File \"/home/kezunlin/program/anakin/tools/external_converter_v2/parser/caffe/parser_caffe.py\", line 389, in _FilterNet\r\n    assert layer.name not in filtered_layer_names, \" layer_name : %s\" % (layer.name)\r\nAssertionError:  layer_name : fusion5\r\n```",
+        "state": "open",
+        "user": "kezunlin",
+        "closed_by": null,
+        "created_at": "2018-09-20T06:04:27+00:00",
+        "updated_at": "2018-09-21T02:53:49+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Shixiaowei02"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 460,
+        "title": "x86_build.s执行error",
+        "body": "按照如下步骤进行anakin的安装：\r\nhttps://github.com/PaddlePaddle/Anakin/blob/developing/docs/Manual/INSTALL_ch.md\r\n\r\n环境：\r\nubuntu18.04\r\nmake --version    GNU Make 4.1\r\ng++ --version      g++ (Ubuntu 7.3.0-16ubuntu3) 7.3.0\r\ncmake --version  cmake version 3.10.2\r\nprotoc --version  libprotoc 3.6.1\r\n\r\n执行下面命令时：\r\n$ sh Anakin/tools/x86_build.sh\r\n\r\n出现以下error：\r\n/home/Anakin/saber/funcs/impl/x86/saber_gru.h:10:24: error: ‘__m256’ was not declared in this scope\r\n #define SABER_X86_TYPE __m256\r\n                        ^\r\n/home/Anakin/saber/funcs/impl/x86/saber_gru.h:58:38: note: in expansion of macro ‘SABER_X86_TYPE’\r\n             int aligned_byte= sizeof(SABER_X86_TYPE);\r\n                                      ^~~~~~~~~~~~~~\r\n/home/Anakin/saber/funcs/impl/x86/saber_gru.h:10:24: note: suggested alternative: ‘__modf’\r\n #define SABER_X86_TYPE __m256\r\n                        ^\r\n/home/Anakin/saber/funcs/impl/x86/saber_gru.h:58:38: note: in expansion of macro ‘SABER_X86_TYPE’\r\n             int aligned_byte= sizeof(SABER_X86_TYPE);\r\n                                      ^~~~~~~~~~~~~~\r\nsaber/CMakeFiles/anakin_saber_common.dir/build.make:494: recipe for target 'saber/CMakeFiles/anakin_saber_common.dir/funcs/impl/x86/saber_gru.cpp.o' failed\r\nmake[2]: *** [saber/CMakeFiles/anakin_saber_common.dir/funcs/impl/x86/saber_gru.cpp.o] Error 1\r\nmake[2]: *** Waiting for unfinished jobs....\r\nCMakeFiles/Makefile2:140: recipe for target 'saber/CMakeFiles/anakin_saber_common.dir/all' failed\r\nmake[1]: *** [saber/CMakeFiles/anakin_saber_common.dir/all] Error 2\r\nMakefile:129: recipe for target 'all' failed\r\nmake: *** [all] Error 2\r\n",
+        "state": "open",
+        "user": "duanlin0505",
+        "closed_by": null,
+        "created_at": "2018-09-19T11:42:01+00:00",
+        "updated_at": "2019-01-29T12:16:07+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Shixiaowei02",
+            "jiansongjay"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 463,
+        "title": "Dose libanakin_saber_sass_sm_61.a support fp16?",
+        "body": "@Superjomn Hi, I just want to compare  the performance of anakin_sass with  the performance of cudnn@7.0.x for convolution operator,  and I have successfully compared on fp32 data-format.\r\nHowever, when I tried fp16 data-format, I encountered that error of undefined reference to `void anakin::saber::direct_conv_bias_Kdivis4<__half, __half>,  does libanakin_saber_sass_sm_61.a support fp16 data-format?",
+        "state": "open",
+        "user": "peyer",
+        "closed_by": null,
+        "created_at": "2018-09-25T03:47:49+00:00",
+        "updated_at": "2018-09-28T07:32:49+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Shixiaowei02"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 465,
+        "title": "How to build the ios anakin from source ?",
+        "body": "Thanks, I can only find the android build tutorial in your doc.",
+        "state": "open",
+        "user": "KeyKy",
+        "closed_by": null,
+        "created_at": "2018-10-12T03:09:30+00:00",
+        "updated_at": "2018-10-18T12:16:38+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "KeyKy",
+            "KeyKy",
+            "KeyKy",
+            "leiyu1980"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 470,
+        "title": "编译出错：/Anakin/saber/funcs/impl/arm/saber_eltwise_active.cpp:681:5: error: 'float32x4_t' was not declared in this scope",
+        "body": "在编译arm版的时候出错，提示\r\n/Anakin/saber/funcs/impl/arm/saber_eltwise_active.cpp:681:5: error: 'float32x4_t' was not declared in this scope\r\n上一个地方也有这个问题，我加上<arm_neon.h>后解决了，但是这里又出现了，这个该怎么改呢？\r\n感谢~",
+        "state": "open",
+        "user": "forMwish",
+        "closed_by": null,
+        "created_at": "2018-10-31T09:49:23+00:00",
+        "updated_at": "2018-10-31T09:49:23+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 471,
+        "title": "benchmark doc and code out of data",
+        "body": "doc under Anakin/benchmark/README_CPU.md is out of data. \r\nThree links of models points to 404 page\r\nThose links in Anakin/benchmark/RNN/prepare.sh are also invalid. \r\n",
+        "state": "open",
+        "user": "Yourens",
+        "closed_by": null,
+        "created_at": "2018-11-05T03:08:54+00:00",
+        "updated_at": "2019-06-12T03:08:16+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "2015-10-10"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 473,
+        "title": "anakin GPU",
+        "body": "",
+        "state": "closed",
+        "user": "Weyne168",
+        "closed_by": "Weyne168",
+        "created_at": "2018-11-06T02:19:47+00:00",
+        "updated_at": "2018-11-06T02:21:18+00:00",
+        "closed_at": "2018-11-06T02:21:18+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 472,
+        "title": "CPU机器上运行benchmark 提示 LRN has not been registered!",
+        "body": "使用tools/X86_build.sh 编译anakin，然后依据下面的issue 提供的model 生成anakin model\r\nhttps://github.com/PaddlePaddle/Anakin/issues/452\r\n\r\n但是在运行benchmark 的时候出现如下错误，\r\n WAN| 11:31:35.00989| 0.060s| main_thread| input.cpp:16] Parsing Input op parameter.\r\n   0| 11:31:35.00989| 0.060s| main_thread| input.cpp:19]  |-- shape [0]: 2\r\n   0| 11:31:35.00989| 0.060s| main_thread| input.cpp:19]  |-- shape [1]: 3\r\n   0| 11:31:35.00989| 0.060s| main_thread| input.cpp:19]  |-- shape [2]: 224\r\n   0| 11:31:35.00989| 0.060s| main_thread| input.cpp:19]  |-- shape [3]: 224\r\n FTL| 11:31:35.00989| 0.060s| main_thread| factory.h:37] LRN has not been registered!\r\n ***  fatal error stack trace: ***:\r\n  5             0x5bbb59 _start + 41\r\n 4       0x7fabafa2a830 __libc_start_main + 240\r\n 3             0x5876b3 main + 723\r\n 2             0x5c91c7 anakin::test::EngineTest::run_all(char const*) + 1063\r\n 1             0x5be029 NetTest_net_execute_base_test::net_execute_base_test() + 1993\r\n 0             0x6574ec anakin::Net<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, (anakin::saber::DataType)1, (anakin::Precision)0, (anakin::OpRunType)1>::Net(anakin::graph::Graph<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, (anakin::saber::DataType)1, (anakin::Precision)0>&, bool) + 172",
+        "state": "open",
+        "user": "Yourens",
+        "closed_by": null,
+        "created_at": "2018-11-05T03:33:59+00:00",
+        "updated_at": "2018-11-06T03:36:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "uraj",
+            "Yourens",
+            "uraj",
+            "Yourens",
+            "uraj",
+            "Yourens"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 477,
+        "title": "Convolution层only  support group == 1？",
+        "body": "问题：\r\n在x86上执行net_executer.prediction()的时候中断报错： x86_utils.h:906] Check failed:group == 1 (32 == 1) only  support group == 1\r\n *** Check failed:group == 1 (32 == 1)  fatal error stack trace: ***:\r\n\r\n我用的MobileNet-SSD模型，卷积层如下：\r\nlayer {\r\n  name: \"conv1/dw\"\r\n  type: \"Convolution\"\r\n  bottom: \"conv0\"\r\n  top: \"conv1/dw\"\r\n  param {\r\n    lr_mult: 0.1\r\n    decay_mult: 0.1\r\n  }\r\n  convolution_param {\r\n    num_output: 32\r\n    bias_term: false\r\n    pad: 1\r\n    kernel_size: 3\r\n    group: 32\r\n    #engine: CAFFE\r\n    weight_filler {\r\n      type: \"msra\"\r\n    }\r\n  }\r\n}\r\n是x86上只支持group==1？我把这层换成ConvolutionDepthwise也没用。\r\n",
+        "state": "open",
+        "user": "whongjob",
+        "closed_by": null,
+        "created_at": "2018-11-07T09:27:33+00:00",
+        "updated_at": "2018-11-07T09:27:33+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 475,
+        "title": "x86调用转换的MobileNet-SSD的caffemodel模型，调用net_executer时concat层出错。在caffe SSD里面mbox_priorbox的concat层的输入是3维的，在AK里面输入是4维了，concat的参数axis: 2就不对了。这种问题是模型转换有问题吗？",
+        "body": "我用x86调用转换后的MobileNet-SSD模型，在concat层出错。是模型转换哪里出错了吗？\r\n错误信息：\r\n WAN| 16:44:19.00789| 0.078s|         AC143780| x86_device.cpp:27] X86 get_info is not implemented\r\n WAN| 16:44:19.00789| 0.078s|         AC143780| net.cpp:667] Current used device id : 0\r\n WAN| 16:44:19.00790| 0.079s|         AC143780| input.cpp:16] Parsing Input op parameter.\r\n   0| 16:44:19.00790| 0.079s|         AC143780| input.cpp:19]  |-- shape [0]: 1\r\n   0| 16:44:19.00790| 0.079s|         AC143780| input.cpp:19]  |-- shape [1]: 3\r\n   0| 16:44:19.00790| 0.079s|         AC143780| input.cpp:19]  |-- shape [2]: 300\r\n   0| 16:44:19.00790| 0.079s|         AC143780| input.cpp:19]  |-- shape [3]: 300\r\n WAN| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00791| 0.080s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00792| 0.080s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00792| 0.080s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00792| 0.080s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00792| 0.080s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n WAN| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:20] !!!!!!!! Parsing Permute op parameter.\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [0]: 0\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [1]: 2\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [2]: 3\r\n   0| 16:44:19.00792| 0.081s|         AC143780| permute.cpp:24]  |-- dims [3]: 1\r\n FTL| 16:44:19.00799| 0.088s|         AC143780| concat.h:101] Check failed:shape_out[j] == sh[j] (4332 == 2400) All inputs must have the same shape, except at concat_axis.\r\n *** Check failed:shape_out[j] == sh[j] (4332 == 2400)  fatal error stack trace: ***:\r\n\r\n",
+        "state": "open",
+        "user": "whongjob",
+        "closed_by": null,
+        "created_at": "2018-11-06T09:00:37+00:00",
+        "updated_at": "2018-12-03T02:17:24+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Hub-er",
+            "whongjob",
+            "MyPandaShaoxiang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 474,
+        "title": "The running results of Anakin on GPU are not stable",
+        "body": "we use Anakin to run a model converted from caffe.\r\nwe found that, the output of Anakin is not stable comparing the caffe.\r\n\r\nwith the same input, we can get very stable output on nvidia-GPU by pycaffe, but when we use Anakin run the same model on the same GPU, the output often change.\r\n\r\n sometimes, the output of Anakin is the same as the output of caffe, but in more often situation, the output of Anakin is changing and is not correct.\r\n\r\nwe wonder that what is factor cause this phenomenon?",
+        "state": "open",
+        "user": "Weyne168",
+        "closed_by": null,
+        "created_at": "2018-11-06T02:34:44+00:00",
+        "updated_at": "2018-12-03T08:46:01+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "MyPandaShaoxiang",
+            "Weyne168",
+            "MyPandaShaoxiang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 486,
+        "title": "这个项目，更新频率怎样？ISSUE感觉很久都没人回？有没有发版计划？",
+        "body": "",
+        "state": "closed",
+        "user": "kasyoukin",
+        "closed_by": "kasyoukin",
+        "created_at": "2018-11-22T05:53:56+00:00",
+        "updated_at": "2018-12-17T03:06:16+00:00",
+        "closed_at": "2018-12-17T03:06:16+00:00",
+        "comments_count": [
+            "MyPandaShaoxiang",
+            "leiyu1980",
+            "leiyu1980"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 504,
+        "title": "Does it have the multi-thread test ?",
+        "body": "In my task, I need not only do network computations on gpu but also do complex post processing on cpu.\r\nSo I need to create multithreads on cpu and push the data to gpu individually by every thread. But I have counter a big problem. This architecture can not support many threads on cpu. For example, the machine can run 56 threads on cpu . But the cpu-gpu mix architecture can only run 8 threads . Does this project \r\nhave some multithread examples ? Or some advices about how to use it in multithread . Thank you !",
+        "state": "open",
+        "user": "Rpersie",
+        "closed_by": null,
+        "created_at": "2018-12-25T08:25:26+00:00",
+        "updated_at": "2019-06-12T03:06:39+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "2015-10-10"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 491,
+        "title": "我Centos上编译GPU版本时设置如下",
+        "body": "",
+        "state": "open",
+        "user": "yangjintao",
+        "closed_by": null,
+        "created_at": "2018-11-30T04:00:10+00:00",
+        "updated_at": "2018-12-11T02:11:19+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "yangjintao"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 509,
+        "title": "Does Anakin support IOS now?",
+        "body": "I cannot find any docs related to IOS version, only a named `lite_ios_build_armv7.sh` file. \r\n\r\nDoes Anakin support IOS now? \r\nCould you provide tutorials for compiling anakin for IOS?\r\n\r\nThanks in advance.",
+        "state": "open",
+        "user": "ljayx",
+        "closed_by": null,
+        "created_at": "2019-01-28T04:43:34+00:00",
+        "updated_at": "2019-06-11T12:36:40+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ljayx",
+            "2015-10-10"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 508,
+        "title": "fluid2Anakin failed at the beginning",
+        "body": "I'm trying to convert fluid model to anakin, but I got an error in the very beginning. Hope you can help me.\r\n\r\n**Issue**:\r\n```\r\nERROR: flag 'logtostderr' was defined more than once (in files '/tmp/glog-20171216-78363-w0y7q0/glog-0.3.5/src/logging.cc' and '/Users/python2/yangjiabin/PR/Paddle/build/third_party/glog/src/extern_glog/src/logging.cc').\r\n```\r\nps: /Users/python2/yangjiabin/...    this is **not** my path.\r\n\r\n**Env**:\r\nlaptop: MacOSX 10.12.6\r\nfluid model: MobileNetV1: model+params (pretrained models of paddlepaddle official)\r\nAnakin branch: developing (already up to date)\r\n\r\nconfig.yaml:\r\n```\r\nOPTIONS:\r\n  Framework: FLUID\r\n  SavePath: ./model/mobilenet_v1/output\r\n  ResultName: MobileNetV1_fluid\r\n  Config:\r\n    LaunchBoard: ON\r\n    Server:\r\n      ip: 127.0.0.1\r\n      port: 6007\r\n    OptimizedGraph:\r\n      enable: ON\r\n      path: ./model/mobilenet_v1/output/MobileNetV1_fluid.anakin.bin\r\n  LOGGER:\r\n    LogToPath: ./model/mobilenet_v1/log/\r\n    WithColor: ON\r\n\r\nTARGET:\r\n  CAFFE:\r\n    # path to proto files\r\n    ProtoPaths:\r\n      - \r\n    PrototxtPath: \r\n    ModelPath: \r\n    Remark:  # Generally no need to modify.\r\n\r\n  FLUID:\r\n    # path of fluid inference model\r\n    Debug: NULL                            # Generally no need to modify.\r\n    ModelPath: /Users/xxx/MobileNetV1/fluid\r\n    NetType:                               # Generally no need to modify.\r\n```\r\n\r\nAny comments will be appreciated.\r\nThanks in advance!",
+        "state": "closed",
+        "user": "ljayx",
+        "closed_by": "ljayx",
+        "created_at": "2019-01-14T04:09:06+00:00",
+        "updated_at": "2019-01-23T03:10:09+00:00",
+        "closed_at": "2019-01-23T03:09:24+00:00",
+        "comments_count": [
+            "Shixiaowei02",
+            "ljayx"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 510,
+        "title": "centos 7.3执行x86_build.sh报错",
+        "body": "GCC版本为4.8.5\r\n系统版本为centos 7.3\r\n执行x86_build.sh后显示如下错误：\r\n/home/dev/thirdparty/Anakin/saber/funcs/impl/x86/saber_lstm.h: In member function ‘virtual anakin::saber::SaberStatus anakin::saber::SaberLstm<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, OpDtype, inDtype, outDtype, LayOutType_op, LayOutType_in, LayOutType_out>::init(const std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, inDtype, LayOutType_in>*>&, std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, outDtype, LayOutType_out>*>&, anakin::saber::LstmParam<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, OpDtype, LayOutType_op> >&, anakin::saber::Context<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4> >&)’:\r\n/home/dev/thirdparty/Anakin/saber/funcs/impl/x86/saber_lstm.h:26:24: error: ‘__m256’ was not declared in this scope\r\n #define SABER_X86_TYPE __m256\r\n                        ^\r\n/home/dev/thirdparty/Anakin/saber/funcs/impl/x86/saber_lstm.h:78:34: note: in expansion of macro ‘SABER_X86_TYPE’\r\n         int aligned_byte= sizeof(SABER_X86_TYPE);\r\n                                  ^~~~~~~~~~~~~~\r\nIn file included from /home/dev/thirdparty/Anakin/saber/funcs/impl/x86/saber_gru.cpp:2:0:\r\n/home/dev/thirdparty/Anakin/saber/funcs/impl/x86/saber_gru.h: In member function ‘virtual anakin::saber::SaberStatus anakin::saber::SaberGru<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, OpDtype, inDtype, outDtype, LayOutType_op, LayOutType_in, LayOutType_out>::init(const std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, inDtype, LayOutType_in>*>&, std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, outDtype, LayOutType_out>*>&, anakin::saber::GruParam<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, OpDtype, LayOutType_op> >&, anakin::saber::Context<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4> >&)’:\r\n/home/dev/thirdparty/Anakin/saber/funcs/impl/x86/saber_gru.h:10:24: error: ‘__m256’ was not declared in this scope",
+        "state": "open",
+        "user": "jiansongjay",
+        "closed_by": null,
+        "created_at": "2019-01-29T14:45:29+00:00",
+        "updated_at": "2019-06-12T02:47:33+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "2015-10-10"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 511,
+        "title": "Unknown op type",
+        "body": "已经经过验证的caffe模型在编译生成anaki库后，在ios端初始化，报Unknown op type这个错误。有人遇到过吗？",
+        "state": "open",
+        "user": "wangyuaqi",
+        "closed_by": null,
+        "created_at": "2019-03-09T09:27:57+00:00",
+        "updated_at": "2019-06-12T02:44:17+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "2015-10-10"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 516,
+        "title": "SIGFPE error while running Anakin on AMD GPU",
+        "body": "I am running Anakin on AMD GPU. I used below git repo \r\nhttps://github.com/ROCmSoftwarePlatform/Anakin\r\nbranch AMD_master_upstream  \r\n\r\nNow when I run any model I see below FP error\r\n\r\nWith gdb\r\n=======\r\nThread 1 \"benchmark\" received signal SIGFPE, Arithmetic exception.\r\n0x00001555527dc6b6 in miopen::solver::ConvBinWinograd3x3U::IsApplicable(miopen::ConvolutionContext const&) const ()\r\n   from /home/amd/avinash/Anakin_GPU/rocm-Anakin/Anakin/output/miopen/lib/libMIOpen.so.1\r\n(gdb)\r\n \r\n\r\nOn Console\r\n=========\r\nlogger caught a signal: SIGFPE\r\nFTL| 11:21:19.00891| 3.844s| main_thread| :0] Signal caught: SIGFPE\r\n*** Signal caught:  fatal error: stack trace: ***\r\n  19            0x4cb3a9 _start + 41\r\n18      0x7fe38ed7d830 __libc_start_main + 240\r\n17            0x4cd592 main + 1691\r\n16            0x4d0c7d anakin::test::EngineTest::run_all(char const*) + 1243\r\n15            0x4d7ff6 std::function<void ()>::operator()() const + 50\r\n14            0x4dfa48 std::_Function_handler<void (), std::_Bind<std::_Mem_fn<void (NetTest_net_execute_base_test::*)()> (NetTest_net_execute_base_test)> >::_M_invoke(std::_Any_data const&) + 32\r\n13            0x4e4ca9 void std::_Bind<std::_Mem_fn<void (NetTest_net_execute_base_test::*)()> (NetTest_net_execute_base_test)>::operator()<, void>() + 57\r\n12            0x4e91bf void std::_Bind<std::_Mem_fn<void (NetTest_net_execute_base_test::*)()> (NetTest_net_execute_base_test)>::__call<void, , 0ul>(std::tuple<>&&, std::_Index_tuple<0ul>) + 87\r\n11            0x4ec335 void std::_Mem_fn_base<void (NetTest_net_execute_base_test::*)(), true>::operator()<, void>(NetTest_net_execute_base_test&) const + 101\r\n10            0x4cc25a NetTest_net_execute_base_test::net_execute_base_test() + 2076\r\n9       0x7fe390a563f1 anakin::Net<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2>, (anakin::Precision)0, (anakin::OpRunType)1>::Net(anakin::graph::Graph<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2>, (anakin::Precision)0>&, bool) + 225\r\n8       0x7fe390a59e3a anakin::Net<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2>, (anakin::Precision)0, (anakin::OpRunType)1>::init(anakin::graph::Graph<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2>, (anakin::Precision)0>&) + 7540\r\n7       0x7fe390c6420d anakin::ops::ConvReluHelper<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2>, (anakin::Precision)0>::Init(anakin::saber::Context<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >&, std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*, std::allocator<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*> > const&, std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*, std::allocator<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*> >&) + 571\r\n6       0x7fe390b9b0cd anakin::saber::BaseFunc<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2>, (anakin::saber::DataType)1, anakin::saber::ImplBase, anakin::saber::ConvParam>::init(std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*, std::allocator<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*> > const&, std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*, std::allocator<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*> >&, anakin::saber::ConvParam<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >&, anakin::saber::SaberImplStrategy, anakin::saber::ImplEnum, anakin::saber::Context<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >&) + 739\r\n5       0x7fe38f8d979a anakin::saber::SaberConv2D<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2>, (anakin::saber::DataType)1>::init(std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*, std::allocator<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*> > const&, std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*, std::allocator<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*> >&, anakin::saber::ConvParam<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >&, anakin::saber::Context<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >&) + 76\r\n4       0x7fe38f8db3e0 anakin::saber::SaberConv2D<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2>, (anakin::saber::DataType)1>::create(std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*, std::allocator<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*> > const&, std::vector<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*, std::allocator<anakin::saber::Tensor<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >*> >&, anakin::saber::ConvParam<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >&, anakin::saber::Context<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)2> >&) + 7236\r\n3       0x7fe38f8fa92a _ZN6miopen6solver17SearchForSolutionIINS0_19ConvBinWinograd3x3UENS0_22ConvOclDirectFwd1x1AMDENS0_19ConvOclDirectFwdGenENS0_19ConvOclDirectFwd3x3ENS0_19ConvOclDirectFwd1x1ENS0_16ConvOclDirectFwdEENS_18ConvolutionContextENS_2DbEEENSt11common_typeIIDpDTcl12FindSolutiontlT_Efp_fp0_EEEE4typeERKT0_T1_ + 122\r\n2       0x7fe38f8ff2ef void miopen::solver::ExpandSearch<miopen::ConvolutionContext, miopen::solver::ConvSolution, miopen::Db, bool, miopen::solver::ConvBinWinograd3x3U, miopen::solver::ConvOclDirectFwd1x1AMD, miopen::solver::ConvOclDirectFwdGen, miopen::solver::ConvOclDirectFwd3x3, miopen::solver::ConvOclDirectFwd1x1, miopen::solver::ConvOclDirectFwd>(miopen::ConvolutionContext const&, miopen::Db&, miopen::solver::ConvSolution&, bool&, miopen::solver::ConvBinWinograd3x3U&&, miopen::solver::ConvOclDirectFwd1x1AMD&&, miopen::solver::ConvOclDirectFwdGen&&, miopen::solver::ConvOclDirectFwd3x3&&, miopen::solver::ConvOclDirectFwd1x1&&, miopen::solver::ConvOclDirectFwd&&) + 63\r\n1       0x7fe38f9009c3 void miopen::solver::ExpandSearch<miopen::ConvolutionContext, miopen::solver::ConvSolution, miopen::Db, bool, miopen::solver::ConvBinWinograd3x3U>(miopen::ConvolutionContext const&, miopen::Db&, miopen::solver::ConvSolution&, bool&, miopen::solver::ConvBinWinograd3x3U&) + 111\r\n0       0x7fe38dce56b6 miopen::solver::ConvBinWinograd3x3U::IsApplicable(miopen::ConvolutionContext const&) const + 598 \r\n\r\n\r\n",
+        "state": "open",
+        "user": "avinashcpandey",
+        "closed_by": null,
+        "created_at": "2019-04-16T04:12:34+00:00",
+        "updated_at": "2019-04-16T04:12:34+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 513,
+        "title": "Can we build and run Anakin with MKLDNN on CPU for CNN models?",
+        "body": "",
+        "state": "open",
+        "user": "avinashcpandey",
+        "closed_by": null,
+        "created_at": "2019-03-20T10:54:58+00:00",
+        "updated_at": "2019-04-16T03:58:56+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qq332982511"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 512,
+        "title": "LRN has not been registered, ConvBatchnormScaleReluPool has not been registered error with Anakin inference engine",
+        "body": "I followed below link for running CNN benchmark it  \r\nhttps://github.com/PaddlePaddle/Anakin/tree/developing/benchmark/CNN\r\nhttps://github.com/PaddlePaddle/Anakin/blob/developing/docs/Manual/Converter_en.md\r\n\r\nSteps I followed:\r\n\r\n1.\tI downloaded below model files for alexnet\r\n        caffe.proto\r\n        https://github.com/BVLC/caffe/blob/master/src/caffe/proto/caffe.proto\r\n\r\n        alexnet.prototxt\r\n        https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt\r\n\r\n        alexnet.caffemodel\r\n         http://dl.caffe.berkeleyvision.org/bvlc_alexnet.caffemodel\r\n\r\n2.\tThen I used below Anakin converter to convert it into Anakin  \r\n        https://github.com/PaddlePaddle/Anakin/blob/developing/docs/Manual/Converter_en.md\r\n                \r\n3.\tNow when I run run.sh for benchmark following below link\r\n         https://github.com/PaddlePaddle/Anakin/tree/developing/benchmark/CNN\r\n\r\n**I get **below er**ror:\r\n   0| 16:01:55.00997| 0.221s| main_thread| input.cpp:19]  |-- shape [3]: 227\r\nFTL| 16:01:55.00997| 0.221s| main_thread| factory.h:37] LRN has not been registered!\r\n***  fatal error: stack trace: ***\r\n  5             0x417c99 _start + 41\r\n4       0x7f7289445830 __libc_start_main + 240\r\n3             0x417b77 main + 791\r\n2             0x425815 anakin::test::EngineTest::run_all(char const*) + 789\r\n1             0x41c264 NetTest_net_execute_base_test::net_execute_base_test() + 2420\r\n0       0x7f728a75bbec anakin::Net<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, (anakin::saber::DataType)1, (anakin::Precision)0, (anakin::OpRunType)1>::Net(anakin::graph::Graph<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum)4>, (anakin::saber::DataType)1, (anakin::Precision)0>&, bool) + 172\r\nAborted (core dumped)**\r\n\r\n\r\nWith Resnet50 model i get below error\r\n========================\r\n\r\n FTL| 15:21:08.00991| 0.244s| main_thread| factory.h:37] ConvBatchnormScaleReluPool has not been registered!\r\n ***  fatal error: stack trace: ***\r\n  5             0x417c99 _start + 41\r\n 4       0x7f310fec8830 __libc_start_main + 240\r\n 3             0x417b77 main + 791\r\n 2             0x425815 anakin::test::EngineTest::run_all(char const*) + 789\r\n 1             0x41c264 NetTest_net_execute_base_test::net_execute_base_test() + 2420\r\n 0       0x7f31111debec anakin::Net<anakin::saber::TargetType<(anakin::saber::TargetTypeEnum\r\n",
+        "state": "open",
+        "user": "avinashcpandey",
+        "closed_by": null,
+        "created_at": "2019-03-18T10:48:35+00:00",
+        "updated_at": "2019-04-16T04:23:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qq332982511",
+            "avinashcpandey"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 514,
+        "title": "Does Anakin run multi-thread in its own code? ",
+        "body": "I see if i set OMP_NUM_THREADS or MKL_NUM_THREADS  Anakin runs multi thread. This multithread control threading in MKLML library not in Anakin code. Correct me if i am wrong.\r\nDoes Anakin support multi-threding in its own code?  ",
+        "state": "open",
+        "user": "avinashcpandey",
+        "closed_by": null,
+        "created_at": "2019-03-22T09:15:47+00:00",
+        "updated_at": "2019-04-16T03:49:35+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qq332982511"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 519,
+        "title": "Why are we compare the old version TensorRT3?",
+        "body": "As the engineering team has committed the TensorRT5 for benchmark, \r\n\r\nSee here: \r\nhttps://github.com/PaddlePaddle/Anakin/commit/f1bf52ae06c50649f99db40d0901dd99bdecc806#diff-451ede2b5c91ad8e6d9e1d3046424d3d\r\n\r\nCould you elaborate more on why you back to compare the old version of TensorRT3?\r\n",
+        "state": "open",
+        "user": "giranntu",
+        "closed_by": null,
+        "created_at": "2019-05-04T08:36:50+00:00",
+        "updated_at": "2019-06-12T02:37:31+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "2015-10-10"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 520,
+        "title": "drop error",
+        "body": "layer {\r\n    bottom: \"cnn/conv7\"\r\n    top: \"cnn/conv7\"\r\n    name: \"cnn/bn_conv7\"\r\n    type: \"BatchNorm\"\r\n}\r\nlayer {\r\n    bottom: \"cnn/conv7\"\r\n    top: \"cnn/conv7\"\r\n    name: \"cnn/scale_conv7\"\r\n    type: \"Scale\"\r\n    scale_param {\r\n        bias_term: true\r\n    }\r\n}\r\nlayer {\r\n  name: \"cnn/relu7\"\r\n  type: \"ReLU\"\r\n  bottom: \"cnn/conv7\"\r\n  top: \"cnn/conv7\"\r\n}\r\n\r\nlayer {\r\n  name: \"cnn/drop\"\r\n  type: \"Dropout\"\r\n  bottom: \"cnn/conv7\"\r\n  top: \"cnn/drop\"\r\n  dropout_param {\r\n    dropout_ratio: 0.7\r\n  }\r\n}\r\n\r\nlayer {\r\n    name: \"cnn/permute0\"\r\n    type: \"Permute\"\r\n    bottom: \"cnn/drop\"\r\n    top: \"cnn/permute0\"\r\n    permute_param {\r\n        order: 0\r\n        order: 2\r\n        order: 3\r\n        order: 1\r\n    }\r\n}\r\n\r\nFTL | 2019-05-26 18:54:21.904228 | parser_caffe.py:326 _InsertSplits() ]  Unknown bottom (blob: cnn/drop) in (layer: 'cnn/permute0')",
+        "state": "closed",
+        "user": "OMG59E",
+        "closed_by": "OMG59E",
+        "created_at": "2019-05-26T10:30:24+00:00",
+        "updated_at": "2023-10-24T03:27:44+00:00",
+        "closed_at": "2023-10-24T03:27:44+00:00",
+        "comments_count": [
+            "throneclay"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 521,
+        "title": "can't convert from caffe  model.",
+        "body": "my config:\r\n\r\n```\r\n> OPTIONS:\r\n>     Framework: CAFFE\r\n>     SavePath: ./output\r\n>     ResultName: face_r100\r\n>     Config:\r\n>         LaunchBoard: ON\r\n>         Server:\r\n>             ip: 0.0.0.0\r\n>             port: 8888\r\n>         OptimizedGraph:\r\n>             enable: OFF\r\n>             path: ./googlenet.paddle_inference_model.bin.saved\r\n>     LOGGER:\r\n>         LogToPath: ./log/\r\n>         WithColor: ON\r\n> \r\n> TARGET:\r\n>     CAFFE:\r\n>         # path of fluid inference model\r\n>         Debug: NULL                            # Generally no need to modify.\r\n>         PrototxtPath: ./model/model.prototxt        # The upper path of a fluid inference model.\r\n>         ModelPath: ./model/model.caffmodel        # The upper path of a fluid inference model.\r\n>         NetType:        \r\n```\r\n\r\n> Traceback (most recent call last):\r\n>   File \"converter.py\", line 79, in <module>\r\n>     graph = Graph(config)\r\n>   File \"/root/Anakin/tools/external_converter_v2/parser/graph.py\", line 26, in __init__\r\n>     raise NameError('ERROR: GrapProtoIO not support %s model.' % (config.framework))\r\n> NameError: ERROR: GrapProtoIO not support CAFFE model.\r\n",
+        "state": "closed",
+        "user": "szad670401",
+        "closed_by": "szad670401",
+        "created_at": "2019-05-26T11:39:48+00:00",
+        "updated_at": "2019-06-24T09:55:17+00:00",
+        "closed_at": "2019-06-24T09:55:17+00:00",
+        "comments_count": [
+            "Jayoprell"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 523,
+        "title": "How to use sass_func for computing convolution?",
+        "body": "Thanks for your great work! \r\nI just wanna to compare the latency of running convolution layer between anakin_sass and cudnn, and I have successfully ran convolution layer with cudnn.\r\nHowever,  when I call api of direct_conv_bias_Kdivis4 in sass_funcs.h, I found that I just did not understand the meaning of parameters like img_in_channel_stride, img_in_height_stride and so on.\r\nSo, How should I set the img_in_channel_stride parameter properly?",
+        "state": "open",
+        "user": "peyer",
+        "closed_by": null,
+        "created_at": "2019-06-13T09:43:13+00:00",
+        "updated_at": "2019-06-26T07:35:29+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "throneclay"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 524,
+        "title": "在自研的芯片上使用Anakin是合法的吗？",
+        "body": "如果将Anakin作为自研芯片之上的软件框架，并出售芯片提供给客户使用，请问是合法的吗？",
+        "state": "open",
+        "user": "tigereatsheep",
+        "closed_by": null,
+        "created_at": "2019-06-17T02:01:56+00:00",
+        "updated_at": "2019-06-26T07:34:55+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "csuhawk",
+            "tigereatsheep",
+            "2015-10-10",
+            "tigereatsheep",
+            "2015-10-10"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 528,
+        "title": "Can i install anakin on arm arch  linux os",
+        "body": "as title",
+        "state": "open",
+        "user": "rasura",
+        "closed_by": null,
+        "created_at": "2019-07-03T09:34:10+00:00",
+        "updated_at": "2019-07-03T09:34:10+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 525,
+        "title": "How to use api of direct_conv_xxx in sass_func.hpp",
+        "body": "For convenience, I just take an instance below.\r\nIf the shape of input tensor of conv op is [1, 32, 110, 94] ([N, C, H, W] order),\r\nthe shape of kernel of conv op is 3*3([H, W] order), the channels of kernel is 64, the stride of kernel is 1*1([H, W] order),\r\nthe pad of kernel is 0*0, the dilation of kernel is 1*1, the group of conv op is 1,\r\nthen how to set parameters below\r\nimg_in_channel_stride\r\nimg_in_height_stride\r\nimg_in_width_stride\r\nimg_out_channel_stride\r\nimg_out_height_stride\r\nimg_out_width_stride",
+        "state": "open",
+        "user": "peyer",
+        "closed_by": null,
+        "created_at": "2019-06-17T08:43:35+00:00",
+        "updated_at": "2019-06-18T12:34:02+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xyoungli",
+            "peyer"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 527,
+        "title": "抄袭了Arm的ComputeLibrary是否应该给出说明？",
+        "body": "既然开源了，就要遵守游戏规则",
+        "state": "closed",
+        "user": "izp001",
+        "closed_by": "throneclay",
+        "created_at": "2019-06-24T07:41:24+00:00",
+        "updated_at": "2019-07-19T08:58:40+00:00",
+        "closed_at": "2019-06-26T07:31:33+00:00",
+        "comments_count": [
+            "yiicy",
+            "throneclay",
+            "izp001",
+            "izp001",
+            "yiicy",
+            "daquexian",
+            "daquexian",
+            "xyoungli"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 526,
+        "title": "how to add custom layer",
+        "body": "how to add custom layer ？",
+        "state": "closed",
+        "user": "OMG59E",
+        "closed_by": "OMG59E",
+        "created_at": "2019-06-19T03:07:52+00:00",
+        "updated_at": "2020-06-26T01:44:42+00:00",
+        "closed_at": "2020-06-26T01:44:42+00:00",
+        "comments_count": [
+            "Jayoprell"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 531,
+        "title": "使用开源代码可否遵守开源协议？",
+        "body": "相关 issue：https://github.com/PaddlePaddle/Anakin/issues/527\r\n\r\n在 https://github.com/PaddlePaddle/Anakin/issues/527 里面 @yiicy 说\r\n> 感谢指出问题，我们最开始的GEMM借鉴了compute library，现在sgemm.cpp里的接口已经弃用了，统一使用sgemm_prepacked.cpp里的接口，实现上也做了相应的变化，sgemm_prepacked.cpp的xblock将按照l2 cache大小划分\r\n\r\n我理解为你们承认了你们使用了 acl 的开源代码，那么请遵守它们的 [MIT 协议](https://github.com/ARM-software/ComputeLibrary/blob/master/LICENSE)。没有人关心你们的 block 怎么划分\r\n\r\n在同一个 issue 里面，@throneclay 说\r\n> 没人回复这个就关了，如果有问题可以随时跟我们联系\r\n\r\n我和 @izp001 都进一步回复了，请你们也正面给出回应",
+        "state": "closed",
+        "user": "daquexian",
+        "closed_by": "daquexian",
+        "created_at": "2019-07-17T01:50:52+00:00",
+        "updated_at": "2019-07-19T07:13:49+00:00",
+        "closed_at": "2019-07-19T07:13:49+00:00",
+        "comments_count": [
+            "tpoisonooo",
+            "BUG1989",
+            "daquexian",
+            "daquexian",
+            "xyoungli",
+            "tpoisonooo",
+            "daquexian"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 539,
+        "title": "How about the sgemm speed compare to openblas?",
+        "body": "I want to use anakin's sgemm to do matrix multiplication, how about its speed?",
+        "state": "open",
+        "user": "HaoLiuHust",
+        "closed_by": null,
+        "created_at": "2019-07-24T06:51:54+00:00",
+        "updated_at": "2019-07-24T06:51:54+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 540,
+        "title": "is there any result of Intel(R) Xeon(R) CPU E5-2650 v4 + INT8?",
+        "body": "Can I get inference speed up with \r\nIntel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz  + INT8?\r\n",
+        "state": "open",
+        "user": "WilliamZhaoz",
+        "closed_by": null,
+        "created_at": "2019-10-20T02:39:37+00:00",
+        "updated_at": "2019-10-20T02:39:37+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 546,
+        "title": "提升 conformer 的精度",
+        "body": null,
+        "state": "open",
+        "user": "Jackwaterveg",
+        "closed_by": null,
+        "created_at": "2022-03-17T03:26:25+00:00",
+        "updated_at": "2022-03-17T03:26:25+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 542,
+        "title": "请问980有使用NPU加速么",
+        "body": "如题。\r\n\r\n980比855慢10%实锤了。",
+        "state": "open",
+        "user": "samson-wang",
+        "closed_by": null,
+        "created_at": "2019-12-11T03:49:29+00:00",
+        "updated_at": "2019-12-11T03:49:29+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 541,
+        "title": "Is there any quantization tools",
+        "body": "Is there any quantization tools for me, if I have a pretrained model with FP32, to quantize my model to a INT8 model ?",
+        "state": "open",
+        "user": "WilliamZhaoz",
+        "closed_by": null,
+        "created_at": "2019-10-20T02:39:50+00:00",
+        "updated_at": "2019-12-10T08:08:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Channingss"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 548,
+        "title": "Security Vulnerability Found",
+        "body": "# Absolute Path Traversal due to incorrect use of `send_file` call\n\nA path traversal attack (also known as directory traversal) aims to access files and directories that are stored outside the web root folder. By manipulating variables that reference files with “dot-dot-slash (../)” sequences and its variations or by using absolute file paths, it may be possible to access arbitrary files and directories stored on file system including application source code or configuration and critical system files. This attack is also known as “dot-dot-slash”, “directory traversal”, “directory climbing” and “backtracking”.\n\n## Root Cause Analysis\n\n\nThe `os.path.join` call is unsafe for use with untrusted input. When the `os.path.join` call encounters an absolute path, it ignores all the parameters it has encountered till that point and starts working with the new absolute path.  Please see the example below.\n```\n>>> import os.path\n>>> static = \"path/to/mySafeStaticDir\"\n>>> malicious = \"/../../../../../etc/passwd\"\n>>> os.path.join(t,malicious)\n'/../../../../../etc/passwd'\n```\nSince the \"malicious\" parameter represents an absolute path, the result of `os.path.join` ignores the static directory completely. Hence, untrusted input is passed via the `os.path.join` call to `flask.send_file` can lead to path traversal attacks. \n\n\nIn this case, the problems occurs due to the following code :\nhttps://github.com/PaddlePaddle/Anakin/blob/5fd68a6cc4c4620cd1a30794c1bf06eebd3f4730/docs/api_on_web/__init__.py#L26\n\nHere, the `filename` parameter is attacker controlled. This parameter passes through the unsafe `os.path.join` call making the effective directory and filename passed to the `send_file` call attacker controlled. This leads to a path traversal attack. \n\n\n## Proof of Concept\n\nThe bug can be verified using a proof of concept similar to the one shown below.\n\n \n```\ncurl --path-as-is 'http://<domain>///../../../../etc/passwd\"'\n```\n## Remediation\n\nThis can be fixed by preventing flow of untrusted data to the vulnerable `send_file` function. In case the application logic necessiates this behaviour, one can either use the `werkzeug.utils.safe_join` to join untrusted paths or replace `flask.send_file` calls with `flask.send_from_directory` calls.\n\n\n## References\n* [OWASP Path Traversal](https://owasp.org/www-community/attacks/Path_Traversal)\n* github/securitylab#669\n\n### This bug was found using *[CodeQL by Github](https://codeql.github.com/)*\n",
+        "state": "open",
+        "user": "ghost",
+        "closed_by": null,
+        "created_at": "2022-04-29T13:53:33+00:00",
+        "updated_at": "2022-04-29T13:53:33+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 547,
+        "title": "What is dfmb psroi align?",
+        "body": "Hi,\r\n\r\nWhat is the DFMBPSROIAlign for? Could anyone explain it a little bit? Or is there a link to a paper on the algorithm? Thank you very much!\r\n\r\n请问有人了解DFMBPSROIAlign吗？我想请教一下这个方法是做什么用的？以及有没有相关的论文可以参考。非常感谢！",
+        "state": "closed",
+        "user": "boyang9602",
+        "closed_by": "boyang9602",
+        "created_at": "2022-04-29T00:53:55+00:00",
+        "updated_at": "2022-05-24T19:47:45+00:00",
+        "closed_at": "2022-05-24T19:47:45+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 543,
+        "title": "转换TensorFlow模型时不支持String类型Node",
+        "body": "使用convert.py转换TensorFlow（1.12版本）模型时报错如下：\r\ntensor.type=7\r\nTraceback (most recent call last):\r\n  File \"converter.py\", line 113, in <module>\r\n    graph = Graph(config)\r\n  File \"/data0/xikali/tangram_run/anakin/tools/external_converter_v2/parser/graph.py\", line 46, in __init__\r\n    self.graph_io = self.parser()\r\n  File \"/data0/xikali/tangram_run/anakin/tools/external_converter_v2/parser/tensorflow/parser_tf.py\", line 27, in __call__\r\n    med_graph = self._conver_tf_2_med()\r\n  File \"/data0/xikali/tangram_run/anakin/tools/external_converter_v2/parser/tensorflow/parser_tf.py\", line 41, in _conver_tf_2_med\r\n    return parser.parse()\r\n  File \"/data0/xikali/tangram_run/anakin/tools/external_converter_v2/parser/tensorflow/parse_tf_2_med.py\", line 201, in parse\r\n    nodes = self._parse_tf_node(tf_graph, {})\r\n  File \"/data0/xikali/tangram_run/anakin/tools/external_converter_v2/parser/tensorflow/parse_tf_2_med.py\", line 73, in _parse_tf_node\r\n    anakin_tensor = tf_to_anakin_tensor(node.get_attr(a))\r\n  File \"/data0/xikali/tangram_run/anakin/tools/external_converter_v2/parser/tensorflow/tf_trans_util.py\", line 94, in tf_to_anakin_tensor\r\n    new_type = TF_TO_ANAKIN_DTYPE[tensor.dtype]\r\nKeyError: 7\r\n看上去应该是无法支持tensor.dtype是string类型的？已经删除了所有string类型的特征，但是tf中Assert的op一定是包含string类型的tensor，这个如何解决呢？",
+        "state": "closed",
+        "user": "liuliuniu",
+        "closed_by": "Shixiaowei02",
+        "created_at": "2020-03-30T01:18:43+00:00",
+        "updated_at": "2020-04-09T06:13:22+00:00",
+        "closed_at": "2020-04-09T06:13:22+00:00",
+        "comments_count": [
+            "Shixiaowei02"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/Anakin",
+        "number": 550,
+        "title": "entropy_calibratior和tensorrt实现的Int8EntropyCalibrator2一样功能不",
+        "body": "entropy_calibratior和tensorrt实现的Int8EntropyCalibrator2一样功能不",
+        "state": "open",
+        "user": "yokings",
+        "closed_by": null,
+        "created_at": "2022-06-17T02:13:16+00:00",
+        "updated_at": "2022-06-17T02:13:16+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    }
+]

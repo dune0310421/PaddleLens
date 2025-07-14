@@ -1,0 +1,809 @@
+[
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 22,
+        "title": "3-3-CV-Object_Detection.ipynb 代码",
+        "body": "```python\r\n # 对batchsize进行循环，依次处理每张图片\r\n    for n in range(batchsize):\r\n        # 对图片上的真实框进行循环，依次找出跟真实框形状最匹配的锚框\r\n        for n_gt in range(len(gt_boxes[n])):\r\n            gt = gt_boxes[n][n_gt]\r\n            gt_cls = gt_labels[n][n_gt]\r\n            gt_center_x = gt[0]\r\n            gt_center_y = gt[1]\r\n            gt_width = gt[2]\r\n            gt_height = gt[3]\r\n            if (gt_height < 1e-3) or (gt_height < 1e-3): # 应该有一个是 gt_width 吧\r\n                continue\r\n```",
+        "state": "open",
+        "user": "tianhanghai",
+        "closed_by": null,
+        "created_at": "2020-11-26T02:47:24+00:00",
+        "updated_at": "2020-11-26T02:47:24+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 21,
+        "title": "tutorials/chapter-3-Computer_Vision/3-2-CV-Image_Classification.ipynb 眼疾数据集未公开，无法下载",
+        "body": "tutorials/chapter-3-Computer_Vision/3-2-CV-Image_Classification.ipynb 眼疾数据集未公开，无法下载",
+        "state": "open",
+        "user": "tianhanghai",
+        "closed_by": null,
+        "created_at": "2020-11-24T02:32:02+00:00",
+        "updated_at": "2020-11-24T02:32:02+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 102,
+        "title": "一些文档中的错别字",
+        "body": "### 1. 错别字\r\n\r\n登场 &rarr; 等长\r\n\r\n![image](https://user-images.githubusercontent.com/9301846/122001065-55293900-cde2-11eb-956d-e15114d5968c.png)\r\n\r\n由 &rarr; 有\r\nhttps://paddlepedia.readthedocs.io/en/latest/tutorials/deep_learning/model_tuning/attention/classic_attention.html\r\n![image](https://user-images.githubusercontent.com/9301846/122010816-0da8aa00-cdee-11eb-80e4-ffc21a792186.png)\r\n\r\n\r\n### 2. 格式错误\r\nhttps://paddlepedia.readthedocs.io/en/latest/tutorials/deep_learning/metrics/GAN%20Evaluation.html\r\n\r\n![image](https://user-images.githubusercontent.com/9301846/122002589-860a6d80-cde4-11eb-997b-3b03f2ef7464.png)\r\n\r\nhttps://paddlepedia.readthedocs.io/en/latest/tutorials/deep_learning/optimizers/gd.html\r\n\r\n![image](https://user-images.githubusercontent.com/9301846/122003555-d209e200-cde5-11eb-84c5-46db4e7a0859.png)\r\n\r\nhttps://paddlepedia.readthedocs.io/en/latest/tutorials/deep_learning/loss_functions/CE_Loss.html\r\n\r\n![image](https://user-images.githubusercontent.com/9301846/122008225-5dd23d00-cdeb-11eb-95de-af1abbeed510.png)\r\n\r\n\r\n### 3. 链接跳转\r\nhttps://paddlepedia.readthedocs.io/en/latest/tutorials/deep_learning/model_tuning/normalization/basic_normalization.html\r\n\r\n![image](https://user-images.githubusercontent.com/9301846/122009591-d08fe800-cdec-11eb-9e28-d0aecbf538be.png)\r\n\r\n\r\n### 4. 图片显示问题\r\nhttps://paddlepedia.readthedocs.io/en/latest/tutorials/deep_learning/model_tuning/normalization/basic_normalization.html\r\n![image](https://user-images.githubusercontent.com/9301846/122009737-f4532e00-cdec-11eb-8c08-5c6f937f9915.png)\r\n\r\n![image](https://user-images.githubusercontent.com/9301846/122010010-42683180-cded-11eb-8223-ad7f6affcc94.png)\r\n\r\nhttps://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/convolution_operator/Convolution.html\r\n![image](https://user-images.githubusercontent.com/9301846/122016022-3aab8b80-cdf3-11eb-9029-3ad4b2642229.png)\r\n",
+        "state": "closed",
+        "user": "Aurelius84",
+        "closed_by": "Aurelius84",
+        "created_at": "2021-06-15T06:02:44+00:00",
+        "updated_at": "2021-06-21T10:49:01+00:00",
+        "closed_at": "2021-06-21T10:49:01+00:00",
+        "comments_count": [
+            "chajchaj",
+            "w5688414"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 154,
+        "title": "有关飞桨产业实践案例的问题---智慧交通",
+        "body": "您好！请问飞桨产业实践案例中有没有关于车辆3D检测的案例资料和相关数据集？类似于下面图中课程介绍的这个智慧交通应用。\r\n![image](https://user-images.githubusercontent.com/46082092/124569826-e25b2d00-de78-11eb-83e1-a9483604e035.png)\r\n",
+        "state": "open",
+        "user": "stjuliet",
+        "closed_by": null,
+        "created_at": "2021-07-06T08:42:36+00:00",
+        "updated_at": "2021-07-06T12:22:55+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lvjian0706",
+            "stjuliet"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 123,
+        "title": "公式有点小毛病",
+        "body": "归一化那块，第6节公式里的a和b是不是反了呀",
+        "state": "closed",
+        "user": "DiYi1999",
+        "closed_by": "DiYi1999",
+        "created_at": "2021-06-25T01:24:03+00:00",
+        "updated_at": "2021-06-26T02:14:49+00:00",
+        "closed_at": "2021-06-26T02:14:49+00:00",
+        "comments_count": [
+            "ZhangHandi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 98,
+        "title": "paddle Edu里面部分图片无法显示的问题",
+        "body": "地址：https://paddlepedia.readthedocs.io/en/latest/tutorials/deep_learning/basic_concepts/neuron.html\r\n情况：\r\n![image](https://user-images.githubusercontent.com/61859193/121809023-bc81a480-cc8d-11eb-9612-ba2d43b2e649.png)\r\n![image](https://user-images.githubusercontent.com/61859193/121809025-bee3fe80-cc8d-11eb-9f7f-df265048ec49.png)\r\n![image](https://user-images.githubusercontent.com/61859193/121809053-e20eae00-cc8d-11eb-8f8e-dd2b5e50edf3.png)\r\n等地方图片均无法显示，非GitHub疑似非网络问题（GitHub普遍存在但是涉及网络无法加载部分可以理解，是否就这个问题能不能出一个好的解决方案？及解决近期大量GitHub无法登入和加载的问题？）\r\n辛苦了！端午安康！",
+        "state": "open",
+        "user": "jhcgt4869",
+        "closed_by": null,
+        "created_at": "2021-06-13T13:27:33+00:00",
+        "updated_at": "2021-06-22T02:11:32+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "jhcgt4869",
+            "tngt"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 101,
+        "title": "公式显示问题",
+        "body": "![image](https://user-images.githubusercontent.com/18416103/121987792-c6112680-cdcb-11eb-907f-3b34b6858d9b.png)\r\n",
+        "state": "open",
+        "user": "fxwfzsxyq",
+        "closed_by": null,
+        "created_at": "2021-06-15T03:21:16+00:00",
+        "updated_at": "2021-06-15T12:57:13+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ZhangHandi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 99,
+        "title": "第7章节内notebook下文件编号错误",
+        "body": "![D%M)XFY}X@OB)X8~UX}XLZK](https://user-images.githubusercontent.com/55016894/121846699-01ebb380-cd1a-11eb-9bf5-7dd0329effde.png)\r\n",
+        "state": "open",
+        "user": "trefoil0219",
+        "closed_by": null,
+        "created_at": "2021-06-14T06:09:18+00:00",
+        "updated_at": "2021-06-15T01:55:13+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "w5688414"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 115,
+        "title": "百度架构师手把手带你零基础实践深度学习---文本情感倾向性分析中代码运行后准确率很低",
+        "body": "文本情感倾向性分析中代码运行后准确率很低\r\nacc只有75.7%，请问是正常的吗\r\nhttps://aistudio.baidu.com/bdvgpu/hub/user/253884/2095464/notebooks/2095464.ipynb\r\n![image](https://user-images.githubusercontent.com/18565178/122646737-598f8200-d153-11eb-97c0-fae4b1c9b5db.png)\r\n",
+        "state": "open",
+        "user": "chenglong19920630",
+        "closed_by": null,
+        "created_at": "2021-06-19T15:09:23+00:00",
+        "updated_at": "2021-06-26T07:44:58+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "1649759610",
+            "chenglong19920630"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 653
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 364,
+        "title": "yolov3数据读取",
+        "body": "数据集为csv文件，读取bbox那一列时报错，我将bbox打印出来，错误如下：\r\nThe loss value printed in the log is the current step, and the metric is the average value of previous step.\r\nEpoch 1/500\r\n[0.25539652 0.5858491  0.19836193 0.38616353 0.6230101  0.67830193\r\n 0.24730836 0.46918243]\r\n[0.7792283  0.5643961  0.11184206 0.23062788]\r\n[0.30187854 0.2775     0.26897365 0.34833333 0.8616714  0.33833334\r\n 0.19524482 0.34333333]\r\nERROR:root:DataLoader reader thread raised an exception!\r\n[0.8025461  0.5915411  0.12814969 0.3371958 ][0.3800206  0.46902418 0.27600414 0.62571114 0.78063846 0.4919463\r\n 0.31101957 0.55756444][0.7390249  0.7284802  0.31010672 0.21149425 0.23306131 0.65415066\r\n 0.25486502 0.37547892]\r\n\r\n\r\n[0.38891497 0.512614   0.36167216 0.32222998 0.7768906  0.5151941\r\n 0.31376237 0.34344438]\r\n[0.7358862  0.4776903  0.17449117 0.51093614 0.34561482 0.2646544\r\n 0.19531521 0.23534557 0.34956422 0.6089239  0.15438521 0.1994751 ]\r\n---------------------------------------------------------------------------\r\nSystemError                               Traceback (most recent call last)\r\n<ipython-input-7-76dbc3ad1116> in <module>\r\n     31               verbose=1,\r\n     32               shuffle=True,\r\n---> 33               num_workers=4)\r\n\r\n/usr/local/lib/python3.6/dist-packages/paddle/hapi/model.py in fit(self, train_data, eval_data, batch_size, epochs, eval_freq, log_freq, save_dir, save_freq, verbose, drop_last, shuffle, num_workers, callbacks)\r\n   1493         for epoch in range(epochs):\r\n   1494             cbks.on_epoch_begin(epoch)\r\n-> 1495             logs = self._run_one_epoch(train_loader, cbks, 'train')\r\n   1496             cbks.on_epoch_end(epoch, logs)\r\n   1497 \r\n\r\n/usr/local/lib/python3.6/dist-packages/paddle/hapi/model.py in _run_one_epoch(self, data_loader, callbacks, mode, logs)\r\n   1777     def _run_one_epoch(self, data_loader, callbacks, mode, logs={}):\r\n   1778         outputs = []\r\n-> 1779         for step, data in enumerate(data_loader):\r\n   1780             # data might come from different types of data_loader and have\r\n   1781             # different format, as following:\r\n\r\n/usr/local/lib/python3.6/dist-packages/paddle/fluid/dataloader/dataloader_iter.py in __next__(self)\r\n    786 \r\n    787             if in_dygraph_mode():\r\n--> 788                 data = self._reader.read_next_var_list()\r\n    789             else:\r\n    790                 if self._return_list:\r\n\r\nSystemError: (Fatal) Blocking queue is killed because the data reader raises an exception.\r\n  [Hint: Expected killed_ != true, but received killed_:1 == true:1.] (at /paddle/paddle/fluid/operators/reader/blocking_queue.h:158)",
+        "state": "open",
+        "user": "luyunfighting",
+        "closed_by": null,
+        "created_at": "2021-07-14T02:44:15+00:00",
+        "updated_at": "2021-09-02T03:00:06+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lvjian0706",
+            "luyunfighting"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 659,
+        "title": "六、 飞桨产业实践",
+        "body": "毛遂自荐一波，六、 飞桨产业实践的人摔倒检测  可以参考一下我的这个项目 ：https://aistudio.baidu.com/aistudio/projectdetail/2071768",
+        "state": "open",
+        "user": "Niki173",
+        "closed_by": null,
+        "created_at": "2021-08-20T03:17:00+00:00",
+        "updated_at": "2021-08-20T03:17:00+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 575,
+        "title": "深度学习百问里面部分无图",
+        "body": "https://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/convolution_operator/Dilated_Convolution.html\r\n此链接里面没有图4\r\n![Screenshot_20210726_105416](https://user-images.githubusercontent.com/57068558/126926809-81b2bea8-93a1-49b5-98cd-d6ab5507591e.png)\r\n",
+        "state": "closed",
+        "user": "yuzhi535",
+        "closed_by": "yuzhi535",
+        "created_at": "2021-07-26T02:56:53+00:00",
+        "updated_at": "2021-07-28T02:58:38+00:00",
+        "closed_at": "2021-07-28T02:58:38+00:00",
+        "comments_count": [
+            "lvjian0706"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 693,
+        "title": "训练时，如何只保存准确率最高的模型和最后一个模型final.pdparams",
+        "body": "我只想保存这两个模型，不然太占空间了",
+        "state": "open",
+        "user": "luyunfighting",
+        "closed_by": null,
+        "created_at": "2021-09-02T02:57:43+00:00",
+        "updated_at": "2021-09-07T07:45:48+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "luyunfighting",
+            "w5688414",
+            "luyunfighting"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 605,
+        "title": "已签署 CLA 后始终显示未签署",
+        "body": "点击进入签署页面会显示已签署，但是在 pr 页面仍显示未签署，可能与上传时的 git 用户名与 github 用户名不同导致的？",
+        "state": "open",
+        "user": "BrantShi",
+        "closed_by": null,
+        "created_at": "2021-08-05T09:05:43+00:00",
+        "updated_at": "2021-08-06T07:30:02+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ZhangHandi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 663,
+        "title": "[Call for Contribution] 深度学习百问建设",
+        "body": "## 1.目标\r\n当前飞桨在大力投入深度学习教育内容的建设，为了能够让用户快速掌握深度学习基础知识，我们进行深度学习百问的立项，快速传递深度学习相关知识的原理解读。\r\n在此呼吁广大的飞桨开发者来一起共建我们的深度学习百问，努力为用户提供更加优质的知识点原理解释，为用户学会使用框架铺设一条高速公路。\r\n\r\n## 2.深度学习百问清单\r\n目前我们从已有内容和待补充方向进行了初步评估，梳理了以下建议的选题方向和题目，并为大家提供了比较优秀的模板进行学习参考，大家可以从这个列表中选择自己想要进行贡献的题目，如果想贡献的知识点并不在下面的列表中，大家可以填写自选列表，进行自选题目的贡献。\r\n\r\n## 招募列表\r\n<!DOCTYPE html><figure class=\"md-table-fig\" cid=\"n2\" mdtype=\"table\" style=\"box-sizing: border-box; margin: 1.2em 0px; overflow-x: auto; max-width: calc(100% + 16px); padding: 0px; cursor: default; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, &quot;Clear Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Segoe UI Emoji&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration: none;\">\r\n\r\n序号 | 领域 | 题目 | owner |\r\n-- | -- | -- | -- |\r\n01 | 数学知识 | 特征值特征向量（基本概念，并给一个例子计算特征值和特征向量） |   |\r\n02 |   | 泰勒展开（基本概念+例子） |  \r\n03 |   | 贝叶斯理论（概念+一个类似于抛硬币的例子 |  \r\n04 |   | 熵；（从熵到交叉熵） |  \r\n05 |   | 优化：一阶优化、二阶优化（一阶：随机梯度下降、动量、AdaGrad，二阶：牛顿法，共轭梯度法） |  \r\n06 |   | 对偶理论（对偶问题的数学解释） |  \r\n07 |   | 泛函；（定义和性质） |  \r\n08 |   | 极大似然估计（理论加举例） |  \r\n09 |   | 带约束的优化（等式约束的最优化问题，不等式约束的最优化，KTT条件） |  \r\n10 | 机器学习 | 感知机；（定义，公式，图文并茂） |  \r\n11 |   | 梯度下降及其改进；（图文并貌） |  \r\n12 |   | Logistic Regression（理论+实践） |  \r\n13 |   | 线性回归（理论+实践） |  \r\n14 |   | knn算法（理论+实践） |  \r\n15 |   | 决策树；（理论+实践） |  \r\n16 |   | 高斯混合模型；（单搞斯模型，高斯混合模型，EM算法） |  \r\n17 |   | SVM;（公式推导） |  \r\n18 |   | 模拟退火算法;（原理+实现步骤） |  \r\n19 |   | 遗传算法（原理+特性+适用的问题） |  \r\n20 | 深度学习基础知识 | 全连接层（详细介绍+图、缺点） |  [tughv](https://github.com/tughv) |\r\n21 |   | 卷积和池化padding的same、valid介绍（给出例子） |  [zhangjin12138](https://github.com/zhangjin12138)\r\n22 |   | CNN 模型所需的计算力（flops）和参数（parameters）数量计算（给出计算推导、例子） |  \r\n23 |   | 深度学习中卷积的参数量和计算量（给出计算推导、例子） |  \r\n24 |   | 超参数：补充超参数有哪些、参数和超参数的区别、如何寻找超参数的最优值 |  \r\n25 |   | 样本不平衡（理论、常用解决办法） |  \r\n26 |   | 前向传播和反向传播(理论、推导过程+实例) |  \r\n27 |   | 归一化方法（补充BN、GN、LN等方法介绍、优缺点、适用场景） |  \r\n28 |   | 池化方法补充(新增现有池化方法介绍、文字+图+公式) |  \r\n29 |   | 学习率衰减方法：基于repo已有的衰减方法，补充介绍，比如使用原因、优缺点等 |  \r\n30 | NLP知识 | BLEU评估指标原理讲解，要求有原理描述，又有例子讲解 |  \r\n31 |   | ROUGE评估指标原理讲解，要求有原理描述，又有例子讲解 |  \r\n32 |   | 一文读懂深度循环神经网 Deep RNN |  \r\n33 |   | 一文读懂双向循环神经网 BRNN |  \r\n34 |   | BeamSearch原理讲解，要求需要结合任务进行讲解，比如机器翻译任务 |  \r\n35 |   | 一文读懂textCNN模型原理 |  \r\n36 |   | 一文读懂fastText模型原理 |  \r\n37 |   | 一文读懂GloVe词向量训练 |  \r\n38 |   | 手把手带你实现RNN的反向传播 |  \r\n39 |   | 一文读懂循环神经网络的发展史（从RNN到LSTM，再到LSTM的各种变体，如GRU，CIFG，Peephole等），要求写清楚各个模型的区别与联系。 |  \r\n40 | CV知识 | 图像分类任务综述（从传统方法、到深度学习算法脉络梳理，单标签、多标签、粗细粒度分类任务介绍，常用数据集，应用场景等介绍） |  \r\n41 |   | 图像分割任务综述（任务背景以及应用场景，算法发展脉络，常用数据集） |  \r\n42 |   | OCR任务综述（任务背景以及应用场景，算法发展脉络，常用数据集） |  \r\n43 |   | 视频理解任务综述（任务背景以及应用场景，算法发展脉络，常用数据集） |  \r\n44 |   | GAN任务综述（任务背景以及应用场景，算法发展脉络，常用数据集） |  [lutianhao](https://github.com/lutianhao)\r\n45 |   | MatrixNMS原理介绍 |  \r\n46 |   | 基于现有数据增广内容进行补充（包括：完善现有数据增广方法介绍，新的数据增广方法补充，补充过程中如果有的话需要添加与其他方法的对比） |  \r\n47 |   | 可变形卷积原理介绍（v1、v2两个版本都需要介绍，要求原理加示例） |  \r\n48 |   | CV方向损失函数补充（目标检测：Smooth-L1/GIoU/DIoU/CIoU/IoUAware；分割：dice loss/decoupledsegnet_relax_boundary_loss/dual task loss/edge attention loss/lovasz loss/） |  \r\n49 |   | CV方向评估指标补充（在已有基础上进行补充，包括：分类、检测、分割、OCR、GAN、Video各个方向评估指标介绍） |  \r\n50 | 推荐系统 | 局部敏感哈希（最近邻搜索，基本原理，多桶策略等等） |  \r\n51 |   | Item2Vec（基本原理，特点，局限性等等） |  \r\n52 |   | Wide&Deep（结构，模型的记忆能力与泛化能力，推荐过程等） |  \r\n53 |   | AutoRec（基本原理，结构，推荐过程） |  \r\n54 |   | Deep Crossing（基本原理，结构，推荐过程） |  \r\n55 |   | Graph Embedding: Deep Walk,Node2Vec, EGES |  \r\n56 |   | FM模型（FNN，DEEPFM，NFM，FM等等） |  \r\n57 |   | NeuralCF模型（原理，结构，优缺点等） |  \r\n58 |   | 基于强化学习的推荐（actor-critic原理，应用，推荐过程） |  \r\n59 | 强化学习 | 强化学习经典例子/实验环境详解（多臂赌博机问题、悬崖行走问题、CartPole问题、迷宫游戏、MountainCar等等） |  \r\n60 |   | model based和model free的模型对比及优缺点 |  \r\n61 |   | 强化学习中的动态规划算法（包括策略迭代算法和值迭代算法，分别详解后再进行对比） |  \r\n62 |   | 贝尔曼方程及状态值函数、状态-动作值函数 |  \r\n63 |   | 带基准线的REINFORCE算法详解 |  \r\n\r\n\r\n## 自选题目\r\n序号 | 领域 | 题目 | owner |\r\n-- | -- | -- | -- |\r\n64 |   |ResNeXt和Res2Net的模型解读 |  [zhangjin12138](https://github.com/zhangjin12138) |\r\n65|  |语义分割任务综述 | [lutianhao](https://github.com/lutianhao) |\r\n\r\n\r\n\r\n## 3.贡献指南\r\n### 3.1题目认领\r\n可以在上面提供的列表中进行题目选择或自选题目，并将确定的题目的序号及题目回复到本Issue中，方便他人同步知晓已开展的文章列表信息，避免重复选题。\r\n\r\n### 3.2知识点编写\r\n1. 知识点统一使用markdown格式来进行编写，可以在本地安装使用Typora编写，或使用AIStudio（https://aistudio.baidu.com）。\r\n2. 为了方便大家进行教程的编写，并统一阅读体验，下面为大家提供了一个简单的概要[框架](https://paddlepedia.readthedocs.io/en/latest/tutorials/deep_learning/index.html)，大家根据实际任务按照框架结构进行内容编写和组织，可以结合实际场景进行微调。\r\n\r\n### 3.3编写原则\r\n能够准确地对题目进行完整解释，且标题设置条理清晰，内容讲解洞解透彻，图文并茂。\r\n1. 标题条目清晰，能概括出文章内容；\r\n2. 内容讲解图文并茂，特别是重要或抽象部分，鼓励图像原创；\r\n3. 讲解内容，并有自己的真知灼见，且回答较好；\r\n4. 内容较为丰满，会有相关的内容拓展部分，以某项技术为例，某项技术的出现原因，技术的应用场景，技术的原理，技术相关的其他知识等等。\r\n\r\n### 3.4知识点上传\r\n1. 写好的文档通过向https://github.com/PaddlePaddle/awesome-DeepLearning/tree/master/docs  仓库提交[Pull Request](https://github.com/PaddlePaddle/awesome-DeepLearning/blob/master/examples/awesome-DeepLearning_pr_procedure.md)的方式来进行教程文档的上传。注意更改教程中的目录地址\r\n2. 对提交好的PR可以指定Reviewer [tngt](https://github.com/tngt)进行内容和代码的评审，通过后会由具有Merge权限的同学进行最终的合入。\r\n\r\n## 4其他问题\r\n欢迎大家随时在这个Issue下进行提问。\r\n\r\n**非常感谢大家一起来贡献深度学习百问！共建飞桨教育繁荣社区！**\r\n",
+        "state": "open",
+        "user": "tngt",
+        "closed_by": null,
+        "created_at": "2021-08-23T05:39:41+00:00",
+        "updated_at": "2021-12-06T06:15:56+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "tughv",
+            "lutianhao",
+            "zhangjinCV",
+            "tngt",
+            "zhangjinCV"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 705,
+        "title": "如何将眼疾识别项目的训练模块中二分类的代码部分 修改为适用于多个标签分类的代码？",
+        "body": "项目想利用fer2013的数据集去训练识别3种表情的vgg网络\r\n以下是项目链接\r\nhttps://aistudio.baidu.com/aistudio/projectdetail/2351692?shared=1\r\n具体问题位于项目“4.训练函数启动定义”之后的code段\r\n源代码大部分选自于“百度架构师手把手带你零基础实践深度学习”中的眼疾识别项目",
+        "state": "open",
+        "user": "rerny",
+        "closed_by": null,
+        "created_at": "2021-09-09T13:05:41+00:00",
+        "updated_at": "2021-09-09T13:13:31+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "w5688414"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 697,
+        "title": "怎么自定义优化器指标、自定义网络用到padlle的高阶API训练",
+        "body": null,
+        "state": "open",
+        "user": "luyunfighting",
+        "closed_by": null,
+        "created_at": "2021-09-03T02:59:39+00:00",
+        "updated_at": "2021-09-07T02:30:21+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "w5688414"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 707,
+        "title": "波士顿房价预测归一化处理的疑问",
+        "body": "小白一枚，按飞桨官方“零基础实践深度学习”教程，学习波士顿房价预测。有段做数据归一化处理求每列最大值，最小值，平均值的代码：\r\n\r\n--------------------------------------------------------------------------\r\n\r\ndef load_data():\r\n# 从文件导入数据\r\ndatafile = './work/housing.data'\r\ndata = np.fromfile(datafile, sep=' ')\r\n\r\n# 每条数据包括14项，其中前面13项是影响因素，第14项是相应的房屋价格中位数\r\nfeature_names = [ 'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', \\\r\n'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'MEDV' ]\r\nfeature_num = len(feature_names)\r\n\r\n# 将原始数据进行Reshape，变成[N, 14]这样的形状\r\ndata = data.reshape([data.shape[0] // feature_num, feature_num])\r\n\r\n# 将原数据集拆分成训练集和测试集\r\n# 这里使用80%的数据做训练，20%的数据做测试\r\n# 测试集和训练集必须是没有交集的\r\nratio = 0.8\r\noffset = int(data.shape[0] * ratio)\r\ntraining_data = data[:offset]\r\n\r\n# 计算训练集的最大值，最小值，平均值\r\nmaximums, minimums, avgs = training_data.max(axis=0), training_data.min(axis=0), \\\r\ntraining_data.sum(axis=0) / training_data.shape[0]\r\n\r\n# 对数据进行归一化处理\r\nfor i in range(feature_num):\r\n#print(maximums[i], minimums[i], avgs[i])\r\ndata[:, i] = (data[:, i] - minimums[i]) / (maximums[i] - minimums[i])\r\n\r\n# 训练集和测试集的划分比例\r\ntraining_data = data[:offset]\r\ntest_data = data[offset:]\r\nreturn training_data, test_data\r\n\r\n---------------------------------------------------------------\r\n\r\n这里很是疑惑的地方，求每列最大值，最小值，平均值，用的数据集是训练数据集training_data = data[:offset]，为何不是全部的数据集呢？\r\n\r\n特意查了下min-max标准化，这种方法有个缺陷就是当有新数据加入时，可能导致max和min的变化，需要重新定义。按官方给的代码取80%训练集求得min-max,那test_data应该会有问题！\r\n",
+        "state": "open",
+        "user": "lm1990",
+        "closed_by": null,
+        "created_at": "2021-09-14T07:19:22+00:00",
+        "updated_at": "2021-09-14T11:15:09+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "lvjian0706"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 729,
+        "title": "计算每个预测向量对图片的梯度时报错",
+        "body": "问题是这样的。我想计算每个类别中预测向量的分量对于图片的梯度，代码是这样的\r\n\r\nfor k in range(num_classes):\r\n                        # 如果下标与预测标签下标一致，跳过\r\n                        if k == index_0:\r\n                            continue\r\n                        pred_k = predict[k]\r\n                        grad_k = paddle.grad(pred_k,adv_img,retain_graph=True, create_graph=True)[0]\r\n\r\npred_k 是第k个类别的分量，然后我用grad进行计算时，报错了。报错内容是(NotFound) The Op dropout_grad doesn't have any grad op。这我就很不理解了。\r\n恳请大佬指点",
+        "state": "open",
+        "user": "QuincySu",
+        "closed_by": null,
+        "created_at": "2021-10-10T08:37:33+00:00",
+        "updated_at": "2021-10-10T08:37:33+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 709,
+        "title": "多卡训练出错-paddle2.1.2",
+        "body": "我采用单卡训练是没问题的：python -m paddle.distributed.launch --gpus '0'  train.py\r\n但是多卡的时候：python -m paddle.distributed.launch --gpus '0,1'  train.py\r\n就会出现如下问题：\r\nNotImplementedError: (Unimplemented) Place CUDAPlace(0) is not supported. Please check that your paddle compiles with WITH_GPU, WITH_XPU or WITH_ASCEND_CL option or check that your train process set the correct device id if you use Executor. (at /paddle/paddle/fluid/platform/device_context.cc:88)\r\n  [operator < gaussian_random > error]\r\nTraceback (most recent call last):\r\n  File \"train.py\", line 204, in <module>\r\n    model = MNIST()\r\n  File \"train.py\", line 94, in __init__\r\n    self.conv1 = Conv2D(in_channels=1, out_channels=20, kernel_size=5, stride=1, padding=2)\r\n  File \"/root/anaconda3/lib/python3.8/site-packages/paddle/nn/layer/conv.py\", line 633, in __init__\r\n    super(Conv2D, self).__init__(\r\n  File \"/root/anaconda3/lib/python3.8/site-packages/paddle/nn/layer/conv.py\", line 132, in __init__\r\n    self.weight = self.create_parameter(\r\n  File \"/root/anaconda3/lib/python3.8/site-packages/paddle/fluid/dygraph/layers.py\", line 411, in create_parameter\r\n    return self._helper.create_parameter(temp_attr, shape, dtype, is_bias,\r\n  File \"/root/anaconda3/lib/python3.8/site-packages/paddle/fluid/layer_helper_base.py\", line 369, in create_parameter\r\n    return self.main_program.global_block().create_parameter(\r\n  File \"/root/anaconda3/lib/python3.8/site-packages/paddle/fluid/framework.py\", line 2895, in create_parameter\r\n    initializer(param, self)\r\n  File \"/root/anaconda3/lib/python3.8/site-packages/paddle/fluid/initializer.py\", line 355, in __call__\r\n    op = block.append_op(\r\n  File \"/root/anaconda3/lib/python3.8/site-packages/paddle/fluid/framework.py\", line 2921, in append_op\r\n    _dygraph_tracer().trace_op(type,\r\n  File \"/root/anaconda3/lib/python3.8/site-packages/paddle/fluid/dygraph/tracer.py\", line 43, in trace_op\r\n    self.trace(type, inputs, outputs, attrs,\r\nNotImplementedError: (Unimplemented) Place CUDAPlace(0) is not supported. Please check that your paddle compiles with WITH_GPU, WITH_XPU or WITH_ASCEND_CL option or check that your train process set the correct device id if you use Executor. (at /paddle/paddle/fluid/platform/device_context.cc:88)\r\n  [operator < gaussian_random > error]",
+        "state": "open",
+        "user": "lwnyls",
+        "closed_by": null,
+        "created_at": "2021-09-15T08:10:01+00:00",
+        "updated_at": "2021-09-15T09:57:23+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "XYZ-916"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 791,
+        "title": "子类  亚类的概念",
+        "body": "https://github.com/PaddlePaddle/awesome-DeepLearning/blob/master/Paddle_Enterprise_CaseBook/Hemtle%20Detection/accuracy_improvement.md\r\n在上面安全帽检测项目精度优化文档里面，提及了子类  亚类的概念，麻烦详细解释下概念？谢谢。",
+        "state": "open",
+        "user": "jixukou",
+        "closed_by": null,
+        "created_at": "2021-11-18T02:35:49+00:00",
+        "updated_at": "2021-11-18T02:35:49+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 736,
+        "title": "特色课 - Transformer系列的 notebook链接 显示为未公开项目？",
+        "body": "notebook链接看不了？\r\n![image](https://user-images.githubusercontent.com/29157386/137730549-192182c4-c7f5-46ee-9931-fe0ea99f4c2f.png)\r\n",
+        "state": "open",
+        "user": "soundmemories",
+        "closed_by": null,
+        "created_at": "2021-10-18T12:30:27+00:00",
+        "updated_at": "2021-10-19T07:40:48+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "tngt"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 740,
+        "title": "from d2l import torch as d2l仍然需要么",
+        "body": "既然是改为paddle，如果没有torch环境，from d2l import torch as d2l无法运行，请问如何解决呢？",
+        "state": "open",
+        "user": "xmwanghw",
+        "closed_by": null,
+        "created_at": "2021-10-20T00:43:53+00:00",
+        "updated_at": "2021-10-26T03:06:55+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "tngt"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 764,
+        "title": "工业表计读数例程运行出错",
+        "body": "我的版本是paddlex==1.3.11\r\n报错\r\n  File \"/home/xs/.local/lib/python3.8/site-packages/paddlex/cv/models/load_model.py\", line 43, in load_model\r\n    raise Exception(\"There's no attribute {} in paddlex.cv.models\".format(\r\nException: There's no attribute PPYOLOv2 in paddlex.cv.models\r\n后尝试用2.0.0\r\n报错\r\n  if data.dtype == np.object:\r\nYour running script needs PaddleX<2.0.0, please refer to https://github.com/PaddlePaddle/PaddleX/tree/release/2.0-rc/tutorials/train#%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7 to solve this issue.\r\n",
+        "state": "closed",
+        "user": "xs818818",
+        "closed_by": "xs818818",
+        "created_at": "2021-10-28T02:38:40+00:00",
+        "updated_at": "2024-06-17T06:10:42+00:00",
+        "closed_at": "2021-10-28T06:27:41+00:00",
+        "comments_count": [
+            "emptystack1024"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 783,
+        "title": "背景图数量问题",
+        "body": "在用paddlex训练模型时，加入add_negative_samples方法时，背景图数量是有限制的吗？如果有数量现状，数值是多少呢？我添加500张和200张都会报错，130张时可以正常训练，而且精度反而下降0.3左右，不知道是啥原因。还望解答，非常感谢。",
+        "state": "open",
+        "user": "fan-min-97",
+        "closed_by": null,
+        "created_at": "2021-11-11T02:42:10+00:00",
+        "updated_at": "2021-12-01T03:29:05+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "tngt"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 795,
+        "title": "interpretdl-特征可视化",
+        "body": "请问我使用https://blog.csdn.net/PaddlePaddle/article/details/114609592这里面的教程 \r\n\r\nvisualize_grayscale(gradients[0])   #将结果转化为灰度图，\r\n对于这一句代码 我并没有找到库或是源文件什么的 \r\n加入我想要把特征激活的图转换灰度的 需要怎么做呢（例如：把激活的地方就是白色 未激活的就是黑色）\r\n十分感谢你们的回复！",
+        "state": "open",
+        "user": "NICECPU",
+        "closed_by": null,
+        "created_at": "2021-11-27T06:39:29+00:00",
+        "updated_at": "2021-12-01T03:24:03+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "tngt"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 799,
+        "title": "[Call for Contribution] Tutorials for PaddlePaddle 2.1（基于飞桨2.1的应用案例教程建设）",
+        "body": "## 1. 目标\r\n\r\n目前飞桨框架2.1版本已经发布，不久的将来即将发布2.2正式版，在2.1版本中，飞桨框架面向用户体验做了一系列的升级优化\r\n。为了能够让用户快速掌握到飞桨框架升级内容，并了解和学习如何使用2.1进行相关任务的开发，我们进行应用案例教程的立项，在不同的任务场景上为用户提供一个端到端的易学案例，来快速的传递相关知识和使用方法。\r\n\r\n在此呼吁广大的飞桨开发者来一起共建我们的应用案例教程，努力为用户提供更加优质的示例教程，为用户学会使用框架铺设一条高速公路。\r\n\r\n## 2. 教程清单\r\n\r\n目前我们从已有内容和待补充方向进行了初步评估，梳理了以下建议的选题方向和题目，并为大家提供了比较优秀的对标文章进行学习参考，大家可以从这个列表中选择自己想要进行贡献的题目，或者也可以进行非列表内的题目自选。\r\n\r\n### 招募列表（8.23日公开）\r\n\r\n| 序号 | 领域 | 题目 | 参考 | 认领人 |\r\n| --- | --- | --- | --- | --- |\r\n| 01 | 机器学习 | 负荷预测 0.1 | [负荷预测0.1 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/2183242?channelType=0&channel=0) |   [linsl1986](https://github.com/linsl1986) |\r\n| 02 | NLP | 基于TextCNN的THUCNews文本分类任务 |  |   |\r\n| 03 | NLP | 基于seq2seq的WMT-16机器翻 |   |   |\r\n| 04 | NLP | 基于预训练模型完成实体关系抽取 | [『NLP打卡营』实践课4 基于预训练模型完成实体关系抽取 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/1639963?channelType=0&channel=0) |   |\r\n| 05 | NLP | CCKS 2021篇章级事件元素抽取 | [CCKS 2021篇章级事件元素抽取 - 飞桨AI Studio - 人工智能学习实训社区](https://aistudio.baidu.com/aistudio/projectdetail/1962941?channelType=0&channel=0) |   |\r\n| 06 | 语音 | 动手搭建轻量级机器同传翻译系统 | [『NLP打卡营』实践课8：动手搭建轻量级机器同传翻译系统 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/1926754) |   |\r\n| 07 | CV | 深入了解DeepLabv3图像分割算法 |   | [lutianhao](https://github.com/lutianhao)  |\r\n| 08 | CV | 基于SlowFast的视频分类 |   |  [KHB1698](https://github.com/KHB1698) |\r\n| 09 | 推荐 | 局部敏感哈希原理解读 |   |   |\r\n| 10 | 推荐 | DeepFM的原理解读 |   | [sleepingxin](https://github.com/sleepingxin)  |\r\n| 11 | 推荐 | GNN的原理解读 |   |   |\r\n| 12 | 推荐 | Wide&Deep的原理解读 |   |   |\r\n| 13 | 推荐 | youtubeDNN原理解读 |   |   |\r\n| 14 | 强化学习 | SAC算法实现月球着陆器着陆 | [基于飞桨复现强化学习进阶算法SAC，让月球着陆器顺利着陆 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/888258?channelType=0&channel=0)  |   |\r\n| 15 | 强化学习 | PPO算法实现四轴飞行器 | [PARL框架下入门PPO：一个战胜世界冠军的强化学习算法](https://aistudio.baidu.com/aistudio/projectdetail/632270?channelType=0&channel=0) |   |   |\r\n| 16 | 强化学习 | AlphaZero下五子棋 |   |   |\r\n| 17 | 强化学习 | MuZero实现CartPole | [极简MuZero算法实践——Paddle2.0版本 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/1448859?channelType=0&channel=0)  |   |\r\n| 18 | NLP | 情话生成送给你 | [发愁七夕文案？PaddleHub情话生成送给你 (文内含七夕抽奖) - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/746002?channelType=0&channel=0) |   | \r\n| 19 | NLP | 使用预训练模型实现快递单信息抽取 | [『NLP打卡营』实践课3：使用预训练模型实现快递单信息抽取 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/1329361?channelType=0&channel=0) |   |\r\n| 20 | NLP | 恶意网页识别 | [使用PaddleNLP进行恶意网页识别（七）：网页二维码解析识别思路与实现 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/2160153) |   |\r\n| 21 | OCR | 车牌识别 | [PaddleOCR：车牌识别 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/739559?channelType=0&channel=0) |   |\r\n| 22 | GAN | 天下第一AI武道会-Deepfake换脸 | [天下第一AI武道会-Deepfake换脸 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/1189026?channelType=0&channel=0) |   |\r\n| 23 | GAN | 老北京城影像修复 | [老北京城影像修复 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/1161285?channelType=0&channel=0) | [KHB1698](https://github.com/KHB1698)  |\r\n| 24 | GAN | 精准唇形合成 | [【飞桨创意之星】宋代诗人念诗的秘密--PaddleGAN实现精准唇形合成 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/1463208?channelType=0&channel=0) |   |\r\n| 25 | Video | 给视频打标签 |   | [Skye2099](https://github.com/Skye2099)  |\r\n| 26 | Video | 基于PaddleVideo定位精彩足球动作 |   |   |\r\n| 27 | CV | 基于PP-YOLOv2实现标注物检测 |   |   |\r\n| 28 | 推荐 | 基于深度学习的音乐推荐 | [july-ML6-final-project/wsdm_music_recommendation: Final project for July Recommendation course](https://github.com/july-ML6-final-project/wsdm_music_recommendation) |   |\r\n| 29 | 强化学习 | DQN算法玩合成大西瓜 | [PARL强化学习——合成大西瓜 - 飞桨AI Studio](https://aistudio.baidu.com/aistudio/projectdetail/1556392?channelType=0&channel=0)  | [tangjitingji](https://github.com/tangjitingji)\r\n| 30 | CV | 来自肺部 CT 扫描的 3D 图像分类 | [3D image classification from CT scans](https://keras.io/examples/vision/3D_image_classification/) | [KHB1698 ](https://github.com/KHB1698)  |\r\n\r\n### 招募列表外开发者主动贡献列表\r\n\r\n\r\n## 3. 贡献指南\r\n\r\n### 3.1 飞桨框架2.1版本安装和使用\r\n\r\n1. 飞桨（PaddlePaddle）版本统一使用2.1最新版，安装说明：<https://www.paddlepaddle.org.cn/install/quick>。\r\n2. 2.1版本使用教程：<https://www.paddlepaddle.org.cn/documentation/docs/zh/guides/index_cn.html>。\r\n3. 2.1版本已有应用实践教程：<https://www.paddlepaddle.org.cn/documentation/docs/zh/tutorial/index_cn.html>。\r\n\r\n### 3.2 题目认领\r\n\r\n1. 可以在上面提供的列表中进行题目选择或自选题目，并将确定的题目回复到本Issue中，方便他人同步知晓已开展的文章列表信息，避免重复选题。\r\n\r\n### 3.3 教程编写\r\n\r\n1. 应用案例教程统一使用Notebook格式（.ipynb）来进行编写，可以在本地安装使用Jupyter开发，或使用AIStudio（<https://aistudio.baidu.com>）。\r\n\r\n2. 为了方便大家进行教程的编写，并统一阅读体验，下面为大家提供了一个简单的概要框架，大家根据实际任务按照下面的框架结构进行内容编写和组织，可以结合实际场景进行微调。如果对模板有一些建议我们也可以在下面进行回复讨论。\r\n\r\n   ```markdown\r\n   # 题目\r\n   \r\n   作者信息：Github ID (github个人主页URL)\r\n   \r\n   ## 1. 简要介绍\r\n   简单的一段文字介绍本案例场景和用到的一些知识点，不用太复杂的讲述知识细节，\r\n   \r\n   ## 2. 环境设置\r\n   导入包，运行一些初始化方法\r\n   \r\n   ## 3. 数据集\r\n   讲述数据集的一些基础信息，描述数据集组成等。进行数据集的下载、抽样查看、数据集定义等。\r\n   \r\n   ## 4. 模型组网\r\n   基于Layer定义模型网络结构，模型的可视化展示。可以概要讲述一些网络结构代码设计的原因。\r\n   \r\n   ## 5. 模型训练\r\n   使用模型网络结构和数据集进行模型训练。需要讲述一些实践中的知识点。\r\n   \r\n   ## 6. 模型评估\r\n   使用评估数据评估训练好的模型。\r\n   \r\n   ## 7. 模型预测\r\n   对模型进行预测，展示效果。\r\n   ```\r\n\r\n### 3.4 教程上传\r\n\r\n1. 写好的文档通过向[https://github.com/PaddlePaddle/docs)仓库提交Pull Request的方式来进行教程文档的上传。\r\n2. 对提交好的PR可以指定Reviewer [TCChenlong](https://github.com/TCChenlong)）、[tngt](https://github.com/tngt)进行内容和代码的评审，通过后会由具有Merge权限的同学进行最终的合入。\r\n\r\n### 3.5 一些原则\r\n\r\n* 代码封装得当，易读性好，不用一些随意的变量/类/函数命名。\r\n* 注释清晰，不仅说明做了什么，也要说明为什么这么做。\r\n* 文字部分暂时不用考虑国际化，先统一使用中文编写，注意概念和描述的清晰度，尽量让大家通俗易懂，如果实在难以解释，可以给出一些能够详细介绍的页面链接。\r\n* 代码编写过程中能使用高层API的部分就使用高层API，无法使用高层API的部分就使用基础API。高层API使用指南：[链接](https://www.paddlepaddle.org.cn/documentation/docs/zh/2.0-beta/tutorial/quick_start/high_level_api/high_level_api.html)\r\n* 做好代码的自测工作，每段代码块需要有运行结果。\r\n\r\n## 4. 已合入仓库的教程\r\n\r\n目前已经有13篇基于飞桨2.0的教程贡献，查看方式：\r\n\r\n1. Repo目录查看已经Merge的Notebook源文件：[docs/practices](https://github.com/PaddlePaddle/docs/tree/develop/docs/practices)。\r\n2. 查看官网渲染后的页面：[应用实践](https://www.paddlepaddle.org.cn/documentation/docs/zh/tutorial/index_cn.html)。\r\n\r\n## 5. 还有不清楚的怎么办？\r\n\r\n欢迎大家随时在这个Issue下进行提问。\r\n\r\n\r\n\r\n**非常感谢大家一起来贡献！共建飞桨繁荣社区！**",
+        "state": "open",
+        "user": "tngt",
+        "closed_by": null,
+        "created_at": "2021-12-01T03:19:34+00:00",
+        "updated_at": "2021-12-01T03:19:34+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 801,
+        "title": "PaddleDetection测试test_architecture.py代码运行报错",
+        "body": "一开始运行显示没有ppdet这个模块，我搜索的解决办法是添加路径\r\n<img width=\"625\" alt=\"bd8c2862c432def5bdc15042e5b08c6\" src=\"https://user-images.githubusercontent.com/95344595/144207030-33375b21-fb08-40dc-b7e6-d3942f4e8efc.png\">\r\n添加路径在test_architecture.py文件里后运行报错\r\n<img width=\"425\" alt=\"b4267b8ec1ca3e963293d40eee983e5\" src=\"https://user-images.githubusercontent.com/95344595/144207232-cf15ceba-15f6-40e7-8ab1-c3c157e03bd9.png\">\r\n<img width=\"665\" alt=\"d048b4970b7c7eefd67b331614d2a70\" src=\"https://user-images.githubusercontent.com/95344595/144207244-327f87c4-c35c-4e36-8c81-6c1d9af322b5.png\">\r\n请问如何解决呢？\r\n",
+        "state": "open",
+        "user": "ChloeWu98",
+        "closed_by": null,
+        "created_at": "2021-12-01T09:23:10+00:00",
+        "updated_at": "2021-12-01T09:23:10+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 796,
+        "title": "LSTM网络训练分类任务loss降不下去",
+        "body": null,
+        "state": "open",
+        "user": "rerny",
+        "closed_by": null,
+        "created_at": "2021-11-29T13:48:33+00:00",
+        "updated_at": "2021-11-29T13:59:37+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "rerny",
+            "w5688414",
+            "w5688414"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 809,
+        "title": "一文读懂BiLSTM+CRF实现命名实体识别的公式错误",
+        "body": "![网页捕获_19-12-2021_105437_paddlepedia readthedocs io](https://user-images.githubusercontent.com/20662862/146663914-d4a88939-c17b-4431-954e-15005666e0de.jpeg)\r\n图里公式的两个不等号写反了，如果按照图里的假设，beta_2应该为[0,1]",
+        "state": "open",
+        "user": "Chan124a",
+        "closed_by": null,
+        "created_at": "2021-12-19T04:32:44+00:00",
+        "updated_at": "2022-01-17T03:28:25+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "tngt",
+            "Chan124a"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 811,
+        "title": "文档丢失",
+        "body": "我点击面试宝典里的\r\n![image](https://user-images.githubusercontent.com/43233772/148000861-446206eb-e7f1-4085-b4df-4cdc1e408919.png)\r\n\r\n打开后是这样的：\r\n![image](https://user-images.githubusercontent.com/43233772/148000800-36c23c4f-4a11-4d99-9b90-3843ad534495.png)\r\n\r\n或许有其他文档也丢失了，麻烦一起补充一下，谢谢\r\n",
+        "state": "open",
+        "user": "wwdok",
+        "closed_by": null,
+        "created_at": "2022-01-04T02:18:22+00:00",
+        "updated_at": "2022-01-10T11:09:19+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ZhangHandi"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 866,
+        "title": "智慧城市-异常行为识别部分文件缺失",
+        "body": "智慧城市-异常行为识别部分文件缺失\r\ntools/infer_batch.py、ava_predict.py、export_model.py、predict.py等文件\r\nmain.py\r\n配置参数文件\r\n等其他缺失文件",
+        "state": "open",
+        "user": "laolihaile",
+        "closed_by": null,
+        "created_at": "2022-02-28T09:09:58+00:00",
+        "updated_at": "2022-02-28T09:09:58+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 833,
+        "title": "动手学深度学习3.2节有误 ",
+        "body": " features, labels两个变量都没有，看上下文是用的paddle_features paddle_labels\r\n报错：\r\n\r\n```\r\nNameError                                 Traceback (most recent call last)\r\n/tmp/ipykernel_21564/2487356068.py in <module>\r\n      4 loss = squared_loss\r\n      5 for epoch in range(num_epochs):\r\n----> 6     for paddle_X, paddle_y in paddle_data_iter(batch_size, features, labels):\r\n      7         l = loss(net(paddle_X, paddle_w, paddle_b), paddle_y)  # `paddle_X`和`paddle_y`的小批量损失\r\n      8         # 因为`l`形状是(`batch_size`, 1)，而不是一个标量。`l`中的所有元素被加到一起，\r\n\r\nNameError: name 'features' is not defined\r\n```\r\n代码：\r\n```\r\nlr = 0.03\r\nnum_epochs = 3\r\nnet = paddle_linreg\r\nloss = squared_loss\r\nfor epoch in range(num_epochs):\r\n    for paddle_X, paddle_y in paddle_data_iter(batch_size, features, labels):\r\n        l = loss(net(paddle_X, paddle_w, paddle_b), paddle_y)  # `paddle_X`和`paddle_y`的小批量损失\r\n        # 因为`l`形状是(`batch_size`, 1)，而不是一个标量。`l`中的所有元素被加到一起，\r\n        # 并以此计算关于[`paddle_w`, `paddle_b`]的梯度\r\n        l.sum().backward()\r\n        paddle_sgd([paddle_w, paddle_b], lr, batch_size)  # 使用参数的梯度更新参数\r\n    with paddle.no_grad():\r\n        paddle_train_l = loss(net(paddle_features, paddle_w, paddle_b), paddle_labels)\r\n        print(f'epoch {epoch + 1}, loss {float(pddle_train_l.mean()):f}')\r\n```\r\n\r\n修改后会报错\r\n```\r\n---------------------------------------------------------------------------\r\nAttributeError                            Traceback (most recent call last)\r\n/tmp/ipykernel_21564/4159795007.py in <module>\r\n      8         # 因为`l`形状是(`batch_size`, 1)，而不是一个标量。`l`中的所有元素被加到一起，\r\n      9         # 并以此计算关于[`paddle_w`, `paddle_b`]的梯度\r\n---> 10         l.sum().backward()\r\n     11         paddle_sgd([paddle_w, paddle_b], lr, batch_size)  # 使用参数的梯度更新参数\r\n     12     with paddle.no_grad():\r\n\r\nAttributeError: 'numpy.float64' object has no attribute 'backward'\r\n```\r\n本身自己对这种从头开始写的情况不熟悉，想学习一下，现在跑不通。。。如果我懂，我能调通，但是我不懂，没法跑通，这样就学不会。。。陷入循环。",
+        "state": "open",
+        "user": "skywalk163",
+        "closed_by": null,
+        "created_at": "2022-01-20T09:45:48+00:00",
+        "updated_at": "2022-01-20T09:53:40+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "skywalk163"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 877,
+        "title": "跑多类别车辆跟踪的训练demo时，缺少一个基础配置文件configs/mot/mcfairmot/../../datasets/mcmot_vehicle.yml'，从哪下载",
+        "body": "FileNotFoundError: [Errno 2] No such file or directory: 'configs/mot/mcfairmot/../../datasets/mcmot_vehicle.yml'",
+        "state": "open",
+        "user": "Sophia-cai",
+        "closed_by": null,
+        "created_at": "2022-03-11T12:15:45+00:00",
+        "updated_at": "2022-03-11T12:15:45+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 835,
+        "title": "文档错误",
+        "body": "https://paddlepedia.readthedocs.io/en/latest/tutorials/deep_learning/metrics/perplexity.html\r\n这里\r\n\r\n> 一般来讲，用于评判语言模型的测试集均是合理的、高质量的语料，只要语言模型在测试集上的困惑度越高，则代表语言模型训练地越好，反之亦然。\r\n\r\n应该是测试集上困惑度越低， 越好.",
+        "state": "open",
+        "user": "yanan1116",
+        "closed_by": null,
+        "created_at": "2022-01-22T00:00:16+00:00",
+        "updated_at": "2022-01-22T23:15:40+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "yanan1116"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 896,
+        "title": "运行多类别车辆跟踪时，按要求更换评估集后，评估结果为0，后发现缺少sequences文件夹，但不知道该文件是如何生成的",
+        "body": "![image](https://user-images.githubusercontent.com/102497845/160318510-bda08c7d-9e0b-4fc6-8ec8-7889b254aac9.png)\r\n",
+        "state": "open",
+        "user": "fish1126",
+        "closed_by": null,
+        "created_at": "2022-03-28T02:55:00+00:00",
+        "updated_at": "2022-03-28T02:55:00+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 900,
+        "title": "预训练文件",
+        "body": "VIT在ImageNet的预训练模型什么时候能做出来呢",
+        "state": "open",
+        "user": "xfhaixx",
+        "closed_by": null,
+        "created_at": "2022-05-17T02:17:45+00:00",
+        "updated_at": "2022-05-17T02:17:45+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 904,
+        "title": "官方答疑的QQ群进不了",
+        "body": "![U $(E( K044D9GI~@AL10UG](https://user-images.githubusercontent.com/10663799/172349750-e03155bd-bf24-464f-91a4-bbbfc4e38645.png)\r\n公司招了一批新人，需要给他们培训，准备用AIStudio上的课程来让他们学习，上面图片的QQ群不能加入了。",
+        "state": "open",
+        "user": "hlguo",
+        "closed_by": null,
+        "created_at": "2022-06-07T09:45:57+00:00",
+        "updated_at": "2022-06-07T09:45:57+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 909,
+        "title": "零基础实践深度学习 的AlexNet进行眼疾识别，查看数据形状部分，代码是否前后不一致？",
+        "body": "**文件位置**：junior_class/chapeter-3-Computer_Vision/notebook/3-2-CV-Image_Classification.ipynb\r\n前面定义数据读取器时，训练集和验证集的读取器是分开定义的\r\n```py\r\n# 训练集读取器\r\ndef data_loader(datadir, batch_size=10, mode = 'train'):\r\n# 验证机读取器\r\ndef valid_data_loader(datadir, csvfile, batch_size=10, mode='valid'):\r\n```\r\n然而后面查看数据形状的部分代码中，却都调用`data_loader`而只是传不同的`mode`参数\r\n```py\r\n# 查看数据形状\r\nDATADIR = '/home/aistudio/work/palm/PALM-Training400/PALM-Training400'\r\ntrain_loader = data_loader(DATADIR, \r\n                           batch_size=10, mode='train')\r\ndata_reader = train_loader()\r\ndata = next(data_reader)\r\ndata[0].shape, data[1].shape\r\n\r\neval_loader = data_loader(DATADIR, \r\n                           batch_size=10, mode='eval')\r\ndata_reader = eval_loader()\r\ndata = next(data_reader)\r\ndata[0].shape, data[1].shape\r\n```\r\n\r\n",
+        "state": "open",
+        "user": "flying-forever",
+        "closed_by": null,
+        "created_at": "2022-11-20T04:12:21+00:00",
+        "updated_at": "2022-11-20T04:15:50+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 910,
+        "title": "零基础实践深度学习，LeNet在手写数字识别上的应用，网络结构定义的前向计算中激活函数位置不对",
+        "body": "notebook中的前向计算定义代码如下，代码的注释中说每个卷积层使用Sigmoid激活函数，但实际Sigmoid函数的位置并不是这样。\r\n```py\r\n# 网络的前向计算过程\r\n    def forward(self, x):\r\n        x = self.conv1(x)\r\n        # 每个卷积层使用Sigmoid激活函数，后面跟着一个2x2的池化\r\n        x = F.sigmoid(x)\r\n        x = self.max_pool1(x)\r\n        x = F.sigmoid(x)\r\n        x = self.conv2(x)\r\n        x = self.max_pool2(x)\r\n        x = self.conv3(x)\r\n        # 尺寸的逻辑：输入层将数据拉平[B,C,H,W] -> [B,C*H*W]\r\n        x = paddle.reshape(x, [x.shape[0], -1])\r\n        x = self.fc1(x)\r\n        x = F.sigmoid(x)\r\n        x = self.fc2(x)\r\n        return x\r\n```\r\n是否应该是下面这样？\r\n```py\r\n# 网络的前向计算过程\r\n    def forward(self, x):\r\n        x = self.conv1(x)\r\n        # 每个卷积层使用Sigmoid激活函数，后面跟着一个2x2的池化\r\n        x = F.sigmoid(x)\r\n        x = self.max_pool1(x)\r\n        x = self.conv2(x)\r\n        x = F.sigmoid(x)\r\n        x = self.max_pool2(x)\r\n        x = self.conv3(x)\r\n        x = F.sigmoid(x)\r\n        # 尺寸的逻辑：输入层将数据拉平[B,C,H,W] -> [B,C*H*W]\r\n        x = paddle.reshape(x, [x.shape[0], -1])\r\n        x = self.fc1(x)\r\n        x = F.sigmoid(x)\r\n        x = self.fc2(x)\r\n        return x\r\n```",
+        "state": "open",
+        "user": "flying-forever",
+        "closed_by": null,
+        "created_at": "2022-11-20T06:21:58+00:00",
+        "updated_at": "2022-11-20T06:21:58+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 908,
+        "title": "百度架构师手把手带你零基础实践深度学习课节8：图像分类是否存在编写错误",
+        "body": "第三模块：包含4×4的120通道卷积。卷积之后的图像尺寸减小到1，但是通道数增加为120。将经过第3次卷积提取到的特征图输入到全连接层。第一个全连接层的输出神经元的个数是64，第二个全连接层的输出神经元个数是分类标签的类别数，对于手写数字识别的类别数是10。然后使用Softmax激活函数即可计算出每个类别的预测概率。\r\n\r\n# 定义 LeNet 网络结构\r\nclass LeNet(paddle.nn.Layer):\r\n\r\n1. 此处的num_classes=1是否存在编写错误？\r\n    def __init__(self, num_classes=1):\r\n        super(LeNet, self).__init__()\r\n        # 创建卷积和池化层\r\n        # 创建第1个卷积层\r\n        self.conv1 = Conv2D(in_channels=1, out_channels=6, kernel_size=5)\r\n        self.max_pool1 = MaxPool2D(kernel_size=2, stride=2)\r\n        # 尺寸的逻辑：池化层未改变通道数；当前通道数为6\r\n        # 创建第2个卷积层\r\n        self.conv2 = Conv2D(in_channels=6, out_channels=16, kernel_size=5)\r\n        self.max_pool2 = MaxPool2D(kernel_size=2, stride=2)\r\n        # 创建第3个卷积层\r\n        self.conv3 = Conv2D(in_channels=16, out_channels=120, kernel_size=4)\r\n        # 尺寸的逻辑：输入层将数据拉平[B,C,H,W] -> [B,C*H*W]\r\n        # 输入size是[28,28]，经过三次卷积和两次池化之后，C*H*W等于120\r\n        self.fc1 = Linear(in_features=120, out_features=64)\r\n        # 创建全连接层，第一个全连接层的输出神经元个数为64， 第二个全连接层输出神经元个数为分类标签的类别数\r\n        self.fc2 = Linear(in_features=64, out_features=num_classes)\r\n        # 网络的前向计算过程\r\n    def forward(self, x):\r\n        x = self.conv1(x)\r\n        # 每个卷积层使用Sigmoid激活函数，后面跟着一个2x2的池化\r\n        x = F.sigmoid(x)\r\n        x = self.max_pool1(x)\r\n        x = F.sigmoid(x)\r\n        x = self.conv2(x)\r\n        x = self.max_pool2(x)\r\n        x = self.conv3(x)\r\n        # 尺寸的逻辑：输入层将数据拉平[B,C,H,W] -> [B,C*H*W]\r\n        x = paddle.reshape(x, [x.shape[0], -1])\r\n        x = self.fc1(x)\r\n2. 此处按照上述文字是否应该使用F.softmax?\r\n        x = F.sigmoid(x)\r\n        x = self.fc2(x)\r\n        return x\r\n\r\n本人为初学者，望解答，谢谢",
+        "state": "closed",
+        "user": "rimq14",
+        "closed_by": "rimq14",
+        "created_at": "2022-09-28T07:20:03+00:00",
+        "updated_at": "2022-09-28T08:27:53+00:00",
+        "closed_at": "2022-09-28T08:27:53+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 913,
+        "title": "transformer_courses/Transformer_Machine_Translation 找不到zh-en/train.tags.zh-en.zh.cut.txt文件",
+        "body": "# 问题位置\r\nhttps://github.com/PaddlePaddle/awesome-DeepLearning/tree/master/transformer_courses/Transformer_Machine_Translation\r\n\r\n# 问题现象\r\n在按照[README](https://github.com/PaddlePaddle/awesome-DeepLearning/tree/master/transformer_courses/Transformer_Machine_Translation#readme)进行[bpe分词处理](https://github.com/PaddlePaddle/awesome-DeepLearning/tree/master/transformer_courses/Transformer_Machine_Translation#bpe%E5%88%86%E8%AF%8D%E5%A4%84%E7%90%86)时，`sh subword.sh`命令执行错误，找不到`zh-en/train.tags.zh-en.zh.cut.txt`文件。\r\n\r\n# 复现方式\r\n安装完依赖并且获取数据集后，执行[bpe分词处理](https://github.com/PaddlePaddle/awesome-DeepLearning/tree/master/transformer_courses/Transformer_Machine_Translation#bpe%E5%88%86%E8%AF%8D%E5%A4%84%E7%90%86)\r\n``` shell\r\npython data_process.py\r\nsh subword.sh #出错命令\r\npython bpe_process2.py\r\n```\r\n\r\n# 解决方法\r\n浏览例程代码后，发现`zh-en/train.tags.zh-en.zh.cut.txt`文件是通过[bpe_process.py](https://github.com/PaddlePaddle/awesome-DeepLearning/blob/b4f802e9c24dd1308ad6a1cf8250dddd7804920d/transformer_courses/Transformer_Machine_Translation/bpe_process.py#L31)脚本生成。将其添加到`sh subword.sh`命令前执行即可。\r\n``` shell\r\npython data_process.py\r\npython bpe_process.py\r\nsh subword.sh\r\npython bpe_process2.py\r\n```",
+        "state": "open",
+        "user": "NewComer00",
+        "closed_by": null,
+        "created_at": "2023-03-05T15:22:37+00:00",
+        "updated_at": "2023-03-05T15:22:37+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 907,
+        "title": "文档丢失",
+        "body": "面试宝典中的关于归一化的几个文档丢失",
+        "state": "open",
+        "user": "zhangjin10",
+        "closed_by": null,
+        "created_at": "2022-09-08T06:43:43+00:00",
+        "updated_at": "2023-04-03T02:46:38+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "allwellll",
+            "tngt"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 921,
+        "title": "data_prepare()方法",
+        "body": "https://aistudio.csdn.net/62f9f9fcb99b4c6e4e63d786.html\r\n在“基于百度自研模型ERNIE进行事件抽取任务”这篇文章里，将DUEE数据集处理为BIO标注的数据时，用到的data_prepare()方法请问可以分享吗？\r\n![Snipaste_2023-04-05_21-33-51](https://user-images.githubusercontent.com/96063844/230096704-6213a3af-440d-4037-96d6-167af01bf5fe.png)\r\n",
+        "state": "open",
+        "user": "943433536",
+        "closed_by": null,
+        "created_at": "2023-04-05T13:34:55+00:00",
+        "updated_at": "2023-04-05T13:34:55+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 912,
+        "title": "准备用《零基础实践深度学习》做教材，请问如何获得教材配套的ppt？",
+        "body": "准备用《零基础实践深度学习》做教材，请问如何获得配套的ppt？",
+        "state": "open",
+        "user": "yuchenfu68",
+        "closed_by": null,
+        "created_at": "2023-01-30T16:47:41+00:00",
+        "updated_at": "2023-03-27T07:18:36+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "tngt"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 928,
+        "title": "如果自定义数据集，如何使用label studio标注意图识别和槽位识别数据集呢？",
+        "body": null,
+        "state": "open",
+        "user": "watertianyi",
+        "closed_by": null,
+        "created_at": "2024-03-11T07:46:09+00:00",
+        "updated_at": "2024-03-11T07:46:09+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 925,
+        "title": "“归一化不会改变数据的状态分布，但标准化会改变数据的状态分布”的疑惑",
+        "body": "归一化不会改变数据的状态分布，但标准化会改变数据的状态分布，这句话的后半句如何理解呢？对吗，不是标准化也是线性变换吗？按道理不是不会因为对数据的处理而改变数据的原始数值排序吗？\r\n谢谢~",
+        "state": "open",
+        "user": "fanandli",
+        "closed_by": null,
+        "created_at": "2023-07-17T01:22:48+00:00",
+        "updated_at": "2024-05-11T10:50:02+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Lfan-ke"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 932,
+        "title": "强化学习的代码求求了",
+        "body": null,
+        "state": "open",
+        "user": "moanb",
+        "closed_by": null,
+        "created_at": "2024-05-25T13:06:39+00:00",
+        "updated_at": "2024-05-25T13:06:39+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 934,
+        "title": "注意力机制章节位置错误",
+        "body": null,
+        "state": "open",
+        "user": "zhouzhao01",
+        "closed_by": null,
+        "created_at": "2024-07-19T03:36:06+00:00",
+        "updated_at": "2024-07-19T03:36:06+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 936,
+        "title": "深度学习零基础实践（第二版）封底二维码扫描后显示课程已过期？",
+        "body": "深度学习零基础实践（第二版）封底二维码扫描后显示课程已过期？\r\n![封面](https://github.com/user-attachments/assets/e5387b4c-55c8-43d1-a3b1-e688b9b7709f)\r\n",
+        "state": "open",
+        "user": "PandaAdvent",
+        "closed_by": null,
+        "created_at": "2024-08-19T00:11:48+00:00",
+        "updated_at": "2024-08-19T00:11:48+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 933,
+        "title": "perplexity的文档中表述错误",
+        "body": "在docs/tutorials/deep_learning/metrics/perplexity.md这个文档中描述语言模型在测试集上的困惑度越高，则代表语言模型训练地越好，反之亦然。这里根据上文介绍应该是困惑度perplexity越低则模型越好才对吧。请您查看是否存在问题。",
+        "state": "open",
+        "user": "Jarvisni",
+        "closed_by": null,
+        "created_at": "2024-06-06T09:35:56+00:00",
+        "updated_at": "2024-12-14T13:58:37+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Cherries-Man"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/awesome-DeepLearning",
+        "number": 937,
+        "title": "论文复现指南 流程图无法加载",
+        "body": "Paper_Recurrence/guide_of_paper_recurrence_cn.md中，\r\n<img width=\"690\" alt=\"image\" src=\"https://github.com/user-attachments/assets/50c08639-df22-4066-8a66-70937605b6e6\">\r\n整体框图无法加载",
+        "state": "open",
+        "user": "KeithMaxwell",
+        "closed_by": null,
+        "created_at": "2024-11-16T01:54:23+00:00",
+        "updated_at": "2024-11-16T01:54:23+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    }
+]

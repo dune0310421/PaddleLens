@@ -1,0 +1,20 @@
+[
+    {
+        "repo": "PaddlePaddle/VisionTools",
+        "number": 2,
+        "title": "Make error when compiling Image",
+        "body": "Although \"numpy\" and \"boost\" have already installed in my system,  when I compile \"Image'', it shows lack of numpy.hpp.  What other library or package should I installed ?  Thanks\r\n\r\n\r\n[ 33%] Building CXX object transformer/CMakeFiles/DeJpeg.dir/PyDecodejpeg.cpp.o\r\nIn file included from /usr/lib64/python2.7/site-packages/numpy-1.11.0-py2.7-linux-ppc64le.egg/numpy/core/include/numpy/ndarraytypes.h:1777:0,\r\n                 from /usr/lib64/python2.7/site-packages/numpy-1.11.0-py2.7-linux-ppc64le.egg/numpy/core/include/numpy/ndarrayobject.h:18,\r\n                 from /usr/lib64/python2.7/site-packages/numpy-1.11.0-py2.7-linux-ppc64le.egg/numpy/core/include/numpy/arrayobject.h:4,\r\n                 from /export/Paddle_image_classfication/Image/transformer/Parallel.h:17,\r\n                 from /export/Paddle_image_classfication/Image/transformer/PyDecodejpeg.cpp:15:\r\n/usr/lib64/python2.7/site-packages/numpy-1.11.0-py2.7-linux-ppc64le.egg/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning \"Using deprecated NumPy API, disable it by \" \"#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION\" [-Wcpp]\r\n #warning \"Using deprecated NumPy API, disable it by \" \\\r\n  ^\r\nIn file included from /export/Paddle_image_classfication/Image/transformer/PyDecodejpeg.cpp:15:0:\r\n/export/Paddle_image_classfication/Image/transformer/Parallel.h:19:34: fatal error: boost/python/numpy.hpp: No such file or directory\r\n #include <boost/python/numpy.hpp>\r\n                                  ^\r\ncompilation terminated.\r\nmake[2]: *** [transformer/CMakeFiles/DeJpeg.dir/PyDecodejpeg.cpp.o] Error 1\r\nmake[1]: *** [transformer/CMakeFiles/DeJpeg.dir/all] Error 2\r\nmake: *** [all] Error 2",
+        "state": "closed",
+        "user": "gaoshan2006",
+        "closed_by": "qingqing01",
+        "created_at": "2017-02-16T07:19:58+00:00",
+        "updated_at": "2018-10-16T02:47:49+00:00",
+        "closed_at": "2018-10-16T02:47:49+00:00",
+        "comments_count": [
+            "qingqing01",
+            "gaoshan2006",
+            "bbaby19"
+        ],
+        "labels": []
+    }
+]

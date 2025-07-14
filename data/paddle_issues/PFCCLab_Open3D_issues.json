@@ -1,0 +1,27 @@
+[
+    {
+        "repo": "PFCCLab/Open3D",
+        "number": 2,
+        "title": "[RoadMap] Open3D for Paddle backend",
+        "body": "### Checklist\n\n- [x] I have searched for [similar issues](https://github.com/isl-org/Open3D/issues).\n- [x] For Python issues, I have tested with the [latest development wheel](https://www.open3d.org/docs/latest/getting_started.html#development-version-pip).\n- [x] I have checked the [release documentation](https://www.open3d.org/docs/release/) and the [latest documentation](https://www.open3d.org/docs/latest/) (for `main` branch).\n\n### Proposed new feature or change\n\n# RoadMap\n\n## Part 1\n- [x]  完成Paddle backend集成，完成 `FixedRadiusSearch` 相关代码合入：https://github.com/PFCCLab/Open3D/pull/1\n\n## Part 2\n- [x]  完成 misc 下相关代码合入: https://github.com/PFCCLab/Open3D/pull/3\n- [x]  完成 pointnet 和 pvcnn 下相关代码合入: https://github.com/PFCCLab/Open3D/pull/5\n- [x]  完成 contiguous_conv 下相关代码合入: https://github.com/PFCCLab/Open3D/pull/6\n- [x]  完成 sparse_conv 下相关代码合入:  https://github.com/PFCCLab/Open3D/pull/7\n\n## Part 3\n- [x] 完成相关文档修改: https://github.com/PFCCLab/Open3D/pull/9 https://github.com/PFCCLab/Open3D/pull/13\n- [x] 协助完成CI接入: https://github.com/PFCCLab/Open3D/pull/12\n\ncc @Woodman3 @HydrogenSulfate \n\n### References\n\n_No response_\n\n### Additional information\n\n_No response_",
+        "state": "closed",
+        "user": "SecretXV",
+        "closed_by": "SecretXV",
+        "created_at": "2024-11-05T15:30:37+00:00",
+        "updated_at": "2024-12-11T07:58:30+00:00",
+        "closed_at": "2024-12-11T07:58:30+00:00",
+        "comments_count": [
+            "HydrogenSulfate",
+            "HydrogenSulfate",
+            "HydrogenSulfate",
+            "SecretXV",
+            "SecretXV",
+            "HydrogenSulfate",
+            "HydrogenSulfate",
+            "SecretXV",
+            "SecretXV",
+            "HydrogenSulfate"
+        ],
+        "labels": []
+    }
+]

@@ -1,0 +1,4964 @@
+[
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "849dbd3cd9076102d509ef054b8b3da72ed608a2",
+        "message": "Merge pull request #89 from cs2be/REMOVE_PIP_UPGRADE\n\nTravis build is failing for to deploy documentation",
+        "created_at": "2018-04-17T17:49:36+00:00",
+        "author": "cs2be",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "4cb7e80e28d8701ddaf3fef969a6d239d7d9327d",
+        "message": "Travis build is failing for to deploy documentation, I suspect it's because of upgraded pip.  This line removes the upgrade",
+        "created_at": "2018-04-17T17:29:49+00:00",
+        "author": "cs2be",
+        "committer": "cs2be",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "2b02a90ccf319faae06205dfa7ad745702c6c1af",
+        "message": "fix deadlink in README.cn.md (#88)",
+        "created_at": "2018-04-16T04:56:53+00:00",
+        "author": "shanyi15",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "README.cn.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "269957a678207471b6cc04b005ddcd6937af6ae0",
+        "message": "Merge pull request #85 from daming-lu/develop\n\nupdate IP to new node",
+        "created_at": "2018-04-02T17:57:32+00:00",
+        "author": "daming-lu",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "2659514da0502157cd8699ab8b8acf58a132783c",
+        "message": "update IP to new node",
+        "created_at": "2018-04-02T16:17:16+00:00",
+        "author": "daming-lu",
+        "committer": "daming-lu",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "477186702e368a55c6a3319f2b78257c7c0ac51d",
+        "message": "Android AICamera Demo (#61)\n\n* Init check in with integrating paddle lib - CMakeList, FindPaddle, build.gradle changes\r\n\r\n* Create wrapper and tries to load model\r\n\r\n* Enable the reading from assets.\r\n\r\n* Add Settings and successfully detect object\r\n\r\n* clean up and refract code\r\n\r\n* Solve initial permission issue and reduce preview size for faster processing\r\n\r\n* Change app name to PDCamera and update gitignore\r\n\r\n* clean up code\r\n\r\n* use clang-format to format jni code\r\n\r\n* Commit README\r\n\r\n* Create a activity and manager for settings. Fix multiple issues that cause image recognizer not working\r\n\r\n* Final clean up\r\n\r\n* Kill the app without restarting(some android devices will restart itself) to fix issues after change model, update README\r\n\r\n* Refract package name from aicamera to pacamera\r\n\r\n* refract package name in jni\r\n\r\n* update README and upload readme assets\r\n\r\n* update README\r\n\r\n* update README\r\n\r\n* fix trailing space",
+        "created_at": "2018-01-26T02:33:48+00:00",
+        "author": "nickyfantasy",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "Demo/Android/AICamera/.gitignore",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "Demo/Android/AICamera/README.md",
+                "status": "added",
+                "additions": 103,
+                "deletions": 0,
+                "changes": 103
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/.gitignore",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/CMakeLists.txt",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/FindPaddle.cmake",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/build.gradle",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/paddle_jni.map",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/proguard-rules.pro",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/androidTest/java/com/paddlepaddle/pdcamera/ExampleInstrumentedTest.java",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/AndroidManifest.xml",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/cpp/android_common.h",
+                "status": "added",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/cpp/binary_reader.cpp",
+                "status": "added",
+                "additions": 98,
+                "deletions": 0,
+                "changes": 98
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/cpp/binary_reader.h",
+                "status": "added",
+                "additions": 50,
+                "deletions": 0,
+                "changes": 50
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/cpp/image.h",
+                "status": "added",
+                "additions": 40,
+                "deletions": 0,
+                "changes": 40
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/cpp/image_recognizer_jni.cpp",
+                "status": "added",
+                "additions": 101,
+                "deletions": 0,
+                "changes": 101
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/cpp/image_utils.cpp",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/cpp/image_utils.h",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/cpp/paddle_image_recognizer.cpp",
+                "status": "added",
+                "additions": 280,
+                "deletions": 0,
+                "changes": 280
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/cpp/paddle_image_recognizer.h",
+                "status": "added",
+                "additions": 70,
+                "deletions": 0,
+                "changes": 70
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/java/com/paddlepaddle/pdcamera/AutoFitTextureView.java",
+                "status": "added",
+                "additions": 61,
+                "deletions": 0,
+                "changes": 61
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/java/com/paddlepaddle/pdcamera/ImageRecognizer.java",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/java/com/paddlepaddle/pdcamera/ImageUtils.java",
+                "status": "added",
+                "additions": 140,
+                "deletions": 0,
+                "changes": 140
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/java/com/paddlepaddle/pdcamera/MainActivity.java",
+                "status": "added",
+                "additions": 432,
+                "deletions": 0,
+                "changes": 432
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/java/com/paddlepaddle/pdcamera/SSDData.java",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/java/com/paddlepaddle/pdcamera/SSDLayerView.java",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/java/com/paddlepaddle/pdcamera/SSDModel.java",
+                "status": "added",
+                "additions": 42,
+                "deletions": 0,
+                "changes": 42
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/java/com/paddlepaddle/pdcamera/SettingsActivity.java",
+                "status": "added",
+                "additions": 135,
+                "deletions": 0,
+                "changes": 135
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/java/com/paddlepaddle/pdcamera/SettingsManager.java",
+                "status": "added",
+                "additions": 90,
+                "deletions": 0,
+                "changes": 90
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/res/layout/activity_main.xml",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/res/layout/settings.xml",
+                "status": "added",
+                "additions": 117,
+                "deletions": 0,
+                "changes": 117
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/res/mipmap-xxxhdpi/ic_paddle_logo.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/res/values/colors.xml",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/res/values/strings.xml",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/main/res/values/styles.xml",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "Demo/Android/AICamera/app/src/test/java/com/paddlepaddle/pdcamera/ExampleUnitTest.java",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "Demo/Android/AICamera/build.gradle",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "Demo/Android/AICamera/gradle.properties",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "Demo/Android/AICamera/gradlew",
+                "status": "added",
+                "additions": 160,
+                "deletions": 0,
+                "changes": 160
+            },
+            {
+                "filename": "Demo/Android/AICamera/gradlew.bat",
+                "status": "added",
+                "additions": 90,
+                "deletions": 0,
+                "changes": 90
+            },
+            {
+                "filename": "Demo/Android/AICamera/readme_assets/demo_app.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/Android/AICamera/readme_assets/demo_face.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/Android/AICamera/readme_assets/demo_pascal.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/Android/AICamera/readme_assets/qr_code_android.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/Android/AICamera/settings.gradle",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "b400c5d9a556cc84819daca4721ec9686f8d3f8d",
+        "message": "Merge pull request #65 from Xreki/refine_readme\n\nRefine the content of many README and add some Chinese README.",
+        "created_at": "2018-01-19T07:10:26+00:00",
+        "author": "luotao1",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "Demo/iOS/AICamera/README.cn.md",
+                "status": "renamed",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            },
+            {
+                "filename": "Demo/iOS/AICamera/README.md",
+                "status": "modified",
+                "additions": 88,
+                "deletions": 67,
+                "changes": 155
+            },
+            {
+                "filename": "README.cn.md",
+                "status": "added",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 13,
+                "changes": 33
+            },
+            {
+                "filename": "benchmark/tool/C/README.cn.md",
+                "status": "renamed",
+                "additions": 7,
+                "deletions": 5,
+                "changes": 12
+            },
+            {
+                "filename": "deployment/model/merge_config_parameters/README.cn.md",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "deployment/model/merge_config_parameters/README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "e5b5aeefbb389a8e6b3d66a4664f53eb347866dd",
+        "message": "Merge branch 'develop' into refine_readme",
+        "created_at": "2017-12-18T02:58:56+00:00",
+        "author": "Xreki",
+        "committer": "Xreki",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "be2817af2a3463e53710c124a30608452bb5cdd9",
+        "message": "Adding the English document pointer here (#66)",
+        "created_at": "2017-12-18T02:10:05+00:00",
+        "author": null,
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "3f14f3d1d640f3a887d4deeadcfc968349007024",
+        "message": "Add the Chinese version of the main README.",
+        "created_at": "2017-12-15T06:43:58+00:00",
+        "author": "Xreki",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "README.cn.md",
+                "status": "added",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 14,
+                "changes": 33
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "ee530c45c0f5e0e7057ba83a89f723ebf4ccdc5d",
+        "message": "Add the Chinese version README of merge_config_parameters.",
+        "created_at": "2017-12-14T12:10:07+00:00",
+        "author": "Xreki",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "Demo/iOS/AICamera/README.cn.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 2,
+                "changes": 6
+            },
+            {
+                "filename": "benchmark/tool/C/README.cn.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 5,
+                "changes": 12
+            },
+            {
+                "filename": "deployment/model/merge_config_parameters/README.cn.md",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "deployment/model/merge_config_parameters/README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "0854d48b12151d359fc8f0496db8ebd2649ac86d",
+        "message": "Add the catalog in README.",
+        "created_at": "2017-12-14T09:16:55+00:00",
+        "author": "Xreki",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "Demo/iOS/AICamera/README.md",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 0,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "39b671b5e7793ecabd96a0914c54437ecf8c1c7c",
+        "message": "Update some README.",
+        "created_at": "2017-12-14T09:10:17+00:00",
+        "author": "Xreki",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "Demo/iOS/AICamera/README.cn.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/README.md",
+                "status": "modified",
+                "additions": 80,
+                "deletions": 67,
+                "changes": 147
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "benchmark/tool/C/README.cn.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "ab89f34e789c8d82ac2eee2313ab418cca66fd51",
+        "message": "Fix the travis and pre-commit configuration (#62)\n\n* Correct the pre-commit config file.\r\n\r\n* Install clang-format 3.8 in travis.\r\n\r\n* Correct the format.",
+        "created_at": "2017-12-14T08:37:48+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 2,
+                "changes": 8
+            },
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 5,
+                "changes": 13
+            },
+            {
+                "filename": ".travis/pre_commit.sh",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 5,
+                "changes": 8
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/AICamera-Bridging-Header.h",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/AppDelegate.swift",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/ImageRecognizer.swift",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/ImageRecognizerPaddleWrapper.h",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 2,
+                "changes": 9
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/ImageRecognizerPaddleWrapper.mm",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 8,
+                "changes": 16
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/SSDData.h",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/SSDDrawLayer.swift",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 11,
+                "changes": 22
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/SSDModel.swift",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/SSDMultiboxLayer.swift",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/ViewController.swift",
+                "status": "modified",
+                "additions": 76,
+                "deletions": 76,
+                "changes": 152
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/image.h",
+                "status": "modified",
+                "additions": 34,
+                "deletions": 34,
+                "changes": 68
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "benchmark/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "benchmark/tool/C/inference.cc",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 12,
+                "changes": 25
+            },
+            {
+                "filename": "deployment/library/build_for_minimum_size.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/merge_batch_norm.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 20,
+                "changes": 45
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "modified",
+                "additions": 108,
+                "deletions": 83,
+                "changes": 191
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "modified",
+                "additions": 111,
+                "deletions": 84,
+                "changes": 195
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/pre_generate_model.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 4,
+                "changes": 11
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/verify.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            },
+            {
+                "filename": "deployment/model/rounding/README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 6,
+                "changes": 10
+            },
+            {
+                "filename": "model_compression/pruning/README.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 10,
+                "changes": 19
+            },
+            {
+                "filename": "model_compression/pruning/demo/mobilenet_pruning.py",
+                "status": "modified",
+                "additions": 125,
+                "deletions": 96,
+                "changes": 221
+            },
+            {
+                "filename": "model_compression/pruning/demo/train.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 5,
+                "changes": 14
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/config/pascal_voc_conf.py",
+                "status": "modified",
+                "additions": 90,
+                "deletions": 94,
+                "changes": 184
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/infer.py",
+                "status": "modified",
+                "additions": 20,
+                "deletions": 15,
+                "changes": 35
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/mobilenet_ssd_pascal.py",
+                "status": "modified",
+                "additions": 431,
+                "deletions": 425,
+                "changes": 856
+            },
+            {
+                "filename": "models/standard_network/mobilenet.py",
+                "status": "modified",
+                "additions": 108,
+                "deletions": 83,
+                "changes": 191
+            },
+            {
+                "filename": "models/standard_network/resnet.py",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 1,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "b6f9c94f380b0958cd8d10b9012b811299e3ddaa",
+        "message": "Add LICENSE (#63)",
+        "created_at": "2017-12-14T08:37:33+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 201,
+                "deletions": 0,
+                "changes": 201
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "887aebdeb934bbfb8d62db03486eb2af271ba500",
+        "message": "Add PRE_COMMIT job on travis. (#60)\n\n* Add PRE_COMMIT job on travis.\r\n\r\n* Update the main README to triger the travis-ci.",
+        "created_at": "2017-12-14T03:38:27+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": ".travis/pre_commit.sh",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "925c440a6ecb4c8d9af5b28811c1654435107b9b",
+        "message": "Add the Chinese version README of iOS demo. (#57)\n\n* Add the Chinese version README of iOS demo.\r\n\r\n* Refine the content.",
+        "created_at": "2017-12-14T03:01:45+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "Demo/iOS/AICamera/README_cn.md",
+                "status": "added",
+                "additions": 138,
+                "deletions": 0,
+                "changes": 138
+            },
+            {
+                "filename": "Demo/iOS/AICamera/assets/demo_face.jpeg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/assets/demo_main.jpeg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/assets/demo_pascal.jpg",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "ac42f98fb4de1a3cb28f94a60e02afd0f2c20d78",
+        "message": "Update the README of how to benchmark Paddle on Android and add the Chinese version (#49)\n\n* Add Chinese README of how to benchmark Paddle on Android.\r\n\r\n* Add the output of inference demo.\r\n\r\n* Fix typo and add the link of flowers102.",
+        "created_at": "2017-12-13T06:06:37+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 54,
+                "deletions": 30,
+                "changes": 84
+            },
+            {
+                "filename": "benchmark/tool/C/README_cn.md",
+                "status": "added",
+                "additions": 111,
+                "deletions": 0,
+                "changes": 111
+            },
+            {
+                "filename": "deployment/model/merge_config_parameters/README.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            },
+            {
+                "filename": "deployment/model/merge_config_parameters/merge_model.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "9e2c573b755af1365261af377867cb8fe4cdc62b",
+        "message": "Merge pull request #55 from hedaoyuan/refine\n\nRefine `models` directory",
+        "created_at": "2017-12-13T03:22:35+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "models/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 7,
+                "changes": 7
+            },
+            {
+                "filename": "models/standard_network/mobilenet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "models/standard_network/resnet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "4dcc861d80db0687ee05a26d826336b8774725aa",
+        "message": "Modify the directory name.",
+        "created_at": "2017-12-12T11:48:32+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "models/standard_network/mobilenet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "models/standard_network/resnet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "9b7f08972c8170ed1d584840cdbd4212b7bea606",
+        "message": "Merge branch 'develop' of github.com:PaddlePaddle/Mobile into refine",
+        "created_at": "2017-12-12T11:46:29+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": []
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "b93f6ad8a349ee7dc76e49a3de21fca8b9601364",
+        "message": "Merge pull request #53 from hedaoyuan/develop\n\nRefine the directory structure",
+        "created_at": "2017-12-12T09:49:55+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "deployment/library/build_for_minimum_size.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/__init__.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/image/cat.jpg",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/merge_batch_norm.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/models/merged_model.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/models/mobilenet_flowers102.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/pre_generate_model.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/verify.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/do_merge.sh",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_config_parameters/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/rounding/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/rounding/source/rounding1.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/rounding/source/rounding2.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "09810bc16624613bf4e4a4f79eb285f4ffa72e0e",
+        "message": "Move configuration files.",
+        "created_at": "2017-12-12T07:26:11+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "models/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 7,
+                "changes": 7
+            },
+            {
+                "filename": "models/configuration/mobilenet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "models/configuration/resnet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "d782ddb731537e4fed24b0792f58fa1cb019ad50",
+        "message": "Move tools into deployment.",
+        "created_at": "2017-12-12T07:01:50+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/__init__.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/image/cat.jpg",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/merge_batch_norm.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/models/merged_model.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/models/mobilenet_flowers102.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/pre_generate_model.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/demo/verify.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_batch_normalization/do_merge.sh",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/merge_config_parameters/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/rounding/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/rounding/source/rounding1.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "deployment/model/rounding/source/rounding2.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "2d1d450c407474fb4580571306c7c7f531814896",
+        "message": "Move build_for_minimum_size.",
+        "created_at": "2017-12-12T06:59:16+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "deployment/library/build_for_minimum_size.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "6b68be7a97cb66885f47816fd360b41896fc1147",
+        "message": "Merge pull request #40 from NHZlX/mobilenet_ssd_pascal_model\n\nadd mobilenet ssd pascal model",
+        "created_at": "2017-12-12T05:09:17+00:00",
+        "author": "NHZlX",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "models/mobilenet_ssd_pascal/README.md",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/config/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/config/label_list",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/config/pascal_voc_conf.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/images/example.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/infer.py",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/mobilenet_ssd_pascal.py",
+                "status": "added",
+                "additions": 425,
+                "deletions": 0,
+                "changes": 425
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "0d2c250fa5b722e2cea9fdd4ed5d593934252f1d",
+        "message": "add run path (#47)",
+        "created_at": "2017-12-08T04:48:47+00:00",
+        "author": "yeyupiaoling",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "78b644a9edcd14ee88f4a955ad0ead01678fdec3",
+        "message": "Fix linking problem of protobuf-3.2. (#45)",
+        "created_at": "2017-12-07T08:41:21+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/CMakeLists.txt",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "436705d0dccc5bce8183bb23f5179d2ff0255f49",
+        "message": "Correct the link of images in README of iOS demo AICamera and add it to the main README. (#44)",
+        "created_at": "2017-12-07T04:18:16+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "Demo/iOS/AICamera/README.md",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 6,
+                "changes": 11
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "5ec3a4cb69d893c027ad88a8be282ea8f8ba10bb",
+        "message": "Init Commit for iOS AICamera Demo (#26)\n\n*  Init Commit for iOS AICamera Demo\r\n    -Integrate with Paddle libs\r\n    -Integrate with C++ code from liuyiqun\r\n    -Create Objective C wrapper and bridging header to call from client in Swift\r\n    -Able to capture video from device camera and output image buffer\r\n    -Create hardcode data to draw bounding box and label\r\n\r\n* fall back to swift 3 and finish objective C wrapper\r\n\r\n* Integrate with latest C++ code with resize and pass in byte array\r\n\r\n* successfully get results from infer() and draw bounding box\r\n\r\n* Integrate with rotate logic, finalized and clean up code\r\n\r\n* Add front camera and new model, add settings for different models, accuracy threshold and time refresh rate\r\n\r\n* Fix issue where default is front camera\r\n\r\n* fix iphone X layout issue\r\n\r\n* format settings accuracy label\r\n\r\n* change app name to PDCamera\r\nAdd paddle logo\r\n\r\n* Add README, remove 2 models and update settings, rename to PDCamera\r\n\r\n* clean up code, add image_utils.cpp, add screenshot and QR code, update README",
+        "created_at": "2017-12-07T02:34:55+00:00",
+        "author": "nickyfantasy",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/AICamera-Bridging-Header.h",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/AppDelegate.swift",
+                "status": "added",
+                "additions": 49,
+                "deletions": 0,
+                "changes": 49
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/AppIcon.appiconset/Contents.json",
+                "status": "added",
+                "additions": 106,
+                "deletions": 0,
+                "changes": 106
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/AppIcon.appiconset/paddle-logo-120.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/AppIcon.appiconset/paddle-logo-152.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/AppIcon.appiconset/paddle-logo-167.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/AppIcon.appiconset/paddle-logo-180.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/AppIcon.appiconset/paddle-logo-58.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/AppIcon.appiconset/paddle-logo-59.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/AppIcon.appiconset/paddle-logo-76.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/AppIcon.appiconset/paddle-logo-87.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Assets.xcassets/Contents.json",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Base.lproj/LaunchScreen.storyboard",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Base.lproj/Main.storyboard",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/ImageRecognizer.swift",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/ImageRecognizerPaddleWrapper.h",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/ImageRecognizerPaddleWrapper.mm",
+                "status": "added",
+                "additions": 78,
+                "deletions": 0,
+                "changes": 78
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/Info.plist",
+                "status": "added",
+                "additions": 51,
+                "deletions": 0,
+                "changes": 51
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/PaddleHelper.h",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/PaddleHelper.mm",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/SSDData.h",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/SSDData.m",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/SSDDrawLayer.swift",
+                "status": "added",
+                "additions": 62,
+                "deletions": 0,
+                "changes": 62
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/SSDModel.swift",
+                "status": "added",
+                "additions": 29,
+                "deletions": 0,
+                "changes": 29
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/SSDMultiboxLayer.swift",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/ViewController.swift",
+                "status": "added",
+                "additions": 315,
+                "deletions": 0,
+                "changes": 315
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/image.h",
+                "status": "added",
+                "additions": 40,
+                "deletions": 0,
+                "changes": 40
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/image_utils.cpp",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/image_utils.h",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/paddle_image_recognizer.cpp",
+                "status": "added",
+                "additions": 230,
+                "deletions": 0,
+                "changes": 230
+            },
+            {
+                "filename": "Demo/iOS/AICamera/AICamera/paddle_image_recognizer.h",
+                "status": "added",
+                "additions": 102,
+                "deletions": 0,
+                "changes": 102
+            },
+            {
+                "filename": "Demo/iOS/AICamera/PDCamera.xcodeproj/project.pbxproj",
+                "status": "added",
+                "additions": 470,
+                "deletions": 0,
+                "changes": 470
+            },
+            {
+                "filename": "Demo/iOS/AICamera/PDCamera.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "Demo/iOS/AICamera/PDCamera.xcodeproj/project.xcworkspace/xcuserdata/Nickychan.xcuserdatad/UserInterfaceState.xcuserstate",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/PDCamera.xcodeproj/xcuserdata/Nickychan.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist",
+                "status": "added",
+                "additions": 135,
+                "deletions": 0,
+                "changes": 135
+            },
+            {
+                "filename": "Demo/iOS/AICamera/PDCamera.xcodeproj/xcuserdata/Nickychan.xcuserdatad/xcschemes/AICamera.xcscheme",
+                "status": "added",
+                "additions": 93,
+                "deletions": 0,
+                "changes": 93
+            },
+            {
+                "filename": "Demo/iOS/AICamera/PDCamera.xcodeproj/xcuserdata/Nickychan.xcuserdatad/xcschemes/xcschememanagement.plist",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "Demo/iOS/AICamera/README.md",
+                "status": "added",
+                "additions": 103,
+                "deletions": 0,
+                "changes": 103
+            },
+            {
+                "filename": "Demo/iOS/AICamera/assets/demo_screenshot.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/iOS/AICamera/assets/qr_code_ios.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "60fb66ef59e2c2873390b08d01a389af96abd53b",
+        "message": "refine inference demo doc (#37)\n\n* refine inference demo doc\r\n\r\n* Punctuation modification\r\n\r\n* format refine\r\n\r\n* the demo link the static lib, not the dynamic one",
+        "created_at": "2017-12-05T09:36:57+00:00",
+        "author": "NHZlX",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 5,
+                "changes": 20
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "6bb6ee9920f759be60651487082f7a94e57d0a56",
+        "message": "modify format",
+        "created_at": "2017-12-01T10:54:17+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "models/mobilenet_ssd_pascal/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "363dd612e3ce52f6cfbb15d188363c8278dff1fa",
+        "message": "add mobilenet ssd pascal model",
+        "created_at": "2017-12-01T10:50:56+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "models/mobilenet_ssd_pascal/README.md",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/config/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/config/label_list",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/config/pascal_voc_conf.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/images/example.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/infer.py",
+                "status": "added",
+                "additions": 88,
+                "deletions": 0,
+                "changes": 88
+            },
+            {
+                "filename": "models/mobilenet_ssd_pascal/mobilenet_ssd_pascal.py",
+                "status": "added",
+                "additions": 425,
+                "deletions": 0,
+                "changes": 425
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "9dfb6a3e2fb6b27dc42156146c938906592ba0f0",
+        "message": "Add a ssd demo running on linux (#29)\n\n* Add configurarion of ssd model and main source files.\r\n\r\n* Add pre-commit configs.\r\n\r\n* Support the use of OpenCV to read image.\r\n\r\n* Create README.md\r\n\r\n* Define class ImageRecognizer to simplify the inferfaces.\r\n\r\n* Print more result's information.\r\n\r\n* Reorganize the sub-directory of demo.\r\n\r\n* Use threshold to profile the result.\r\n\r\n* Add script file to download model.\r\n\r\n* Add function resize_hwc to resize input image, and move the substract of means into ImageRecognizer::infer().\r\n\r\n* Refine the code format.\r\n\r\n* Enable the input image to rotate 0, 90, 180 and 270.\r\n\r\n* Fix out of range crash and set memory pool size of Paddle to 0.\r\n\r\n* Enable the transferring from BGR to RGB.\r\n\r\n* Draw rectangles to show the results.\r\n\r\n* Rename demo to Demo.\r\n\r\n* Reorganize the directory.\r\n\r\n* Reorganize the image related code.",
+        "created_at": "2017-11-30T04:40:45+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": ".clang-format",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": ".clang_format.hook",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": ".style.yapf",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "Demo/linux/CMakeLists.txt",
+                "status": "added",
+                "additions": 49,
+                "deletions": 0,
+                "changes": 49
+            },
+            {
+                "filename": "Demo/linux/FindOpenCV.cmake",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "Demo/linux/FindPaddle.cmake",
+                "status": "added",
+                "additions": 78,
+                "deletions": 0,
+                "changes": 78
+            },
+            {
+                "filename": "Demo/linux/README.md",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "Demo/linux/image.h",
+                "status": "added",
+                "additions": 40,
+                "deletions": 0,
+                "changes": 40
+            },
+            {
+                "filename": "Demo/linux/image_io.cpp",
+                "status": "added",
+                "additions": 186,
+                "deletions": 0,
+                "changes": 186
+            },
+            {
+                "filename": "Demo/linux/image_io.h",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": "Demo/linux/image_utils.cpp",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            },
+            {
+                "filename": "Demo/linux/image_utils.h",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "Demo/linux/paddle_image_recognizer.cpp",
+                "status": "added",
+                "additions": 230,
+                "deletions": 0,
+                "changes": 230
+            },
+            {
+                "filename": "Demo/linux/paddle_image_recognizer.h",
+                "status": "added",
+                "additions": 102,
+                "deletions": 0,
+                "changes": 102
+            },
+            {
+                "filename": "Demo/linux/ssd/README.md",
+                "status": "added",
+                "additions": 131,
+                "deletions": 0,
+                "changes": 131
+            },
+            {
+                "filename": "Demo/linux/ssd/images/origin.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/linux/ssd/images/origin_result.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/linux/ssd/images/resized.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/linux/ssd/images/rotated.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/linux/ssd/main.cpp",
+                "status": "added",
+                "additions": 254,
+                "deletions": 0,
+                "changes": 254
+            },
+            {
+                "filename": "Demo/linux/ssd/models/label_list",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "Demo/linux/ssd/models/model_download.sh",
+                "status": "added",
+                "additions": 70,
+                "deletions": 0,
+                "changes": 70
+            },
+            {
+                "filename": "Demo/linux/ssd/models/vgg_ssd_net/config/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "Demo/linux/ssd/models/vgg_ssd_net/config/pascal_voc_conf.py",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "Demo/linux/ssd/models/vgg_ssd_net/merge_model.py",
+                "status": "added",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "Demo/linux/ssd/models/vgg_ssd_net/vgg_ssd_net.py",
+                "status": "added",
+                "additions": 278,
+                "deletions": 0,
+                "changes": 278
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "b0c24a5ef7489ea5218365538cd61493291c0258",
+        "message": "Merge pull request #28 from hedaoyuan/develop\n\nFix link error",
+        "created_at": "2017-11-15T03:30:32+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "benchmark/tool/C/inference.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "ea32217011b11b491eb389577d389b7d43b59e63",
+        "message": "Fix the error link.",
+        "created_at": "2017-11-15T03:19:24+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "b1473b47fdea4daf0d0e2c900a9afd23d4dc4baf",
+        "message": "Remove the arguments in .",
+        "created_at": "2017-11-15T03:16:28+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/inference.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "285ccba61e3597db74f41de357624b296c2c036e",
+        "message": "Merge pull request #21 from hedaoyuan/develop\n\n How to build mobile inference library with minimum size",
+        "created_at": "2017-11-10T03:07:48+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "deployment/build_for_minimum_size.md",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "8833a707f715dd085c911d9478667833a35b5df2",
+        "message": "Merge pull request #24 from Xreki/update_links\n\nUpdate the links of documentations in Paddle repo.",
+        "created_at": "2017-11-07T05:16:19+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "c0698e33f42d2f68ceffcfeb55981a8b732f1b75",
+        "message": "Update the links of documentations in Paddle repo.",
+        "created_at": "2017-11-07T04:45:55+00:00",
+        "author": "Xreki",
+        "committer": "Xreki",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "cced3df6d5d0873d905c146b9281d99868327cc4",
+        "message": "Merge pull request #20 from NHZlX/add_merge_model\n\nadd merge_config_parameters scripts",
+        "created_at": "2017-11-07T04:08:27+00:00",
+        "author": "Xreki",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "model_compression/pruning/README.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 2,
+                "changes": 9
+            },
+            {
+                "filename": "tools/merge_batch_normalization/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/__init__.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/image/cat.jpg",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/merge_batch_norm.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/models/merged_model.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/models/mobilenet_flowers102.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/pre_generate_model.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/verify.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/do_merge.sh",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_config_parameters/README.md",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "tools/rounding/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/rounding/source/rounding1.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/rounding/source/rounding2.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "914797f85264ae8eb57d3a8276865629b0ef986a",
+        "message": "Follow comments.",
+        "created_at": "2017-11-06T05:14:55+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "deployment/build_for_minimum_size.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 9,
+                "changes": 18
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "5db8a19a7577d4ce334f946b859b160d236a4ef8",
+        "message": "Merge pull request #22 from daming-lu/add_website_deploy_script\n\nadd travis deploy script",
+        "created_at": "2017-11-03T18:14:53+00:00",
+        "author": "daming-lu",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "added",
+                "additions": 29,
+                "deletions": 0,
+                "changes": 29
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "15eb8de57cd8424a394e2f3cee8807859ba63bda",
+        "message": "modiy the typo",
+        "created_at": "2017-11-03T07:19:50+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "tools/merge_config_parameters/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "1af0eea691e2403d9112d355951d2479634c2a94",
+        "message": "fix review comments",
+        "created_at": "2017-11-03T04:50:04+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            },
+            {
+                "filename": "tools/merge_config_paramsters/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "5b6dc91a28136a59234e168ccb17d5e417aa3514",
+        "message": "add travis deploy script",
+        "created_at": "2017-11-02T22:56:31+00:00",
+        "author": "daming-lu",
+        "committer": "daming-lu",
+        "files": [
+            {
+                "filename": ".travis.yml",
+                "status": "added",
+                "additions": 29,
+                "deletions": 0,
+                "changes": 29
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "eade9003926b9494e8ba21d0c4727723df522189",
+        "message": "Merge branch 'develop' of github.com:PaddlePaddle/Mobile into develop",
+        "created_at": "2017-11-01T05:28:21+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 8,
+                "changes": 17
+            },
+            {
+                "filename": "model_compression/flowers102/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 26,
+                "changes": 26
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 12,
+                "changes": 12
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/train.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 109,
+                "changes": 109
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 23,
+                "changes": 23
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 12,
+                "changes": 12
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/train.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 110,
+                "changes": 110
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 24,
+                "changes": 24
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/resnet_pruning.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 64,
+                "changes": 64
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/train.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 114,
+                "changes": 114
+            },
+            {
+                "filename": "model_compression/image/model.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/pruning/README.md",
+                "status": "added",
+                "additions": 68,
+                "deletions": 0,
+                "changes": 68
+            },
+            {
+                "filename": "model_compression/pruning/demo/mobilenet_pruning.py",
+                "status": "renamed",
+                "additions": 35,
+                "deletions": 23,
+                "changes": 58
+            },
+            {
+                "filename": "model_compression/pruning/demo/train.py",
+                "status": "renamed",
+                "additions": 3,
+                "deletions": 31,
+                "changes": 34
+            },
+            {
+                "filename": "models/README.md",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "models/mobilenet.py",
+                "status": "renamed",
+                "additions": 31,
+                "deletions": 25,
+                "changes": 56
+            },
+            {
+                "filename": "models/resnet.py",
+                "status": "renamed",
+                "additions": 11,
+                "deletions": 6,
+                "changes": 17
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 22,
+                "changes": 47
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 18,
+                "changes": 42
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "9e4c512a96490c3d096ca833d935bb43c0c79e2e",
+        "message": "Add a link",
+        "created_at": "2017-11-01T04:01:46+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "f70b34ece3702a2251424e73b2a63c1286668d9e",
+        "message": "Bug fix.",
+        "created_at": "2017-11-01T03:58:34+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "deployment/build_for_minimum_size.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 3,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "9c889a2ba000d1c0d483b006d7ddb817a0f25e5d",
+        "message": "How to build mobile inference library with minimun size.",
+        "created_at": "2017-11-01T03:48:43+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "deployment/build_for_minimum_size.md",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "607d9c8004ff01dc6fc92daf381d63c57a474b40",
+        "message": "Fixing review commnts",
+        "created_at": "2017-10-27T07:06:35+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "tools/merge_config_paramsters/README.md",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 9,
+                "changes": 23
+            },
+            {
+                "filename": "tools/merge_config_paramsters/config.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 14,
+                "changes": 14
+            },
+            {
+                "filename": "tools/merge_config_paramsters/merge_config_and_params.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 47,
+                "changes": 47
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "46027a3445ddfea987f6b3889b66fb43944301c2",
+        "message": "add merge config and parameters scripts and modify readme in pruning",
+        "created_at": "2017-10-25T13:42:15+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "model_compression/pruning/README.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 2,
+                "changes": 9
+            },
+            {
+                "filename": "tools/merge_batch_normalization/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/__init__.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/image/cat.jpg",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/merge_batch_norm.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/models/merged_model.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/models/mobilenet_flowers102.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/pre_generate_model.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/demo/verify.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_batch_normalization/do_merge.sh",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/merge_config_paramsters/README.md",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "tools/merge_config_paramsters/config.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "tools/merge_config_paramsters/merge_config_and_params.py",
+                "status": "added",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            },
+            {
+                "filename": "tools/rounding/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/rounding/source/rounding1.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tools/rounding/source/rounding2.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "d87182452f6e5f391755120888f8f598082e5151",
+        "message": "Merge pull request #18 from NHZlX/pruning_refine\n\nrefine pruning",
+        "created_at": "2017-10-25T03:52:52+00:00",
+        "author": "NHZlX",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "model_compression/flowers102/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 26,
+                "changes": 26
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 12,
+                "changes": 12
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/mobilenet.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 125,
+                "changes": 125
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/train.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 86,
+                "changes": 86
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 23,
+                "changes": 23
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 12,
+                "changes": 12
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/resnet.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 64,
+                "changes": 64
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/train.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 88,
+                "changes": 88
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 24,
+                "changes": 24
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/resnet_pruning.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 67,
+                "changes": 67
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/train.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 91,
+                "changes": 91
+            },
+            {
+                "filename": "model_compression/image/model.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/pruning/README.md",
+                "status": "added",
+                "additions": 68,
+                "deletions": 0,
+                "changes": 68
+            },
+            {
+                "filename": "model_compression/pruning/demo/mobilenet_pruning.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/pruning/demo/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "2bf3a705ae02e5737fa400ac03cfc5d6e5f9ac31",
+        "message": "modify form display in readme",
+        "created_at": "2017-10-24T07:58:16+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "model_compression/pruning/README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "96ab8d8e9f9fbe5228af25dbb8f7cdd968086683",
+        "message": "tiny modify",
+        "created_at": "2017-10-24T07:51:20+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "model_compression/pruning/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "d0787c15718d80171a2c697951d9a039b26fe476",
+        "message": "refine pruning",
+        "created_at": "2017-10-24T07:44:42+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 2,
+                "changes": 3
+            },
+            {
+                "filename": "model_compression/flowers102/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 26,
+                "changes": 26
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 12,
+                "changes": 12
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/mobilenet.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 125,
+                "changes": 125
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/train.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 86,
+                "changes": 86
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 23,
+                "changes": 23
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 12,
+                "changes": 12
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/resnet.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 64,
+                "changes": 64
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/train.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 88,
+                "changes": 88
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/README.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 24,
+                "changes": 24
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/resnet_pruning.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 67,
+                "changes": 67
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/train.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 91,
+                "changes": 91
+            },
+            {
+                "filename": "model_compression/image/model.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/pruning/README.md",
+                "status": "added",
+                "additions": 68,
+                "deletions": 0,
+                "changes": 68
+            },
+            {
+                "filename": "model_compression/pruning/demo/mobilenet_pruning.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/pruning/demo/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "9523df267e1fac31a930ddb444842ed135093b6d",
+        "message": "Merge pull request #14 from NHZlX/unify_config\n\nunify the model config",
+        "created_at": "2017-10-24T02:05:11+00:00",
+        "author": "NHZlX",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "model_compression/flowers102/mobilenet/mobilenet.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 25,
+                "changes": 56
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/train.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 25,
+                "changes": 27
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/mobilenet_pruning.py",
+                "status": "modified",
+                "additions": 35,
+                "deletions": 23,
+                "changes": 58
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/train.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 31,
+                "changes": 34
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/resnet.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 6,
+                "changes": 17
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/train.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 24,
+                "changes": 26
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/resnet_pruning.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 6,
+                "changes": 15
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/train.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 25,
+                "changes": 27
+            },
+            {
+                "filename": "models/README.md",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "models/mobilenet.py",
+                "status": "added",
+                "additions": 125,
+                "deletions": 0,
+                "changes": 125
+            },
+            {
+                "filename": "models/resnet.py",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 22,
+                "changes": 47
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 18,
+                "changes": 42
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "07e68502877b297e4ab2dc314d44c3e39675cc82",
+        "message": "Merge pull request #16 from kavyasrinet/edit_content\n\nUpdating the writeup of the demo",
+        "created_at": "2017-10-23T23:30:28+00:00",
+        "author": "wangkuiyi",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 8,
+                "changes": 17
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "96a922dd706c83daa385b8a12e2d58993aa889ed",
+        "message": "Fixing review comments",
+        "created_at": "2017-10-23T23:27:30+00:00",
+        "author": null,
+        "committer": null,
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 6,
+                "changes": 12
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "3d0c1c2b89193c9ad2944a0dc8005b50e9f1fc8a",
+        "message": "Updating the writeup of the demo",
+        "created_at": "2017-10-23T22:59:31+00:00",
+        "author": null,
+        "committer": null,
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 8,
+                "changes": 17
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "91c61aec091f0d1fad03a6d8c183a4e1a4b50d8d",
+        "message": "modify readme in  ./models",
+        "created_at": "2017-10-23T07:09:05+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "models/README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 7,
+                "changes": 10
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "ed2e5573dd85430364ffd13f6547ce7bb41c22e7",
+        "message": "Merge pull request #15 from hedaoyuan/develop\n\nAdd An inference demo program based on the Paddle C API.",
+        "created_at": "2017-10-23T07:04:52+00:00",
+        "author": "NHZlX",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "a90f4b616c21ef7c48f3378514a286bab0201bf5",
+        "message": "Add An inference demo program based on the Paddle C API.",
+        "created_at": "2017-10-20T08:52:45+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "a674c08f5364ec64267a0ec7534ee52c430ce272",
+        "message": "Merge pull request #13 from hedaoyuan/master\n\nAdd CMakeLists.txt for the inference demo.",
+        "created_at": "2017-10-20T08:08:25+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "benchmark/tool/C/CMakeLists.txt",
+                "status": "added",
+                "additions": 50,
+                "deletions": 0,
+                "changes": 50
+            },
+            {
+                "filename": "benchmark/tool/C/FindPaddle.cmake",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 2,
+                "changes": 30
+            },
+            {
+                "filename": "benchmark/tool/C/inference.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "7cdcf807f1d120e29c0aaccb3be9899095f06e62",
+        "message": "Refine the README.md of inference.",
+        "created_at": "2017-10-20T07:56:45+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "modified",
+                "additions": 28,
+                "deletions": 2,
+                "changes": 30
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "78a73818cba44724db685f3796f0a304a1873d32",
+        "message": "unify the model config",
+        "created_at": "2017-10-20T07:39:34+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "model_compression/flowers102/mobilenet/mobilenet.py",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 25,
+                "changes": 56
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/train.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 25,
+                "changes": 27
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/mobilenet_pruning.py",
+                "status": "modified",
+                "additions": 35,
+                "deletions": 23,
+                "changes": 58
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/train.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 31,
+                "changes": 34
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/resnet.py",
+                "status": "modified",
+                "additions": 11,
+                "deletions": 6,
+                "changes": 17
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/train.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 24,
+                "changes": 26
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/resnet_pruning.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 6,
+                "changes": 15
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/train.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 25,
+                "changes": 27
+            },
+            {
+                "filename": "models/README.md",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            },
+            {
+                "filename": "models/mobilenet.py",
+                "status": "added",
+                "additions": 125,
+                "deletions": 0,
+                "changes": 125
+            },
+            {
+                "filename": "models/resnet.py",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "modified",
+                "additions": 25,
+                "deletions": 22,
+                "changes": 47
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 18,
+                "changes": 42
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "a0b099d20781653a3cfbc29b7cccae1b8a13a477",
+        "message": "Follow comments",
+        "created_at": "2017-10-20T07:32:09+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/CMakeLists.txt",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 1,
+                "changes": 4
+            },
+            {
+                "filename": "benchmark/tool/C/FindPaddle.cmake",
+                "status": "modified",
+                "additions": 10,
+                "deletions": 5,
+                "changes": 15
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "7e8f83d0498d50e51b3670f8150dfef9586419cc",
+        "message": "Fix CMakeLists.txt.",
+        "created_at": "2017-10-20T02:59:39+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/CMakeLists.txt",
+                "status": "modified",
+                "additions": 31,
+                "deletions": 12,
+                "changes": 43
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "f2b01dcd037aa438ef77d617c2c0dab02c0ea11c",
+        "message": "Bug fix.",
+        "created_at": "2017-10-20T01:51:45+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "benchmark/tool/C/CMakeLists.txt",
+                "status": "modified",
+                "additions": 12,
+                "deletions": 13,
+                "changes": 25
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "4874aa6d2017a7f921ceb59d73e6f556a28ee9d5",
+        "message": "Merge branch 'master' of github.com:hedaoyuan/Mobile",
+        "created_at": "2017-10-19T17:50:27+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "5b041ea2b003c19a832da20d8d7de55c33b95fc9",
+        "message": "Fix Android.",
+        "created_at": "2017-10-19T17:49:13+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 1,
+                "changes": 1
+            },
+            {
+                "filename": "benchmark/tool/C/CMakeLists.txt",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 2,
+                "changes": 17
+            },
+            {
+                "filename": "benchmark/tool/C/FindPaddle.cmake",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 7,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "a860f7ff52a27e55f236f20f9941fab5f89d4d51",
+        "message": "Add CMakeLists.txt for the inference demo.",
+        "created_at": "2017-10-19T16:43:00+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "benchmark/tool/C/CMakeLists.txt",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "benchmark/tool/C/FindPaddle.cmake",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "benchmark/tool/C/inference.cc",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "2f24934d9d910ecb3097c3df633491f40fc1c3db",
+        "message": "Merge pull request #12 from hedaoyuan/master\n\nAdd some TODO into the README.md",
+        "created_at": "2017-10-12T08:18:25+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 8,
+                "deletions": 3,
+                "changes": 11
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "ea335b4585637de62c2995cbcd5a15928407fcd0",
+        "message": "Update README",
+        "created_at": "2017-10-12T07:27:03+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "a078de2040439709e7b16790bddd0f6684758ceb",
+        "message": "Add some TODO into the README.md",
+        "created_at": "2017-10-12T07:24:25+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 2,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "0d6dfa39b5ea341c68a382d34fe14a427e941c76",
+        "message": "Merge pull request #11 from hedaoyuan/master\n\nRefine this repo",
+        "created_at": "2017-10-12T02:36:33+00:00",
+        "author": "NHZlX",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 22,
+                "changes": 37
+            },
+            {
+                "filename": "benchmark/README.md",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "benchmark/tool/C/inference.cc",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/mobilenet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/mobilenet_pruning.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/resnet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/resnet_pruning.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/__init__.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/image/cat.jpg",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/merge_batch_norm.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/models/merged_model.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/models/mobilenet_flowers102.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/pre_generate_model.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/verify.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/do_merge.sh",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/rounding/README.md",
+                "status": "renamed",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "tool/rounding/source/rounding1.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/rounding/source/rounding2.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "b219e3b685137b3889f7d71fed49aef278c37234",
+        "message": "Follow comments.",
+        "created_at": "2017-10-12T02:05:10+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "benchmark/README.md",
+                "status": "modified",
+                "additions": 5,
+                "deletions": 5,
+                "changes": 10
+            },
+            {
+                "filename": "benchmark/model/mobilenet.py",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 128,
+                "changes": 128
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "e5549acbf8519f74d26e17c814a0d02ac8f0a913",
+        "message": "Move merge_batch_normalization and rounding into tool directory.",
+        "created_at": "2017-10-11T06:25:42+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": "tool/merge_batch_normalization/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/__init__.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/image/cat.jpg",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/merge_batch_norm.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/models/merged_model.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/models/mobilenet_flowers102.tar.gz",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/pre_generate_model.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/demo/verify.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/merge_batch_normalization/do_merge.sh",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/rounding/README.md",
+                "status": "renamed",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "tool/rounding/source/rounding1.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tool/rounding/source/rounding2.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "00f8e2bcbfdcb07f5a93bc925b53d88e4d10d824",
+        "message": "Add benchmark of the mobilenet model.",
+        "created_at": "2017-10-11T06:14:56+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "benchmark/README.md",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "benchmark/model/mobilenet.py",
+                "status": "added",
+                "additions": 128,
+                "deletions": 0,
+                "changes": 128
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "e221e89c3836595f121d0231d24a6a750b29417c",
+        "message": "Update README.",
+        "created_at": "2017-10-11T05:42:40+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "3ce12f18a1a864a9cc58dfe00a3c3ea21751075d",
+        "message": "Update some links",
+        "created_at": "2017-10-11T05:33:55+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "1d543688b0636698f2dd001105e2e7fb0f9edc0b",
+        "message": "Refine README.md",
+        "created_at": "2017-10-11T05:29:48+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 13,
+                "deletions": 21,
+                "changes": 34
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "f5cbe67859aaf061e6223d0e47c9977f506f6bc6",
+        "message": "Move flowers102 directory into model_compression.",
+        "created_at": "2017-10-11T05:13:49+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "model_compression/flowers102/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/mobilenet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/mobilenet_pruning.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/mobilenet_pruning/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/resnet.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/resnet_pruning.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/flowers102/resnet18_pruning/train.py",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "c3fd068cf2c531abfca9c2de760b6ffade80ca63",
+        "message": "Move inference directory into benchmark.",
+        "created_at": "2017-10-11T05:12:36+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "benchmark/tool/C/README.md",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "benchmark/tool/C/inference.cc",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "f266a828cda6ff7d07d417ecce6d0da92098d8a0",
+        "message": "Move source into model_compression.",
+        "created_at": "2017-10-11T05:06:44+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "model_compression/rounding/README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "model_compression/source/rounding1.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "model_compression/source/rounding2.png",
+                "status": "renamed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "3975da9c8ae05586eae45bc288db59d0df7ad7b4",
+        "message": "Merge pull request #8 from NHZlX/add_merge_bn\n\nadd the merge batch normalization tools",
+        "created_at": "2017-09-28T02:44:57+00:00",
+        "author": "NHZlX",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "merge_batch_normalization/README.md",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "merge_batch_normalization/demo/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "merge_batch_normalization/demo/image/cat.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "merge_batch_normalization/demo/merge_batch_norm.py",
+                "status": "added",
+                "additions": 138,
+                "deletions": 0,
+                "changes": 138
+            },
+            {
+                "filename": "merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "added",
+                "additions": 122,
+                "deletions": 0,
+                "changes": 122
+            },
+            {
+                "filename": "merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "added",
+                "additions": 122,
+                "deletions": 0,
+                "changes": 122
+            },
+            {
+                "filename": "merge_batch_normalization/demo/models/merged_model.tar.gz",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "merge_batch_normalization/demo/models/mobilenet_flowers102.tar.gz",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "merge_batch_normalization/demo/pre_generate_model.py",
+                "status": "added",
+                "additions": 44,
+                "deletions": 0,
+                "changes": 44
+            },
+            {
+                "filename": "merge_batch_normalization/demo/verify.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "merge_batch_normalization/do_merge.sh",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "b72d5c69cd4e07dd35673483326ba065379297e1",
+        "message": "Merge pull request #10 from NHZlX/add_rounding_compression\n\nadd rounding  readme.md",
+        "created_at": "2017-09-28T01:51:57+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "model_compression/rounding/README.md",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "source/rounding1.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "source/rounding2.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "35f14c7d39a07d9cb097454167de4f336369a390",
+        "message": "modify typo[C",
+        "created_at": "2017-09-26T04:59:33+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "model_compression/rounding/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "431e5176a965d0818305a6a3f7ad295c8cd41703",
+        "message": "add rounding  readme.md",
+        "created_at": "2017-09-26T04:02:19+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "model_compression/rounding/README.md",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "source/rounding1.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "source/rounding2.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "3c605e7f0bd898fc4da540fd8733a967e302afae",
+        "message": "modify Spelling error",
+        "created_at": "2017-09-26T03:15:58+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "merge_batch_normalization/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "963cf43e4a00c9c3ff30a345e80dd86b4322c9ea",
+        "message": "modify Spelling error",
+        "created_at": "2017-09-26T03:13:37+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "merge_batch_normalization/README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 3,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "bc350215d596161e443a9c0cc24d79027de93ef6",
+        "message": "add the merge batch normalization tools",
+        "created_at": "2017-09-25T15:10:17+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "merge_batch_normalization/README.md",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "merge_batch_normalization/demo/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "merge_batch_normalization/demo/image/cat.jpg",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "merge_batch_normalization/demo/merge_batch_norm.py",
+                "status": "added",
+                "additions": 138,
+                "deletions": 0,
+                "changes": 138
+            },
+            {
+                "filename": "merge_batch_normalization/demo/mobilenet_with_bn.py",
+                "status": "added",
+                "additions": 122,
+                "deletions": 0,
+                "changes": 122
+            },
+            {
+                "filename": "merge_batch_normalization/demo/mobilenet_without_bn.py",
+                "status": "added",
+                "additions": 122,
+                "deletions": 0,
+                "changes": 122
+            },
+            {
+                "filename": "merge_batch_normalization/demo/models/merged_model.tar.gz",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "merge_batch_normalization/demo/models/mobilenet_flowers102.tar.gz",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "merge_batch_normalization/demo/pre_generate_model.py",
+                "status": "added",
+                "additions": 44,
+                "deletions": 0,
+                "changes": 44
+            },
+            {
+                "filename": "merge_batch_normalization/demo/verify.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "merge_batch_normalization/do_merge.sh",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "a3419c4c8cd209653b2e1b4d9556534fd2e7372a",
+        "message": "Merge pull request #5 from hedaoyuan/master\n\nAdd a inference demo",
+        "created_at": "2017-09-21T02:29:48+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "inference/C/README.md",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "inference/C/inference.cc",
+                "status": "added",
+                "additions": 171,
+                "deletions": 0,
+                "changes": 171
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "adc5a29738714bca7aca2a96a7603e4a1206b406",
+        "message": "Update the README.md of the inference demo.",
+        "created_at": "2017-09-20T08:48:02+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "inference/C/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "56fc12126175279748ab906a21f5cbb553927bf2",
+        "message": "Add a README.md for inference demo.",
+        "created_at": "2017-09-20T08:39:47+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "inference/C/README.md",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "00773fce7d175a60a054a6eaaedbf25b484754ad",
+        "message": "Add a paddle inference demo using the c api.",
+        "created_at": "2017-09-20T08:12:29+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "inference/C/inference.cc",
+                "status": "added",
+                "additions": 171,
+                "deletions": 0,
+                "changes": 171
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "f401777d7c65a2b5e13b3cf010546a9ec7de55f8",
+        "message": "Merge pull request #2 from NHZlX/flowers102_test\n\nmodify some typo",
+        "created_at": "2017-08-14T02:41:41+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "flowers102/README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "flowers102/mobilenet/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "flowers102/resnet18/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "687d72962776746951645158c6c018a261142a28",
+        "message": "modify some typo",
+        "created_at": "2017-08-04T02:37:45+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "flowers102/README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "flowers102/mobilenet/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "flowers102/resnet18/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "4deab343dfb3d8e9d5efa06ed16eecdc9b9760b8",
+        "message": "Merge pull request #1 from NHZlX/flowers102_test\n\n mobilenet and resent18 test on flowers102",
+        "created_at": "2017-07-31T02:19:34+00:00",
+        "author": "hedaoyuan",
+        "committer": "web-flow",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 27,
+                "deletions": 1,
+                "changes": 28
+            },
+            {
+                "filename": "flowers102/README.md",
+                "status": "added",
+                "additions": 26,
+                "deletions": 0,
+                "changes": 26
+            },
+            {
+                "filename": "flowers102/mobilenet/README.md",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "flowers102/mobilenet/mobilenet.py",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "flowers102/mobilenet/train.py",
+                "status": "added",
+                "additions": 109,
+                "deletions": 0,
+                "changes": 109
+            },
+            {
+                "filename": "flowers102/mobilenet_pruning/README.md",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "flowers102/mobilenet_pruning/mobilenet_pruning.py",
+                "status": "added",
+                "additions": 123,
+                "deletions": 0,
+                "changes": 123
+            },
+            {
+                "filename": "flowers102/mobilenet_pruning/train.py",
+                "status": "added",
+                "additions": 113,
+                "deletions": 0,
+                "changes": 113
+            },
+            {
+                "filename": "flowers102/resnet18/README.md",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "flowers102/resnet18/resnet.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "flowers102/resnet18/train.py",
+                "status": "added",
+                "additions": 110,
+                "deletions": 0,
+                "changes": 110
+            },
+            {
+                "filename": "flowers102/resnet18_pruning/README.md",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "flowers102/resnet18_pruning/resnet_pruning.py",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "flowers102/resnet18_pruning/train.py",
+                "status": "added",
+                "additions": 114,
+                "deletions": 0,
+                "changes": 114
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "de8c76726b856cede44f95c5f3b4af53c493d50f",
+        "message": "modify the link to the model",
+        "created_at": "2017-07-30T12:54:59+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "flowers102/mobilenet_pruning/README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            },
+            {
+                "filename": "flowers102/resnet18_pruning/README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "2e612ff7e0e981630ce24415c4b62a4df415828f",
+        "message": "add the .gitignore",
+        "created_at": "2017-07-30T12:50:11+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            },
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 1,
+                "changes": 5
+            },
+            {
+                "filename": "flowers102/.DS_Store",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "flowers102/README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "flowers102/mobilenet/.DS_Store",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "9b326413a55bfceec6f943287741a1da959a08bb",
+        "message": " mobilenet and resent18 test on flowers102",
+        "created_at": "2017-07-30T12:43:20+00:00",
+        "author": "NHZlX",
+        "committer": "NHZlX",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 24,
+                "deletions": 1,
+                "changes": 25
+            },
+            {
+                "filename": "flowers102/.DS_Store",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "flowers102/README.md",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "flowers102/mobilenet/.DS_Store",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "flowers102/mobilenet/README.md",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "flowers102/mobilenet/mobilenet.py",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "flowers102/mobilenet/train.py",
+                "status": "added",
+                "additions": 109,
+                "deletions": 0,
+                "changes": 109
+            },
+            {
+                "filename": "flowers102/mobilenet_pruning/README.md",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "flowers102/mobilenet_pruning/mobilenet_pruning.py",
+                "status": "added",
+                "additions": 123,
+                "deletions": 0,
+                "changes": 123
+            },
+            {
+                "filename": "flowers102/mobilenet_pruning/train.py",
+                "status": "added",
+                "additions": 113,
+                "deletions": 0,
+                "changes": 113
+            },
+            {
+                "filename": "flowers102/resnet18/README.md",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "flowers102/resnet18/resnet.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "flowers102/resnet18/train.py",
+                "status": "added",
+                "additions": 110,
+                "deletions": 0,
+                "changes": 110
+            },
+            {
+                "filename": "flowers102/resnet18_pruning/README.md",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "flowers102/resnet18_pruning/resnet_pruning.py",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "flowers102/resnet18_pruning/train.py",
+                "status": "added",
+                "additions": 114,
+                "deletions": 0,
+                "changes": 114
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/Mobile",
+        "sha": "472ffb2ea97d101567590d7712bcae77974ff768",
+        "message": "Initial commit",
+        "created_at": "2017-07-28T02:29:47+00:00",
+        "author": "hedaoyuan",
+        "committer": "hedaoyuan",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 2,
+                "deletions": 0,
+                "changes": 2
+            }
+        ]
+    }
+]

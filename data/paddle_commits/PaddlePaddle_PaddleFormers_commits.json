@@ -1,0 +1,3369 @@
+[
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "52671de3710dda07f4451a3a0b0024ea03ba4438",
+        "created_at": "2025-07-07 14:24:50 +0800",
+        "author": "Liujie0926",
+        "committer": "web-flow",
+        "message": "CI-update-build-ci-docker-images-for-required-2398",
+        "files": [
+            {
+                "filename": ".github/workflows/build-ci-docker-images.yml",
+                "status": "modified",
+                "additions": 58,
+                "deletions": 18,
+                "changes": 76
+            },
+            {
+                "filename": ".github/workflows/debug-unittest-gpu.yml",
+                "status": "added",
+                "additions": 110,
+                "deletions": 0,
+                "changes": 110
+            },
+            {
+                "filename": ".github/workflows/unittest-gpu.yml",
+                "status": "modified",
+                "additions": 78,
+                "deletions": 43,
+                "changes": 121
+            },
+            {
+                "filename": "scripts/unit_test/ci_unit.sh",
+                "status": "modified",
+                "additions": 18,
+                "deletions": 12,
+                "changes": 30
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "053a5a5e2a72cd2d3b997cbcff81b14af9fe4d47",
+        "created_at": "2025-06-27 22:26:31 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "update-version-2389",
+        "files": [
+            {
+                "filename": "paddleformers/__init__.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "ea941fb24cb6224ab274d086c97e56859fca340a",
+        "created_at": "2025-07-03 11:03:25 +0800",
+        "author": "blacksheep-Aristotle",
+        "committer": "web-flow",
+        "message": "Update-save-ckpt-suffix-2384",
+        "files": [
+            {
+                "filename": "paddleformers/trainer/training_args.py",
+                "status": "modified",
+                "additions": 19,
+                "deletions": 12,
+                "changes": 31
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "91e86c2320f5db855322157a12370a17ec48626c",
+        "created_at": "2025-06-29 11:37:24 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Triton-compatible-2395",
+        "files": [
+            {
+                "filename": "paddleformers/utils/adamw_triton.py",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "3ec373601cb63c306808b43c4e21f1750234ea9f",
+        "created_at": "2025-06-28 20:09:50 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "update-readme-2394",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "21c280d601d14edcf7c62fdb3c09654aada67234",
+        "created_at": "2025-06-27 21:23:14 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Revert-change-set-up-2388",
+        "files": [
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "80948e969fa4edf65273e5c270a3a93ab27a1712",
+        "created_at": "2025-06-28 19:50:29 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "update-readme-2393",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 9,
+                "deletions": 9,
+                "changes": 18
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "58161b7a6432e260e5528c1bb9369ca30434cd1c",
+        "created_at": "2025-06-28 19:44:00 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "add-readme-2392",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "README_en.md",
+                "status": "removed",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "2ee8a1edf8dfb4a3636208bc6b3651e7874d7c55",
+        "created_at": "2025-06-27 20:11:02 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "change-set-up-2385",
+        "files": [
+            {
+                "filename": "setup.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "d2c2c6e5cd0073e0bf7354e80ea0f007aec53853",
+        "created_at": "2025-07-01 16:30:31 +0800",
+        "author": "wtmlon",
+        "committer": "web-flow",
+        "message": "fix-fused-lmhead-backward.-2396",
+        "files": [
+            {
+                "filename": "paddleformers/transformers/tensor_parallel_utils.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 3,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "787774afd5b43b41f9c0a22037e6d0786d901863",
+        "created_at": "2025-06-27 20:12:50 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "Revert-fixErr-specialtoken-2387",
+        "files": [
+            {
+                "filename": "paddleformers/transformers/tokenizer_utils_base.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "tests/transformers/test_tokenizer_common.py",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "8fe23126220b14b32bcc58e54ade66f10665918b",
+        "created_at": "2025-06-30 12:57:58 +0800",
+        "author": "Liujie0926",
+        "committer": "web-flow",
+        "message": "CI-Update-build-docker-2380",
+        "files": [
+            {
+                "filename": ".github/workflows/build-ci-docker-images.yml",
+                "status": "modified",
+                "additions": 51,
+                "deletions": 18,
+                "changes": 69
+            },
+            {
+                "filename": ".github/workflows/unittest-gpu.yml",
+                "status": "modified",
+                "additions": 15,
+                "deletions": 3,
+                "changes": 18
+            },
+            {
+                "filename": "scripts/unit_test/ci_unit.sh",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "7b47912cc7729a4273233c7bc55c9f5f18981671",
+        "created_at": "2025-06-27 11:09:00 +0800",
+        "author": "lugimzzz",
+        "committer": "web-flow",
+        "message": "add-config-for-infer-2379",
+        "files": [
+            {
+                "filename": "paddleformers/quantization/quantization_config.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "ec1303c46ccb542eee26e5e58802d9d2c97f030f",
+        "created_at": "2025-06-26 22:08:29 +0800",
+        "author": "miao200years",
+        "committer": "web-flow",
+        "message": "fixErr-specialtoken-2376",
+        "files": [
+            {
+                "filename": "paddleformers/transformers/tokenizer_utils_base.py",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 3,
+                "changes": 3
+            },
+            {
+                "filename": "tests/transformers/test_tokenizer_common.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 3,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "81e4af43a76aa963a3fd4a591c8ceb7270d7ab3d",
+        "created_at": "2025-06-27 14:40:48 +0800",
+        "author": "WYB27",
+        "committer": "web-flow",
+        "message": "fix-dependencies-bug-2382",
+        "files": [
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "be81e5222a1daa49a0727f3064889143251a9933",
+        "created_at": "2025-06-27 11:16:45 +0800",
+        "author": "DesmonDay",
+        "committer": "web-flow",
+        "message": "Trainer-update-trainer-2378",
+        "files": [
+            {
+                "filename": "paddleformers/trainer/trainer.py",
+                "status": "modified",
+                "additions": 6,
+                "deletions": 13,
+                "changes": 19
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "b7d097575e78f4a29cb8d2aaaaa88322afa3d421",
+        "created_at": "2025-06-26 21:34:46 +0800",
+        "author": "WYB27",
+        "committer": "web-flow",
+        "message": "Fix-pytest-dependencies-2377",
+        "files": [
+            {
+                "filename": "tests/requirements.txt",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "e2086671c850f75dcd172e7e74e77503810cc8a6",
+        "created_at": "2025-06-26 14:17:27 +0800",
+        "author": "Liujie0926",
+        "committer": "web-flow",
+        "message": "CI-Update-branch-and-repo_name-for-ci-2373",
+        "files": [
+            {
+                "filename": ".github/workflows/build-ci-docker-images.yml",
+                "status": "modified",
+                "additions": 17,
+                "deletions": 12,
+                "changes": 29
+            },
+            {
+                "filename": ".github/workflows/lint.yml",
+                "status": "modified",
+                "additions": 4,
+                "deletions": 4,
+                "changes": 8
+            },
+            {
+                "filename": ".github/workflows/unittest-gpu.yml",
+                "status": "modified",
+                "additions": 14,
+                "deletions": 15,
+                "changes": 29
+            },
+            {
+                "filename": "scripts/get_modified_files.py",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 1,
+                "changes": 2
+            },
+            {
+                "filename": "scripts/unit_test/ci_unit.sh",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "4fa7ea6657bc4ab947ccc65ff1ad16d2b40e326e",
+        "created_at": "2025-06-26 17:48:14 +0800",
+        "author": "zhao-xi",
+        "committer": "web-flow",
+        "message": "feature-register-2374",
+        "files": [
+            {
+                "filename": "paddleformers/transformers/auto/factory.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 18,
+                "changes": 25
+            },
+            {
+                "filename": "paddleformers/transformers/auto/modeling.py",
+                "status": "modified",
+                "additions": 36,
+                "deletions": 2,
+                "changes": 38
+            },
+            {
+                "filename": "paddleformers/transformers/model_utils.py",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 1,
+                "changes": 3
+            },
+            {
+                "filename": "tests/transformers/auto/test_modeling.py",
+                "status": "modified",
+                "additions": 61,
+                "deletions": 12,
+                "changes": 73
+            },
+            {
+                "filename": "tests/utils/test_module/custom_configuration.py",
+                "status": "modified",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "tests/utils/test_module/custom_model.py",
+                "status": "added",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "8c874804189efc2cb845b7060ab3e7a51670e1ea",
+        "created_at": "2025-06-26 17:46:55 +0800",
+        "author": "WYB27",
+        "committer": "web-flow",
+        "message": "Remove-unused-dependencies-2375",
+        "files": [
+            {
+                "filename": "requirements-dev.txt",
+                "status": "modified",
+                "additions": 0,
+                "deletions": 16,
+                "changes": 16
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "modified",
+                "additions": 1,
+                "deletions": 13,
+                "changes": 14
+            }
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaddleFormers",
+        "sha": "1dfee80da38fb5029080b2c9b9ea2cffc6153297",
+        "created_at": "2025-06-25 22:55:05 +0800",
+        "author": "lugimzzz",
+        "committer": "lugimzzz",
+        "message": "baby-paddleformers",
+        "files": [
+            {
+                "filename": ".copyright.hook",
+                "status": "added",
+                "additions": 134,
+                "deletions": 0,
+                "changes": 134
+            },
+            {
+                "filename": ".flake8",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": ".github/CODE_OF_CONDUCT.md",
+                "status": "added",
+                "additions": 89,
+                "deletions": 0,
+                "changes": 89
+            },
+            {
+                "filename": ".github/CODE_OF_CONDUCT_en.md",
+                "status": "added",
+                "additions": 134,
+                "deletions": 0,
+                "changes": 134
+            },
+            {
+                "filename": ".github/CONTRIBUTING_en.md",
+                "status": "added",
+                "additions": 154,
+                "deletions": 0,
+                "changes": 154
+            },
+            {
+                "filename": ".github/ISSUE_TEMPLATE/ask-question.yml",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": ".github/ISSUE_TEMPLATE/bug-report.yml",
+                "status": "added",
+                "additions": 45,
+                "deletions": 0,
+                "changes": 45
+            },
+            {
+                "filename": ".github/ISSUE_TEMPLATE/docs-report.yml",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": ".github/ISSUE_TEMPLATE/feature-request.yml",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": ".github/ISSUE_TEMPLATE/new-model.yaml",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": ".github/ISSUE_TEMPLATE/others.yml",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": ".github/PULL_REQUEST_TEMPLATE.md",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": ".github/actions/rerun-workflow/action.yml",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": ".github/actions/rerun-workflow/rerun.sh",
+                "status": "added",
+                "additions": 77,
+                "deletions": 0,
+                "changes": 77
+            },
+            {
+                "filename": ".github/codecov.yml",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": ".github/workflows/build-ci-docker-images.yml",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": ".github/workflows/lint.yml",
+                "status": "added",
+                "additions": 41,
+                "deletions": 0,
+                "changes": 41
+            },
+            {
+                "filename": ".github/workflows/pipelines.yml",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": ".github/workflows/release.yml",
+                "status": "added",
+                "additions": 58,
+                "deletions": 0,
+                "changes": 58
+            },
+            {
+                "filename": ".github/workflows/rerun.yml",
+                "status": "added",
+                "additions": 63,
+                "deletions": 0,
+                "changes": 63
+            },
+            {
+                "filename": ".github/workflows/stale.yml",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": ".github/workflows/unittest-cpu.yml",
+                "status": "added",
+                "additions": 48,
+                "deletions": 0,
+                "changes": 48
+            },
+            {
+                "filename": ".github/workflows/unittest-gpu.yml",
+                "status": "added",
+                "additions": 189,
+                "deletions": 0,
+                "changes": 189
+            },
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 168,
+                "deletions": 0,
+                "changes": 168
+            },
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 63,
+                "deletions": 0,
+                "changes": 63
+            },
+            {
+                "filename": ".readthedocs.yaml",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "CONTRIBUTING.md",
+                "status": "added",
+                "additions": 158,
+                "deletions": 0,
+                "changes": 158
+            },
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 203,
+                "deletions": 0,
+                "changes": 203
+            },
+            {
+                "filename": "Makefile",
+                "status": "added",
+                "additions": 78,
+                "deletions": 0,
+                "changes": 78
+            },
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "README_en.md",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "paddleformers/__init__.py",
+                "status": "added",
+                "additions": 57,
+                "deletions": 0,
+                "changes": 57
+            },
+            {
+                "filename": "paddleformers/data/__init__.py",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "paddleformers/data/blendable_dataset.py",
+                "status": "added",
+                "additions": 184,
+                "deletions": 0,
+                "changes": 184
+            },
+            {
+                "filename": "paddleformers/data/causal_dataset.py",
+                "status": "added",
+                "additions": 711,
+                "deletions": 0,
+                "changes": 711
+            },
+            {
+                "filename": "paddleformers/data/collate.py",
+                "status": "added",
+                "additions": 321,
+                "deletions": 0,
+                "changes": 321
+            },
+            {
+                "filename": "paddleformers/data/data_collator.py",
+                "status": "added",
+                "additions": 782,
+                "deletions": 0,
+                "changes": 782
+            },
+            {
+                "filename": "paddleformers/data/dist_dataloader.py",
+                "status": "added",
+                "additions": 215,
+                "deletions": 0,
+                "changes": 215
+            },
+            {
+                "filename": "paddleformers/data/indexed_dataset.py",
+                "status": "added",
+                "additions": 972,
+                "deletions": 0,
+                "changes": 972
+            },
+            {
+                "filename": "paddleformers/data/iterator.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "paddleformers/data/sampler.py",
+                "status": "added",
+                "additions": 416,
+                "deletions": 0,
+                "changes": 416
+            },
+            {
+                "filename": "paddleformers/data/tokenizer.py",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "paddleformers/data/vocab.py",
+                "status": "added",
+                "additions": 579,
+                "deletions": 0,
+                "changes": 579
+            },
+            {
+                "filename": "paddleformers/datasets/__init__.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "paddleformers/datasets/dataset.py",
+                "status": "added",
+                "additions": 773,
+                "deletions": 0,
+                "changes": 773
+            },
+            {
+                "filename": "paddleformers/datasets/embedding_dataset.py",
+                "status": "added",
+                "additions": 256,
+                "deletions": 0,
+                "changes": 256
+            },
+            {
+                "filename": "paddleformers/datasets/rlhf_datasets/__init__.py",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "paddleformers/datasets/rlhf_datasets/protocol.py",
+                "status": "added",
+                "additions": 607,
+                "deletions": 0,
+                "changes": 607
+            },
+            {
+                "filename": "paddleformers/datasets/rlhf_datasets/rl_dataset.py",
+                "status": "added",
+                "additions": 168,
+                "deletions": 0,
+                "changes": 168
+            },
+            {
+                "filename": "paddleformers/datasets/zero_padding_dataset.py",
+                "status": "added",
+                "additions": 234,
+                "deletions": 0,
+                "changes": 234
+            },
+            {
+                "filename": "paddleformers/generation/__init__.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "paddleformers/generation/configuration_utils.py",
+                "status": "added",
+                "additions": 597,
+                "deletions": 0,
+                "changes": 597
+            },
+            {
+                "filename": "paddleformers/generation/logits_process.py",
+                "status": "added",
+                "additions": 646,
+                "deletions": 0,
+                "changes": 646
+            },
+            {
+                "filename": "paddleformers/generation/stopping_criteria.py",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "paddleformers/generation/streamers.py",
+                "status": "added",
+                "additions": 216,
+                "deletions": 0,
+                "changes": 216
+            },
+            {
+                "filename": "paddleformers/generation/utils.py",
+                "status": "added",
+                "additions": 1809,
+                "deletions": 0,
+                "changes": 1809
+            },
+            {
+                "filename": "paddleformers/mergekit/__init__.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "paddleformers/mergekit/merge_config.py",
+                "status": "added",
+                "additions": 186,
+                "deletions": 0,
+                "changes": 186
+            },
+            {
+                "filename": "paddleformers/mergekit/merge_method.py",
+                "status": "added",
+                "additions": 207,
+                "deletions": 0,
+                "changes": 207
+            },
+            {
+                "filename": "paddleformers/mergekit/merge_model.py",
+                "status": "added",
+                "additions": 803,
+                "deletions": 0,
+                "changes": 803
+            },
+            {
+                "filename": "paddleformers/mergekit/merge_utils.py",
+                "status": "added",
+                "additions": 73,
+                "deletions": 0,
+                "changes": 73
+            },
+            {
+                "filename": "paddleformers/mergekit/sparsify_method.py",
+                "status": "added",
+                "additions": 118,
+                "deletions": 0,
+                "changes": 118
+            },
+            {
+                "filename": "paddleformers/ops/__init__.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "paddleformers/ops/topo.py",
+                "status": "added",
+                "additions": 84,
+                "deletions": 0,
+                "changes": 84
+            },
+            {
+                "filename": "paddleformers/peft/__init__.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "paddleformers/peft/lokr/__init__.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "paddleformers/peft/lokr/lokr_config.py",
+                "status": "added",
+                "additions": 141,
+                "deletions": 0,
+                "changes": 141
+            },
+            {
+                "filename": "paddleformers/peft/lokr/lokr_layers.py",
+                "status": "added",
+                "additions": 240,
+                "deletions": 0,
+                "changes": 240
+            },
+            {
+                "filename": "paddleformers/peft/lokr/lokr_model.py",
+                "status": "added",
+                "additions": 296,
+                "deletions": 0,
+                "changes": 296
+            },
+            {
+                "filename": "paddleformers/peft/lora/__init__.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "paddleformers/peft/lora/auto_lora_model.py",
+                "status": "added",
+                "additions": 799,
+                "deletions": 0,
+                "changes": 799
+            },
+            {
+                "filename": "paddleformers/peft/lora/lora_config.py",
+                "status": "added",
+                "additions": 197,
+                "deletions": 0,
+                "changes": 197
+            },
+            {
+                "filename": "paddleformers/peft/lora/lora_layers.py",
+                "status": "added",
+                "additions": 942,
+                "deletions": 0,
+                "changes": 942
+            },
+            {
+                "filename": "paddleformers/peft/lora/lora_model.py",
+                "status": "added",
+                "additions": 839,
+                "deletions": 0,
+                "changes": 839
+            },
+            {
+                "filename": "paddleformers/peft/lora/lora_quant_layers.py",
+                "status": "added",
+                "additions": 272,
+                "deletions": 0,
+                "changes": 272
+            },
+            {
+                "filename": "paddleformers/peft/lora/lora_quantization_layers.py",
+                "status": "added",
+                "additions": 284,
+                "deletions": 0,
+                "changes": 284
+            },
+            {
+                "filename": "paddleformers/peft/lora/lora_quick_layers.py",
+                "status": "added",
+                "additions": 223,
+                "deletions": 0,
+                "changes": 223
+            },
+            {
+                "filename": "paddleformers/peft/lora/loraga_utils.py",
+                "status": "added",
+                "additions": 395,
+                "deletions": 0,
+                "changes": 395
+            },
+            {
+                "filename": "paddleformers/peft/lora/utils.py",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "paddleformers/peft/prefix/__init__.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "paddleformers/peft/prefix/prefix_config.py",
+                "status": "added",
+                "additions": 102,
+                "deletions": 0,
+                "changes": 102
+            },
+            {
+                "filename": "paddleformers/peft/prefix/prefix_model.py",
+                "status": "added",
+                "additions": 549,
+                "deletions": 0,
+                "changes": 549
+            },
+            {
+                "filename": "paddleformers/peft/prefix/utils.py",
+                "status": "added",
+                "additions": 52,
+                "deletions": 0,
+                "changes": 52
+            },
+            {
+                "filename": "paddleformers/peft/reft/__init__.py",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "paddleformers/peft/reft/interventions.py",
+                "status": "added",
+                "additions": 148,
+                "deletions": 0,
+                "changes": 148
+            },
+            {
+                "filename": "paddleformers/peft/reft/modeling_utils.py",
+                "status": "added",
+                "additions": 175,
+                "deletions": 0,
+                "changes": 175
+            },
+            {
+                "filename": "paddleformers/peft/reft/predict.py",
+                "status": "added",
+                "additions": 132,
+                "deletions": 0,
+                "changes": 132
+            },
+            {
+                "filename": "paddleformers/peft/reft/reft_config.py",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "paddleformers/peft/reft/reft_model.py",
+                "status": "added",
+                "additions": 365,
+                "deletions": 0,
+                "changes": 365
+            },
+            {
+                "filename": "paddleformers/peft/vera/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "paddleformers/peft/vera/vera_config.py",
+                "status": "added",
+                "additions": 131,
+                "deletions": 0,
+                "changes": 131
+            },
+            {
+                "filename": "paddleformers/peft/vera/vera_layers.py",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            },
+            {
+                "filename": "paddleformers/peft/vera/vera_model.py",
+                "status": "added",
+                "additions": 284,
+                "deletions": 0,
+                "changes": 284
+            },
+            {
+                "filename": "paddleformers/quantization/__init__.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "paddleformers/quantization/checkpoint_quantization_utils.py",
+                "status": "added",
+                "additions": 364,
+                "deletions": 0,
+                "changes": 364
+            },
+            {
+                "filename": "paddleformers/quantization/hadamard_utils.py",
+                "status": "added",
+                "additions": 69,
+                "deletions": 0,
+                "changes": 69
+            },
+            {
+                "filename": "paddleformers/quantization/qat_utils.py",
+                "status": "added",
+                "additions": 433,
+                "deletions": 0,
+                "changes": 433
+            },
+            {
+                "filename": "paddleformers/quantization/qlora.py",
+                "status": "added",
+                "additions": 115,
+                "deletions": 0,
+                "changes": 115
+            },
+            {
+                "filename": "paddleformers/quantization/quantization_config.py",
+                "status": "added",
+                "additions": 240,
+                "deletions": 0,
+                "changes": 240
+            },
+            {
+                "filename": "paddleformers/quantization/quantization_linear.py",
+                "status": "added",
+                "additions": 721,
+                "deletions": 0,
+                "changes": 721
+            },
+            {
+                "filename": "paddleformers/quantization/quantization_utils.py",
+                "status": "added",
+                "additions": 278,
+                "deletions": 0,
+                "changes": 278
+            },
+            {
+                "filename": "paddleformers/quantization/unified_checkpoint_quantization.py",
+                "status": "added",
+                "additions": 221,
+                "deletions": 0,
+                "changes": 221
+            },
+            {
+                "filename": "paddleformers/trainer/__init__.py",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "paddleformers/trainer/argparser.py",
+                "status": "added",
+                "additions": 469,
+                "deletions": 0,
+                "changes": 469
+            },
+            {
+                "filename": "paddleformers/trainer/auto_trainer.py",
+                "status": "added",
+                "additions": 1036,
+                "deletions": 0,
+                "changes": 1036
+            },
+            {
+                "filename": "paddleformers/trainer/auto_training_args.py",
+                "status": "added",
+                "additions": 147,
+                "deletions": 0,
+                "changes": 147
+            },
+            {
+                "filename": "paddleformers/trainer/integrations.py",
+                "status": "added",
+                "additions": 521,
+                "deletions": 0,
+                "changes": 521
+            },
+            {
+                "filename": "paddleformers/trainer/plugins/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "paddleformers/trainer/plugins/npu_plugin.py",
+                "status": "added",
+                "additions": 127,
+                "deletions": 0,
+                "changes": 127
+            },
+            {
+                "filename": "paddleformers/trainer/plugins/timer.py",
+                "status": "added",
+                "additions": 176,
+                "deletions": 0,
+                "changes": 176
+            },
+            {
+                "filename": "paddleformers/trainer/trainer.py",
+                "status": "added",
+                "additions": 3836,
+                "deletions": 0,
+                "changes": 3836
+            },
+            {
+                "filename": "paddleformers/trainer/trainer_callback.py",
+                "status": "added",
+                "additions": 610,
+                "deletions": 0,
+                "changes": 610
+            },
+            {
+                "filename": "paddleformers/trainer/trainer_utils.py",
+                "status": "added",
+                "additions": 1254,
+                "deletions": 0,
+                "changes": 1254
+            },
+            {
+                "filename": "paddleformers/trainer/training_args.py",
+                "status": "added",
+                "additions": 2508,
+                "deletions": 0,
+                "changes": 2508
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/__init__.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/async_handler.py",
+                "status": "added",
+                "additions": 265,
+                "deletions": 0,
+                "changes": 265
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/check_completion.py",
+                "status": "added",
+                "additions": 248,
+                "deletions": 0,
+                "changes": 248
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/load_dynamic.py",
+                "status": "added",
+                "additions": 491,
+                "deletions": 0,
+                "changes": 491
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/load_local.py",
+                "status": "added",
+                "additions": 297,
+                "deletions": 0,
+                "changes": 297
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/load_save_single_card.py",
+                "status": "added",
+                "additions": 234,
+                "deletions": 0,
+                "changes": 234
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/sharding_split_param_utils.py",
+                "status": "added",
+                "additions": 471,
+                "deletions": 0,
+                "changes": 471
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/shared_memory_utils.py",
+                "status": "added",
+                "additions": 149,
+                "deletions": 0,
+                "changes": 149
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/unified_checkpoint.py",
+                "status": "added",
+                "additions": 789,
+                "deletions": 0,
+                "changes": 789
+            },
+            {
+                "filename": "paddleformers/trainer/unified_checkpoint/utils.py",
+                "status": "added",
+                "additions": 804,
+                "deletions": 0,
+                "changes": 804
+            },
+            {
+                "filename": "paddleformers/trainer/utils/__init__.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "paddleformers/trainer/utils/async_save.py",
+                "status": "added",
+                "additions": 126,
+                "deletions": 0,
+                "changes": 126
+            },
+            {
+                "filename": "paddleformers/trainer/utils/ckpt_converter.py",
+                "status": "added",
+                "additions": 1221,
+                "deletions": 0,
+                "changes": 1221
+            },
+            {
+                "filename": "paddleformers/trainer/utils/doc.py",
+                "status": "added",
+                "additions": 54,
+                "deletions": 0,
+                "changes": 54
+            },
+            {
+                "filename": "paddleformers/trainer/utils/helper.py",
+                "status": "added",
+                "additions": 338,
+                "deletions": 0,
+                "changes": 338
+            },
+            {
+                "filename": "paddleformers/trainer/utils/reshard/__init__.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "paddleformers/trainer/utils/reshard/common.py",
+                "status": "added",
+                "additions": 587,
+                "deletions": 0,
+                "changes": 587
+            },
+            {
+                "filename": "paddleformers/trainer/utils/reshard/pp_reshard.py",
+                "status": "added",
+                "additions": 365,
+                "deletions": 0,
+                "changes": 365
+            },
+            {
+                "filename": "paddleformers/trainer/utils/reshard/sharding_v1.py",
+                "status": "added",
+                "additions": 42,
+                "deletions": 0,
+                "changes": 42
+            },
+            {
+                "filename": "paddleformers/trainer/utils/reshard/sharding_v2.py",
+                "status": "added",
+                "additions": 231,
+                "deletions": 0,
+                "changes": 231
+            },
+            {
+                "filename": "paddleformers/trainer/utils/sharding_io.py",
+                "status": "added",
+                "additions": 605,
+                "deletions": 0,
+                "changes": 605
+            },
+            {
+                "filename": "paddleformers/trainer/utils/zero_cost_checkpoint.py",
+                "status": "added",
+                "additions": 984,
+                "deletions": 0,
+                "changes": 984
+            },
+            {
+                "filename": "paddleformers/transformers/__init__.py",
+                "status": "added",
+                "additions": 72,
+                "deletions": 0,
+                "changes": 72
+            },
+            {
+                "filename": "paddleformers/transformers/activations.py",
+                "status": "added",
+                "additions": 174,
+                "deletions": 0,
+                "changes": 174
+            },
+            {
+                "filename": "paddleformers/transformers/aistudio_utils.py",
+                "status": "added",
+                "additions": 70,
+                "deletions": 0,
+                "changes": 70
+            },
+            {
+                "filename": "paddleformers/transformers/attention_utils.py",
+                "status": "added",
+                "additions": 619,
+                "deletions": 0,
+                "changes": 619
+            },
+            {
+                "filename": "paddleformers/transformers/audio_utils.py",
+                "status": "added",
+                "additions": 694,
+                "deletions": 0,
+                "changes": 694
+            },
+            {
+                "filename": "paddleformers/transformers/auto/__init__.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "paddleformers/transformers/auto/configuration.py",
+                "status": "added",
+                "additions": 355,
+                "deletions": 0,
+                "changes": 355
+            },
+            {
+                "filename": "paddleformers/transformers/auto/factory.py",
+                "status": "added",
+                "additions": 157,
+                "deletions": 0,
+                "changes": 157
+            },
+            {
+                "filename": "paddleformers/transformers/auto/image_processing.py",
+                "status": "added",
+                "additions": 176,
+                "deletions": 0,
+                "changes": 176
+            },
+            {
+                "filename": "paddleformers/transformers/auto/modeling.py",
+                "status": "added",
+                "additions": 950,
+                "deletions": 0,
+                "changes": 950
+            },
+            {
+                "filename": "paddleformers/transformers/auto/processing.py",
+                "status": "added",
+                "additions": 184,
+                "deletions": 0,
+                "changes": 184
+            },
+            {
+                "filename": "paddleformers/transformers/auto/tokenizer.py",
+                "status": "added",
+                "additions": 478,
+                "deletions": 0,
+                "changes": 478
+            },
+            {
+                "filename": "paddleformers/transformers/auto_utils.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "paddleformers/transformers/bert/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "paddleformers/transformers/bert/configuration.py",
+                "status": "added",
+                "additions": 407,
+                "deletions": 0,
+                "changes": 407
+            },
+            {
+                "filename": "paddleformers/transformers/bert/modeling.py",
+                "status": "added",
+                "additions": 1420,
+                "deletions": 0,
+                "changes": 1420
+            },
+            {
+                "filename": "paddleformers/transformers/bert/modeling.pyi",
+                "status": "added",
+                "additions": 347,
+                "deletions": 0,
+                "changes": 347
+            },
+            {
+                "filename": "paddleformers/transformers/bert/tokenizer.py",
+                "status": "added",
+                "additions": 630,
+                "deletions": 0,
+                "changes": 630
+            },
+            {
+                "filename": "paddleformers/transformers/bert/tokenizer_fast.py",
+                "status": "added",
+                "additions": 165,
+                "deletions": 0,
+                "changes": 165
+            },
+            {
+                "filename": "paddleformers/transformers/configuration_utils.py",
+                "status": "added",
+                "additions": 1236,
+                "deletions": 0,
+                "changes": 1236
+            },
+            {
+                "filename": "paddleformers/transformers/context_parallel_utils.py",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "paddleformers/transformers/contrastive_loss.py",
+                "status": "added",
+                "additions": 152,
+                "deletions": 0,
+                "changes": 152
+            },
+            {
+                "filename": "paddleformers/transformers/conversion_utils.py",
+                "status": "added",
+                "additions": 1661,
+                "deletions": 0,
+                "changes": 1661
+            },
+            {
+                "filename": "paddleformers/transformers/convert_slow_tokenizer.py",
+                "status": "added",
+                "additions": 691,
+                "deletions": 0,
+                "changes": 691
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v2/__init__.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v2/configuration.py",
+                "status": "added",
+                "additions": 237,
+                "deletions": 0,
+                "changes": 237
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v2/fp8_linear.py",
+                "status": "added",
+                "additions": 138,
+                "deletions": 0,
+                "changes": 138
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v2/kernel.py",
+                "status": "added",
+                "additions": 227,
+                "deletions": 0,
+                "changes": 227
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v2/mfu_utils.py",
+                "status": "added",
+                "additions": 206,
+                "deletions": 0,
+                "changes": 206
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v2/modeling.py",
+                "status": "added",
+                "additions": 2334,
+                "deletions": 0,
+                "changes": 2334
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v2/modeling_auto.py",
+                "status": "added",
+                "additions": 1263,
+                "deletions": 0,
+                "changes": 1263
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v2/modeling_pp.py",
+                "status": "added",
+                "additions": 501,
+                "deletions": 0,
+                "changes": 501
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v2/tokenizer_fast.py",
+                "status": "added",
+                "additions": 54,
+                "deletions": 0,
+                "changes": 54
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v3/__init__.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v3/configuration.py",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v3/modeling.py",
+                "status": "added",
+                "additions": 170,
+                "deletions": 0,
+                "changes": 170
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v3/modeling_auto.py",
+                "status": "added",
+                "additions": 209,
+                "deletions": 0,
+                "changes": 209
+            },
+            {
+                "filename": "paddleformers/transformers/deepseek_v3/modeling_pp.py",
+                "status": "added",
+                "additions": 40,
+                "deletions": 0,
+                "changes": 40
+            },
+            {
+                "filename": "paddleformers/transformers/dpo_criterion.py",
+                "status": "added",
+                "additions": 379,
+                "deletions": 0,
+                "changes": 379
+            },
+            {
+                "filename": "paddleformers/transformers/embedding_utils.py",
+                "status": "added",
+                "additions": 51,
+                "deletions": 0,
+                "changes": 51
+            },
+            {
+                "filename": "paddleformers/transformers/export.py",
+                "status": "added",
+                "additions": 68,
+                "deletions": 0,
+                "changes": 68
+            },
+            {
+                "filename": "paddleformers/transformers/feature_extraction_sequence_utils.py",
+                "status": "added",
+                "additions": 365,
+                "deletions": 0,
+                "changes": 365
+            },
+            {
+                "filename": "paddleformers/transformers/feature_extraction_utils.py",
+                "status": "added",
+                "additions": 377,
+                "deletions": 0,
+                "changes": 377
+            },
+            {
+                "filename": "paddleformers/transformers/fused_a2a.py",
+                "status": "added",
+                "additions": 216,
+                "deletions": 0,
+                "changes": 216
+            },
+            {
+                "filename": "paddleformers/transformers/image_processing_utils.py",
+                "status": "added",
+                "additions": 547,
+                "deletions": 0,
+                "changes": 547
+            },
+            {
+                "filename": "paddleformers/transformers/image_transforms.py",
+                "status": "added",
+                "additions": 655,
+                "deletions": 0,
+                "changes": 655
+            },
+            {
+                "filename": "paddleformers/transformers/image_utils.py",
+                "status": "added",
+                "additions": 621,
+                "deletions": 0,
+                "changes": 621
+            },
+            {
+                "filename": "paddleformers/transformers/kto_criterion.py",
+                "status": "added",
+                "additions": 275,
+                "deletions": 0,
+                "changes": 275
+            },
+            {
+                "filename": "paddleformers/transformers/linear_utils.py",
+                "status": "added",
+                "additions": 90,
+                "deletions": 0,
+                "changes": 90
+            },
+            {
+                "filename": "paddleformers/transformers/llama/LICENSE",
+                "status": "added",
+                "additions": 76,
+                "deletions": 0,
+                "changes": 76
+            },
+            {
+                "filename": "paddleformers/transformers/llama/Llama2.LICENSE",
+                "status": "added",
+                "additions": 126,
+                "deletions": 0,
+                "changes": 126
+            },
+            {
+                "filename": "paddleformers/transformers/llama/__init__.py",
+                "status": "added",
+                "additions": 21,
+                "deletions": 0,
+                "changes": 21
+            },
+            {
+                "filename": "paddleformers/transformers/llama/configuration.py",
+                "status": "added",
+                "additions": 211,
+                "deletions": 0,
+                "changes": 211
+            },
+            {
+                "filename": "paddleformers/transformers/llama/fusion_ops.py",
+                "status": "added",
+                "additions": 313,
+                "deletions": 0,
+                "changes": 313
+            },
+            {
+                "filename": "paddleformers/transformers/llama/modeling.py",
+                "status": "added",
+                "additions": 2161,
+                "deletions": 0,
+                "changes": 2161
+            },
+            {
+                "filename": "paddleformers/transformers/llama/modeling_auto.py",
+                "status": "added",
+                "additions": 1360,
+                "deletions": 0,
+                "changes": 1360
+            },
+            {
+                "filename": "paddleformers/transformers/llama/modeling_network.py",
+                "status": "added",
+                "additions": 1224,
+                "deletions": 0,
+                "changes": 1224
+            },
+            {
+                "filename": "paddleformers/transformers/llama/modeling_pp.py",
+                "status": "added",
+                "additions": 468,
+                "deletions": 0,
+                "changes": 468
+            },
+            {
+                "filename": "paddleformers/transformers/llama/tokenizer.py",
+                "status": "added",
+                "additions": 502,
+                "deletions": 0,
+                "changes": 502
+            },
+            {
+                "filename": "paddleformers/transformers/llama/tokenizer_fast.py",
+                "status": "added",
+                "additions": 171,
+                "deletions": 0,
+                "changes": 171
+            },
+            {
+                "filename": "paddleformers/transformers/long_sequence_strategies/__init__.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "paddleformers/transformers/long_sequence_strategies/attention_strategies.py",
+                "status": "added",
+                "additions": 51,
+                "deletions": 0,
+                "changes": 51
+            },
+            {
+                "filename": "paddleformers/transformers/long_sequence_strategies/embedding_strategies.py",
+                "status": "added",
+                "additions": 223,
+                "deletions": 0,
+                "changes": 223
+            },
+            {
+                "filename": "paddleformers/transformers/long_sequence_strategies/long_sequence_strategies.py",
+                "status": "added",
+                "additions": 68,
+                "deletions": 0,
+                "changes": 68
+            },
+            {
+                "filename": "paddleformers/transformers/mc2_parallel_linear.py",
+                "status": "added",
+                "additions": 230,
+                "deletions": 0,
+                "changes": 230
+            },
+            {
+                "filename": "paddleformers/transformers/model_outputs.py",
+                "status": "added",
+                "additions": 1568,
+                "deletions": 0,
+                "changes": 1568
+            },
+            {
+                "filename": "paddleformers/transformers/model_utils.py",
+                "status": "added",
+                "additions": 3314,
+                "deletions": 0,
+                "changes": 3314
+            },
+            {
+                "filename": "paddleformers/transformers/moe_gate.py",
+                "status": "added",
+                "additions": 588,
+                "deletions": 0,
+                "changes": 588
+            },
+            {
+                "filename": "paddleformers/transformers/moe_gate_auto.py",
+                "status": "added",
+                "additions": 656,
+                "deletions": 0,
+                "changes": 656
+            },
+            {
+                "filename": "paddleformers/transformers/moe_layer.py",
+                "status": "added",
+                "additions": 378,
+                "deletions": 0,
+                "changes": 378
+            },
+            {
+                "filename": "paddleformers/transformers/moe_layer_auto.py",
+                "status": "added",
+                "additions": 329,
+                "deletions": 0,
+                "changes": 329
+            },
+            {
+                "filename": "paddleformers/transformers/moe_utils.py",
+                "status": "added",
+                "additions": 101,
+                "deletions": 0,
+                "changes": 101
+            },
+            {
+                "filename": "paddleformers/transformers/ofa_utils.py",
+                "status": "added",
+                "additions": 326,
+                "deletions": 0,
+                "changes": 326
+            },
+            {
+                "filename": "paddleformers/transformers/optimization.py",
+                "status": "added",
+                "additions": 304,
+                "deletions": 0,
+                "changes": 304
+            },
+            {
+                "filename": "paddleformers/transformers/processing_utils.py",
+                "status": "added",
+                "additions": 136,
+                "deletions": 0,
+                "changes": 136
+            },
+            {
+                "filename": "paddleformers/transformers/qwen/__init__.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "paddleformers/transformers/qwen/configuration.py",
+                "status": "added",
+                "additions": 86,
+                "deletions": 0,
+                "changes": 86
+            },
+            {
+                "filename": "paddleformers/transformers/qwen/modeling.py",
+                "status": "added",
+                "additions": 1293,
+                "deletions": 0,
+                "changes": 1293
+            },
+            {
+                "filename": "paddleformers/transformers/qwen/modeling_auto.py",
+                "status": "added",
+                "additions": 970,
+                "deletions": 0,
+                "changes": 970
+            },
+            {
+                "filename": "paddleformers/transformers/qwen/modeling_network.py",
+                "status": "added",
+                "additions": 830,
+                "deletions": 0,
+                "changes": 830
+            },
+            {
+                "filename": "paddleformers/transformers/qwen/modeling_pp.py",
+                "status": "added",
+                "additions": 220,
+                "deletions": 0,
+                "changes": 220
+            },
+            {
+                "filename": "paddleformers/transformers/qwen/tokenizer.py",
+                "status": "added",
+                "additions": 270,
+                "deletions": 0,
+                "changes": 270
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2/__init__.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2/configuration.py",
+                "status": "added",
+                "additions": 164,
+                "deletions": 0,
+                "changes": 164
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2/modeling.py",
+                "status": "added",
+                "additions": 1973,
+                "deletions": 0,
+                "changes": 1973
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2/modeling_pp.py",
+                "status": "added",
+                "additions": 363,
+                "deletions": 0,
+                "changes": 363
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2/tokenizer.py",
+                "status": "added",
+                "additions": 448,
+                "deletions": 0,
+                "changes": 448
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2/tokenizer_fast.py",
+                "status": "added",
+                "additions": 131,
+                "deletions": 0,
+                "changes": 131
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2_moe/__init__.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2_moe/configuration.py",
+                "status": "added",
+                "additions": 186,
+                "deletions": 0,
+                "changes": 186
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2_moe/modeling.py",
+                "status": "added",
+                "additions": 1735,
+                "deletions": 0,
+                "changes": 1735
+            },
+            {
+                "filename": "paddleformers/transformers/qwen2_moe/modeling_pp.py",
+                "status": "added",
+                "additions": 354,
+                "deletions": 0,
+                "changes": 354
+            },
+            {
+                "filename": "paddleformers/transformers/qwen3/__init__.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "paddleformers/transformers/qwen3/configuration.py",
+                "status": "added",
+                "additions": 195,
+                "deletions": 0,
+                "changes": 195
+            },
+            {
+                "filename": "paddleformers/transformers/qwen3/modeling.py",
+                "status": "added",
+                "additions": 1448,
+                "deletions": 0,
+                "changes": 1448
+            },
+            {
+                "filename": "paddleformers/transformers/qwen3/modeling_pp.py",
+                "status": "added",
+                "additions": 363,
+                "deletions": 0,
+                "changes": 363
+            },
+            {
+                "filename": "paddleformers/transformers/qwen3_moe/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "paddleformers/transformers/qwen3_moe/configuration.py",
+                "status": "added",
+                "additions": 219,
+                "deletions": 0,
+                "changes": 219
+            },
+            {
+                "filename": "paddleformers/transformers/qwen3_moe/modeling.py",
+                "status": "added",
+                "additions": 996,
+                "deletions": 0,
+                "changes": 996
+            },
+            {
+                "filename": "paddleformers/transformers/qwen3_moe/modeling_pp.py",
+                "status": "added",
+                "additions": 254,
+                "deletions": 0,
+                "changes": 254
+            },
+            {
+                "filename": "paddleformers/transformers/refined_recompute.py",
+                "status": "added",
+                "additions": 791,
+                "deletions": 0,
+                "changes": 791
+            },
+            {
+                "filename": "paddleformers/transformers/ring_flash_attention.py",
+                "status": "added",
+                "additions": 353,
+                "deletions": 0,
+                "changes": 353
+            },
+            {
+                "filename": "paddleformers/transformers/segment_parallel_utils.py",
+                "status": "added",
+                "additions": 137,
+                "deletions": 0,
+                "changes": 137
+            },
+            {
+                "filename": "paddleformers/transformers/sentencepiece_model_pb2.py",
+                "status": "added",
+                "additions": 1534,
+                "deletions": 0,
+                "changes": 1534
+            },
+            {
+                "filename": "paddleformers/transformers/sequence_parallel_utils.py",
+                "status": "added",
+                "additions": 139,
+                "deletions": 0,
+                "changes": 139
+            },
+            {
+                "filename": "paddleformers/transformers/tensor_parallel_utils.py",
+                "status": "added",
+                "additions": 583,
+                "deletions": 0,
+                "changes": 583
+            },
+            {
+                "filename": "paddleformers/transformers/token_dispatcher.py",
+                "status": "added",
+                "additions": 284,
+                "deletions": 0,
+                "changes": 284
+            },
+            {
+                "filename": "paddleformers/transformers/tokenizer_utils.py",
+                "status": "added",
+                "additions": 2199,
+                "deletions": 0,
+                "changes": 2199
+            },
+            {
+                "filename": "paddleformers/transformers/tokenizer_utils_base.py",
+                "status": "added",
+                "additions": 3655,
+                "deletions": 0,
+                "changes": 3655
+            },
+            {
+                "filename": "paddleformers/transformers/tokenizer_utils_fast.py",
+                "status": "added",
+                "additions": 882,
+                "deletions": 0,
+                "changes": 882
+            },
+            {
+                "filename": "paddleformers/transformers/transposed_linear.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "paddleformers/transformers/utils.py",
+                "status": "added",
+                "additions": 1006,
+                "deletions": 0,
+                "changes": 1006
+            },
+            {
+                "filename": "paddleformers/trl/__init__.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "paddleformers/trl/dpo_auto_trainer.py",
+                "status": "added",
+                "additions": 1153,
+                "deletions": 0,
+                "changes": 1153
+            },
+            {
+                "filename": "paddleformers/trl/dpo_trainer.py",
+                "status": "added",
+                "additions": 571,
+                "deletions": 0,
+                "changes": 571
+            },
+            {
+                "filename": "paddleformers/trl/embedding_trainer.py",
+                "status": "added",
+                "additions": 192,
+                "deletions": 0,
+                "changes": 192
+            },
+            {
+                "filename": "paddleformers/trl/extras/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "paddleformers/trl/extras/dataset_formatting.py",
+                "status": "added",
+                "additions": 129,
+                "deletions": 0,
+                "changes": 129
+            },
+            {
+                "filename": "paddleformers/trl/kto_trainer.py",
+                "status": "added",
+                "additions": 554,
+                "deletions": 0,
+                "changes": 554
+            },
+            {
+                "filename": "paddleformers/trl/llm_utils.py",
+                "status": "added",
+                "additions": 944,
+                "deletions": 0,
+                "changes": 944
+            },
+            {
+                "filename": "paddleformers/trl/model_config.py",
+                "status": "added",
+                "additions": 147,
+                "deletions": 0,
+                "changes": 147
+            },
+            {
+                "filename": "paddleformers/trl/quant_config.py",
+                "status": "added",
+                "additions": 118,
+                "deletions": 0,
+                "changes": 118
+            },
+            {
+                "filename": "paddleformers/trl/sft_auto_trainer.py",
+                "status": "added",
+                "additions": 911,
+                "deletions": 0,
+                "changes": 911
+            },
+            {
+                "filename": "paddleformers/trl/sft_config.py",
+                "status": "added",
+                "additions": 102,
+                "deletions": 0,
+                "changes": 102
+            },
+            {
+                "filename": "paddleformers/trl/sft_trainer.py",
+                "status": "added",
+                "additions": 421,
+                "deletions": 0,
+                "changes": 421
+            },
+            {
+                "filename": "paddleformers/trl/sftdata_config.py",
+                "status": "added",
+                "additions": 68,
+                "deletions": 0,
+                "changes": 68
+            },
+            {
+                "filename": "paddleformers/trl/trl_data.py",
+                "status": "added",
+                "additions": 268,
+                "deletions": 0,
+                "changes": 268
+            },
+            {
+                "filename": "paddleformers/trl/trl_utils.py",
+                "status": "added",
+                "additions": 49,
+                "deletions": 0,
+                "changes": 49
+            },
+            {
+                "filename": "paddleformers/trl/utils.py",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "paddleformers/utils/__init__.py",
+                "status": "added",
+                "additions": 50,
+                "deletions": 0,
+                "changes": 50
+            },
+            {
+                "filename": "paddleformers/utils/adamw_triton.py",
+                "status": "added",
+                "additions": 194,
+                "deletions": 0,
+                "changes": 194
+            },
+            {
+                "filename": "paddleformers/utils/batch_sampler.py",
+                "status": "added",
+                "additions": 182,
+                "deletions": 0,
+                "changes": 182
+            },
+            {
+                "filename": "paddleformers/utils/converter.py",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "paddleformers/utils/distributed.py",
+                "status": "added",
+                "additions": 224,
+                "deletions": 0,
+                "changes": 224
+            },
+            {
+                "filename": "paddleformers/utils/doc_parser.py",
+                "status": "added",
+                "additions": 432,
+                "deletions": 0,
+                "changes": 432
+            },
+            {
+                "filename": "paddleformers/utils/download/__init__.py",
+                "status": "added",
+                "additions": 340,
+                "deletions": 0,
+                "changes": 340
+            },
+            {
+                "filename": "paddleformers/utils/download/aistudio_hub_download.py",
+                "status": "added",
+                "additions": 728,
+                "deletions": 0,
+                "changes": 728
+            },
+            {
+                "filename": "paddleformers/utils/download/bos_download.py",
+                "status": "added",
+                "additions": 287,
+                "deletions": 0,
+                "changes": 287
+            },
+            {
+                "filename": "paddleformers/utils/download/common.py",
+                "status": "added",
+                "additions": 662,
+                "deletions": 0,
+                "changes": 662
+            },
+            {
+                "filename": "paddleformers/utils/downloader.py",
+                "status": "added",
+                "additions": 592,
+                "deletions": 0,
+                "changes": 592
+            },
+            {
+                "filename": "paddleformers/utils/env.py",
+                "status": "added",
+                "additions": 166,
+                "deletions": 0,
+                "changes": 166
+            },
+            {
+                "filename": "paddleformers/utils/fault_tolerance.py",
+                "status": "added",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            },
+            {
+                "filename": "paddleformers/utils/ie_utils.py",
+                "status": "added",
+                "additions": 142,
+                "deletions": 0,
+                "changes": 142
+            },
+            {
+                "filename": "paddleformers/utils/image_utils.py",
+                "status": "added",
+                "additions": 734,
+                "deletions": 0,
+                "changes": 734
+            },
+            {
+                "filename": "paddleformers/utils/import_utils.py",
+                "status": "added",
+                "additions": 384,
+                "deletions": 0,
+                "changes": 384
+            },
+            {
+                "filename": "paddleformers/utils/infohub.py",
+                "status": "added",
+                "additions": 53,
+                "deletions": 0,
+                "changes": 53
+            },
+            {
+                "filename": "paddleformers/utils/initializer.py",
+                "status": "added",
+                "additions": 337,
+                "deletions": 0,
+                "changes": 337
+            },
+            {
+                "filename": "paddleformers/utils/log.py",
+                "status": "added",
+                "additions": 204,
+                "deletions": 0,
+                "changes": 204
+            },
+            {
+                "filename": "paddleformers/utils/memory_utils.py",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "paddleformers/utils/nested.py",
+                "status": "added",
+                "additions": 128,
+                "deletions": 0,
+                "changes": 128
+            },
+            {
+                "filename": "paddleformers/utils/optimizer.py",
+                "status": "added",
+                "additions": 608,
+                "deletions": 0,
+                "changes": 608
+            },
+            {
+                "filename": "paddleformers/utils/paddle_patch.py",
+                "status": "added",
+                "additions": 148,
+                "deletions": 0,
+                "changes": 148
+            },
+            {
+                "filename": "paddleformers/utils/pdc_sdk.py",
+                "status": "added",
+                "additions": 629,
+                "deletions": 0,
+                "changes": 629
+            },
+            {
+                "filename": "paddleformers/utils/profiler.py",
+                "status": "added",
+                "additions": 130,
+                "deletions": 0,
+                "changes": 130
+            },
+            {
+                "filename": "paddleformers/utils/safetensors.py",
+                "status": "added",
+                "additions": 320,
+                "deletions": 0,
+                "changes": 320
+            },
+            {
+                "filename": "paddleformers/utils/serialization.py",
+                "status": "added",
+                "additions": 309,
+                "deletions": 0,
+                "changes": 309
+            },
+            {
+                "filename": "paddleformers/utils/tools.py",
+                "status": "added",
+                "additions": 247,
+                "deletions": 0,
+                "changes": 247
+            },
+            {
+                "filename": "paddleformers/version/__init__.py",
+                "status": "added",
+                "additions": 51,
+                "deletions": 0,
+                "changes": 51
+            },
+            {
+                "filename": "paddleformers/version/git.py",
+                "status": "added",
+                "additions": 48,
+                "deletions": 0,
+                "changes": 48
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "requirements-dev.txt",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "requirements.txt",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "scripts/codestyle/check_dead_links.py",
+                "status": "added",
+                "additions": 158,
+                "deletions": 0,
+                "changes": 158
+            },
+            {
+                "filename": "scripts/codestyle/check_spaces.py",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            },
+            {
+                "filename": "scripts/get_modified_files.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "scripts/regression/README.md",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            },
+            {
+                "filename": "scripts/regression/ci_normal_case.py",
+                "status": "added",
+                "additions": 174,
+                "deletions": 0,
+                "changes": 174
+            },
+            {
+                "filename": "scripts/regression/gen_allure_report.py",
+                "status": "added",
+                "additions": 109,
+                "deletions": 0,
+                "changes": 109
+            },
+            {
+                "filename": "scripts/regression/requirements_ci.txt",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "scripts/regression/run_ci.sh",
+                "status": "added",
+                "additions": 243,
+                "deletions": 0,
+                "changes": 243
+            },
+            {
+                "filename": "scripts/regression/run_refactor_training_loop.sh",
+                "status": "added",
+                "additions": 85,
+                "deletions": 0,
+                "changes": 85
+            },
+            {
+                "filename": "scripts/regression/run_release.sh",
+                "status": "added",
+                "additions": 105,
+                "deletions": 0,
+                "changes": 105
+            },
+            {
+                "filename": "scripts/should_deploy.py",
+                "status": "added",
+                "additions": 82,
+                "deletions": 0,
+                "changes": 82
+            },
+            {
+                "filename": "scripts/unit_test/ci_unit.sh",
+                "status": "added",
+                "additions": 128,
+                "deletions": 0,
+                "changes": 128
+            },
+            {
+                "filename": "setup.py",
+                "status": "added",
+                "additions": 209,
+                "deletions": 0,
+                "changes": 209
+            },
+            {
+                "filename": "tests/README.md",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "tests/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/common_test.py",
+                "status": "added",
+                "additions": 155,
+                "deletions": 0,
+                "changes": 155
+            },
+            {
+                "filename": "tests/data/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/data/test_blendable_dataset.py",
+                "status": "added",
+                "additions": 137,
+                "deletions": 0,
+                "changes": 137
+            },
+            {
+                "filename": "tests/data/test_collate.py",
+                "status": "added",
+                "additions": 110,
+                "deletions": 0,
+                "changes": 110
+            },
+            {
+                "filename": "tests/data/test_data_collator.py",
+                "status": "added",
+                "additions": 102,
+                "deletions": 0,
+                "changes": 102
+            },
+            {
+                "filename": "tests/data/test_sampler.py",
+                "status": "added",
+                "additions": 146,
+                "deletions": 0,
+                "changes": 146
+            },
+            {
+                "filename": "tests/data/test_vocab.py",
+                "status": "added",
+                "additions": 83,
+                "deletions": 0,
+                "changes": 83
+            },
+            {
+                "filename": "tests/dataset/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/dataset/test_iter_datasets.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "tests/dataset/test_zero_padding.py",
+                "status": "added",
+                "additions": 214,
+                "deletions": 0,
+                "changes": 214
+            },
+            {
+                "filename": "tests/fixtures/chat_template.json",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "tests/fixtures/chat_template_with_context.json",
+                "status": "added",
+                "additions": 5,
+                "deletions": 0,
+                "changes": 5
+            },
+            {
+                "filename": "tests/fixtures/dummy/tnews/dev.json",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "tests/fixtures/dummy/tnews/train.json",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "tests/fixtures/sample_text.txt",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "tests/generation/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/generation/test_logits_process.py",
+                "status": "added",
+                "additions": 387,
+                "deletions": 0,
+                "changes": 387
+            },
+            {
+                "filename": "tests/generation/test_stopping_criteria.py",
+                "status": "added",
+                "additions": 100,
+                "deletions": 0,
+                "changes": 100
+            },
+            {
+                "filename": "tests/generation/test_streamers.py",
+                "status": "added",
+                "additions": 112,
+                "deletions": 0,
+                "changes": 112
+            },
+            {
+                "filename": "tests/generation/test_synced_gpus.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": "tests/mergekit/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/mergekit/test_merge_config.py",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "tests/mergekit/test_merge_method.py",
+                "status": "added",
+                "additions": 323,
+                "deletions": 0,
+                "changes": 323
+            },
+            {
+                "filename": "tests/mergekit/test_merge_model.py",
+                "status": "added",
+                "additions": 116,
+                "deletions": 0,
+                "changes": 116
+            },
+            {
+                "filename": "tests/mergekit/test_sparsify_method.py",
+                "status": "added",
+                "additions": 138,
+                "deletions": 0,
+                "changes": 138
+            },
+            {
+                "filename": "tests/parallel_launch.py",
+                "status": "added",
+                "additions": 283,
+                "deletions": 0,
+                "changes": 283
+            },
+            {
+                "filename": "tests/peft/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/peft/test_lokr.py",
+                "status": "added",
+                "additions": 262,
+                "deletions": 0,
+                "changes": 262
+            },
+            {
+                "filename": "tests/peft/test_lora.py",
+                "status": "added",
+                "additions": 185,
+                "deletions": 0,
+                "changes": 185
+            },
+            {
+                "filename": "tests/peft/test_lorapro.py",
+                "status": "added",
+                "additions": 234,
+                "deletions": 0,
+                "changes": 234
+            },
+            {
+                "filename": "tests/peft/test_mora.py",
+                "status": "added",
+                "additions": 193,
+                "deletions": 0,
+                "changes": 193
+            },
+            {
+                "filename": "tests/peft/test_mos_lora.py",
+                "status": "added",
+                "additions": 215,
+                "deletions": 0,
+                "changes": 215
+            },
+            {
+                "filename": "tests/peft/test_prefix.py",
+                "status": "added",
+                "additions": 108,
+                "deletions": 0,
+                "changes": 108
+            },
+            {
+                "filename": "tests/peft/test_quant_lora.py",
+                "status": "added",
+                "additions": 175,
+                "deletions": 0,
+                "changes": 175
+            },
+            {
+                "filename": "tests/peft/test_reft.py",
+                "status": "added",
+                "additions": 247,
+                "deletions": 0,
+                "changes": 247
+            },
+            {
+                "filename": "tests/peft/test_vera.py",
+                "status": "added",
+                "additions": 203,
+                "deletions": 0,
+                "changes": 203
+            },
+            {
+                "filename": "tests/requirements.txt",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "tests/testing_utils.py",
+                "status": "added",
+                "additions": 541,
+                "deletions": 0,
+                "changes": 541
+            },
+            {
+                "filename": "tests/trainer/test_argparser.py",
+                "status": "added",
+                "additions": 184,
+                "deletions": 0,
+                "changes": 184
+            },
+            {
+                "filename": "tests/trainer/test_auto_argparser.py",
+                "status": "added",
+                "additions": 132,
+                "deletions": 0,
+                "changes": 132
+            },
+            {
+                "filename": "tests/trainer/test_lora_unified_checkpoint.py",
+                "status": "added",
+                "additions": 486,
+                "deletions": 0,
+                "changes": 486
+            },
+            {
+                "filename": "tests/trainer/test_moe_unified_checkpoint.py",
+                "status": "added",
+                "additions": 169,
+                "deletions": 0,
+                "changes": 169
+            },
+            {
+                "filename": "tests/trainer/test_trainer_callback.py",
+                "status": "added",
+                "additions": 261,
+                "deletions": 0,
+                "changes": 261
+            },
+            {
+                "filename": "tests/trainer/test_trainer_visualization.py",
+                "status": "added",
+                "additions": 172,
+                "deletions": 0,
+                "changes": 172
+            },
+            {
+                "filename": "tests/trainer/test_unified_checkpoint.py",
+                "status": "added",
+                "additions": 1173,
+                "deletions": 0,
+                "changes": 1173
+            },
+            {
+                "filename": "tests/trainer/trainer_utils.py",
+                "status": "added",
+                "additions": 200,
+                "deletions": 0,
+                "changes": 200
+            },
+            {
+                "filename": "tests/trainer/unified-ckpt-llama-170m/config.json",
+                "status": "added",
+                "additions": 18,
+                "deletions": 0,
+                "changes": 18
+            },
+            {
+                "filename": "tests/transformers/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/transformers/auto/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/transformers/auto/test_confiugration.py",
+                "status": "added",
+                "additions": 175,
+                "deletions": 0,
+                "changes": 175
+            },
+            {
+                "filename": "tests/transformers/auto/test_modeling.py",
+                "status": "added",
+                "additions": 78,
+                "deletions": 0,
+                "changes": 78
+            },
+            {
+                "filename": "tests/transformers/auto/test_tokenizer.py",
+                "status": "added",
+                "additions": 134,
+                "deletions": 0,
+                "changes": 134
+            },
+            {
+                "filename": "tests/transformers/bert/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/transformers/bert/test_modeling.py",
+                "status": "added",
+                "additions": 765,
+                "deletions": 0,
+                "changes": 765
+            },
+            {
+                "filename": "tests/transformers/bert/test_tokenizer.py",
+                "status": "added",
+                "additions": 333,
+                "deletions": 0,
+                "changes": 333
+            },
+            {
+                "filename": "tests/transformers/llama/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/transformers/llama/test_modeling.py",
+                "status": "added",
+                "additions": 509,
+                "deletions": 0,
+                "changes": 509
+            },
+            {
+                "filename": "tests/transformers/llama/test_tokenizer.py",
+                "status": "added",
+                "additions": 309,
+                "deletions": 0,
+                "changes": 309
+            },
+            {
+                "filename": "tests/transformers/load_subfolder/test_config.py",
+                "status": "added",
+                "additions": 47,
+                "deletions": 0,
+                "changes": 47
+            },
+            {
+                "filename": "tests/transformers/load_subfolder/test_image_processor.py",
+                "status": "added",
+                "additions": 69,
+                "deletions": 0,
+                "changes": 69
+            },
+            {
+                "filename": "tests/transformers/load_subfolder/test_model.py",
+                "status": "added",
+                "additions": 655,
+                "deletions": 0,
+                "changes": 655
+            },
+            {
+                "filename": "tests/transformers/load_subfolder/test_processor.py",
+                "status": "added",
+                "additions": 58,
+                "deletions": 0,
+                "changes": 58
+            },
+            {
+                "filename": "tests/transformers/load_subfolder/test_tokenizer.py",
+                "status": "added",
+                "additions": 89,
+                "deletions": 0,
+                "changes": 89
+            },
+            {
+                "filename": "tests/transformers/qwen/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/transformers/qwen/test_modeling.py",
+                "status": "added",
+                "additions": 237,
+                "deletions": 0,
+                "changes": 237
+            },
+            {
+                "filename": "tests/transformers/qwen/test_tokenizer.py",
+                "status": "added",
+                "additions": 46,
+                "deletions": 0,
+                "changes": 46
+            },
+            {
+                "filename": "tests/transformers/qwen2/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/transformers/qwen2/test_modeling.py",
+                "status": "added",
+                "additions": 402,
+                "deletions": 0,
+                "changes": 402
+            },
+            {
+                "filename": "tests/transformers/qwen2/test_tokenizer.py",
+                "status": "added",
+                "additions": 198,
+                "deletions": 0,
+                "changes": 198
+            },
+            {
+                "filename": "tests/transformers/qwen2moe/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/transformers/qwen2moe/test_modeling.py",
+                "status": "added",
+                "additions": 321,
+                "deletions": 0,
+                "changes": 321
+            },
+            {
+                "filename": "tests/transformers/test_chat_template.py",
+                "status": "added",
+                "additions": 449,
+                "deletions": 0,
+                "changes": 449
+            },
+            {
+                "filename": "tests/transformers/test_configuration_common.py",
+                "status": "added",
+                "additions": 252,
+                "deletions": 0,
+                "changes": 252
+            },
+            {
+                "filename": "tests/transformers/test_configuration_utils.py",
+                "status": "added",
+                "additions": 217,
+                "deletions": 0,
+                "changes": 217
+            },
+            {
+                "filename": "tests/transformers/test_conversion_common.py",
+                "status": "added",
+                "additions": 247,
+                "deletions": 0,
+                "changes": 247
+            },
+            {
+                "filename": "tests/transformers/test_generation_utils.py",
+                "status": "added",
+                "additions": 856,
+                "deletions": 0,
+                "changes": 856
+            },
+            {
+                "filename": "tests/transformers/test_image_processing_common.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "tests/transformers/test_modeling_common.py",
+                "status": "added",
+                "additions": 899,
+                "deletions": 0,
+                "changes": 899
+            },
+            {
+                "filename": "tests/transformers/test_modeling_utils.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "tests/transformers/test_refined_recompute.py",
+                "status": "added",
+                "additions": 628,
+                "deletions": 0,
+                "changes": 628
+            },
+            {
+                "filename": "tests/transformers/test_ring_flash_attention.py",
+                "status": "added",
+                "additions": 126,
+                "deletions": 0,
+                "changes": 126
+            },
+            {
+                "filename": "tests/transformers/test_safetensors.py",
+                "status": "added",
+                "additions": 161,
+                "deletions": 0,
+                "changes": 161
+            },
+            {
+                "filename": "tests/transformers/test_segment_parallel_utils.py",
+                "status": "added",
+                "additions": 172,
+                "deletions": 0,
+                "changes": 172
+            },
+            {
+                "filename": "tests/transformers/test_shard_checkpoint.py",
+                "status": "added",
+                "additions": 398,
+                "deletions": 0,
+                "changes": 398
+            },
+            {
+                "filename": "tests/transformers/test_tensor_parallel.py",
+                "status": "added",
+                "additions": 126,
+                "deletions": 0,
+                "changes": 126
+            },
+            {
+                "filename": "tests/transformers/test_tokenizer_common.py",
+                "status": "added",
+                "additions": 2330,
+                "deletions": 0,
+                "changes": 2330
+            },
+            {
+                "filename": "tests/transformers/test_tokenizer_fast.py",
+                "status": "added",
+                "additions": 186,
+                "deletions": 0,
+                "changes": 186
+            },
+            {
+                "filename": "tests/transformers/test_tokenizer_util.py",
+                "status": "added",
+                "additions": 62,
+                "deletions": 0,
+                "changes": 62
+            },
+            {
+                "filename": "tests/transformers/test_utils.py",
+                "status": "added",
+                "additions": 61,
+                "deletions": 0,
+                "changes": 61
+            },
+            {
+                "filename": "tests/utils/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/utils/test_aistudio_download.py",
+                "status": "added",
+                "additions": 63,
+                "deletions": 0,
+                "changes": 63
+            },
+            {
+                "filename": "tests/utils/test_downloader.py",
+                "status": "added",
+                "additions": 60,
+                "deletions": 0,
+                "changes": 60
+            },
+            {
+                "filename": "tests/utils/test_import_utils.py",
+                "status": "added",
+                "additions": 37,
+                "deletions": 0,
+                "changes": 37
+            },
+            {
+                "filename": "tests/utils/test_module/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "tests/utils/test_module/custom_configuration.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "tests/utils/test_module/custom_tokenizer.py",
+                "status": "added",
+                "additions": 19,
+                "deletions": 0,
+                "changes": 19
+            },
+            {
+                "filename": "tests/utils/test_module/custom_tokenizer_fast.py",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "tests/utils/test_serialization.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            }
+        ]
+    }
+]

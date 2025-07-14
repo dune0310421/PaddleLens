@@ -1,0 +1,288 @@
+[
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 336,
+        "title": "`torch.distributed.is_available()` and `torch.distributed.is_initialized()` cannot be converted",
+        "body": "- `torch.distributed.is_available()`\r\n- `torch.distributed.is_initialized()`\r\n- `torch.distributed.get_world_size()`\r\n\r\n```python\r\nimport torch.distributed as dist\r\n\r\ndef is_dist_avail_and_initialized():\r\n    if not dist.is_available():\r\n        return False\r\n    if not dist.is_initialized():\r\n        return False\r\n    return True\r\n```",
+        "state": "closed",
+        "user": "GreatV",
+        "closed_by": "GreatV",
+        "created_at": "2023-11-30T02:52:08+00:00",
+        "updated_at": "2024-02-05T02:21:47+00:00",
+        "closed_at": "2024-02-05T02:21:47+00:00",
+        "comments_count": [],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 262,
+        "title": "【社区治理】co63oc 发起 Committer 身份申请",
+        "body": "### 问题描述 Please describe your issue\r\n##### 基本信息\r\n| 申请人 GitHub ID | PaConvert Repo 整体 merge PR 数 | PaConvert Repo 整体 review PR 数 | PaConvert Repo 整体报告 Issue 数 |\r\n| - | - | - | - |\r\n| @co63oc | [50](https://github.com/PaddlePaddle/PaConvert/pulls?q=is%3Apr+author%3Aco63oc+is%3Aclosed) | 0 | 0 |\r\n\r\n##### 社区贡献概况\r\n以下是此前在本 repo 里做过的贡献：\r\n实现若干算子转换规则\r\n\r\n##### 高质量 merge PR 展示\r\n| PR 号 | PR 标题 | PR 简介 | Reviewer |\r\n| - | - | - | - |\r\n| #197 | 转换规则 No. 196/197/232/233/319 | - | zhwesky2010 |\r\n| #198 | 转换规则 No. 323/333 | - | zhwesky2010 |\r\n| #199 | 转换规则 No. 349/350 | - | zhwesky2010 |\r\n\r\n##### 担保人意见\r\n@Ligoml @luotao1",
+        "state": "closed",
+        "user": "co63oc",
+        "closed_by": "co63oc",
+        "created_at": "2023-08-28T07:57:33+00:00",
+        "updated_at": "2023-08-28T12:38:05+00:00",
+        "closed_at": "2023-08-28T12:38:05+00:00",
+        "comments_count": [
+            "luotao1",
+            "zhwesky2010",
+            "zhwesky2010",
+            "Ligoml"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 333,
+        "title": "Conversion fails when `\\u` is in the code",
+        "body": "**code**\r\n\r\n```python\r\nimport numpy as np\r\n\r\ndef extract_vertices(lines):\r\n\t'''extract vertices info from txt lines\r\n\tInput:\r\n\t\tlines   : list of string info\r\n\tOutput:\r\n\t\tvertices: vertices of text regions <numpy.ndarray, (n,8)>\r\n\t\tlabels  : 1->valid, 0->ignore, <numpy.ndarray, (n,)>\r\n\t'''\r\n\tlabels = []\r\n\tvertices = []\r\n\tfor line in lines:\r\n\t\tvertices.append(list(map(int,line.rstrip('\\n').lstrip('\\ufeff').split(',')[:8])))\r\n\t\tlabel = 0 if '###' in line else 1\r\n\t\tlabels.append(label)\r\n\treturn np.array(vertices), np.array(labels)\r\n\r\n```\r\n\r\n**output**\r\n\r\n```\r\npython paconvert/main.py --in_dir ~/repos/bug_test/ --out_dir ~/repos/bug_test_\r\n===========================================\r\nPyTorch to Paddle Convert Start ------>:\r\n===========================================\r\nStart convert file: /home/greatx/repos/bug_test/test.py --> /home/greatx/repos/bug_test_/test.py\r\nTraceback (most recent call last):\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/sre_parse.py\", line 1051, in parse_template\r\n    this = chr(ESCAPES[this][1])\r\nKeyError: '\\\\u'\r\n\r\nDuring handling of the above exception, another exception occurred:\r\n\r\nTraceback (most recent call last):\r\n  File \"/home/greatx/repos/PaConvert/paconvert/main.py\", line 145, in <module>\r\n    main()\r\n  File \"/home/greatx/repos/PaConvert/paconvert/main.py\", line 131, in main\r\n    converter.run(args.in_dir, args.out_dir, args.exclude_dirs)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/converter.py\", line 88, in run\r\n    self.transfer_dir(in_dir, out_dir, exclude_dir_list)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/converter.py\", line 186, in transfer_dir\r\n    self.transfer_dir(old_path, new_path, exclude_dir_list)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/converter.py\", line 164, in transfer_dir\r\n    self.transfer_file(old_path, new_path)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/converter.py\", line 202, in transfer_file\r\n    self.transfer_node(root, old_path)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/converter.py\", line 242, in transfer_node\r\n    trans.transform()\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 81, in transform\r\n    self.visit(self.root)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 86, in visit\r\n    node = super(BaseTransformer, self).visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 418, in visit\r\n    return visitor(node)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 295, in visit_Module\r\n    super(BaseTransformer, self).generic_visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 494, in generic_visit\r\n    value = self.visit(value)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 86, in visit\r\n    node = super(BaseTransformer, self).visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 418, in visit\r\n    return visitor(node)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 247, in visit_FunctionDef\r\n    super(BaseTransformer, self).generic_visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 494, in generic_visit\r\n    value = self.visit(value)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 86, in visit\r\n    node = super(BaseTransformer, self).visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 418, in visit\r\n    return visitor(node)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 277, in visit_For\r\n    super(BaseTransformer, self).generic_visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 494, in generic_visit\r\n    value = self.visit(value)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 86, in visit\r\n    node = super(BaseTransformer, self).visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 418, in visit\r\n    return visitor(node)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/transformer/basic_transformer.py\", line 666, in visit_Expr\r\n    new_node = self.visit(old_value)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 86, in visit\r\n    node = super(BaseTransformer, self).visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 418, in visit\r\n    return visitor(node)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/transformer/basic_transformer.py\", line 363, in visit_Call\r\n    super(BasicTransformer, self).generic_visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 494, in generic_visit\r\n    value = self.visit(value)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 86, in visit\r\n    node = super(BaseTransformer, self).visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 418, in visit\r\n    return visitor(node)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/transformer/basic_transformer.py\", line 363, in visit_Call\r\n    super(BasicTransformer, self).generic_visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 494, in generic_visit\r\n    value = self.visit(value)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 86, in visit\r\n    node = super(BaseTransformer, self).visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 418, in visit\r\n    return visitor(node)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/transformer/basic_transformer.py\", line 363, in visit_Call\r\n    super(BasicTransformer, self).generic_visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 494, in generic_visit\r\n    value = self.visit(value)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 86, in visit\r\n    node = super(BaseTransformer, self).visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 418, in visit\r\n    return visitor(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 503, in generic_visit\r\n    new_node = self.visit(old_value)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 86, in visit\r\n    node = super(BaseTransformer, self).visit(node)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/ast.py\", line 418, in visit\r\n    return visitor(node)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/transformer/basic_transformer.py\", line 539, in visit_Call\r\n    return self.trans_class_method(node, torch_class_api)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/transformer/basic_transformer.py\", line 556, in trans_class_method\r\n    node_list = matcher.get_paddle_class_nodes(\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 508, in get_paddle_class_nodes\r\n    self.parse_func(func)\r\n  File \"/home/greatx/repos/PaConvert/paconvert/../paconvert/base.py\", line 390, in parse_func\r\n    new_paddle_api = re.sub(\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/re.py\", line 209, in sub\r\n    return _compile(pattern, flags).sub(repl, string, count)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/re.py\", line 326, in _subx\r\n    template = _compile_repl(template, pattern)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/re.py\", line 317, in _compile_repl\r\n    return sre_parse.parse_template(repl, pattern)\r\n  File \"/home/greatx/miniconda3/envs/jit-env/lib/python3.10/sre_parse.py\", line 1054, in parse_template\r\n    raise s.error('bad escape %s' % this, len(this))\r\nre.error: bad escape \\u at position 26\r\n```",
+        "state": "closed",
+        "user": "GreatV",
+        "closed_by": "GreatV",
+        "created_at": "2023-11-21T15:47:56+00:00",
+        "updated_at": "2023-11-27T04:04:44+00:00",
+        "closed_at": "2023-11-27T04:04:44+00:00",
+        "comments_count": [
+            "RedContritio"
+        ],
+        "labels": [
+            "contributor",
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 340,
+        "title": "got the wrong result when using paconvet",
+        "body": "- pytorch\r\n\r\n```python\r\nimport torch.nn as nn\r\nfrom functools import partial\r\n\r\n\r\nclass test(nn.Module):\r\n    def __init__(self, in_channels, out_channels, norm_func=nn.LayerNorm):\r\n        super(test, self).__init__()\r\n        self.norm = norm_func(in_channels)\r\n        self.linear = nn.Linear(in_channels, out_channels)\r\n    \r\n    def forward(self, x):\r\n        x = self.norm(x)\r\n        x = self.linear(x)\r\n        return x\r\n\r\nif __name__ == \"__main__\":\r\n    model = test(10, 10, partial(nn.LayerNorm, eps=0.2))\r\n```\r\n\r\n- paddle\r\n\r\n```python\r\nimport paddle\r\nfrom functools import partial\r\n\r\n\r\nclass test(paddle.nn.Layer):\r\n\r\n    def __init__(self, in_channels, out_channels, norm_func=paddle.nn.LayerNorm\r\n        ):\r\n        super(test, self).__init__()\r\n        self.norm = norm_func(in_channels)\r\n        self.linear = paddle.nn.Linear(in_features=in_channels,\r\n            out_features=out_channels)\r\n\r\n    def forward(self, x):\r\n        x = self.norm(x)\r\n        x = self.linear(x)\r\n        return x\r\n\r\n\r\nif __name__ == '__main__':\r\n    model = test(10, 10, partial(paddle.nn.LayerNorm, eps=0.2))\r\n\r\n```\r\n\r\n```\r\nTraceback (most recent call last):\r\n  File \"/home/greatx/repos/PaConvert/paddle_project/test.py\", line 21, in <module>\r\n    model = test(10, 10, partial(paddle.nn.LayerNorm, eps=0.2))\r\n  File \"/home/greatx/repos/PaConvert/paddle_project/test.py\", line 10, in __init__\r\n    self.norm = norm_func(in_channels)\r\nTypeError: LayerNorm.__init__() got an unexpected keyword argument 'eps'\r\n```\r\n\r\n**`eps` should be converted to `epsilon`.**",
+        "state": "open",
+        "user": "GreatV",
+        "closed_by": "GreatV",
+        "created_at": "2023-12-03T02:41:15+00:00",
+        "updated_at": "2024-06-05T09:33:18+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "zhwesky2010",
+            "GreatV",
+            "zhwesky2010"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 337,
+        "title": "got the wrong result when using paconvet",
+        "body": " - Pytorch\r\n \r\n```python\r\nimport torch.backends.cudnn as cudnn\r\n\r\ncudnn.benchmark = True\r\n```\r\n\r\n- Paddle\r\n\r\n```python\r\nimport paddle\r\n\r\nFalse = True\r\n```",
+        "state": "open",
+        "user": "GreatV",
+        "closed_by": "GreatV",
+        "created_at": "2023-11-30T05:22:24+00:00",
+        "updated_at": "2024-06-05T09:37:00+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "RedContritio",
+            "zhwesky2010",
+            "GreatV"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 255,
+        "title": "torch_scatter库的paddle转换",
+        "body": "[torch_scatter](https://github.com/rusty1s/pytorch_scatter) 是一个torch的扩增库，目前在科学计算、神经辐射场等领域均有用到，例如第四期黑客松的赛题[No.173 Point-NeRF](https://github.com/PaddlePaddle/community/blob/master/hackthon_4th/%E3%80%90PaddlePaddle%20Hackathon%204%E3%80%91%20%E6%A8%A1%E5%9E%8B%E5%A5%97%E4%BB%B6%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE%E4%BB%BB%E5%8A%A1%E5%90%88%E9%9B%86.md#task173)就涉及torch_scatter中的scatter_min算子，无法通过paddle复现，像简单的scatter_add倒是可以组合复现，但是也很大的增加了复现的成本。请问您这边有计划推出torch_scatter的paddle转换吗",
+        "state": "closed",
+        "user": "kongdebug",
+        "closed_by": "kongdebug",
+        "created_at": "2023-08-26T05:59:46+00:00",
+        "updated_at": "2023-08-29T01:45:37+00:00",
+        "closed_at": "2023-08-29T01:45:37+00:00",
+        "comments_count": [
+            "GreatV",
+            "kongdebug"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 304,
+        "title": "Torch code 转 Paddle code 失败",
+        "body": "使用命令`pytest tests/test_cummin.py`测试测试案例时失败，发现在`test_project/paddle_temp.py`中的代码没有更改为Paddle code，请问该如何解决该问题。\r\n\r\n报错信息如下：\r\n```\r\n================================================= test session starts =================================================\r\nplatform win32 -- Python 3.9.18, pytest-7.4.2, pluggy-1.3.0 -- D:\\anaconda2\\envs\\hackthon\\python.exe\r\ncachedir: .pytest_cache\r\nrootdir: C:\\Users\\lfy\\Desktop\\PaConvert\\tests\r\nconfigfile: pytest.ini\r\nplugins: anyio-4.0.0, cov-4.1.0\r\ncollected 1 item\r\n\r\ntests\\test_cummin.py::test_case_1 FAILED\r\n\r\n====================================================== FAILURES =======================================================\r\n_____________________________________________________ test_case_1 _____________________________________________________\r\n\r\n    def test_case_1():\r\n        pytorch_code = textwrap.dedent(\r\n            \"\"\"\r\n            import torch\r\n            x = torch.tensor([[1.0, 1.0, 1.0],\r\n                            [2.0, 2.0, 2.0],\r\n                            [3.0, 3.0, 3.0]])\r\n            result = torch.cummin(x, 0)\r\n            \"\"\"\r\n        )\r\n>       obj.run(pytorch_code, [\"result\"])\r\n\r\ntests\\test_cummin.py:32:\r\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\r\ntests\\apibase.py:89: in run\r\n    self.compare(\r\ntests\\apibase.py:165: in compare\r\n    self.compare(\r\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\r\n\r\nself = <apibase.APIBase object at 0x0000024B5A25EF70>, name = 'torch.cummin'\r\npytorch_result = tensor([[1., 1., 1.],\r\n        [1., 1., 1.],\r\n        [1., 1., 1.]])\r\npaddle_result = tensor([[1., 1., 1.],\r\n        [1., 1., 1.],\r\n        [1., 1., 1.]]), check_value = True\r\ncheck_dtype = True, check_stop_gradient = True, rtol = 1e-06, atol = 0.0\r\n\r\n    def compare(\r\n        self,\r\n        name,\r\n        pytorch_result,\r\n        paddle_result,\r\n        check_value=True,\r\n        check_dtype=True,\r\n        check_stop_gradient=True,\r\n        rtol=1.0e-6,\r\n        atol=0.0,\r\n    ):\r\n        \"\"\"\r\n        compare tensors' data, shape, requires_grad, dtype\r\n        args:\r\n            name: pytorch api name\r\n            pytorch_result: pytorch Tensor\r\n            paddle_result: paddle Tensor\r\n            check_value: If false, the value will not be checked\r\n            check_dtype: If false, the dtype will not be checked\r\n            check_stop_gradient: If false, the stop gradient will not be checked\r\n        \"\"\"\r\n        if isinstance(pytorch_result, dict):\r\n            assert isinstance(paddle_result, dict), \"paddle result should be dict\"\r\n            assert len(pytorch_result) == len(\r\n                paddle_result\r\n            ), \"paddle result have different length with pytorch\"\r\n            pytorch_result_k = [k for k in pytorch_result.keys()]\r\n            pytorch_result_v = [v for v in pytorch_result.values()]\r\n            paddle_result_k = [k for k in paddle_result.keys()]\r\n            paddle_result_v = [v for v in paddle_result.values()]\r\n            self.compare(\r\n                self.pytorch_api,\r\n                pytorch_result_k,\r\n                paddle_result_k,\r\n                check_value,\r\n                check_dtype,\r\n                check_stop_gradient,\r\n                rtol,\r\n                atol,\r\n            )\r\n            self.compare(\r\n                self.pytorch_api,\r\n                pytorch_result_v,\r\n                paddle_result_v,\r\n                check_value,\r\n                check_dtype,\r\n                check_stop_gradient,\r\n                rtol,\r\n                atol,\r\n            )\r\n            return\r\n\r\n        if isinstance(pytorch_result, (tuple, list)):\r\n            assert isinstance(\r\n                paddle_result, (tuple, list)\r\n            ), \"paddle result should be list/tuple\"\r\n            assert len(pytorch_result) == len(\r\n                paddle_result\r\n            ), \"paddle result have different length with pytorch\"\r\n            for i in range(len(pytorch_result)):\r\n                self.compare(\r\n                    self.pytorch_api,\r\n                    pytorch_result[i],\r\n                    paddle_result[i],\r\n                    check_value,\r\n                    check_dtype,\r\n                    check_stop_gradient,\r\n                    rtol,\r\n                    atol,\r\n                )\r\n            return\r\n\r\n        if isinstance(pytorch_result, (bool, np.number, int, str, type(None))):\r\n            assert type(paddle_result) == type(\r\n                pytorch_result\r\n            ), \"paddle result's type [{}] should be the same with pytorch's type [{}]\".format(\r\n                type(paddle_result), type(pytorch_result)\r\n            )\r\n            if check_value:\r\n                assert (\r\n                    pytorch_result == paddle_result\r\n                ), \"API ({}): pytorch result is {}, but paddle result is {}\".format(\r\n                    name, pytorch_result, paddle_result\r\n                )\r\n            return\r\n\r\n        if pytorch_result.requires_grad:\r\n            pytorch_numpy, paddle_numpy = (\r\n                pytorch_result.detach().numpy(),\r\n                paddle_result.numpy(False),\r\n            )\r\n        elif pytorch_result.is_conj():\r\n            pytorch_numpy, paddle_numpy = (\r\n                pytorch_result.resolve_conj().numpy(),\r\n                paddle_result.numpy(False),\r\n            )\r\n        else:\r\n            (\r\n                pytorch_numpy,\r\n                paddle_numpy,\r\n>           ) = pytorch_result.cpu().numpy(), paddle_result.numpy(False)\r\nE           TypeError: numpy() takes 0 positional arguments but 1 was given\r\n\r\ntests\\apibase.py:205: TypeError\r\n-------------------------------------------------- Captured log call --------------------------------------------------\r\nINFO     Converter_0:utils.py:91 ===========================================\r\nINFO     Converter_0:utils.py:91 PyTorch to Paddle Convert Start ------>:\r\nINFO     Converter_0:utils.py:91 ===========================================\r\nINFO     Converter_0:utils.py:91 Start convert file: C:\\Users\\lfy\\Desktop\\PaConvert\\test_project\\pytorch_temp.py --> C:\\Users\\lfy\\Desktop\\PaConvert\\test_project\\paddle_temp.py\r\nINFO     Converter_0:utils.py:91 Finish convert C:\\Users\\lfy\\Desktop\\PaConvert\\test_project\\pytorch_temp.py --> C:\\Users\\lfy\\Desktop\\PaConvert\\test_project\\paddle_temp.py\r\n\r\nINFO     Converter_0:utils.py:91\r\n===========================================\r\nINFO     Converter_0:utils.py:91 Convert Summary:\r\nINFO     Converter_0:utils.py:91 ===========================================\r\nINFO     Converter_0:utils.py:91 There are 0 Pytorch APIs in this Project:\r\nINFO     Converter_0:utils.py:91  0  Pytorch APIs have been converted to Paddle successfully!\r\nINFO     Converter_0:utils.py:91  0  Pytorch APIs are not supported to convert to Paddle currently!\r\nINFO     Converter_0:utils.py:91  Convert Rate is: 0.000%\r\nINFO     Converter_0:utils.py:91\r\nThank you to use Paddle Code Convert Tool. You can make any suggestions to us.\r\n=============================================== short test summary info ===============================================\r\nFAILED tests\\test_cummin.py::test_case_1 - TypeError: numpy() takes 0 positional arguments but 1 was given\r\n================================================== 1 failed in 3.25s ==================================================\r\n\r\n```",
+        "state": "closed",
+        "user": "Li-fAngyU",
+        "closed_by": "Li-fAngyU",
+        "created_at": "2023-09-26T12:19:01+00:00",
+        "updated_at": "2023-09-26T14:55:29+00:00",
+        "closed_at": "2023-09-26T14:55:29+00:00",
+        "comments_count": [
+            "Li-fAngyU"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 112,
+        "title": "Pytorch-Paddle代码转换工具开源任务",
+        "body": "## ✨ **问题描述**：\r\n\r\n大家好，为了实现将 PyTorch 代码自动化的转写成 Paddle 代码，从而提升模型迁移的效率，我们建设了 [**代码自动转换工具**](https://github.com/PaddlePaddle/PaConvert): **Pa**ddlePaddle Code **Convert** Toolkits，目前已支持了1000+个Pytorch API的自动转换，我们此次对外开放**408个API的转换规则开发**，欢迎大家提 PR 来一起支持自动转换 🎉🎉🎉。\r\n\r\n通过本次活动，你可以更详细地了解 PyTorch 框架与 Paddle 框架用法及设计差异，提升自己对深度学习框架的熟悉程度。\r\n\r\n## 🍻 **你需要做的是**：\r\n\r\n我们已将任务记录在[《在线任务明细表》](https://shimo.im/sheets/RKAWVnVNopC1NKk8/1ihYi)，为方便大家自由选择所熟悉的API，此次不对API进行分组，大家可自由选择一个或多个API来实现自动转换，认领时直接在本issue下回复认领的**任务ID**（至少1个，建议一次认领多个，且越多约好）。欢迎大家认领任务和提 PR~\r\n\r\n1. Fork [PaddlePaddle/docs](https://github.com/PaddlePaddle/docs) 、[PaddlePaddle/PaConvert](https://github.com/PaddlePaddle/PaConvert) 两个Github Reop。\r\n\r\n2. **书写API映射关系**：PR提交到 [PaddlePaddle/docs](https://github.com/PaddlePaddle/docs) 下，需要为每个 API 新增对应的 md 文件并放入`docs/guides/model_convert/convert_from_pytorch/api_difference` 对应的目录下，文件名为PyTorch API名。如果已存在该API的映射关系，则无需新增 md 文件，只需要**检查并校正之前的文档是否正确，如果与后面的AST规则有差异，则需要修改文档**。\r\n\r\n3. API映射关系请参考 [《API映射关系-格式规范》](https://github.com/PaddlePaddle/docs/blob/develop/docs/guides/model_convert/convert_from_pytorch/api_difference/pytorch_api_mapping_format_cn.md) ，PR标题格式：**映射文档 No. xxx/yyy/zzz**，PR描述附上本issue。**请严格根据格式规范来书写文档，避免因格式问题增加不必要的review成本，不满足格式规范的PR将不予合入**。\r\n\r\n4. API映射关系相当于人工转换的思路，在其完成后，即可**开发AST自动转换规则**：参考[《AST转换规则开发步骤》](https://github.com/PaddlePaddle/PaConvert/blob/master/docs/CONTRIBUTING.md#%E5%A6%82%E4%BD%95%E8%B4%A1%E7%8C%AE%E4%BB%A3%E7%A0%81) 中步骤3~5，PR标题格式：**转换规则 No. xxx/yyy/zzz**，PR描述附上本issue与上述文档PR。**请严格根据文档要求来开发代码，避免增加不必要的review成本，不满足要求的PR将不予合入。**\r\n\r\n5. 每1个任务**No.xxx** 均包含 **1个映射关系文档PR + 1个转换规则PR**，两者均合入该任务才算完成，请尽可能一次性提交多个任务，以提高review效率。\r\n\r\n6. review方式：评论里 @zhwesky2010 review，请及时修改review意见，review通过后将合入代码。\r\n\r\n## ✨ 注：\r\n\r\n1. **该任务时间：PR 截止合入时间是2023/10/30。**\r\n\r\n2. 认领规则：直接在 issue 下回复认领的**任务 ID**（建议一次认领多个）。\r\n\r\n3. 提交PR前请参照[官网](https://www.paddlepaddle.org.cn/documentation/docs/zh/dev_guides/code_contributing_path_cn.html)安装pre-commit，检查代码格式。否则CI可能无法通过。\r\n\r\n4. **PR请先通过CI检查后再发起review，避免增加不必要的review成本。**\r\n\r\n5. PR标题格式：**映射文档 No. xxx/yyy/zzz**，**转换规则 No. xxx/yyy/zzz**，PR描述均需附上本issue，后者PR描述的 `PR Docs` 里需要写上前者PR的链接。\r\n\r\n6. 如果该API在paddle中存在 **功能缺失、功能Bug、功能diff** 等问题，导致无法转换，请直接在本issue下回复。我们会定期确认并记录API功能问题，同时对于此问题点，可暂不开发Matcher但仍需开发 **屏蔽版本的测试case**（单测屏蔽方式可查询开发文档或参考已有单测的代码）。问题描述参考如下格式：\r\n    - `torch.diff` 问题：paddle仅支持n=1，torch的n可支持任意值\r\n    -  `torch.nonzero` 问题：指定as_tuple时行为不一致，paddle会多一维且不合理 \r\n    - `torch.dstack` 问题：功能缺失\r\n\r\n7. **任务明细表中已对映射关系的分类进行了初步粗略标注，仅供参考，最终以开发者分析为主。**\r\n\r\n8. [历史上的 good first issue 列表](https://github.com/PaddlePaddle/community/tree/master/pfcc#good-first-issue)，也欢迎来提 PR 解决~ 欢迎联系花花加入社区，和我们一起[快乐开源](https://github.com/PaddlePaddle/Paddle/issues/48019)！\r\n\r\n<img width=\"200\" alt=\"image\" src=\"https://user-images.githubusercontent.com/39876205/213131273-361d2bb8-ea48-4f62-9603-0b0401f50337.png\">\r\n",
+        "state": "closed",
+        "user": "zhwesky2010",
+        "closed_by": "luotao1",
+        "created_at": "2023-06-20T06:48:09+00:00",
+        "updated_at": "2023-09-26T11:02:24+00:00",
+        "closed_at": "2023-09-26T11:02:23+00:00",
+        "comments_count": [
+            "zhwesky2010",
+            "zhwesky2010",
+            "Atlantisming",
+            "txyugood",
+            "co63oc",
+            "Liyulingyue",
+            "luotao1",
+            "Liyulingyue",
+            "GreatV",
+            "luotao1",
+            "sanbuphy",
+            "co63oc",
+            "enkilee",
+            "zhwesky2010",
+            "zhwesky2010",
+            "RedContritio",
+            "RedContritio",
+            "longranger2",
+            "shuaills",
+            "shuaills",
+            "zhwesky2010",
+            "mrcangye",
+            "co63oc",
+            "luotao1",
+            "co63oc",
+            "luotao1",
+            "GreatV",
+            "Liyulingyue",
+            "Evan-master",
+            "luotao1"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 267,
+        "title": "torch.nn.functional.pad无法转换成功",
+        "body": "结果如下：\r\n\r\n```python\r\n    def _relative_position_to_absolute_position(self, x):\r\n        \"\"\"\r\n        x: [b, h, l, 2*l-1]\r\n        ret: [b, h, l, l]\r\n        \"\"\"\r\n        batch, heads, length, _ = x.shape\r\n>>>        x = torch.nn.functional.pad(x, commons.convert_pad_shape([[0, 0], [\r\n            0, 0], [0, 0], [0, 1]]))\r\n        \"\"\"Class Method: *.view, can not convert, please check whether it is torch.Tensor.*/Optimizer.*/nn.Module.*/torch.distributions.Distribution.*/torch.autograd.function.FunctionCtx.*/torch.profiler.profile.*/torch.autograd.profiler.profile.*, and convert manually\"\"\"\r\n>>>        x_flat = x.view([batch, heads, length * 2 * length])\r\n>>>        x_flat = torch.nn.functional.pad(x_flat, commons.convert_pad_shape(\r\n            [[0, 0], [0, 0], [0, length - 1]]))\r\n        \"\"\"Class Method: *.view, can not convert, please check whether it is torch.Tensor.*/Optimizer.*/nn.Module.*/torch.distributions.Distribution.*/torch.autograd.function.FunctionCtx.*/torch.profiler.profile.*/torch.autograd.profiler.profile.*, and convert manually\"\"\"\r\n>>>        x_final = x_flat.view([batch, heads, length + 1, 2 * length - 1])[:,\r\n            :, :length, length - 1:]\r\n        return x_final\r\n\r\n    def _absolute_position_to_relative_position(self, x):\r\n        \"\"\"\r\n        x: [b, h, l, l]\r\n        ret: [b, h, l, 2*l-1]\r\n        \"\"\"\r\n        batch, heads, length, _ = x.shape\r\n>>>        x = torch.nn.functional.pad(x, commons.convert_pad_shape([[0, 0], [\r\n            0, 0], [0, 0], [0, length - 1]]))\r\n        \"\"\"Class Method: *.view, can not convert, please check whether it is torch.Tensor.*/Optimizer.*/nn.Module.*/torch.distributions.Distribution.*/torch.autograd.function.FunctionCtx.*/torch.profiler.profile.*/torch.autograd.profiler.profile.*, and convert manually\"\"\"\r\n>>>        x_flat = x.view([batch, heads, length ** 2 + length * (length - 1)])\r\n>>>        x_flat = torch.nn.functional.pad(x_flat, commons.convert_pad_shape(\r\n            [[0, 0], [0, 0], [length, 0]]))\r\n        \"\"\"Class Method: *.view, can not convert, please check whether it is torch.Tensor.*/Optimizer.*/nn.Module.*/torch.distributions.Distribution.*/torch.autograd.function.FunctionCtx.*/torch.profiler.profile.*/torch.autograd.profiler.profile.*, and convert manually\"\"\"\r\n>>>        x_final = x_flat.view([batch, heads, length, 2 * length])[:, :, :, 1:]\r\n        return x_final\r\n\r\n```",
+        "state": "closed",
+        "user": "yeyupiaoling",
+        "closed_by": "yeyupiaoling",
+        "created_at": "2023-09-01T15:11:45+00:00",
+        "updated_at": "2024-04-03T05:53:16+00:00",
+        "closed_at": "2024-04-03T05:53:16+00:00",
+        "comments_count": [
+            "zhwesky2010",
+            "yeyupiaoling",
+            "zhwesky2010",
+            "yeyupiaoling",
+            "yeyupiaoling",
+            "zhwesky2010",
+            "yeyupiaoling"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 519,
+        "title": "新需求",
+        "body": "能不能把checkpoint转换也做了\r\n比如：https://www.modelscope.cn/models/sentence-transformers/all-MiniLM-L6-v2/files\r\n",
+        "state": "open",
+        "user": "wangguan1995",
+        "closed_by": null,
+        "created_at": "2024-11-26T04:48:27+00:00",
+        "updated_at": "2024-11-26T04:48:41+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 521,
+        "title": "在列表推导式中转换 torch API 时无法正确插入辅助代码",
+        "body": "## 问题描述\r\n当在列表推导式中转换 torch API 时，由于 `BaseTransformer::insert_multi_node` 的限制，无法正确插入必要的辅助代码（如 import 语句和 sys.path 设置）。\r\n**这个问题会影响所有在列表推导式或字典推导式中使用辅助函数的 torch API 的代码转换。**\r\n\r\n## 复现步骤\r\n1. 转换如下的 PyTorch 代码：\r\n```python\r\nimport torch\r\na = torch.Tensor([[1.,2.], [3.,4.]])\r\nlist_a = [a,a]\r\nresult = [torch.transpose(input=x, dim1=0, dim0=1) for x in list_a ]\r\n```\r\n\r\n2. 使用 PaConvert 得到的 Paddle 代码：\r\n```python\r\nimport paddle\r\na = paddle.to_tensor(data=[[1.0, 2.0], [3.0, 4.0]], dtype='float32')\r\nlist_a = [a, a]\r\nresult = [paddle.transpose(x=x, perm=paddle_aux.transpose_aux_func(x.ndim, \r\n    1, 0)) for x in list_a]\r\n```\r\n**其中没有正常导入 paddle_aux**\r\n\r\n## Bug 原因\r\n当转换器处理列表推导式中的 `torch.transpose()` 时，需要插入辅助代码。但是由于 `insert_multi_node` 方法中的如下检查，会拦截在列表推导式中插入新节点：\r\n```python\r\nif isinstance(self.parent_node, (ast.DictComp, ast.ListComp)):\r\n    return False\r\n```\r\n导致必要的辅助代码无法被正确插入。\r\n\r\n## 可能的修复方案\r\n修改 `insert_multi_node` 方法，将 import 相关的节点（包括 import 语句和 sys.path 设置）始终插入到文件顶部，而不受推导式作用域的限制。例如：\r\n\r\n```python\r\ndef insert_multi_node(self, node_list):\r\n    if len(node_list) == 0:\r\n        return True\r\n\r\n    import_nodes = []\r\n    other_nodes = []\r\n    for node in node_list:\r\n        if isinstance(node, (ast.Import, ast.ImportFrom)):\r\n            import_nodes.append(node)\r\n        elif \"sys.path\" in astor.to_source(node):\r\n            import_nodes.append(node)\r\n        else:\r\n            other_nodes.append(node)\r\n\r\n    # 始终将import相关的节点插入到文件顶部\r\n    if len(import_nodes) > 0:\r\n        self.record_scope((self.root, \"body\", 0), import_nodes)\r\n\r\n    # 其他节点仍然遵循原来的逻辑\r\n    if len(other_nodes) > 0:\r\n        if isinstance(self.parent_node, (ast.DictComp, ast.ListComp)):\r\n            return False\r\n        self.record_scope(self.scope_body_index(), other_nodes)\r\n\r\n    return True\r\n```",
+        "state": "closed",
+        "user": "guozixu2001",
+        "closed_by": "zhwesky2010",
+        "created_at": "2024-11-27T03:10:03+00:00",
+        "updated_at": "2024-11-29T11:46:09+00:00",
+        "closed_at": "2024-11-29T11:46:09+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 545,
+        "title": "paconver会转requirements里的torch内容",
+        "body": "建议只转换py文件，requirements.txt不要动，或者增加一行paddlepaddle-gpu==0.0.0",
+        "state": "open",
+        "user": "wangguan1995",
+        "closed_by": null,
+        "created_at": "2025-01-20T06:43:55+00:00",
+        "updated_at": "2025-01-20T06:43:55+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 541,
+        "title": "建议加入注释检测",
+        "body": "建议加入注释检测\r\n有的时候检查代码会发现，有的torch注释部分忘记删除了，加上会更好",
+        "state": "open",
+        "user": "wangguan1995",
+        "closed_by": null,
+        "created_at": "2025-01-07T06:58:41+00:00",
+        "updated_at": "2025-01-07T06:58:41+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 371,
+        "title": "转换出现bug",
+        "body": "- torch\r\n\r\n```python\r\nimport torch\r\nimport torch.nn as nn\r\nimport torch.nn.functional as F\r\nfrom typing import List, Tuple, Optional\r\nimport math\r\n\r\n# Calculate asymmetric TensorFlow-like 'SAME' padding for a convolution\r\ndef get_same_padding(x: int, kernel_size: int, stride: int, dilation: int):\r\n    if isinstance(x, torch.Tensor):\r\n        return torch.clamp(((x / stride).ceil() - 1) * stride + (kernel_size - 1) * dilation + 1 - x, min=0)\r\n    else:\r\n        return max((math.ceil(x / stride) - 1) * stride + (kernel_size - 1) * dilation + 1 - x, 0)\r\n\r\n\r\n# Dynamically pad input x with 'SAME' padding for conv with specified args\r\ndef pad_same(\r\n        x,\r\n        kernel_size: List[int],\r\n        stride: List[int],\r\n        dilation: List[int] = (1, 1),\r\n        value: float = 0,\r\n):\r\n    ih, iw = x.size()[-2:]\r\n    pad_h = get_same_padding(ih, kernel_size[0], stride[0], dilation[0])\r\n    pad_w = get_same_padding(iw, kernel_size[1], stride[1], dilation[1])\r\n    x = F.pad(x, (pad_w // 2, pad_w - pad_w // 2, pad_h // 2, pad_h - pad_h // 2), value=value)\r\n    return x\r\n\r\n\r\ndef avg_pool2d_same(x, kernel_size: List[int], stride: List[int], padding: List[int] = (0, 0),\r\n                    ceil_mode: bool = False, count_include_pad: bool = True):\r\n    # FIXME how to deal with count_include_pad vs not for external padding?\r\n    x = pad_same(x, kernel_size, stride)\r\n    return F.avg_pool2d(x, kernel_size, stride, (0, 0), ceil_mode, count_include_pad)\r\n```\r\n- paddlepaddle\r\n\r\n```python\r\nimport sys\r\nsys.path.append('/home/greatx/repos/PaConvert/paddle_project/utils')\r\nimport paddle_aux\r\nimport paddle\r\nfrom typing import List, Tuple, Optional\r\nimport math\r\n\r\n\r\ndef get_same_padding(x: int, kernel_size: int, stride: int, dilation: int):\r\n    if isinstance(x, paddle.Tensor):\r\n        return paddle.clip(x=((x / stride).ceil() - 1) * stride + (\r\n            kernel_size - 1) * dilation + 1 - x, min=0)\r\n    else:\r\n        return max((math.ceil(x / stride) - 1) * stride + (kernel_size - 1) *\r\n            dilation + 1 - x, 0)\r\n\r\n\r\ndef pad_same(x, kernel_size: List[int], stride: List[int], dilation: List[\r\n    int]=(1, 1), value: float=0):\r\n    ih, iw = x.shape[-2:]\r\n    pad_h = get_same_padding(ih, kernel_size[0], stride[0], dilation[0])\r\n    pad_w = get_same_padding(iw, kernel_size[1], stride[1], dilation[1])\r\n    x = paddle_aux._FUNCTIONAL_PAD(pad=(pad_w // 2, pad_w - pad_w // 2, \r\n        pad_h // 2, pad_h - pad_h // 2), value=value, x=x)\r\n    return x\r\n\r\n\r\ndef avg_pool2d_same(x, kernel_size: List[int], stride: List[int], padding:\r\n    List[int]=(0, 0), ceil_mode: bool=False, count_include_pad: bool=True):\r\n    x = pad_same(x, kernel_size, stride)\r\n    return paddle.nn.functional.avg_pool2d(kernel_size=kernel_size, stride=\r\n        stride, padding=(0, 0), ceil_mode=ceil_mode, x=x, exclusive=\r\n        notcount_include_pad)\r\n```\r\n\r\n`count_include_pad` -> `not count_include_pad` -> `notcount_include_pad`",
+        "state": "closed",
+        "user": "GreatV",
+        "closed_by": "GreatV",
+        "created_at": "2024-02-25T03:11:59+00:00",
+        "updated_at": "2024-03-14T08:52:30+00:00",
+        "closed_at": "2024-03-14T08:52:30+00:00",
+        "comments_count": [
+            "zhwesky2010"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/PaConvert",
+        "number": 364,
+        "title": "got wrong output",
+        "body": "```shell\r\n git clone https://github.com/facebookresearch/detectron2.git\r\ncd PaConvert\r\npython paconvert/main.py --in_dir ../detectron2/ --out_dir ../detectron2.paddle\r\n```\r\n\r\n- original:  [detectron2](https://github.com/facebookresearch/detectron2/tree/main)/[detectron2](https://github.com/facebookresearch/detectron2/tree/main/detectron2)/[utils](https://github.com/facebookresearch/detectron2/tree/main/detectron2/utils)/comm.py\r\n```python\r\n# Copyright (c) Facebook, Inc. and its affiliates.\r\n\"\"\"\r\nThis file contains primitives for multi-gpu communication.\r\nThis is useful when doing distributed training.\r\n\"\"\"\r\n\r\nimport functools\r\nimport numpy as np\r\nimport torch\r\nimport torch.distributed as dist\r\n\r\n_LOCAL_PROCESS_GROUP = None\r\n_MISSING_LOCAL_PG_ERROR = (\r\n    \"Local process group is not yet created! Please use detectron2's `launch()` \"\r\n    \"to start processes and initialize pytorch process group. If you need to start \"\r\n    \"processes in other ways, please call comm.create_local_process_group(\"\r\n    \"num_workers_per_machine) after calling torch.distributed.init_process_group().\"\r\n)\r\n\r\n```\r\n\r\n- Converted: detectron2.paddle/detectron2/utils/comm.py\r\n\r\n```python\r\nimport paddle\r\n\"\"\"\r\nThis file contains primitives for multi-gpu communication.\r\nThis is useful when doing distributed training.\r\n\"\"\"\r\nimport functools\r\nimport numpy as np\r\n_LOCAL_PROCESS_GROUP = None\r\n_MISSING_LOCAL_PG_ERROR = (\r\n>>>>>>    \"Local process group is not yet created! Please use detectron2's `launch()` to start processes and initialize pytorch process group. If you need to start processes in other ways, please call comm.create_local_process_group(num_workers_per_machine) after calling torch.distributed.init_process_group().\"\r\n    )\r\n\r\n```",
+        "state": "closed",
+        "user": "GreatV",
+        "closed_by": "GreatV",
+        "created_at": "2024-02-05T02:28:43+00:00",
+        "updated_at": "2024-03-14T07:50:54+00:00",
+        "closed_at": "2024-03-14T07:50:54+00:00",
+        "comments_count": [
+            "zhwesky2010"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    }
+]

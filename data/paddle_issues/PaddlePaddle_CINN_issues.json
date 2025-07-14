@@ -1,0 +1,1028 @@
+[
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 112,
+        "title": "Enhance GPU block",
+        "body": "",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-06-30T08:34:36+00:00",
+        "updated_at": "2020-06-30T08:34:36+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 52,
+        "title": "inline tensor support",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-02-28T13:54:43+00:00",
+        "updated_at": "2020-02-28T13:55:48+00:00",
+        "closed_at": "2020-02-28T13:55:48+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 45,
+        "title": "design how buffer works with tensor",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-02-27T03:07:35+00:00",
+        "updated_at": "2020-02-27T03:07:44+00:00",
+        "closed_at": "2020-02-27T03:07:44+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 42,
+        "title": "remove placeholder in schedule",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-02-27T01:02:18+00:00",
+        "updated_at": "2020-02-27T01:20:32+00:00",
+        "closed_at": "2020-02-27T01:20:32+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 47,
+        "title": "design how module works with LoweredFunc",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-02-27T04:29:36+00:00",
+        "updated_at": "2020-02-28T14:06:57+00:00",
+        "closed_at": "2020-02-28T14:06:57+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 111,
+        "title": "refine temporary buffer",
+        "body": "make all the temporary variables with a temp buffer\r\n\r\nThe graph from `CreateCompGraph`",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-06-30T08:32:02+00:00",
+        "updated_at": "2020-07-23T06:03:41+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 46,
+        "title": "Make LoweredFunc a IR Node",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-02-27T04:29:21+00:00",
+        "updated_at": "2020-02-27T05:27:00+00:00",
+        "closed_at": "2020-02-27T05:27:00+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 41,
+        "title": "lower with more complex test",
+        "body": "- lower with reduce_sum\r\n- lower with more tensors",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-02-27T01:02:09+00:00",
+        "updated_at": "2020-02-28T13:55:43+00:00",
+        "closed_at": "2020-02-28T13:55:43+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 55,
+        "title": "refine runtime for X86 host usage",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-03-01T07:48:35+00:00",
+        "updated_at": "2020-03-01T07:49:25+00:00",
+        "closed_at": "2020-03-01T07:49:25+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 116,
+        "title": "refactor Alloca",
+        "body": "Remove unneeded fields.",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-07-22T04:31:31+00:00",
+        "updated_at": "2020-07-23T06:10:06+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 114,
+        "title": "compute_at fix",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-07-21T02:28:20+00:00",
+        "updated_at": "2020-07-23T01:56:40+00:00",
+        "closed_at": "2020-07-23T01:56:40+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 122,
+        "title": "Make ComputeAt work with dynamic var",
+        "body": "",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-07-23T12:10:52+00:00",
+        "updated_at": "2020-07-23T12:10:52+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 117,
+        "title": "ComputeAt simplify consumer axis condition in producer creation",
+        "body": "```c++\r\npoly_for (po1, 0, (po1 <= 9), 1)\r\n{\r\n  {\r\n    if (((((po0 >= 0) and (po0 <= 9)) and (po1 >= 0)) and (po1 <= 9))) {\r\n      cache[po0, po1] = A[po0, po1]\r\n    }\r\n    C[po0, po1] = (cache[po0, po1] + B[po0, po1])\r\n  }\r\n}\r\n```\r\n\r\nThe `if(...)` in the code above is redundant, better to simplify it in the poly schedule step.",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-07-22T07:27:58+00:00",
+        "updated_at": "2020-07-25T02:46:05+00:00",
+        "closed_at": "2020-07-25T02:46:05+00:00",
+        "comments_count": [],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 121,
+        "title": "Add more JIT tests on ComputeAt",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-07-23T09:07:52+00:00",
+        "updated_at": "2020-07-25T02:46:21+00:00",
+        "closed_at": "2020-07-25T02:46:21+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 138,
+        "title": "add pe module and related test",
+        "body": "add pe module and related test",
+        "state": "open",
+        "user": "wenming2014",
+        "closed_by": null,
+        "created_at": "2020-07-29T14:36:45+00:00",
+        "updated_at": "2020-07-29T14:37:43+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "enhancement"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 125,
+        "title": "fix cache_read and cache_write",
+        "body": "",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-07-25T02:46:34+00:00",
+        "updated_at": "2020-07-25T02:46:34+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 119,
+        "title": "support PolyFor in CodegenLLVM",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-07-23T06:12:23+00:00",
+        "updated_at": "2020-10-30T07:07:41+00:00",
+        "closed_at": "2020-10-30T07:07:41+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 131,
+        "title": "Add operator module",
+        "body": "Add operator module and build structure",
+        "state": "closed",
+        "user": "haozech",
+        "closed_by": "haozech",
+        "created_at": "2020-07-27T06:45:41+00:00",
+        "updated_at": "2020-07-31T02:25:21+00:00",
+        "closed_at": "2020-07-31T02:25:21+00:00",
+        "comments_count": [
+            "haozech"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 153,
+        "title": "simplify IfThenElse conditions with ISL",
+        "body": "Add something like\r\n\r\n- `ConditionedSimplify` to simplify Load/Store indices\r\n- Extract extent from PolyFor to construct a For\r\n\r\n\r\n```c++\r\n  if ((blockIdx.x < 40)) {\r\n  {\r\n    if ((threadIdx.x < 40)) {\r\n    {\r\n      if (((((blockIdx.x >= 0) && (blockIdx.x <= 39)) && (threadIdx.x >= 0)) && (threadIdx.x <= 39))) {\r\n        C[0] = A[((40 * blockIdx.x) + threadIdx.x)];\r\n      };\r\n      C_cache_write_out_3[((40 * blockIdx.x) + threadIdx.x)] = C[0];\r\n    }\r\n    };\r\n  }\r\n  };\r\n```",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-08-05T06:29:28+00:00",
+        "updated_at": "2020-08-05T06:33:07+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 152,
+        "title": "simplify IfThenElse conditions with ISL",
+        "body": "",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-08-05T06:29:24+00:00",
+        "updated_at": "2020-08-05T06:29:24+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 189,
+        "title": "Add Scope to CodeGenLLVM and introduce more robust symboltable like concept.",
+        "body": "",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-08-27T07:49:07+00:00",
+        "updated_at": "2020-08-27T08:06:08+00:00",
+        "closed_at": "2020-08-27T08:06:08+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 140,
+        "title": "add graph(node) module",
+        "body": "",
+        "state": "closed",
+        "user": "haozech",
+        "closed_by": "haozech",
+        "created_at": "2020-07-31T02:24:43+00:00",
+        "updated_at": "2020-08-04T08:09:47+00:00",
+        "closed_at": "2020-08-04T08:09:46+00:00",
+        "comments_count": [
+            "haozech"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 205,
+        "title": "Update Graph to SSA_Graph (recognize nodes with same name)",
+        "body": "",
+        "state": "open",
+        "user": "haozech",
+        "closed_by": null,
+        "created_at": "2020-09-07T03:07:00+00:00",
+        "updated_at": "2020-09-07T03:07:45+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 147,
+        "title": "add pass module",
+        "body": "",
+        "state": "closed",
+        "user": "haozech",
+        "closed_by": "haozech",
+        "created_at": "2020-08-04T08:11:07+00:00",
+        "updated_at": "2020-08-06T05:45:11+00:00",
+        "closed_at": "2020-08-06T05:45:11+00:00",
+        "comments_count": [
+            "haozech"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 267,
+        "title": "kernelgen/run op benchmarks for CPU and GPU",
+        "body": "The benchmark on op\r\n\r\nDevices:\r\n\r\n- CPU\r\n- GPU\r\n\r\nCompare with TVM0.7\r\n\r\nWe might need to consider building a benchmark workflow in CI",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-10-30T07:12:16+00:00",
+        "updated_at": "2020-10-30T07:15:05+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "kernel-gen"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 268,
+        "title": "engine/design tensor type in dialect",
+        "body": "",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-10-30T07:24:33+00:00",
+        "updated_at": "2020-10-30T07:25:39+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "engine"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 157,
+        "title": "Add Op Strategy module.",
+        "body": "",
+        "state": "closed",
+        "user": "haozech",
+        "closed_by": "haozech",
+        "created_at": "2020-08-06T05:47:10+00:00",
+        "updated_at": "2020-09-07T03:07:27+00:00",
+        "closed_at": "2020-09-07T03:07:27+00:00",
+        "comments_count": [
+            "haozech"
+        ],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 305
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 269,
+        "title": "engine/Collect the historical challenge and issues in Paddle-Lite, and refine the engine design to handle them",
+        "body": "",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-10-30T07:28:13+00:00",
+        "updated_at": "2020-10-30T07:28:42+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "engine"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 270,
+        "title": "kernelgen/refine DSL API",
+        "body": "",
+        "state": "open",
+        "user": "Superjomn",
+        "closed_by": null,
+        "created_at": "2020-10-30T09:02:58+00:00",
+        "updated_at": "2020-10-30T09:02:58+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 271,
+        "title": "Build a benchmark framework",
+        "body": "Build a framework for developers to conveniently compare CINN's op performance with TVM's op performance.",
+        "state": "open",
+        "user": "haozech",
+        "closed_by": null,
+        "created_at": "2020-10-30T09:14:21+00:00",
+        "updated_at": "2020-10-30T09:16:36+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "kernel-gen"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 303,
+        "title": "generated x86 code sample",
+        "body": "```c++\r\n#include <cinn_runtime.h>\r\n#include <stdio.h>\r\n\r\n////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n///                     Predefined utilities in CINN BEGIN(\r\n////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\n#include <immintrin.h>\r\n#include <stdint.h>\r\n\r\n#include <vector>\r\n\r\n#ifndef _CINN_X86_BUILTIN_SOURCE_\r\n#define _CINN_X86_BUILTIN_SOURCE_\r\n//! Vector in stack, this can only used in generated .cc file.\r\ntemplate <typename T, size_t Num>\r\nstruct StackVec {\r\n  typedef T value_type;\r\n  typedef StackVec<T, Num> self_type;\r\n\r\n  self_type& operator=(const StackVec& src) {\r\n    if (this != &src) {\r\n      memcpy(data_, src.data_, num_bytes());\r\n    }\r\n    return *this;\r\n  }\r\n\r\n  StackVec() { memset(data_, 0, num_bytes()); }\r\n\r\n  explicit StackVec(const T* externl) : external_data_(externl) {}\r\n\r\n  static self_type Broadcast(const value_type& v) {\r\n    self_type res;\r\n    for (size_t i = 0; i < Num; i++) res.data_[i] = v;\r\n    return res;\r\n  }\r\n\r\n  static self_type Ramp(const value_type& base, const value_type& stride) {\r\n    self_type res;\r\n    for (size_t i = 0; i < Num; i++) {\r\n      res.data_[i] = base + stride * i;\r\n    }\r\n  }\r\n\r\n  static self_type Load(const void* base, int32_t offset) {\r\n    self_type res;\r\n    memcpy(&res.data_[0], (const value_type*)base + offset, num_bytes());\r\n  }\r\n\r\n  static self_type Load(const void* base, const StackVec<int32_t, Num>& offset) {\r\n    self_type res;\r\n    for (size_t i = 0; i < Num; i++) {\r\n      res.data_[i] = ((const value_type*)base)[offset[i]];\r\n    }\r\n  }\r\n\r\n  void Store(void* base, int32_t offset) const {\r\n    mempcpy((value_type*)base + offset, &data_[0], num_bytes());  // NOLINT\r\n  }\r\n\r\n  inline value_type& operator[](size_t i) { return data_[i]; }\r\n  inline value_type operator[](size_t i) const { return data_[i]; }\r\n\r\n  // binary operator between two vectors\r\n  // @{\r\n#define __(op__)                                                           \\\r\n  friend self_type operator op__(const self_type& a, const self_type& b) { \\\r\n    self_type res;                                                         \\\r\n    for (size_t i = 0; i < Num; i++) {                                     \\\r\n      res.data_[i] = a[i] op__ b[i];                                       \\\r\n    }                                                                      \\\r\n    return res;                                                            \\\r\n  }\r\n  __(+)\r\n  __(-)\r\n  __(*)\r\n  __(/)\r\n  __(%)\r\n  // @}\r\n#undef __\r\n\r\n  // binary operator between a vector and a scalar\r\n  // @{\r\n#define __(op__)                                                            \\\r\n  friend self_type operator op__(const self_type& a, const value_type& b) { \\\r\n    self_type res;                                                          \\\r\n    for (size_t i = 0; i < Num; i++) {                                      \\\r\n      res.data_[i] = a[i] op__ b;                                           \\\r\n    }                                                                       \\\r\n    return res;                                                             \\\r\n  }\r\n  __(+)\r\n  __(-)\r\n  __(*)\r\n  __(/)\r\n  __(%)\r\n#undef __\r\n  // @}\r\n\r\n  static constexpr size_t num_bytes() { return sizeof(data_); }\r\n\r\n private:\r\n  T data_[Num];\r\n  T* external_data_{nullptr};\r\n};\r\n\r\n/**\r\n * The vector with external data.\r\n */\r\ntemplate <typename T, size_t Num>\r\nstruct ExternalVec {\r\n  typedef T value_type;\r\n  typedef ExternalVec<T, Num> self_type;\r\n\r\n  explicit ExternalVec(T* data) : data_(data) {}\r\n\r\n  self_type& operator=(const self_type& src) {\r\n    if (data_ != src.data_) {\r\n      memcpy(data_, src.data_, num_bytes());\r\n    }\r\n    return *this;\r\n  }\r\n\r\n  static self_type Load(const void* base, int32_t offset) {\r\n    self_type res((T*)base + offset);  // NOLINT\r\n    return res;\r\n  }\r\n\r\n  static constexpr size_t num_bytes() { return sizeof(value_type) * Num; }\r\n\r\n private:\r\n  T* data_{nullptr};\r\n};\r\n\r\n// AVX256 load\r\n//@{\r\ninline __m256 cinn_avx256_load(const float* dst) { return _mm256_load_ps(dst); }\r\ninline __m256d cinn_avx256_load(const double* dst) { return _mm256_load_pd(dst); }\r\n//@}\r\n// AVX512 load\r\n//@{\r\ninline __m512 cinn_avx512_load(const float* dst) { return _mm512_load_ps(dst); }\r\ninline __m512d cinn_avx512_load(const double* dst) { return _mm512_load_pd(dst); }\r\n//@}\r\n\r\n// FP32x8 * FP32x8\r\n// @{\r\ninline void cinn_avx256_add(float* dst, float* a, float* b) {\r\n  _mm256_store_ps(dst, _mm256_add_ps(_mm256_load_ps(a), _mm256_load_ps(b)));\r\n}\r\ninline void cinn_avx256_sub(float* dst, float* a, float* b) {\r\n  _mm256_store_ps(dst, _mm256_sub_ps(_mm256_load_ps(a), _mm256_load_ps(b)));\r\n}\r\ninline void cinn_avx256_mul(float* dst, float* a, float* b) {\r\n  _mm256_store_ps(dst, _mm256_mul_ps(_mm256_load_ps(a), _mm256_load_ps(b)));\r\n}\r\ninline void cinn_avx256_div(float* dst, float* a, float* b) {\r\n  _mm256_store_ps(dst, _mm256_div_ps(_mm256_load_ps(a), _mm256_load_ps(b)));\r\n}\r\n// @}\r\n\r\n// FP32x4 * float\r\n// @{\r\ninline void cinn_avx256_add(float* dst, float* a, float b) {\r\n  _mm256_store_ps(dst, _mm256_add_ps(_mm256_load_ps(a), _mm256_set1_ps(b)));\r\n}\r\ninline void cinn_avx256_sub(float* dst, float* a, float b) {\r\n  _mm256_store_ps(dst, _mm256_sub_ps(_mm256_load_ps(a), _mm256_set1_ps(b)));\r\n}\r\ninline void cinn_avx256_mul(float* dst, float* a, float b) {\r\n  _mm256_store_ps(dst, _mm256_mul_ps(_mm256_load_ps(a), _mm256_set1_ps(b)));\r\n}\r\ninline void cinn_avx256_div(float* dst, float* a, float b) {\r\n  _mm256_store_ps(dst, _mm256_div_ps(_mm256_load_ps(a), _mm256_set1_ps(b)));\r\n}\r\n// @}\r\n\r\n// float * FP32x4\r\n// @{\r\ninline void cinn_avx256_add(float* dst, float a, float* b) {\r\n  _mm256_store_ps(dst, _mm256_add_ps(_mm256_set1_ps(a), _mm256_load_ps(b)));\r\n}\r\ninline void cinn_avx256_sub(float* dst, float a, float* b) {\r\n  _mm256_store_ps(dst, _mm256_sub_ps(_mm256_set1_ps(a), _mm256_load_ps(b)));\r\n}\r\ninline void cinn_avx256_mul(float* dst, float a, float* b) {\r\n  _mm256_store_ps(dst, _mm256_mul_ps(_mm256_set1_ps(a), _mm256_load_ps(b)));\r\n}\r\ninline void cinn_avx256_div(float* dst, float a, float* b) {\r\n  _mm256_store_ps(dst, _mm256_div_ps(_mm256_set1_ps(a), _mm256_load_ps(b)));\r\n}\r\n// @}\r\n\r\n// 4 x float64\r\n// @{\r\ninline void cinn_avx256_add(double* dst, double* a, double* b) {\r\n  _mm256_store_pd(dst, _mm256_add_pd(_mm256_load_pd(a), _mm256_load_pd(b)));\r\n}\r\ninline void cinn_avx256_sub(double* dst, double* a, double* b) {\r\n  _mm256_store_pd(dst, _mm256_sub_pd(_mm256_load_pd(a), _mm256_load_pd(b)));\r\n}\r\ninline void cinn_avx256_mul(double* dst, double* a, double* b) {\r\n  _mm256_store_pd(dst, _mm256_mul_pd(_mm256_load_pd(a), _mm256_load_pd(b)));\r\n}\r\ninline void cinn_avx256_div(double* dst, double* a, double* b) {\r\n  _mm256_store_pd(dst, _mm256_div_pd(_mm256_load_pd(a), _mm256_load_pd(b)));\r\n}\r\n// @}\r\n\r\n// FP32x4 * FP64\r\n// @{\r\ninline void cinn_avx256_add(double* dst, double* a, double b) {\r\n  _mm256_store_pd(dst, _mm256_add_pd(_mm256_load_pd(a), _mm256_set1_pd(b)));\r\n}\r\ninline void cinn_avx256_sub(double* dst, double* a, double b) {\r\n  _mm256_store_pd(dst, _mm256_sub_pd(_mm256_load_pd(a), _mm256_set1_pd(b)));\r\n}\r\ninline void cinn_avx256_mul(double* dst, double* a, double b) {\r\n  _mm256_store_pd(dst, _mm256_mul_pd(_mm256_load_pd(a), _mm256_set1_pd(b)));\r\n}\r\ninline void cinn_avx256_div(double* dst, double* a, double b) {\r\n  _mm256_store_pd(dst, _mm256_div_pd(_mm256_load_pd(a), _mm256_set1_pd(b)));\r\n}\r\n// @}\r\n\r\n// float * FP32x4\r\n// @{\r\ninline void cinn_avx256_add(double* dst, double a, double* b) {\r\n  _mm256_store_pd(dst, _mm256_add_pd(_mm256_set1_pd(a), _mm256_load_pd(b)));\r\n}\r\ninline void cinn_avx256_sub(double* dst, double a, double* b) {\r\n  _mm256_store_pd(dst, _mm256_sub_pd(_mm256_set1_pd(a), _mm256_load_pd(b)));\r\n}\r\ninline void cinn_avx256_mul(double* dst, double a, double* b) {\r\n  _mm256_store_pd(dst, _mm256_mul_pd(_mm256_set1_pd(a), _mm256_load_pd(b)));\r\n}\r\ninline void cinn_avx256_div(double* dst, double a, double* b) {\r\n  _mm256_store_pd(dst, _mm256_div_pd(_mm256_set1_pd(a), _mm256_load_pd(b)));\r\n}\r\n// @}\r\n\r\n//! 32 x float32 operations.\r\n// @{\r\ninline void cinn_avx512_add(float* dst, float* a, float* b) {\r\n  _mm512_store_ps(dst, _mm512_add_ps(_mm512_load_ps(a), _mm512_load_ps(b)));\r\n}\r\ninline void cinn_avx512_sub(float* dst, float* a, float* b) {\r\n  _mm512_store_ps(dst, _mm512_sub_ps(_mm512_load_ps(a), _mm512_load_ps(b)));\r\n}\r\ninline void cinn_avx512_mul(float* dst, float* a, float* b) {\r\n  _mm512_store_ps(dst, _mm512_mul_ps(_mm512_load_ps(a), _mm512_load_ps(b)));\r\n}\r\ninline void cinn_avx512_div(float* dst, float* a, float* b) {\r\n  _mm512_store_ps(dst, _mm512_div_ps(_mm512_load_ps(a), _mm512_load_ps(b)));\r\n}\r\n// @}\r\n\r\n// FP32x4 * FP64\r\n// @{\r\ninline void cinn_avx512_add(float* dst, float* a, float b) {\r\n  _mm512_store_pd(dst, _mm512_add_pd(_mm512_load_pd(a), _mm512_set1_pd(b)));\r\n}\r\ninline void cinn_avx512_sub(float* dst, float* a, float b) {\r\n  _mm512_store_pd(dst, _mm512_sub_pd(_mm512_load_pd(a), _mm512_set1_pd(b)));\r\n}\r\ninline void cinn_avx512_mul(float* dst, float* a, float b) {\r\n  _mm512_store_pd(dst, _mm512_mul_pd(_mm512_load_pd(a), _mm512_set1_pd(b)));\r\n}\r\ninline void cinn_avx512_div(float* dst, float* a, float b) {\r\n  _mm512_store_pd(dst, _mm512_div_pd(_mm512_load_pd(a), _mm512_set1_pd(b)));\r\n}\r\n// @}\r\n\r\n// float * FP32x4\r\n// @{\r\ninline void cinn_avx512_add(float* dst, float a, float* b) {\r\n  _mm512_store_pd(dst, _mm512_add_pd(_mm512_set1_pd(a), _mm512_load_pd(b)));\r\n}\r\ninline void cinn_avx512_sub(float* dst, float a, float* b) {\r\n  _mm512_store_pd(dst, _mm512_sub_pd(_mm512_set1_pd(a), _mm512_load_pd(b)));\r\n}\r\ninline void cinn_avx512_mul(float* dst, float a, float* b) {\r\n  _mm512_store_pd(dst, _mm512_mul_pd(_mm512_set1_pd(a), _mm512_load_pd(b)));\r\n}\r\ninline void cinn_avx512_div(float* dst, float a, float* b) {\r\n  _mm512_store_pd(dst, _mm512_div_pd(_mm512_set1_pd(a), _mm512_load_pd(b)));\r\n}\r\n// @}\r\n\r\n//! 16 x float32 operations.\r\n// @{\r\ninline void cinn_avx512_add(double* dst, double* a, double* b) {\r\n  _mm512_store_pd(dst, _mm512_add_pd(_mm512_load_pd(a), _mm512_load_pd(b)));\r\n}\r\ninline void cinn_avx512_sub(double* dst, double* a, double* b) {\r\n  _mm512_store_pd(dst, _mm512_sub_pd(_mm512_load_pd(a), _mm512_load_pd(b)));\r\n}\r\ninline void cinn_avx512_mul(double* dst, double* a, double* b) {\r\n  _mm512_store_pd(dst, _mm512_mul_pd(_mm512_load_pd(a), _mm512_load_pd(b)));\r\n}\r\ninline void cinn_avx512_div(double* dst, double* a, double* b) {\r\n  _mm512_store_pd(dst, _mm512_div_pd(_mm512_load_pd(a), _mm512_load_pd(b)));\r\n}\r\n// @}\r\n\r\ninline __m512 cinn_avx512_add(const __m512& a, const __m512& b);\r\n\r\ninline __m256 cinn_avx256_add_float(const __m256& a, const __m256& b) { return _mm256_add_ps(a, b); }\r\ninline __m256d cinn_avx256_add_double(const __m256d& a, const __m256d& b) { return _mm256_add_pd(a, b); }\r\ninline __m512 cinn_avx512_add_float(const __m512& a, const __m512& b) { return _mm512_add_ps(a, b); }\r\ninline __m512d cinn_avx512_add_double(const __m512d& a, const __m512d& b) { return _mm512_add_pd(a, b); }\r\n\r\n//! set1\r\n// @{\r\ninline __m256 cinn_avx256_set1(float value) { return _mm256_set1_ps(value); }\r\ninline __m256d cinn_avx256_set1(double value) { return _mm256_set1_pd(value); }\r\ninline __m512 cinn_avx512_set1(float value) { return _mm512_set1_ps(value); }\r\ninline __m512d cinn_avx512_set1(double value) { return _mm512_set1_pd(value); }\r\n// @}\r\n\r\n//! store\r\n// @{\r\ninline void cinn_avx512_store(float* dst, const __m512& x) { _mm512_store_ps(dst, x); }\r\ninline void cinn_avx512_store(double* dst, const __m512d& x) { _mm512_store_pd(dst, x); }\r\ninline void cinn_avx256_store(float* dst, const __m256& x) { _mm256_store_ps(dst, x); }\r\ninline void cinn_avx256_store(double* dst, const __m256d& x) { _mm256_store_pd(dst, x); }\r\n// @}\r\n\r\n//! add\r\n// @{\r\ninline __m256 cinn_avx256_add(const __m256& a, const __m256& b) { return _mm256_add_ps(a, b); }\r\ninline __m256d cinn_avx256_add(const __m256d& a, const __m256d& b) { return _mm256_add_pd(a, b); }\r\ninline __m512 cinn_avx512_add(const __m512& a, const __m512& b) { return _mm512_add_ps(a, b); }\r\ninline __m512d cinn_avx512_add(const __m512d& a, const __m512d& b) { return _mm512_add_pd(a, b); }\r\n// @}\r\n\r\n//! mul\r\n// @{\r\ninline __m256 cinn_avx256_mul(const __m256& a, const __m256& b) { return _mm256_mul_ps(a, b); }\r\ninline __m256d cinn_avx256_mul(const __m256d& a, const __m256d& b) { return _mm256_mul_pd(a, b); }\r\ninline __m512 cinn_avx512_mul(const __m512& a, const __m512& b) { return _mm512_mul_ps(a, b); }\r\ninline __m512d cinn_avx512_mul(const __m512d& a, const __m512d& b) { return _mm512_mul_pd(a, b); }\r\n// @}\r\n\r\n////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n///                     )END Predefined utilities in CINN\r\n////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\n#endif  // _CINN_X86_BUILTIN_SOURCE_\r\n\r\nvoid matmul_array_packing(void* _args, int32_t num_args)\r\n{\r\n  const cinn_buffer_t* _A = cinn_pod_value_to_buffer_p(&(((cinn_pod_value_t*)(_args))[0]));\r\n  const cinn_buffer_t* _B = cinn_pod_value_to_buffer_p(&(((cinn_pod_value_t*)(_args))[1]));\r\n  cinn_buffer_t* _C = cinn_pod_value_to_buffer_p(&(((cinn_pod_value_t*)(_args))[2]));\r\n  cinn_buffer_t* _packedB = cinn_pod_value_to_buffer_p(&(((cinn_pod_value_t*)(_args))[3]));\r\n  cinn_buffer_malloc((void*)(0), _C);\r\n  cinn_buffer_malloc((void*)(0), _packedB);\r\n  const float* A = ((const float*)(_A->memory));\r\n  const float* B = ((const float*)(_B->memory));\r\n  float* C = ((float*)(_C->memory));\r\n  float* C__reduce_init = ((float*)(_C->memory));\r\n  float* packedB = ((float*)(_packedB->memory));\r\n  for (int32_t i = 0; i < 1024; i += 1) {\r\n    for (int32_t j = 0; j < 1024; j += 1) {\r\n      C__reduce_init[((1024 * i) + j)] = 0;\r\n    };\r\n  };\r\n  for (int32_t i = 0; i < 32; i += 1) {\r\n    for (int32_t j = 0; j < 1024; j += 1) {\r\n      for (int32_t k = 0; k < 4; k += 1) {\r\n        cinn_avx256_store(packedB + ((32768 * i) + ((32 * j) + (8 * k))), cinn_avx256_load(B + ((32 * i) + ((1024 * j) + (8 * k)))));\r\n      };\r\n    };\r\n  };\r\n  for (int32_t i_outer = 0; i_outer < 32; i_outer += 1) {\r\n    for (int32_t j_outer = 0; j_outer < 32; j_outer += 1) {\r\n      for (int32_t k0_outer = 0; k0_outer < 256; k0_outer += 1) {\r\n        for (int32_t i_inner = 0; i_inner < 32; i_inner += 1) {\r\n          for (int32_t k0_inner = 0; k0_inner < 4; k0_inner += 1) {\r\n            auto tmp_1 = cinn_avx256_set1(((float)(A[((1024 * i_inner) + ((32768 * i_outer) + ((4 * k0_outer) + k0_inner)))])));\r\n            for (int32_t j_inner = 0; j_inner < 4; j_inner += 1) {\r\n              cinn_avx256_store(C + ((1024 * i_inner) + ((32768 * i_outer) + ((8 * j_inner) + (32 * j_outer)))), cinn_avx256_add(cinn_avx256_load(C + ((1024 * i_inner) + ((32768 * i_outer) + ((8 * j_inner) + (32 * j_outer))))), cinn_avx256_mul(tmp_1, cinn_avx256_load(packedB + ((8 * j_inner) + ((32768 * j_outer) + ((32 * k0_inner) + (128 * k0_outer))))))));\r\n            };\r\n          };\r\n        };\r\n      };\r\n    };\r\n  };\r\n  cinn_buffer_free((void*)(0), _C);\r\n  cinn_buffer_free((void*)(0), _packedB);\r\n}\r\n```",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-12-04T07:14:03+00:00",
+        "updated_at": "2020-12-04T07:18:53+00:00",
+        "closed_at": "2020-12-04T07:14:54+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 333
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 277,
+        "title": "kernelgen/intrinsics-enhancement",
+        "body": "Enhance the intrinsic operations used in CodeGens.\r\n\r\nAdd signature and type verification.\r\n\r\nThe remaining operations to refactor:\r\n\r\n- BufferCreate\r\n- IntrinsicCall\r\n- GetAddr\r\n- BufferMalloc\r\n- BufferFree\r\n\r\nAfter the factor, the `intrinsic.h` file will be removed.",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2020-11-03T07:46:24+00:00",
+        "updated_at": "2020-11-03T08:03:31+00:00",
+        "closed_at": "2020-11-03T08:03:31+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 304,
+        "title": "Cuda Source of Conv2d",
+        "body": "```cuda\r\n__global__\r\nvoid fn_conv2d_1_kernel(const float* __restrict__ var_1, const float* __restrict__ conv2d_0__w_0, float* __restrict__ Conv2d_nchw_out)\r\n{\r\n  float* Conv2d_nchw_out__reduce_init = Conv2d_nchw_out;\r\n  if ((blockIdx.x < 2)) {\r\n  {\r\n    if ((threadIdx.x < 480)) {\r\n    {\r\n      for (int32_t j_inner = 0; j_inner < 2; j_inner += 1) {\r\n        for (int32_t k = 0; k < 7; k += 1) {\r\n          for (int32_t a = 0; a < 7; a += 1) {\r\n            Conv2d_nchw_out__reduce_init[((47040 * blockIdx.x) + ((49 * j_inner) + ((7 * k) + ((98 * threadIdx.x) + a))))] = 0;\r\n          };\r\n        };\r\n      };\r\n    }\r\n    };\r\n  }\r\n  };\r\n  if ((blockIdx.x < 2)) {\r\n  {\r\n    if ((threadIdx.x < 480)) {\r\n    {\r\n      for (int32_t j_inner = 0; j_inner < 2; j_inner += 1) {\r\n        for (int32_t k = 0; k < 7; k += 1) {\r\n          for (int32_t a = 0; a < 7; a += 1) {\r\n            for (int32_t fc = 0; fc < 160; fc += 1) {\r\n              for (int32_t fy = 0; fy < 1; fy += 1) {\r\n                Conv2d_nchw_out[((47040 * blockIdx.x) + ((49 * j_inner) + ((7 * k) + ((98 * threadIdx.x) + a))))] = (Conv2d_nchw_out[((47040 * blockIdx.x) + ((49 * j_inner) + ((7 * k) + ((98 * threadIdx.x) + a))))] + (((((((((k * 1) + fy) >= 0) && ((((k * 1) + fy) - 0) < 7)) && (((a * 1) + 0) >= 0)) && ((((a * 1) + 0) - 0) < 7))) ? var_1[((49 * ((((2 * threadIdx.x) + j_inner) / 960) * 160)) + ((7840 * blockIdx.x) + ((49 * fc) + ((7 * fy) + ((7 * k) + a)))))] : 0) * ((((0 == 0) && ((fy % 1) == 0))) ? conv2d_0__w_0[((fy / 1) + ((160 * j_inner) + ((320 * threadIdx.x) + fc)))] : 0)));\r\n              };\r\n            };\r\n          };\r\n        };\r\n      };\r\n    }\r\n    };\r\n  }\r\n  };\r\n}\r\n```",
+        "state": "closed",
+        "user": "haozech",
+        "closed_by": "haozech",
+        "created_at": "2020-12-04T07:28:33+00:00",
+        "updated_at": "2020-12-04T08:02:22+00:00",
+        "closed_at": "2020-12-04T07:29:06+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 287,
+        "title": " debug: codegen llvm will raise error if op's type is integer",
+        "body": "",
+        "state": "closed",
+        "user": "wenming2014",
+        "closed_by": "wenming2014",
+        "created_at": "2020-11-11T03:10:32+00:00",
+        "updated_at": "2021-01-25T07:29:51+00:00",
+        "closed_at": "2021-01-25T07:29:51+00:00",
+        "comments_count": [
+            "wenming2014"
+        ],
+        "labels": [
+            "bug"
+        ]
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 337
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 346
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 344
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 355
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 366
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 359
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 361
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 371
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 412
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 419
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 423
+    },
+    {
+        "error": "'NoneType' object has no attribute 'repository'",
+        "issue_number": 450
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 364,
+        "title": "跟着ReadMe编译失败",
+        "body": "提示如下\r\n```\r\nCMake Warning at cmake/external/pybind11.cmake:19 (find_package):\r\n  By not providing \"FindPython.cmake\" in CMAKE_MODULE_PATH this project has\r\n  asked CMake to find a package configuration file provided by \"Python\", but\r\n  CMake did not find one.\r\n\r\n  Could not find a package configuration file provided by \"Python\" with any\r\n  of the following names:\r\n\r\n    PythonConfig.cmake\r\n    python-config.cmake\r\n\r\n  Add the installation prefix of \"Python\" to CMAKE_PREFIX_PATH or set\r\n  \"Python_DIR\" to a directory containing one of the above files.  If \"Python\"\r\n  provides a separate development package or SDK, be sure it has been\r\n  installed.\r\nCall Stack (most recent call first):\r\n  CMakeLists.txt:52 (include)\r\n\r\n\r\n-- pybind path: /jiangjiajun/CINN/build/thirds/pybind/src/extern_pybind/include\r\n-- third: /jiangjiajun/CINN/build/thirds\r\n-- set LLVM_DIR: /lib/cmake/llvm\r\n-- set MLIR_DIR: /lib/cmake/mlir\r\nCMake Error at cmake/llvm.cmake:8 (find_package):\r\n  Could not find a package configuration file provided by \"MLIR\" with any of\r\n  the following names:\r\n\r\n    MLIRConfig.cmake\r\n    mlir-config.cmake\r\n\r\n  Add the installation prefix of \"MLIR\" to CMAKE_PREFIX_PATH or set\r\n  \"MLIR_DIR\" to a directory containing one of the above files.  If \"MLIR\"\r\n  provides a separate development package or SDK, be sure it has been\r\n  installed.\r\nCall Stack (most recent call first):\r\n  CMakeLists.txt:57 (include)\r\n```",
+        "state": "open",
+        "user": "jiangjiajun",
+        "closed_by": null,
+        "created_at": "2021-03-26T06:24:52+00:00",
+        "updated_at": "2023-07-10T06:33:51+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "haozech",
+            "AIYoungcino"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 428,
+        "title": "support computeAt when forloops' range is consistent",
+        "body": "https://github.com/PaddlePaddle/CINN/pull/429",
+        "state": "open",
+        "user": "wenming2014",
+        "closed_by": null,
+        "created_at": "2021-08-24T12:41:56+00:00",
+        "updated_at": "2021-08-24T12:43:03+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 427,
+        "title": "computeAt and computeAt2 inconsistency",
+        "body": "https://github.com/PaddlePaddle/CINN/pull/417\r\ncomputeAt lowered ir  is different with computeAt2 lowered ir ",
+        "state": "open",
+        "user": "wenming2014",
+        "closed_by": null,
+        "created_at": "2021-08-24T12:33:39+00:00",
+        "updated_at": "2021-08-24T12:33:39+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 470,
+        "title": "benchmark against tvm？",
+        "body": null,
+        "state": "open",
+        "user": "lucasjinreal",
+        "closed_by": null,
+        "created_at": "2021-10-10T05:18:24+00:00",
+        "updated_at": "2021-10-10T05:18:24+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 385,
+        "title": "CINN的图标怎么不规则？",
+        "body": "![infoflow 2021-05-13 11-40-20](https://user-images.githubusercontent.com/5866501/118074363-5250b800-b3e0-11eb-96e5-35fc87faaa41.png)\r\n",
+        "state": "closed",
+        "user": "JustPlay",
+        "closed_by": "haozech",
+        "created_at": "2021-05-13T03:42:16+00:00",
+        "updated_at": "2021-06-03T04:34:12+00:00",
+        "closed_at": "2021-06-03T04:34:12+00:00",
+        "comments_count": [
+            "haozech"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 698,
+        "title": "Will CINN support ONNX model? Thanks",
+        "body": null,
+        "state": "open",
+        "user": "FDInSky",
+        "closed_by": null,
+        "created_at": "2022-03-10T15:19:28+00:00",
+        "updated_at": "2022-03-10T15:19:28+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 583,
+        "title": "Remove unnecessary null pointer checks",
+        "body": "[An extra null pointer check is not needed in functions](https://isocpp.org/wiki/faq/freestore-mgmt#delete-handles-null \"Do I need to check for null before delete p?\") like the following.\r\n- [Buffer::DeallocHost](https://github.com/PaddlePaddle/CINN/blob/85ab4981a38926dc5c1dbf672762cec335d2b857/cinn/runtime/buffer.h#L77 \"Buffer::DeallocHost function\")\r\n- [Shape::Resize](https://github.com/PaddlePaddle/CINN/blob/85ab4981a38926dc5c1dbf672762cec335d2b857/cinn/runtime/buffer.cc#L29 \"Shape::Resize function\")",
+        "state": "open",
+        "user": "elfring",
+        "closed_by": null,
+        "created_at": "2021-11-16T20:21:12+00:00",
+        "updated_at": "2023-01-06T06:51:41+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "luotao1",
+            "enkilee",
+            "elfring",
+            "luotao1"
+        ],
+        "labels": [
+            "good first issue"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 642,
+        "title": "some images NOT issue",
+        "body": "![CINN_infrastructure](https://user-images.githubusercontent.com/328693/145568918-b7b6da14-306e-44d7-beff-fb54680e0e10.png)\r\n",
+        "state": "closed",
+        "user": "Superjomn",
+        "closed_by": "Superjomn",
+        "created_at": "2021-12-10T11:41:45+00:00",
+        "updated_at": "2021-12-10T12:15:14+00:00",
+        "closed_at": "2021-12-10T11:41:51+00:00",
+        "comments_count": [
+            "Superjomn",
+            "Superjomn"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 788,
+        "title": "生成的代码有2个`sync`？",
+        "body": "生成的代码有2个`sync`？\r\n\r\n_Originally posted by @Xreki in https://github.com/PaddlePaddle/CINN/issues/785#issuecomment-1124474261_",
+        "state": "closed",
+        "user": "SunNy820828449",
+        "closed_by": "SunNy820828449",
+        "created_at": "2022-05-12T04:55:51+00:00",
+        "updated_at": "2022-05-12T04:55:57+00:00",
+        "closed_at": "2022-05-12T04:55:57+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 840,
+        "title": "cmake 过程发生错误",
+        "body": "按照 README 中 Installation 所说的，使用了 Docker 镜像 paddlepaddle/paddle:latest-dev-cuda11.2-cudnn8-gcc82，执行 cmake 的过程中发生错误。\r\n\r\n执行的命令是在 `CINN/build` 目录下 `cmake .. -DPY_VERSION=3.9`(我使用的 Python 虚拟环境对应的 python 版本是 3.9)\r\n\r\n报错信息如下\r\n<img width=\"1080\" alt=\"图片\" src=\"https://user-images.githubusercontent.com/16222986/177112903-10580204-883e-4703-9544-6ab2e137efb8.png\">\r\n\r\n按照报错的 CMakeLists.txt 查看，link 的是 python 动态库。\r\n\r\n```cmake\r\nfind_package(PythonInterp ${PY_VERSION} REQUIRED)\r\nfind_package(PythonLibs ${PY_VERSION} REQUIRED)\r\n\r\n\r\ncc_test(test_cost_model SRCS cost_model_test.cc cost_model.cc DEPS pybind gtest_main)\r\n\r\ntarget_link_libraries(test_cost_model ${PYTHON_LIBRARIES})\r\n```\r\n这个 so 是能被找到的。但是仍然出现上述的报错。\r\n请问这改如何解决呢？\r\n\r\n\r\n详细的 CMake 输出文件如下：\r\n\r\n[CMakeOutput.log](https://github.com/PaddlePaddle/CINN/files/9038127/CMakeOutput.log)\r\n[CMakeError.log](https://github.com/PaddlePaddle/CINN/files/9038128/CMakeError.log)\r\n\r\n",
+        "state": "closed",
+        "user": "iclementine",
+        "closed_by": "CtfGo",
+        "created_at": "2022-07-04T08:20:17+00:00",
+        "updated_at": "2022-08-18T05:04:34+00:00",
+        "closed_at": "2022-08-18T02:17:38+00:00",
+        "comments_count": [
+            "iclementine",
+            "iclementine",
+            "iclementine",
+            "gsq7474741",
+            "zhhsplendid",
+            "zhhsplendid",
+            "BiynXu",
+            "BiynXu"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 754,
+        "title": "Compile Failed: cannot find -lpthreads",
+        "body": "- commit id:`57a24429f3a2f06414131b676c5f0d32a33619d1`\r\n- how to reproduce: follow default steps [here](https://github.com/PaddlePaddle/CINN/blob/develop/docs/source/install.md#build-using-docker)\r\n- error log\r\n<img width=\"1553\" alt=\"image\" src=\"https://user-images.githubusercontent.com/67684278/165220097-d57a3ef5-dd98-45bf-adfd-8f103268c637.png\">\r\n",
+        "state": "open",
+        "user": "XBWGC",
+        "closed_by": null,
+        "created_at": "2022-04-26T04:17:31+00:00",
+        "updated_at": "2022-08-18T05:05:56+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "gglin001",
+            "zhhsplendid",
+            "BiynXu"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 950,
+        "title": "SetRandData<int> 返回是否应该针对整数张量进行初始化？",
+        "body": "我在开发gather算子时遇到了一个bug，经过排查发现很有可能是因为SetRandData<int> 的功能跟我认为的功能不太一样。\r\n\r\n源码中将随机到的整数转为浮点数再对浮点张量进行赋值\r\n```cpp\r\nstd::vector<float> random_data(num_ele);\r\n  for (size_t i = 0; i < num_ele; i++) {\r\n    random_data[i] = static_cast<float>(dist(engine));  // All random data\r\n  }\r\n```\r\n在其他类似工具生成随机数的时候通常是用Randint，randn，rand等函数名确定实际生成的随机数分布，数据类型通过额外指定，所以SetRandData函数是否也应该采用类似的写法，比如SetRandint<T>,SetRandn<T>这种，T指定了针对的张量数据类型。\r\n\r\n我感觉这样至少有两点好处\r\n1. 可以对不同分布的随机数指定不同参数，例如randint的最大值和最小值，randn的均质和方差等。\r\n2. 每个函数只需要实现一遍，不需要像现在这种 SetRandData<int>和SetRandData<float> 实现两个函数。\r\n\r\n相关 pr：https://github.com/PaddlePaddle/CINN/pull/897",
+        "state": "closed",
+        "user": "zrr1999",
+        "closed_by": "luotao1",
+        "created_at": "2022-09-18T01:29:53+00:00",
+        "updated_at": "2023-01-03T08:58:28+00:00",
+        "closed_at": "2023-01-03T08:58:28+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 892,
+        "title": "How to use ir::For::Make in Compute？",
+        "body": "我在开发[argmin](https://github.com/PaddlePaddle/community/pull/192)算子时。参考了min等同类算子的实现方法后，发现这些全部都涉及到了更底层的开发，\r\n需要改动的地方非常多，似乎不是本次任务所希望的实现方法。\r\n\r\n开发中遇到的问题核心就是不知道在Compute中如何正确的使用与具体尺寸相关的循环，\r\n若直接使用普通的for循环，对`shape`取值得到的是`Expr(n)`，而使用`for(Expr i = Expr(0); i< shape[aixs]; i++)`不能正确编译程序，\r\n于是考虑使用 ir::For，但是对其的原理不理解，不知道其 Expr类型的返回值的含义，编写如下代码仍然无法获得理想的结果。\r\n\r\n我在对已经实现的所有compute中均未发现类似的可以参考的用法，多数都采用Reduce方法，但是Reduce只支持max/min/sum/mul等，如果要扩展需要修改较多底层的实现，似乎不是本次任务所希望的实现方法，\r\n因此希望可以得到一个在compute中使用与具体尺寸相关的循环的例子参考，或者有一些其他方向上的指导。\r\n\r\n```c++\r\nauto temp_tensor = Compute(\r\n    {shape[real_axis] + 1},\r\n    [=](const std::vector<Expr> &indices) -> Expr { return lang::Identity(Expr(3.402823e+38f)); },\r\n    output_name + \"_temp\");\r\n\r\nauto compute = [=](const std::vector<Expr> &indices) -> Expr {\r\n    std::vector<Expr> cur_indices(indices);\r\n\r\n    if (!keep_dims) {\r\n      cur_indices.insert(cur_indices.begin() + real_axis, Expr(0));\r\n    }\r\n    CHECK_EQ(cur_indices.size(), ndim);\r\n\r\n    Var loop_var(\"k0\", Int(32));\r\n    cur_indices[real_axis] = Expr(loop_var);\r\n    auto value             = in_tensor(cur_indices);\r\n    auto last_value        = temp_tensor(Expr(loop_var) - 1);\r\n\r\n    auto update = ir::GT::Make(value, last_value);\r\n    auto c_v    = ir::Select::Make(update, value, last_value);\r\n    auto c_i    = ir::Select::Make(update, ir::Cast::Make(Float(32), Expr(loop_var)), temp_tensor({Expr(0)}));\r\n\r\n    auto body1 = ir::Store::Make(temp_tensor, c_v, {Expr(loop_var)});\r\n    auto body2 = ir::Store::Make(temp_tensor, c_i, {Expr(0)});\r\n    auto body  = ir::Block::Make({body1, body2});\r\n\r\n    auto forloop = ir::For::Make(\r\n        loop_var, common::make_const(1), shape[real_axis], ir::ForType::Serial, ir::DeviceAPI::Host, body);\r\n    return ir::Cast::Make(Int(32), temp_tensor({Expr(0)}));\r\n  };\r\n\r\n```",
+        "state": "open",
+        "user": "zrr1999",
+        "closed_by": null,
+        "created_at": "2022-08-19T03:24:53+00:00",
+        "updated_at": "2023-01-03T18:31:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "zrr1999",
+            "zhhsplendid",
+            "zrr1999",
+            "zhhsplendid",
+            "zrr1999"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 910,
+        "title": "fatal error:   cinn/backends/_generated1.cu   No such file or directory",
+        "body": "![14641f92024cc85f6a89ddf3c2beea3](https://user-images.githubusercontent.com/31559413/187026137-6c82eb3d-6e13-4949-b702-eebaae033f35.png)\r\n",
+        "state": "open",
+        "user": "OccupyMars2025",
+        "closed_by": null,
+        "created_at": "2022-08-27T10:26:07+00:00",
+        "updated_at": "2023-01-06T03:45:32+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "OccupyMars2025",
+            "thunder95",
+            "zzk0",
+            "thisjiang",
+            "thisjiang"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 1090,
+        "title": "【2022】CINN基础pass开发任务",
+        "body": "Pass开发参考[文档](https://github.com/SunNy820828449/community/blob/cinn_pass_develop/pfcc/call-for-contributions/cinn_pass_develop.md)\r\n\r\n任务清单\r\n| 序号 | 任务名称 | 难度  | 状态 | 作者 | PR |\r\n|:----: |:----:| :----:| :----: | :----: | :----: |\r\n|1| **CSE(公共子表达式消除)** | 难 |   |  |\r\n|2| **DCE(死代码消除)** | 中 |   |  |\r\n\r\n",
+        "state": "closed",
+        "user": "SunNy820828449",
+        "closed_by": "luotao1",
+        "created_at": "2022-11-30T06:37:35+00:00",
+        "updated_at": "2022-12-16T07:34:01+00:00",
+        "closed_at": "2022-12-16T07:34:01+00:00",
+        "comments_count": [
+            "zrr1999",
+            "luotao1"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 1115,
+        "title": "【2022】CINN开发任务跟踪",
+        "body": "避免重复工作，这里登记任务情况，如有进行开发中的同学，请回复你要开发的任务，这里定期更新情况。\r\n### 基础算子开发任务清单 （7 / 7）\r\n[参考文档](https://github.com/PaddlePaddle/community/blob/master/pfcc/call-for-contributions/CINN/CINN_base_operator.md) mentor by @thisjiang \r\n\r\n| 序号 | 任务名称 | 难度  | 状态 | 作者 | PR |\r\n|:----: |:----:| :----:| :----: | :----: | :----: |\r\n|1| reciprocal（取倒数） |简单| **已完成**✅| [enkilee](https://github.com/enkilee) | https://github.com/PaddlePaddle/CINN/pull/1069\r\n|2| cbrt（立方根） |简单| **已完成** ✅| [huangjiyi](https://github.com/huangjiyi) | https://github.com/PaddlePaddle/CINN/pull/1073\r\n|3| logical_right_shift（逻辑右移） |简单| **已完成**✅ | [ccsuzzh](https://github.com/ccsuzzh) | https://github.com/PaddlePaddle/CINN/pull/1083\r\n|4|clz |简单| **已完成**✅ | [zzk0](https://github.com/zzk0) | https://github.com/PaddlePaddle/CINN/pull/1059\r\n|5| popc |简单| **已完成**✅ | [FisherWY](https://github.com/FisherWY) | https://github.com/PaddlePaddle/CINN/pull/1064\r\n|6| atan2 |中等| **已完成**✅ | [zrr1999](https://github.com/zrr1999) | https://github.com/PaddlePaddle/CINN/pull/1058\r\n|7|cholesky |困难| **已完成**✅ | @FisherWY | #1133 \r\n\r\n### 中端pass开发任务清单 （1/1）\r\n[参考文档](https://github.com/PaddlePaddle/community/blob/master/pfcc/call-for-contributions/CINN/cinn_pass_develop.md) mentor by @SunNy820828449 \r\n\r\n| 序号 | 任务名称 | 难度  | 状态 | 作者 | PR |\r\n|:----: |:----:| :----:| :----: | :----: | :----: |\r\n|1| **CSE(公共子表达式消除)** | 难 | **已完成** ✅（2023/02/16）  | @zrr1999  | #1116 #1166\r\n\r\n### 调度原语开发任务清单 （4/4）\r\n[参考文档](https://github.com/PaddlePaddle/community/blob/master/pfcc/call-for-contributions/CINN/CINN_ir_schedule.md) mentor by @CtfGo \r\n\r\n| 序号 | 任务名称 | 难度  | 状态 | 作者 | PR |\r\n|:----: |:----:| :----:| :----: | :----: | :----: |\r\n|1|  Unannotate | 简单 |  已完成（2023/01/03）✅ | @AndPuQing   | #1126  |\r\n|2| GetChildBlocks| 简单 | 已完成（2023/02/02）✅   | @ccsuzzh   | #1157  |\r\n|3| SampleCategorica | 简单 |  已完成（2023/03/31）✅  | @enkilee   | #1169  |\r\n|4| SamplePerfectTile | 中等 |  已完成（2023/01/17）✅ | @AndPuQing    | #1142  |\r\n",
+        "state": "closed",
+        "user": "qlogcn",
+        "closed_by": "luotao1",
+        "created_at": "2022-11-17T06:05:15+00:00",
+        "updated_at": "2023-04-06T07:04:48+00:00",
+        "closed_at": "2023-03-31T03:53:17+00:00",
+        "comments_count": [
+            "qlogcn",
+            "longranger2",
+            "enkilee",
+            "huangjiyi",
+            "ccsuzzh",
+            "zrr1999",
+            "zzk0",
+            "FisherWY",
+            "longranger2",
+            "zzk0",
+            "zrr1999",
+            "FisherWY",
+            "MayYouBeProsperous",
+            "zrr1999",
+            "ccsuzzh",
+            "enkilee",
+            "zrr1999",
+            "AndPuQing",
+            "luotao1"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 1153,
+        "title": "部分算子的参数命名不规范",
+        "body": "在 transpose 等算子中，vector<int> axis 被作为一个传入参数，而在一般情况下，axis应该是一个整数，只表示某一个维度。在Paddle等其他项目中这个参数通常会被命名为perm。\r\n\r\n这个问题在使用时通常不会造成太大的问题，但是在开发pass中有可能遇到一些潜在的BUG，例如在我开发 公共子表达式消除的[PR](https://github.com/PaddlePaddle/CINN/pull/1116\r\n)中，需要开发一个可扩展的接口，这个接口需要根据参数名进行一些预处理，例如需要将负数的axis处理成正数，但是transpose的axis参数混淆了这个过程，现阶段只能增加判断特定算子名的方式来解决这个问题。\r\n\r\n参考文档\r\n1. https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/transpose_cn.html#transpose",
+        "state": "open",
+        "user": "zrr1999",
+        "closed_by": null,
+        "created_at": "2023-01-17T05:48:44+00:00",
+        "updated_at": "2023-01-17T18:30:46+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "zrr1999",
+            "SunNy820828449",
+            "zrr1999"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 1115,
+        "title": "【2022】CINN开发任务跟踪",
+        "body": "避免重复工作，这里登记任务情况，如有进行开发中的同学，请回复你要开发的任务，这里定期更新情况。\r\n### 基础算子开发任务清单 （7 / 7）\r\n[参考文档](https://github.com/PaddlePaddle/community/blob/master/pfcc/call-for-contributions/CINN/CINN_base_operator.md) mentor by @thisjiang \r\n\r\n| 序号 | 任务名称 | 难度  | 状态 | 作者 | PR |\r\n|:----: |:----:| :----:| :----: | :----: | :----: |\r\n|1| reciprocal（取倒数） |简单| **已完成**✅| [enkilee](https://github.com/enkilee) | https://github.com/PaddlePaddle/CINN/pull/1069\r\n|2| cbrt（立方根） |简单| **已完成** ✅| [huangjiyi](https://github.com/huangjiyi) | https://github.com/PaddlePaddle/CINN/pull/1073\r\n|3| logical_right_shift（逻辑右移） |简单| **已完成**✅ | [ccsuzzh](https://github.com/ccsuzzh) | https://github.com/PaddlePaddle/CINN/pull/1083\r\n|4|clz |简单| **已完成**✅ | [zzk0](https://github.com/zzk0) | https://github.com/PaddlePaddle/CINN/pull/1059\r\n|5| popc |简单| **已完成**✅ | [FisherWY](https://github.com/FisherWY) | https://github.com/PaddlePaddle/CINN/pull/1064\r\n|6| atan2 |中等| **已完成**✅ | [zrr1999](https://github.com/zrr1999) | https://github.com/PaddlePaddle/CINN/pull/1058\r\n|7|cholesky |困难| **已完成**✅ | @FisherWY | #1133 \r\n\r\n### 中端pass开发任务清单 （1/1）\r\n[参考文档](https://github.com/PaddlePaddle/community/blob/master/pfcc/call-for-contributions/CINN/cinn_pass_develop.md) mentor by @SunNy820828449 \r\n\r\n| 序号 | 任务名称 | 难度  | 状态 | 作者 | PR |\r\n|:----: |:----:| :----:| :----: | :----: | :----: |\r\n|1| **CSE(公共子表达式消除)** | 难 | **已完成** ✅（2023/02/16）  | @zrr1999  | #1116 #1166\r\n\r\n### 调度原语开发任务清单 （4/4）\r\n[参考文档](https://github.com/PaddlePaddle/community/blob/master/pfcc/call-for-contributions/CINN/CINN_ir_schedule.md) mentor by @CtfGo \r\n\r\n| 序号 | 任务名称 | 难度  | 状态 | 作者 | PR |\r\n|:----: |:----:| :----:| :----: | :----: | :----: |\r\n|1|  Unannotate | 简单 |  已完成（2023/01/03）✅ | @AndPuQing   | #1126  |\r\n|2| GetChildBlocks| 简单 | 已完成（2023/02/02）✅   | @ccsuzzh   | #1157  |\r\n|3| SampleCategorica | 简单 |  已完成（2023/03/31）✅  | @enkilee   | #1169  |\r\n|4| SamplePerfectTile | 中等 |  已完成（2023/01/17）✅ | @AndPuQing    | #1142  |\r\n",
+        "state": "closed",
+        "user": "qlogcn",
+        "closed_by": "luotao1",
+        "created_at": "2022-11-17T06:05:15+00:00",
+        "updated_at": "2023-04-06T07:04:48+00:00",
+        "closed_at": "2023-03-31T03:53:17+00:00",
+        "comments_count": [
+            "qlogcn",
+            "longranger2",
+            "enkilee",
+            "huangjiyi",
+            "ccsuzzh",
+            "zrr1999",
+            "zzk0",
+            "FisherWY",
+            "longranger2",
+            "zzk0",
+            "zrr1999",
+            "FisherWY",
+            "MayYouBeProsperous",
+            "zrr1999",
+            "ccsuzzh",
+            "enkilee",
+            "zrr1999",
+            "AndPuQing",
+            "luotao1"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 1516,
+        "title": "CINN 算子单测问题总结",
+        "body": "# 简介\r\n\r\n在编写了一段时间 CINN 算子单测之后，发现 CINN 存在如下的问题。\r\n\r\n1. External Call 机制（正确性问题、性能问题、数据类型问题）\r\n2. 编译时间过长\r\n3. 报错信息位置\r\n4. 显存暴涨\r\n5. 调度代码冗余\r\n6. LowerVec 返回多于一个 LoweredFunc\r\n\r\n# 问题\r\n\r\n## External Call 机制\r\n\r\n### 正确性问题\r\n\r\n**将指针传递给 External Function，导致了 inline compute 的错误和算子融合的错误。**\r\n\r\n1. inline compute 优化的时候无法感知到指针被 External Function 使用，inline compute 检测 IR 中 Store 和 Load 来判断变量是否被使用，然而指针的使用未被考虑在内，于是 inline 消除了相关指针变量。inline compute 的错误已经由 https://github.com/PaddlePaddle/CINN/pull/1329 解决。\r\n2. 算子融合可以减少数据的搬运开销，例如有两个算子进行融合，第一个算子的计算结果可以在 kernel 里面创建共享内存进行存储，第二个算子则从共享内存读取使用即可。但是，这块共享内存可能作为指针传递给 External Function，在 Compute 函数中不知道这个 Tensor 最后是一个 shared buffer，误以为可以访问 Tensor 所有的元素，进而出现越界访问。算子融合的错误出现在 https://github.com/PaddlePaddle/CINN/pull/1301 中，临时采用了将 scatter_add 标记为 kNonfusible 来解决。因为 scatter_add 这个算子和任何 kInjective 算子进行融合，都会发生越界访问的错误。\r\n3. 生成的 CUDA kernel 中声明了过长的数组，超过了 CUDA kernel stack 的限制，例如 sort 算子排序 >32768 个元素会报错。https://github.com/PaddlePaddle/CINN/pull/1411\r\n\r\n### 性能问题\r\n\r\n**部分生成的 CUDA kernel 只使用了一个 block，几乎是单线程模式。**\r\n\r\n以 sort 算子为例子：https://github.com/PaddlePaddle/CINN/pull/1411\r\n\r\n对于 128 个元素的数组，生成的 CUDA kernel 如下。这种问题并非 External Call 机制所直接造成，kernel 限定使用一个 block 恰恰是 External Call 机制对数据依赖分析正确的结果。算子编写人员在使用 External Call 机制未能意识到最终生成的 kernel 无法充分利用 GPU 特性，算法设计上存在缺陷，调度优化也无能为力。\r\n\r\n```cpp\r\n__global__\r\nvoid __launch_bounds__(1) fn_sort_0_kernel(const int64_t* __restrict__ x, int64_t* __restrict__ var_0)\r\n{\r\n  int32_t _var_0_index_temp_buffer [ 128 ];\r\n  int32_t _var_0_index_temp_temp_buffer [ 128 ];\r\n  int32_t* var_0_index = _var_0_index_temp_buffer;\r\n  int32_t* var_0_index_temp = _var_0_index_temp_temp_buffer;\r\n  for (int32_t i = 0; i < 128; i += 1) {\r\n    var_0_index_temp[i] = cinn_nvgpu_lt_num_int64(x, 128, x[i], 0, 1);\r\n  };\r\n  for (int32_t i = 0; i < 128; i += 1) {\r\n    var_0_index[i] = cinn_nvgpu_next_smallest_int32(var_0_index_temp, 128, i, 0, 1);\r\n  };\r\n  for (int32_t i = 0; i < 128; i += 1) {\r\n    var_0[i] = x[var_0_index[i]];\r\n  };\r\n}\r\n```\r\n\r\n### 数据类型支持不完整\r\n\r\n数据类型支持不完整，相关的修改有很多，这里就简单列举几个：\r\n\r\nhttps://github.com/PaddlePaddle/CINN/pull/1301\r\nhttps://github.com/PaddlePaddle/CINN/pull/1312\r\nhttps://github.com/PaddlePaddle/CINN/pull/1500\r\n\r\n运行过程会抛出以下错误：\r\n\r\n```\r\nF0328 08:07:48.080608 588260 nvrtc_util.cc:107] Check failed: compile_res == NVRTC_SUCCESS (6 vs. 0)\r\ndefault_program(21): error: argument of type \"const double *\" is incompatible with parameter of type \"const float *\"\r\n```\r\n\r\n其修改方法比较简单：\r\n\r\n1. 在 `cinn/runtime/cuda/cinn_cuda_runtime_source.cuh` 编写并实现 kernel\r\n2. 在 `cinn/runtime/cuda/cuda_intrinsics.cc` 注册新的 Extern 函数\r\n3. 如果有 float16 类型，在 `cinn/runtime/cuda/cuda_instrinsics_float16.cc` 注册新的 Extern 函数\r\n\r\n\r\n## 编译时间过长的问题\r\n\r\n**IR 构建过于复杂造成编译时间过程。**\r\n\r\n例如，在 `cinn/hlir/pe/elementwise.h` 中存在下面的代码片段，IR 语法树的复杂度和元素的个数成正比。\r\n\r\n```cpp\r\ntemplate <typename T>\r\nir::Tensor AssignValue(const std::vector<T>& values,\r\n                       const common::Type& type       = common::type_of<T>(),\r\n                       const std::string& output_name = \"T_assign_value_out\") {\r\n  CHECK(!values.empty()) << \"The input of pe::AssignValue should not empty! Please check.\";\r\n\r\n  auto out = lang::Compute(\r\n      {ir::Expr(static_cast<int>(values.size()))},\r\n      [=](const std::vector<ir::Expr>& indice) {\r\n        auto init_value =\r\n            (type == common::type_of<T>()) ? ir::Expr(values[0]) : common::cast(ir::Expr(values[0]), type);\r\n        ir::Expr previous = ir::Select::Make(ir::EQ::Make(indice[0], ir::Expr(0)), init_value, lang::Zero(type));\r\n\r\n        for (int i = 1; i < values.size(); ++i) {\r\n          auto val = (type == common::type_of<T>()) ? ir::Expr(values[i]) : common::cast(ir::Expr(values[i]), type);\r\n          previous = ir::Select::Make(ir::EQ::Make(indice[0], ir::Expr(i)), val, previous);\r\n        }\r\n        return previous;\r\n      },\r\n      output_name);\r\n\r\n  return out;\r\n}\r\n```\r\n\r\n存在这个问题的算子有：\r\n\r\n- constant: https://github.com/PaddlePaddle/CINN/pull/1495\r\n- split: https://github.com/PaddlePaddle/CINN/pull/1453\r\n\r\n\r\n## 报错信息位置\r\n\r\n以 scatter\\_add 算子为例子：https://github.com/PaddlePaddle/CINN/pull/1500\r\n\r\n在编写单测的过程中，由于单测编写人员疏忽，设置错误的 index，超过了合理的范围。报错信息将在 cuda module 里面抛出，未能及时发现是单测本身存在的问题导致数组越界的发生，单测编写人员甚至不知道 `unspecified launch failure` 是什么原因造成的。\r\n\r\n```\r\n# core dumped: cuda_module.cc:118] RAW: The error `CUDA_ERROR_LAUNCH_FAILED` occurs\r\n# while compiling the ptx! And its message is `unspecified launch failure`.\r\n```\r\n\r\n## 调度代码冗余问题\r\n\r\n`cinn/hlir/op/op_util.cc` 提供了常见的调度函数实现方式，在此之前编写的算子存在代码冗余。在 `cinn/hlir/op/contrib` 中翻一翻，可以发现来自社区贡献的代码，重复编写了调度函数代码。\r\n\r\n## LowerVec 返回多于一个 LoweredFunc\r\n\r\n以 scatter 算子为例子：https://github.com/PaddlePaddle/CINN/pull/1500\r\n\r\nscatter 算子的实现中，会调用 `pe::Transpose` 生成一个转置后的张量，如果对多个张量创建 Stage，那么在 `LowerVec` 后将返回两个 `LoweredFunc`，而后续过程只允许一个 `LoweredFunc`。\r\n\r\n**目前对 IRSchedule 的过程理解不够深刻，未能理解其本质。**\r\n\r\n\r\n## 显存暴涨的问题\r\n\r\nhttps://github.com/PaddlePaddle/CINN/pull/1411\r\n\r\n对于 sort 算子，在输入数组的大小大于 32K/64K 的情况下，kernel 中的 temp buffer 将会超过 stack size，抛出 CUDA ERROR。此外，该计算过程分配过多内存，输入数组越大，中间将占用越多显存。\r\n\r\n**该问题的原因不详，需要跟进分析。**\r\n\r\n\r\n# 未来工作\r\n\r\n为了更好进行 CINN 单测，我认为有如下可改进的点：\r\n\r\n1. 显存监控，监控算子实现合理性。对于部分算子，占用过多显存导致 CUDA 显存分配失败，建立相关机制可保障 CI 执行。\r\n2. 超时机制，控制 CINN 算子的编译时长、运行时长在合理的范围内。\r\n3. 单测冗余，当前的单测中存在大量重复代码，比如 shape、dtype，可以编写相关 util 函数，提供建议测试的 shape.\r\n",
+        "state": "open",
+        "user": "zzk0",
+        "closed_by": null,
+        "created_at": "2023-06-09T03:24:28+00:00",
+        "updated_at": "2023-06-09T18:30:50+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 1538,
+        "title": "如何自动调优单算子",
+        "body": "我想基于python前端去自动调优matmul，但是没有找到类似的example，可以给出一个使用示例吗？",
+        "state": "open",
+        "user": "malixian",
+        "closed_by": null,
+        "created_at": "2023-07-10T10:09:17+00:00",
+        "updated_at": "2023-07-10T10:09:17+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 1214,
+        "title": "编译报错 libcinnapi.so",
+        "body": "参考教程：https://paddlepaddle.github.io/CINN/guide.html 和 https://paddlepaddle.github.io/CINN/tutorials/index.html \r\n然后编译并运行demo报错：\r\n`./demo: error while loading shared libraries: libcinnapi.so: cannot open shared object file: No such file or directory`",
+        "state": "closed",
+        "user": "wangqiang9",
+        "closed_by": "wangqiang9",
+        "created_at": "2023-02-18T06:14:15+00:00",
+        "updated_at": "2023-03-02T08:27:54+00:00",
+        "closed_at": "2023-03-02T08:27:54+00:00",
+        "comments_count": [
+            "wangqiang9"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 1321,
+        "title": "PaddleScience cylinder3d_unsteady.py core dumped",
+        "body": "# error log\r\n\r\n```\r\nλ ubuntu /PaddleScience {develop} bash /CINN/workspace/paddle_science/run.sh\r\n/PaddleScience/paddlescience/neo_geometry/mesh.py:26: UserWarning: Refer to README.md and install pymesh before using mesh API in neo_geometry\r\n  \"Refer to README.md and install pymesh before using mesh API in neo_geometry\"\r\n/PaddleScience/paddlescience/neo_geometry/inflation.py:24: UserWarning: Refer to README.md and install open3d and pymesh before using inflation API in neo_geometry\r\n  f\"Refer to README.md and install open3d and pymesh before using inflation API in neo_geometry\"\r\n100% [..........................................................................] 1055986 / 1055986I0331 07:39:51.424743 1017636 interpretercore.cc:282] New Executor is Running.\r\nW0331 07:39:51.426287 1017636 gpu_resources.cc:85] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 11.8, Runtime API Version: 11.2\r\nW0331 07:39:51.429787 1017636 gpu_resources.cc:115] device: 0, cuDNN Version: 8.1.\r\n### train next time=101.000000 train task ###\r\nStatic Graph is Currently in Use.\r\nOptimized AD is Currently in Use\r\nCINN is currently used.\r\n/usr/local/lib/python3.7/dist-packages/paddle/fluid/compiler.py:243: UserWarning: At present, when CINN is turned on, each process can only contain one thread, so reset the number of threads to 1 here.\r\n  \"At present, when CINN is turned on, each process can \"\r\nI0331 07:48:20.028909 1017636 build_cinn_pass.cc:682] --- [build_cinn_pass] detected 97 cinn supported subgraphs\r\nF0331 07:48:23.657730 1017636 elementwise.cc:329] Check failed: !shape.empty() shape attr is empty!\r\n*** Check failure stack trace: ***\r\n    @     0x7f231b4b15ed  google::LogMessage::Fail()\r\n    @     0x7f231b4b389d  google::LogMessage::SendToLog()\r\n    @     0x7f231b4b10dd  google::LogMessage::Flush()\r\n    @     0x7f231b4b4399  google::LogMessageFatal::~LogMessageFatal()\r\n    @     0x7f230fff48fa  cinn::hlir::op::InferShapeForFillConstant()\r\n    @     0x7f230ff233db  std::_Function_handler<>::_M_invoke()\r\n    @     0x7f231004675c  std::function<>::operator()()\r\n    @     0x7f23101326ea  cinn::frontend::NetBuilder::InferShape()\r\n    @     0x7f2310132bbe  cinn::frontend::NetBuilder::CustomInstr()\r\n    @     0x7f2310136ff5  cinn::frontend::NetBuilder::FillConstant()\r\n    @     0x7f2310224720  cinn::frontend::science_mappers::FillConstantOpMapper()\r\n    @     0x7f2310194ad2  std::_Function_handler<>::_M_invoke()\r\n    @     0x7f231eaae44e  paddle::framework::paddle2cinn::CinnGraphSymbolization::RunOp()\r\n    @     0x7f231eab0ab7  paddle::framework::paddle2cinn::CinnGraphSymbolization::RunGraph()\r\n    @     0x7f231eab172b  paddle::framework::paddle2cinn::CinnGraphSymbolization::operator()()\r\n    @     0x7f231e94c164  paddle::framework::paddle2cinn::CinnCompiler::CompileGraph()\r\n    @     0x7f231e94e5ae  paddle::framework::paddle2cinn::CinnCompiler::Compile()\r\n    @     0x7f231d0f2fb0  paddle::operators::CinnLaunchOpKernel<>::Compute()\r\n    @     0x7f231d0f5934  _ZNSt17_Function_handlerIFvRKN6paddle9framework16ExecutionContextEEZNKS1_24OpKernelRegistrarFunctorIN3phi8GPUPlaceELb0ELm0EJNS0_9operators18CinnLaunchOpKernelINS7_10GPUContextEfEEEEclEPKcSF_iEUlS4_E_E9_M_invokeERKSt9_Any_dataS4_\r\n    @     0x7f231eb946c9  paddle::framework::interpreter::BuildOpFuncList()\r\n    @     0x7f231b7e5140  paddle::framework::InterpreterCore::Run()\r\n    @     0x7f231b7f2618  paddle::framework::StandaloneExecutor::Run()\r\n    @     0x7f231b1888a2  _ZZN8pybind1112cpp_function10initializeIZN6paddle6pybindL23pybind11_init_libpaddleERNS_7module_EEUlRNS2_9framework18StandaloneExecutorEPNS6_5ScopeESt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaISH_EESJ_E105_NS_6objectEJS8_SA_SJ_SJ_EJNS_4nameENS_9is_methodENS_7siblingEEEEvOT_PFT0_DpT1_EDpRKT2_ENUlRNS_6detail13function_callEE1_4_FUNES12_\r\n    @     0x7f231af68f33  pybind11::cpp_function::dispatcher()\r\n    @     0x55f7be159c38  _PyObject_FastCallKeywords\r\n    @     0x55f7be1cd63d  _PyEval_EvalFrameDefault\r\n    @     0x55f7be1c7b0e  _PyEval_EvalCodeWithName\r\n    @     0x55f7be15a77a  _PyFunction_FastCallKeywords\r\n    @     0x55f7be1c8c9e  _PyEval_EvalFrameDefault\r\n    @     0x55f7be1c7b0e  _PyEval_EvalCodeWithName\r\n    @     0x55f7be15a77a  _PyFunction_FastCallKeywords\r\n    @     0x55f7be1c986a  _PyEval_EvalFrameDefault\r\n/CINN/workspace/paddle_science/run.sh: line 7: 1017636 Aborted                 (core dumped) python3.7 examples/cylinder/3d_unsteady_discrete/baseline/cylinder3d_unsteady.py -c tests/config/cylinder3d_unsteady.yaml\r\n```\r\n",
+        "state": "closed",
+        "user": "zzk0",
+        "closed_by": "zzk0",
+        "created_at": "2023-03-31T08:07:14+00:00",
+        "updated_at": "2023-06-10T02:21:48+00:00",
+        "closed_at": "2023-06-10T02:21:48+00:00",
+        "comments_count": [
+            "zzk0",
+            "zzk0",
+            "FisherWY",
+            "FisherWY"
+        ],
+        "labels": [
+            "PFCC"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/CINN",
+        "number": 1378,
+        "title": "CINN 算子单测补充-ISSUES",
+        "body": "# 任务描述\r\n大家好，近期我们在从dtype覆盖，shape覆盖，属性覆盖三个方面梳理CINN中的算子单测，并在此过程中修复单测中发现的BUG。我们一共统计了135个CINN算子，发现其中所有的算子单测都或多或少的缺失了一些测试用例，导致没能测试到某个dtype、shape或者属性，甚至有部分算子没有对应的测试文件。为保证和保障CINN算子的正确性，我们希望能尽可能补充完全CINN的算子单测用例。\r\n\r\n# 注意事项\r\n1. 认领规则：直接回复下 issue 下方\r\n2. PR 通过 CI 后，可以评论里或者 review request @thisjiang 或者 @FisherWY  ，研发会进行审核\r\n3. 任务时间：PR 截止提交时间6月26日，截止合入时间6月30日\r\n4. 为减少CI耗时，请按`shape + shape相关attr`、`dtype + dtype相关attr`、`其它attr`将单测拆分为至少三个test class，不要全放在一个test class里\r\n5. 为减少CI耗时，请先在本地测试通过后再提commit\r\n\r\n# 任务要求\r\n\r\n我们希望大家能从如下角度完善CINN中的算子单测：\r\n\r\n1. 维度：覆盖1维到5维常规shape如`[1024], [512, 256], [128, 64, 32], [16, 8, 4, 2], [16, 8, 4, 2, 1]`，以及特殊shape如`[1]`，以及对该算子有特殊含义的shape如reduce算子的`[1, 1, 1, 1, 1]`\r\n2. 类型：至少要覆盖Paddle中对应算子支持的数据类型，如[scale算子](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/scale_cn.html#scale)应至少支持`float32，float64，int8，int16，int32，int64，uint8`\r\n6. 属性：覆盖所有属性的所有合法取值，如bool类型属性`True/False`都应该测试到，及特殊取值，如scale算子的`scale`属性特殊值0和1\r\n7. 广播：覆盖相同维度、不同维度下的广播\r\n8. 耗时：单个算子单测不应超过200s，为减少CI流水线压力，希望能在尽可能保证覆盖率的情况下进行剪枝。\r\n\r\n如若出现报错，请尽可能修复该问题。如若难度很大，请注释该配置，并在注释中加上TODO，同时在PR中加个comment，指明报错的配置和报错内容。\r\n\r\n当前只需关注CUDA单测，跳过x86。\r\n\r\n# 任务示例\r\n\r\n如若之前从未尝试过编译和开发CINN，可通过如下脚本编译CINN：\r\n```\r\ngit clone https://github.com/PaddlePaddle/CINN.git\r\ncd CINN && mkdir build && cd build\r\ncmake .. -DWITH_TESTING=ON -DWITH_CUDA=ON -DWITH_CUDNN=ON -DPY_VERSION=3.7\r\nmake -j10\r\n```\r\n\r\n CINN中算子单测位于[python/tests/ops](https://github.com/PaddlePaddle/CINN/tree/develop/python/tests/ops)目录下，请仿照[test_add_op_new.py](https://github.com/PaddlePaddle/CINN/blob/develop/python/tests/ops/test_add_op_new.py)或[test_scale_op.py](https://github.com/PaddlePaddle/CINN/blob/develop/python/tests/ops/test_scale_op.py)，利用`TestCaseHelper`来完善算子单测。\r\n\r\n可以直接使用`python`命令执行单测脚本，只需将CINN的`build/python`目录加入到`PYTHONPATH`环境变量中即可：\r\n```\r\nexport PYTHONPATH=$(pwd)/build/python:${PYTHONPATH}\r\n```\r\n可以通过`--case=TEST_CLASS1.TEST_CASE1,TEST_CLASS2.TEST_CASE2`这种方式来单独运行某个，或某几个case。\r\n\r\n当测试通过后，可按照[代码贡献流程](https://www.paddlepaddle.org.cn/documentation/docs/zh/dev_guides/code_contributing_path_cn.html)来向CINN贡献代码，建议一个PR只提交一个算子的单测及其修复代码。**提交commit前请一定要先执行`pre-commit`。**\r\n\r\n示例PR：https://github.com/PaddlePaddle/CINN/pull/1379\r\n\r\n为方便review，PR描述请参考示例PR（可直接拷贝）。\r\n```\r\n## 描述\r\n\r\nFrom https://github.com/PaddlePaddle/CINN/issues/1378\r\n\r\n为Reduce类型算子增加新的测试用例\r\n\r\n序号 | 算子名 | 单测文件 | \r\n-- | -- | -- | \r\n57 | reduce_sum | test_reduce_op.py | \r\n58 | reduce_prod | test_reduce_op.py | \r\n59 | reduce_max | test_reduce_op.py | \r\n60 | reduce_min | test_reduce_op.py |  \r\n61 | reduce_all | test_reduce_op.py | \r\n62 | reduce_any | test_reduce_op.py | \r\n\r\n### 算子类型\r\n\r\n- [ ] ElementWise：输入张量索引和输出张量索引之间存在一对一的对应关系\r\n- [ ] Broadcast：输入张量索引和输出张量索引之间存在一对多的对应关系\r\n- [ ] Injective：单射算子，可以将一个输出 axis 映射到一个输入 axis\r\n- [x] Reduction：输入张量索引和输出张量索引之间存在多对一的对应关系\r\n- [ ] OutFusible：复杂算子，仍然可以将一对一的算子融合到其输出中。\r\n- [ ] kNonFusible：无法融合的算子\r\n\r\n### OpMapper\r\n\r\n- [ ] 该算子是否 OpMapper? 如果是，请贴出在 Paddle 中对应的 OpMaker 代码路径。（给出 Github 链接更好）\r\n\r\n## Test Cases Checklist\r\n\r\n### 张量维度\r\n\r\n- [x] 1D 张量\r\n- [x] 2D 张量\r\n- [x] 3D 张量\r\n- [x] 4D 张量\r\n\r\n#### special shape\r\n\r\n挑选 2D/3D/4D 张量中的一个，测试下面的特殊情况。\r\n\r\n- [x] 其中一个维度为 1\r\n- [x] 其中一个维度小于 1024\r\n- [ ] 其中一个维度大于 1024\r\n- [x] 向量的所有维度都是 1\r\n\r\n### 张量数据类型\r\n\r\n- [x] int32\r\n- [x] int64\r\n- [x] float16\r\n- [x] float32\r\n- [x] float64\r\n\r\n### 广播\r\n\r\n- [ ] 这个算子是否支持广播？\r\n- [ ] 广播的测试样例\r\n\r\n### 算子属性\r\n\r\n算子属性的测试用例。\r\n\r\n- [x] 属性：属性类型-可取值\r\n    - [x] `op_type`\r\n    - [x] `axis`\r\n    - [x] `keepdim`\r\n- [x] 使用 OpTestHelper 测试上述属性的笛卡尔积组合\r\n\r\n### 备注\r\n```\r\n\r\n# 待完善算子单测列表 （整体进度：135/135）\r\n> 按 merge 的时间顺序，排名不分先后： @FisherWY (39) @zzk0 (37) @enkilee (12) @zrr1999 (2) @Tomoko-hjf (8) @MayYouBeProsperous (19) @jjyaoao (2) @Liyulingyue (2) @ccsuzzh (1)\r\n> 重复单测+无需添加（13）已认领（122）\r\n\r\n| 序号  |        算子名        |            单测文件            | 认领人 |                       PR                       | \r\n| :---: | :------------------: | :----------------------------: | :----: | :--------------------------------------------: |\r\n|   1   |         add ✅(2023/4/25)         |         test_add_op.py         | @FisherWY  | #1364 | \r\n|   2   |      batch_norm   ✅(2023/6/25)  |     test_batch_norm_op.py      |  @Liyulingyue   | https://github.com/PaddlePaddle/CINN/pull/1503   |\r\n|   3   |   batch_norm_grad   ✅(2023/6/25) |     test_batch_norm_op.py      |  @Liyulingyue   |  https://github.com/PaddlePaddle/CINN/pull/1503 |\r\n|   4   |         ~~add~~           |  test_binary_elemetwise_op.py  |  重复单测  |                            |\r\n|   5   |       ~~subtract~~      |  test_binary_elemetwise_op.py  | 重复单测 |                                             |\r\n|   6   |        ~~divide~~      |  test_binary_elemetwise_op.py  |  重复单测   |                                           |\r\n|   7   |       ~~multiply~~    |  test_binary_elemetwise_op.py  |  重复单测  |                                            |\r\n|   8   |     ~~floor_divide~~   |  test_binary_elemetwise_op.py  | 重复单测  |                                          |\r\n|   9   |         ~~mod~~       |  test_binary_elemetwise_op.py  |  重复单测  |                                              |\r\n|  10   |      remainder  ✅(2023/6/7)   |  test_binary_elemetwise_op.py  | @FisherWY |  https://github.com/PaddlePaddle/CINN/pull/1509  |\r\n|  11   |         ~~max~~      |  test_binary_elemetwise_op.py  |  重复单测  |                                                |\r\n|  12   |         min    ✅(2023/6/25)   |  test_binary_elemetwise_op.py  |   @enkilee  | https://github.com/PaddlePaddle/CINN/pull/1482  |\r\n|  13   |     logical_and  ✅(2023/6/26)  |  test_binary_elemetwise_op.py  | @Tomoko-hjf  |   https://github.com/PaddlePaddle/CINN/pull/1396  |\r\n|  14   |      logical_or  ✅(2023/6/26) |  test_binary_elemetwise_op.py  |  @Tomoko-hjf  |  https://github.com/PaddlePaddle/CINN/pull/1397   |\r\n|  15   |     logical_xor   ✅(2023/6/26)  |  test_binary_elemetwise_op.py  |  @Tomoko-hjf  |  https://github.com/PaddlePaddle/CINN/pull/1398  |\r\n|  16   |     bitwise_and  ✅(2023/5/16) |  test_binary_elemetwise_op.py  | @FisherWY  |   https://github.com/PaddlePaddle/CINN/pull/1404 |\r\n|  17   |      bitwise_or ✅(2023/5/16)|  test_binary_elemetwise_op.py  | @FisherWY  |  https://github.com/PaddlePaddle/CINN/pull/1404  |\r\n|  18   |     bitwise_xor ✅(2023/5/16) |  test_binary_elemetwise_op.py  | @FisherWY |  https://github.com/PaddlePaddle/CINN/pull/1404  |\r\n|  19   |        equal ✅(2023/6/1)   |  test_binary_elemetwise_op.py  | @zzk0  |  https://github.com/PaddlePaddle/CINN/pull/1491 |\r\n|  20   |      not_equal ✅(2023/6/1)  |  test_binary_elemetwise_op.py  |   @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1491  |\r\n|  21   |     greater_than✅(2023/6/1) |  test_binary_elemetwise_op.py  |  @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1491 |\r\n|  22   |      less_than  ✅(2023/6/1) |  test_binary_elemetwise_op.py  |  @zzk0  |  https://github.com/PaddlePaddle/CINN/pull/1491 |\r\n|  23   |    greater_equal  ✅(2023/6/1) |  test_binary_elemetwise_op.py  | @zzk0 |   https://github.com/PaddlePaddle/CINN/pull/1491  |\r\n|  24   |      less_equal ✅(2023/6/1) |  test_binary_elemetwise_op.py  | @zzk0  |   https://github.com/PaddlePaddle/CINN/pull/1491  |\r\n|  25   |        atan2  ✅(2023/6/1) |  test_binary_elemetwise_op.py  |  @FisherWY  |    https://github.com/PaddlePaddle/CINN/pull/1484  |\r\n|  26   |     broadcast_to ✅(2023/5/25) |    test_broadcast_to_op.py     | @enkilee |  #1380  |\r\n|  27   |         cast✅(2023/5/6)          |        test_cast_op.py         | @enkilee  |     #1381  |\r\n|  28   |         cbrt    ✅(2023/6/8)  |        test_cbrt_op.py         |  @zzk0 | https://github.com/PaddlePaddle/CINN/pull/1495   |\r\n|  29   |         ceil    ✅(2023/6/8) |        test_ceil_op.py         |  @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1495   |\r\n|  30   |       cholesky    ✅(2023/6/8)  |      test_cholesky_op.py       |  @zzk0 | https://github.com/PaddlePaddle/CINN/pull/1495 |\r\n|  31   |         clz   ✅(2023/6/5)  |         test_clz_op.py         | @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1498  |\r\n|  32   |        concat    ✅(2023/6/8)  |       test_concat_op.py        | @zzk0 |    https://github.com/PaddlePaddle/CINN/pull/1495     |\r\n|  33   |       constant    ✅(2023/6/8) |      test_constant_op.py       | @zzk0 | https://github.com/PaddlePaddle/CINN/pull/1495 |\r\n|  34   |        conv2d ✅(2023/4/26)  |       test_conv2d_op.py        | @FisherWY |   https://github.com/PaddlePaddle/CINN/pull/1462  |\r\n|  35   |        divide ✅ (2023/5/6) |       test_devide_op.py        |  @enkilee   |   #1383   |\r\n|  36   |     expand_dims✅(2023/5/11)  |      test_expand_dims.py       | @enkilee   |  #1384  |\r\n|  37   |    fill_constant    ✅(2023/6/8) |    test_fill_constant_op.py    | @zzk0  |  https://github.com/PaddlePaddle/CINN/pull/1495    |\r\n|  38   |     floor_divide ✅(2023/5/6)  |    test_floor_divide_op.py     | @enkilee |  #1387 |\r\n|  39   |      gather_nd ✅(2023/5/12) |      test_gather_nd_op.py      | @zrr1999   | https://github.com/PaddlePaddle/CINN/pull/1389   |\r\n|  40   |        gather   ✅(2023/6/1) |       test_gather_op.py        |  @zrr1999 |  https://github.com/PaddlePaddle/CINN/pull/1399   |\r\n|  41   |   gaussian_random   ✅(2023/6/7) |   test_gaussian_random_op.py   | @FisherWY |  https://github.com/PaddlePaddle/CINN/pull/1509  |\r\n|  42   |         gelu  ✅(2023/5/26)   |        test_gelu_op.py         | @jjyaoao |  https://github.com/PaddlePaddle/CINN/pull/1468  |\r\n|  43   |       isclose    ✅(2023/6/12) |       test_isclose_op.py       |  @FisherWY  |    https://github.com/PaddlePaddle/CINN/pull/1513   |\r\n|  44   | logical_right_shift   ✅(2023/6/12) | test_logical_right_shift_op.py |  @FisherWY | https://github.com/PaddlePaddle/CINN/pull/1513  |\r\n|  45   |     lookup_table    ✅(2023/6/12) |    test_lookup_table_op.py     | @FisherWY |  https://github.com/PaddlePaddle/CINN/pull/1513  |\r\n|  46   |        matmul  ✅ (2023/5/15) |       test_matmul_op.py        |  @FisherWY | #1421   |\r\n|  47   |         max    ✅(2023/6/25)  |         test_max_op.py         |  @enkilee |  https://github.com/PaddlePaddle/CINN/pull/1482  |\r\n|  48   |         mod    ✅(2023/6/25)   |         test_mod_op.py         | @enkilee |  https://github.com/PaddlePaddle/CINN/pull/1482 |\r\n|  49   |         mul  ✅(2023/7/5) |         test_mul_op.py         | @FisherWY | https://github.com/PaddlePaddle/Paddle/pull/55135 |\r\n|  50   |       multiply    ✅(2023/6/25)  |      test_multiply_op.py       | @enkilee | https://github.com/PaddlePaddle/CINN/pull/1482  |\r\n|  51   |  ~~norm~~   |        test_norm_op.py         |  无需添加 |                                                |\r\n|  52   |       one_hot  ✅(2023/6/19)  |       test_one_hot_op.py       | @enkilee  |  https://github.com/PaddlePaddle/CINN/pull/1501  |\r\n|  53   |        pool2d ✅(2023/6/5)   |       test_pool2d_op.py        |@FisherWY |  https://github.com/PaddlePaddle/CINN/pull/1471  |\r\n|  54   |         popc  ✅(2023/6/5)  |        test_popc_op.py         |  @zzk0  |   https://github.com/PaddlePaddle/CINN/pull/1498   |\r\n|  55   |         pow    ✅(2023/6/12)  |         test_pow_op.py         |  @FisherWY |  https://github.com/PaddlePaddle/CINN/pull/1513|\r\n|  56   |      reciprocal ✅(2023/5/25) |     test_reciprocal_op.py      |  @jjyaoao  |  https://github.com/PaddlePaddle/CINN/pull/1467   |\r\n|  57   |      reduce_sum ✅(2023/5/9) |       test_reduce_op.py        | @FisherWY |   #1379  | \r\n|  58   |     reduce_prod ✅(2023/5/9)  |       test_reduce_op.py        | @FisherWY |   #1379  | \r\n|  59   |      reduce_max ✅ (2023/5/9) |       test_reduce_op.py        | @FisherWY |   #1379  | \r\n|  60   |      reduce_min ✅ (2023/5/9)|       test_reduce_op.py        | @FisherWY |   #1379  |\r\n|  61   |      reduce_all ✅(2023/5/9)|       test_reduce_op.py        | @FisherWY |   #1379  | \r\n|  62   |      reduce_any ✅(2023/5/9) |       test_reduce_op.py        | @FisherWY |  #1379  |\r\n|  63   |         relu   ✅(2023/6/1)  |        test_relu_op.py         |  @zzk0 |   https://github.com/PaddlePaddle/CINN/pull/1488   |\r\n|  64   |       reshape  ✅(2023/6/1)  |       test_reshape_op.py       | @zzk0 |   https://github.com/PaddlePaddle/CINN/pull/1488  |\r\n|  65   |     scatter_add   ✅(2023/6/5)  |      test_scatter_add.py       | @zzk0   |   https://github.com/PaddlePaddle/CINN/pull/1500   |\r\n|  66   |    scatter_assign ✅(2023/5/6)   |   test_scatter_assign_op.py    |  @zzk0 |  #1390  |\r\n|  67   |        select   ✅(2023/5/9)   |       test_select_op.py        |  @zzk0 |   #1401  |\r\n|  68   |       sigmoid   ✅  (2023/5/9)     |       test_sigmoid_op.py       | @zzk0 |   #1401  |\r\n|  69   |         sign   ✅(2023/5/9)        |        test_sign_op.py         |  @zzk0 |  #1401  |\r\n|  70   |     slice_assign ✅ (2023/5/9)     |    test_slice_assign_op.py     | @zzk0  |   #1401  |\r\n|  71   |        slice  ✅  (2023/5/9)       |        test_slice_op.py        |  @zzk0  |   #1401  |\r\n|  72   |         sort ✅  (2023/5/24)   |        test_sort_op.py         | @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1411  |\r\n|  73   |        split  ✅  (2023/5/24)    |        test_split_op.py        | @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1453  |\r\n|  74   |       squeeze ✅  (2023/5/25)   |       test_squeeze_op.py       | @zzk0 |   https://github.com/PaddlePaddle/CINN/pull/1457  |\r\n|  75   |       subtract ✅  (2023/5/25)  |      test_subtract_op.py       | @zzk0  |  https://github.com/PaddlePaddle/CINN/pull/1457 |\r\n|  76   |         sum ✅  (2023/5/25)  |         test_sum_op.py         |  @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1457  |\r\n|  77   |        top_k  ✅(2023/6/1)   |        test_top_k_op.py        |@zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1472 |\r\n|  78   |      transpose  ✅(2023/6/1)    |      test_transpose_op.py      |  @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1472 |\r\n|  79   |   triangular_solve ✅(2023/6/1)  |  test_triangular_solve_op.py   | @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1472 |\r\n|  80   |         sqrt  ✅  (2023/5/25) |  test_unary_elementwise_op.py  | @MayYouBeProsperous   |  https://github.com/PaddlePaddle/CINN/pull/1448  |\r\n|  81   |         ~~relu~~     |  test_unary_elementwise_op.py  |  重复单测  |                                                |\r\n|  82   |       ~~sigmoid~~   |  test_unary_elementwise_op.py  |  重复单测 |                                            |\r\n|  83   |       identity ✅  (2023/5/25) |  test_unary_elementwise_op.py  |  @MayYouBeProsperous  |  https://github.com/PaddlePaddle/CINN/pull/1473  |\r\n|  84   |         exp   ✅  (2023/5/25)  |  test_unary_elementwise_op.py  | @MayYouBeProsperous  | https://github.com/PaddlePaddle/CINN/pull/1460  |\r\n|  85   |         erf   ✅(2023/6/1)  |  test_unary_elementwise_op.py  | @MayYouBeProsperous  |  https://github.com/PaddlePaddle/CINN/pull/1477  |\r\n|  86   |        rsqrt  ✅(2023/6/1)  |  test_unary_elementwise_op.py  |  @MayYouBeProsperous  |  https://github.com/PaddlePaddle/CINN/pull/1479   |\r\n|  87   |         log  ✅(2023/6/9)  |  test_unary_elementwise_op.py  | @FisherWY   |   https://github.com/PaddlePaddle/CINN/pull/1515  |\r\n|  88   |         log2   ✅(2023/6/9)  |  test_unary_elementwise_op.py  | @FisherWY    |  https://github.com/PaddlePaddle/CINN/pull/1515 |\r\n|  89   |        log10   ✅(2023/6/9) |  test_unary_elementwise_op.py  | @FisherWY  |  https://github.com/PaddlePaddle/CINN/pull/1515  |\r\n|  90   |        floor   ✅(2023/6/7) |  test_unary_elementwise_op.py  |  @MayYouBeProsperous  |  https://github.com/PaddlePaddle/CINN/pull/1511   |\r\n|  91   |         ~~ceil~~    |  test_unary_elementwise_op.py  | 重复单测  |                                                |\r\n|  92   |        round  ✅(2023/6/9) |  test_unary_elementwise_op.py  |  @FisherWY   |  https://github.com/PaddlePaddle/CINN/pull/1515 |\r\n|  93   |        trunc ✅(2023/6/7) |  test_unary_elementwise_op.py  |  @MayYouBeProsperous | https://github.com/PaddlePaddle/CINN/pull/1506  |\r\n|  94   |         sin ✅(2023/5/22)  |  test_unary_elementwise_op.py  |  @MayYouBeProsperous  |  https://github.com/PaddlePaddle/CINN/pull/1426 |\r\n|  95   |         cos ✅(2023/5/22)  |  test_unary_elementwise_op.py  |  @MayYouBeProsperous   |  https://github.com/PaddlePaddle/CINN/pull/1426  |\r\n|  96   |         tan ✅(2023/5/22)  |  test_unary_elementwise_op.py  |  @MayYouBeProsperous    |  https://github.com/PaddlePaddle/CINN/pull/1426 |\r\n|  97   |         sinh ✅(2023/5/22) |  test_unary_elementwise_op.py  |  @MayYouBeProsperous   | https://github.com/PaddlePaddle/CINN/pull/1426  |\r\n|  98   |         cosh ✅(2023/5/22) |  test_unary_elementwise_op.py  |  @MayYouBeProsperous   |  https://github.com/PaddlePaddle/CINN/pull/1426 |\r\n|  99   |         tanh ✅(2023/5/22)  |  test_unary_elementwise_op.py  |  @MayYouBeProsperous   |  https://github.com/PaddlePaddle/CINN/pull/1426 |\r\n|  100  |         asin ✅(2023/5/22) |  test_unary_elementwise_op.py  |  @MayYouBeProsperous   |  https://github.com/PaddlePaddle/CINN/pull/1426  |\r\n|  101  |         acos ✅(2023/5/18)  |  test_unary_elementwise_op.py  |  @Tomoko-hjf  |   https://github.com/PaddlePaddle/CINN/pull/1430  |\r\n|  102  |         atan  ✅  (2023/5/25) |  test_unary_elementwise_op.py  |  @Tomoko-hjf |    https://github.com/PaddlePaddle/CINN/pull/1452 |\r\n|  103  |        asinh  ✅  (2023/5/25) |  test_unary_elementwise_op.py  |  @Tomoko-hjf  |  https://github.com/PaddlePaddle/CINN/pull/1452  |\r\n|  104  |        acosh  ✅  (2023/6/26)  |  test_unary_elementwise_op.py  | @Tomoko-hjf |   https://github.com/PaddlePaddle/CINN/pull/1521  |\r\n|  105  |        atanh  ✅  (2023/5/25) |  test_unary_elementwise_op.py  |  @Tomoko-hjf |  https://github.com/PaddlePaddle/CINN/pull/1452 |\r\n|  106  |     logical_not   ✅  (2023/6/26) |  test_unary_elementwise_op.py  | @ccsuzzh  |  https://github.com/PaddlePaddle/CINN/pull/1534 |\r\n|  107  |     bitwise_not ✅(2023/5/16) |  test_unary_elementwise_op.py  |  @FisherWY   |  https://github.com/PaddlePaddle/CINN/pull/1404  |\r\n|  108  |         ~~sign~~    |  test_unary_elementwise_op.py  |  重复单测   |                                            |\r\n|  109  |         abs  ✅(2023/6/5)    |  test_unary_elementwise_op.py  |  @MayYouBeProsperous   | https://github.com/PaddlePaddle/CINN/pull/1492  |\r\n|  110  |     is_nan/isnan ✅(2023/6/5) |  test_unary_elementwise_op.py  |  @MayYouBeProsperous  |    https://github.com/PaddlePaddle/CINN/pull/1483  |\r\n|  111  |  is_finite/isfinite✅(2023/6/5)  |  test_unary_elementwise_op.py  |  @MayYouBeProsperous   |  https://github.com/PaddlePaddle/CINN/pull/1483  |\r\n|  112  |     is_inf/isinf ✅(2023/6/5)  |  test_unary_elementwise_op.py  |  @MayYouBeProsperous   |  https://github.com/PaddlePaddle/CINN/pull/1483  |\r\n|  113  |       negative   ✅(2023/6/6) |  test_unary_elementwise_op.py  |  @MayYouBeProsperous   |  https://github.com/PaddlePaddle/CINN/pull/1496   |\r\n|  114  |    uniform_random  ✅(2023/6/7) |   test_uniform_random_op.py    |  @FisherWY  |                                    https://github.com/PaddlePaddle/CINN/pull/1509  |\r\n|  116  |        relu6✅(2023/4/25)          |        test_relu6_op.py        | @FisherWY | #1364 | \r\n|  118  |      left_shift ✅(2023/4/25)       |     test_left_shift_op.py      | @FisherWY | #1364 | \r\n|  119  |     right_shift ✅(2023/4/25)      |     test_right_shift_op.py     | @FisherWY | #1364 | \r\n|  120  |        scale  ✅(2023/4/25)        |        test_scale_op.py        | @FisherWY | #1364 | \r\n|  121  |    dropout_infer ✅(2023/4/25)     |    test_dropout_infer_op.py    | @FisherWY | #1364 | \r\n|  122  |         ~~clip~~        |              缺失              | 无需添加 |                                                |\r\n|  123  |       scatter  ✅(2023/6/5)  |              缺失              | @zzk0 |  https://github.com/PaddlePaddle/CINN/pull/1500 |\r\n|  124  |      scatter_nd    ✅(2023/6/5) |              缺失              |  @zzk0  |  https://github.com/PaddlePaddle/CINN/pull/1500   |\r\n|  125  |       argsort  ✅(2023/7/4)  |              缺失              |  @FisherWY |    https://github.com/PaddlePaddle/Paddle/pull/54939  |\r\n|  126  |        argmax ✅(2023/7/4) |              缺失              | @FisherWY |   https://github.com/PaddlePaddle/Paddle/pull/54939  |\r\n|  127  |        argmin ✅(2023/7/4)  |              缺失              | @FisherWY |   https://github.com/PaddlePaddle/Paddle/pull/54939  |\r\n|  128  |   depthwise_conv2d   ✅(2023/6/9) |              缺失              |  @FisherWY  | https://github.com/PaddlePaddle/CINN/pull/1515  |\r\n|  129  |     pool2d_grad  ✅(2023/6/5)  |              缺失              | @FisherWY | https://github.com/PaddlePaddle/CINN/pull/1471   |\r\n|  130  |        repeat    ✅(2023/6/12) |              缺失              |  @zzk0  |  https://github.com/PaddlePaddle/CINN/pull/1514  |\r\n|  131  |       softmax ✅(2023/4/26)   |              缺失              | @FisherWY |  https://github.com/PaddlePaddle/CINN/pull/1462  |\r\n|  132  |        arange    ✅(2023/6/12)  |              缺失              |  @zzk0  |  https://github.com/PaddlePaddle/CINN/pull/1514 |\r\n|  133  |       reverse    ✅(2023/6/12) |              缺失              |  @zzk0  | https://github.com/PaddlePaddle/CINN/pull/1514  |\r\n|  134  | elementwise_add_grad  ✅(2023/4/25)  |              缺失              |  @FisherWY |   https://github.com/PaddlePaddle/CINN/pull/1364  |\r\n|  135  |         flip   ✅(2023/6/12)  |              缺失              |   @zzk0  | https://github.com/PaddlePaddle/CINN/pull/1514  |",
+        "state": "closed",
+        "user": "thisjiang",
+        "closed_by": "luotao1",
+        "created_at": "2023-04-27T09:50:22+00:00",
+        "updated_at": "2023-07-05T09:44:28+00:00",
+        "closed_at": "2023-07-03T08:25:22+00:00",
+        "comments_count": [
+            "Liyulingyue",
+            "ccsuzzh",
+            "enkilee",
+            "Fancy-hjyp",
+            "enkilee",
+            "zzk0",
+            "ShiYue-oo",
+            "enkilee",
+            "zrr1999",
+            "zzk0",
+            "Fancy-hjyp",
+            "zrr1999",
+            "zrr1999",
+            "zzk0",
+            "FisherWY",
+            "FisherWY",
+            "MayYouBeProsperous",
+            "zrr1999",
+            "zrr1999",
+            "FisherWY",
+            "Fancy-hjyp",
+            "thisjiang",
+            "MayYouBeProsperous",
+            "MayYouBeProsperous",
+            "jjyaoao",
+            "zzk0",
+            "MayYouBeProsperous",
+            "enkilee",
+            "FisherWY",
+            "zzk0",
+            "zzk0",
+            "zzk0",
+            "zzk0",
+            "zzk0",
+            "zzk0",
+            "MayYouBeProsperous",
+            "FisherWY",
+            "FisherWY",
+            "MayYouBeProsperous",
+            "FisherWY",
+            "luotao1"
+        ],
+        "labels": []
+    }
+]

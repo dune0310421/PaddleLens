@@ -1,0 +1,1446 @@
+[
+    {
+        "repo": "PFCCLab/deepali",
+        "sha": "65c06db462e9936ce7f0eec41b3593eb5ce8abea",
+        "created_at": "2024-11-04 18:29:47 +0800",
+        "author": "co63oc",
+        "committer": "co63oc",
+        "message": "Fix",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 2,
+                "deletions": 2,
+                "changes": 4
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/deepali",
+        "sha": "1cf8969db79356f336ead09e252a357e2c7171c3",
+        "created_at": "2025-01-16 18:02:59 +0800",
+        "author": "HydrogenSulfate",
+        "committer": "HydrogenSulfate",
+        "message": "update-README",
+        "files": [
+            {
+                "filename": "README.md",
+                "status": "modified",
+                "additions": 3,
+                "deletions": 2,
+                "changes": 5
+            }
+        ]
+    },
+    {
+        "repo": "PFCCLab/deepali",
+        "sha": "97adadc1694d2131367c063300fd9a703393f3bf",
+        "created_at": "2024-11-04 18:24:08 +0800",
+        "author": "co63oc",
+        "committer": "co63oc",
+        "message": "Fix",
+        "files": [
+            {
+                "filename": ".clang-format",
+                "status": "added",
+                "additions": 29,
+                "deletions": 0,
+                "changes": 29
+            },
+            {
+                "filename": ".clang_format.hook",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": ".gitignore",
+                "status": "added",
+                "additions": 134,
+                "deletions": 0,
+                "changes": 134
+            },
+            {
+                "filename": ".pre-commit-config.yaml",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "CITATION.cff",
+                "status": "added",
+                "additions": 32,
+                "deletions": 0,
+                "changes": 32
+            },
+            {
+                "filename": "LICENSE",
+                "status": "added",
+                "additions": 201,
+                "deletions": 0,
+                "changes": 201
+            },
+            {
+                "filename": "README.md",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "docs/_citations.bib",
+                "status": "added",
+                "additions": 30,
+                "deletions": 0,
+                "changes": 30
+            },
+            {
+                "filename": "docs/_config.yml",
+                "status": "added",
+                "additions": 86,
+                "deletions": 0,
+                "changes": 86
+            },
+            {
+                "filename": "docs/_images/logo.png",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "docs/_toc.yml",
+                "status": "added",
+                "additions": 50,
+                "deletions": 0,
+                "changes": 50
+            },
+            {
+                "filename": "docs/basics/example-page.md",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "docs/basics/installation.md",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "docs/index.md",
+                "status": "added",
+                "additions": 12,
+                "deletions": 0,
+                "changes": 12
+            },
+            {
+                "filename": "docs/reference/core/domain.md",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "docs/reference/core/flow.md",
+                "status": "added",
+                "additions": 54,
+                "deletions": 0,
+                "changes": 54
+            },
+            {
+                "filename": "docs/reference/core/image.md",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            },
+            {
+                "filename": "docs/reference/core/index.md",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "docs/reference/core/kernels.md",
+                "status": "added",
+                "additions": 11,
+                "deletions": 0,
+                "changes": 11
+            },
+            {
+                "filename": "docs/reference/data/dataset.md",
+                "status": "added",
+                "additions": 27,
+                "deletions": 0,
+                "changes": 27
+            },
+            {
+                "filename": "docs/reference/data/index.md",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "docs/reference/data/sampler.md",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "docs/reference/data/tensor.md",
+                "status": "added",
+                "additions": 31,
+                "deletions": 0,
+                "changes": 31
+            },
+            {
+                "filename": "docs/reference/data/transforms.md",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "docs/reference/losses/index.md",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "docs/reference/modules/index.md",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "docs/reference/networks/index.md",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "docs/reference/spatial/common.md",
+                "status": "added",
+                "additions": 71,
+                "deletions": 0,
+                "changes": 71
+            },
+            {
+                "filename": "docs/reference/spatial/composite.md",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "docs/reference/spatial/index.md",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "docs/reference/spatial/transformer.md",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "docs/reference/utils/index.md",
+                "status": "added",
+                "additions": 39,
+                "deletions": 0,
+                "changes": 39
+            },
+            {
+                "filename": "docs/tutorials/.gitignore",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "docs/tutorials/example-myst-notebook.md",
+                "status": "added",
+                "additions": 54,
+                "deletions": 0,
+                "changes": 54
+            },
+            {
+                "filename": "docs/tutorials/example-notebook.ipynb",
+                "status": "added",
+                "additions": 121,
+                "deletions": 0,
+                "changes": 121
+            },
+            {
+                "filename": "docs/tutorials/pairwise-registration-intro.ipynb",
+                "status": "added",
+                "additions": 966,
+                "deletions": 0,
+                "changes": 966
+            },
+            {
+                "filename": "examples/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/ffd/README.md",
+                "status": "added",
+                "additions": 25,
+                "deletions": 0,
+                "changes": 25
+            },
+            {
+                "filename": "examples/ffd/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "examples/ffd/__main__.py",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "examples/ffd/engine.py",
+                "status": "added",
+                "additions": 163,
+                "deletions": 0,
+                "changes": 163
+            },
+            {
+                "filename": "examples/ffd/hooks.py",
+                "status": "added",
+                "additions": 70,
+                "deletions": 0,
+                "changes": 70
+            },
+            {
+                "filename": "examples/ffd/losses.py",
+                "status": "added",
+                "additions": 373,
+                "deletions": 0,
+                "changes": 373
+            },
+            {
+                "filename": "examples/ffd/optim.py",
+                "status": "added",
+                "additions": 51,
+                "deletions": 0,
+                "changes": 51
+            },
+            {
+                "filename": "examples/ffd/pairwise.py",
+                "status": "added",
+                "additions": 826,
+                "deletions": 0,
+                "changes": 826
+            },
+            {
+                "filename": "examples/ffd/params.yaml",
+                "status": "added",
+                "additions": 22,
+                "deletions": 0,
+                "changes": 22
+            },
+            {
+                "filename": "examples/ffd/register.py",
+                "status": "added",
+                "additions": 144,
+                "deletions": 0,
+                "changes": 144
+            },
+            {
+                "filename": "examples/istn/README.md",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "examples/istn/models/__init__.py",
+                "status": "added",
+                "additions": 121,
+                "deletions": 0,
+                "changes": 121
+            },
+            {
+                "filename": "examples/istn/models/itn.py",
+                "status": "added",
+                "additions": 79,
+                "deletions": 0,
+                "changes": 79
+            },
+            {
+                "filename": "examples/istn/models/stn.py",
+                "status": "added",
+                "additions": 572,
+                "deletions": 0,
+                "changes": 572
+            },
+            {
+                "filename": "examples/istn/params.yaml",
+                "status": "added",
+                "additions": 78,
+                "deletions": 0,
+                "changes": 78
+            },
+            {
+                "filename": "examples/istn/requirements.txt",
+                "status": "added",
+                "additions": 3,
+                "deletions": 0,
+                "changes": 3
+            },
+            {
+                "filename": "examples/istn/train.py",
+                "status": "added",
+                "additions": 679,
+                "deletions": 0,
+                "changes": 679
+            },
+            {
+                "filename": "pyproject.toml",
+                "status": "added",
+                "additions": 89,
+                "deletions": 0,
+                "changes": 89
+            },
+            {
+                "filename": "src/deepali/core/__init__.py",
+                "status": "added",
+                "additions": 102,
+                "deletions": 0,
+                "changes": 102
+            },
+            {
+                "filename": "src/deepali/core/_kornia.py",
+                "status": "added",
+                "additions": 549,
+                "deletions": 0,
+                "changes": 549
+            },
+            {
+                "filename": "src/deepali/core/affine.py",
+                "status": "added",
+                "additions": 479,
+                "deletions": 0,
+                "changes": 479
+            },
+            {
+                "filename": "src/deepali/core/argparse.py",
+                "status": "added",
+                "additions": 475,
+                "deletions": 0,
+                "changes": 475
+            },
+            {
+                "filename": "src/deepali/core/bspline.py",
+                "status": "added",
+                "additions": 476,
+                "deletions": 0,
+                "changes": 476
+            },
+            {
+                "filename": "src/deepali/core/collections.py",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "src/deepali/core/config.py",
+                "status": "added",
+                "additions": 214,
+                "deletions": 0,
+                "changes": 214
+            },
+            {
+                "filename": "src/deepali/core/cube.py",
+                "status": "added",
+                "additions": 605,
+                "deletions": 0,
+                "changes": 605
+            },
+            {
+                "filename": "src/deepali/core/enum.py",
+                "status": "added",
+                "additions": 535,
+                "deletions": 0,
+                "changes": 535
+            },
+            {
+                "filename": "src/deepali/core/environ.py",
+                "status": "added",
+                "additions": 66,
+                "deletions": 0,
+                "changes": 66
+            },
+            {
+                "filename": "src/deepali/core/flow.py",
+                "status": "added",
+                "additions": 1009,
+                "deletions": 0,
+                "changes": 1009
+            },
+            {
+                "filename": "src/deepali/core/functional.py",
+                "status": "added",
+                "additions": 246,
+                "deletions": 0,
+                "changes": 246
+            },
+            {
+                "filename": "src/deepali/core/grid.py",
+                "status": "added",
+                "additions": 1690,
+                "deletions": 0,
+                "changes": 1690
+            },
+            {
+                "filename": "src/deepali/core/image.py",
+                "status": "added",
+                "additions": 2087,
+                "deletions": 0,
+                "changes": 2087
+            },
+            {
+                "filename": "src/deepali/core/itertools.py",
+                "status": "added",
+                "additions": 61,
+                "deletions": 0,
+                "changes": 61
+            },
+            {
+                "filename": "src/deepali/core/kernels.py",
+                "status": "added",
+                "additions": 335,
+                "deletions": 0,
+                "changes": 335
+            },
+            {
+                "filename": "src/deepali/core/linalg.py",
+                "status": "added",
+                "additions": 486,
+                "deletions": 0,
+                "changes": 486
+            },
+            {
+                "filename": "src/deepali/core/logging.py",
+                "status": "added",
+                "additions": 103,
+                "deletions": 0,
+                "changes": 103
+            },
+            {
+                "filename": "src/deepali/core/math.py",
+                "status": "added",
+                "additions": 95,
+                "deletions": 0,
+                "changes": 95
+            },
+            {
+                "filename": "src/deepali/core/nnutils.py",
+                "status": "added",
+                "additions": 435,
+                "deletions": 0,
+                "changes": 435
+            },
+            {
+                "filename": "src/deepali/core/pathlib.py",
+                "status": "added",
+                "additions": 232,
+                "deletions": 0,
+                "changes": 232
+            },
+            {
+                "filename": "src/deepali/core/pointset.py",
+                "status": "added",
+                "additions": 339,
+                "deletions": 0,
+                "changes": 339
+            },
+            {
+                "filename": "src/deepali/core/psutil.py",
+                "status": "added",
+                "additions": 38,
+                "deletions": 0,
+                "changes": 38
+            },
+            {
+                "filename": "src/deepali/core/random.py",
+                "status": "added",
+                "additions": 152,
+                "deletions": 0,
+                "changes": 152
+            },
+            {
+                "filename": "src/deepali/core/storage.py",
+                "status": "added",
+                "additions": 388,
+                "deletions": 0,
+                "changes": 388
+            },
+            {
+                "filename": "src/deepali/core/tempfile.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "src/deepali/core/tensor.py",
+                "status": "added",
+                "additions": 276,
+                "deletions": 0,
+                "changes": 276
+            },
+            {
+                "filename": "src/deepali/core/typing.py",
+                "status": "added",
+                "additions": 177,
+                "deletions": 0,
+                "changes": 177
+            },
+            {
+                "filename": "src/deepali/data/__init__.py",
+                "status": "added",
+                "additions": 37,
+                "deletions": 0,
+                "changes": 37
+            },
+            {
+                "filename": "src/deepali/data/collate.py",
+                "status": "added",
+                "additions": 111,
+                "deletions": 0,
+                "changes": 111
+            },
+            {
+                "filename": "src/deepali/data/dataset.py",
+                "status": "added",
+                "additions": 496,
+                "deletions": 0,
+                "changes": 496
+            },
+            {
+                "filename": "src/deepali/data/flow.py",
+                "status": "added",
+                "additions": 637,
+                "deletions": 0,
+                "changes": 637
+            },
+            {
+                "filename": "src/deepali/data/image.py",
+                "status": "added",
+                "additions": 1527,
+                "deletions": 0,
+                "changes": 1527
+            },
+            {
+                "filename": "src/deepali/data/partition.py",
+                "status": "added",
+                "additions": 94,
+                "deletions": 0,
+                "changes": 94
+            },
+            {
+                "filename": "src/deepali/data/prepare.py",
+                "status": "added",
+                "additions": 74,
+                "deletions": 0,
+                "changes": 74
+            },
+            {
+                "filename": "src/deepali/data/sample.py",
+                "status": "added",
+                "additions": 55,
+                "deletions": 0,
+                "changes": 55
+            },
+            {
+                "filename": "src/deepali/data/sampler.py",
+                "status": "added",
+                "additions": 130,
+                "deletions": 0,
+                "changes": 130
+            },
+            {
+                "filename": "src/deepali/data/tensor.py",
+                "status": "added",
+                "additions": 92,
+                "deletions": 0,
+                "changes": 92
+            },
+            {
+                "filename": "src/deepali/data/transforms/__init__.py",
+                "status": "added",
+                "additions": 55,
+                "deletions": 0,
+                "changes": 55
+            },
+            {
+                "filename": "src/deepali/data/transforms/image.py",
+                "status": "added",
+                "additions": 485,
+                "deletions": 0,
+                "changes": 485
+            },
+            {
+                "filename": "src/deepali/data/transforms/item.py",
+                "status": "added",
+                "additions": 252,
+                "deletions": 0,
+                "changes": 252
+            },
+            {
+                "filename": "src/deepali/losses/__init__.py",
+                "status": "added",
+                "additions": 181,
+                "deletions": 0,
+                "changes": 181
+            },
+            {
+                "filename": "src/deepali/losses/base.py",
+                "status": "added",
+                "additions": 209,
+                "deletions": 0,
+                "changes": 209
+            },
+            {
+                "filename": "src/deepali/losses/bspline.py",
+                "status": "added",
+                "additions": 16,
+                "deletions": 0,
+                "changes": 16
+            },
+            {
+                "filename": "src/deepali/losses/flow.py",
+                "status": "added",
+                "additions": 245,
+                "deletions": 0,
+                "changes": 245
+            },
+            {
+                "filename": "src/deepali/losses/functional.py",
+                "status": "added",
+                "additions": 1781,
+                "deletions": 0,
+                "changes": 1781
+            },
+            {
+                "filename": "src/deepali/losses/image.py",
+                "status": "added",
+                "additions": 406,
+                "deletions": 0,
+                "changes": 406
+            },
+            {
+                "filename": "src/deepali/losses/params.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "src/deepali/losses/pointset.py",
+                "status": "added",
+                "additions": 82,
+                "deletions": 0,
+                "changes": 82
+            },
+            {
+                "filename": "src/deepali/modules/__init__.py",
+                "status": "added",
+                "additions": 51,
+                "deletions": 0,
+                "changes": 51
+            },
+            {
+                "filename": "src/deepali/modules/basic.py",
+                "status": "added",
+                "additions": 144,
+                "deletions": 0,
+                "changes": 144
+            },
+            {
+                "filename": "src/deepali/modules/flow.py",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            },
+            {
+                "filename": "src/deepali/modules/image.py",
+                "status": "added",
+                "additions": 119,
+                "deletions": 0,
+                "changes": 119
+            },
+            {
+                "filename": "src/deepali/modules/lambd.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "src/deepali/modules/mixins.py",
+                "status": "added",
+                "additions": 79,
+                "deletions": 0,
+                "changes": 79
+            },
+            {
+                "filename": "src/deepali/modules/output.py",
+                "status": "added",
+                "additions": 33,
+                "deletions": 0,
+                "changes": 33
+            },
+            {
+                "filename": "src/deepali/modules/sample.py",
+                "status": "added",
+                "additions": 360,
+                "deletions": 0,
+                "changes": 360
+            },
+            {
+                "filename": "src/deepali/modules/utilities.py",
+                "status": "added",
+                "additions": 112,
+                "deletions": 0,
+                "changes": 112
+            },
+            {
+                "filename": "src/deepali/networks/__init__.py",
+                "status": "added",
+                "additions": 13,
+                "deletions": 0,
+                "changes": 13
+            },
+            {
+                "filename": "src/deepali/networks/blocks/__init__.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "src/deepali/networks/blocks/residual.py",
+                "status": "added",
+                "additions": 313,
+                "deletions": 0,
+                "changes": 313
+            },
+            {
+                "filename": "src/deepali/networks/blocks/skip.py",
+                "status": "added",
+                "additions": 130,
+                "deletions": 0,
+                "changes": 130
+            },
+            {
+                "filename": "src/deepali/networks/layers/__init__.py",
+                "status": "added",
+                "additions": 99,
+                "deletions": 0,
+                "changes": 99
+            },
+            {
+                "filename": "src/deepali/networks/layers/acti.py",
+                "status": "added",
+                "additions": 152,
+                "deletions": 0,
+                "changes": 152
+            },
+            {
+                "filename": "src/deepali/networks/layers/conv.py",
+                "status": "added",
+                "additions": 468,
+                "deletions": 0,
+                "changes": 468
+            },
+            {
+                "filename": "src/deepali/networks/layers/join.py",
+                "status": "added",
+                "additions": 73,
+                "deletions": 0,
+                "changes": 73
+            },
+            {
+                "filename": "src/deepali/networks/layers/lambd.py",
+                "status": "added",
+                "additions": 4,
+                "deletions": 0,
+                "changes": 4
+            },
+            {
+                "filename": "src/deepali/networks/layers/linear.py",
+                "status": "added",
+                "additions": 62,
+                "deletions": 0,
+                "changes": 62
+            },
+            {
+                "filename": "src/deepali/networks/layers/norm.py",
+                "status": "added",
+                "additions": 165,
+                "deletions": 0,
+                "changes": 165
+            },
+            {
+                "filename": "src/deepali/networks/layers/pool.py",
+                "status": "added",
+                "additions": 128,
+                "deletions": 0,
+                "changes": 128
+            },
+            {
+                "filename": "src/deepali/networks/layers/upsample.py",
+                "status": "added",
+                "additions": 432,
+                "deletions": 0,
+                "changes": 432
+            },
+            {
+                "filename": "src/deepali/networks/resnet.py",
+                "status": "added",
+                "additions": 461,
+                "deletions": 0,
+                "changes": 461
+            },
+            {
+                "filename": "src/deepali/networks/unet.py",
+                "status": "added",
+                "additions": 1097,
+                "deletions": 0,
+                "changes": 1097
+            },
+            {
+                "filename": "src/deepali/networks/utils.py",
+                "status": "added",
+                "additions": 193,
+                "deletions": 0,
+                "changes": 193
+            },
+            {
+                "filename": "src/deepali/spatial/__init__.py",
+                "status": "added",
+                "additions": 260,
+                "deletions": 0,
+                "changes": 260
+            },
+            {
+                "filename": "src/deepali/spatial/base.py",
+                "status": "added",
+                "additions": 545,
+                "deletions": 0,
+                "changes": 545
+            },
+            {
+                "filename": "src/deepali/spatial/bspline.py",
+                "status": "added",
+                "additions": 299,
+                "deletions": 0,
+                "changes": 299
+            },
+            {
+                "filename": "src/deepali/spatial/composite.py",
+                "status": "added",
+                "additions": 352,
+                "deletions": 0,
+                "changes": 352
+            },
+            {
+                "filename": "src/deepali/spatial/generic.py",
+                "status": "added",
+                "additions": 430,
+                "deletions": 0,
+                "changes": 430
+            },
+            {
+                "filename": "src/deepali/spatial/image.py",
+                "status": "added",
+                "additions": 15,
+                "deletions": 0,
+                "changes": 15
+            },
+            {
+                "filename": "src/deepali/spatial/linear.py",
+                "status": "added",
+                "additions": 794,
+                "deletions": 0,
+                "changes": 794
+            },
+            {
+                "filename": "src/deepali/spatial/nonrigid.py",
+                "status": "added",
+                "additions": 295,
+                "deletions": 0,
+                "changes": 295
+            },
+            {
+                "filename": "src/deepali/spatial/parametric.py",
+                "status": "added",
+                "additions": 383,
+                "deletions": 0,
+                "changes": 383
+            },
+            {
+                "filename": "src/deepali/spatial/transformer.py",
+                "status": "added",
+                "additions": 313,
+                "deletions": 0,
+                "changes": 313
+            },
+            {
+                "filename": "src/deepali/utils/__init__.py",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "src/deepali/utils/aws/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/deepali/utils/aws/s3/__init__.py",
+                "status": "added",
+                "additions": 6,
+                "deletions": 0,
+                "changes": 6
+            },
+            {
+                "filename": "src/deepali/utils/aws/s3/client.py",
+                "status": "added",
+                "additions": 607,
+                "deletions": 0,
+                "changes": 607
+            },
+            {
+                "filename": "src/deepali/utils/aws/s3/config.py",
+                "status": "added",
+                "additions": 35,
+                "deletions": 0,
+                "changes": 35
+            },
+            {
+                "filename": "src/deepali/utils/aws/s3/object.py",
+                "status": "added",
+                "additions": 335,
+                "deletions": 0,
+                "changes": 335
+            },
+            {
+                "filename": "src/deepali/utils/cli/__init__.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "src/deepali/utils/cli/argparse.py",
+                "status": "added",
+                "additions": 338,
+                "deletions": 0,
+                "changes": 338
+            },
+            {
+                "filename": "src/deepali/utils/cli/environ.py",
+                "status": "added",
+                "additions": 43,
+                "deletions": 0,
+                "changes": 43
+            },
+            {
+                "filename": "src/deepali/utils/cli/logging.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "src/deepali/utils/cli/warnings.py",
+                "status": "added",
+                "additions": 10,
+                "deletions": 0,
+                "changes": 10
+            },
+            {
+                "filename": "src/deepali/utils/ignite/__init__.py",
+                "status": "added",
+                "additions": 1,
+                "deletions": 0,
+                "changes": 1
+            },
+            {
+                "filename": "src/deepali/utils/ignite/handlers.py",
+                "status": "added",
+                "additions": 339,
+                "deletions": 0,
+                "changes": 339
+            },
+            {
+                "filename": "src/deepali/utils/ignite/metrics/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "src/deepali/utils/ignite/metrics/average_loss.py",
+                "status": "added",
+                "additions": 54,
+                "deletions": 0,
+                "changes": 54
+            },
+            {
+                "filename": "src/deepali/utils/ignite/metrics/binary_classification.py",
+                "status": "added",
+                "additions": 125,
+                "deletions": 0,
+                "changes": 125
+            },
+            {
+                "filename": "src/deepali/utils/ignite/metrics/multilabel_classification.py",
+                "status": "added",
+                "additions": 93,
+                "deletions": 0,
+                "changes": 93
+            },
+            {
+                "filename": "src/deepali/utils/ignite/output_transforms.py",
+                "status": "added",
+                "additions": 191,
+                "deletions": 0,
+                "changes": 191
+            },
+            {
+                "filename": "src/deepali/utils/ignite/score_functions.py",
+                "status": "added",
+                "additions": 20,
+                "deletions": 0,
+                "changes": 20
+            },
+            {
+                "filename": "src/deepali/utils/imageio/__init__.py",
+                "status": "added",
+                "additions": 59,
+                "deletions": 0,
+                "changes": 59
+            },
+            {
+                "filename": "src/deepali/utils/imageio/meta.py",
+                "status": "added",
+                "additions": 428,
+                "deletions": 0,
+                "changes": 428
+            },
+            {
+                "filename": "src/deepali/utils/imageio/nifti.py",
+                "status": "added",
+                "additions": 120,
+                "deletions": 0,
+                "changes": 120
+            },
+            {
+                "filename": "src/deepali/utils/imageio/sitk.py",
+                "status": "added",
+                "additions": 28,
+                "deletions": 0,
+                "changes": 28
+            },
+            {
+                "filename": "src/deepali/utils/ipython.py",
+                "status": "added",
+                "additions": 14,
+                "deletions": 0,
+                "changes": 14
+            },
+            {
+                "filename": "src/deepali/utils/paddle_aux.py",
+                "status": "added",
+                "additions": 336,
+                "deletions": 0,
+                "changes": 336
+            },
+            {
+                "filename": "src/deepali/utils/simpleitk/__init__.py",
+                "status": "added",
+                "additions": 7,
+                "deletions": 0,
+                "changes": 7
+            },
+            {
+                "filename": "src/deepali/utils/simpleitk/grid.py",
+                "status": "added",
+                "additions": 340,
+                "deletions": 0,
+                "changes": 340
+            },
+            {
+                "filename": "src/deepali/utils/simpleitk/imageio.py",
+                "status": "added",
+                "additions": 23,
+                "deletions": 0,
+                "changes": 23
+            },
+            {
+                "filename": "src/deepali/utils/simpleitk/numpy.py",
+                "status": "added",
+                "additions": 48,
+                "deletions": 0,
+                "changes": 48
+            },
+            {
+                "filename": "src/deepali/utils/simpleitk/paddle.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "src/deepali/utils/simpleitk/sample.py",
+                "status": "added",
+                "additions": 166,
+                "deletions": 0,
+                "changes": 166
+            },
+            {
+                "filename": "src/deepali/utils/tensorboard.py",
+                "status": "added",
+                "additions": 172,
+                "deletions": 0,
+                "changes": 172
+            },
+            {
+                "filename": "src/deepali/utils/vtk/__init__.py",
+                "status": "added",
+                "additions": 17,
+                "deletions": 0,
+                "changes": 17
+            },
+            {
+                "filename": "src/deepali/utils/vtk/idlist.py",
+                "status": "added",
+                "additions": 34,
+                "deletions": 0,
+                "changes": 34
+            },
+            {
+                "filename": "src/deepali/utils/vtk/image.py",
+                "status": "added",
+                "additions": 77,
+                "deletions": 0,
+                "changes": 77
+            },
+            {
+                "filename": "src/deepali/utils/vtk/numpy.py",
+                "status": "added",
+                "additions": 121,
+                "deletions": 0,
+                "changes": 121
+            },
+            {
+                "filename": "src/deepali/utils/vtk/polydataio.py",
+                "status": "added",
+                "additions": 133,
+                "deletions": 0,
+                "changes": 133
+            },
+            {
+                "filename": "src/deepali/utils/vtk/simpleitk.py",
+                "status": "added",
+                "additions": 175,
+                "deletions": 0,
+                "changes": 175
+            },
+            {
+                "filename": "tests/__init__.py",
+                "status": "added",
+                "additions": 0,
+                "deletions": 0,
+                "changes": 0
+            },
+            {
+                "filename": "tests/_test_compose_svfs.py",
+                "status": "added",
+                "additions": 65,
+                "deletions": 0,
+                "changes": 65
+            },
+            {
+                "filename": "tests/_test_core_bspline.py",
+                "status": "added",
+                "additions": 170,
+                "deletions": 0,
+                "changes": 170
+            },
+            {
+                "filename": "tests/_test_core_flow_deriv.py",
+                "status": "added",
+                "additions": 198,
+                "deletions": 0,
+                "changes": 198
+            },
+            {
+                "filename": "tests/_test_core_flow_logv.py",
+                "status": "added",
+                "additions": 74,
+                "deletions": 0,
+                "changes": 74
+            },
+            {
+                "filename": "tests/test_core_bspline.py",
+                "status": "added",
+                "additions": 61,
+                "deletions": 0,
+                "changes": 61
+            },
+            {
+                "filename": "tests/test_core_cube.py",
+                "status": "added",
+                "additions": 91,
+                "deletions": 0,
+                "changes": 91
+            },
+            {
+                "filename": "tests/test_core_enum.py",
+                "status": "added",
+                "additions": 137,
+                "deletions": 0,
+                "changes": 137
+            },
+            {
+                "filename": "tests/test_core_flow_utils.py",
+                "status": "added",
+                "additions": 574,
+                "deletions": 0,
+                "changes": 574
+            },
+            {
+                "filename": "tests/test_core_grid.py",
+                "status": "added",
+                "additions": 122,
+                "deletions": 0,
+                "changes": 122
+            },
+            {
+                "filename": "tests/test_core_image_create.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "tests/test_core_image_utils.py",
+                "status": "added",
+                "additions": 207,
+                "deletions": 0,
+                "changes": 207
+            },
+            {
+                "filename": "tests/test_core_random.py",
+                "status": "added",
+                "additions": 123,
+                "deletions": 0,
+                "changes": 123
+            },
+            {
+                "filename": "tests/test_core_tensor_utils.py",
+                "status": "added",
+                "additions": 81,
+                "deletions": 0,
+                "changes": 81
+            },
+            {
+                "filename": "tests/test_data_flow.py",
+                "status": "added",
+                "additions": 270,
+                "deletions": 0,
+                "changes": 270
+            },
+            {
+                "filename": "tests/test_data_image.py",
+                "status": "added",
+                "additions": 695,
+                "deletions": 0,
+                "changes": 695
+            },
+            {
+                "filename": "tests/test_losses_flow.py",
+                "status": "added",
+                "additions": 24,
+                "deletions": 0,
+                "changes": 24
+            },
+            {
+                "filename": "tests/test_network_blocks.py",
+                "status": "added",
+                "additions": 193,
+                "deletions": 0,
+                "changes": 193
+            },
+            {
+                "filename": "tests/test_network_layers.py",
+                "status": "added",
+                "additions": 348,
+                "deletions": 0,
+                "changes": 348
+            },
+            {
+                "filename": "tests/test_network_resnet.py",
+                "status": "added",
+                "additions": 9,
+                "deletions": 0,
+                "changes": 9
+            },
+            {
+                "filename": "tests/test_network_unet.py",
+                "status": "added",
+                "additions": 111,
+                "deletions": 0,
+                "changes": 111
+            },
+            {
+                "filename": "tests/test_spatial_transformer.py",
+                "status": "added",
+                "additions": 56,
+                "deletions": 0,
+                "changes": 56
+            },
+            {
+                "filename": "tests/test_utils_imageio_meta.py",
+                "status": "added",
+                "additions": 64,
+                "deletions": 0,
+                "changes": 64
+            }
+        ]
+    }
+]

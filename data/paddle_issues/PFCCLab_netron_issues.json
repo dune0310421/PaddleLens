@@ -1,0 +1,58 @@
+[
+    {
+        "repo": "PFCCLab/netron",
+        "number": 2,
+        "title": "[post001] 需求勾兑",
+        "body": "<!-- Please search existing issues to avoid creating duplicates. -->\n<!-- Describe the feature you'd like. -->\n\n1. `0.a_array` 中可以存在空值的情况，如\n\n``` json\n                                    {\n                                        \"AT\":{\n                                            \"#\":\"0.a_array\",\n                                            \"D\":[\n\n                                            ]\n                                        },\n                                        \"N\":\"value\"\n                                    },\n```\n\n2. `\"%\":0` 只显示名称，如\n\n``` json\n                                    {\n                                        \"%\":0\n                                    },\n\n```\n\n3. 将 `_` 结尾的 op，去掉此下划线，从而正确显示图中类型颜色，如 `batch_norm_` 改为 `batch_norm`\n\n问题可以统一放到这个 ISSUE 下面 ～\n\n测试的json文件也可以贴这里 ～\n\n@wanghuancoder @changeyoung98 @luotao1 ",
+        "state": "open",
+        "user": "megemini",
+        "closed_by": null,
+        "created_at": "2024-12-16T12:51:02+00:00",
+        "updated_at": "2024-12-18T12:38:20+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "megemini",
+            "megemini",
+            "megemini"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PFCCLab/netron",
+        "number": 1,
+        "title": "【Hackathon 7th】Netron 原生支持 Paddle PIR 可视化",
+        "body": "本 ISSUE 用于跟踪 Netron 原生支持 Paddle PIR 可视化的相关问题 ～\r\n\r\n关联：https://github.com/PaddlePaddle/community/blob/master/hackathon/hackathon_7th/%E3%80%90Hackathon%207th%E3%80%91FundableProject%E4%BB%BB%E5%8A%A1%E5%90%88%E9%9B%86.md#%E5%85%ABnetron-%E5%8E%9F%E7%94%9F%E6%94%AF%E6%8C%81-paddle-pir-%E5%8F%AF%E8%A7%86%E5%8C%96\r\n\r\n### Update 20241113\r\n\r\n已测试如下模型：\r\n\r\n[for_net.json](https://github.com/user-attachments/files/17727103/for_net.json)\r\n\r\n![image](https://github.com/user-attachments/assets/b98b911a-1dea-435f-9127-4d4767e57c4e)\r\n\r\n图中的 `while` 子图 `block_1`\r\n\r\n![image](https://github.com/user-attachments/assets/5547388c-f30f-4d3e-8527-baab5fead5d6)\r\n\r\n[if_net.json](https://github.com/user-attachments/files/17727128/if_net.json)\r\n\r\n![image](https://github.com/user-attachments/assets/72fe89fa-569f-44cd-8ad0-135e5e5e4d95)\r\n\r\n图中的 `if` 子图 `block_1`\r\n\r\n![image](https://github.com/user-attachments/assets/9ebedb93-7486-4fdd-99b3-d7e5923c312d)\r\n\r\n`if` 子图 `block_2`\r\n\r\n![image](https://github.com/user-attachments/assets/7218e645-0101-4cb0-af9d-c9fc010d3877)\r\n\r\n[model.json](https://github.com/user-attachments/files/17727144/model.json)\r\n\r\n![image](https://github.com/user-attachments/assets/8e3422e5-b321-4504-a08e-822c171132ef)\r\n\r\n[model_pylayer.json](https://github.com/user-attachments/files/17727161/model_pylayer.json)\r\n\r\n![image](https://github.com/user-attachments/assets/8fb9d426-6d69-4f20-9c3b-3548173b5a1f)\r\n\r\n图中的 `pylayer` 子图\r\n\r\n![image](https://github.com/user-attachments/assets/500ac38f-700e-4aab-a440-00aa7e7882b3)\r\n\r\n[while_net.json](https://github.com/user-attachments/files/17727170/while_net.json)\r\n\r\n![image](https://github.com/user-attachments/assets/f81a4acb-11de-4401-8f43-40b0e22dfc80)\r\n\r\n图中的 `while` 子图\r\n\r\n![image](https://github.com/user-attachments/assets/ae12d7d8-a71b-48c6-8c97-326776fda605)\r\n\r\n另外，tensor 边的映射如下\r\n\r\n![image](https://github.com/user-attachments/assets/c2503fb4-1565-42f9-a001-1d345f6f9445)\r\n\r\n---\r\n\r\n目前需要确认的问题：\r\n\r\n1. 子图的显示方案\r\n  \r\n  netron 显示子图的方案如上图所示，是单独开一个窗口。VisualDL 如何显示的，可以在评论区贴一下 ～\r\n\r\n  至少需要覆盖以下几种情况：\r\n\r\n  - 只有一个子图\r\n  - 多个子图\r\n  - 即有 attr 也有子图\r\n  - 子图中还可以有子图\r\n\r\n  不过，具体采用哪种方案，得说服 netron 作者 ... ...\r\n\r\n2. op 和属性的映射\r\n\r\n  目前，save 时会压缩，有一些 op 会用简写，如 `p` ，相应的属性也没有名字，这里暂时以 `idx` 作为 name。\r\n\r\n  可以提供一下需要映射的字段做适配 ～\r\n\r\n3. json 中有一些字段在 netron 中没有合适的映射位值，如 `OA` `DA` ，这里没有做适配。\r\n4. tensor 边在做映射时，只考虑 `t_dtensor` 这一种情况，与 netron 中其他框架保持一致。\r\n5. \"ModuleOp\"\t 是个啥？json 中找不到 ... ...\r\n6. 可以再贴一些需要验证的 json 模型 ～\r\n7. 目前只有 json 模型文件，是否还需要参数文件？\r\n8. 目前 netron 的子图中只能读取一个 graph，但是 json 模型还是用的 `blocks` 的形式，所以，目前的解决方法是只显示region 中第一个 `block` 。\r\n\r\n请各位大佬看看还有啥遗漏或者建议？\r\n\r\np.s. netron 的 repo 好像只有一个 PR 被合入，这个做为潜在风险吧 ... ...\r\n\r\n@luotao1\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+        "state": "closed",
+        "user": "megemini",
+        "closed_by": "megemini",
+        "created_at": "2024-11-13T06:18:22+00:00",
+        "updated_at": "2024-12-16T12:50:55+00:00",
+        "closed_at": "2024-12-16T12:50:55+00:00",
+        "comments_count": [
+            "megemini",
+            "wanghuancoder",
+            "wanghuancoder",
+            "wanghuancoder",
+            "wanghuancoder",
+            "wanghuancoder",
+            "changeyoung98",
+            "changeyoung98",
+            "wanghuancoder",
+            "megemini",
+            "megemini",
+            "megemini",
+            "megemini",
+            "megemini",
+            "megemini",
+            "changeyoung98",
+            "changeyoung98",
+            "changeyoung98",
+            "megemini",
+            "megemini",
+            "wanghuancoder",
+            "wanghuancoder",
+            "megemini"
+        ],
+        "labels": []
+    }
+]

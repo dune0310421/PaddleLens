@@ -1,0 +1,752 @@
+[
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 48,
+        "title": "Add demo examples to show how to use PLSC.",
+        "body": "Add demo examples to show how to use PLSC.",
+        "state": "open",
+        "user": "sandyhouse",
+        "closed_by": null,
+        "created_at": "2020-04-28T10:43:42+00:00",
+        "updated_at": "2020-04-28T10:43:42+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 38,
+        "title": "How to combine an additional loss?",
+        "body": "![image](https://user-images.githubusercontent.com/1552048/75134146-5c719280-5718-11ea-8192-dcbfba85796c.png)\r\n![image](https://user-images.githubusercontent.com/1552048/75134156-65626400-5718-11ea-9459-25ed1afd3094.png)\r\n\r\nHow to combine an additional loss to distributed classify loss?",
+        "state": "open",
+        "user": "gavin1332",
+        "closed_by": null,
+        "created_at": "2020-02-24T07:27:53+00:00",
+        "updated_at": "2020-02-24T11:00:09+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 55,
+        "title": "Add the support for arbitrary input",
+        "body": "Currently, plsc only support input with name \"image\" and \"label\", which cannot cover the common cases. So, we need to add the support for arbitrary input for plsc.",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-05-19T09:34:56+00:00",
+        "updated_at": "2020-07-01T07:49:00+00:00",
+        "closed_at": "2020-07-01T07:49:00+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 44,
+        "title": "Add MegaFace test result",
+        "body": "Missing MegaFace test result",
+        "state": "closed",
+        "user": "gavin1332",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-04-16T02:38:16+00:00",
+        "updated_at": "2020-04-16T06:42:29+00:00",
+        "closed_at": "2020-04-16T06:42:28+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 47,
+        "title": "Add a tutorial on how to use plsc.",
+        "body": "Add a tutorial on how to use plsc from data preparation to evaluation and deployment.\r\nMaybe a new tutorial doc or modify the quick-start doc (https://github.com/PaddlePaddle/PLSC/blob/master/docs/source/md/quick_start.md).",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-04-20T07:23:50+00:00",
+        "updated_at": "2020-07-01T07:53:04+00:00",
+        "closed_at": "2020-07-01T07:53:04+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 53,
+        "title": "Add a picture to show how plsc works",
+        "body": "Add a picture to show how plsc works in README.md",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-05-12T07:17:43+00:00",
+        "updated_at": "2020-07-01T07:50:27+00:00",
+        "closed_at": "2020-07-01T07:50:26+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 51,
+        "title": "error: cannot import program_to_code",
+        "body": "error: cannot import program_to_code",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-05-12T07:03:58+00:00",
+        "updated_at": "2020-05-12T07:05:46+00:00",
+        "closed_at": "2020-05-12T07:05:46+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 46,
+        "title": "PLSC can run but does not print any information during training.",
+        "body": "PLSC can run but does not print any information for training, such as qps and loss.",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-04-16T06:45:11+00:00",
+        "updated_at": "2020-04-17T07:29:57+00:00",
+        "closed_at": "2020-04-17T07:29:57+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 29,
+        "title": "how to make my own dataset for training?",
+        "body": "Could you provide some examples for how to use self-defined dataset for training?",
+        "state": "closed",
+        "user": "guru4elephant",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-01-11T10:54:31+00:00",
+        "updated_at": "2020-01-13T08:48:34+00:00",
+        "closed_at": "2020-01-13T08:48:34+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 57,
+        "title": "Operator \"c_allgather\" has not been registered.",
+        "body": "使用PLSC调用从源码编译的paddlepaddle，出现了如下问题：\r\nOperator \"c_allgather\" has not been registered. 不知该如何解决。\r\n直接使用pip安装的paddlepaddle可以正常运行。之所以自己源码编译paddlepaddle是想深入了解代码，方便日后根据需求做一些定制化开发。\r\n\r\n具体错误信息如下：\r\n\r\n>   File \"train_multi_input.py\", line 66, in <module>\r\n>     train_multi_input()\r\n>   File \"train_multi_input.py\", line 62, in train_multi_input\r\n>     ins.train()\r\n>   File \"PLSC_multi_modelParal_acm/plsc/entry.py\", line 948, in train\r\n>     dist_strategy=strategy,\r\n>   File \"PLSC_multi_modelParal_acm/plsc/entry.py\", line 448, in build_program\r\n>     batch_multi_list=self.train_batch_size_multi\r\n>   File \"PLSC_multi_modelParal_acm/plsc/models/base_model.py\", line 169, in get_output\r\n>     batch_multi_list=batch_multi_list)\r\n>   File \"PLSC_multi_modelParal_acm/plsc/models/dist_algo.py\", line 1244, in distributed_arcface_classify\r\n>     param_attr=param_attr)\r\n>   File \"PLSC_multi_modelParal_acm/plsc/models/dist_algo.py\", line 977, in arcface_classify\r\n>     norm_x, nranks=self.nranks, use_calc_stream=True)\r\n>   File \"python2.7/dist-packages/paddle/fluid/layers/collective.py\", line 128, in _c_allgather\r\n>     'use_calc_stream': use_calc_stream\r\n>   File \"python2.7/dist-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\r\n>     return self.main_program.current_block().append_op(*args, **kwargs)\r\n>   File \"python2.7/dist-packages/paddle/fluid/framework.py\", line 2610, in append_op\r\n>     attrs=kwargs.get(\"attrs\", None))\r\n>   File \"python2.7/dist-packages/paddle/fluid/framework.py\", line 1870, in __init__\r\n>     proto = OpProtoHolder.instance().get_op_proto(type)\r\n>   File \"python2.7/dist-packages/paddle/fluid/framework.py\", line 1751, in get_op_proto\r\n>     raise ValueError(\"Operator \\\"%s\\\" has not been registered.\" % type)\r\n> ValueError: Operator \"c_allgather\" has not been registered\r\n\r\n\r\n\r\n",
+        "state": "closed",
+        "user": "gobigrassland",
+        "closed_by": "gobigrassland",
+        "created_at": "2020-06-15T07:12:06+00:00",
+        "updated_at": "2020-06-15T10:00:32+00:00",
+        "closed_at": "2020-06-15T09:59:07+00:00",
+        "comments_count": [
+            "sandyhouse",
+            "gobigrassland",
+            "gobigrassland",
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 59,
+        "title": "add doc for how to use arbitrary input fields",
+        "body": "add doc for how to use arbitrary input fields",
+        "state": "open",
+        "user": "sandyhouse",
+        "closed_by": null,
+        "created_at": "2020-07-01T07:49:46+00:00",
+        "updated_at": "2020-07-01T07:49:46+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 60,
+        "title": "print program using _to_readable_code()",
+        "body": "",
+        "state": "open",
+        "user": "sandyhouse",
+        "closed_by": null,
+        "created_at": "2020-07-01T07:55:53+00:00",
+        "updated_at": "2020-07-01T07:55:53+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 58,
+        "title": "PLSC多个数据集训练loss问题",
+        "body": "PLSC很好解决大规模分类训练。实际模型训练会使用多个数据集，而且这些数据集存在不同程度id重叠，而清理这些数据集间重叠id也比较麻烦。于是训练时采用多个数据集输入，模型主干网络参数共享，针对各个数据集有各自的分类层。目前PLSC代码中\r\n        shard_logit = loss._get_info('shard_logit‘)\r\n        shard_prob = loss._get_info('shard_prob’)\r\n        shard_label = loss._get_info('shard_label‘)\r\n        shard_dim = loss._get_info('shard_dim’)\r\n大体上通过这块实现大的分类层权重分拆到多个GPU中（这里描述不准确）。\r\n\r\n针对多个分类的连接权重，现在的PLSC代码就不能处理了。我对plsc/model/dist_algo.py中minimize函数进行修改，大概修改为如下形式：\r\n\r\n>    def compute_gradient_multi_branches(self,\r\n>                  loss,\r\n>                  dataset_name,\r\n>                  startup_program=None,\r\n>                  parameter_list=None,\r\n>                  no_grad_set=None,\r\n>                  callbacks=None):\r\n>         assert loss._get_info('shard_logit_{}'.format(dataset_name))\r\n> \r\n>         shard_logit = loss._get_info('shard_logit_{}'.format(dataset_name))\r\n>         shard_prob = loss._get_info('shard_prob_{}'.format(dataset_name))\r\n>         shard_label = loss._get_info('shard_label_{}'.format(dataset_name))\r\n>         shard_dim = loss._get_info('shard_dim_{}'.format(dataset_name))\r\n> \r\n>         op_maker = fluid.core.op_proto_and_checker_maker\r\n>         op_role_key = op_maker.kOpRoleAttrName()\r\n>         op_role_var_key = op_maker.kOpRoleVarAttrName()\r\n>         backward_role = int(op_maker.OpRole.Backward)\r\n>         loss_backward_role = int(op_maker.OpRole.Loss) | int(\r\n>             op_maker.OpRole.Backward)\r\n> \r\n>         # minimize a scalar of reduce_sum to generate the backward network\r\n>         scalar = fluid.layers.reduce_sum(shard_logit)\r\n>         block = loss.block\r\n> if not self._use_fp16:\r\n>             #ret = self._optimizer.minimize(scalar)\r\n>             params_grads = self._optimizer.backward(scalar)\r\n>             print(loss, scalar, dataset_name)\r\n>             # remove the unnecessary ops\r\n>             index = 0\r\n>             \"\"\"\r\n>             for i, op in enumerate(block.ops):\r\n>                 if op.all_attrs()[op_role_key] == loss_backward_role:\r\n>                     index = i\r\n>                     break\r\n>             \"\"\"\r\n>             for i,op in enumerate(block.ops):\r\n>                 print(i, dataset_name, block.ops[i])\r\n\r\n希望能针对不同分支的分类loss分别求梯度，然后再进行各个分支的梯度聚合操作，但是发现不同数据集对应的分支，op就有很大差异。之前我在tensorflow中实现的，只有最后各个分类层参数不一样也不需共享，因此可以对共同的参数梯度比如取一个均值然后再更新。我实验中，以webface和vggface2为例，发现这两个分支对应op差异很大。其中一个比另一个分支多了很多op\r\n\r\n多出的部分op：\r\n\r\n> inputs {\r\n>   parameter: \"X\"\r\n>   arguments: \"prelu_32.w_0@GRAD\"\r\n> }\r\n> outputs {\r\n>   parameter: \"Out\"\r\n>   arguments: \"prelu_32.w_0@GRAD\"\r\n> }\r\n> type: \"c_sync_calc_stream\"\r\n> attrs {\r\n>   name: \"op_device\"\r\n>   type: STRING\r\n>   s: \"\"\r\n> }\r\n> attrs {\r\n>   name: \"op_role\"\r\n>   type: INT\r\n>   i: 1\r\n> }\r\n> attrs {\r\n>   name: \"op_callstack\"\r\n>   type: STRINGS\r\n>   strings: \"\r\n> }\r\n> attrs {\r\n>   name: \"op_namescope\"\r\n>   type: STRING\r\n>   s: \"/\"\r\n> }\r\n> attrs {\r\n>   name: \"op_role_var\"\r\n>   type: STRINGS\r\n> }\r\n> \r\n> \r\n> \r\n> inputs {\r\n>   parameter: \"X\"\r\n>   arguments: \"prelu_24.w_0@GRAD\"\r\n> }\r\n> outputs {\r\n>   parameter: \"Out\"\r\n>   arguments: \"prelu_24.w_0@GRAD\"\r\n> }\r\n> type: \"c_allreduce_sum\"\r\n> attrs {\r\n>   name: \"op_device\"\r\n>   type: STRING\r\n>   s: \"\"\r\n> }\r\n> attrs {\r\n>   name: \"ring_id\"\r\n>   type: INT\r\n>   i: 0\r\n> }\r\n> attrs {\r\n>   name: \"use_calc_stream\"\r\n>   type: BOOLEAN\r\n>   b: false\r\n> }\r\n> attrs {\r\n>   name: \"op_role\"\r\n>   type: INT\r\n>   i: 1\r\n> }\r\n> attrs {\r\n>   name: \"op_role_var\"\r\n>   type: STRINGS\r\n> }\r\n> \r\n\r\n\r\n上面是使用多个数据，针对不同数据集使用不同分类层来联合训练。不过遇到上面问题，希望能给个建议",
+        "state": "closed",
+        "user": "gobigrassland",
+        "closed_by": "gobigrassland",
+        "created_at": "2020-06-16T10:19:59+00:00",
+        "updated_at": "2020-07-24T02:03:53+00:00",
+        "closed_at": "2020-07-24T02:03:53+00:00",
+        "comments_count": [
+            "sandyhouse",
+            "gobigrassland",
+            "sandyhouse",
+            "gobigrassland",
+            "sandyhouse",
+            "gobigrassland",
+            "sandyhouse",
+            "gobigrassland",
+            "sandyhouse",
+            "gobigrassland"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 62,
+        "title": "混合精度训练报错",
+        "body": "![image](https://user-images.githubusercontent.com/6737864/86220700-87805d00-bbb6-11ea-89e7-709b815df337.png)\r\n",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-07-01T08:18:47+00:00",
+        "updated_at": "2020-07-01T08:20:07+00:00",
+        "closed_at": "2020-07-01T08:20:06+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 61,
+        "title": "程序运行报错",
+        "body": "2020-05-22 16:49:30,924-INFO: User manually set optimizer.\r\nTraceback (most recent call last):\r\n  File \"train_fp16.py\", line 346, in <module>\r\n    ins.train()\r\n  File \"/ssd2/wangjian/k8s_debug/plsc-env/python/lib/python2.7/site-packages/plsc/entry.py\", line 907, in train\r\n    dist_strategy=strategy)\r\n  File \"/ssd2/wangjian/k8s_debug/plsc-env/python/lib/python2.7/site-packages/plsc/entry.py\", line 469, in build_program\r\n    dist_optimizer.minimize(loss)\r\n  File \"/ssd2/wangjian/k8s_debug/plsc-env/python/lib/python2.7/site-packages/paddle/fluid/incubate/fleet/collective/__init__.py\", line 420, in minimize\r\n    no_grad_set=no_grad_set)\r\n  File \"/ssd2/wangjian/k8s_debug/plsc-env/python/lib/python2.7/site-packages/plsc/models/dist_algo.py\", line 424, in minimize\r\n    optimize_ops = self._optimizer.apply_gradients(scaled_params_grads)\r\n  File \"/ssd2/wangjian/k8s_debug/plsc-env/python/lib/python2.7/site-packages/paddle/fluid/optimizer.py\", line 705, in apply_gradients\r\n    optimize_ops = self._create_optimization_pass(params_grads)\r\n  File \"/ssd2/wangjian/k8s_debug/plsc-env/python/lib/python2.7/site-packages/paddle/fluid/optimizer.py\", line 535, in _create_optimization_pass\r\n    self._create_global_learning_rate()\r\n  File \"/ssd2/wangjian/k8s_debug/plsc-env/python/lib/python2.7/site-packages/paddle/fluid/optimizer.py\", line 276, in _create_global_learning_rate\r\n    \"learning rate variable is create outside optimizer,\"\r\nTypeError: learning rate variable is create outside optimizer,can not create new learning rate variable for new program",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-07-01T08:12:05+00:00",
+        "updated_at": "2020-07-01T08:13:57+00:00",
+        "closed_at": "2020-07-01T08:13:57+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 65,
+        "title": "我有一个问题，PLSC是按照什么方式切割的？",
+        "body": "我有一个问题，PLSC是按照什么方式切割的？是按照顺序平均分成N份吗？还是随机切割N份？",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-07-01T08:30:11+00:00",
+        "updated_at": "2020-07-01T08:30:41+00:00",
+        "closed_at": "2020-07-01T08:30:41+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 64,
+        "title": "安装PLSC报错",
+        "body": "python2 python setup.py egg_info\" failed with error code 1 in /tmp/pip-build-OM7fxe/Pillow",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-07-01T08:25:25+00:00",
+        "updated_at": "2020-07-01T08:26:59+00:00",
+        "closed_at": "2020-07-01T08:26:58+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 63,
+        "title": "在用dali时，不会对data_iter进行赋值，从而报data_iter没有被赋值的错误",
+        "body": "![image](https://user-images.githubusercontent.com/6737864/86220989-e645d680-bbb6-11ea-9af2-705dfe325bd1.png)\r\n",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-07-01T08:21:45+00:00",
+        "updated_at": "2020-07-01T08:21:57+00:00",
+        "closed_at": "2020-07-01T08:21:56+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 68,
+        "title": "怎么实现自定义loss",
+        "body": "",
+        "state": "open",
+        "user": "sandyhouse",
+        "closed_by": null,
+        "created_at": "2020-07-04T07:59:27+00:00",
+        "updated_at": "2020-07-04T07:59:27+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 67,
+        "title": "运行过程中程序报错",
+        "body": "![image](https://user-images.githubusercontent.com/6737864/86222290-9ec04a00-bbb8-11ea-8878-3ea9e0063aa6.png)\r\n",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-07-01T08:33:52+00:00",
+        "updated_at": "2020-07-01T08:34:09+00:00",
+        "closed_at": "2020-07-01T08:34:09+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 66,
+        "title": "混合精度训练时，每个op的输出是fp16还是fp32呀？还有最后的weight存储是fp16还是fp32？",
+        "body": "如果weight是fp32保存，那下次加载测试，岂不是fp32预测？",
+        "state": "closed",
+        "user": "sandyhouse",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-07-01T08:31:22+00:00",
+        "updated_at": "2020-07-01T08:31:53+00:00",
+        "closed_at": "2020-07-01T08:31:53+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 69,
+        "title": "运行出错",
+        "body": "  File \"/home/yx/anaconda3/lib/python3.7/site-packages/plsc/entry.py\", line 982, in train\r\n    acc5))\r\nTypeError: unsupported format string passed to numpy.ndarray.__format__\r\n有人遇到过吗",
+        "state": "closed",
+        "user": "tianxingyzxq",
+        "closed_by": "sandyhouse",
+        "created_at": "2020-07-14T02:04:38+00:00",
+        "updated_at": "2020-07-20T02:48:31+00:00",
+        "closed_at": "2020-07-20T02:48:31+00:00",
+        "comments_count": [
+            "sandyhouse",
+            "tianxingyzxq",
+            "sandyhouse",
+            "tianxingyzxq",
+            "tianxingyzxq",
+            "sandyhouse",
+            "tianxingyzxq",
+            "tianxingyzxq",
+            "sandyhouse",
+            "tianxingyzxq",
+            "sandyhouse",
+            "sandyhouse",
+            "tianxingyzxq",
+            "tianxingyzxq",
+            "sandyhouse",
+            "tianxingyzxq",
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 79,
+        "title": "PLSC只能使用python2.7？",
+        "body": "",
+        "state": "open",
+        "user": "Brin333",
+        "closed_by": null,
+        "created_at": "2021-04-30T03:40:10+00:00",
+        "updated_at": "2021-04-30T03:40:10+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 74,
+        "title": "多机多卡并行训练，多个节点通信如何配置",
+        "body": "多机多卡并行实验出错，错误日志如下：\r\n\r\n```\r\n  File \"train.py\", line 55, in <module>\r\n    main()\r\n  File \"train.py\", line 51, in main\r\n    ins.train()\r\n  File \"/export/data/PLSC-master/plsc/entry.py\", line 927, in train\r\n    exe.run(self.startup_program)\r\n  File \"/usr/local/lib/python2.7/dist-packages/paddle/fluid/executor.py\", line 783, in run\r\n    six.reraise(*sys.exc_info())\r\n  File \"/usr/local/lib/python2.7/dist-packages/paddle/fluid/executor.py\", line 778, in run\r\n    use_program_cache=use_program_cache)\r\n  File \"/usr/local/lib/python2.7/dist-packages/paddle/fluid/executor.py\", line 831, in _run_impl\r\n    use_program_cache=use_program_cache)\r\n  File \"/usr/local/lib/python2.7/dist-packages/paddle/fluid/executor.py\", line 905, in _run_program\r\n    fetch_var_name)\r\npaddle.fluid.core_avx.EnforceNotMet:\r\n\r\n--------------------------------------------\r\nC++ Call Stacks (More useful to developers):\r\n--------------------------------------------\r\n0   std::string paddle::platform::GetTraceBackString<char const*>(char const*&&, char const*, int)\r\n1   paddle::platform::EnforceNotMet::EnforceNotMet(std::__exception_ptr::exception_ptr, char const*, int)\r\n2   paddle::platform::NCCLCommContext::CreateNCCLComm(ncclUniqueId*, int, int, int, int)\r\n3   paddle::operators::CCommInitOp::RunImpl(paddle::framework::Scope const&, paddle::platform::Place const&) const\r\n4   paddle::framework::OperatorBase::Run(paddle::framework::Scope const&, paddle::platform::Place const&)\r\n5   paddle::framework::Executor::RunPreparedContext(paddle::framework::ExecutorPrepareContext*, paddle::framework::Scope*, bool, bool, bool)\r\n6   paddle::framework::Executor::Run(paddle::framework::ProgramDesc const&, paddle::framework::Scope*, int, bool, bool, std::vector<std::string, std::allocator<std::string> > const&, bool, bool)\r\n\r\n----------------------\r\nError Message Summary:\r\n----------------------\r\nError: An error occurred here. There is no accurate error hint for this error yet. We are continuously in the process of increasing hint for this kind of error check. It would be helpful if you could inform us of how this conversion went by opening a github issue. And we will resolve it with high priority.\r\n  - New issue link: https://github.com/PaddlePaddle/Paddle/issues/new\r\n  - Recommended issue content: all error stack information\r\n  [unhandled system error] at (/paddle/paddle/fluid/platform/collective_helper.cc:67)\r\n  [operator < c_comm_init > error]\r\n```\r\n\r\n\r\n针对这些问题，我做的尝试与分析\r\n（1）出现上述错误的主要原因，是所使用的两台物理机通信端口可能被公司禁用了（具体我也不了解，比如22端口）。但是机器之间通信并没有禁止。经常通过nc命令或者wget命令可以将不同机器间的数据进行传输。\r\n\r\n（2）我进行多机并行实验，一般都是在物理机上分别启动docker容器，然后通过SSH免密方式，让这几台机器可以相互登录。这种方法，在我们的机器上，使用tensorflow和pytorch框架进行多机并行都可以正常运行。但是使用paddle及PLSC就出现了上述问题。\r\n（3）为了验证是否是物理机通信问题，我又在同一台物理机上，新建2个docker容器，然后通过同样的SSH免密方式，让两个容器可以相互登录，然后就代码是可以正常运行的\r\n\r\n所以我基于上述分析，只能得出我们机器间通信存在某些限制，但是我们机器确实也是通的\r\n\r\n请教一下，你们多机是如何通信，如何才能搭建一个分布式训练的集群，能多机多卡训练？\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+        "state": "closed",
+        "user": "gobigrassland",
+        "closed_by": "gobigrassland",
+        "created_at": "2020-09-09T06:33:53+00:00",
+        "updated_at": "2020-09-23T06:11:59+00:00",
+        "closed_at": "2020-09-23T06:11:59+00:00",
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 76,
+        "title": "分类数目变大，尽管可以将参数拆分到各个GPU上，但是各个GPU上的隐层特征allgather也带来显存消耗",
+        "body": "分类数目变大，虽然可以将分类层参数拆分到各个GPU上，但是各个GPU上的隐层特征allgather也带来显存消耗。随着分类层数目变多，虽然可以通过增加GPU数量来保证fc层参数分配到各个GPU上的显存是一个常数，但是隐层特征x，还是会随着GPU数增加而增加。单卡显存有限，这样也限制仅仅通过增加GPU数量来应对分类数量线性增长。这个问题在论文“Partial FC: training 10 million identities on a single machine”提出。",
+        "state": "open",
+        "user": "gobigrassland",
+        "closed_by": null,
+        "created_at": "2020-11-06T04:13:03+00:00",
+        "updated_at": "2021-11-18T10:05:37+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "sandyhouse"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 89,
+        "title": "最新版本的 plsc 对paddle版本的要求有误",
+        "body": "https://github.com/PaddlePaddle/PLSC/blob/bd3f2ee722d692d5e3338ed59502801fa3081ed1/dynamic/classifiers/lsc.py#L119\r\n\r\n用到的 class_center_sample 在 paddle v2.0.2 的分支上是没有的。 \r\n\r\nhttps://github.com/PaddlePaddle/PLSC/blob/bd3f2ee722d692d5e3338ed59502801fa3081ed1/requirement.txt#L1\r\n提到的版本是2.0.2",
+        "state": "open",
+        "user": "jwmneu",
+        "closed_by": null,
+        "created_at": "2021-09-30T04:08:50+00:00",
+        "updated_at": "2021-10-25T08:17:18+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang",
+            "GuoxiaWang",
+            "jwmneu"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 80,
+        "title": "issues of training with dynamic graph",
+        "body": "hi, i want to modify the entry module of PLSC to replace the static graph format by dynamic graph. But i don't know how to assign the gpu device to each process with dynamic graph?, such as official code :\r\n![image](https://user-images.githubusercontent.com/77146304/118452243-8b629280-b728-11eb-86c6-388b86149bbe.png)\r\n\r\nI would appreciate if you can give me some advice!",
+        "state": "open",
+        "user": "Brin333",
+        "closed_by": null,
+        "created_at": "2021-05-17T08:01:05+00:00",
+        "updated_at": "2021-10-15T04:18:32+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang",
+            "GuoxiaWang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 97,
+        "title": "咱这个MobileFace-Paddle的pretrained model哪里可以下载呢？",
+        "body": null,
+        "state": "open",
+        "user": "Ruanlt",
+        "closed_by": null,
+        "created_at": "2021-12-06T13:28:19+00:00",
+        "updated_at": "2022-01-13T15:24:13+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang",
+            "Ruanlt",
+            "Ruanlt",
+            "GuoxiaWang",
+            "Ruanlt",
+            "GuoxiaWang",
+            "Ruanlt"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 106,
+        "title": "PLSC训练得到的模型转paddle和ONNX，同一张图片，二者输出结果不一致问题？",
+        "body": "采用PLSC训练的模型，将其export为paddle模型，采用paddle2onnx生成ONNX模型，采用同一张图片，经过相同操作，模型输出小数点前三位结果是一致的，后面的结果就不同了，不晓得是个啥情况呀？\r\n如下：\r\npaddle：-0.010201 -0.006735 -0.003081 0.029121\r\nonnx：   -0.010158 -0.006712 -0.003114 0.029161\r\n\r\n\r\n",
+        "state": "open",
+        "user": "CHANGErIBE",
+        "closed_by": null,
+        "created_at": "2022-02-22T02:48:30+00:00",
+        "updated_at": "2022-02-22T02:48:30+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 102,
+        "title": "dynamic model export onnx error",
+        "body": "将PLSC的dynamic案例跑完后，将模型进行导出为onnx，然后oepncv440进行onnx模型加载报import error，尝试将输入shape由原来的[None,3,112,112]修改为[1,3,112,112]再进行export onnx 后进行onnx-simplifier，采用opencv加载模型在全连接层报出错误，不晓得是什么原因，特来咨询，谢谢",
+        "state": "closed",
+        "user": "CHANGErIBE",
+        "closed_by": "CHANGErIBE",
+        "created_at": "2022-02-09T02:58:33+00:00",
+        "updated_at": "2022-02-17T01:20:18+00:00",
+        "closed_at": "2022-02-17T01:20:18+00:00",
+        "comments_count": [
+            "CHANGErIBE",
+            "CHANGErIBE",
+            "GuoxiaWang",
+            "GuoxiaWang",
+            "CHANGErIBE",
+            "CHANGErIBE",
+            "GuoxiaWang",
+            "CHANGErIBE"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 98,
+        "title": "预训练模型预测示例图片错误率高达83.33%，请教可能出现问题的地方",
+        "body": "# 概述\r\n\r\n在 Windows 平台和 Linux 平台分别部署了PLSC运行环境，由于按照 README 文件中的安装提示，使用源码编译安装Paddle失败数次，所以后来使用的pip安装的PaddlePaddle-gpu环境(两个平台都是GPU环境)，在下载了预训练模型后，使用测试图片进行预测，结果如图所示：\r\n显然错误率很高，只有Rachel识别正确\r\n>  预训练模型的下载和预测代码的执行均按照README文件指示，除部分文件路径外，未修改任何代码\r\n\r\n![friends2](https://user-images.githubusercontent.com/36251986/147440606-79274e44-d4da-4c78-ba07-dbbbe4d48584.jpg)\r\n\r\n# 环境\r\n1. Windows 10 + Quadro P1000 + Cuda 10.1\r\n2. CentOS 7 64 bit + RTX 2080 Ti + Cuda 10.1\r\n3. PaddlePaddle-gpu 2.2 (两个平台相同)\r\n\r\n# 需要请教的问题\r\n1. 运行平台是否必须是Linux？\r\n2. 示例图片是否是由README文件中所说的预训练模型所预测的？\r\n3. 我这次的图片预测与示例的正确率相差甚远，有可能是哪些环节有问题需要排查？\r\n\r\n请相关开发人员给点提示，谢谢！",
+        "state": "open",
+        "user": "lujx1024",
+        "closed_by": null,
+        "created_at": "2021-12-27T06:45:49+00:00",
+        "updated_at": "2022-01-17T00:47:11+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang",
+            "lujx1024",
+            "GuoxiaWang",
+            "lujx1024"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 104,
+        "title": "MobilefaceNet_128_arcface_dynamic_0.1_fp16_NHWC resume KeyERROR",
+        "body": "昨天训练了MobileFaceNet_128_arcface_dynamic_0.1_NHWC_FP1620220217，Epoch=25的模型，今天想着resume该模型，然后报出\r\nKeyError: 'create_parameter_49.w_0_velocity_0'，训练的其他参数都未改变，仅仅是将resume改为True,\r\ncheckpoint_dir=/media/aiis/project/zw/PLSC-release-2.2/Webclear_arcface_dynamic_0.1_NHWC_FP1620220217/MobileFaceNet_128/24,不晓得是个啥情况？麻烦帮忙查查看",
+        "state": "closed",
+        "user": "CHANGErIBE",
+        "closed_by": "CHANGErIBE",
+        "created_at": "2022-02-18T02:50:19+00:00",
+        "updated_at": "2022-02-21T00:52:43+00:00",
+        "closed_at": "2022-02-21T00:52:43+00:00",
+        "comments_count": [
+            "CHANGErIBE",
+            "GuoxiaWang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 108,
+        "title": "AMP 支持哪些算子",
+        "body": "AMP 支持哪些算子，不支持哪些算子，目前有什么限制？",
+        "state": "open",
+        "user": "zh794390558",
+        "closed_by": null,
+        "created_at": "2022-03-04T02:20:18+00:00",
+        "updated_at": "2022-03-04T02:47:17+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 109,
+        "title": "TypeError: __init__() got an unexpected keyword argument 'data_format'",
+        "body": "https://github.com/PaddlePaddle/PLSC/blob/731eb3f5952f8f56e6d41f6bd4b9d465a63cd582/dynamic/backbones/mobilefacenet.py#L45\r\n\r\n`nn.PReLU`类定义的初始化参数里是没有`data_format`的，但是`mobilefacenet.py`中大量的`nn.PReLU`都有`data_format`参数，在运行时就会报`TypeError: __init__() got an unexpected keyword argument 'data_format'`的错，请问这是什么情况呢？\r\n\r\n谢谢",
+        "state": "closed",
+        "user": "wenhwu",
+        "closed_by": "wenhwu",
+        "created_at": "2022-03-14T09:36:42+00:00",
+        "updated_at": "2022-03-14T12:15:59+00:00",
+        "closed_at": "2022-03-14T12:15:59+00:00",
+        "comments_count": [
+            "GuoxiaWang",
+            "wenhwu"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 110,
+        "title": "输出模型是如何设计的？",
+        "body": "我基于`MS1M_v3_arcface_MobileFaceNet_128_0.1`跑出了模型，输出模型格式如下图：\r\n\r\n![Screenshot_1](https://user-images.githubusercontent.com/58645709/158548831-4693163c-e062-4786-954b-afa0ec7b885d.png)\r\n\r\n![Screenshot_2](https://user-images.githubusercontent.com/58645709/158548841-231f9d39-0fa0-42ac-a5a5-172cf0015864.png)\r\n\r\n请问是不是因为验证时，是三个数据集（类别不一样），所以输出三个模型？\r\n另外请问为什么输出结果是大量的分散文件，而不是类似`FresResNet50.pdiparams`这样的一个文件，或者说可以将以上的分散文件合并吗？\r\n\r\n谢谢！",
+        "state": "closed",
+        "user": "geoexploring",
+        "closed_by": "geoexploring",
+        "created_at": "2022-03-16T08:36:21+00:00",
+        "updated_at": "2022-03-16T09:38:08+00:00",
+        "closed_at": "2022-03-16T09:38:08+00:00",
+        "comments_count": [
+            "GuoxiaWang",
+            "geoexploring",
+            "GuoxiaWang",
+            "geoexploring"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 111,
+        "title": "inference.py推理结果的含义是？",
+        "body": "`inference.py`中的主要函数是：\r\n\r\n```python\r\ndef paddle_inference(args):\r\n    import paddle.inference as paddle_infer\r\n\r\n    config = paddle_infer.Config(args.model_file, args.params_file)\r\n    predictor = paddle_infer.create_predictor(config)\r\n\r\n    input_names = predictor.get_input_names()\r\n    input_handle = predictor.get_input_handle(input_names[0])\r\n\r\n    img = cv2.imread(args.image_path)\r\n    # normalize to mean 0.5, std 0.5\r\n    img = (img - 127.5) * 0.00784313725\r\n    # BGR2RGB\r\n    img = img[:, :, ::-1]\r\n    img = img.transpose((2, 0, 1))\r\n    img = np.expand_dims(img, 0)\r\n    img = img.astype('float32')\r\n\r\n    input_handle.copy_from_cpu(img)\r\n\r\n    predictor.run()\r\n\r\n    output_names = predictor.get_output_names()\r\n    output_handle = predictor.get_output_handle(output_names[0])\r\n    output_data = output_handle.copy_to_cpu()\r\n\r\n    print('paddle inference result: ', output_data.shape)\r\n```\r\n\r\n基于MS1M_v3数据集训练出来的模型，去推理`MS1M_v3\\images\\00000001.jpg`，根据`paddle_inference`函数，推理结果是类似` (1, 128)`的数组，这个数组的含义是什么呢？输出结果不应该是类似单个类别一样的数字吗（比如0或者其他数字）\r\n\r\n谢谢！",
+        "state": "closed",
+        "user": "geoexploring",
+        "closed_by": "geoexploring",
+        "created_at": "2022-03-17T02:01:46+00:00",
+        "updated_at": "2022-03-17T09:42:17+00:00",
+        "closed_at": "2022-03-17T09:42:17+00:00",
+        "comments_count": [
+            "GuoxiaWang",
+            "geoexploring",
+            "GuoxiaWang",
+            "geoexploring",
+            "geoexploring",
+            "GuoxiaWang",
+            "geoexploring",
+            "GuoxiaWang",
+            "geoexploring"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 112,
+        "title": "Lr过小时会导致Loss为nan",
+        "body": "在训练自定义的数据集时，发现`Lr`过小时会导致`Loss`为nan，特别是当`Lr`缩小为原来的十分之一时（比如`0.025`变为`0.0025`，`0.1`变化`0.01`），都会导致`Loss`变化nan，然后导致训练中断，具体的训练日志请见：\r\n\r\n[0.01_training.log](https://github.com/PaddlePaddle/PLSC/files/8338125/0.01_training.log)\r\n[0.1_training.log](https://github.com/PaddlePaddle/PLSC/files/8338126/0.1_training.log)\r\n[0.2_training.log](https://github.com/PaddlePaddle/PLSC/files/8338127/0.2_training.log)\r\n\r\n请问该如何解决呢？\r\n\r\n另外，在验证时：\r\n\r\n- `Loss`在刚开始下降到`15`左右之后，就很难下降；\r\n- 精度指标`XNorm`在飞快下降(比如从`64288.505847`降到`0.017919`)；\r\n- 而精度指标`Accuracy-Highest`一直徘徊在`0.50903`左右；\r\n\r\n我是一个刚入门人脸识别的小白，不确定这是什么情况，还请给出一些建议\r\n\r\n感谢！\r\n",
+        "state": "closed",
+        "user": "geoexploring",
+        "closed_by": "geoexploring",
+        "created_at": "2022-03-24T03:22:12+00:00",
+        "updated_at": "2022-03-30T02:36:33+00:00",
+        "closed_at": "2022-03-30T02:36:33+00:00",
+        "comments_count": [
+            "GuoxiaWang",
+            "geoexploring",
+            "GuoxiaWang",
+            "geoexploring",
+            "GuoxiaWang",
+            "geoexploring",
+            "geoexploring",
+            "GuoxiaWang",
+            "geoexploring"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 114,
+        "title": "训练报错",
+        "body": "λ f02d1b16ca1e /home/PLSC mkdir -p ./dataset/\r\nλ f02d1b16ca1e /home/PLSC tar -xzf MS1M_v3_One_Sample.tgz -C ./dataset/\r\n\r\nλ f02d1b16ca1e /home/PLSC \r\nλ f02d1b16ca1e /home/PLSC python plsc/data/dataset/tools/lfw_style_bin_dataset_converter.py --bin_path ./dataset/MS1M_v3_One_Sample/agedb_30.bin --out_dir ./dataset/MS1M_v3_One_Sample/agedb_30/ --flip_test\r\nconvert 6000 pair images.\r\nplsc/data/dataset/tools/lfw_style_bin_dataset_converter.py:66: DeprecationWarning: FLIP_LEFT_RIGHT is deprecated and will be removed in Pillow 10 (2023-07-01). Use Transpose.FLIP_LEFT_RIGHT instead.\r\n  img1 = img1.transpose(Image.FLIP_LEFT_RIGHT)\r\nplsc/data/dataset/tools/lfw_style_bin_dataset_converter.py:73: DeprecationWarning: FLIP_LEFT_RIGHT is deprecated and will be removed in Pillow 10 (2023-07-01). Use Transpose.FLIP_LEFT_RIGHT instead.\r\n  img2 = img2.transpose(Image.FLIP_LEFT_RIGHT)\r\nconvert 6000 pair horizontal flip images.\r\nλ f02d1b16ca1e /home/PLSC export CUDA_VISIBLE_DEVICES=0\r\nλ f02d1b16ca1e /home/PLSC python tools/train.py -c ./plsc/configs/FaceRecognition/IResNet50_MS1MV3OneSample_ArcFace_0.1_1n8c_dp_fp32.yaml\r\ngrep: warning: GREP_OPTIONS is deprecated; please use an alias or script\r\n/home/PLSC/plsc/data/preprocess/timm_autoaugment.py:38: DeprecationWarning: BILINEAR is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BILINEAR instead.\r\n  _RANDOM_INTERPOLATION = (Image.BILINEAR, Image.BICUBIC)\r\n/home/PLSC/plsc/data/preprocess/timm_autoaugment.py:38: DeprecationWarning: BICUBIC is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BICUBIC instead.\r\n  _RANDOM_INTERPOLATION = (Image.BILINEAR, Image.BICUBIC)\r\n[2022/08/16 02:58:22] plsc INFO: DataLoader : \r\n[2022/08/16 02:58:22] plsc INFO:     Eval : \r\n[2022/08/16 02:58:22] plsc INFO:         dataset : \r\n[2022/08/16 02:58:22] plsc INFO:             cls_label_path : ./dataset/MS1M_v3_One_Sample/agedb_30/label.txt\r\n[2022/08/16 02:58:22] plsc INFO:             image_root : ./dataset/MS1M_v3_One_Sample/agedb_30\r\n[2022/08/16 02:58:22] plsc INFO:             name : FaceVerificationDataset\r\n[2022/08/16 02:58:22] plsc INFO:             transform_ops : \r\n[2022/08/16 02:58:22] plsc INFO:                 DecodeImage : \r\n[2022/08/16 02:58:22] plsc INFO:                     channel_first : False\r\n[2022/08/16 02:58:22] plsc INFO:                     to_rgb : True\r\n[2022/08/16 02:58:22] plsc INFO:                 NormalizeImage : \r\n[2022/08/16 02:58:22] plsc INFO:                     mean : [0.5, 0.5, 0.5]\r\n[2022/08/16 02:58:22] plsc INFO:                     order : \r\n[2022/08/16 02:58:22] plsc INFO:                     scale : 1.0/255.0\r\n[2022/08/16 02:58:22] plsc INFO:                     std : [0.5, 0.5, 0.5]\r\n[2022/08/16 02:58:22] plsc INFO:                 ToCHWImage : None\r\n[2022/08/16 02:58:22] plsc INFO:         loader : \r\n[2022/08/16 02:58:22] plsc INFO:             num_workers : 0\r\n[2022/08/16 02:58:22] plsc INFO:             use_shared_memory : True\r\n[2022/08/16 02:58:22] plsc INFO:         sampler : \r\n[2022/08/16 02:58:22] plsc INFO:             batch_size : 128\r\n[2022/08/16 02:58:22] plsc INFO:             drop_last : False\r\n[2022/08/16 02:58:22] plsc INFO:             name : BatchSampler\r\n[2022/08/16 02:58:22] plsc INFO:             shuffle : False\r\n[2022/08/16 02:58:22] plsc INFO:     Train : \r\n[2022/08/16 02:58:22] plsc INFO:         dataset : \r\n[2022/08/16 02:58:22] plsc INFO:             cls_label_path : ./dataset/MS1M_v3_One_Sample/label.txt\r\n[2022/08/16 02:58:22] plsc INFO:             image_root : ./dataset/MS1M_v3_One_Sample/\r\n[2022/08/16 02:58:22] plsc INFO:             name : FaceIdentificationDataset\r\n[2022/08/16 02:58:22] plsc INFO:             transform_ops : \r\n[2022/08/16 02:58:22] plsc INFO:                 DecodeImage : \r\n[2022/08/16 02:58:22] plsc INFO:                     channel_first : False\r\n[2022/08/16 02:58:22] plsc INFO:                     to_rgb : True\r\n[2022/08/16 02:58:22] plsc INFO:                 RandFlipImage : \r\n[2022/08/16 02:58:22] plsc INFO:                     flip_code : 1\r\n[2022/08/16 02:58:22] plsc INFO:                 NormalizeImage : \r\n[2022/08/16 02:58:22] plsc INFO:                     mean : [0.5, 0.5, 0.5]\r\n[2022/08/16 02:58:22] plsc INFO:                     order : \r\n[2022/08/16 02:58:22] plsc INFO:                     scale : 1.0/255.0\r\n[2022/08/16 02:58:22] plsc INFO:                     std : [0.5, 0.5, 0.5]\r\n[2022/08/16 02:58:22] plsc INFO:                 ToCHWImage : None\r\n[2022/08/16 02:58:22] plsc INFO:         loader : \r\n[2022/08/16 02:58:22] plsc INFO:             num_workers : 8\r\n[2022/08/16 02:58:22] plsc INFO:             use_shared_memory : True\r\n[2022/08/16 02:58:22] plsc INFO:         sampler : \r\n[2022/08/16 02:58:22] plsc INFO:             batch_size : 128\r\n[2022/08/16 02:58:22] plsc INFO:             drop_last : False\r\n[2022/08/16 02:58:22] plsc INFO:             name : DistributedBatchSampler\r\n[2022/08/16 02:58:22] plsc INFO:             shuffle : True\r\n[2022/08/16 02:58:22] plsc INFO: DistributedStrategy : \r\n[2022/08/16 02:58:22] plsc INFO:     data_parallel : True\r\n[2022/08/16 02:58:22] plsc INFO: Export : \r\n[2022/08/16 02:58:22] plsc INFO:     export_type : onnx\r\n[2022/08/16 02:58:22] plsc INFO:     input_shape : ['None', 3, 112, 112]\r\n[2022/08/16 02:58:22] plsc INFO: Global : \r\n[2022/08/16 02:58:22] plsc INFO:     accum_steps : 1\r\n[2022/08/16 02:58:22] plsc INFO:     checkpoint : None\r\n[2022/08/16 02:58:22] plsc INFO:     device : gpu\r\n[2022/08/16 02:58:22] plsc INFO:     distributed : False\r\n[2022/08/16 02:58:22] plsc INFO:     epochs : 25\r\n[2022/08/16 02:58:22] plsc INFO:     eval_during_train : True\r\n[2022/08/16 02:58:22] plsc INFO:     eval_func : face_verification_eval\r\n[2022/08/16 02:58:22] plsc INFO:     eval_interval : 200\r\n[2022/08/16 02:58:22] plsc INFO:     eval_unit : step\r\n[2022/08/16 02:58:22] plsc INFO:     max_num_latest_checkpoint : 0\r\n[2022/08/16 02:58:22] plsc INFO:     output_dir : ./output/\r\n[2022/08/16 02:58:22] plsc INFO:     pretrained_model : None\r\n[2022/08/16 02:58:22] plsc INFO:     print_batch_step : 10\r\n[2022/08/16 02:58:22] plsc INFO:     rank : 0\r\n[2022/08/16 02:58:22] plsc INFO:     save_interval : 1\r\n[2022/08/16 02:58:22] plsc INFO:     seed : 2022\r\n[2022/08/16 02:58:22] plsc INFO:     task_type : recognition\r\n[2022/08/16 02:58:22] plsc INFO:     train_epoch_func : defualt_train_one_epoch\r\n[2022/08/16 02:58:22] plsc INFO:     use_visualdl : True\r\n[2022/08/16 02:58:22] plsc INFO:     world_size : 1\r\n[2022/08/16 02:58:22] plsc INFO: LRScheduler : \r\n[2022/08/16 02:58:22] plsc INFO:     boundaries : [10, 16, 22]\r\n[2022/08/16 02:58:22] plsc INFO:     decay_unit : epoch\r\n[2022/08/16 02:58:22] plsc INFO:     name : Step\r\n[2022/08/16 02:58:22] plsc INFO:     values : [0.2, 0.02, 0.002, 0.0002]\r\n[2022/08/16 02:58:22] plsc INFO: Loss : \r\n[2022/08/16 02:58:22] plsc INFO:     Train : \r\n[2022/08/16 02:58:22] plsc INFO:         MarginLoss : \r\n[2022/08/16 02:58:22] plsc INFO:             m1 : 1.0\r\n[2022/08/16 02:58:22] plsc INFO:             m2 : 0.5\r\n[2022/08/16 02:58:22] plsc INFO:             m3 : 0.0\r\n[2022/08/16 02:58:22] plsc INFO:             model_parallel : False\r\n[2022/08/16 02:58:22] plsc INFO:             s : 64.0\r\n[2022/08/16 02:58:22] plsc INFO:             weight : 1.0\r\n[2022/08/16 02:58:22] plsc INFO: Metric : \r\n[2022/08/16 02:58:22] plsc INFO:     Eval : \r\n[2022/08/16 02:58:22] plsc INFO:         LFWAcc : \r\n[2022/08/16 02:58:22] plsc INFO:             flip_test : True\r\n[2022/08/16 02:58:22] plsc INFO: Model : \r\n[2022/08/16 02:58:22] plsc INFO:     class_num : 93431\r\n[2022/08/16 02:58:22] plsc INFO:     data_format : NCHW\r\n[2022/08/16 02:58:22] plsc INFO:     name : IResNet50\r\n[2022/08/16 02:58:22] plsc INFO:     num_features : 512\r\n[2022/08/16 02:58:22] plsc INFO:     pfc_config : \r\n[2022/08/16 02:58:22] plsc INFO:         model_parallel : False\r\n[2022/08/16 02:58:22] plsc INFO:         sample_ratio : 0.1\r\n[2022/08/16 02:58:22] plsc INFO: Optimizer : \r\n[2022/08/16 02:58:22] plsc INFO:     grad_clip : \r\n[2022/08/16 02:58:22] plsc INFO:         always_clip : True\r\n[2022/08/16 02:58:22] plsc INFO:         clip_norm : 2.0\r\n[2022/08/16 02:58:22] plsc INFO:         clip_norm_max : 2.0\r\n[2022/08/16 02:58:22] plsc INFO:         name : ClipGradByGlobalNorm\r\n[2022/08/16 02:58:22] plsc INFO:         no_clip_list : ['partialfc']\r\n[2022/08/16 02:58:22] plsc INFO:     momentum : 0.9\r\n[2022/08/16 02:58:22] plsc INFO:     name : Momentum\r\n[2022/08/16 02:58:22] plsc INFO:     use_master_param : False\r\n[2022/08/16 02:58:22] plsc INFO:     weight_decay : 0.0005\r\n[2022/08/16 02:58:22] plsc INFO: profiler_options : None\r\n[2022/08/16 02:58:22] plsc INFO: train with paddle 2.3.1 and device Place(gpu:0)\r\n[2022/08/16 02:58:22] plsc INFO: Loading dataset ./dataset/MS1M_v3_One_Sample/label.txt\r\n[2022/08/16 02:58:23] plsc INFO: Load dataset finished, 93431 samples\r\nW0816 02:58:23.308667   876 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 6.1, Driver API Version: 11.2, Runtime API Version: 11.2\r\nW0816 02:58:23.372398   876 gpu_resources.cc:91] device: 0, cuDNN Version: 8.1.\r\n[2022/08/16 02:58:24] plsc INFO: Number of Parameters is 91.43M.\r\nTraceback (most recent call last):\r\n  File \"tools/train.py\", line 34, in <module>\r\n    engine = Engine(config, mode=\"train\")\r\n  File \"/home/PLSC/plsc/engine/engine.py\", line 213, in __init__\r\n    self.lr_scheduler, self.model)\r\n  File \"/home/PLSC/plsc/optimizer/__init__.py\", line 60, in build_optimizer\r\n    param_group[key] = get_fused_params(param_group[key])\r\n  File \"/home/PLSC/plsc/core/param_fuse.py\", line 454, in get_fused_params\r\n    var_groups = assign_group_by_size(params)\r\n  File \"/home/PLSC/plsc/core/param_fuse.py\", line 391, in assign_group_by_size\r\n    parameters, is_sparse_gradient, [group_size, group_size])\r\nValueError: (InvalidArgument) argument (position 1) must be list of Tensor, but got ParamBase at pos 0 (at /paddle/paddle/fluid/pybind/eager_utils.cc:240)",
+        "state": "open",
+        "user": "alexiycv",
+        "closed_by": null,
+        "created_at": "2022-08-16T03:04:15+00:00",
+        "updated_at": "2022-08-16T07:53:44+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang",
+            "alexiycv",
+            "GuoxiaWang",
+            "GuoxiaWang",
+            "alexiycv"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 115,
+        "title": "两台服务器，每台4张卡，训练出错",
+        "body": "server not ready, wait 3 sec to retry...\r\nnot ready endpoints:['10.10.11.51:6070', '10.10.11.51:6071', '10.10.11.51:6072', '10.10.11.51:6073']\r\nserver not ready, wait 3 sec to retry...\r\nnot ready endpoints:['10.10.11.51:6070', '10.10.11.51:6071', '10.10.11.51:6072', '10.10.11.51:6073']\r\nserver not ready, wait 3 sec to retry...\r\nnot ready endpoints:['10.10.11.51:6070', '10.10.11.51:6071', '10.10.11.51:6072', '10.10.11.51:6073']\r\nserver not ready, wait 3 sec to retry...\r\nnot ready endpoints:['10.10.11.51:6070', '10.10.11.51:6071', '10.10.11.51:6072', '10.10.11.51:6073']\r\nserver not ready, wait 3 sec to retry...\r\nnot ready endpoints:['10.10.11.51:6070', '10.10.11.51:6071', '10.10.11.51:6072', '10.10.11.51:6073']\r\nserver not ready, wait 3 sec to retry...\r\nnot ready endpoints:['10.10.11.51:6070', '10.10.11.51:6071', '10.10.11.51:6072', '10.10.11.51:6073'",
+        "state": "open",
+        "user": "alexiycv",
+        "closed_by": null,
+        "created_at": "2022-08-16T03:29:49+00:00",
+        "updated_at": "2022-08-16T08:43:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang",
+            "alexiycv",
+            "GuoxiaWang",
+            "alexiycv",
+            "GuoxiaWang",
+            "alexiycv"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 168,
+        "title": "Face Recognition inference模型",
+        "body": "在文档中看到了预训练模型，请问可以提供inference模型吗？",
+        "state": "open",
+        "user": "ChaoII",
+        "closed_by": null,
+        "created_at": "2022-12-26T01:20:26+00:00",
+        "updated_at": "2022-12-26T03:10:32+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang",
+            "ChaoII"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 215,
+        "title": "Problems exporting model",
+        "body": "I'm trying to do:\r\n\r\n```\r\nexport PADDLE_NNODES=1\r\nexport PADDLE_MASTER=\"127.0.0.1:12538\"\r\nexport CUDA_VISIBLE_DEVICES=0\r\npython -m paddle.distributed.launch \\\r\n    --nnodes=$PADDLE_NNODES \\\r\n    --master=$PADDLE_MASTER \\\r\n    --devices=$CUDA_VISIBLE_DEVICES \\\r\n    plsc-export \\\r\n    -c ./configs/IResNet100_WebFace42M_CosFace_pfc02_1n8c_dp_mp_fp16o1.yaml \\\r\n    -o Global.pretrained_model=/home/angela/Descargas/IResNet100_WebFace42M_CosFace_pfc02_1n8c_dp_mp_fp16o1 \\\r\n    -o FP16.level=O0 \\\r\n    -o Model.data_format=NCHW\r\n```\r\nand I get this error:\r\n\r\n```\r\nLAUNCH INFO 2024-03-11 12:29:45,551 ------------------------- ERROR LOG DETAIL -------------------------\r\nTraceback (most recent call last):\r\n  File \"/home/angela/Descargas/PLSC-master/ven/bin/plsc-export\", line 26, in <module>\r\n    sys.exit(main())\r\n  File \"/home/angela/Descargas/PLSC-master/ven/bin/plsc-export\", line 19, in main\r\n    engine = Engine(config, mode=\"export\")\r\n  File \"/home/angela/Descargas/PLSC-master/ven/lib/python3.7/site-packages/plsc/engine/engine.py\", line 98, in __init__\r\n    paddle.set_flags(RELATED_FLAGS_SETTING)\r\n  File \"/home/angela/Descargas/PLSC-master/ven/lib/python3.7/site-packages/paddle/fluid/framework.py\", line 7493, in set_flags\r\n    \"Flag %s cannot set its value through this function.\" % (key)\r\nValueError: Flag FLAGS_cudnn_exhaustive_search cannot set its value through this function.\r\n```\r\n\r\nCould someone point me in the right direction? Thank you.",
+        "state": "open",
+        "user": "angelabr",
+        "closed_by": null,
+        "created_at": "2024-03-11T11:35:26+00:00",
+        "updated_at": "2024-03-11T11:35:26+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 213,
+        "title": "ValueError: Flag FLAGS_cudnn_exhaustive_search cannot set its value through this functio",
+        "body": "在导出onnx的时候显示这个错误，请问如何解决ValueError: Flag FLAGS_cudnn_exhaustive_search cannot set its value through this functio",
+        "state": "open",
+        "user": "starsky68",
+        "closed_by": null,
+        "created_at": "2023-08-14T03:10:24+00:00",
+        "updated_at": "2023-08-21T13:29:35+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/PLSC",
+        "number": 214,
+        "title": "请问当前工程版本对应的最新的paddlepaddle是啥？",
+        "body": "请问当前工程版本对应的最新的paddlepaddle是啥？",
+        "state": "open",
+        "user": "starsky68",
+        "closed_by": null,
+        "created_at": "2023-08-14T03:39:59+00:00",
+        "updated_at": "2024-02-21T12:34:50+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "GuoxiaWang"
+        ],
+        "labels": []
+    }
+]

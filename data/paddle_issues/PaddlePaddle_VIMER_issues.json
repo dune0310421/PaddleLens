@@ -1,0 +1,701 @@
+[
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 4,
+        "title": "How to visulize the inference after running the script in \"Infer fine-tuned models\"",
+        "body": "Hi VIMER Team, I am trying to run a visualization of the prediction using the script from \"Infer fine-tuned models\" but it only returns me the metrics of model itself. Could you please guide me how to do the visualization like the demo picture at the bottom of the Read.me? Thanks!",
+        "state": "open",
+        "user": "kkkris7",
+        "closed_by": null,
+        "created_at": "2022-01-05T01:12:54+00:00",
+        "updated_at": "2022-01-05T01:12:54+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 3,
+        "title": "Unable to download pretrained model artifact",
+        "body": "Hi, I am trying to test the inference but I am not able to download pretrained model artifact. Could you please verify the link of it? Thanks!",
+        "state": "closed",
+        "user": "kkkris7",
+        "closed_by": "linan142857",
+        "created_at": "2022-01-04T04:33:51+00:00",
+        "updated_at": "2022-01-04T07:41:12+00:00",
+        "closed_at": "2022-01-04T07:41:12+00:00",
+        "comments_count": [
+            "linan142857"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 5,
+        "title": "structext什么时候公开训练代码？",
+        "body": null,
+        "state": "closed",
+        "user": "aishangmaxiaoming",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-01-07T03:46:15+00:00",
+        "updated_at": "2022-01-10T07:36:09+00:00",
+        "closed_at": "2022-01-10T07:30:22+00:00",
+        "comments_count": [
+            "RogerYu123",
+            "aishangmaxiaoming"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 11,
+        "title": "感谢作者的卓越工作，不知道能不能开放一下StructText的训练代码，十分感谢！",
+        "body": null,
+        "state": "closed",
+        "user": "xiaohong1633",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-02-23T03:23:42+00:00",
+        "updated_at": "2022-06-01T02:46:03+00:00",
+        "closed_at": "2022-06-01T02:46:03+00:00",
+        "comments_count": [
+            "Eric-Zhang1990",
+            "kkkris7",
+            "RogerYu123"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 6,
+        "title": "单张图片的预测代码有开源吗？",
+        "body": "@linan142857  请问单张图片的预测代码有开源吗？谢谢",
+        "state": "open",
+        "user": "Eric-Zhang1990",
+        "closed_by": null,
+        "created_at": "2022-02-11T09:51:47+00:00",
+        "updated_at": "2024-09-12T06:26:33+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "RogerYu123",
+            "Eric-Zhang1990",
+            "Eric-Zhang1990",
+            "LCY5600",
+            "kesshei"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 10,
+        "title": "Why is the implementation of Relationship Extraction Module inconsistent with the description in the paper?",
+        "body": "First of all, thank you for sharing this amazing work!\r\nI encountered some confusion while reading the code and hope the author can answer it. I am very grateful for that.\r\nThe description of the Relationship Extraction Module in the paper is as follows:\r\n![image](https://user-images.githubusercontent.com/30342227/154793614-41e27fd0-be72-4320-bcd1-8e83ac4d3ac9.png)\r\n\r\nHowever, the implementation in https://github.com/PaddlePaddle/VIMER/blob/main/StrucTexT/external/linking/modules/model.py#L101 is as follows and which is a linear transformation of the absolute value of the difference between the features of the two nodes.\r\n![image](https://user-images.githubusercontent.com/30342227/154792136-f531cb4c-9746-451d-a995-56ca69ffe2c0.png)\r\nIs there any special consideration here?\r\nThanks again to the author for your reading and help!\r\n\r\n\r\n",
+        "state": "closed",
+        "user": "WenjinW",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-02-19T07:54:23+00:00",
+        "updated_at": "2022-02-22T06:05:09+00:00",
+        "closed_at": "2022-02-22T06:05:09+00:00",
+        "comments_count": [
+            "linan142857",
+            "WenjinW"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 2,
+        "title": "什么时候开放预训练模型下载",
+        "body": "有计划开放预训练模型下载和训练代码吗，还有自己数据集需要怎么准备？",
+        "state": "closed",
+        "user": "jackiezzq",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-01-04T02:02:04+00:00",
+        "updated_at": "2022-01-10T07:30:43+00:00",
+        "closed_at": "2022-01-10T07:30:43+00:00",
+        "comments_count": [
+            "RogerYu123"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 1,
+        "title": "请问下，预训练的时候中文和英文数据一共需要多少？包含的数据是什么样的呢？",
+        "body": null,
+        "state": "closed",
+        "user": "cjt222",
+        "closed_by": "linan142857",
+        "created_at": "2021-12-22T03:29:18+00:00",
+        "updated_at": "2022-01-04T07:41:31+00:00",
+        "closed_at": "2022-01-04T07:41:31+00:00",
+        "comments_count": [
+            "RogerYu123"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 9,
+        "title": "Is there a plan to release the training script for the UFO models?",
+        "body": "First of all, thank you for sharing this amazing work!\r\nI want to ask if you plan to release the training script for multi-task models? I'm most intrigued in details of how the models are trained. ",
+        "state": "closed",
+        "user": "YangLiu14",
+        "closed_by": "xiteng01",
+        "created_at": "2022-02-18T03:30:11+00:00",
+        "updated_at": "2022-08-31T12:23:15+00:00",
+        "closed_at": "2022-08-31T12:23:15+00:00",
+        "comments_count": [
+            "yellowjs0304",
+            "baigang666",
+            "godson1024"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 13,
+        "title": "StrucTexT Base for FUNSD labeling model loading problem",
+        "body": "Hi I am trying run the inference code on FUSD labeling task but I am getting loading problem. Can anyone put a comment on this.\r\n\r\n`in load load_result = pickle.load(f, encoding='latin1')\r\nMemoryError`",
+        "state": "open",
+        "user": "hfarhidzadeh",
+        "closed_by": null,
+        "created_at": "2022-03-28T16:35:01+00:00",
+        "updated_at": "2022-03-28T16:35:01+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 12,
+        "title": "How to fine tune structext model for custom dataset?Can you provide the training instructions?",
+        "body": null,
+        "state": "closed",
+        "user": "vishal-nayak1",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-03-09T05:11:30+00:00",
+        "updated_at": "2022-06-01T02:50:26+00:00",
+        "closed_at": "2022-06-01T02:50:26+00:00",
+        "comments_count": [
+            "RogerYu123"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 15,
+        "title": "数据集",
+        "body": "![image](https://user-images.githubusercontent.com/41476675/166891570-c4f659fb-6a7d-42c4-b076-d3ac1a884095.png)\r\n想问下各位，这种数据集是如何标注的，一对多吗",
+        "state": "closed",
+        "user": "world2025",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-05-05T08:56:04+00:00",
+        "updated_at": "2022-06-01T02:41:03+00:00",
+        "closed_at": "2022-06-01T02:41:03+00:00",
+        "comments_count": [
+            "RogerYu123"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 14,
+        "title": "标注工具",
+        "body": "请问下，xfund和funsd数据集是用什么工具标注的",
+        "state": "open",
+        "user": "tianchiguaixia",
+        "closed_by": null,
+        "created_at": "2022-04-30T11:51:56+00:00",
+        "updated_at": "2024-07-26T07:02:26+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "world2025",
+            "Unlicensed-driver-ljx",
+            "Unlicensed-driver-ljx",
+            "tianchiguaixia",
+            "dreamlychina"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 16,
+        "title": "Entity linking scores significantly better than the number",
+        "body": "Hi, I noticed that your FUNSD entity linking scores reported in this repo. are higher than the number in the paper. For example, \"StrucTexT-chn&eng base\" is 0.7045 and \"StrucTexT-eng base (paper)\" is 0.4410. Could you let me know what contributes to the improvement here? Or is anything wrong with the original paper's approach? Thanks!",
+        "state": "closed",
+        "user": "liaohaofu",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-05-09T06:24:07+00:00",
+        "updated_at": "2023-04-01T04:40:36+00:00",
+        "closed_at": "2022-08-17T03:58:53+00:00",
+        "comments_count": [
+            "linan142857"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 20,
+        "title": "Why the linking label be  {\"head\": (row, row+1),  \"tail\": (col, col+1)}",
+        "body": "i have read the code and confused about the code below: \r\nutils/metrics/rescore_metric.py.   line 38~45:\r\n```           \r\n for row in range(rows):\r\n                for col in range(cols):\r\n                    if label_b[row, col] == 1:\r\n                        rel = {\"head\": (row, row+1),\r\n                               \"tail\": (col, col+1),\r\n```\r\nwhy should we set \"head\": (row, row+1)  rather than \"head\": (row)",
+        "state": "closed",
+        "user": "Intsigstephon",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-05-11T08:03:19+00:00",
+        "updated_at": "2022-06-01T02:41:16+00:00",
+        "closed_at": "2022-06-01T02:41:16+00:00",
+        "comments_count": [
+            "RogerYu123"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 35,
+        "title": "StrucTexT中1 亿张文档图像数据的类型",
+        "body": "请问：\r\n1.是真实场景下的图片还是类似于pdf的图片呢？\r\n2.如果是真实场景下的图片，是由经过透视变换矫正的还是有歪歪斜斜的？",
+        "state": "closed",
+        "user": "lixumin-zai",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-06-23T08:09:51+00:00",
+        "updated_at": "2022-08-17T03:59:15+00:00",
+        "closed_at": "2022-08-17T03:59:15+00:00",
+        "comments_count": [
+            "linan142857"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 36,
+        "title": "端到端信息抽取",
+        "body": "没有支持端到端信息抽取的推理代码吗？",
+        "state": "open",
+        "user": "mingo-doer",
+        "closed_by": null,
+        "created_at": "2022-06-28T11:54:41+00:00",
+        "updated_at": "2022-06-28T12:16:40+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "mingo-doer"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 32,
+        "title": "StrucText V2跑不起来啊，好多bug",
+        "body": "在v2中运行下面脚本出现好多问题\r\npython -u ./tools/eval.py     --config_file=configs/end2end_ocr/ocr_funsd_base.json     --task_type=end2end_ocr     --label_path=./data/funsd/dataset/testing_data/otations     --image_path=./data/funsd/dataset/testing_data/images     --weights_path=StrucTexT_v2_end2end_ie_base.pdparams\r\n1.  模块缺失\r\nfrom tasks.text_spotting_db.recg_head import RecgHead\r\nfrom tasks.text_spotting_db.dataset import LabelConverter\r\ntext_spotting_db 找遍了整个仓库都没有名字不对，应该是\r\nfrom tasks.end2end_ocr.recg_head import RecgHead\r\nfrom tasks.end2end_ocr.dataset import LabelConverter \r\n2. 代码缺失\r\nTraceback (most recent call last):\r\n  File \"./tools/eval.py\", line 103, in <module>\r\n    eval(config)\r\n  File \"./tools/eval.py\", line 87, in eval\r\n    model = Model(model_config, eval_config['feed_names'])\r\n  File \"/home/xiaxy/VIMER/StrucTexT/v2/src/tasks/end2end_ocr/model.py\", line 150, in __init__\r\n    self.db_loss = DBLoss()\r\nNameError: name 'DBLoss' is not defined\r\n同样没有找到DBLoss()的定义，不知道代码是否完整啊，怎么跑这个推理？？？？？",
+        "state": "closed",
+        "user": "NLPOR",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-05-31T07:51:44+00:00",
+        "updated_at": "2022-08-17T03:59:03+00:00",
+        "closed_at": "2022-08-17T03:59:03+00:00",
+        "comments_count": [
+            "linan142857"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 37,
+        "title": "more information about UFO",
+        "body": "it's there more information about UFO？paper？docker image？training script？training GPUs？",
+        "state": "closed",
+        "user": "peiyingxin",
+        "closed_by": "xiteng01",
+        "created_at": "2022-07-04T08:08:09+00:00",
+        "updated_at": "2022-08-31T12:24:35+00:00",
+        "closed_at": "2022-08-31T12:24:35+00:00",
+        "comments_count": [
+            "godson1024"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 40,
+        "title": "StrucText V2 end-2-end 信息抽取train代码啥时候公开呀",
+        "body": null,
+        "state": "open",
+        "user": "JackYang825",
+        "closed_by": null,
+        "created_at": "2022-07-19T07:03:55+00:00",
+        "updated_at": "2022-07-19T08:14:04+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 44,
+        "title": "CAE 缺失encoder_weight.pd decoder_weight.pd",
+        "body": "CAE 缺失encoder_weight.pd decoder_weight.pd，请问可以提供下下载链接吗？",
+        "state": "open",
+        "user": "mozhuqin",
+        "closed_by": null,
+        "created_at": "2022-07-31T15:47:11+00:00",
+        "updated_at": "2022-07-31T15:47:11+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 45,
+        "title": "finetune Structext for information extraction on funsd dataset",
+        "body": "Hi,\r\n\r\nAre u planning to provide finetuning  example for information extraction?",
+        "state": "open",
+        "user": "vishal-nayak1",
+        "closed_by": null,
+        "created_at": "2022-08-01T08:25:46+00:00",
+        "updated_at": "2022-08-01T08:25:46+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 38,
+        "title": "在 aistudio.baidu.com 中测试 StrucTexT v2.0，无法下载 RVL-CDIP文档图像分类 数据文件",
+        "body": "按照 https://aistudio.baidu.com/aistudio/datasetdetail/147611 创建项目，看到 data 已经预先存放 4 个模型文件，然后按照README 安装好 requirements， 当要下载 RVL-CDIP文档图像分类 文件时，不成功，看样子是由于文件存放在google docs 的原因，这类存放在无法下载网址的文件，官方可否事先存放在 aistudio.baidu.com 可下载的位置？\r\n\r\n这个项目很贴近真实应用场景，非常有前景，但由于文档和示例缺失，感觉很难参与进来，希望官方重视这点。如果像PaddleOCR之类有完善的测试环境和详尽的文档的项目，参与者热情肯定高涨。迫切希望官方先在  aistudio.baidu.com 提供一个测试示例，感激不尽！",
+        "state": "closed",
+        "user": "KennyLeung",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-07-06T04:56:07+00:00",
+        "updated_at": "2022-08-17T03:59:35+00:00",
+        "closed_at": "2022-08-17T03:59:35+00:00",
+        "comments_count": [
+            "RogerYu123"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 39,
+        "title": "什么时候公开UMS的训练代码？",
+        "body": null,
+        "state": "open",
+        "user": "chaos1992",
+        "closed_by": null,
+        "created_at": "2022-07-08T07:27:46+00:00",
+        "updated_at": "2022-07-16T23:42:07+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "thomas-yanxin"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 46,
+        "title": "Could you please upload the config file based on ViT Base for UFO/OneForAll",
+        "body": "Thanks for your contribution to the development of the unified model.\r\n\r\nI notice that the config file for ViT base model is not uploaded. \r\nThe model configuration described in the paper is based on ViT base, I really hope that you could upload it.",
+        "state": "open",
+        "user": "HanielF",
+        "closed_by": "xiteng01",
+        "created_at": "2022-08-09T06:29:03+00:00",
+        "updated_at": "2022-08-31T12:19:15+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "xiteng01"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 47,
+        "title": "关于StrucText v2 中的table recognize的问题？",
+        "body": "请问StrucText v2 中的table recognize中的link_up、link_down、link_left和link_right代表什么？\r\n        link_up = link_probs[:, 0:1, :, :]\r\n        link_down = link_probs[:, 1:2, :, :]\r\n        link_left = link_probs[:, 2:3, :, :]\r\n        link_right = link_probs[:, 3:4, :, :]\r\n非常期待您的解答！",
+        "state": "closed",
+        "user": "ganggang233",
+        "closed_by": "RogerYu123",
+        "created_at": "2022-08-16T05:53:34+00:00",
+        "updated_at": "2022-11-03T10:17:07+00:00",
+        "closed_at": "2022-11-03T10:17:07+00:00",
+        "comments_count": [
+            "RogerYu123",
+            "ganggang233",
+            "RogerYu123",
+            "ganggang233"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 48,
+        "title": "Can anyone share the inference code ? ",
+        "body": null,
+        "state": "open",
+        "user": "RAravindDS",
+        "closed_by": null,
+        "created_at": "2022-08-19T08:42:20+00:00",
+        "updated_at": "2024-07-18T08:04:17+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "mxw20010804"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 50,
+        "title": "How to pre-train the detection task？",
+        "body": "How to conduct the pre-training of detection tasks, and whether to support downstream detection tasks, and whether there are relevant documents for reference? thank you！",
+        "state": "open",
+        "user": "majintao1994",
+        "closed_by": null,
+        "created_at": "2023-01-10T08:12:25+00:00",
+        "updated_at": "2023-01-10T08:12:25+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 49,
+        "title": "请问UFO的训练平台？对硬件要求和限制",
+        "body": "请问UFO的训练平台？对硬件要求和限制",
+        "state": "open",
+        "user": "xiaozhuka",
+        "closed_by": null,
+        "created_at": "2022-12-16T01:23:03+00:00",
+        "updated_at": "2022-12-16T01:23:51+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 53,
+        "title": "StrucText V2 Pre-training ",
+        "body": "Hi,\r\n\r\nDo you have plan to release the pre-training codes? Thanks!",
+        "state": "open",
+        "user": "ilovecv",
+        "closed_by": null,
+        "created_at": "2023-02-23T21:45:16+00:00",
+        "updated_at": "2023-02-23T21:45:16+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 52,
+        "title": "关于UFO超网训练的问题",
+        "body": "Hi，完成超网训练后，发现保存的模型是task粒度的，即每个任务的模型目录下保存了一个模型。与extract_task_specific_model.py中展示的超网模型的参数结构有所不同，请问下，是否有一个额外的整合所有task模型的过程？如有，可否提供下整合的流程或者代码？\r\n非常期待您的解答~",
+        "state": "open",
+        "user": "Audi16",
+        "closed_by": null,
+        "created_at": "2023-02-13T08:31:06+00:00",
+        "updated_at": "2023-08-18T06:28:12+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Clearloveplus7",
+            "ld-xy",
+            "LeonNerd"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 55,
+        "title": "端到端 StrucTexT v2 是不是比  LayoutXLM 好？什么时候开放 StrucTexT v2 训练源码哈？",
+        "body": "如题",
+        "state": "open",
+        "user": "binwang672012",
+        "closed_by": null,
+        "created_at": "2023-03-14T01:44:33+00:00",
+        "updated_at": "2024-09-12T06:26:17+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Letdreamfly",
+            "kesshei"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 54,
+        "title": "License?",
+        "body": "Hi! Nice work on https://github.com/PaddlePaddle/VIMER/tree/main/StrucTexT/v2.\r\nWhat is the license of the pretrained model and the code?\r\nIs it Apache License (same as the Paddle and the PaddleOCR repo?)\r\n\r\nCC: @zhouwei25 ",
+        "state": "open",
+        "user": "akkikiki",
+        "closed_by": null,
+        "created_at": "2023-03-02T13:31:59+00:00",
+        "updated_at": "2024-12-04T14:46:16+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "akkikiki",
+            "Linesmerrill"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 58,
+        "title": "Entity Linking Inference Model for StrucText V2",
+        "body": "Do you have Entity Linking Inference Model for StrucText V2 available for download?",
+        "state": "open",
+        "user": "htcml",
+        "closed_by": null,
+        "created_at": "2023-03-30T19:51:33+00:00",
+        "updated_at": "2023-03-30T19:51:33+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 56,
+        "title": "FileNotFoundError: [Errno 2] No such file or directory: 'product1m_test_image_features.npy'",
+        "body": "能不能提供一下必要的文件，问题好多，希望能指导一下，跑通ums，respect！",
+        "state": "open",
+        "user": "Firestick-Xia",
+        "closed_by": null,
+        "created_at": "2023-03-16T09:32:38+00:00",
+        "updated_at": "2023-03-16T09:35:32+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Firestick-Xia"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 57,
+        "title": "中文让你丢人了？",
+        "body": "文档都是英文，中文让你丢人了？",
+        "state": "open",
+        "user": "aotoolmain",
+        "closed_by": null,
+        "created_at": "2023-03-29T08:45:55+00:00",
+        "updated_at": "2023-05-11T03:00:25+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "clw5180"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 60,
+        "title": "请问有StrucText V2 pre-trained model，不包含下游任务层的",
+        "body": "如题",
+        "state": "open",
+        "user": "NaivePawn",
+        "closed_by": null,
+        "created_at": "2023-05-17T06:28:21+00:00",
+        "updated_at": "2023-05-17T06:28:21+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 61,
+        "title": "目标检测",
+        "body": "请问有完整的目标检测微调和推理代码嘛",
+        "state": "open",
+        "user": "Clearloveplus7",
+        "closed_by": null,
+        "created_at": "2023-05-17T14:12:42+00:00",
+        "updated_at": "2023-05-17T14:12:42+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 62,
+        "title": "layout_analysis with structtextv2",
+        "body": "请问v2版本layout analysis 该怎么运行呢？我看代码里面似乎没有支持着一个任务的task，但是readme里面似乎是写了能做这个任务的",
+        "state": "open",
+        "user": "heavenhellchen",
+        "closed_by": null,
+        "created_at": "2023-07-14T03:49:25+00:00",
+        "updated_at": "2023-07-21T02:32:56+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "Randy1009"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 64,
+        "title": "UFO的模型结构问题The Model Structure Problem of UFO",
+        "body": "请问有人又关于UFO详细的网络模型结构吗？能不能发出来参考一下，感谢！\r\nMay I ask if anyone has any further information about the detailed network model structure of UFO? Can you send it for reference? Thank you!",
+        "state": "open",
+        "user": "GuoShuaiYu",
+        "closed_by": null,
+        "created_at": "2023-11-15T02:37:01+00:00",
+        "updated_at": "2023-11-15T02:37:01+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 63,
+        "title": "关于模型训练后的检查点文件：",
+        "body": null,
+        "state": "open",
+        "user": "ld-xy",
+        "closed_by": null,
+        "created_at": "2023-08-17T09:39:45+00:00",
+        "updated_at": "2023-08-17T09:41:07+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "ld-xy"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 66,
+        "title": "请求是否支持语义分析，关键信息提取？",
+        "body": "如题",
+        "state": "open",
+        "user": "xiaogui340",
+        "closed_by": null,
+        "created_at": "2024-02-05T09:30:05+00:00",
+        "updated_at": "2024-02-05T09:30:05+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 67,
+        "title": "好多依赖实现缺失",
+        "body": "在读代码中发现好多类或者函数实现缺失，比如 [NameAdapter](https://github.com/PaddlePaddle/VIMER/blob/aff5d4aefd2d074f53fff5f96e4a6afc15d9e06c/StrucTexT/v2/src/tasks/layout_analysis/model/v2net.py#L18)等好多处，希望作者能够补全，谢谢\r\n",
+        "state": "open",
+        "user": "BeyondYourself",
+        "closed_by": null,
+        "created_at": "2024-03-07T07:36:48+00:00",
+        "updated_at": "2024-03-07T07:36:48+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/VIMER",
+        "number": 65,
+        "title": "虚拟环境中安装了numpy，为什么在安装其他依赖库的时候还会报错？",
+        "body": "<img width=\"748\" alt=\"截屏2023-12-04 09 48 50\" src=\"https://github.com/PaddlePaddle/VIMER/assets/7741830/fd6e5b4d-674a-4683-be4a-59ae699e8cbd\">\r\n<img width=\"696\" alt=\"截屏2023-12-04 09 48 12\" src=\"https://github.com/PaddlePaddle/VIMER/assets/7741830/fd491467-68b1-4948-ab77-49ea01ae4d52\">\r\n",
+        "state": "open",
+        "user": "liangshiyi",
+        "closed_by": null,
+        "created_at": "2023-12-04T02:48:29+00:00",
+        "updated_at": "2024-05-01T21:13:06+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "liangshiyi",
+            "yibo-liang",
+            "yibo-liang"
+        ],
+        "labels": []
+    }
+]

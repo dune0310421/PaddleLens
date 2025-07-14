@@ -1,0 +1,491 @@
+[
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 10,
+        "title": "Comment of configuration",
+        "body": "https://github.com/PaddlePaddle/RLSchool/blob/63e3e046724a02df00059cd5f484960cd2f0ad73/rlschool/liftsim/config.ini#L15\r\n\r\nSome uses want to customize the stream of people to train the algorithm, but they don't know how to change the configuration.\r\n\r\nWe may need more details about the configuration file.\r\n\r\nPlease add some comments about each key in the file.",
+        "state": "closed",
+        "user": "TomorrowIsAnOtherDay",
+        "closed_by": "banma12956",
+        "created_at": "2019-08-21T04:55:46+00:00",
+        "updated_at": "2019-09-23T05:20:24+00:00",
+        "closed_at": "2019-09-23T05:20:24+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 35,
+        "title": "无人机避障",
+        "body": "请问这个无人机避障，可以在地图上显示障碍物吗？我设置了有障碍物的地图，但是看不到地图上有变化.",
+        "state": "closed",
+        "user": "zienn",
+        "closed_by": "zienn",
+        "created_at": "2020-10-18T12:40:58+00:00",
+        "updated_at": "2020-10-20T01:40:00+00:00",
+        "closed_at": "2020-10-20T01:40:00+00:00",
+        "comments_count": [
+            "xueeinstein"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 7,
+        "title": "install error",
+        "body": "hi, maybe the `setup.py` is not robust enouph(or maybe it's just a tool can only be installed in Linux), I failed to install it until I made some changes.\r\n\r\n**environment**:\r\nplatform: windows 10\r\npython: python 3.6.1\r\nerror:\r\n F:code\\RLSchool-master>pip install .\r\nProcessing f:code\\rlschool-master\r\n    Complete output from command python setup.py egg_info:\r\n    Traceback (most recent call last):\r\n      File \"<string>\", line 1, in <module>\r\n      File \"C:\\Users\\JL\\AppData\\Local\\Temp\\pip-4flifg6e-build\\setup.py\", line 20, in <module>\r\n        long_description = fh.read()\r\n    UnicodeDecodeError: 'gbk' codec can't decode byte 0xaf in position 22: illegal multibyte sequence\r\n\r\n**my sollution**:\r\nchange setup.py, line 19 to : `with open('README.md', 'r',encoding='utf-8') as fh:`\r\n\r\n\r\n",
+        "state": "closed",
+        "user": "chencjiajy",
+        "closed_by": "TomorrowIsAnOtherDay",
+        "created_at": "2019-08-10T12:53:15+00:00",
+        "updated_at": "2019-08-19T09:21:48+00:00",
+        "closed_at": "2019-08-19T09:21:48+00:00",
+        "comments_count": [
+            "TomorrowIsAnOtherDay"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 29,
+        "title": "电梯调度",
+        "body": "电梯调度的事例太简单了，可以给了引入了强化学习算法的例子不",
+        "state": "closed",
+        "user": "forAlgorithm",
+        "closed_by": "WorldEditors",
+        "created_at": "2020-06-25T11:52:31+00:00",
+        "updated_at": "2024-01-26T06:30:27+00:00",
+        "closed_at": "2024-01-26T06:30:27+00:00",
+        "comments_count": [
+            "TomorrowIsAnOtherDay",
+            "Ricardoliyan",
+            "Cizel0321",
+            "TomorrowIsAnOtherDay",
+            "Cizel0321"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 28,
+        "title": "'velocity_control' 的reward规则是什么",
+        "body": "'velocity_control' 的reward规则是什么",
+        "state": "closed",
+        "user": "Ryan906k9",
+        "closed_by": "Ryan906k9",
+        "created_at": "2020-06-24T02:34:55+00:00",
+        "updated_at": "2020-07-02T10:48:45+00:00",
+        "closed_at": "2020-07-02T10:48:45+00:00",
+        "comments_count": [
+            "TomorrowIsAnOtherDay",
+            "Ryan906k9",
+            "WorldEditors",
+            "Ryan906k9",
+            "WorldEditors"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 32,
+        "title": "代码存在困惑点",
+        "body": "在quadrotorsim.py中256-258行\r\n```\r\n        self.coordination_converter_to_world = self.rotation_matrix\r\n        self.coordination_converter_to_body = np.linalg.inv(\r\n        self.rotation_matrix)\r\n```\r\n这个不是应该用 self._coordination_converter_to_world 和 self._coordination_converter_to_body 这两个吗，还是我理解的有问题呀，谢谢您的回答\r\n",
+        "state": "closed",
+        "user": "simsimiSION",
+        "closed_by": "xueeinstein",
+        "created_at": "2020-08-15T16:00:39+00:00",
+        "updated_at": "2020-08-17T09:23:18+00:00",
+        "closed_at": "2020-08-17T09:23:18+00:00",
+        "comments_count": [
+            "xueeinstein"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 16,
+        "title": "请修复read.me",
+        "body": "python 2.7.6 ,pip安装最新版RLSchool后，用read.me代码不能运行，改为以下代码通过：\r\nfrom rlschool import env as make_env\r\nenv = make_env.LiftSim()\r\nobservation = env.reset()\r\naction = [2, 0, 4, 0, 7, 0, 10, 0]\r\nfor i in range(100):\r\n    env.render()    # use render to show animation\r\n    next_obs, reward, done, info = env.step(action)\r\n\r\n",
+        "state": "closed",
+        "user": "nemon-",
+        "closed_by": "xueeinstein",
+        "created_at": "2020-01-11T08:47:55+00:00",
+        "updated_at": "2020-08-17T09:23:39+00:00",
+        "closed_at": "2020-08-17T09:23:39+00:00",
+        "comments_count": [
+            "nemon-",
+            "TomorrowIsAnOtherDay",
+            "xueeinstein"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 30,
+        "title": "In Velocity Control task, the next expected velocity is in global or body coordinate?",
+        "body": "As README says, the next expected velocity is in the global coordinate.\r\n\r\n> For \"velocity_control\" task, it has:\r\n> \r\n> next_target_g_v_x: next expected velocity of the drone in x direction, in global coordinate.\r\n> next_target_g_v_y: next expected velocity of the drone in y direction, in global coordinate.\r\n> next_target_g_v_z: next expected velocity of the drone in z direction, in global coordinate.\r\n\r\nBut in the code, it seems to be in the body coordinate.\r\nhttps://github.com/PaddlePaddle/RLSchool/blob/d4fdae4c875638a0ca7018b70fd1ce0ac35938ca/rlschool/quadrotor/env.py#L262-L267\r\nAbove ```self.velocity_targets``` is in the body coordinate.\r\nhttps://github.com/PaddlePaddle/RLSchool/blob/d4fdae4c875638a0ca7018b70fd1ce0ac35938ca/rlschool/quadrotor/quadrotorsim.py#L320",
+        "state": "closed",
+        "user": "Harryoung",
+        "closed_by": "WorldEditors",
+        "created_at": "2020-06-26T09:45:26+00:00",
+        "updated_at": "2020-08-12T08:01:46+00:00",
+        "closed_at": "2020-08-12T08:01:46+00:00",
+        "comments_count": [
+            "xueeinstein",
+            "Harryoung",
+            "xueeinstein",
+            "Harryoung"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 5,
+        "title": "The image in /rlschool/liftsim/README.md#Action ",
+        "body": "![image](https://user-images.githubusercontent.com/17827646/62700991-c8f3a100-ba15-11e9-8e3d-27c662f85b81.png)\r\n\r\ncontains 2 \"电梯3\".\r\nthe left one is actually \"电梯2\"？",
+        "state": "closed",
+        "user": "cslayers",
+        "closed_by": "cslayers",
+        "created_at": "2019-08-08T11:51:43+00:00",
+        "updated_at": "2019-08-08T15:26:26+00:00",
+        "closed_at": "2019-08-08T15:26:26+00:00",
+        "comments_count": [
+            "WorldEditors"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 36,
+        "title": "四旋翼飞行器",
+        "body": "运行DDPG的例子出现以下问题\r\nAttributeError: 'Quadrotor' object has no attribute 'reward_range'",
+        "state": "closed",
+        "user": "zayh921",
+        "closed_by": "xueeinstein",
+        "created_at": "2020-12-16T14:27:21+00:00",
+        "updated_at": "2021-06-04T02:36:26+00:00",
+        "closed_at": "2021-06-04T02:36:26+00:00",
+        "comments_count": [
+            "w5688414",
+            "YuechengLiu"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 51,
+        "title": "NOTICE: We are changing the repo name and entrance of the environments.",
+        "body": "As MetaGym will mainly focus on task generalization, we are changing the repo name from RLSchool to MetaGym (the PyPI package is changing from rlschool to metagym correspondingly), we apologize if this brings confusion to the developers.\r\n\r\nThe entrance for different environments also changed from \"rlschool.make_env\" to \"gym.make\". Check \"README\" in each environment carefully for more details\r\n\r\n因仓库定位发展变化，我们的仓库名从“RLSchool” 已经更名为“MetaGym”. 如给开发者带来不便我们深表歉意。\r\n\r\n仓库入口 rlschool.make_env 也变更为直接利用 gym.make 创建环境。详细信息请从环境README文件中获取。",
+        "state": "open",
+        "user": "WorldEditors",
+        "closed_by": null,
+        "created_at": "2021-11-01T09:11:50+00:00",
+        "updated_at": "2021-11-01T09:11:50+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 44,
+        "title": "Import Error for Mac Big Sur",
+        "body": "system： Mac Big Sur 11.4\r\npython 3.6\r\npyglet 1.5.0\r\n\r\nError occurs when import rlschool:\r\n>>> from rlschool import make_env\r\n\r\nTraceback (most recent call last):\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/site-packages/pyglet/__init__.py\", line 329, in __getattr__\r\n    return getattr(self._module, name)\r\nAttributeError: 'NoneType' object has no attribute 'Window'\r\n\r\nDuring handling of the above exception, another exception occurred:\r\n\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\n  File \"/Users/xxx/Documents/code/RLSchool/rlschool/__init__.py\", line 15, in <module>\r\n    from rlschool.liftsim import *\r\n  File \"/Users/xxx/Documents/code/RLSchool/rlschool/liftsim/__init__.py\", line 15, in <module>\r\n    from rlschool.liftsim.environment import *\r\n  File \"/Users/xxx/Documents/code/RLSchool/rlschool/liftsim/environment/__init__.py\", line 16, in <module>\r\n    from rlschool.liftsim.environment.animation import *\r\n  File \"/Users/xxx/Documents/code/RLSchool/rlschool/liftsim/environment/animation/__init__.py\", line 15, in <module>\r\n    from rlschool.liftsim.environment.animation.rendering import *\r\n  File \"/Users/xxx/Documents/code/RLSchool/rlschool/liftsim/environment/animation/rendering.py\", line 25, in <module>\r\n    class Render(pyglet.window.Window):\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/site-packages/pyglet/__init__.py\", line 335, in __getattr__\r\n    __import__(import_name)\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/site-packages/pyglet/window/__init__.py\", line 1865, in <module>\r\n    from pyglet.window.cocoa import CocoaWindow as Window\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/site-packages/pyglet/window/cocoa/__init__.py\", line 44, in <module>\r\n    from pyglet.canvas.cocoa import CocoaCanvas\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/site-packages/pyglet/canvas/__init__.py\", line 102, in <module>\r\n    from pyglet.canvas.cocoa import CocoaDisplay as Display\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/site-packages/pyglet/canvas/cocoa.py\", line 41, in <module>\r\n    from pyglet.libs.darwin.cocoapy import CGDirectDisplayID, quartz, cf\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/site-packages/pyglet/libs/darwin/__init__.py\", line 36, in <module>\r\n    from .cocoapy import *\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/site-packages/pyglet/libs/darwin/cocoapy/__init__.py\", line 37, in <module>\r\n    from .cocoalibs import *\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/site-packages/pyglet/libs/darwin/cocoapy/cocoalibs.py\", line 20, in <module>\r\n    cf.CFStringCreateWithCString.restype = c_void_p\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/ctypes/__init__.py\", line 361, in __getattr__\r\n    func = self.__getitem__(name)\r\n  File \"/Users/xxx/opt/miniconda3/envs/houseexpo/lib/python3.6/ctypes/__init__.py\", line 366, in __getitem__\r\n    func = self._FuncPtr((name_or_ordinal, self))\r\nAttributeError: dlsym(RTLD_DEFAULT, CFStringCreateWithCString): symbol not found\r\n",
+        "state": "closed",
+        "user": "HaojieSHI98",
+        "closed_by": "WorldEditors",
+        "created_at": "2021-08-16T11:39:15+00:00",
+        "updated_at": "2024-01-26T06:31:01+00:00",
+        "closed_at": "2024-01-26T06:31:01+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 38,
+        "title": "Big Sur import error: ValueError: dlsym(RTLD_DEFAULT, NSEventTrackingRunLoopMode): symbol not found",
+        "body": "Environments：\r\nsystem: Mac Big Sur 11.2.3\r\njupyter lab version: 2.2.6\r\npython version: Python 3.8.5/3.9.2\r\n\r\n当尝试`import rlschool`时，会报错`ValueError: dlsym(RTLD_DEFAULT, NSEventTrackingRunLoopMode): symbol not found`，\r\n详情如下。\r\n大致搜索了下有的说是Python版本问题，有人通过升级Python至3.9.0解决了这个问题，[issue 436](https://52.49.237.12/conda-forge/python-feedstock/issues/436)，我也尝试了升级到3.9.2但是这个问题依然存在，所以，想来看下大家有遇到这个问题吗\r\n```\r\n---------------------------------------------------------------------------\r\nAttributeError                            Traceback (most recent call last)\r\n~/opt/anaconda3/lib/python3.8/site-packages/pyglet/__init__.py in __getattr__(self, name)\r\n    328         try:\r\n--> 329             return getattr(self._module, name)\r\n    330         except AttributeError:\r\n\r\nAttributeError: 'NoneType' object has no attribute 'Window'\r\n\r\nDuring handling of the above exception, another exception occurred:\r\n\r\nValueError                                Traceback (most recent call last)\r\n<ipython-input-10-c87ef756b229> in <module>\r\n      1 # We show a simple example to start LiftSim here\r\n----> 2 import rlschool\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/rlschool/__init__.py in <module>\r\n     13 # limitations under the License.\r\n     14 \r\n---> 15 from rlschool.liftsim import *\r\n     16 from rlschool.quadrotor import *\r\n     17 \r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/rlschool/liftsim/__init__.py in <module>\r\n     13 # limitations under the License.\r\n     14 \r\n---> 15 from rlschool.liftsim.environment import *\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/rlschool/liftsim/environment/__init__.py in <module>\r\n     14 \r\n     15 from rlschool.liftsim.environment.env import *\r\n---> 16 from rlschool.liftsim.environment.animation import *\r\n     17 from rlschool.liftsim.environment.mansion import *\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/rlschool/liftsim/environment/animation/__init__.py in <module>\r\n     13 # limitations under the License.\r\n     14 \r\n---> 15 from rlschool.liftsim.environment.animation.rendering import *\r\n     16 from rlschool.liftsim.environment.animation.resources import *\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/rlschool/liftsim/environment/animation/rendering.py in <module>\r\n     23 pyglet.resource.reindex()\r\n     24 \r\n---> 25 class Render(pyglet.window.Window):\r\n     26     def __init__(self, shared):\r\n     27         self.shared_mansion = shared\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/pyglet/__init__.py in __getattr__(self, name)\r\n    333 \r\n    334             import_name = 'pyglet.%s' % self._module_name\r\n--> 335             __import__(import_name)\r\n    336             module = sys.modules[import_name]\r\n    337             object.__setattr__(self, '_module', module)\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/pyglet/window/__init__.py in <module>\r\n   1863     # Try to determine which platform to use.\r\n   1864     if pyglet.compat_platform == 'darwin':\r\n-> 1865         from pyglet.window.cocoa import CocoaWindow as Window\r\n   1866     elif pyglet.compat_platform in ('win32', 'cygwin'):\r\n   1867         from pyglet.window.win32 import Win32Window as Window\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/pyglet/window/cocoa/__init__.py in <module>\r\n     42 from pyglet.event import EventDispatcher\r\n     43 \r\n---> 44 from pyglet.canvas.cocoa import CocoaCanvas\r\n     45 \r\n     46 from pyglet.libs.darwin import cocoapy, CGPoint\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/pyglet/canvas/__init__.py in <module>\r\n    100     from pyglet import compat_platform\r\n    101     if compat_platform == 'darwin':\r\n--> 102         from pyglet.canvas.cocoa import CocoaDisplay as Display\r\n    103         from pyglet.canvas.cocoa import CocoaScreen as Screen\r\n    104         from pyglet.canvas.cocoa import CocoaCanvas as Canvas\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/pyglet/canvas/cocoa.py in <module>\r\n     39 from .base import Display, Screen, ScreenMode, Canvas\r\n     40 \r\n---> 41 from pyglet.libs.darwin.cocoapy import CGDirectDisplayID, quartz, cf\r\n     42 from pyglet.libs.darwin.cocoapy import cfstring_to_string, cfarray_to_list\r\n     43 \r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/pyglet/libs/darwin/__init__.py in <module>\r\n     34 # ----------------------------------------------------------------------------\r\n     35 \r\n---> 36 from .cocoapy import *\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/pyglet/libs/darwin/cocoapy/__init__.py in <module>\r\n     35 \r\n     36 from .cocoatypes import *\r\n---> 37 from .cocoalibs import *\r\n\r\n~/opt/anaconda3/lib/python3.8/site-packages/pyglet/libs/darwin/cocoapy/cocoalibs.py in <module>\r\n    198 \r\n    199 NSDefaultRunLoopMode = c_void_p.in_dll(appkit, 'NSDefaultRunLoopMode')\r\n--> 200 NSEventTrackingRunLoopMode = c_void_p.in_dll(appkit, 'NSEventTrackingRunLoopMode')\r\n    201 NSApplicationDidHideNotification = c_void_p.in_dll(appkit, 'NSApplicationDidHideNotification')\r\n    202 NSApplicationDidUnhideNotification = c_void_p.in_dll(appkit, 'NSApplicationDidUnhideNotification')\r\n\r\nValueError: dlsym(RTLD_DEFAULT, NSEventTrackingRunLoopMode): symbol not found\r\n```",
+        "state": "closed",
+        "user": "doublequeens",
+        "closed_by": "WorldEditors",
+        "created_at": "2021-03-29T16:34:32+00:00",
+        "updated_at": "2024-01-26T06:30:43+00:00",
+        "closed_at": "2024-01-26T06:30:43+00:00",
+        "comments_count": [
+            "doublequeens",
+            "TomorrowIsAnOtherDay",
+            "huoxr"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 42,
+        "title": "logic error in “Quadrotor” environment, maybe",
+        "body": "In source code of `rlschool/quadrotor/env.py`, `line 127` to `line 140`, \r\n```python\r\n    def step(self, action):\r\n        self.ct += 1\r\n        cmd = np.asarray(action, np.float32)\r\n        self.simulator.step(cmd.tolist(), self.dt)\r\n        sensor_dict = self.simulator.get_sensor()\r\n        state_dict = self.simulator.get_state()\r\n\r\n        old_pos = [self.simulator.global_position[0] + self.x_offset,\r\n                   self.simulator.global_position[1] + self.y_offset,\r\n                   self.simulator.global_position[2] + self.z_offset]\r\n        self._update_state(sensor_dict, state_dict)\r\n        new_pos = [self.simulator.global_position[0] + self.x_offset,\r\n                   self.simulator.global_position[1] + self.y_offset,\r\n                   self.simulator.global_position[2] + self.z_offset]\r\n```\r\nwhere `old_pos` and `new_pos` are absolutely the **same** thing (might be unexpected). \r\nMaybe the code should be like this?\r\n```python\r\n    def step(self, action):\r\n        self.ct += 1\r\n        cmd = np.asarray(action, np.float32)\r\n\r\n        # get the old_pos before calling the simulator.\r\n        old_pos = [self.simulator.global_position[0] + self.x_offset,\r\n                   self.simulator.global_position[1] + self.y_offset,\r\n                   self.simulator.global_position[2] + self.z_offset]\r\n\r\n        self.simulator.step(cmd.tolist(), self.dt)\r\n        sensor_dict = self.simulator.get_sensor()\r\n        state_dict = self.simulator.get_state()\r\n\r\n        self._update_state(sensor_dict, state_dict)\r\n        new_pos = [self.simulator.global_position[0] + self.x_offset,\r\n                   self.simulator.global_position[1] + self.y_offset,\r\n                   self.simulator.global_position[2] + self.z_offset]\r\n```",
+        "state": "closed",
+        "user": "YuechengLiu",
+        "closed_by": "xueeinstein",
+        "created_at": "2021-05-04T08:10:00+00:00",
+        "updated_at": "2021-05-06T03:41:27+00:00",
+        "closed_at": "2021-05-06T03:41:27+00:00",
+        "comments_count": [
+            "xueeinstein"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 56,
+        "title": "报错 python -m metagym.quadrotor.env hovering_control",
+        "body": "python -m metagym.quadrotor.env hovering_control\r\n\r\n/Users/chengmaoyu/anaconda3/envs/rl-3.9/lib/python3.9/runpy.py:127: RuntimeWarning: 'metagym.quadrotor.env' found in sys.modules after import of package 'metagym.quadrotor', but prior to execution of 'metagym.quadrotor.env'; this may result in unpredictable behaviour\r\n  warn(RuntimeWarning(msg))\r\nTraceback (most recent call last):\r\n  File \"/Users/chengmaoyu/anaconda3/envs/rl-3.9/lib/python3.9/runpy.py\", line 197, in _run_module_as_main\r\n    return _run_code(code, main_globals, None,\r\n  File \"/Users/chengmaoyu/anaconda3/envs/rl-3.9/lib/python3.9/runpy.py\", line 87, in _run_code\r\n    exec(code, run_globals)\r\n  File \"/Users/chengmaoyu/code/test/rl/MetaGym/metagym/quadrotor/env.py\", line 317, in <module>\r\n    env.render()\r\n  File \"/Users/chengmaoyu/code/test/rl/MetaGym/metagym/quadrotor/env.py\", line 172, in render\r\n    raise RuntimeError('[Error] Cannot connect to display screen.')\r\nRuntimeError: [Error] Cannot connect to display screen.\r\n\r\n\r\n版本信息 \r\ngym                0.23.1\r\ngym-notices        0.0.6\r\nmetagym            0.1.0\r\nnumpy              1.22.3\r\n\r\n",
+        "state": "open",
+        "user": "qa6300525",
+        "closed_by": null,
+        "created_at": "2022-05-06T14:38:26+00:00",
+        "updated_at": "2023-01-03T09:07:27+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "qa6300525",
+            "tammy-bingbing",
+            "WorldEditors",
+            "tammy-bingbing"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 50,
+        "title": "How to run it on the real A1 robot?",
+        "body": "How to run it on the real A1 robot?\r\n",
+        "state": "closed",
+        "user": "df700000",
+        "closed_by": "TomorrowIsAnOtherDay",
+        "created_at": "2021-10-28T11:23:24+00:00",
+        "updated_at": "2021-11-04T11:03:46+00:00",
+        "closed_at": "2021-11-04T11:03:46+00:00",
+        "comments_count": [
+            "WorldEditors",
+            "YangXu-Insist",
+            "TomorrowIsAnOtherDay",
+            "YangXu-Insist"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 52,
+        "title": "四足机器人quadrupedal ETG模式控制或者简单开环控制可以提供其他模式的参数文件吗？",
+        "body": "四足机器人quadrupedal ETG模式控制或者简单开环控制可以提供横行，倒退等模式的参数文件吗",
+        "state": "open",
+        "user": "JeffXu1",
+        "closed_by": null,
+        "created_at": "2021-12-17T06:36:18+00:00",
+        "updated_at": "2021-12-20T02:20:37+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "TomorrowIsAnOtherDay",
+            "JeffXu1"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 63,
+        "title": "是否考虑无人驾驶汽车的场景",
+        "body": "是否考虑无人驾驶汽车的场景",
+        "state": "open",
+        "user": "monkeycc",
+        "closed_by": null,
+        "created_at": "2022-07-24T08:17:17+00:00",
+        "updated_at": "2022-08-25T03:21:57+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "WorldEditors"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 64,
+        "title": "env.render()问题",
+        "body": "您好，我正在使用的环境是：\r\npython 3.7.9\r\ngym 0.21.0\r\nmetagym  0.1.1\r\n执行如下代码：\r\nimport gym\r\nimport metagym.quadrotor\r\nenv = gym.make(\"quadrotor-v0\", task=\"no_collision\")\r\nenv.reset()\r\nenv.render()\r\n出现报错：\r\nRuntimeError: [Error] Cannot connect to display screen.\r\n经查找缺少：colour、trimesh 两个包\r\n使用pip安装如下版本：\r\ncolour 0.1.5\r\ntrimesh 3.15.3\r\n安装后解决上述问题，但是新增报错：\r\nAttributeError: 'ColorVisuals' object has no attribute 'crc'\r\n经查找问题出现在“metagym\\quadrotor\\utils.py”文件的“geometry_hash”函数中\r\n查找“trimesh”官方API后，决定尝试用“geometry.crc()”代替“geometry.visual.crc()”；\r\n我将第113行“md5 += str(geometry.visual.crc())”修改为“md5 = str(geometry.crc())”\r\n修改后程序可以正常运行。\r\n希望官方能够明确安装所需全部依赖及其版本，同时能否确认我遇到的第二个问题是否属于“trimesh”版本不匹配。\r\n谢谢！",
+        "state": "open",
+        "user": "Xia0Shuai",
+        "closed_by": null,
+        "created_at": "2022-10-06T14:17:21+00:00",
+        "updated_at": "2022-12-20T09:33:55+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "WorldEditors",
+            "WorldEditors",
+            "mrChaiChai"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 65,
+        "title": "raise KeyError(key)     KeyError: 'Configuration'",
+        "body": null,
+        "state": "closed",
+        "user": "Ricardoliyan",
+        "closed_by": "Ricardoliyan",
+        "created_at": "2022-10-27T02:31:36+00:00",
+        "updated_at": "2023-12-29T07:21:34+00:00",
+        "closed_at": "2022-10-27T03:29:12+00:00",
+        "comments_count": [
+            "Ricardoliyan"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 66,
+        "title": "自定义人流模式问题",
+        "body": "mansion_flow.npy文件中准备了一天的人流分布数据，请问人流分布在时间考虑上是按泊松分布嘛？如果我只想训练一天中午两小时的人流数据有办法吗",
+        "state": "open",
+        "user": "Ricardoliyan",
+        "closed_by": null,
+        "created_at": "2022-11-03T07:12:47+00:00",
+        "updated_at": "2022-11-17T07:45:06+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "WorldEditors",
+            "Ricardoliyan",
+            "Ricardoliyan",
+            "WorldEditors",
+            "WorldEditors"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 67,
+        "title": "about AttributeError: 'ColorVisuals' object has no attribute 'crc'",
+        "body": "When i use this to test the environment, it always send me the message that **AttributeError: 'ColorVisuals' object has no attribute 'crc'**, So what's the reason, thanks!\r\n",
+        "state": "open",
+        "user": "Marverlises",
+        "closed_by": null,
+        "created_at": "2022-11-07T09:30:36+00:00",
+        "updated_at": "2022-11-22T05:47:50+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "WorldEditors",
+            "Marverlises",
+            "xueeinstein",
+            "WorldEditors"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 74,
+        "title": "LiftSim relation between  DeliveredPersons, GeneratedPersons and 'AbandonedPersons in env.get.statastics() method ",
+        "body": "@WorldEditors @TomorrowIsAnOtherDay  env.statastics() method gave the following output however i am unable to understand how the DeliveredPersons, GeneratedPersons and  \r\n'AbandonedPersons are related? Ideally my understanding is \r\n\r\n GeneratedPersons = DeliveredPersons +  AbandonedPersons\r\n\r\nBut that is not happening here could anyone please clarify? \r\n\r\n{'DeliveredPersons(10Minutes)': 25, 'GeneratedPersons(10Minutes)': 56, 'EnergyConsumption(10Minutes)': 2333473.528360311, 'TotalWaitingTime(10Minutes)': 15122.5, 'AbandonedPersons(10Minutes)': 44}\r\n",
+        "state": "closed",
+        "user": "dineshresearch",
+        "closed_by": "dineshresearch",
+        "created_at": "2023-07-04T10:59:53+00:00",
+        "updated_at": "2023-07-26T16:06:02+00:00",
+        "closed_at": "2023-07-26T16:06:02+00:00",
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 68,
+        "title": "关于liftsim时间特征",
+        "body": "我注意到liftsim第二轮比赛是可以加入时间特征的，该怎么在提供的示例代码中加入时间特征呢？还是custom_generator中已经默认帮我加好了时间特征",
+        "state": "open",
+        "user": "Ricardoliyan",
+        "closed_by": null,
+        "created_at": "2022-11-15T06:41:35+00:00",
+        "updated_at": "2022-11-17T07:42:59+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "WorldEditors"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 72,
+        "title": "MazeTaskSampler 导入失败",
+        "body": "  File \"E:\\projects\\MetaGym\\metagym\\metamaze\\test.py\", line 7, in <module>\r\n    from metagym.metamaze import MazeTaskSampler\r\nImportError: cannot import name 'MazeTaskSampler' from 'metagym.metamaze' (D:\\Programs\\Anaconda3\\lib\\site-packages\\metagym\\metamaze\\__init__.py)       ",
+        "state": "open",
+        "user": "smartparrot",
+        "closed_by": null,
+        "created_at": "2023-03-15T08:17:19+00:00",
+        "updated_at": "2023-07-27T04:01:39+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "WorldEditors"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 70,
+        "title": "关于电梯调度模拟环境",
+        "body": "您好，我在使用liftsim 仿真环境时，出现AttributeError：module  'pyglet.gt' has no attribute 'get_current_context'请问如何解决？  \r\n",
+        "state": "closed",
+        "user": "JACK-ZHANGCHEN",
+        "closed_by": "WorldEditors",
+        "created_at": "2022-12-19T06:21:01+00:00",
+        "updated_at": "2023-07-27T03:57:37+00:00",
+        "closed_at": "2023-07-27T03:57:37+00:00",
+        "comments_count": [
+            "WorldEditors",
+            "JACK-ZHANGCHEN",
+            "WorldEditors"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 73,
+        "title": "Liftsim support for MARL algorithms ",
+        "body": "@TomorrowIsAnOtherDay do liftsim simulator support MARL algorithms like MADDPG? If so could you provide any reference baseline implementation that i could refer to   ",
+        "state": "open",
+        "user": "dineshresearch",
+        "closed_by": null,
+        "created_at": "2023-06-06T04:15:39+00:00",
+        "updated_at": "2023-09-21T07:52:55+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "WorldEditors",
+            "dineshresearch"
+        ],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 76,
+        "title": "请问要想复现balancebeam和cave这两个任务的实验，需要更改哪些设置",
+        "body": "我直接使用 python3 train.py --task_mode balancebeam --eval 1 --load data/model/Balance_act0.2_ES1_rpm1_2_itr_830130.pt\r\n这样的命令，发现无法正常的在平衡木上行走，请问除此之外还需要调整那些设置？",
+        "state": "open",
+        "user": "liuholin",
+        "closed_by": null,
+        "created_at": "2023-10-04T02:12:08+00:00",
+        "updated_at": "2023-10-04T02:12:08+00:00",
+        "closed_at": null,
+        "comments_count": [],
+        "labels": []
+    },
+    {
+        "repo": "PaddlePaddle/MetaGym",
+        "number": 75,
+        "title": "env.render()报错 'Mat4' object is not callable",
+        "body": "![1694506745890](https://github.com/PaddlePaddle/MetaGym/assets/143948668/1550ff83-0dda-4446-8e69-c72a061a2256)\r\n",
+        "state": "open",
+        "user": "linggga",
+        "closed_by": null,
+        "created_at": "2023-09-12T08:19:24+00:00",
+        "updated_at": "2023-12-09T03:10:33+00:00",
+        "closed_at": null,
+        "comments_count": [
+            "hinagigu"
+        ],
+        "labels": []
+    }
+]

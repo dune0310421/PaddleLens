@@ -1,0 +1,691 @@
+[
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 18,
+        "title": "fix some bug for paddle2.1 and update some tutorials",
+        "body": "",
+        "issue_number": "18",
+        "state": "closed",
+        "merged": false,
+        "user": "XianrenYty",
+        "merged_by": null,
+        "created_at": "2021-07-21T06:03:22+00:00",
+        "closed_at": "2021-07-21T06:36:45+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 0,
+        "commits": [],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 16,
+        "title": "update latest nlp tutorials",
+        "body": "",
+        "issue_number": "16",
+        "state": "closed",
+        "merged": true,
+        "user": "XianrenYty",
+        "merged_by": "holyseven",
+        "created_at": "2021-07-09T11:54:19+00:00",
+        "closed_at": "2021-07-09T12:49:34+00:00",
+        "additions": 3865,
+        "deletions": 3,
+        "changed_files": 13,
+        "commits": [
+            "c3b3af18706ff7da3c616b3d2645d440275b5c0f",
+            "125ed142587b7f2e4e84709b7e313c863b7260a1",
+            "df385ed4d2a908b8d93852dcdf7086636e5dd59e",
+            "45821893d249e242c38c861bea4d40b8950685f7",
+            "a48fa776831a96e9a2768cecd0d3619d6bd5988f"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 20,
+        "title": "add rollout method for vit",
+        "body": "",
+        "issue_number": "20",
+        "state": "closed",
+        "merged": true,
+        "user": "XianrenYty",
+        "merged_by": "holyseven",
+        "created_at": "2021-07-22T08:09:03+00:00",
+        "closed_at": "2021-07-22T08:11:48+00:00",
+        "additions": 332,
+        "deletions": 7,
+        "changed_files": 6,
+        "commits": [
+            "ff5635fa5adbd4f076bea7d1a3afa35fd73fd624",
+            "1765a5b3f0c7a8578e7f00c463abbe2553c367ca",
+            "cd8bf65c79808c4794aa438a2ee43a976d997471",
+            "79fc84d38a5210fd32aa86ce2f1da258c0eec154"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 30,
+        "title": "add nlp version for ga and bt",
+        "body": null,
+        "issue_number": "30",
+        "state": "closed",
+        "merged": true,
+        "user": "jiaminchen-1031",
+        "merged_by": "holyseven",
+        "created_at": "2022-07-05T12:33:18+00:00",
+        "closed_at": "2022-07-07T06:11:53+00:00",
+        "additions": 1786,
+        "deletions": 317,
+        "changed_files": 11,
+        "commits": [
+            "875791ecc369c66d479e3a56dd5c33b5425f7609",
+            "f547508156754a01c47b342a7f12a569d1ec87ed",
+            "47294570343453a0d36be66483a0ab0963d12416",
+            "0d5f9011206013d54c633f7f85e9258ad929a68d",
+            "d25d72194a94f8fe536b4464a93a84fe30cf994d",
+            "76dc2727402c7ad5c8c262273cf29ff2f5dd33e7",
+            "097634a021aa283fc13878b3a3ff3e81c7548fc6",
+            "48d0bdf0466d236c49a3de85d0f2148714088ee9",
+            "d35e595e439752cdd9992d406bf558b2c81cb80d",
+            "e377eabdb0f7cce49188c319b317f63c944387f3",
+            "319efe7523dae3ca62423d8fb0177d47527e0dee",
+            "c625f28644b00f12bcea3821ab397f4bb2aa56ff",
+            "f41a4c9df0758520cbc4644749e94f5f0b3d98de",
+            "3ea05dfe8d9b178ef2369b70297e6d8aa40be955",
+            "357d94f558241577700ab08d286610a6eab0d5d1",
+            "0c76a51d402259c23ccf9945986e70761ac1ed42",
+            "9c01647726b0fc4420364ce444af6a87b43f3f25",
+            "164f110d0f279b95f36f52079f25aace91d32e0f",
+            "df31123e6d140bd40d74050da644393373cac293",
+            "44ac6772de61df29572b8a25ad79d4d768d6fa53",
+            "fcc744c5bde22b420d5771975026db3b077facf2"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 22,
+        "title": "update transition attention maps method",
+        "body": "Update transition attention maps method:\r\nTingyi Yuan, Xuhong Li, Haoyi Xiong, Hui Cao, Dejing Dou. Explaining Information Flow Inside Vision Transformers Using Markov Chain.\r\n",
+        "issue_number": "22",
+        "state": "closed",
+        "merged": true,
+        "user": "XianrenYty",
+        "merged_by": "holyseven",
+        "created_at": "2021-10-12T08:04:38+00:00",
+        "closed_at": "2021-10-13T08:13:33+00:00",
+        "additions": 447,
+        "deletions": 1,
+        "changed_files": 4,
+        "commits": [
+            "3458c7ff154422e98df1fee30d4df3c005234eb2",
+            "44fbb6e89a67bce7937a4e7bd1fd86bae3ca7db0",
+            "b4029ddaad68a7dc66ae0d6ec38b60958b4db71f",
+            "0b357aad44113a0473a443da3b496885d69aa9ba",
+            "d6fe7b7397a871a8b3896557ee940637026f6019",
+            "363873b154b3d3e6fc89afbc26c5d60049db3d98"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 19,
+        "title": "add judgment for type of gradient",
+        "body": "",
+        "issue_number": "19",
+        "state": "closed",
+        "merged": true,
+        "user": "XianrenYty",
+        "merged_by": "holyseven",
+        "created_at": "2021-07-21T07:59:15+00:00",
+        "closed_at": "2021-07-21T08:19:00+00:00",
+        "additions": 158,
+        "deletions": 1185,
+        "changed_files": 8,
+        "commits": [
+            "2ee413718f319a9a5ccadf7fc8d55805f9baa012",
+            "b5e7e1b254e468f618493f0a7bfcecfa4bdb568e",
+            "7756b7d911bed775a5f48faa61a1e18dd52fb741"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 24,
+        "title": "a readme in Chinese by jqr",
+        "body": null,
+        "issue_number": "24",
+        "state": "closed",
+        "merged": true,
+        "user": "Christophe-Jia",
+        "merged_by": "holyseven",
+        "created_at": "2021-12-07T15:29:54+00:00",
+        "closed_at": "2021-12-08T02:17:47+00:00",
+        "additions": 231,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "3394a7e36040191a582ca2f35a5f2bbfd5442269",
+            "19cc2bba4de476529f24c9e1ba53c6594d6fc933",
+            "cdbbfafccab6569722a6ac73023dd70dbc1e48f6",
+            "e738dcf432fd9c600ba1747d90d2c3028aa1237a",
+            "db8f3afdc8a5a07dac85bd12ffb704ad54b2be26",
+            "ef6746adadc2071caf4dc560f1731a2f5147c8be",
+            "bc5379024ed6cd897fd6d60f9a9542bd995fd3fb",
+            "f44c767e3743511aaf2c028859be040a60fc7cf6",
+            "5736cb880d3c9bd79241d2ea6cb0490d9e8b089d"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 15,
+        "title": "fix gradient computation bugs and update some tutorials",
+        "body": "",
+        "issue_number": "15",
+        "state": "closed",
+        "merged": true,
+        "user": "XianrenYty",
+        "merged_by": "holyseven",
+        "created_at": "2021-07-09T02:20:46+00:00",
+        "closed_at": "2021-07-09T02:47:08+00:00",
+        "additions": 313,
+        "deletions": 199,
+        "changed_files": 7,
+        "commits": [
+            "aa2d2da9ff4d1724dcbb94e5db7eacd705c2e54d",
+            "7136d5f0f31925234508c243649c8008b51343fd",
+            "09697e618d79e6ba85f87bb56d1d70769be53ed5"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 28,
+        "title": "Bidirectional Transformer Interpreter",
+        "body": "add interpreter, test and corresponding tutorial for bidirectional transformer interpreter.",
+        "issue_number": "28",
+        "state": "closed",
+        "merged": true,
+        "user": "jiaminchen-1031",
+        "merged_by": "holyseven",
+        "created_at": "2022-06-28T08:59:03+00:00",
+        "closed_at": "2022-06-28T09:37:22+00:00",
+        "additions": 491,
+        "deletions": 0,
+        "changed_files": 3,
+        "commits": [
+            "40dad81ca85ab4b68c305a2e5f874f49df17336c",
+            "841d06cc6cb45d1ee4f5e65a08b7b8267018aa4d",
+            "8880b4762b4b3f43c22de5c13a72fc6058259650"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 25,
+        "title": "“ernie-1.0-zh-chnsenticorp-tutorials.ipynb”中创建GradShapNLPInterpreter对象的参数有误",
+        "body": "直接运行代码段“GradShapNLPInterpreter”，出现下述错误：\r\n![image](https://user-images.githubusercontent.com/89008682/157160234-6c19911a-eac9-44ff-93eb-40ded030ef0e.png)\r\n其原因是下述语句参数有误：\r\nig = it.GradShapNLPInterpreter(model, True)\r\n第2个参数是设备类型，可以选择'gpu'或'cpu'，而不是布尔型True。\r\n因此、将上述语句的参数修改为(model, 'gpu', True)。\r\n",
+        "issue_number": "25",
+        "state": "closed",
+        "merged": true,
+        "user": "Wgm-Inspur",
+        "merged_by": "holyseven",
+        "created_at": "2022-03-08T03:25:27+00:00",
+        "closed_at": "2022-03-08T08:00:10+00:00",
+        "additions": 1,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "dd70cf8b69c9c406d5143a48eac33a45331e5ce7"
+        ],
+        "comment_by": [
+            "holyseven"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 14,
+        "title": "Add lrp_interpreter and lrp_tutorial_cv",
+        "body": "1. Add lrp_interpreter and lrp_tutorial_cv\r\n\r\n2. Update lrp_model:\r\n    - [x] resnet18\r\n    - [x] resnet34\r\n    - [x] resnet50\r\n    - [x] resnet101\r\n    - [x] resnet152\r\n    - [x] vgg16",
+        "issue_number": "14",
+        "state": "closed",
+        "merged": true,
+        "user": "XianrenYty",
+        "merged_by": "holyseven",
+        "created_at": "2021-07-08T08:04:10+00:00",
+        "closed_at": "2021-07-08T08:07:51+00:00",
+        "additions": 2896,
+        "deletions": 80,
+        "changed_files": 10,
+        "commits": [
+            "d23012c9500ddfaf019892cca7c9ee6b1401f557",
+            "a781816880bf4f3d3e61a5dc72ae300955e62066",
+            "54b197c9f5220430c57c5022f221ff33d1a25649",
+            "6259cadbb38c021b5038d3fdeaff10f5c9d8571b",
+            "71af9a3a980a336c89865448b495be1f8b048e19"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 29,
+        "title": "modif to BT interpreter",
+        "body": "add token test",
+        "issue_number": "29",
+        "state": "closed",
+        "merged": true,
+        "user": "jiaminchen-1031",
+        "merged_by": "holyseven",
+        "created_at": "2022-06-29T05:49:49+00:00",
+        "closed_at": "2022-06-29T07:15:21+00:00",
+        "additions": 39,
+        "deletions": 29,
+        "changed_files": 3,
+        "commits": [
+            "2ac78d7cb7d06826d458c1e6af85377b07eeb28c",
+            "94acd2d2784f5c425450baa8b51e7581d42d2a48",
+            "d889a384422a7d830d4f99b3822766d081a68f8d",
+            "dd7874effdca21333fbc7442b2f4e7afcb271f6e",
+            "66b01bd58b98e0d046dfb26f6219833f2066f507"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "holyseven",
+            "holyseven"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 36,
+        "title": "modif to doc",
+        "body": "deleting codes mentioned in TransformerInterpreter",
+        "issue_number": "36",
+        "state": "closed",
+        "merged": true,
+        "user": "jiaminchen-1031",
+        "merged_by": "holyseven",
+        "created_at": "2022-08-16T10:22:37+00:00",
+        "closed_at": "2022-08-17T03:14:20+00:00",
+        "additions": 0,
+        "deletions": 12,
+        "changed_files": 2,
+        "commits": [
+            "daf9aca13eaaba531d8e6622f85f5fe1c21e0a2c"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 39,
+        "title": "error fixed",
+        "body": null,
+        "issue_number": "39",
+        "state": "closed",
+        "merged": true,
+        "user": "jiaminchen-1031",
+        "merged_by": "holyseven",
+        "created_at": "2022-08-17T07:23:36+00:00",
+        "closed_at": "2022-08-17T07:30:24+00:00",
+        "additions": 6,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "853af5595b92f4c34ce0484dfd24e6152534281f"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 49,
+        "title": "change loss.numpy()[0] to float(loss) to adapt 0D",
+        "body": "change loss.numpy()[0] to float(loss) to adapt 0D",
+        "issue_number": "49",
+        "state": "closed",
+        "merged": false,
+        "user": "zhwesky2010",
+        "merged_by": null,
+        "created_at": "2023-01-17T09:48:19+00:00",
+        "closed_at": "2023-01-17T09:48:22+00:00",
+        "additions": 0,
+        "deletions": 0,
+        "changed_files": 0,
+        "commits": [],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 33,
+        "title": "little modifs for BHDF",
+        "body": null,
+        "issue_number": "33",
+        "state": "closed",
+        "merged": true,
+        "user": "Christophe-Jia",
+        "merged_by": "holyseven",
+        "created_at": "2022-07-18T09:50:02+00:00",
+        "closed_at": "2022-07-18T11:29:32+00:00",
+        "additions": 71,
+        "deletions": 97,
+        "changed_files": 3,
+        "commits": [
+            "5f42630da04ad5afd55432eda3d75d127f3bea80",
+            "e64982149b1c5eff1ab8b8ac455f6f192b190999"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 34,
+        "title": "fix a definition flaw",
+        "body": null,
+        "issue_number": "34",
+        "state": "closed",
+        "merged": true,
+        "user": "Christophe-Jia",
+        "merged_by": "holyseven",
+        "created_at": "2022-07-25T05:36:05+00:00",
+        "closed_at": "2022-07-25T05:40:56+00:00",
+        "additions": 1,
+        "deletions": 0,
+        "changed_files": 1,
+        "commits": [
+            "308b283718839b9daed2c5ed0b0b3267dcd15f58"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 57,
+        "title": "debug bt method",
+        "body": "1) debug for bt method (original token-wise method with input vector norm )\r\n2) update description\r\n3) add avg pooling",
+        "issue_number": "57",
+        "state": "closed",
+        "merged": true,
+        "user": "jiaminchen-1031",
+        "merged_by": "holyseven",
+        "created_at": "2023-03-24T11:22:21+00:00",
+        "closed_at": "2023-03-25T01:05:20+00:00",
+        "additions": 28,
+        "deletions": 15,
+        "changed_files": 2,
+        "commits": [
+            "e9b425d7cfed08d429a98a6a212eb5b559d0fbe6"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 50,
+        "title": "change loss.numpy()[0] to float(loss) to adapt 0D",
+        "body": "loss正确的语义为0D Tensor，其shape为[]，当前使用了shape为[1]替代，也就是向量Tensor：\r\n\r\n在进行升级为0D后，loss.numpy()[0] 的写法不再使用，将其改变为 float(loss) 的写法，在升级前(shape为[1])、升级后(shape为[])下都同样适用，兼容改法。",
+        "issue_number": "50",
+        "state": "closed",
+        "merged": true,
+        "user": "zhwesky2010",
+        "merged_by": "holyseven",
+        "created_at": "2023-01-17T09:49:05+00:00",
+        "closed_at": "2023-01-18T01:51:44+00:00",
+        "additions": 6,
+        "deletions": 6,
+        "changed_files": 2,
+        "commits": [
+            "2397a6726aae344517aa8bea7f0f4e6e2ce4b947"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 35,
+        "title": "modif to docs",
+        "body": "add missing information for args and deleting useless variables",
+        "issue_number": "35",
+        "state": "closed",
+        "merged": true,
+        "user": "jiaminchen-1031",
+        "merged_by": "holyseven",
+        "created_at": "2022-08-15T11:41:57+00:00",
+        "closed_at": "2022-08-15T13:19:19+00:00",
+        "additions": 57,
+        "deletions": 56,
+        "changed_files": 2,
+        "commits": [
+            "9dd3d02321a6a5acc892e7794c0628ae7be84c3e",
+            "78ae728903b1aca9a78ae16bce88f2408980868e",
+            "1dcbabbcb284780ddd388f45148d461dd85705e5"
+        ],
+        "comment_by": [],
+        "review_by": [
+            "holyseven",
+            "holyseven",
+            "holyseven",
+            "jiaminchen-1031"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 31,
+        "title": "Add training dynamics based algorithm",
+        "body": null,
+        "issue_number": "31",
+        "state": "closed",
+        "merged": true,
+        "user": "Christophe-Jia",
+        "merged_by": "holyseven",
+        "created_at": "2022-07-15T08:31:57+00:00",
+        "closed_at": "2022-07-15T11:26:45+00:00",
+        "additions": 557,
+        "deletions": 1,
+        "changed_files": 4,
+        "commits": [
+            "b3a1bcf2b52de0e5858a4ef87821219990557245",
+            "6765a1b2d7de70cbc11bd65c4f424deada1a6c2e"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": [
+            "holyseven",
+            "holyseven"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 43,
+        "title": "CVE-2007-4559 Patch",
+        "body": "# Patching CVE-2007-4559\n\nHi, we are security researchers from the Advanced Research Center at [Trellix](https://www.trellix.com). We have began a campaign to patch a widespread bug named CVE-2007-4559. CVE-2007-4559 is a 15 year old bug in the Python tarfile package. By using extract() or extractall() on a tarfile object without sanitizing input, a maliciously crafted .tar file could perform a directory path traversal attack. We found at least one unsantized extractall() in your codebase and are providing a patch for you via pull request. The patch essentially checks to see if all tarfile members will be extracted safely and throws an exception otherwise. We encourage you to use this patch or your own solution to secure against CVE-2007-4559. Further technical information about the vulnerability can be found in this [blog](https://www.trellix.com/en-us/about/newsroom/stories/research/tarfile-exploiting-the-world.html).\n\nIf you have further questions you may contact us through this projects lead researcher [Kasimir Schulz](mailto:kasimir.schulz@trellix.com).\n",
+        "issue_number": "43",
+        "state": "closed",
+        "merged": true,
+        "user": "TrellixVulnTeam",
+        "merged_by": "holyseven",
+        "created_at": "2022-11-28T07:09:58+00:00",
+        "closed_at": "2022-12-06T01:53:44+00:00",
+        "additions": 20,
+        "deletions": 1,
+        "changed_files": 1,
+        "commits": [
+            "993e0443d24def119c826f3a854dceb25268ae8c"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 51,
+        "title": "grad method changed in paddle2.4",
+        "body": "grad method changed in paddle2.4, need to check more code about grad process....grad-cam for example",
+        "issue_number": "51",
+        "state": "closed",
+        "merged": true,
+        "user": "carlz1020",
+        "merged_by": "holyseven",
+        "created_at": "2023-02-10T02:11:03+00:00",
+        "closed_at": "2023-02-10T03:00:09+00:00",
+        "additions": 8,
+        "deletions": 6,
+        "changed_files": 1,
+        "commits": [
+            "d8a661d7e8c75b588853d186c063b49f291e9b7f"
+        ],
+        "comment_by": [
+            "CLAassistant",
+            "holyseven"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 32,
+        "title": "BHDF: update interpolation without pandas and fix errors",
+        "body": null,
+        "issue_number": "32",
+        "state": "closed",
+        "merged": false,
+        "user": "Christophe-Jia",
+        "merged_by": null,
+        "created_at": "2022-07-18T03:30:22+00:00",
+        "closed_at": "2022-07-18T09:02:42+00:00",
+        "additions": 49,
+        "deletions": 45,
+        "changed_files": 3,
+        "commits": [
+            "f5f5213ace79fc6089cde6b44a7492836a6625f1",
+            "ddee2f5ddc6715fe0f64a9994cbc837fd9e5b146"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": [
+            "holyseven",
+            "holyseven"
+        ]
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 59,
+        "title": "update bt token test",
+        "body": null,
+        "issue_number": "59",
+        "state": "closed",
+        "merged": true,
+        "user": "jiaminchen-1031",
+        "merged_by": "holyseven",
+        "created_at": "2023-03-28T08:41:37+00:00",
+        "closed_at": "2023-03-29T03:39:49+00:00",
+        "additions": 2,
+        "deletions": 2,
+        "changed_files": 2,
+        "commits": [
+            "5b1754e6243f6ca0b44b092eff24e16f91168f5e",
+            "8efa4b7daa1d20ba8fbf65f23db07cb573e98419",
+            "1e6a637746ec8631944882a95ffb38196f1b4f23"
+        ],
+        "comment_by": [],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 62,
+        "title": "fix errors",
+        "body": null,
+        "issue_number": "62",
+        "state": "closed",
+        "merged": true,
+        "user": "Christophe-Jia",
+        "merged_by": "holyseven",
+        "created_at": "2023-04-26T05:13:36+00:00",
+        "closed_at": "2023-04-26T06:24:20+00:00",
+        "additions": 26,
+        "deletions": 12,
+        "changed_files": 1,
+        "commits": [
+            "3ef2b25cf135a831bd8e038f07de31fdbdf62665"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 64,
+        "title": "fix the gradcam-segment tutorials's error",
+        "body": "layer is not defined, it shoule be loss",
+        "issue_number": "64",
+        "state": "closed",
+        "merged": true,
+        "user": "miaomaomiaomaoda",
+        "merged_by": "holyseven",
+        "created_at": "2023-05-15T07:50:41+00:00",
+        "closed_at": "2023-05-15T08:30:51+00:00",
+        "additions": 6,
+        "deletions": 5,
+        "changed_files": 1,
+        "commits": [
+            "11c54ab8ad2e499a85348e347032e2e9ea3de3fb"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    },
+    {
+        "repo": "PaddlePaddle/InterpretDL",
+        "number": 61,
+        "title": "Update demo of training dynamics interpreter ",
+        "body": null,
+        "issue_number": "61",
+        "state": "closed",
+        "merged": true,
+        "user": "Christophe-Jia",
+        "merged_by": "holyseven",
+        "created_at": "2023-04-25T17:06:58+00:00",
+        "closed_at": "2023-04-25T23:51:16+00:00",
+        "additions": 201,
+        "deletions": 68,
+        "changed_files": 2,
+        "commits": [
+            "311c9e47670a598df924e25c36d584512f2d2568",
+            "7a4a37fba9487adfec14cd3e503ba37a375a1f6a"
+        ],
+        "comment_by": [
+            "CLAassistant"
+        ],
+        "review_by": []
+    }
+]
