@@ -67,6 +67,33 @@ def getPosifixMap():
     # print(extensionToLang)
     write_file('./cache/language.cache',extensionToLang)
 
+
+def getREADMEOf(project):
+    Tree = Commit(Project(project).tail).tree
+    readme = []
+    for _, filename, blob in Tree.traverse():
+        #if project == 'tensorflow_tensorflow':
+            #print(filename)
+        try:
+            filename = filename.decode('utf-8')
+        except:
+            continue
+        #if project == 'pandas-dev_pandas':
+        #    print(filename)
+        if 'readme' in filename.lower():
+            if len(readme) == 0:
+                readme = [filename, blob]
+            else:
+                if len(filename) < len(readme[0]):
+                    readme = [filename, blob]
+    if len(readme) == 0:
+        return ''
+    else:
+        return Blob(readme[1]).data.decode('utf-8')
+
+def re_preprocessed(kw):
+    return '(\A|\W)' + kw + '\W'
+
 if __name__ == '__main__':
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
