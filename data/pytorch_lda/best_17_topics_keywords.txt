@@ -1,0 +1,17 @@
+topic 0: repositori model ai applic resourc llm function gener code repo
+topic 1: evalu color chart assess aesthet score leaderboard metric promot detect
+topic 2: 3d paper scene reconstruct code render repositori repo estim applic
+topic 3: pytorch optic watermark frame pixel plugin evolutionari interpol differenti vsr
+topic 4: chattt ad implement audiobook recurr xlstm stori eda lip normal
+topic 5: speech audio recognit process realtim whisper stream voic transcript asr
+topic 6: prompt detect model paper llm secur code main segment languag
+topic 7: learn neural protein deep network repositori recommend model predict structur
+topic 8: gener model imag paper code video applic cv repo repositori
+topic 9: tool support function applic softwar repositori includ data document voic
+topic 10: support optim tool gpu softwar librari llm infer cach effici
+topic 11: agent ai autom develop tool function framework workflow platform includ
+topic 12: model code paper repo multimod dataset evalu repositori includ languag
+topic 13: paper code repositori repo learn implement robot function includ simul
+topic 14: model effici optim repositori implement paper code train includ function
+topic 15: model time data seri paper forecast repositori repo code function
+topic 16: tool support applic function softwar repositori includ comfyui cv workflow
