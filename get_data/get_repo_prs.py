@@ -49,7 +49,8 @@ def fetch_pr_info(gh, repo_full_name, pr_num):
             comments_list = []
             for comment in comments:
                 comment_author = comment.user.login if comment.user else None
-                comments_list.append(comment_author)
+                comment_time = comment.created_at.isoformat() if comment.created_at else None
+                comments_list.append((comment_author, comment_time))
             pr_info['comment_by'] = comments_list
         # 获取review comments
         pr_info['review_by'] = []
@@ -59,8 +60,22 @@ def fetch_pr_info(gh, repo_full_name, pr_num):
             review_comments_list = []
             for comment in review_comments:
                 comment_author = comment.user.login if comment.user else None
-                review_comments_list.append(comment_author)
+                comment_time = comment.created_at.isoformat() if comment.created_at else None
+                review_comments_list.append((comment_author, comment_time))
             pr_info['review_by'] = review_comments_list
+        # 获取files
+        pr_files = pr.get_files()
+        pr_info['files'] = []
+        if pr_files:
+            for file in pr_files:
+                file_info = {
+                    'filename': file.filename,
+                    'status': file.status,
+                    'additions': file.additions,
+                    'deletions': file.deletions,
+                    'changes': file.changes,
+                }
+                pr_info['files'].append(file_info)
         return pr_info
     except Exception as e:
         logger.error(f"Error fetching PR {pr.number} for repository {pr.base.repo.full_name}: {e}")
