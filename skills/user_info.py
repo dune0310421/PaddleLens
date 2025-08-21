@@ -106,8 +106,10 @@ def get_user_reviews(username, repo_full_name):
     for pr in prs:
         if 'review_by' not in pr or pr['review_by'] == None:
             continue
-        if username in pr['review_by']:
-            review_pr_list.append(pr)
+        for review in pr['review_by']:
+            if review[0] == username:
+                review_pr_list.append(pr)
+                break
     return review_pr_list
 
 def get_user_comments(username, repo_full_name):
@@ -124,8 +126,10 @@ def get_user_comments(username, repo_full_name):
             prs = json.load(f)
         for pr in prs:
             if 'comment_by' in pr and pr['comment_by']:
-                if username in pr['comment_by']:
-                    comment_list.append(pr)
+                for comment in pr['comment_by']:
+                    if comment[0] == username:
+                        comment_list.append(pr)
+                        break
     except Exception as e:
         logger.error(f"Error fetching PR comments for {repo_full_name}: {e}")
 
@@ -135,8 +139,10 @@ def get_user_comments(username, repo_full_name):
             issues = json.load(f)
         for issue in issues:
             if 'comment_by' in issue and issue['comment_by']:
-                if username in issue['comment_by']:
-                    comment_list.append(issue)
+                for comment in issue['comment_by']:
+                    if comment[0] == username:
+                        comment_list.append(issue)
+                        break
     except Exception as e:
         logger.error(f"Error fetching issue comments for {repo_full_name}: {e}")
 
@@ -262,11 +268,6 @@ def user_info(token, username):
             # repo_owner = repo['full_name'].split('/')[0]
             # if repo_owner == 'PaddlePaddle' or repo_owner == 'PFCCLab':
             #     info['paddle_repos_cnt'] += 1
-
-    with open(f"data/developer/{username}/{username}_can_merge.json", 'r', encoding='utf-8') as f:
-        merge_repos = json.load(f)
-    info['paddle_repos_can_merge'] = merge_repos
-    info['paddle_repos_can_merge_cnt'] = len(merge_repos)
     
     return info
 
@@ -282,6 +283,7 @@ if __name__ == "__main__":
     # username = 'dune0310421'
     username = 'Aurelius84'
 
-    info = user_info(token, username)
-    print(f"User {username} info: {info}")
+    # info = user_info(token, username)
+    # print(f"User {username} info: {info}")
 
+    get_user_data(token, username)

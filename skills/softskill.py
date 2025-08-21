@@ -32,7 +32,7 @@ def plot_consistency(username, repo_commitment):
     sns.despine(left=True, bottom=True)
     ax.xaxis.grid(True, linestyle='--', alpha=0.7)
     plt.tight_layout()
-    plt.savefig(f'data/developer/{username}/{username}_commitment.png', dpi=150)
+    plt.savefig(f'data/developer/{username}/{username}_consistency.png', dpi=150)
 
 def plot_activeness(username, repo_activeness):
     """
@@ -299,4 +299,5 @@ if __name__ == "__main__":
     # print(f"Time Management for {username}: {time_management['max_active_month_start']} - {time_management['max_active_month_end']}, Active Projects: {len(time_management['active_projects'])}, Commit Count: {time_management['commit_count']}")
 
     communication_score = communication_skill(username)
+    print(f"Communication Skill Score for {username}: {communication_score}")
 

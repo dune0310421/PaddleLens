@@ -46,7 +46,8 @@ def get_repo_contrib(username):
         repo = comment['repo']
         if repo not in df_contrib.index:
             df_contrib.loc[repo] = [0, 0, 0, 0, 0]
-        cnt = comment.get('comment_by', []).count(username)
+        # cnt = comment.get('comment_by', []).count(username)
+        cnt = sum(1 for c in comment.get('comment_by', []) if c[0] == username)
         df_contrib.loc[repo, 'comments'] += cnt
 
     with open(f"data/developer/{username}/{username}_review_prs.json", 'r', encoding='utf-8') as f:
@@ -55,7 +56,8 @@ def get_repo_contrib(username):
         repo = review['repo']
         if repo not in df_contrib.index:
             df_contrib.loc[repo] = [0, 0, 0, 0, 0]
-        cnt = review.get('review_by', []).count(username)
+        # cnt = review.get('review_by', []).count(username)
+        cnt = sum(1 for r in review.get('review_by', []) if r[0] == username)
         df_contrib.loc[repo, 'reviews'] += cnt
 
     return df_contrib
@@ -70,7 +72,7 @@ def plot_repo_contrib(df_repo_contrib):
         'prs': "#4FC3F7",
         'issues': "#F06292",
         'comments': "#FFB74D",
-        'reviews': "#90CAF9",
+        'reviews': "#A790F9",
     }
     fig, ax = plt.subplots(figsize=(10, 6))
     df_repo_contrib = df_repo_contrib.sort_values(by=list(df_repo_contrib.columns), ascending=True)
@@ -94,10 +96,14 @@ def get_recent_contrib(username):
         prs = json.load(f)
     with open(f"data/developer/{username}/{username}_issues.json", 'r', encoding='utf-8') as f:
         issues = json.load(f)
+    with open(f"data/developer/{username}/{username}_comments.json", 'r', encoding='utf-8') as f:
+        comment_items = json.load(f)
+    with open(f"data/developer/{username}/{username}_review_prs.json", 'r', encoding='utf-8') as f:
+        review_prs = json.load(f)
     
     # 获取最近一年的贡献，按月统计
     index = pd.date_range(start=NOWDATE - pd.DateOffset(years=YEAROFFSET), end=NOWDATE, freq='ME')
-    contrib_recently = pd.DataFrame(0, index=index, columns=['commits', 'prs', 'issues'])
+    contrib_recently = pd.DataFrame(0, index=index, columns=['commits', 'prs', 'issues', 'comments', 'reviews'])
     for item in commits:
         date = item['created_at'][:7]
         if date in contrib_recently.index:
@@ -110,6 +116,19 @@ def get_recent_contrib(username):
         date = item['created_at'][:7]
         if date in contrib_recently.index:
             contrib_recently.loc[date, 'issues'] += 1
+    for item in comment_items:
+        for comment in item.get('comment_by', []):
+            if comment[0] == username:
+                date = comment[1][:7]
+                if date in contrib_recently.index:
+                    contrib_recently.loc[date, 'comments'] += 1
+    for item in review_prs:
+        for review in item.get('review_by', []):
+            if review[0] == username:
+                date = review[1][:7]
+                if date in contrib_recently.index:
+                    contrib_recently.loc[date, 'reviews'] += 1
+
     contrib_recently.fillna(0, inplace=True)  # 填充缺失值为0
 
     return contrib_recently
@@ -123,8 +142,8 @@ def plot_recent_contrib(df_contrib):
         'commits': "#81C784",
         'prs': "#4FC3F7",
         'issues': "#F06292",
-        # 'comments': "#FFB74D",
-        # 'reviews': "#90CAF9",
+        'comments': "#FFB74D",
+        'reviews': "#A790F9",
     }
     fig, ax = plt.subplots(figsize=(10, 6))
     df_contrib.plot(kind='line', color=[colors[col] for col in df_contrib.columns], ax=ax)
@@ -146,11 +165,11 @@ def experience(username):
     df_contrib = get_repo_contrib(username)
     total_experience = {
         'paddle_repos': len(df_contrib),
-        'commits': df_contrib['commits'].sum(),
-        'prs': df_contrib['prs'].sum(),
-        'issues': df_contrib['issues'].sum(),
-        'comments': df_contrib['comments'].sum(),
-        'reviews': df_contrib['reviews'].sum(),
+        'commits': int(df_contrib['commits'].sum()),
+        'prs': int(df_contrib['prs'].sum()),
+        'issues': int(df_contrib['issues'].sum()),
+        'comments': int(df_contrib['comments'].sum()),
+        'reviews': int(df_contrib['reviews'].sum()),
     }
 
     # 按贡献总数排序，获取前5个repo；如果少于5个repo，补齐
@@ -167,6 +186,7 @@ def experience(username):
     # 统计具有merge权限的repo
     with open(f"data/developer/{username}/{username}_can_merge.json", 'r', encoding='utf-8') as f:
         repos_can_merge = json.load(f)
+    total_experience['repos_can_merge_cnt'] = len(repos_can_merge)
     total_experience['repos_can_merge'] = repos_can_merge
 
     return total_experience
@@ -183,5 +203,10 @@ if __name__ == "__main__":
     # username = 'dune0310421'
     username = 'Aurelius84'
 
+    # df_recent_contrib = get_recent_contrib(username)
+    # plot_recent_contrib(df_recent_contrib)
+
     results = experience(username)
     print(f"experience of developer {username}: {results}")
+    with open(f"data/developer/{username}/{username}_experience.json", 'w', encoding='utf-8') as f:
+        json.dump(results, f, ensure_ascii=False, indent=4)
