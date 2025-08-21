@@ -1,6 +1,10 @@
+# 忽略所有数据和缓存
+data/
+cache/
 # 忽略较大的JSON数据（压缩为gz上传）
-data/paddle_commits/PaddlePaddle_Paddle_commits.json
-data/paddle_prs/PaddlePaddle_Paddle_prs.json
+# data/paddle_commits/PaddlePaddle_Paddle_commits.json
+# data/paddle_prs/PaddlePaddle_Paddle_prs.json
 
 # 忽略Python缓存文件
 __pycache__/
+**/__pycache__/
