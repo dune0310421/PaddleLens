@@ -7,6 +7,7 @@ import requests
 from github import Github
 
 from utils.request_github import request_github
+from utils.content_processor import get_pr_type
 
 logger = logging.getLogger(__name__)
 GITHUB_GRAPHQL_ENDPOINT = "https://api.github.com/graphql"
@@ -76,6 +77,8 @@ def fetch_pr_info(gh, repo_full_name, pr_num):
                     'changes': file.changes,
                 }
                 pr_info['files'].append(file_info)
+        # 获取类型
+        pr_info['type'] = get_pr_type(pr.title, pr.body)
         return pr_info
     except Exception as e:
         logger.error(f"Error fetching PR {pr.number} for repository {pr.base.repo.full_name}: {e}")

@@ -4,58 +4,78 @@ import math
 import logging
 import joblib
 import pandas as pd
-from tqdm import tqdm
+import numpy as np
 from datetime import datetime
-import matplotlib.pyplot as plt
-import seaborn as sns
+from pathlib import Path
+import plotly.graph_objects as go
 
 from utils.cmt_msg_processor import process_commit_messages, BertEmbedding
 
-logger = logging.getLogger(__name__)
-
-def plot_consistency(username, repo_commitment):
+def plot_consistency(repo_consistency: dict) -> go.Figure:
     """
     绘制责任心柱状图
     """
-    # 绘制top5柱状图，若少于5个项目，则用0填充少的部分
-    top_repos = sorted(repo_commitment.items(), key=lambda x: x[1], reverse=True)[:5]
-    top_repos_dict = dict(top_repos)
-    if len(top_repos_dict) < 5:
-        for i in range(5 - len(top_repos_dict)):
-            top_repos_dict[f"Proj_{i+1}"] = 0
-    sns.set_theme(style="white")
-    fig, ax = plt.subplots(figsize=(10, 5))
-    sns.barplot(x=list(top_repos_dict.values()), y=list(top_repos_dict.keys()), hue=list(top_repos_dict.keys()), palette="Set2", legend=False, ax=ax)
-    ax.set_title(f"{username}'s Commitment in Projects", fontsize=16)
-    ax.set_xlabel("Max Continuous Commit Months", fontsize=12)
-    ax.tick_params(axis='y', labelsize=10)
-    sns.despine(left=True, bottom=True)
-    ax.xaxis.grid(True, linestyle='--', alpha=0.7)
-    plt.tight_layout()
-    plt.savefig(f'data/developer/{username}/{username}_consistency.png', dpi=150)
+    repos_sorted = sorted(repo_consistency.items(), key=lambda x: x[1])
+    repo_names = [k for k, v in repos_sorted]
+    month_counts = [v for k, v in repos_sorted]
+    colors = [
+        '#66c2a5',
+        '#fc8d62',
+        '#8da0cb',
+        '#e78ac3',
+        '#a6d854',
+    ]
 
-def plot_activeness(username, repo_activeness):
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        y=repo_names,
+        x=month_counts,
+        orientation="h",
+        marker_color=colors,
+    ))
+    fig.update_layout(
+        title="Consistency",
+        xaxis_title="Max Continuous Commit Months",
+        xaxis=dict(range=[0, 1] if max(month_counts) == 0 else [0, None]),
+        template="plotly_white",
+        height=400 + len(repo_names) * 30,
+        margin=dict(l=150, r=40, t=60, b=40),
+    )
+    return fig
+
+def plot_activeness(repo_activeness: dict) -> go.Figure:
     """
     绘制活跃度柱状图
     """
-    # 绘制top5活跃度柱状图，若少于5个项目，则用0填充少的部分
-    top_repos = sorted(repo_activeness.items(), key=lambda x: x[1], reverse=True)[:5]
-    top_repos_dict = dict(top_repos)
-    if len(top_repos_dict) < 5:
-        for i in range(5 - len(top_repos_dict)):
-            top_repos_dict[f"Proj_{i+1}"] = 0.0
-    sns.set_theme(style="white")
-    fig, ax = plt.subplots(figsize=(10, 5))
-    sns.barplot(x=list(top_repos_dict.values()), y=list(top_repos_dict.keys()), hue=list(top_repos_dict.keys()), palette="Set2", legend=False, ax=ax)
-    ax.set_title(f"{username}'s Activeness in Projects", fontsize=16)
-    ax.set_xlabel("Average Active Months Ratio in a Period (6 Months)", fontsize=12)
-    ax.tick_params(axis='y', labelsize=10)
-    sns.despine(left=True, bottom=True)
-    ax.xaxis.grid(True, linestyle='--', alpha=0.7)
-    plt.tight_layout()
-    plt.savefig(f'data/developer/{username}/{username}_activeness.png', dpi=150)
+    repos_sorted = sorted(repo_activeness.items(), key=lambda x: x[1])
+    repo_names = [k for k, v in repos_sorted]
+    active_ratios = [v for k, v in repos_sorted]
+    colors = [
+        '#66c2a5',
+        '#fc8d62',
+        '#8da0cb',
+        '#e78ac3',
+        '#a6d854',
+    ]
 
-def plot_communication(username, labels):
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        y=repo_names,
+        x=active_ratios,
+        orientation="h",
+        marker_color=colors,
+    ))
+    fig.update_layout(
+        title="Activeness",
+        xaxis_title="Average Active Months Ratio in a Period (6 Months)",
+        xaxis=dict(range=[0, 1]),
+        template="plotly_white",
+        height=400 + len(repo_names) * 30,
+        margin=dict(l=150, r=40, t=60, b=40),
+    )
+    return fig
+
+def plot_communication(labels: list[int]) -> go.Figure:
     """
     绘制沟通能力饼图
     """
@@ -65,23 +85,30 @@ def plot_communication(username, labels):
         2: 'only what',
         3: 'what and why'
     }
-    sizes = [labels.count(i) for i in label_map.keys()]
-    sorted_indices = sorted(range(len(sizes)), key=lambda i: sizes[i], reverse=True)
-    sizes = [sizes[i] for i in sorted_indices]
-    label_names = [label_map[i] for i in sorted_indices]
-    sns.set_theme(style="white")
-    fig, ax = plt.subplots(figsize=(10, 6))
-    colors = sns.color_palette("Set2", len(label_names))
-    wedges, texts, autotexts = ax.pie(sizes, labels=label_names, autopct='%1.1f%%', startangle=140, colors=colors)
-    ax.set_title(f"{username}'s Communication Skill in Commit Messages", fontsize=16)
-    for i, text in enumerate(texts):
-        text.set_text(f"{label_names[i]}: {sizes[i]}")
-    plt.setp(autotexts, size=12, color="white")
-    plt.setp(texts, size=12)
-    plt.tight_layout()
-    plt.savefig(f'data/developer/{username}/{username}_communication.png', dpi=150)
+    label_count = {k:0 for k in label_map.keys()}
+    for label in labels:
+        label_count[label] += 1
+    label_names = [label_map[k] for k in label_count.keys()]
+    sizes = [v for v in label_count.values()]
+    colors = ['#66c2a5', '#fc8d62', '#8da0cb', '#e78ac3']
+    fig = go.Figure()
 
-def get_features(commits):
+    fig.add_trace(go.Pie(
+        labels=label_names,
+        values=sizes,
+        marker_colors=colors,
+        textinfo='label+percent',
+        insidetextorientation='radial'
+    ))
+    fig.update_layout(
+        title="Communication Skill in Commit Messages",
+        template="plotly_white",
+        height=400,
+        margin=dict(l=40, r=40, t=60, b=40),
+    )
+    return fig
+
+def get_features(commits: list[dict]) -> np.ndarray:
     """ 
     提取commit message特征，构造预测数据集
     """
@@ -111,11 +138,13 @@ def get_features(commits):
     return features
 
 # 责任心
-def commitment(username):
+def commitment(task_name: str) -> tuple[go.Figure, go.Figure]:
     """
     责任心：用户在每个项目中的最大连续贡献月份数 + 一段时间内的贡献月份比例。
     """
-    with open(f'data/developer/{username}/{username}_commits.json', 'r', encoding='utf-8') as f:
+
+    user_cache_dir = Path("cache") / task_name
+    with open(user_cache_dir / "commits.json", 'r', encoding='utf-8') as f:
         commits = json.load(f)
         
     # 获取每个项目的贡献年月
@@ -127,8 +156,8 @@ def commitment(username):
         if repo not in project_months:
             project_months[repo] = set()
         project_months[repo].add(ym)
-
-    # 计算每个项目的最大连续月份
+    
+    # ---consistency：每个项目的最大连续月份---
     repo_consistency = {}
     for repo, ym_pairs in project_months.items():
         sorted_ym = sorted(ym_pairs) # 按年月排序
@@ -145,10 +174,16 @@ def commitment(username):
             else:
                 current_m = 1
         repo_consistency[repo] = max_m
+    # 提取top5 repo，若少于5个repo，用0补齐
+    top_repos = sorted(repo_consistency.items(), key=lambda x: x[1], reverse=True)[:5]
+    top_repos_dict = dict(top_repos)
+    if len(top_repos_dict) < 5:
+        for i in range(5 - len(top_repos_dict)):
+            top_repos_dict[" " * i] = 0
+    # 绘图
+    fig_consistency = plot_consistency(top_repos_dict)
 
-    plot_consistency(username, repo_consistency)
-
-    # 计算每个项目的半年内贡献月份的均值
+    # ---activeness：每个项目的半年内贡献月份的均值---
     repo_activeness = {}
     for repo, ym_pairs in project_months.items():
         sorted_ym = sorted(ym_pairs)
@@ -177,17 +212,24 @@ def commitment(username):
         # Step 4: 平均值
         avg_active_months = (sum(windows) / len(windows)) / window_size
         repo_activeness[repo] = avg_active_months
+    # 提取top5 repo，若少于5个repo，用0补齐
+    top_repos = sorted(repo_activeness.items(), key=lambda x: x[1], reverse=True)[:5]
+    top_repos_dict = dict(top_repos)
+    if len(top_repos_dict) < 5:
+        for i in range(5 - len(top_repos_dict)):
+            top_repos_dict[" " * i] = 0.0
+    # 绘图
+    fig_activeness = plot_activeness(top_repos_dict)
 
-    plot_activeness(username, repo_activeness)
-
-    return repo_consistency, repo_activeness
+    return fig_consistency,fig_activeness
 
 # 时间管理能力
-def time_management(username):
+def time_management(task_name: str) -> dict:
     """
     时间管理：一段时间窗口内同时活跃于最多项目
     """
-    with open(f'data/developer/{username}/{username}_commits.json', 'r', encoding='utf-8') as f:
+    user_cache_dir = Path("cache") / task_name
+    with open(user_cache_dir / "commits.json", 'r', encoding='utf-8') as f:
         commits = json.load(f)
 
     # 获取每个月的活跃项目
@@ -200,6 +242,13 @@ def time_management(username):
             month_projects[ym] = set()
         month_projects[ym].add(repo)
     month_projects = dict(sorted(month_projects.items()))  # 按年月排序
+    if not month_projects:  # 没有commit
+        return {
+            "max_active_month_start": None,
+            "max_active_month_end": None,
+            "active_projects": set(),
+            "commit_count": 0
+        }
     # 填补缺失的月份
     start_year, start_month = next(iter(month_projects.keys()))
     end_year, end_month = next(iter(reversed(month_projects.keys())))
@@ -245,12 +294,16 @@ def time_management(username):
     }
 
 # 沟通能力
-def communication_skill(username):
+def communication_skill(task_name: str) -> tuple[float, go.Figure]:
     """
     沟通能力：commit message的质量
     """
-    with open(f'data/developer/{username}/{username}_commits.json', 'r', encoding='utf-8') as f:
+    user_cache_dir = Path("cache") / task_name
+    with open(user_cache_dir / "commits.json", 'r', encoding='utf-8') as f:
         commits = json.load(f)
+    
+    if not commits:
+        return 0.0, plot_communication([])
 
     # 构造预测数据集
     features = get_features(commits)
@@ -281,23 +334,46 @@ def communication_skill(username):
     score = score / len(commit_labels)
 
     # 绘制饼图
-    plot_communication(username, commit_labels)
+    fig_comm = plot_communication(commit_labels)
 
-    return score
+    return score, fig_comm
 
+def softskill(task_name: str) -> tuple[go.Figure, go.Figure, dict, float, go.Figure]:
+    """
+    软技能：责任心、时间管理能力、沟通能力
+    """
+    logging.info(f"Analyzing softskills for task: {task_name}")
+    # 1.责任心
+    fig_consistency, fig_activeness = commitment(task_name)
+
+    # 2.时间管理能力
+    time_mgmt = time_management(task_name)
+
+    # 3.沟通能力
+    comm_score, fig_comm = communication_skill(task_name)
+
+    return fig_consistency, fig_activeness, time_mgmt, comm_score, fig_comm
 
 if __name__ == "__main__":
     logging.basicConfig(
         format="%(asctime)s (PID %(process)d) [%(levelname)s] %(filename)s:%(lineno)d %(message)s",
         level=logging.INFO,
     )
+    logger = logging.getLogger(__name__)
 
+    # 计时
+    start_time = datetime.now()
+
+    # username = 'dune0310421'
     username = 'Aurelius84'
 
-    # repo_commitment = commitment(username)
-    # time_management = time_management(username)
-    # print(f"Time Management for {username}: {time_management['max_active_month_start']} - {time_management['max_active_month_end']}, Active Projects: {len(time_management['active_projects'])}, Commit Count: {time_management['commit_count']}")
+    fig1, fig2, time_mgmt, comm_score, fig_comm = softskill(username)
+    fig1.write_html(Path("cache") / username / "consistency.html")
+    fig2.write_html(Path("cache") / username / "activeness.html")
+    print(f"Time Management: {time_mgmt['max_active_month_start']} - {time_mgmt['max_active_month_end']}, Active Projects: {len(time_mgmt['active_projects'])}, Commit Count: {time_mgmt['commit_count']}")
+    print(f"Communication Skill Score: {comm_score}")
+    fig_comm.write_html(Path("cache") / username / "communication.html")
 
-    communication_score = communication_skill(username)
-    print(f"Communication Skill Score for {username}: {communication_score}")
+    end_time = datetime.now()
+    print(f"Time taken: {end_time - start_time}")
 

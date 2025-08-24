@@ -5,7 +5,7 @@ import os
 
 logger = logging.getLogger(__name__)
 
-def project_weights():
+def project_weights() -> dict:
     """
     获取项目难度
     """
@@ -24,7 +24,7 @@ def project_weights():
 
     return weight
 
-def module_weights():
+def module_weights() -> dict:
     """
     获取模块重要度
     """
@@ -54,8 +54,8 @@ def module_weights():
             # 归一化
             log_counts = {k: math.log(v + 1) for k, v in modules.items()}
             max_log = max(log_counts.values()) if log_counts else 1 # 取最大值作为标准计算相对权重
-            module_weights = {k: v / max_log for k, v in log_counts.items()} # 归一化权重
-            module_weights[repo['full_name']] = module_weights
+            repo_module_weights = {k: v / max_log for k, v in log_counts.items()} # 归一化权重
+            module_weights[repo['full_name']] = repo_module_weights
         with open("cache/paddle_repos_module_weights.json", 'w', encoding='utf-8') as f:
             json.dump(module_weights, f, indent=4, ensure_ascii=False)
 

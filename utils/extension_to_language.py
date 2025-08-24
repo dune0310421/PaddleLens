@@ -3,7 +3,7 @@ import json
 import os
 import logging
 
-def extension_to_language():
+def extension_to_language() -> dict:
     '''
     获取扩展名到编程语言的映射
     '''
@@ -20,7 +20,7 @@ def extension_to_language():
             lines = "".join(f.readlines()[37:])
     except FileNotFoundError:
         logging.error("languages.yml not found. Please download it from https://github.com/github/linguist/blob/master/lib/linguist/languages.yml")
-        return
+        return {}
     
     all_lang_info = yaml.load(lines, Loader=yaml.FullLoader)
     all_lang_to_extension = {}

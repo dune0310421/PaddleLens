@@ -1,195 +1,204 @@
-import os
 import json
-import matplotlib.pyplot as plt
-import seaborn as sns
+import plotly.graph_objects as go
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timezone
+from pathlib import Path
 import logging
 
-logger = logging.getLogger(__name__)
-NOWDATE = datetime(2025, 6, 30)
-YEAROFFSET = 1
-
-def get_repo_contrib(username):
+def plot_repo_contrib(df_repo_contrib: pd.DataFrame) -> go.Figure:
     """
-    获取用户贡献情况
+    绘制贡献总数前5个仓库的统计图
     """
-    df_contrib = pd.DataFrame(columns=['commits', 'prs', 'issues', 'comments', 'reviews'])
+    colors = {
+        'commits': "#81C784",
+        'prs': "#4FC3F7",
+        'issues': "#F06292",
+        'comments': "#FFB74D",
+        'reviews': "#A790F9",
+    }
+    
+    df_repo_contrib = df_repo_contrib.sort_values(by="total", ascending=True)
+    df_repo_contrib = df_repo_contrib.drop(columns=['total'])
+    fig = go.Figure()
+    for col in df_repo_contrib.columns:
+        fig.add_trace(go.Bar(
+            y=df_repo_contrib.index,
+            x=df_repo_contrib[col],
+            name=col,
+            orientation='h',
+            marker=dict(color=colors[col]),
+            legendrank=5 - list(colors.keys()).index(col) + 1
+        ))
+    fig.update_layout(
+        barmode='stack',
+        title="Top 5 Repository Contributions",
+        xaxis_title="Number of Contributions",
+        xaxis=dict(range=[0, None]),
+        legend_title="Contribution Type",
+        template="plotly_white",
+        height=400 + len(df_repo_contrib.index) * 20,  # 高度
+        margin=dict(l=100, r=40, t=80, b=60),  # 边距
+        legend=dict(
+            orientation="h",
+            yanchor="bottom",
+            y=-0.3,
+            xanchor="center",
+            x=0.5
+        )
+    )
+    return fig
 
-    with open(f"data/developer/{username}/{username}_commits.json", 'r', encoding='utf-8') as f:
+def plot_recent_contrib(df_contrib: pd.DataFrame) -> go.Figure:
+    """
+    绘制最近一年的贡献图
+    """
+    colors = {
+        'commits': "#81C784",
+        'prs': "#4FC3F7",
+        'issues': "#F06292",
+        'comments': "#FFB74D",
+        'reviews': "#A790F9",
+    }
+    df_contrib = df_contrib.drop(columns=['total'])
+    fig = go.Figure()
+    for col in df_contrib.columns:
+        fig.add_trace(go.Scatter(
+            x=df_contrib.index,
+            y=df_contrib[col],
+            mode='lines+markers',
+            name=col,
+            line=dict(color=colors[col]),
+            marker=dict(size=6),
+            # legendrank=5 - list(colors.keys()).index(col) + 1
+        ))
+    fig.update_layout(
+        title="Recent Contributions (Last Year)",
+        xaxis_title="Month",
+        yaxis_title="Number of Contributions",
+        yaxis=dict(
+            range=[0, None],    # 从0开始
+        ),
+        legend_title="Contribution Type",
+        template="plotly_white",
+        height=500,
+        margin=dict(l=60, r=40, t=80, b=60),
+        legend=dict(
+            orientation="h",
+            yanchor="bottom",
+            y=-0.3,
+            xanchor="center",
+            x=0.5
+        )
+    )
+    return fig
+
+def experience(task_name: str, nowdate: datetime) -> tuple[dict, go.Figure, go.Figure]:
+    """
+    用户的开发经验
+    """
+    logging.info(f"Analyzing experience for task: {task_name}")
+    username = task_name.split("_")[0]  # 从task_name中提取username
+    # 读取数据
+    user_cache_dir = Path("cache") / task_name
+    with open(user_cache_dir / "commits.json", 'r', encoding='utf-8') as f:
         commits = json.load(f)
+    with open(user_cache_dir / "prs.json", 'r', encoding='utf-8') as f:
+        prs = json.load(f)
+    with open(user_cache_dir / "issues.json", 'r', encoding='utf-8') as f:
+        issues = json.load(f)
+    with open(user_cache_dir / "comment_prs_issues.json", 'r', encoding='utf-8') as f:
+        comment_prs_issues = json.load(f)
+    with open(user_cache_dir / "review_prs.json", 'r', encoding='utf-8') as f:
+        review_prs = json.load(f)
+    with open(user_cache_dir / "repos_can_merge.json", 'r', encoding='utf-8') as f:
+        repos_can_merge = json.load(f)
+
+    # ---统计贡献总数---
+    df_contrib = pd.DataFrame(columns=['commits', 'prs', 'issues', 'comments', 'reviews'], dtype=int)
     for commit in commits:
         repo = commit['repo']
         if repo not in df_contrib.index:
             df_contrib.loc[repo] = [0, 0, 0, 0, 0]
-        df_contrib.loc[repo, 'commits'] += 1
-
-    with open(f"data/developer/{username}/{username}_prs.json", 'r', encoding='utf-8') as f:
-        prs = json.load(f)
+        df_contrib.at[repo, 'commits'] += 1
     for pr in prs:
         repo = pr['repo']
         if repo not in df_contrib.index:
             df_contrib.loc[repo] = [0, 0, 0, 0, 0]
-        df_contrib.loc[repo, 'prs'] += 1
-
-    with open(f"data/developer/{username}/{username}_issues.json", 'r', encoding='utf-8') as f:
-        issues = json.load(f)
+        df_contrib.at[repo, 'prs'] += 1
     for issue in issues:
         repo = issue['repo']
         if repo not in df_contrib.index:
             df_contrib.loc[repo] = [0, 0, 0, 0, 0]
-        df_contrib.loc[repo, 'issues'] += 1
-    
-    with open(f"data/developer/{username}/{username}_comments.json", 'r', encoding='utf-8') as f:
-        comments = json.load(f)
-    for comment in comments:
+        df_contrib.at[repo, 'issues'] += 1
+    for comment in comment_prs_issues:
         repo = comment['repo']
         if repo not in df_contrib.index:
             df_contrib.loc[repo] = [0, 0, 0, 0, 0]
         # cnt = comment.get('comment_by', []).count(username)
         cnt = sum(1 for c in comment.get('comment_by', []) if c[0] == username)
-        df_contrib.loc[repo, 'comments'] += cnt
-
-    with open(f"data/developer/{username}/{username}_review_prs.json", 'r', encoding='utf-8') as f:
-        reviews = json.load(f)
-    for review in reviews:
+        df_contrib.at[repo, 'comments'] += cnt
+    for review in review_prs:
         repo = review['repo']
         if repo not in df_contrib.index:
             df_contrib.loc[repo] = [0, 0, 0, 0, 0]
         # cnt = review.get('review_by', []).count(username)
         cnt = sum(1 for r in review.get('review_by', []) if r[0] == username)
-        df_contrib.loc[repo, 'reviews'] += cnt
-
-    return df_contrib
-
-def plot_repo_contrib(df_repo_contrib):
-    """
-    绘图
-    """
-    sns.set_theme(style="white")
-    colors = {
-        'commits': "#81C784",
-        'prs': "#4FC3F7",
-        'issues': "#F06292",
-        'comments': "#FFB74D",
-        'reviews': "#A790F9",
+        df_contrib.at[repo, 'reviews'] += cnt
+    total_experience = {
+        'paddle_repos_cnt': len(df_contrib),
+        'repos_can_merge_cnt': len(repos_can_merge),
+        'repos_can_merge': repos_can_merge,
+        'commits_cnt': int(df_contrib['commits'].sum()),
+        'prs_cnt': int(df_contrib['prs'].sum()),
+        'issues_cnt': int(df_contrib['issues'].sum()),
+        'comments_cnt': int(df_contrib['comments'].sum()),
+        'reviews_cnt': int(df_contrib['reviews'].sum()),
     }
-    fig, ax = plt.subplots(figsize=(10, 6))
-    df_repo_contrib = df_repo_contrib.sort_values(by=list(df_repo_contrib.columns), ascending=True)
-    df_repo_contrib.plot(kind='barh',stacked=True,color=[colors[k] for k in df_repo_contrib.columns],ax=ax,edgecolor='none')
-    ax.set_title(f"{username}'s Contributions by Repository (Top 5)", fontsize=14, pad=15)
-    ax.set_xlabel("Number of Contributions", fontsize=12)
-    sns.despine(left=True, bottom=True)
-    ax.xaxis.grid(True, linestyle='--', alpha=0.7)
-    ax.legend(bbox_to_anchor=(0.5, -0.15), loc='upper center', ncol=5, fontsize=10)
-    plt.tight_layout()
-    fig_path = os.path.join(f"data/developer/{username}/{username}_repo_contributions.png")
-    plt.savefig(fig_path, dpi=150)
 
-def get_recent_contrib(username):
-    """
-    获取用户最近一年的贡献
-    """
-    with open(f"data/developer/{username}/{username}_commits.json", 'r', encoding='utf-8') as f:
-        commits = json.load(f)
-    with open(f"data/developer/{username}/{username}_prs.json", 'r', encoding='utf-8') as f:
-        prs = json.load(f)
-    with open(f"data/developer/{username}/{username}_issues.json", 'r', encoding='utf-8') as f:
-        issues = json.load(f)
-    with open(f"data/developer/{username}/{username}_comments.json", 'r', encoding='utf-8') as f:
-        comment_items = json.load(f)
-    with open(f"data/developer/{username}/{username}_review_prs.json", 'r', encoding='utf-8') as f:
-        review_prs = json.load(f)
-    
-    # 获取最近一年的贡献，按月统计
-    index = pd.date_range(start=NOWDATE - pd.DateOffset(years=YEAROFFSET), end=NOWDATE, freq='ME')
-    contrib_recently = pd.DataFrame(0, index=index, columns=['commits', 'prs', 'issues', 'comments', 'reviews'])
+    # ---按贡献总数排序，获取前5个repo；如果少于5个repo，补齐---
+    df_contrib["total"] = df_contrib[['commits', 'prs', 'issues', 'comments', 'reviews']].sum(axis=1)
+    df_top5 = df_contrib.sort_values(by='total', ascending=False).head(5)
+    if len(df_top5) < 5:
+        rows_to_add = pd.DataFrame(
+            0,
+            columns=df_top5.columns,
+            index=[" " * i for i in range(5 - len(df_top5))]
+        )
+        df_top5 = pd.concat([df_top5, rows_to_add])
+    # 绘图
+    fig_repo_contrib = plot_repo_contrib(df_top5)
+
+    # ---获取最近一年的贡献，按月统计---
+    index = pd.date_range(start=nowdate - pd.DateOffset(years=1), end=nowdate, freq='ME')
+    df_recent_contrib = pd.DataFrame(0, index=index, columns=df_contrib.columns, dtype=int)
     for item in commits:
         date = item['created_at'][:7]
-        if date in contrib_recently.index:
-            contrib_recently.loc[date, 'commits'] += 1
+        if date in df_recent_contrib.index:
+            df_recent_contrib.at[date, 'commits'] += 1
     for item in prs:
         date = item['created_at'][:7]
-        if date in contrib_recently.index:
-            contrib_recently.loc[date, 'prs'] += 1
+        if date in df_recent_contrib.index:
+            df_recent_contrib.at[date, 'prs'] += 1
     for item in issues:
         date = item['created_at'][:7]
-        if date in contrib_recently.index:
-            contrib_recently.loc[date, 'issues'] += 1
-    for item in comment_items:
+        if date in df_recent_contrib.index:
+            df_recent_contrib.at[date, 'issues'] += 1
+    for item in comment_prs_issues:
         for comment in item.get('comment_by', []):
             if comment[0] == username:
                 date = comment[1][:7]
-                if date in contrib_recently.index:
-                    contrib_recently.loc[date, 'comments'] += 1
+                if date in df_recent_contrib.index:
+                    df_recent_contrib.at[date, 'comments'] += 1
     for item in review_prs:
         for review in item.get('review_by', []):
             if review[0] == username:
                 date = review[1][:7]
-                if date in contrib_recently.index:
-                    contrib_recently.loc[date, 'reviews'] += 1
+                if date in df_recent_contrib.index:
+                    df_recent_contrib.at[date, 'reviews'] += 1
+    # 绘图
+    fig_recent_contrib = plot_recent_contrib(df_recent_contrib)
 
-    contrib_recently.fillna(0, inplace=True)  # 填充缺失值为0
-
-    return contrib_recently
-
-def plot_recent_contrib(df_contrib):
-    """
-    绘制最近一年的贡献图
-    """
-    sns.set_theme(style="white")
-    colors = {
-        'commits': "#81C784",
-        'prs': "#4FC3F7",
-        'issues': "#F06292",
-        'comments': "#FFB74D",
-        'reviews': "#A790F9",
-    }
-    fig, ax = plt.subplots(figsize=(10, 6))
-    df_contrib.plot(kind='line', color=[colors[col] for col in df_contrib.columns], ax=ax)
-    ax.set_title(f"{username}'s Recent Contributions (Last Year)", fontsize=14, pad=15)
-    ax.set_ylabel("Number of Contributions", fontsize=12)
-    ax.yaxis.grid(True, linestyle='--', alpha=0.7)
-    ax.legend(bbox_to_anchor=(0.5, -0.15), loc='upper center', ncol=5, fontsize=10)
-    sns.despine(left=True, bottom=True)
-    plt.tight_layout()
-    fig_path = os.path.join(f"data/developer/{username}/{username}_recent_contributions.png")
-    plt.savefig(fig_path, dpi=150)
-
-def experience(username):
-    """
-    用户的开发经验
-    """
-
-    # 统计贡献总数
-    df_contrib = get_repo_contrib(username)
-    total_experience = {
-        'paddle_repos': len(df_contrib),
-        'commits': int(df_contrib['commits'].sum()),
-        'prs': int(df_contrib['prs'].sum()),
-        'issues': int(df_contrib['issues'].sum()),
-        'comments': int(df_contrib['comments'].sum()),
-        'reviews': int(df_contrib['reviews'].sum()),
-    }
-
-    # 按贡献总数排序，获取前5个repo；如果少于5个repo，补齐
-    df_top5 = df_contrib.sort_values(by=['commits', 'prs', 'issues', 'comments', 'reviews'], ascending=False).head(5)
-    if len(df_top5) < 5:
-        for _ in range(5 - len(df_top5)):
-            df_top5 = df_top5.append(pd.Series([0, 0, 0, 0, 0], index=df_top5.columns), ignore_index=True)  
-    plot_repo_contrib(df_top5)
-
-    # 统计commit、pr、issue随时间的变化
-    df_recent_contrib = get_recent_contrib(username)
-    plot_recent_contrib(df_recent_contrib)
-
-    # 统计具有merge权限的repo
-    with open(f"data/developer/{username}/{username}_can_merge.json", 'r', encoding='utf-8') as f:
-        repos_can_merge = json.load(f)
-    total_experience['repos_can_merge_cnt'] = len(repos_can_merge)
-    total_experience['repos_can_merge'] = repos_can_merge
-
-    return total_experience
+    return total_experience, fig_repo_contrib, fig_recent_contrib
 
 
 if __name__ == "__main__":
@@ -199,14 +208,17 @@ if __name__ == "__main__":
         level=logging.INFO,
     )
 
-    token = ''
     # username = 'dune0310421'
     username = 'Aurelius84'
 
-    # df_recent_contrib = get_recent_contrib(username)
-    # plot_recent_contrib(df_recent_contrib)
+    # 计时
+    start_time = datetime.now()
 
-    results = experience(username)
-    print(f"experience of developer {username}: {results}")
-    with open(f"data/developer/{username}/{username}_experience.json", 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=4)
+    experience_data, fig_repo_contrib, fig_recent_contrib = experience(username, datetime(2025, 6, 30, tzinfo=timezone.utc))
+    print(f"experience of developer {username}: {experience_data}")
+    # 保存绘图
+    fig_repo_contrib.write_html(Path("cache") / username / "repo_contrib.html")
+    fig_recent_contrib.write_html(Path("cache") / username / "recent_contrib.html")
+
+    end_time = datetime.now()
+    print(f"Time taken: {end_time - start_time}")

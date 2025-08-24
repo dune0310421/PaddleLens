@@ -6,13 +6,15 @@ import logging
 from github import Github
 
 from utils.request_github import request_github
+from get_data.get_repo_readme import get_repo_readme
+from utils.content_processor import get_domain
 
 logger = logging.getLogger(__name__)
 token_list = [
     '', # 添加github token
 ]
 
-def get_org_repos(gh, org_name):
+def get_org_repos(gh: Github, org_name: str) -> list[dict]:
     """
     获取指定组织的所有仓库
     """
@@ -41,6 +43,10 @@ def get_org_repos(gh, org_name):
             "language": repo.language,
             "topics": repo.topics,
         }
+        readme_content = get_repo_readme(repo.full_name)
+        domain = get_domain(repo.description, readme_content)
+        repo_info['domain'] = domain
+
         repo_list.append(repo_info)
 
     return repo_list
