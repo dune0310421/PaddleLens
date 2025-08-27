@@ -4,16 +4,17 @@ import json
 from tqdm import tqdm
 from openai import OpenAI
 import logging
+from config import OPENAI_BASE_URL, OPENAI_API_KEY
 
 logger = logging.getLogger(__name__)
 
 # 创建客户端
 client = OpenAI(
-    base_url="", 
-    api_key="" 
+    base_url=OPENAI_BASE_URL, 
+    api_key=OPENAI_API_KEY
     )
 
-def clean_markdown(text):
+def clean_markdown(text: str) -> str:
     """
     清洗markdown形式的文本内容，去除不必要的格式和特殊字符
     """
@@ -34,13 +35,13 @@ def clean_markdown(text):
     return text
 
 # 总结项目类型
-def get_domain(description, readme):
+def get_domain(description: str, readme: str) -> str:
     """
     使用LLM模型总结文本领域
     """
     readme_content = clean_markdown(readme) if readme else ""
     response = client.chat.completions.create(
-        model="aliyun/deepseek-v3",
+        model="deepseek-v3",
         messages=[
             {
                 "role": "system",
@@ -62,16 +63,18 @@ def get_domain(description, readme):
             }
         ]
     )
-    return response.choices[0].message.content
+    content = response.choices[0].message.content or "others"
+    return content.strip()
 
 # 总结pr类型
-def get_pr_type(pr_title, pr_body):
+def get_pr_type(pr_title: str, pr_body: str) -> str:
     """
     使用LLM模型总结PR类型
     """
     pr_body_cleaned = clean_markdown(pr_body) if pr_body else ""
+    pr_body_cleaned = pr_body_cleaned[:2000]  # 截断，防止过长
     response = client.chat.completions.create(
-        model="aliyun/deepseek-v3",
+        model="deepseek-v3",
         messages=[
             {
                 "role": "system",
@@ -98,7 +101,8 @@ def get_pr_type(pr_title, pr_body):
             }
         ]
     )
-    return response.choices[0].message.content.strip()
+    content = response.choices[0].message.content or "Others"
+    return content.strip()
 
 
 if __name__ == "__main__":
