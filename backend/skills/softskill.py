@@ -101,7 +101,7 @@ def plot_communication(labels: list[int]) -> go.Figure:
         insidetextorientation='radial'
     ))
     fig.update_layout(
-        title="Communication Skill in Commit Messages",
+        # title="Communication Skill in Commit Messages",
         template="plotly_white",
         height=400,
         margin=dict(l=40, r=40, t=60, b=40),
@@ -332,6 +332,7 @@ def communication_skill(task_name: str) -> tuple[float, go.Figure]:
         elif label == 1 or label ==2:
             score += 0.5
     score = score / len(commit_labels)
+    score = round(score * 100, 2)  # 转化为百分制，保留两位小数
 
     # 绘制饼图
     fig_comm = plot_communication(commit_labels)

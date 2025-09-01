@@ -105,6 +105,7 @@ class DeveloperAnalyzer:
 
         # 返回结果
         result = {
+            "username": self.username,
             "basic_info": basic_info_data,
             "experience": {
                 "data": experience_data,

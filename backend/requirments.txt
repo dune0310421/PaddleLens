@@ -1,0 +1,4 @@
+kaleido
+fastapi
+uvicorn
+dotenv

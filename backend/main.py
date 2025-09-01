@@ -5,11 +5,22 @@ import pandas as pd
 import base64
 import plotly.graph_objects as go
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from developer_analyzer import DeveloperAnalyzer
 
 app = FastAPI()
+
+# 允许跨域（可用于开发环境，生产环境需要限制）
+app.add_middleware(
+    CORSMiddleware,
+    # allow_origins=["*"],  # 允许所有来源
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 @app.get("/")
 def read_root():
@@ -59,3 +70,7 @@ def analyze_skills(request_data: AnalyzeRequest) -> dict:
     result = clean_data(result)
 
     return JSONResponse(content=result)
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

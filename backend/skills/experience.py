@@ -31,7 +31,7 @@ def plot_repo_contrib(df_repo_contrib: pd.DataFrame) -> go.Figure:
         ))
     fig.update_layout(
         barmode='stack',
-        title="Top 5 Repository Contributions",
+        # title="Top 5 Repository Contributions",
         xaxis_title="Number of Contributions",
         xaxis=dict(range=[0, None]),
         legend_title="Contribution Type",
@@ -72,7 +72,7 @@ def plot_recent_contrib(df_contrib: pd.DataFrame) -> go.Figure:
             # legendrank=5 - list(colors.keys()).index(col) + 1
         ))
     fig.update_layout(
-        title="Recent Contributions (Last Year)",
+        # title="Recent Contributions (Last Year)",
         xaxis_title="Month",
         yaxis_title="Number of Contributions",
         yaxis=dict(

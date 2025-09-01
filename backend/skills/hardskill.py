@@ -24,7 +24,7 @@ def plot_lang_skills(lang_counts: dict) -> go.Figure:
         width=[0.4] * len(lang_counts)
     ))
     fig.update_layout(
-        title=f"Programming Language Skills",
+        # title=f"Programming Language Skills",
         xaxis_title="Programming Language",
         yaxis=dict(
             range=[0, None],    # 从0开始
@@ -43,7 +43,7 @@ def plot_domain_skills(domains: dict) -> bytes:
     plt.figure(figsize=(10, 6))
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
-    plt.title("Domain Skills", fontsize=20)
+    # plt.title("Domain Skills", fontsize=20)
     plt.tight_layout()
     plt.savefig(buf, format='png', dpi=150)
     plt.close()
@@ -131,7 +131,7 @@ def language_skill(task_name: str, nowdate: datetime) -> go.Figure:
     lang_counts = {}
     for commit in commits:
         files = commit['files']
-        weight = 0.2 + 0.8 / (nowdate.year - datetime.fromisoformat(commit['created_at']).year) # 用艾斯宾遗忘曲线计算权重
+        weight = 0.2 + 0.8 / (nowdate.year - datetime.fromisoformat(commit['created_at']).year + 1) # 用艾斯宾遗忘曲线计算权重
         for file_obj in files:
             filename = file_obj['filename']
             ext = os.path.splitext(filename)[1]
