@@ -1,0 +1,10 @@
+.env
+
+__pycache__/
+
+todo.md
+metrics/
+commit_jsons/
+logs/
+temp_data/
+drafts/
