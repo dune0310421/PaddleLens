@@ -16,17 +16,6 @@ def basic_info(task_name: str) -> dict:
     for key in ["created_at", "updated_at"]:
         if key in info and info[key]:
             info[key] = info[key][:10]
-
-    # 获取用户不同身份类型的repo
-    info['personal_repos_cnt'] = 0
-    info['forked_repos_cnt'] = 0
-    with open(user_cache_dir / "repos.json", 'r', encoding='utf-8') as f:
-        repos = json.load(f)
-    for repo in repos:
-        if repo['parent'] is None:
-            info['personal_repos_cnt'] += 1
-        else:
-            info['forked_repos_cnt'] += 1
     
     return info
 

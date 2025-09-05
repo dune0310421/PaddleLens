@@ -6,11 +6,10 @@ from uuid import uuid4
 import logging
 from pathlib import Path
 from github import Github
-from sympy import N
 
 from skills import basic_info, experience, hardskill, softskill
 from utils import load_user_data
-from get_data.get_user_info import get_user_info, get_user_repos
+from get_data.get_user_info import get_user_info
 from config import GITHUB_TOKEN, NOWDATE
 
 class DeveloperAnalyzer:
@@ -38,9 +37,6 @@ class DeveloperAnalyzer:
         info = get_user_info(gh, self.username)
         with open(self.user_cache_dir / "info.json", 'w', encoding='utf-8') as f:
             json.dump(info, f, ensure_ascii=False, indent=4)
-        repos = get_user_repos(gh, self.username)
-        with open(self.user_cache_dir / "repos.json", 'w', encoding='utf-8') as f:
-            json.dump(repos, f, ensure_ascii=False, indent=4)
 
         # ---从本地加载paddle相关repo，获取commits, pr, issue, review, comment等信息---
         with open(f"data/paddle_repos.json", 'r', encoding='utf-8') as f:
