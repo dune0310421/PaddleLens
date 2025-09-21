@@ -9,7 +9,7 @@
       <div class="row g-0">
         <router-link to="/developerskills" class="text-decoration-none col-md-4">
           <div class="p-4 h-100 border-end text-dark text-center hover-card">
-            <h4 class="mb-3">👨‍💻 程序员能力度量</h4>
+            <h4 class="mb-3">👨‍💻 开发者能力度量</h4>
             <p class="text-muted">基于github行为数据分析与评估开发者能力。</p>
           </div>
         </router-link>
@@ -24,7 +24,7 @@
         <router-link to="/community" class="text-decoration-none col-md-4">
           <div class="p-4 h-100 text-dark text-center hover-card">
             <h4 class="mb-3">🌱 社区生态分析</h4>
-            <p class="text-muted">度量开源社区健康度，分析社区下游生态。</p>
+            <p class="text-muted">度量开源社区健康度。</p>
           </div>
         </router-link>
       </div>

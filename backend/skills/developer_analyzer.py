@@ -22,8 +22,8 @@ class DeveloperAnalyzer:
         """
         self.username = username
         self.task_id = str(uuid4())
-        self.task_name = username  # ---暂时不使用uuid，方便调试---
-        # self.task_name = username + "_" + self.task_id
+        # self.task_name = username  # ---暂时不使用uuid，方便调试---
+        self.task_name = username + "_" + self.task_id
         self.user_cache_dir = Path("cache") / self.task_name  # 临时目录：./cache/{github_user}_{uuid4()}/
 
         self.user_cache_dir.mkdir(parents=True, exist_ok=True)  # 创建目录
@@ -92,12 +92,12 @@ class DeveloperAnalyzer:
         分析技能，返回技能列表。
         """
         # 读取数据
-        # self.fetch_data()  # ---调试时注释掉，避免重复获取---
+        self.fetch_data()  # ---调试时注释掉，避免重复获取---
 
         basic_info_data = basic_info.basic_info(self.task_name)
         experience_data, fig_repo_contrib, fig_recent_contrib = experience.experience(self.task_name, NOWDATE)
         fig_lang, fig_domain_bytes, solving_score, fig_solving = hardskill.hardskill(self.task_name, NOWDATE)
-        fig_consistency, fig_activeness, time_mgmt, comm_score, fig_comm = softskill.softskill(self.task_name)
+        fig_consistency, fig_activeness, time_mgmt, comm_score, fig_comm, sample_commits = softskill.softskill(self.task_name)
 
         # 返回结果
         result = {
@@ -119,7 +119,8 @@ class DeveloperAnalyzer:
                 "fig_activeness": fig_activeness,
                 "time_mgmt": time_mgmt,
                 "comm_score": comm_score,
-                "fig_comm": fig_comm
+                "fig_comm": fig_comm,
+                "sample_commits": sample_commits
             }
         }
         return result
@@ -139,15 +140,15 @@ if __name__ == "__main__":
     )
     logger = logging.getLogger(__name__)
 
-    username = 'dune0310421'
-    # username = 'Aurelius84'
+    # username = 'dune0310421'
+    username = 'Aurelius84'
 
     # 计时
     start_time = datetime.now()
 
     analyzer = DeveloperAnalyzer(username)
-    analyzer.fetch_data()
     results = analyzer.analyze_skills()
+    print(results)
 
     end_time = datetime.now()
     duration = end_time - start_time

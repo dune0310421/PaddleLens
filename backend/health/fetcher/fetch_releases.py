@@ -1,13 +1,14 @@
 from datetime import datetime, timedelta, timezone
+from config import NOWDATE, GITHUB_TOKEN
 
 import requests
 
 
-def fetch_total_releases(token, owner, repo, days=None):
+def fetch_total_releases(owner, repo, days=None):
     all_releases = []
     headers = {
         "Accept": "application/vnd.github.v3+json",
-        "Authorization": f"token {token}",
+        "Authorization": f"token {GITHUB_TOKEN}",
     }
     url = f"https://api.github.com/repos/{owner}/{repo}/releases"
     params = {
@@ -21,16 +22,17 @@ def fetch_total_releases(token, owner, repo, days=None):
 
         if not data:
             break
-
+        
         all_releases.extend(data)
         params["page"] += 1
 
+    all_releases = [release for release in all_releases if datetime.fromisoformat(release["created_at"].replace("Z", "+00:00")) <= NOWDATE]
     total_count = len(all_releases)
 
     recent_count = 0
 
     if days:
-        since_date = datetime.now(timezone.utc) - timedelta(days=days)
+        since_date = NOWDATE - timedelta(days=days)
         for release in all_releases:
             created = datetime.fromisoformat(
                 release["created_at"].replace("Z", "+00:00")

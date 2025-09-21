@@ -1,13 +1,14 @@
 from datetime import datetime, timedelta, timezone
 import json
 import os
+from config import GITHUB_TOKEN
 
 import requests
 
 
-def fetch_total_core_contributors(token, owner):
+def fetch_total_core_contributors(owner):
     url = "https://api.github.com/graphql"
-    headers = {"Authorization": f"Bearer {token}"}
+    headers = {"Authorization": f"Bearer {GITHUB_TOKEN}"}
 
     query = """
     query ($org: String!) {

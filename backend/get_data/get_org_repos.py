@@ -37,7 +37,7 @@ def get_org_repos(gh: Github, org_name: str) -> list[dict]:
             "updated_at": repo.updated_at.isoformat(),
             "archived": repo.archived,
             "stargazers_count": repo.stargazers_count,
-            "watchers_count": repo.watchers_count,
+            "watchers_count": repo.subscribers_count,
             "forks_count": repo.forks_count,
             "size": repo.size,
             "language": repo.language,
