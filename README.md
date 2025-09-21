@@ -1,4 +1,9 @@
 # PaddleLens
+
+<p align="center">
+  <img src="imgs/home.png" alt="Image" style="width:80%; max-width:100%;">
+</p>
+
 欢迎来到PaddleLens！
 
 这是一个为飞桨开源社区打造的社区度量平台，包括三个部分：
@@ -8,10 +13,6 @@
 * 社区生态分析：通过Github开发数据，度量飞桨相关项目社区的健康度，包含活力、组织、韧性、四个维度。
 
 此外，PaddleLens代码仓库中还包含对飞桨下游生态进行手动和自动分析的数据处理过程，有助于未来再次分析飞桨下游生态时对分析方法进行复用。
-
-<p align="center">
-  <img src="imgs/image.png" alt="Image" style="width:80%; max-width:100%;">
-</p>
 
 ## 安装与使用方法
 
