@@ -104,6 +104,44 @@ def get_pr_type(pr_title: str, pr_body: str) -> str:
     content = response.choices[0].message.content or "Others"
     return content.strip()
 
+# 总结commit message类型
+def get_commit_type(commit_message: str) -> int:
+    """
+    使用LLM模型总结commit message类型
+    """
+    commit_message_cleaned = clean_markdown(commit_message) if commit_message else ""
+    commit_message_cleaned = commit_message_cleaned[:1000]  # 截断，防止过长
+    response = client.chat.completions.create(
+        model="deepseek-v3",
+        messages=[
+            {
+                "role": "system",
+                "content": "You are an expert in software development and project management, with deep knowledge of different types of commit messages in software projects.\n"
+                "You know the following commit message types:\n"
+                "1) what, to summarize the changes in this commit, including 1)Summarize Code Object Change 2)Describe Implementation Principle 3)Illustrate Function\n"
+                "2) why, to describe the reasons for the changes, including 1)Describe Issue 2)Illustrate Requirement 3)Describe Objective 4)Imply Necessity\n"
+            },
+            {
+                "role": "user",
+                "content": "According to the following commit message, determine the type of commit it is."
+                "Only one type is allowed, and if you cannot determine the type, respond with '7'."
+                "Respond **only** in the following format:\n"
+                "<type_number>\n"
+                "\n"
+                "Where <type_number> is one of the numbers: 0: missing what and why; 1: why only; 2: what only; 3: both what and why\n"
+                "\n"
+                f"Commit message: {commit_message_cleaned}\n"
+            }
+        ]
+    )
+    content = response.choices[0].message.content or "0"
+    try:
+        type_number = int(content.strip())
+        if type_number not in range(4):
+            type_number = 0
+    except ValueError:
+        type_number = 0
+    return type_number
 
 if __name__ == "__main__":
     logging.basicConfig(

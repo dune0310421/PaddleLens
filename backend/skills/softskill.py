@@ -9,8 +9,6 @@ from datetime import datetime
 from pathlib import Path
 import plotly.graph_objects as go
 
-from utils.cmt_msg_processor import process_commit_messages, BertEmbedding
-
 def plot_consistency(repo_consistency: dict) -> go.Figure:
     """
     绘制责任心柱状图
@@ -107,35 +105,6 @@ def plot_communication(labels: list[int]) -> go.Figure:
         margin=dict(l=40, r=40, t=60, b=40),
     )
     return fig
-
-def get_features(commits: list[dict]) -> np.ndarray:
-    """ 
-    提取commit message特征，构造预测数据集
-    """
-    # 提取消息文本
-    messages = [commit['message'] for commit in commits]
-    files = []
-    for commit in commits:
-        files_now = [file['filename'] for file in commit.get('files', [])]
-        files.append(files_now)
-
-    # 预处理文本（格式还原、占位符替换等）
-    p_messages = process_commit_messages(messages, files)
-
-    # 构造 DataFrame
-    df = pd.DataFrame(p_messages)
-    df.columns = ['new_message1']
-
-    # 用特殊 token 替换原始 id/tokens
-    df['new_message1'] = df['new_message1'].apply(lambda x: x.replace('<enter>', '$enter').replace('<tab>', '$tab') \
-        .replace('<url>', '$url').replace('<version>', '$versionNumber').replace('<pr_link>', '$pullRequestLink>') \
-        .replace('<issue_link >', '$issueLink').replace('<otherCommit_link>', '$otherCommitLink') \
-        .replace("<method_name>", "$methodName").replace("<file_name>", "$fileName").replace("<iden>", "$token"))
-
-    # 提取BERT特征
-    features = BertEmbedding(df)
-
-    return features
 
 # 责任心
 def commitment(task_name: str) -> tuple[go.Figure, go.Figure]:
@@ -294,52 +263,60 @@ def time_management(task_name: str) -> dict:
     }
 
 # 沟通能力
-def communication_skill(task_name: str) -> tuple[float, go.Figure]:
+def communication_skill(task_name: str) -> tuple[float, go.Figure, dict]:
     """
     沟通能力：commit message的质量
     """
     user_cache_dir = Path("cache") / task_name
     with open(user_cache_dir / "commits.json", 'r', encoding='utf-8') as f:
         commits = json.load(f)
-    
-    if not commits:
-        return 0.0, plot_communication([])
 
-    # 构造预测数据集
-    features = get_features(commits)
-    # 预测commit message的类型
-    why_model = joblib.load('data/5_10_1_8_OrWhyClassifier_why_LR.joblib')
-    what_model = joblib.load('data/5_10_2_22_OrWhyClassifier_what_LR.joblib')
-    whats = what_model.predict(features)
-    whys = why_model.predict(features)
-    commit_labels = []
-    for what,why in zip(whats,whys):
-        if what == 1 and why == 1:  # what and why
-            commit_labels.append(3)
-        elif what == 1 and why == 0:  # only what
-            commit_labels.append(2)
-        elif what == 0 and why == 1:  # only why
-            commit_labels.append(1)
-        else:
-            commit_labels.append(0)  # not why and not what
-    # df['predict_labels'] = commit_labels # 获取预测标签
+    if not commits:
+        return 0.0, plot_communication([]), {}
+
+    commit_labels = [commit['why_what_label'] for commit in commits]
 
     #计算分数
     score = 0
     for label in commit_labels:
         if label == 3:
             score += 1
-        elif label == 1 or label ==2:
-            score += 0.5
-    score = score / len(commit_labels)
+        elif label == 1 or label == 2:
+            score += 0.8
+    score = score / len(commits)
     score = round(score * 100, 2)  # 转化为百分制，保留两位小数
 
     # 绘制饼图
     fig_comm = plot_communication(commit_labels)
 
-    return score, fig_comm
+    # 抽取每类的示例 commit
+    label_names = {
+        0: "what",
+        1: "why",
+        2: "other",
+        3: "what+why"
+    }
 
-def softskill(task_name: str) -> tuple[go.Figure, go.Figure, dict, float, go.Figure]:
+    sample_commits = {}
+    seen_labels = set()
+
+    for commit in commits:
+        label = commit['why_what_label']
+        key = label_names.get(label)
+        if key and key not in seen_labels:
+            sample_commits[key] = {
+                "repo": commit['repo'],
+                "sha": commit['sha'],
+                "message": commit['message']
+            }
+            seen_labels.add(key)
+        if len(seen_labels) == 4:
+            break
+
+    return score, fig_comm, sample_commits
+
+
+def softskill(task_name: str) -> tuple[go.Figure, go.Figure, dict, float, go.Figure, dict]:
     """
     软技能：责任心、时间管理能力、沟通能力
     """
@@ -351,9 +328,9 @@ def softskill(task_name: str) -> tuple[go.Figure, go.Figure, dict, float, go.Fig
     time_mgmt = time_management(task_name)
 
     # 3.沟通能力
-    comm_score, fig_comm = communication_skill(task_name)
+    comm_score, fig_comm, sample_commits = communication_skill(task_name)
 
-    return fig_consistency, fig_activeness, time_mgmt, comm_score, fig_comm
+    return fig_consistency, fig_activeness, time_mgmt, comm_score, fig_comm, sample_commits
 
 if __name__ == "__main__":
     logging.basicConfig(
@@ -368,7 +345,7 @@ if __name__ == "__main__":
     # username = 'dune0310421'
     username = 'Aurelius84'
 
-    fig1, fig2, time_mgmt, comm_score, fig_comm = softskill(username)
+    fig1, fig2, time_mgmt, comm_score, fig_comm, sample_commits = softskill(username)
     fig1.write_html(Path("cache") / username / "consistency.html")
     fig2.write_html(Path("cache") / username / "activeness.html")
     print(f"Time Management: {time_mgmt['max_active_month_start']} - {time_mgmt['max_active_month_end']}, Active Projects: {len(time_mgmt['active_projects'])}, Commit Count: {time_mgmt['commit_count']}")

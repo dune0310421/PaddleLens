@@ -1,6 +1,5 @@
 import time
 import json
-from platformdirs import user_cache_dir
 from tqdm import tqdm
 import logging
 from github import Github

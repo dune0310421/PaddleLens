@@ -1,0 +1,3 @@
+[submodule "github-dependents-info"]
+	path = github-dependents-info
+	url = git@github.com:dune0310421/github-dependents-info.git
