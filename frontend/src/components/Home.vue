@@ -23,8 +23,8 @@
 
         <router-link to="/community" class="text-decoration-none col-md-4">
           <div class="p-4 h-100 text-dark text-center hover-card">
-            <h4 class="mb-3">🌱 社区生态分析</h4>
-            <p class="text-muted">度量开源社区健康度。</p>
+            <h4 class="mb-3">🌱 社区健康度度量</h4>
+            <p class="text-muted">基于github项目数据度量开源社区健康度。</p>
           </div>
         </router-link>
       </div>
