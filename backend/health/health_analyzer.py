@@ -272,11 +272,11 @@ class HealthAnalyzer:
         self.scores["organization"]["diversity"]["experience"]["acceptence rate of pull requests"]["number of pull requests"]["recent"] = recent_prs
         self.scores["organization"]["diversity"]["experience"]["acceptence rate of pull requests"]["ratio"]["recent"] = recent_merged_prs / recent_prs if recent_prs > 0 else 0
         #    b)close rate of issues
-        total_closed_issues = sum(1 for issue in issues if issue.get("state", "") == "closed")
+        total_closed_issues = sum(1 for issue in issues if issue.get("state", "").lower() == "closed")
         self.scores["organization"]["diversity"]["experience"]["close rate of issues"]["number of issues closed"]["total"] = total_closed_issues
         self.scores["organization"]["diversity"]["experience"]["close rate of issues"]["number of issues"]["total"] = total_issues
         self.scores["organization"]["diversity"]["experience"]["close rate of issues"]["ratio"]["total"] = total_closed_issues / total_issues if total_issues > 0 else 0
-        recent_closed_issues = sum(1 for issue in issues if issue.get("state", "") == "closed" and datetime.datetime.fromisoformat(issue.get("created_at", "1970-01-01T00:00:00+00:00")[:10]).date() >= self.recent.date())
+        recent_closed_issues = sum(1 for issue in issues if issue.get("state", "").lower() == "closed" and datetime.datetime.fromisoformat(issue.get("created_at", "1970-01-01T00:00:00+00:00")[:10]).date() >= self.recent.date())
         self.scores["organization"]["diversity"]["experience"]["close rate of issues"]["number of issues closed"]["recent"] = recent_closed_issues
         self.scores["organization"]["diversity"]["experience"]["close rate of issues"]["number of issues"]["recent"] = recent_issues
         self.scores["organization"]["diversity"]["experience"]["close rate of issues"]["ratio"]["recent"] = recent_closed_issues / recent_issues if recent_issues > 0 else 0
